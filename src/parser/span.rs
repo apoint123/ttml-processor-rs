@@ -162,26 +162,26 @@ pub fn process_span(
             buf.clear();
         }
 
-        if let Some(bg) = &mut line.background_vocal {
-            bg.start_time = explicit_bg_start.unwrap_or_else(|| {
-                bg.words
-                    .as_ref()
-                    .and_then(|w| w.first())
-                    .map_or(0, |w| w.start_time)
-            });
+        let bg = line.bg_vocal_mut();
 
-            bg.end_time = explicit_bg_end.unwrap_or_else(|| {
-                bg.words
-                    .as_ref()
-                    .and_then(|w| w.last())
-                    .map_or(0, |w| w.end_time)
-            });
+        bg.start_time = explicit_bg_start.unwrap_or_else(|| {
+            bg.words
+                .as_ref()
+                .and_then(|w| w.first())
+                .map_or(0, |w| w.start_time)
+        });
 
-            let is_words_empty = bg.words.as_ref().is_none_or(Vec::is_empty);
-            if is_words_empty {
-                bg.words = None;
-                bg.text = raw_bg_text;
-            }
+        bg.end_time = explicit_bg_end.unwrap_or_else(|| {
+            bg.words
+                .as_ref()
+                .and_then(|w| w.last())
+                .map_or(0, |w| w.end_time)
+        });
+
+        let is_words_empty = bg.words.as_ref().is_none_or(Vec::is_empty);
+        if is_words_empty {
+            bg.words = None;
+            bg.text = raw_bg_text;
         }
 
         return Ok(());
