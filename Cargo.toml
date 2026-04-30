@@ -2,6 +2,14 @@
 name = "ttml_processor"
 version = "0.3.0"
 edition = "2024"
+authors = ["apoint123 <vpnzaph@outlook.com>"]
+description = "A Rust library for parsing and generating TTML lyrics files, specifically designed for Apple Music and AMLL formats."
+readme = "README.md"
+homepage = "https://github.com/apoint123/ttml-processor-rs"
+repository = "https://github.com/apoint123/ttml-processor-rs"
+license = "MIT"
+keywords = ["ttml", "lyrics", "parser", "generator", "xml"]
+categories = ["multimedia::audio", "parsing", "text-processing"]
 
 [dependencies]
 quick-xml = "0.39"
