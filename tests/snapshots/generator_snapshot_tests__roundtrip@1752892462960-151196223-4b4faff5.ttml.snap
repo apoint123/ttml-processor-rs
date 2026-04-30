@@ -1,0 +1,766 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
+---
+{
+	"metadata": {
+		"title": [
+			"Black Or White"
+		],
+		"artist": [
+			"张杰",
+			"Michael Jackson"
+		],
+		"album": [
+			"我是歌手第二季 第5期"
+		],
+		"author_ids": [
+			"151196223"
+		],
+		"author_names": [
+			"Torotar"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type_": "person"
+			}
+		},
+		"platform_ids": {
+			"ncm_music_id": [
+				"28427750"
+			]
+		}
+	},
+	"lines": [
+		{
+			"text": "I took my baby on a Saturday bang",
+			"start_time": 19828,
+			"end_time": 23752,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我带着我的宝贝去度周末"
+				}
+			],
+			"id": "L1",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Boy is that girl with you",
+			"start_time": 24271,
+			"end_time": 25889,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "“小伙子，这是你的姑娘？”"
+				}
+			],
+			"id": "L2",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Yes we're one and the same",
+			"start_time": 25889,
+			"end_time": 27967,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "\"是的，我们心心相印，合二为一\""
+				}
+			],
+			"id": "L3",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Now I believe in miracles",
+			"start_time": 28302,
+			"end_time": 30036,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "现在我相信奇迹"
+				}
+			],
+			"id": "L4",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "And a miracle has happened tonight",
+			"start_time": 30036,
+			"end_time": 33319,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "而今夜奇迹已经显现"
+				}
+			],
+			"id": "L5",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "But, if you're thinkin' about my baby",
+			"start_time": 36083,
+			"end_time": 38633,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "但如果你在意我的孩子"
+				}
+			],
+			"id": "L6",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It don't matter if you're black or white",
+			"start_time": 38633,
+			"end_time": 42171,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L7",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I said If You're Thinkin' About My Baby",
+			"start_time": 44345,
+			"end_time": 47462,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我说如果你在意我的孩子"
+				}
+			],
+			"id": "L8",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It Don't Matter If You're Black Or White",
+			"start_time": 47462,
+			"end_time": 51107,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L9",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I said If You're Thinkin' About My brother",
+			"start_time": 53358,
+			"end_time": 56220,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我说如果你在意我的孩子"
+				}
+			],
+			"id": "L10",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It Don't Matter If You're Black Or White",
+			"start_time": 56220,
+			"end_time": 61400,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L11",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "They print my message in the Saturday Sun",
+			"start_time": 86458,
+			"end_time": 89824,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "他们把我的消息印在《太阳报》上"
+				}
+			],
+			"id": "L12",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I had to tell them I ain't second to none",
+			"start_time": 90513,
+			"end_time": 94011,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我不得不告诉他们我不是最好的"
+				}
+			],
+			"id": "L13",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "And I told about equality and it's true",
+			"start_time": 94316,
+			"end_time": 96713,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我坚信人人平等这个真理"
+				}
+			],
+			"id": "L14",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Either you're wrong or you're right",
+			"start_time": 96713,
+			"end_time": 99651,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "无论你是错误或是正确都改变不了"
+				}
+			],
+			"id": "L15",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "But, if you're thinkin' about my baby",
+			"start_time": 101074,
+			"end_time": 104579,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "但如果你在意我的孩子"
+				}
+			],
+			"id": "L16",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It don't matter if you're black or white",
+			"start_time": 104579,
+			"end_time": 107699,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L17",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I am tired of this devil",
+			"start_time": 123409,
+			"end_time": 125324,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我厌倦了这样的谬误"
+				}
+			],
+			"id": "L18",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I am tired of this stuff",
+			"start_time": 125324,
+			"end_time": 127282,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我厌倦了这样的素材"
+				}
+			],
+			"id": "L19",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I am tired of this business",
+			"start_time": 127282,
+			"end_time": 129369,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我厌倦了这些勾当"
+				}
+			],
+			"id": "L20",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Sew when the going gets rough",
+			"start_time": 129369,
+			"end_time": 131495,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "只到亡羊才去补牢"
+				}
+			],
+			"id": "L21",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I ain't scared of your brother",
+			"start_time": 131495,
+			"end_time": 133466,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我不怕你的哥们"
+				}
+			],
+			"id": "L22",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I ain'ts scared of no sheets",
+			"start_time": 133466,
+			"end_time": 135498,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我不怕小报绯闻"
+				}
+			],
+			"id": "L23",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I ain't scared of nobody",
+			"start_time": 135498,
+			"end_time": 137634,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我不怕任何人"
+				}
+			],
+			"id": "L24",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Girl when the goin' gets mean",
+			"start_time": 137634,
+			"end_time": 139528,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "宝贝只要一切有意义"
+				}
+			],
+			"id": "L25",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Protection For gangs, clubs, and nations",
+			"start_time": 142098,
+			"end_time": 144499,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "保护帮派、社团和民族"
+				}
+			],
+			"id": "L26",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Causing grief in human relations",
+			"start_time": 144499,
+			"end_time": 146163,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "人际关系不断遭到创伤"
+				}
+			],
+			"id": "L27",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It's a turf war on a global scale",
+			"start_time": 146163,
+			"end_time": 148335,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这是地盘战争遍及全世界"
+				}
+			],
+			"id": "L28",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I'd rather hear both sides of the tale",
+			"start_time": 148335,
+			"end_time": 150260,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我宁可兼听双方的故事"
+				}
+			],
+			"id": "L29",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "See, it's not about races",
+			"start_time": 150260,
+			"end_time": 151552,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "无关于种族"
+				}
+			],
+			"id": "L30",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Just places Faces",
+			"start_time": 151552,
+			"end_time": 153406,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "只管于地域和脸面"
+				}
+			],
+			"id": "L31",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Where your blood comes from",
+			"start_time": 153406,
+			"end_time": 154210,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "你血缘来自哪里"
+				}
+			],
+			"id": "L32",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Is were your space is",
+			"start_time": 154210,
+			"end_time": 155237,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "哪里就是你的空间"
+				}
+			],
+			"id": "L33",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I've seen the bright get duller",
+			"start_time": 155237,
+			"end_time": 156662,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我看见光明正在黯淡"
+				}
+			],
+			"id": "L34",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I'm not going to spend my life being a color",
+			"start_time": 156662,
+			"end_time": 158780,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我不会花一辈子时间为了某种肤色而活"
+				}
+			],
+			"id": "L35",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Don't tell me you agree with me",
+			"start_time": 162784,
+			"end_time": 164515,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "不要跟我说你同意我的言论"
+				}
+			],
+			"id": "L36",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "When I saw you kicking dirt in my eye",
+			"start_time": 164515,
+			"end_time": 167618,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "当我看见你在我面前恶意中伤我"
+				}
+			],
+			"id": "L37",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "But, if you're thinkin' about my baby",
+			"start_time": 169859,
+			"end_time": 172627,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "但如果你在意我的孩子"
+				}
+			],
+			"id": "L38",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It don't matter if you're black or white",
+			"start_time": 172627,
+			"end_time": 176094,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L39",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I said if you're thinkin' of being my baby",
+			"start_time": 178353,
+			"end_time": 181518,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "我说如果你在意我的孩子"
+				}
+			],
+			"id": "L40",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It don't matter if you're black or white",
+			"start_time": 181518,
+			"end_time": 184244,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L41",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "I said if you're thinkin' of being my brother",
+			"start_time": 186575,
+			"end_time": 189362,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "但如果你在意当我的兄弟"
+				}
+			],
+			"id": "L42",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It don't matter if you're black or white",
+			"start_time": 189362,
+			"end_time": 195441,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这没有关系无论你是黑是白"
+				}
+			],
+			"id": "L43",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "NO Matter If You're Black Or White",
+			"start_time": 200897,
+			"end_time": 204087,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "无论你是黑是白"
+				}
+			],
+			"id": "L44",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "NO Matter If You're Black Or White",
+			"start_time": 204958,
+			"end_time": 209557,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "无论你是黑是白"
+				}
+			],
+			"id": "L45",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It's Black, It's White It's Tough For You To Get By",
+			"start_time": 210340,
+			"end_time": 214399,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这是黑，这是白，这很难让他们找到"
+				}
+			],
+			"id": "L46",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It's Black , It's White It's Tough For You To Get By",
+			"start_time": 214399,
+			"end_time": 218348,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这是黑，这是白，这很难让他们找到"
+				}
+			],
+			"id": "L47",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It's Black, It's White It's Tough For You To Get By",
+			"start_time": 218348,
+			"end_time": 222424,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这是黑，这是白，这很难让他们找到"
+				}
+			],
+			"id": "L48",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "It's Black , It's White It's Tough For You To Get By",
+			"start_time": 222424,
+			"end_time": 226484,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "这是黑，这是白，这很难让他们找到"
+				}
+			],
+			"id": "L49",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Black Or White",
+			"start_time": 227058,
+			"end_time": 230314,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "是黑是白"
+				}
+			],
+			"id": "L50",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Black Or White",
+			"start_time": 231961,
+			"end_time": 235406,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "是黑是白"
+				}
+			],
+			"id": "L51",
+			"agent_id": "v1",
+			"block_index": 1
+		},
+		{
+			"text": "Black Or White",
+			"start_time": 253909,
+			"end_time": 256274,
+			"translations": [
+				{
+					"language": "zh-CN",
+					"text": "是黑是白"
+				}
+			],
+			"id": "L52",
+			"agent_id": "v1",
+			"block_index": 1
+		}
+	]
+}

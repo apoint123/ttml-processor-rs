@@ -1,0 +1,286 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/complex-test-song.ttml
+---
+{
+	"metadata": {
+		"language": "ja",
+		"timing_mode": "Word",
+		"songwriters": [
+			"作曲者1号",
+			"作曲者2号"
+		],
+		"title": [
+			"Complex Test Song",
+			"複雑なテストソング"
+		],
+		"artist": [
+			"Vocalist A (Taro)",
+			"Vocalist B (Hanako)"
+		],
+		"album": [
+			"AMLL Parser Test Suite"
+		],
+		"isrc": [
+			"JPXX02500001"
+		],
+		"author_ids": [
+			"10001"
+		],
+		"author_names": [
+			"TestUser"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"name": "Vocalist A (Taro)",
+				"type_": "person"
+			},
+			"v2": {
+				"id": "v2",
+				"name": "Vocalist B (Hanako)",
+				"type_": "person"
+			},
+			"v1000": {
+				"id": "v1000",
+				"name": "Chorus Group",
+				"type_": "group"
+			}
+		},
+		"platform_ids": {
+			"ncm_music_id": [
+				"123456789"
+			],
+			"qq_music_id": [
+				"987654321"
+			],
+			"spotify_id": [
+				"abc123xyz"
+			],
+			"apple_music_id": [
+				"999888777"
+			]
+		}
+	},
+	"lines": [
+		{
+			"text": "これは テスト",
+			"start_time": 10000,
+			"end_time": 12000,
+			"words": [
+				{
+					"text": "これ",
+					"start_time": 10000,
+					"end_time": 10500,
+					"obscene": true
+				},
+				{
+					"text": "は",
+					"start_time": 10500,
+					"end_time": 10800,
+					"ends_with_space": true
+				},
+				{
+					"text": "テスト",
+					"start_time": 11200,
+					"end_time": 11800,
+					"empty_beat": 5
+				}
+			],
+			"translations": [
+				{
+					"language": "en-US",
+					"text": "This is the first line (Vocalist A)"
+				},
+				{
+					"language": "zh-Hans-CN",
+					"text": "这是第一行歌词 (演唱者A)"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "Kore wa tesuto",
+					"words": [
+						{
+							"text": "Ko",
+							"start_time": 10000,
+							"end_time": 10500
+						},
+						{
+							"text": "re",
+							"start_time": 10500,
+							"end_time": 10800,
+							"ends_with_space": true
+						},
+						{
+							"text": "wa",
+							"start_time": 10800,
+							"end_time": 11000,
+							"ends_with_space": true
+						},
+						{
+							"text": "tesuto",
+							"start_time": 11200,
+							"end_time": 11800
+						}
+					]
+				}
+			],
+			"id": "L1",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 1
+		},
+		{
+			"text": "二つ目 の ライン",
+			"start_time": 15000,
+			"end_time": 17000,
+			"words": [
+				{
+					"text": "二つ目",
+					"start_time": 15000,
+					"end_time": 15800,
+					"ends_with_space": true
+				},
+				{
+					"text": "の",
+					"start_time": 16000,
+					"end_time": 16500,
+					"ends_with_space": true
+				},
+				{
+					"text": "ライン",
+					"start_time": 16500,
+					"end_time": 17000
+				}
+			],
+			"translations": [
+				{
+					"language": "en-US",
+					"text": "This is the second line (Vocalist B)"
+				},
+				{
+					"language": "zh-Hans-CN",
+					"text": "这是第二行歌词 (演唱者B)"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "Futatsume no rain",
+					"words": [
+						{
+							"text": "Futatsume",
+							"start_time": 15000,
+							"end_time": 15800,
+							"ends_with_space": true
+						},
+						{
+							"text": "no",
+							"start_time": 16000,
+							"end_time": 16500,
+							"ends_with_space": true
+						},
+						{
+							"text": "rain",
+							"start_time": 16500,
+							"end_time": 17000
+						}
+					]
+				}
+			],
+			"id": "L2",
+			"agent_id": "v2",
+			"song_part": "Verse",
+			"block_index": 1
+		},
+		{
+			"text": "コーラス です",
+			"start_time": 20000,
+			"end_time": 25000,
+			"words": [
+				{
+					"text": "コーラス",
+					"start_time": 20000,
+					"end_time": 21500,
+					"ends_with_space": true
+				},
+				{
+					"text": "です",
+					"start_time": 21500,
+					"end_time": 22000
+				}
+			],
+			"translations": [
+				{
+					"language": "en-US",
+					"text": "This is the chorus line"
+				},
+				{
+					"language": "zh-Hans-CN",
+					"text": "这是合唱部分"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "Kōrasu desu",
+					"words": [
+						{
+							"text": "Kōrasu",
+							"start_time": 20000,
+							"end_time": 21500,
+							"ends_with_space": true
+						},
+						{
+							"text": "desu",
+							"start_time": 21500,
+							"end_time": 22000
+						}
+					]
+				}
+			],
+			"background_vocal": {
+				"text": "背景",
+				"start_time": 22500,
+				"end_time": 23800,
+				"words": [
+					{
+						"text": "背景",
+						"start_time": 22500,
+						"end_time": 23800
+					}
+				],
+				"translations": [
+					{
+						"language": "en-US",
+						"text": "With background"
+					},
+					{
+						"language": "zh-Hans-CN",
+						"text": "带背景音"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ja-Latn",
+						"text": "haikei",
+						"words": [
+							{
+								"text": "haikei",
+								"start_time": 22500,
+								"end_time": 23800
+							}
+						]
+					}
+				]
+			},
+			"id": "L3",
+			"agent_id": "v1000",
+			"song_part": "Chorus",
+			"block_index": 2
+		}
+	]
+}

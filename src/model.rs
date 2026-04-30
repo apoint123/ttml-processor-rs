@@ -1,0 +1,338 @@
+//! TTML 解析和生成器使用的数据结构
+
+use indexmap::IndexMap;
+use serde::{
+    Deserialize,
+    Serialize,
+};
+use serde_with::skip_serializing_none;
+
+/// 翻译/音译的内容
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct SubLyricContent {
+    /// 该内容的 BCP-47 语言代码
+    pub language: Option<String>,
+
+    /// 完整文本
+    pub text: String,
+
+    /// 逐字音节信息
+    pub words: Option<Vec<Syllable>>,
+}
+
+/// 背景人声内容
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct BackgroundVocal {
+    /// 完整的文本内容
+    /// - 如果是逐字歌词，这里是所有字拼接后的结果
+    pub text: String,
+
+    /// 开始时间，单位毫秒
+    pub start_time: u32,
+
+    /// 结束时间，单位毫秒
+    pub end_time: u32,
+
+    /// 逐字音节信息
+    ///
+    /// 如果为空，一般就是逐行歌词
+    pub words: Option<Vec<Syllable>>,
+
+    /// 翻译内容
+    pub translations: Option<Vec<SubLyricContent>>,
+
+    /// 音译内容
+    pub romanizations: Option<Vec<SubLyricContent>>,
+}
+
+/// 一个主歌词行
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct LyricLine {
+    /// 完整的文本内容
+    /// - 如果是逐字歌词，这里是所有字拼接后的结果
+    pub text: String,
+
+    /// 开始时间，单位毫秒
+    pub start_time: u32,
+
+    /// 结束时间，单位毫秒
+    pub end_time: u32,
+
+    /// 逐字音节信息
+    ///
+    /// 如果为空，一般就是逐行歌词
+    pub words: Option<Vec<Syllable>>,
+
+    /// 翻译内容
+    pub translations: Option<Vec<SubLyricContent>>,
+
+    /// 音译内容
+    pub romanizations: Option<Vec<SubLyricContent>>,
+
+    /// 背景人声内容
+    pub background_vocal: Option<BackgroundVocal>,
+
+    /// 行 ID
+    ///
+    /// 例如 "L1", "L2"...
+    pub id: Option<String>,
+
+    /// 演唱者 ID
+    ///
+    /// 可用于在 metadata.agents 中查找具体名字
+    pub agent_id: Option<String>,
+
+    /// 歌曲结构组成
+    ///
+    /// 例如: "Verse", "Chorus", "Intro", "Outro"
+    pub song_part: Option<String>,
+
+    /// 所属的递增区块索引
+    ///
+    /// 用于区分连续出现但属于不同 div 的同名 songPart
+    pub block_index: Option<u32>,
+}
+
+impl LyricLine {
+    /// 向主歌词行追加一个音节
+    pub fn push_word(&mut self, syllable: Syllable) {
+        self.words.get_or_insert_with(Vec::new).push(syllable);
+    }
+
+    /// 向主歌词行追加一条翻译内容
+    pub fn push_translation(&mut self, content: SubLyricContent) {
+        self.translations.get_or_insert_with(Vec::new).push(content);
+    }
+
+    /// 向主歌词行追加一条音译内容
+    pub fn push_romanization(&mut self, content: SubLyricContent) {
+        self.romanizations
+            .get_or_insert_with(Vec::new)
+            .push(content);
+    }
+
+    /// 获取或初始化 `BackgroundVocal` 的可变引用
+    pub fn bg_vocal_mut(&mut self) -> &mut BackgroundVocal {
+        self.background_vocal
+            .get_or_insert_with(BackgroundVocal::default)
+    }
+}
+
+impl BackgroundVocal {
+    /// 向背景人声追加一个音节
+    pub fn push_word(&mut self, syllable: Syllable) {
+        self.words.get_or_insert_with(Vec::new).push(syllable);
+    }
+
+    /// 向背景人声追加一条翻译内容
+    pub fn push_translation(&mut self, content: SubLyricContent) {
+        self.translations.get_or_insert_with(Vec::new).push(content);
+    }
+
+    /// 向背景人声追加一条音译内容
+    pub fn push_romanization(&mut self, content: SubLyricContent) {
+        self.romanizations
+            .get_or_insert_with(Vec::new)
+            .push(content);
+    }
+}
+
+impl Syllable {
+    /// 向音节追加一个 Ruby 注音音节
+    pub fn push_ruby(&mut self, tag: RubyTag) {
+        self.ruby.get_or_insert_with(Vec::new).push(tag);
+    }
+}
+
+/// Ruby 标注的单个注音音节
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct RubyTag {
+    /// 注音文本内容
+    pub text: String,
+
+    /// 该注音的开始时间，单位毫秒
+    pub start_time: u32,
+
+    /// 该注音的结束时间，单位毫秒
+    pub end_time: u32,
+}
+
+/// 一个歌词音节
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct Syllable {
+    ///  该音节的内容
+    /// - 如果是普通音节，为常规歌词文本
+    /// - 如果是 Ruby 标注，这里对应 ruby 的基文本，通常为汉字
+    pub text: String,
+
+    /// 该音节的开始时间，单位毫秒
+    /// - 如果是 Ruby 标注，此值为第一个 [`RubyTag`] 的 startTime
+    pub start_time: u32,
+
+    /// 该音节的结束时间，单位毫秒
+    /// - 如果是 Ruby 标注，此值为最后一个 [`RubyTag`] 的 endTime
+    pub end_time: u32,
+
+    /// 该音节后面是否应该跟着一个空格
+    ///
+    /// 注意必须根据此标志在歌词后面添加空格，text 中不应包含空格
+    pub ends_with_space: Option<bool>,
+
+    /// Ruby 标注信息
+    ///
+    /// 如果存在此属性，说明该音节是一个 Ruby 容器
+    pub ruby: Option<Vec<RubyTag>>,
+
+    /// 单词内容是否包含冒犯性的不雅用语
+    pub obscene: Option<bool>,
+
+    /// 单词的空拍数量，一般只用于方便歌词打轴
+    pub empty_beat: Option<u32>,
+}
+
+/// 演唱者信息结构
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct Agent {
+    /// 演唱者的 ID
+    ///
+    /// 如果是 AMLL 的 TTML，只有 v1 和 v2 分别指代非对唱和对唱。
+    /// 如果是 Apple Music 的 TTML，还会出现 v3、v4 等指代每个演唱者，以及 v1000 用于指代合唱。
+    pub id: String,
+
+    /// 演唱者名称
+    pub name: Option<String>,
+
+    /// 演唱者类型
+    ///
+    /// 通常为 "person"、"group"、"other"，也有可能是其他字符串
+    pub type_: Option<String>,
+}
+
+/// 元数据中的各个平台 ID
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum PlatformId {
+    /// 网易云音乐 ID
+    NcmMusicId,
+
+    /// QQ 音乐 ID
+    QqMusicId,
+
+    /// Spotify ID
+    SpotifyId,
+
+    /// Apple Music ID
+    AppleMusicId,
+}
+
+/// TTML 歌词的元数据内容
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct TTMLMetadata {
+    /// 歌词主语言代码 (BCP-47)
+    pub language: Option<String>,
+
+    /// 计时模式
+    pub timing_mode: Option<String>,
+
+    /// 歌曲创作者列表
+    pub songwriters: Option<Vec<String>>,
+
+    /// 歌曲标题列表
+    pub title: Option<Vec<String>>,
+
+    /// 艺术家名称列表
+    pub artist: Option<Vec<String>>,
+
+    /// 专辑名称列表
+    pub album: Option<Vec<String>>,
+
+    /// ISRC 号码列表
+    pub isrc: Option<Vec<String>>,
+
+    /// 歌词作者 GitHub 数字 ID 列表
+    pub author_ids: Option<Vec<String>>,
+
+    /// 歌词作者 GitHub 用户名列表
+    pub author_names: Option<Vec<String>>,
+
+    /// 演唱者映射表
+    pub agents: Option<IndexMap<String, Agent>>,
+
+    /// 平台关联 ID
+    pub platform_ids: Option<IndexMap<PlatformId, Vec<String>>>,
+
+    /// 其他原始的自定义属性
+    pub raw_properties: Option<IndexMap<String, Vec<String>>>,
+}
+
+impl TTMLMetadata {
+    pub fn push_title(&mut self, title: String) {
+        self.title.get_or_insert_with(Vec::new).push(title);
+    }
+
+    pub fn push_artist(&mut self, artist: String) {
+        self.artist.get_or_insert_with(Vec::new).push(artist);
+    }
+
+    pub fn push_album(&mut self, album: String) {
+        self.album.get_or_insert_with(Vec::new).push(album);
+    }
+
+    pub fn push_songwriter(&mut self, songwriter: String) {
+        self.songwriters
+            .get_or_insert_with(Vec::new)
+            .push(songwriter);
+    }
+
+    pub fn push_isrc(&mut self, isrc: String) {
+        self.isrc.get_or_insert_with(Vec::new).push(isrc);
+    }
+
+    pub fn push_author_id(&mut self, author_id: String) {
+        self.author_ids.get_or_insert_with(Vec::new).push(author_id);
+    }
+
+    pub fn push_author_name(&mut self, author_name: String) {
+        self.author_names
+            .get_or_insert_with(Vec::new)
+            .push(author_name);
+    }
+
+    pub fn insert_agent(&mut self, agent: Agent) {
+        self.agents
+            .get_or_insert_with(IndexMap::new)
+            .insert(agent.id.clone(), agent);
+    }
+
+    pub fn push_platform_id(&mut self, platform: PlatformId, id: String) {
+        self.platform_ids
+            .get_or_insert_with(IndexMap::new)
+            .entry(platform)
+            .or_default()
+            .push(id);
+    }
+
+    pub fn push_raw_property(&mut self, key: String, value: String) {
+        self.raw_properties
+            .get_or_insert_with(IndexMap::new)
+            .entry(key)
+            .or_default()
+            .push(value);
+    }
+}
+
+/// 解析器返回的结果对象
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+pub struct TTMLResult {
+    /// TTML 歌词的元数据内容
+    pub metadata: TTMLMetadata,
+
+    /// 所有的歌词行
+    pub lines: Vec<LyricLine>,
+}

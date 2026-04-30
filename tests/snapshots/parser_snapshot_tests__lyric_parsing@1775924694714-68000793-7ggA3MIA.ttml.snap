@@ -1,0 +1,6825 @@
+---
+source: tests/parser_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
+---
+{
+	"metadata": {
+		"language": "zh-Hans",
+		"timing_mode": "Word",
+		"songwriters": [
+			"熊子"
+		],
+		"title": [
+			"一颗方糖悬滞的时间 (feat. 阿兰·达瓦卓玛)",
+			"一颗方糖悬滞的时间",
+			"《绝区零》朱鸢EP",
+			"《绝区零》朱鸢角色曲",
+			"一顆方糖懸滯的時間 (feat. 阿蘭·達瓦卓瑪)",
+			"一顆方糖懸滯的時間",
+			"角砂糖が沈むまで (feat. 阿兰·达瓦卓玛)",
+			"角砂糖が沈むまで",
+			"각설탕 하나가 떠 있는 시간 (feat. 阿兰·达瓦卓玛)",
+			"각설탕 하나가 떠 있는 시간",
+			"As the sugar cube floats, fleeting in time (feat. 阿兰·达瓦卓玛)",
+			"As the sugar cube floats, fleeting in time"
+		],
+		"artist": [
+			"HOYO-MiX",
+			"三Z-STUDIO",
+			"Sān-Z",
+			"阿兰",
+			"阿兰·达瓦卓玛",
+			"ALAN",
+			"Alan Dawa Dolma",
+			"アラン·ダワジュオマ"
+		],
+		"album": [
+			"绝区零-一颗方糖悬滞的时间",
+			"一颗方糖悬滞的时间 - Single",
+			"一顆方糖懸滯的時間 - Single",
+			"一顆方糖懸滯的時間",
+			"角砂糖が沈むまで (feat. 阿兰·达瓦卓玛) - Single",
+			"角砂糖が沈むまで",
+			"각설탕 하나가 떠 있는 시간 - Single",
+			"각설탕 하나가 떠 있는 시간",
+			"As the sugar cube floats, fleeting in time - Single",
+			"As the sugar cube floats, fleeting in time"
+		],
+		"isrc": [
+			"DGA072492989",
+			"DGA082412140",
+			"DGA082421563",
+			"DGA082410574",
+			"DGA082410599"
+		],
+		"author_ids": [
+			"68000793",
+			"50747104"
+		],
+		"author_names": [
+			"ranhengzhang",
+			"Xionghaizi001"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type_": "person"
+			}
+		},
+		"platform_ids": {
+			"ncm_music_id": [
+				"2612750275"
+			],
+			"qq_music_id": [
+				"002TFWxI3SlNwx",
+				"503998396"
+			],
+			"spotify_id": [
+				"66izH92bA85wuJFFgJ0HRy",
+				"4o9pXElZZFjQBlhSWTNBQC",
+				"2excpOrcz3wOViAA3cBMpU",
+				"52GlYDlUFY2v9NfA1kGyEQ"
+			],
+			"apple_music_id": [
+				"1758391074",
+				"1758774905",
+				"1759153566",
+				"1758774295",
+				"1758784690"
+			]
+		},
+		"raw_properties": {
+			"Arranger": [
+				"杨武韬"
+			],
+			"Composer": [
+				"杨武韬"
+			],
+			"Drums": [
+				"眭逸凡"
+			],
+			"Editing Engineer": [
+				"徐威"
+			],
+			"Guitar": [
+				"雷十一"
+			],
+			"Lyrics": [
+				"熊子"
+			],
+			"Mixing Engineer": [
+				"黄钦胜"
+			],
+			"Producer": [
+				"杨武韬"
+			],
+			"Recording Engineer": [
+				"袁雄宇"
+			],
+			"Vocals": [
+				"阿兰"
+			]
+		}
+	},
+	"lines": [
+		{
+			"text": "窗外的春天",
+			"start_time": 10640,
+			"end_time": 13820,
+			"words": [
+				{
+					"text": "窗",
+					"start_time": 10640,
+					"end_time": 11300
+				},
+				{
+					"text": "外",
+					"start_time": 11300,
+					"end_time": 11670
+				},
+				{
+					"text": "的",
+					"start_time": 11670,
+					"end_time": 12020
+				},
+				{
+					"text": "春",
+					"start_time": 12250,
+					"end_time": 12860
+				},
+				{
+					"text": "天",
+					"start_time": 12860,
+					"end_time": 13820
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "erblühen die Frühlingsblumen gerade außerhalb,"
+				},
+				{
+					"language": "en",
+					"text": "The springtime blooming just outside"
+				},
+				{
+					"language": "es",
+					"text": "El aire primaveral sopla fuera de la habitación"
+				},
+				{
+					"language": "fr",
+					"text": "Le printemps fleurit par la fenêtre"
+				},
+				{
+					"language": "id",
+					"text": "Musim semi di luar jendela"
+				},
+				{
+					"language": "ja",
+					"text": "窓の外は春"
+				},
+				{
+					"language": "ko",
+					"text": "창밖의 봄날"
+				},
+				{
+					"language": "pt",
+					"text": "A primavera florescendo do lado de fora"
+				},
+				{
+					"language": "ru",
+					"text": "За окном расцветает весна,"
+				},
+				{
+					"language": "th",
+					"text": "ฤดูใบไม้ผลิกำลังเบ่งบานอยู่ด้านนอก"
+				},
+				{
+					"language": "vi",
+					"text": "Mùa xuân nở rộ ngoài ô cửa"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "窗外的春天",
+					"words": [
+						{
+							"text": "窗",
+							"start_time": 10640,
+							"end_time": 11300
+						},
+						{
+							"text": "外",
+							"start_time": 11300,
+							"end_time": 11670
+						},
+						{
+							"text": "的",
+							"start_time": 11670,
+							"end_time": 12020
+						},
+						{
+							"text": "春",
+							"start_time": 12250,
+							"end_time": 12860
+						},
+						{
+							"text": "天",
+							"start_time": 12860,
+							"end_time": 13820
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "chuāng wài de chūn tiān",
+					"words": [
+						{
+							"text": "chuāng",
+							"start_time": 10640,
+							"end_time": 11300,
+							"ends_with_space": true
+						},
+						{
+							"text": "wài",
+							"start_time": 11300,
+							"end_time": 11670,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 11670,
+							"end_time": 12020,
+							"ends_with_space": true
+						},
+						{
+							"text": "chūn",
+							"start_time": 12250,
+							"end_time": 12860,
+							"ends_with_space": true
+						},
+						{
+							"text": "tiān",
+							"start_time": 12860,
+							"end_time": 13820
+						}
+					]
+				}
+			],
+			"id": "L1",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 1
+		},
+		{
+			"text": "停在枝头的麻雀",
+			"start_time": 15080,
+			"end_time": 18570,
+			"words": [
+				{
+					"text": "停",
+					"start_time": 15080,
+					"end_time": 15400
+				},
+				{
+					"text": "在",
+					"start_time": 15400,
+					"end_time": 15720
+				},
+				{
+					"text": "枝",
+					"start_time": 15720,
+					"end_time": 16200
+				},
+				{
+					"text": "头",
+					"start_time": 16310,
+					"end_time": 16680
+				},
+				{
+					"text": "的",
+					"start_time": 16680,
+					"end_time": 17150
+				},
+				{
+					"text": "麻",
+					"start_time": 17310,
+					"end_time": 17790
+				},
+				{
+					"text": "雀",
+					"start_time": 17790,
+					"end_time": 18570
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "und ein Spatz sitzt sanft auf einem Zweig."
+				},
+				{
+					"language": "en",
+					"text": "A sparrow perched on a branch"
+				},
+				{
+					"language": "es",
+					"text": "Sobre la rama descansa un gorrión"
+				},
+				{
+					"language": "fr",
+					"text": "Un moineau perché sur une branche"
+				},
+				{
+					"language": "id",
+					"text": "Burung pipit bertengger di dahan"
+				},
+				{
+					"language": "ja",
+					"text": "枝にすずめがとまり"
+				},
+				{
+					"language": "ko",
+					"text": "가지에 머무는 참새"
+				},
+				{
+					"language": "pt",
+					"text": "Um pardal pousado suavemente em um galho"
+				},
+				{
+					"language": "ru",
+					"text": "воробьи присели на ветку."
+				},
+				{
+					"language": "th",
+					"text": "นกกระจอกเกาะอยู่บนกิ่งไม้"
+				},
+				{
+					"language": "vi",
+					"text": "Chim sẻ đậu trên cành"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "停在枝頭的麻雀",
+					"words": [
+						{
+							"text": "停",
+							"start_time": 15080,
+							"end_time": 15400
+						},
+						{
+							"text": "在",
+							"start_time": 15400,
+							"end_time": 15720
+						},
+						{
+							"text": "枝",
+							"start_time": 15720,
+							"end_time": 16200
+						},
+						{
+							"text": "頭",
+							"start_time": 16310,
+							"end_time": 16680
+						},
+						{
+							"text": "的",
+							"start_time": 16680,
+							"end_time": 17150
+						},
+						{
+							"text": "麻",
+							"start_time": 17310,
+							"end_time": 17790
+						},
+						{
+							"text": "雀",
+							"start_time": 17790,
+							"end_time": 18570
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tíng zài zhī tóu de má què",
+					"words": [
+						{
+							"text": "tíng",
+							"start_time": 15080,
+							"end_time": 15400,
+							"ends_with_space": true
+						},
+						{
+							"text": "zài",
+							"start_time": 15400,
+							"end_time": 15720,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhī",
+							"start_time": 15720,
+							"end_time": 16200,
+							"ends_with_space": true
+						},
+						{
+							"text": "tóu",
+							"start_time": 16310,
+							"end_time": 16680,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 16680,
+							"end_time": 17150,
+							"ends_with_space": true
+						},
+						{
+							"text": "má",
+							"start_time": 17310,
+							"end_time": 17790,
+							"ends_with_space": true
+						},
+						{
+							"text": "què",
+							"start_time": 17790,
+							"end_time": 18570
+						}
+					]
+				}
+			],
+			"id": "L2",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 1
+		},
+		{
+			"text": "初次察觉的旋律",
+			"start_time": 20060,
+			"end_time": 23320,
+			"words": [
+				{
+					"text": "初",
+					"start_time": 20060,
+					"end_time": 20360
+				},
+				{
+					"text": "次",
+					"start_time": 20360,
+					"end_time": 20650
+				},
+				{
+					"text": "察",
+					"start_time": 20650,
+					"end_time": 21240
+				},
+				{
+					"text": "觉",
+					"start_time": 21240,
+					"end_time": 21710
+				},
+				{
+					"text": "的",
+					"start_time": 21710,
+					"end_time": 22000
+				},
+				{
+					"text": "旋",
+					"start_time": 22110,
+					"end_time": 23010
+				},
+				{
+					"text": "律",
+					"start_time": 23010,
+					"end_time": 23320
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Melodie, zum ersten Mal wahrgenommen,"
+				},
+				{
+					"language": "en",
+					"text": "A melody heard for the first time"
+				},
+				{
+					"language": "es",
+					"text": "Se escucha por primera vez una canción"
+				},
+				{
+					"language": "fr",
+					"text": "Une mélodie perçue pour la première fois"
+				},
+				{
+					"language": "id",
+					"text": "Melodi yang kudengar untuk pertama kalinya"
+				},
+				{
+					"language": "ja",
+					"text": "聞き覚えのない旋律が"
+				},
+				{
+					"language": "ko",
+					"text": "처음 느껴본 선율이"
+				},
+				{
+					"language": "pt",
+					"text": "Uma melodia que se escuta pela primeira vez"
+				},
+				{
+					"language": "ru",
+					"text": "Эту мелодию слышу впервые,"
+				},
+				{
+					"language": "th",
+					"text": "ท่วงทำนองที่ได้ยินเป็นครั้งแรก"
+				},
+				{
+					"language": "vi",
+					"text": "Giai điệu lần đầu tiên được nghe"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "初次察覺的旋律",
+					"words": [
+						{
+							"text": "初",
+							"start_time": 20060,
+							"end_time": 20360
+						},
+						{
+							"text": "次",
+							"start_time": 20360,
+							"end_time": 20650
+						},
+						{
+							"text": "察",
+							"start_time": 20650,
+							"end_time": 21240
+						},
+						{
+							"text": "覺",
+							"start_time": 21240,
+							"end_time": 21710
+						},
+						{
+							"text": "的",
+							"start_time": 21710,
+							"end_time": 22000
+						},
+						{
+							"text": "旋",
+							"start_time": 22110,
+							"end_time": 23010
+						},
+						{
+							"text": "律",
+							"start_time": 23010,
+							"end_time": 23320
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "chū cì chá jué de xuán lǜ",
+					"words": [
+						{
+							"text": "chū",
+							"start_time": 20060,
+							"end_time": 20360,
+							"ends_with_space": true
+						},
+						{
+							"text": "cì",
+							"start_time": 20360,
+							"end_time": 20650,
+							"ends_with_space": true
+						},
+						{
+							"text": "chá",
+							"start_time": 20650,
+							"end_time": 21240,
+							"ends_with_space": true
+						},
+						{
+							"text": "jué",
+							"start_time": 21240,
+							"end_time": 21710,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 21710,
+							"end_time": 22000,
+							"ends_with_space": true
+						},
+						{
+							"text": "xuán",
+							"start_time": 22110,
+							"end_time": 23010,
+							"ends_with_space": true
+						},
+						{
+							"text": "lǜ",
+							"start_time": 23010,
+							"end_time": 23320
+						}
+					]
+				}
+			],
+			"id": "L3",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 1
+		},
+		{
+			"text": "不经意拂过心尖",
+			"start_time": 24790,
+			"end_time": 28550,
+			"words": [
+				{
+					"text": "不",
+					"start_time": 24790,
+					"end_time": 25340
+				},
+				{
+					"text": "经",
+					"start_time": 25340,
+					"end_time": 25740
+				},
+				{
+					"text": "意",
+					"start_time": 25740,
+					"end_time": 26240
+				},
+				{
+					"text": "拂",
+					"start_time": 26400,
+					"end_time": 26670
+				},
+				{
+					"text": "过",
+					"start_time": 26670,
+					"end_time": 27020
+				},
+				{
+					"text": "心",
+					"start_time": 27510,
+					"end_time": 27980
+				},
+				{
+					"text": "尖",
+					"start_time": 27980,
+					"end_time": 28550
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "geht mir unerwartet zu Herzen."
+				},
+				{
+					"language": "en",
+					"text": "Plucks at my heartstrings unforeseen"
+				},
+				{
+					"language": "es",
+					"text": "Siento caricias en el corazón"
+				},
+				{
+					"language": "fr",
+					"text": "A soudain effleuré mon cœur"
+				},
+				{
+					"language": "id",
+					"text": "Tanpa sadar telah menyentuh hati"
+				},
+				{
+					"language": "ja",
+					"text": "ふいに心を撫でる"
+				},
+				{
+					"language": "ko",
+					"text": "무심결에 마음을 스쳐"
+				},
+				{
+					"language": "pt",
+					"text": "Atrai meu coração inesperadamente"
+				},
+				{
+					"language": "ru",
+					"text": "она вдруг трогает меня за сердце."
+				},
+				{
+					"language": "th",
+					"text": "ดึงดูดใจฉันอย่างไม่คาดฝัน"
+				},
+				{
+					"language": "vi",
+					"text": "Vô tình chạm đến trái tim"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "不經意拂過心尖",
+					"words": [
+						{
+							"text": "不",
+							"start_time": 24790,
+							"end_time": 25340
+						},
+						{
+							"text": "經",
+							"start_time": 25340,
+							"end_time": 25740
+						},
+						{
+							"text": "意",
+							"start_time": 25740,
+							"end_time": 26240
+						},
+						{
+							"text": "拂",
+							"start_time": 26400,
+							"end_time": 26670
+						},
+						{
+							"text": "過",
+							"start_time": 26670,
+							"end_time": 27020
+						},
+						{
+							"text": "心",
+							"start_time": 27510,
+							"end_time": 27980
+						},
+						{
+							"text": "尖",
+							"start_time": 27980,
+							"end_time": 28550
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "bù jīng yì fú guò xīn jiān",
+					"words": [
+						{
+							"text": "bù",
+							"start_time": 24790,
+							"end_time": 25340,
+							"ends_with_space": true
+						},
+						{
+							"text": "jīng",
+							"start_time": 25340,
+							"end_time": 25740,
+							"ends_with_space": true
+						},
+						{
+							"text": "yì",
+							"start_time": 25740,
+							"end_time": 26240,
+							"ends_with_space": true
+						},
+						{
+							"text": "fú",
+							"start_time": 26400,
+							"end_time": 26670,
+							"ends_with_space": true
+						},
+						{
+							"text": "guò",
+							"start_time": 26670,
+							"end_time": 27020,
+							"ends_with_space": true
+						},
+						{
+							"text": "xīn",
+							"start_time": 27510,
+							"end_time": 27980,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 27980,
+							"end_time": 28550
+						}
+					]
+				}
+			],
+			"id": "L4",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 1
+		},
+		{
+			"text": "点一支香签",
+			"start_time": 30760,
+			"end_time": 34270,
+			"words": [
+				{
+					"text": "点",
+					"start_time": 30760,
+					"end_time": 31320
+				},
+				{
+					"text": "一",
+					"start_time": 31320,
+					"end_time": 31650
+				},
+				{
+					"text": "支",
+					"start_time": 31650,
+					"end_time": 32090
+				},
+				{
+					"text": "香",
+					"start_time": 32090,
+					"end_time": 32830
+				},
+				{
+					"text": "签",
+					"start_time": 32830,
+					"end_time": 34270
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Das Räucherstäbchen verbrennt."
+				},
+				{
+					"language": "en",
+					"text": "Incense burning"
+				},
+				{
+					"language": "es",
+					"text": "Una varilla de incienso que arde con pasión"
+				},
+				{
+					"language": "fr",
+					"text": "L'encens brûle"
+				},
+				{
+					"language": "id",
+					"text": "Menyalakan pewangi"
+				},
+				{
+					"language": "ja",
+					"text": "お香に火をつけ"
+				},
+				{
+					"language": "ko",
+					"text": "향을 피우고"
+				},
+				{
+					"language": "pt",
+					"text": "O incenso queimando"
+				},
+				{
+					"language": "ru",
+					"text": "Зажгу свечу,"
+				},
+				{
+					"language": "th",
+					"text": "จุดธูปหอม"
+				},
+				{
+					"language": "vi",
+					"text": "Đốt ngọn nến thơm"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "點一支香籤",
+					"words": [
+						{
+							"text": "點",
+							"start_time": 30760,
+							"end_time": 31320
+						},
+						{
+							"text": "一",
+							"start_time": 31320,
+							"end_time": 31650
+						},
+						{
+							"text": "支",
+							"start_time": 31650,
+							"end_time": 32090
+						},
+						{
+							"text": "香",
+							"start_time": 32090,
+							"end_time": 32830
+						},
+						{
+							"text": "籤",
+							"start_time": 32830,
+							"end_time": 34270
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "diǎn yì zhī xiāng qiān",
+					"words": [
+						{
+							"text": "diǎn",
+							"start_time": 30760,
+							"end_time": 31320,
+							"ends_with_space": true
+						},
+						{
+							"text": "yì",
+							"start_time": 31320,
+							"end_time": 31650,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhī",
+							"start_time": 31650,
+							"end_time": 32090,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiāng",
+							"start_time": 32090,
+							"end_time": 32830,
+							"ends_with_space": true
+						},
+						{
+							"text": "qiān",
+							"start_time": 32830,
+							"end_time": 34270
+						}
+					]
+				}
+			],
+			"id": "L5",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 2
+		},
+		{
+			"text": "放下系紧的发辫",
+			"start_time": 35120,
+			"end_time": 38430,
+			"words": [
+				{
+					"text": "放",
+					"start_time": 35120,
+					"end_time": 35330
+				},
+				{
+					"text": "下",
+					"start_time": 35330,
+					"end_time": 35700
+				},
+				{
+					"text": "系",
+					"start_time": 35700,
+					"end_time": 36270
+				},
+				{
+					"text": "紧",
+					"start_time": 36270,
+					"end_time": 36680
+				},
+				{
+					"text": "的",
+					"start_time": 36680,
+					"end_time": 37020
+				},
+				{
+					"text": "发",
+					"start_time": 37310,
+					"end_time": 37790
+				},
+				{
+					"text": "辫",
+					"start_time": 37910,
+					"end_time": 38430
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ich lasse meine Haare herunter,"
+				},
+				{
+					"language": "en",
+					"text": "I let down my hair"
+				},
+				{
+					"language": "es",
+					"text": "El cabello suelto sin restricción"
+				},
+				{
+					"language": "fr",
+					"text": "J'ai détaché mes cheveux"
+				},
+				{
+					"language": "id",
+					"text": "Aku menggerai rambutku"
+				},
+				{
+					"language": "ja",
+					"text": "きつく結んだ髪をほどく"
+				},
+				{
+					"language": "ko",
+					"text": "꽉 묶었던 머리를 풀어"
+				},
+				{
+					"language": "pt",
+					"text": "Soltei meu cabelo"
+				},
+				{
+					"language": "ru",
+					"text": "распущу свои косы."
+				},
+				{
+					"language": "th",
+					"text": "ฉันปล่อยผมลง"
+				},
+				{
+					"language": "vi",
+					"text": "Buông xõa mái tóc"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "放下繫緊的髮辮",
+					"words": [
+						{
+							"text": "放",
+							"start_time": 35120,
+							"end_time": 35330
+						},
+						{
+							"text": "下",
+							"start_time": 35330,
+							"end_time": 35700
+						},
+						{
+							"text": "繫",
+							"start_time": 35700,
+							"end_time": 36270
+						},
+						{
+							"text": "緊",
+							"start_time": 36270,
+							"end_time": 36680
+						},
+						{
+							"text": "的",
+							"start_time": 36680,
+							"end_time": 37020
+						},
+						{
+							"text": "髮",
+							"start_time": 37310,
+							"end_time": 37790
+						},
+						{
+							"text": "辮",
+							"start_time": 37910,
+							"end_time": 38430
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fàng xià jì jǐn de fà biàn",
+					"words": [
+						{
+							"text": "fàng",
+							"start_time": 35120,
+							"end_time": 35330,
+							"ends_with_space": true
+						},
+						{
+							"text": "xià",
+							"start_time": 35330,
+							"end_time": 35700,
+							"ends_with_space": true
+						},
+						{
+							"text": "jì",
+							"start_time": 35700,
+							"end_time": 36270,
+							"ends_with_space": true
+						},
+						{
+							"text": "jǐn",
+							"start_time": 36270,
+							"end_time": 36680,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 36680,
+							"end_time": 37020,
+							"ends_with_space": true
+						},
+						{
+							"text": "fà",
+							"start_time": 37310,
+							"end_time": 37790,
+							"ends_with_space": true
+						},
+						{
+							"text": "biàn",
+							"start_time": 37910,
+							"end_time": 38430
+						}
+					]
+				}
+			],
+			"id": "L6",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 2
+		},
+		{
+			"text": "看陌生柔软光线",
+			"start_time": 40110,
+			"end_time": 43460,
+			"words": [
+				{
+					"text": "看",
+					"start_time": 40110,
+					"end_time": 40430
+				},
+				{
+					"text": "陌",
+					"start_time": 40430,
+					"end_time": 40650
+				},
+				{
+					"text": "生",
+					"start_time": 40650,
+					"end_time": 41330
+				},
+				{
+					"text": "柔",
+					"start_time": 41330,
+					"end_time": 41690
+				},
+				{
+					"text": "软",
+					"start_time": 41690,
+					"end_time": 42170
+				},
+				{
+					"text": "光",
+					"start_time": 42330,
+					"end_time": 42850
+				},
+				{
+					"text": "线",
+					"start_time": 42850,
+					"end_time": 43460
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "und bestaune das unbekannte weiche Licht,"
+				},
+				{
+					"language": "en",
+					"text": "Gazing at the unfamiliar soft light"
+				},
+				{
+					"language": "es",
+					"text": "La luz tenue y desconocida ilumina mi visión"
+				},
+				{
+					"language": "fr",
+					"text": "J'observe la lumière tamisée qui m'est inconnue"
+				},
+				{
+					"language": "id",
+					"text": "Melihat cahaya lembut yang tidak familier"
+				},
+				{
+					"language": "ja",
+					"text": "見知らぬ光が柔らかく"
+				},
+				{
+					"language": "ko",
+					"text": "낯선 부드러운 빛을 바라봐"
+				},
+				{
+					"language": "pt",
+					"text": "Contemplando a luz suave e desconhecida"
+				},
+				{
+					"language": "ru",
+					"text": "Смотрю я на свет, что так мягко блестит."
+				},
+				{
+					"language": "th",
+					"text": "จ้องมองแสงอันนุ่มนวลที่ไม่แปลกตา"
+				},
+				{
+					"language": "vi",
+					"text": "Nhìn ánh sáng dịu nhẹ xa lạ"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "看陌生柔軟光線",
+					"words": [
+						{
+							"text": "看",
+							"start_time": 40110,
+							"end_time": 40430
+						},
+						{
+							"text": "陌",
+							"start_time": 40430,
+							"end_time": 40650
+						},
+						{
+							"text": "生",
+							"start_time": 40650,
+							"end_time": 41330
+						},
+						{
+							"text": "柔",
+							"start_time": 41330,
+							"end_time": 41690
+						},
+						{
+							"text": "軟",
+							"start_time": 41690,
+							"end_time": 42170
+						},
+						{
+							"text": "光",
+							"start_time": 42330,
+							"end_time": 42850
+						},
+						{
+							"text": "線",
+							"start_time": 42850,
+							"end_time": 43460
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "kàn mò shēng róu ruǎn guāng xiàn",
+					"words": [
+						{
+							"text": "kàn",
+							"start_time": 40110,
+							"end_time": 40430,
+							"ends_with_space": true
+						},
+						{
+							"text": "mò",
+							"start_time": 40430,
+							"end_time": 40650,
+							"ends_with_space": true
+						},
+						{
+							"text": "shēng",
+							"start_time": 40650,
+							"end_time": 41330,
+							"ends_with_space": true
+						},
+						{
+							"text": "róu",
+							"start_time": 41330,
+							"end_time": 41690,
+							"ends_with_space": true
+						},
+						{
+							"text": "ruǎn",
+							"start_time": 41690,
+							"end_time": 42170,
+							"ends_with_space": true
+						},
+						{
+							"text": "guāng",
+							"start_time": 42330,
+							"end_time": 42850,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiàn",
+							"start_time": 42850,
+							"end_time": 43460
+						}
+					]
+				}
+			],
+			"id": "L7",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 2
+		},
+		{
+			"text": "照平整如纸的晨间",
+			"start_time": 44150,
+			"end_time": 48840,
+			"words": [
+				{
+					"text": "照",
+					"start_time": 44150,
+					"end_time": 44760
+				},
+				{
+					"text": "平",
+					"start_time": 44760,
+					"end_time": 45100
+				},
+				{
+					"text": "整",
+					"start_time": 45410,
+					"end_time": 45700
+				},
+				{
+					"text": "如",
+					"start_time": 45700,
+					"end_time": 46280
+				},
+				{
+					"text": "纸",
+					"start_time": 46280,
+					"end_time": 46690
+				},
+				{
+					"text": "的",
+					"start_time": 46690,
+					"end_time": 47090
+				},
+				{
+					"text": "晨",
+					"start_time": 47570,
+					"end_time": 47910
+				},
+				{
+					"text": "间",
+					"start_time": 47910,
+					"end_time": 48840
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "das an einem Morgen glatt wie Papier erstrahlt."
+				},
+				{
+					"language": "en",
+					"text": "That shines upon on a morning paper-flat"
+				},
+				{
+					"language": "es",
+					"text": "Un amanecer despejado"
+				},
+				{
+					"language": "fr",
+					"text": "Qui illumine un matin aussi plat que du papier"
+				},
+				{
+					"language": "id",
+					"text": "Menyinari pagi yang datar bagai kertas"
+				},
+				{
+					"language": "ja",
+					"text": "昼を照らす まっ平な紙のよう"
+				},
+				{
+					"language": "ko",
+					"text": "종이처럼 평평한 낮을 비춰"
+				},
+				{
+					"language": "pt",
+					"text": "Que brilha sobre um jornal matinal"
+				},
+				{
+					"language": "ru",
+					"text": "Освещается утро, словно белый лист."
+				},
+				{
+					"language": "th",
+					"text": "ส่องสว่างยามเช้าที่ราบเรียบราวกับกระดาษ"
+				},
+				{
+					"language": "vi",
+					"text": "Soi sáng buổi sáng bình yên"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "照平整如紙的晨間",
+					"words": [
+						{
+							"text": "照",
+							"start_time": 44150,
+							"end_time": 44760
+						},
+						{
+							"text": "平",
+							"start_time": 44760,
+							"end_time": 45100
+						},
+						{
+							"text": "整",
+							"start_time": 45410,
+							"end_time": 45700
+						},
+						{
+							"text": "如",
+							"start_time": 45700,
+							"end_time": 46280
+						},
+						{
+							"text": "紙",
+							"start_time": 46280,
+							"end_time": 46690
+						},
+						{
+							"text": "的",
+							"start_time": 46690,
+							"end_time": 47090
+						},
+						{
+							"text": "晨",
+							"start_time": 47570,
+							"end_time": 47910
+						},
+						{
+							"text": "間",
+							"start_time": 47910,
+							"end_time": 48840
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "zhào píng zhěng rú zhǐ de chén jiān",
+					"words": [
+						{
+							"text": "zhào",
+							"start_time": 44150,
+							"end_time": 44760,
+							"ends_with_space": true
+						},
+						{
+							"text": "píng",
+							"start_time": 44760,
+							"end_time": 45100,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhěng",
+							"start_time": 45410,
+							"end_time": 45700,
+							"ends_with_space": true
+						},
+						{
+							"text": "rú",
+							"start_time": 45700,
+							"end_time": 46280,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhǐ",
+							"start_time": 46280,
+							"end_time": 46690,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 46690,
+							"end_time": 47090,
+							"ends_with_space": true
+						},
+						{
+							"text": "chén",
+							"start_time": 47570,
+							"end_time": 47910,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 47910,
+							"end_time": 48840
+						}
+					]
+				}
+			],
+			"id": "L8",
+			"agent_id": "v1",
+			"song_part": "Verse",
+			"block_index": 2
+		},
+		{
+			"text": "追云影的羊群",
+			"start_time": 49430,
+			"end_time": 53780,
+			"words": [
+				{
+					"text": "追",
+					"start_time": 49430,
+					"end_time": 50020
+				},
+				{
+					"text": "云",
+					"start_time": 50020,
+					"end_time": 50400
+				},
+				{
+					"text": "影",
+					"start_time": 50400,
+					"end_time": 51410
+				},
+				{
+					"text": "的",
+					"start_time": 52290,
+					"end_time": 52600
+				},
+				{
+					"text": "羊",
+					"start_time": 52600,
+					"end_time": 52870
+				},
+				{
+					"text": "群",
+					"start_time": 52870,
+					"end_time": 53780
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Schafherde jagt hinter den Schatten der Wolken hinterher."
+				},
+				{
+					"language": "en",
+					"text": "A flock of sheep chasing shadows cast by clouds"
+				},
+				{
+					"language": "es",
+					"text": "Un rebaño de ovejas que persigue las nubes"
+				},
+				{
+					"language": "fr",
+					"text": "Des moutons chassent l'ombre des nuages"
+				},
+				{
+					"language": "id",
+					"text": "Sekawanan domba mengejar bayangan awan"
+				},
+				{
+					"language": "ja",
+					"text": "雲の影を追う羊たち"
+				},
+				{
+					"language": "ko",
+					"text": "구름 그림자를 쫓는 양 떼"
+				},
+				{
+					"language": "pt",
+					"text": "Um rebanho de ovelhas perseguindo as sombras projetadas pelas nuvens"
+				},
+				{
+					"language": "ru",
+					"text": "Барашки в небе гонят облака."
+				},
+				{
+					"language": "th",
+					"text": "ฝูงแกะที่วิ่งไล่ตามเงาเมฆ"
+				},
+				{
+					"language": "vi",
+					"text": "Đàn cừu đuổi theo bóng mây"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "追雲影的羊群",
+					"words": [
+						{
+							"text": "追",
+							"start_time": 49430,
+							"end_time": 50020
+						},
+						{
+							"text": "雲",
+							"start_time": 50020,
+							"end_time": 50400
+						},
+						{
+							"text": "影",
+							"start_time": 50400,
+							"end_time": 51410
+						},
+						{
+							"text": "的",
+							"start_time": 52290,
+							"end_time": 52600
+						},
+						{
+							"text": "羊",
+							"start_time": 52600,
+							"end_time": 52870
+						},
+						{
+							"text": "群",
+							"start_time": 52870,
+							"end_time": 53780
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "zhuī yún yǐng de yáng qún",
+					"words": [
+						{
+							"text": "zhuī",
+							"start_time": 49430,
+							"end_time": 50020,
+							"ends_with_space": true
+						},
+						{
+							"text": "yún",
+							"start_time": 50020,
+							"end_time": 50400,
+							"ends_with_space": true
+						},
+						{
+							"text": "yǐng",
+							"start_time": 50400,
+							"end_time": 51410,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 52290,
+							"end_time": 52600,
+							"ends_with_space": true
+						},
+						{
+							"text": "yáng",
+							"start_time": 52600,
+							"end_time": 52870,
+							"ends_with_space": true
+						},
+						{
+							"text": "qún",
+							"start_time": 52870,
+							"end_time": 53780
+						}
+					]
+				}
+			],
+			"id": "L9",
+			"agent_id": "v1",
+			"song_part": "PreChorus",
+			"block_index": 3
+		},
+		{
+			"text": "任言语缓缓入眠",
+			"start_time": 54500,
+			"end_time": 60440,
+			"words": [
+				{
+					"text": "任",
+					"start_time": 54500,
+					"end_time": 55060
+				},
+				{
+					"text": "言",
+					"start_time": 55060,
+					"end_time": 55400
+				},
+				{
+					"text": "语",
+					"start_time": 55400,
+					"end_time": 56550
+				},
+				{
+					"text": "缓",
+					"start_time": 57310,
+					"end_time": 57560
+				},
+				{
+					"text": "缓",
+					"start_time": 57560,
+					"end_time": 57910
+				},
+				{
+					"text": "入",
+					"start_time": 57910,
+					"end_time": 58580
+				},
+				{
+					"text": "眠",
+					"start_time": 58580,
+					"end_time": 59580
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Sag irgendetwas, um mich in den Schlaf zu wiegen."
+				},
+				{
+					"language": "en",
+					"text": "Say anything to lull me to sleep"
+				},
+				{
+					"language": "es",
+					"text": "Palabras que llevan a un mundo de ilusiones"
+				},
+				{
+					"language": "fr",
+					"text": "Les mots m'emportent vers les bras Morphée"
+				},
+				{
+					"language": "id",
+					"text": "Bisikkan sesuatu dan antar aku ke alam mimpi"
+				},
+				{
+					"language": "ja",
+					"text": "言葉の微睡むに任せ"
+				},
+				{
+					"language": "ko",
+					"text": "말소리조차 천천히 잠에 들어"
+				},
+				{
+					"language": "pt",
+					"text": "Diga qualquer coisa para me fazer dormir"
+				},
+				{
+					"language": "ru",
+					"text": "Я усну под твои слова."
+				},
+				{
+					"language": "th",
+					"text": "พูดอะไรก็ได้เพื่อกล่อมฉันให้นอนหลับ"
+				},
+				{
+					"language": "vi",
+					"text": "Chầm chậm bước vào giấc ngủ"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "任言語緩緩入眠",
+					"words": [
+						{
+							"text": "任",
+							"start_time": 54500,
+							"end_time": 55060
+						},
+						{
+							"text": "言",
+							"start_time": 55060,
+							"end_time": 55400
+						},
+						{
+							"text": "語",
+							"start_time": 55400,
+							"end_time": 56550
+						},
+						{
+							"text": "緩",
+							"start_time": 57310,
+							"end_time": 57560
+						},
+						{
+							"text": "緩",
+							"start_time": 57560,
+							"end_time": 57910
+						},
+						{
+							"text": "入",
+							"start_time": 57910,
+							"end_time": 58580
+						},
+						{
+							"text": "眠",
+							"start_time": 58580,
+							"end_time": 59580
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "rèn yán yǔ huǎn huǎn rù mián",
+					"words": [
+						{
+							"text": "rèn",
+							"start_time": 54500,
+							"end_time": 55060,
+							"ends_with_space": true
+						},
+						{
+							"text": "yán",
+							"start_time": 55060,
+							"end_time": 55400,
+							"ends_with_space": true
+						},
+						{
+							"text": "yǔ",
+							"start_time": 55400,
+							"end_time": 56550,
+							"ends_with_space": true
+						},
+						{
+							"text": "huǎn",
+							"start_time": 57310,
+							"end_time": 57560,
+							"ends_with_space": true
+						},
+						{
+							"text": "huǎn",
+							"start_time": 57560,
+							"end_time": 57910,
+							"ends_with_space": true
+						},
+						{
+							"text": "rù",
+							"start_time": 57910,
+							"end_time": 58580,
+							"ends_with_space": true
+						},
+						{
+							"text": "mián",
+							"start_time": 58580,
+							"end_time": 59580
+						}
+					]
+				}
+			],
+			"background_vocal": {
+				"text": "缓缓入眠",
+				"start_time": 58560,
+				"end_time": 60440,
+				"words": [
+					{
+						"text": "缓",
+						"start_time": 58560,
+						"end_time": 58890
+					},
+					{
+						"text": "缓",
+						"start_time": 58890,
+						"end_time": 59110
+					},
+					{
+						"text": "入",
+						"start_time": 59110,
+						"end_time": 59490
+					},
+					{
+						"text": "眠",
+						"start_time": 59490,
+						"end_time": 60440
+					}
+				],
+				"translations": [
+					{
+						"language": "de",
+						"text": "in den Schlaf zu wiegen."
+					},
+					{
+						"language": "en",
+						"text": "lull me to sleep"
+					},
+					{
+						"language": "es",
+						"text": "que llevan a un mundo de ilusiones"
+					},
+					{
+						"language": "fr",
+						"text": "vers les bras Morphée"
+					},
+					{
+						"language": "id",
+						"text": "antar aku ke alam mimpi"
+					},
+					{
+						"language": "ja",
+						"text": "微睡むに任せ"
+					},
+					{
+						"language": "ko",
+						"text": "천천히 잠에 들어"
+					},
+					{
+						"language": "pt",
+						"text": "para me fazer dormir"
+					},
+					{
+						"language": "ru",
+						"text": "под твои слова."
+					},
+					{
+						"language": "th",
+						"text": "เพื่อกล่อมฉันให้นอนหลับ"
+					},
+					{
+						"language": "vi",
+						"text": "bước vào giấc ngủ"
+					},
+					{
+						"language": "zh-Hant",
+						"text": "緩緩入眠",
+						"words": [
+							{
+								"text": "緩",
+								"start_time": 58560,
+								"end_time": 58890
+							},
+							{
+								"text": "緩",
+								"start_time": 58890,
+								"end_time": 59110
+							},
+							{
+								"text": "入",
+								"start_time": 59110,
+								"end_time": 59490
+							},
+							{
+								"text": "眠",
+								"start_time": 59490,
+								"end_time": 60440
+							}
+						]
+					}
+				],
+				"romanizations": [
+					{
+						"language": "zh-Latn-pinyin",
+						"text": "huǎn huǎn rù mián",
+						"words": [
+							{
+								"text": "huǎn",
+								"start_time": 58560,
+								"end_time": 58890,
+								"ends_with_space": true
+							},
+							{
+								"text": "huǎn",
+								"start_time": 58890,
+								"end_time": 59110,
+								"ends_with_space": true
+							},
+							{
+								"text": "rù",
+								"start_time": 59110,
+								"end_time": 59490,
+								"ends_with_space": true
+							},
+							{
+								"text": "mián",
+								"start_time": 59490,
+								"end_time": 60440
+							}
+						]
+					}
+				]
+			},
+			"id": "L10",
+			"agent_id": "v1",
+			"song_part": "PreChorus",
+			"block_index": 3
+		},
+		{
+			"text": "余白的哲学独自领会",
+			"start_time": 60120,
+			"end_time": 65010,
+			"words": [
+				{
+					"text": "余",
+					"start_time": 60120,
+					"end_time": 60430
+				},
+				{
+					"text": "白",
+					"start_time": 60430,
+					"end_time": 60750
+				},
+				{
+					"text": "的",
+					"start_time": 60750,
+					"end_time": 61300
+				},
+				{
+					"text": "哲",
+					"start_time": 61300,
+					"end_time": 61590
+				},
+				{
+					"text": "学",
+					"start_time": 61590,
+					"end_time": 62490
+				},
+				{
+					"text": "独",
+					"start_time": 62930,
+					"end_time": 63200
+				},
+				{
+					"text": "自",
+					"start_time": 63200,
+					"end_time": 63880
+				},
+				{
+					"text": "领",
+					"start_time": 63880,
+					"end_time": 64080
+				},
+				{
+					"text": "会",
+					"start_time": 64210,
+					"end_time": 65010
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein hohles Weltbild, von mir allein erfasst,"
+				},
+				{
+					"language": "en",
+					"text": "An empty philosophy realized alone"
+				},
+				{
+					"language": "es",
+					"text": "En la filosofía vacía no hay colaboraciones"
+				},
+				{
+					"language": "fr",
+					"text": "Une philosophie vide réalisée par soi-même"
+				},
+				{
+					"language": "id",
+					"text": "Filosofi kosong yang disadari sendiri"
+				},
+				{
+					"language": "ja",
+					"text": "余白のある哲学にひとり頷き"
+				},
+				{
+					"language": "ko",
+					"text": "홀로 깨닫는 여백의 철학"
+				},
+				{
+					"language": "pt",
+					"text": "Uma filosofia vazia realizada sozinha"
+				},
+				{
+					"language": "ru",
+					"text": "Философию пустоты познаёшь лишь в одиночестве."
+				},
+				{
+					"language": "th",
+					"text": "ปรัชญาที่ว่างเปล่าต้องตระหนักรู้ด้วยตัวเอง"
+				},
+				{
+					"language": "vi",
+					"text": "Tự lĩnh hội triết học"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "餘白的哲學獨自領會",
+					"words": [
+						{
+							"text": "餘",
+							"start_time": 60120,
+							"end_time": 60430
+						},
+						{
+							"text": "白",
+							"start_time": 60430,
+							"end_time": 60750
+						},
+						{
+							"text": "的",
+							"start_time": 60750,
+							"end_time": 61300
+						},
+						{
+							"text": "哲",
+							"start_time": 61300,
+							"end_time": 61590
+						},
+						{
+							"text": "學",
+							"start_time": 61590,
+							"end_time": 62490
+						},
+						{
+							"text": "獨",
+							"start_time": 62930,
+							"end_time": 63200
+						},
+						{
+							"text": "自",
+							"start_time": 63200,
+							"end_time": 63880
+						},
+						{
+							"text": "領",
+							"start_time": 63880,
+							"end_time": 64080
+						},
+						{
+							"text": "會",
+							"start_time": 64210,
+							"end_time": 65010
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yú bái de zhé xué dú zì lǐng huì",
+					"words": [
+						{
+							"text": "yú",
+							"start_time": 60120,
+							"end_time": 60430,
+							"ends_with_space": true
+						},
+						{
+							"text": "bái",
+							"start_time": 60430,
+							"end_time": 60750,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 60750,
+							"end_time": 61300,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhé",
+							"start_time": 61300,
+							"end_time": 61590,
+							"ends_with_space": true
+						},
+						{
+							"text": "xué",
+							"start_time": 61590,
+							"end_time": 62490,
+							"ends_with_space": true
+						},
+						{
+							"text": "dú",
+							"start_time": 62930,
+							"end_time": 63200,
+							"ends_with_space": true
+						},
+						{
+							"text": "zì",
+							"start_time": 63200,
+							"end_time": 63880,
+							"ends_with_space": true
+						},
+						{
+							"text": "lǐng",
+							"start_time": 63880,
+							"end_time": 64080,
+							"ends_with_space": true
+						},
+						{
+							"text": "huì",
+							"start_time": 64210,
+							"end_time": 65010
+						}
+					]
+				}
+			],
+			"id": "L11",
+			"agent_id": "v1",
+			"song_part": "PreChorus",
+			"block_index": 3
+		},
+		{
+			"text": "练习",
+			"start_time": 65690,
+			"end_time": 66520,
+			"words": [
+				{
+					"text": "练",
+					"start_time": 65690,
+					"end_time": 66040
+				},
+				{
+					"text": "习",
+					"start_time": 66040,
+					"end_time": 66520
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "und sodann in die Tat umgesetzt."
+				},
+				{
+					"language": "en",
+					"text": "Then put into practice"
+				},
+				{
+					"language": "es",
+					"text": "Practicar"
+				},
+				{
+					"language": "fr",
+					"text": "Puis pratiquée"
+				},
+				{
+					"language": "id",
+					"text": "Lalu diterapkan dalam praktik"
+				},
+				{
+					"language": "ja",
+					"text": "反芻しては"
+				},
+				{
+					"language": "ko",
+					"text": "홀로 연습해"
+				},
+				{
+					"language": "pt",
+					"text": "E coloque em prática"
+				},
+				{
+					"language": "ru",
+					"text": "Познаёшь и практикуешь."
+				},
+				{
+					"language": "th",
+					"text": "แล้วนำไปปฏิบัติ"
+				},
+				{
+					"language": "vi",
+					"text": "Luyện tập"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "練習",
+					"words": [
+						{
+							"text": "練",
+							"start_time": 65690,
+							"end_time": 66040
+						},
+						{
+							"text": "習",
+							"start_time": 66040,
+							"end_time": 66520
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "liàn xí",
+					"words": [
+						{
+							"text": "liàn",
+							"start_time": 65690,
+							"end_time": 66040,
+							"ends_with_space": true
+						},
+						{
+							"text": "xí",
+							"start_time": 66040,
+							"end_time": 66520
+						}
+					]
+				}
+			],
+			"id": "L12",
+			"agent_id": "v1",
+			"song_part": "PreChorus",
+			"block_index": 3
+		},
+		{
+			"text": "浮起一些",
+			"start_time": 67250,
+			"end_time": 68890,
+			"words": [
+				{
+					"text": "浮",
+					"start_time": 67250,
+					"end_time": 67530
+				},
+				{
+					"text": "起",
+					"start_time": 67530,
+					"end_time": 67890
+				},
+				{
+					"text": "一",
+					"start_time": 67890,
+					"end_time": 68190
+				},
+				{
+					"text": "些",
+					"start_time": 68190,
+					"end_time": 68890
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Es schwellt an,"
+				},
+				{
+					"language": "en",
+					"text": "Slowly rising"
+				},
+				{
+					"language": "es",
+					"text": "Elevarse hasta ciertos niveles"
+				},
+				{
+					"language": "fr",
+					"text": "Qui s'élève lentement"
+				},
+				{
+					"language": "id",
+					"text": "Perlahan mengambang"
+				},
+				{
+					"language": "ja",
+					"text": "浮かぶ"
+				},
+				{
+					"language": "ko",
+					"text": "조금씩 떠올라"
+				},
+				{
+					"language": "pt",
+					"text": "Subindo lentamente"
+				},
+				{
+					"language": "ru",
+					"text": "Я встречаю новый день."
+				},
+				{
+					"language": "th",
+					"text": "ลอยขึ้นมาช้าๆ"
+				},
+				{
+					"language": "vi",
+					"text": "Dần quen với"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "浮起一些",
+					"words": [
+						{
+							"text": "浮",
+							"start_time": 67250,
+							"end_time": 67530
+						},
+						{
+							"text": "起",
+							"start_time": 67530,
+							"end_time": 67890
+						},
+						{
+							"text": "一",
+							"start_time": 67890,
+							"end_time": 68190
+						},
+						{
+							"text": "些",
+							"start_time": 68190,
+							"end_time": 68890
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fú qǐ yì xiē",
+					"words": [
+						{
+							"text": "fú",
+							"start_time": 67250,
+							"end_time": 67530,
+							"ends_with_space": true
+						},
+						{
+							"text": "qǐ",
+							"start_time": 67530,
+							"end_time": 67890,
+							"ends_with_space": true
+						},
+						{
+							"text": "yì",
+							"start_time": 67890,
+							"end_time": 68190,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiē",
+							"start_time": 68190,
+							"end_time": 68890
+						}
+					]
+				}
+			],
+			"id": "L13",
+			"agent_id": "v1",
+			"song_part": "PreChorus",
+			"block_index": 3
+		},
+		{
+			"text": "一人的 星期天",
+			"start_time": 69500,
+			"end_time": 73960,
+			"words": [
+				{
+					"text": "一",
+					"start_time": 69500,
+					"end_time": 70090
+				},
+				{
+					"text": "人",
+					"start_time": 70090,
+					"end_time": 70700
+				},
+				{
+					"text": "的",
+					"start_time": 70700,
+					"end_time": 71880,
+					"ends_with_space": true
+				},
+				{
+					"text": "星",
+					"start_time": 72230,
+					"end_time": 72540
+				},
+				{
+					"text": "期",
+					"start_time": 72540,
+					"end_time": 72800
+				},
+				{
+					"text": "天",
+					"start_time": 72800,
+					"end_time": 73960
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "ein Sonntag für mich alleine,"
+				},
+				{
+					"language": "en",
+					"text": "A Sunday, all on my own"
+				},
+				{
+					"language": "es",
+					"text": "Un domingo solitario"
+				},
+				{
+					"language": "fr",
+					"text": "Un dimanche, solitaire"
+				},
+				{
+					"language": "id",
+					"text": "Hari minggu, sendirian"
+				},
+				{
+					"language": "ja",
+					"text": "一人だけの 日曜日"
+				},
+				{
+					"language": "ko",
+					"text": "혼자 보내는 일요일"
+				},
+				{
+					"language": "pt",
+					"text": "Um domingo, completamente sozinho"
+				},
+				{
+					"language": "ru",
+					"text": "Воскресенье наедине с собой."
+				},
+				{
+					"language": "th",
+					"text": "วันอาทิตย์ ฉันอยู่คนเดียวได้"
+				},
+				{
+					"language": "vi",
+					"text": "Ngày chủ nhật, một mình"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一人的 星期天",
+					"words": [
+						{
+							"text": "一",
+							"start_time": 69500,
+							"end_time": 70090
+						},
+						{
+							"text": "人",
+							"start_time": 70090,
+							"end_time": 70700
+						},
+						{
+							"text": "的",
+							"start_time": 70700,
+							"end_time": 71880,
+							"ends_with_space": true
+						},
+						{
+							"text": "星",
+							"start_time": 72230,
+							"end_time": 72540
+						},
+						{
+							"text": "期",
+							"start_time": 72540,
+							"end_time": 72800
+						},
+						{
+							"text": "天",
+							"start_time": 72800,
+							"end_time": 73960
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì rén de xīng qī tiān",
+					"words": [
+						{
+							"text": "yì",
+							"start_time": 69500,
+							"end_time": 70090,
+							"ends_with_space": true
+						},
+						{
+							"text": "rén",
+							"start_time": 70090,
+							"end_time": 70700,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 70700,
+							"end_time": 71880,
+							"ends_with_space": true
+						},
+						{
+							"text": "xīng",
+							"start_time": 72230,
+							"end_time": 72540,
+							"ends_with_space": true
+						},
+						{
+							"text": "qī",
+							"start_time": 72540,
+							"end_time": 72800,
+							"ends_with_space": true
+						},
+						{
+							"text": "tiān",
+							"start_time": 72800,
+							"end_time": 73960
+						}
+					]
+				}
+			],
+			"id": "L14",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 4
+		},
+		{
+			"text": "轻轻拢 慢慢捻",
+			"start_time": 74420,
+			"end_time": 79170,
+			"words": [
+				{
+					"text": "轻",
+					"start_time": 74420,
+					"end_time": 75000
+				},
+				{
+					"text": "轻",
+					"start_time": 75000,
+					"end_time": 75750
+				},
+				{
+					"text": "拢",
+					"start_time": 75750,
+					"end_time": 76920,
+					"ends_with_space": true
+				},
+				{
+					"text": "慢",
+					"start_time": 77290,
+					"end_time": 77590
+				},
+				{
+					"text": "慢",
+					"start_time": 77590,
+					"end_time": 77920
+				},
+				{
+					"text": "捻",
+					"start_time": 77920,
+					"end_time": 79170
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "um mich leise zu besinnen, langsam zu erinnern."
+				},
+				{
+					"language": "en",
+					"text": "Gently reflecting, slowly recollecting"
+				},
+				{
+					"language": "es",
+					"text": "Con suavidad y dilación"
+				},
+				{
+					"language": "fr",
+					"text": "Réfléchir doucement, se souvenir lentement"
+				},
+				{
+					"language": "id",
+					"text": "Dengan lembut merenung, dengan perlahan mengenang"
+				},
+				{
+					"language": "ja",
+					"text": "そっと振り返り 触れる"
+				},
+				{
+					"language": "ko",
+					"text": "살며시 모아 천천히 매만져"
+				},
+				{
+					"language": "pt",
+					"text": "Refletindo suavemente, lembrando-se lentamente"
+				},
+				{
+					"language": "ru",
+					"text": "К воспоминаньям возвращаюсь."
+				},
+				{
+					"language": "th",
+					"text": "ค่อยๆ ไตร่ตรอง ค่อยๆ จดจำ"
+				},
+				{
+					"language": "vi",
+					"text": "Nhẹ nhàng ghép lại, chầm chậm hòa trộn"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "輕輕攏 慢慢捻",
+					"words": [
+						{
+							"text": "輕",
+							"start_time": 74420,
+							"end_time": 75000
+						},
+						{
+							"text": "輕",
+							"start_time": 75000,
+							"end_time": 75750
+						},
+						{
+							"text": "攏",
+							"start_time": 75750,
+							"end_time": 76920,
+							"ends_with_space": true
+						},
+						{
+							"text": "慢",
+							"start_time": 77290,
+							"end_time": 77590
+						},
+						{
+							"text": "慢",
+							"start_time": 77590,
+							"end_time": 77920
+						},
+						{
+							"text": "捻",
+							"start_time": 77920,
+							"end_time": 79170
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qīng qīng lǒng màn màn niǎn",
+					"words": [
+						{
+							"text": "qīng",
+							"start_time": 74420,
+							"end_time": 75000,
+							"ends_with_space": true
+						},
+						{
+							"text": "qīng",
+							"start_time": 75000,
+							"end_time": 75750,
+							"ends_with_space": true
+						},
+						{
+							"text": "lǒng",
+							"start_time": 75750,
+							"end_time": 76920,
+							"ends_with_space": true
+						},
+						{
+							"text": "màn",
+							"start_time": 77290,
+							"end_time": 77590,
+							"ends_with_space": true
+						},
+						{
+							"text": "màn",
+							"start_time": 77590,
+							"end_time": 77920,
+							"ends_with_space": true
+						},
+						{
+							"text": "niǎn",
+							"start_time": 77920,
+							"end_time": 79170
+						}
+					]
+				}
+			],
+			"id": "L15",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 4
+		},
+		{
+			"text": "方糖悬滞的时间",
+			"start_time": 80050,
+			"end_time": 83930,
+			"words": [
+				{
+					"text": "方",
+					"start_time": 80050,
+					"end_time": 80430
+				},
+				{
+					"text": "糖",
+					"start_time": 80430,
+					"end_time": 80650
+				},
+				{
+					"text": "悬",
+					"start_time": 80650,
+					"end_time": 81300
+				},
+				{
+					"text": "滞",
+					"start_time": 81300,
+					"end_time": 81680
+				},
+				{
+					"text": "的",
+					"start_time": 81680,
+					"end_time": 82310
+				},
+				{
+					"text": "时",
+					"start_time": 82480,
+					"end_time": 82870
+				},
+				{
+					"text": "间",
+					"start_time": 82870,
+					"end_time": 83930
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "So wie der Zuckerwürfel treibt, vergänglich im Fluss der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "As the sugar cube floats, fleeting in time"
+				},
+				{
+					"language": "es",
+					"text": "El tiempo fluye para este terrón"
+				},
+				{
+					"language": "fr",
+					"text": "Alors que le carré de sucre flotte, fugace dans le temps"
+				},
+				{
+					"language": "id",
+					"text": "Gula batu mengapung, larut dalam waktu"
+				},
+				{
+					"language": "ja",
+					"text": "角砂糖が沈むまで"
+				},
+				{
+					"language": "ko",
+					"text": "각설탕 하나가 떠 있는 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Enquanto o cubo de açúcar flutua no tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время тает, как кубик сахара."
+				},
+				{
+					"language": "th",
+					"text": "ขณะที่ก้อนน้ำตาลลอยละล่อง ก็ละลายไปตามกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Viên đường chậm rãi hòa tan trong dòng thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "方糖懸滯的時間",
+					"words": [
+						{
+							"text": "方",
+							"start_time": 80050,
+							"end_time": 80430
+						},
+						{
+							"text": "糖",
+							"start_time": 80430,
+							"end_time": 80650
+						},
+						{
+							"text": "懸",
+							"start_time": 80650,
+							"end_time": 81300
+						},
+						{
+							"text": "滯",
+							"start_time": 81300,
+							"end_time": 81680
+						},
+						{
+							"text": "的",
+							"start_time": 81680,
+							"end_time": 82310
+						},
+						{
+							"text": "時",
+							"start_time": 82480,
+							"end_time": 82870
+						},
+						{
+							"text": "間",
+							"start_time": 82870,
+							"end_time": 83930
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fāng táng xuán zhì de shí jiān",
+					"words": [
+						{
+							"text": "fāng",
+							"start_time": 80050,
+							"end_time": 80430,
+							"ends_with_space": true
+						},
+						{
+							"text": "táng",
+							"start_time": 80430,
+							"end_time": 80650,
+							"ends_with_space": true
+						},
+						{
+							"text": "xuán",
+							"start_time": 80650,
+							"end_time": 81300,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhì",
+							"start_time": 81300,
+							"end_time": 81680,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 81680,
+							"end_time": 82310,
+							"ends_with_space": true
+						},
+						{
+							"text": "shí",
+							"start_time": 82480,
+							"end_time": 82870,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 82870,
+							"end_time": 83930
+						}
+					]
+				}
+			],
+			"id": "L16",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 4
+		},
+		{
+			"text": "一杯闲暇 两种挂念",
+			"start_time": 84830,
+			"end_time": 89070,
+			"words": [
+				{
+					"text": "一",
+					"start_time": 84830,
+					"end_time": 85110
+				},
+				{
+					"text": "杯",
+					"start_time": 85110,
+					"end_time": 85290
+				},
+				{
+					"text": "闲",
+					"start_time": 85290,
+					"end_time": 85630
+				},
+				{
+					"text": "暇",
+					"start_time": 85630,
+					"end_time": 86690,
+					"ends_with_space": true
+				},
+				{
+					"text": "两",
+					"start_time": 87340,
+					"end_time": 87590
+				},
+				{
+					"text": "种",
+					"start_time": 87590,
+					"end_time": 87940
+				},
+				{
+					"text": "挂",
+					"start_time": 87940,
+					"end_time": 88430
+				},
+				{
+					"text": "念",
+					"start_time": 88550,
+					"end_time": 89070
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Tasse voll Erholung, zwei Gefühle der Sorge."
+				},
+				{
+					"language": "en",
+					"text": "One cup of respite, two feelings of fret"
+				},
+				{
+					"language": "es",
+					"text": "Una taza de tranquilidad, dos de preocupación"
+				},
+				{
+					"language": "fr",
+					"text": "Un verre de répit, deux soucis"
+				},
+				{
+					"language": "id",
+					"text": "Secangkir rasa ketenangan, dua rasa kegelisahan"
+				},
+				{
+					"language": "ja",
+					"text": "一杯のお暇 気がかりは二つ"
+				},
+				{
+					"language": "ko",
+					"text": "한 잔의 여유 두 가지 걱정"
+				},
+				{
+					"language": "pt",
+					"text": "Uma xícara de descanso, com dois sentimentos de preocupação"
+				},
+				{
+					"language": "ru",
+					"text": "И в это мгновение спокойствия в голове лишь две мысли."
+				},
+				{
+					"language": "th",
+					"text": "ในช่วงเวลาแห่งความสงบ มีสองความคิดในหัวของฉัน"
+				},
+				{
+					"language": "vi",
+					"text": "Một ly nhàn rỗi, hai nỗi nhớ mong"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一杯閒暇 兩種掛念",
+					"words": [
+						{
+							"text": "一",
+							"start_time": 84830,
+							"end_time": 85110
+						},
+						{
+							"text": "杯",
+							"start_time": 85110,
+							"end_time": 85290
+						},
+						{
+							"text": "閒",
+							"start_time": 85290,
+							"end_time": 85630
+						},
+						{
+							"text": "暇",
+							"start_time": 85630,
+							"end_time": 86690,
+							"ends_with_space": true
+						},
+						{
+							"text": "兩",
+							"start_time": 87340,
+							"end_time": 87590
+						},
+						{
+							"text": "種",
+							"start_time": 87590,
+							"end_time": 87940
+						},
+						{
+							"text": "掛",
+							"start_time": 87940,
+							"end_time": 88430
+						},
+						{
+							"text": "念",
+							"start_time": 88550,
+							"end_time": 89070
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì bēi xián xiá liǎng zhǒng guà niàn",
+					"words": [
+						{
+							"text": "yì",
+							"start_time": 84830,
+							"end_time": 85110,
+							"ends_with_space": true
+						},
+						{
+							"text": "bēi",
+							"start_time": 85110,
+							"end_time": 85290,
+							"ends_with_space": true
+						},
+						{
+							"text": "xián",
+							"start_time": 85290,
+							"end_time": 85630,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiá",
+							"start_time": 85630,
+							"end_time": 86690,
+							"ends_with_space": true
+						},
+						{
+							"text": "liǎng",
+							"start_time": 87340,
+							"end_time": 87590,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhǒng",
+							"start_time": 87590,
+							"end_time": 87940,
+							"ends_with_space": true
+						},
+						{
+							"text": "guà",
+							"start_time": 87940,
+							"end_time": 88430,
+							"ends_with_space": true
+						},
+						{
+							"text": "niàn",
+							"start_time": 88550,
+							"end_time": 89070
+						}
+					]
+				}
+			],
+			"id": "L17",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 4
+		},
+		{
+			"text": "时间外 的时间",
+			"start_time": 89400,
+			"end_time": 94000,
+			"words": [
+				{
+					"text": "时",
+					"start_time": 89400,
+					"end_time": 90060
+				},
+				{
+					"text": "间",
+					"start_time": 90060,
+					"end_time": 90700
+				},
+				{
+					"text": "外",
+					"start_time": 90700,
+					"end_time": 91980,
+					"ends_with_space": true
+				},
+				{
+					"text": "的",
+					"start_time": 92320,
+					"end_time": 92500
+				},
+				{
+					"text": "时",
+					"start_time": 92500,
+					"end_time": 92870
+				},
+				{
+					"text": "间",
+					"start_time": 92870,
+					"end_time": 94000
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Zeit, jenseits der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "A time, beyond time"
+				},
+				{
+					"language": "es",
+					"text": "Más allá de la hora en el reloj"
+				},
+				{
+					"language": "fr",
+					"text": "Un temps, au-delà du temps"
+				},
+				{
+					"language": "id",
+					"text": "Waktu, di luar waktu"
+				},
+				{
+					"language": "ja",
+					"text": "時間の外に 時間"
+				},
+				{
+					"language": "ko",
+					"text": "시간 외의 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Um tempo, além do tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время вне времени."
+				},
+				{
+					"language": "th",
+					"text": "เวลาที่อยู่เหนือกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Khoảng thời gian, ở ngoài thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "時間外 的時間",
+					"words": [
+						{
+							"text": "時",
+							"start_time": 89400,
+							"end_time": 90060
+						},
+						{
+							"text": "間",
+							"start_time": 90060,
+							"end_time": 90700
+						},
+						{
+							"text": "外",
+							"start_time": 90700,
+							"end_time": 91980,
+							"ends_with_space": true
+						},
+						{
+							"text": "的",
+							"start_time": 92320,
+							"end_time": 92500
+						},
+						{
+							"text": "時",
+							"start_time": 92500,
+							"end_time": 92870
+						},
+						{
+							"text": "間",
+							"start_time": 92870,
+							"end_time": 94000
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "shí jiān wài de shí jiān",
+					"words": [
+						{
+							"text": "shí",
+							"start_time": 89400,
+							"end_time": 90060,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 90060,
+							"end_time": 90700,
+							"ends_with_space": true
+						},
+						{
+							"text": "wài",
+							"start_time": 90700,
+							"end_time": 91980,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 92320,
+							"end_time": 92500,
+							"ends_with_space": true
+						},
+						{
+							"text": "shí",
+							"start_time": 92500,
+							"end_time": 92870,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 92870,
+							"end_time": 94000
+						}
+					]
+				}
+			],
+			"id": "L18",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 5
+		},
+		{
+			"text": "温柔的 空房间",
+			"start_time": 94460,
+			"end_time": 99300,
+			"words": [
+				{
+					"text": "温",
+					"start_time": 94460,
+					"end_time": 95070
+				},
+				{
+					"text": "柔",
+					"start_time": 95070,
+					"end_time": 95750
+				},
+				{
+					"text": "的",
+					"start_time": 95750,
+					"end_time": 96880,
+					"ends_with_space": true
+				},
+				{
+					"text": "空",
+					"start_time": 97270,
+					"end_time": 97550
+				},
+				{
+					"text": "房",
+					"start_time": 97550,
+					"end_time": 97860
+				},
+				{
+					"text": "间",
+					"start_time": 97860,
+					"end_time": 99300
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein leiser, leerer Raum."
+				},
+				{
+					"language": "en",
+					"text": "A gentle, empty room"
+				},
+				{
+					"language": "es",
+					"text": "Una sala vacía con un ambiente acogedor"
+				},
+				{
+					"language": "fr",
+					"text": "Une chambre vide, pleine de douceur"
+				},
+				{
+					"language": "id",
+					"text": "Ketenangan, di ruang hampa"
+				},
+				{
+					"language": "ja",
+					"text": "空っぽの部屋は 優しくて"
+				},
+				{
+					"language": "ko",
+					"text": "따뜻한 빈방"
+				},
+				{
+					"language": "pt",
+					"text": "Uma sala gentil e vazia"
+				},
+				{
+					"language": "ru",
+					"text": "Спокойная пустая комната."
+				},
+				{
+					"language": "th",
+					"text": "ห้องอันอ่อนโยนและว่างเปล่า"
+				},
+				{
+					"language": "vi",
+					"text": "Căn phòng trống, dịu dàng"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "溫柔的 空房間",
+					"words": [
+						{
+							"text": "溫",
+							"start_time": 94460,
+							"end_time": 95070
+						},
+						{
+							"text": "柔",
+							"start_time": 95070,
+							"end_time": 95750
+						},
+						{
+							"text": "的",
+							"start_time": 95750,
+							"end_time": 96880,
+							"ends_with_space": true
+						},
+						{
+							"text": "空",
+							"start_time": 97270,
+							"end_time": 97550
+						},
+						{
+							"text": "房",
+							"start_time": 97550,
+							"end_time": 97860
+						},
+						{
+							"text": "間",
+							"start_time": 97860,
+							"end_time": 99300
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wēn róu de kōng fáng jiān",
+					"words": [
+						{
+							"text": "wēn",
+							"start_time": 94460,
+							"end_time": 95070,
+							"ends_with_space": true
+						},
+						{
+							"text": "róu",
+							"start_time": 95070,
+							"end_time": 95750,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 95750,
+							"end_time": 96880,
+							"ends_with_space": true
+						},
+						{
+							"text": "kōng",
+							"start_time": 97270,
+							"end_time": 97550,
+							"ends_with_space": true
+						},
+						{
+							"text": "fáng",
+							"start_time": 97550,
+							"end_time": 97860,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 97860,
+							"end_time": 99300
+						}
+					]
+				}
+			],
+			"id": "L19",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 5
+		},
+		{
+			"text": "一千零一种停歇",
+			"start_time": 100090,
+			"end_time": 104030,
+			"words": [
+				{
+					"text": "一",
+					"start_time": 100090,
+					"end_time": 100340
+				},
+				{
+					"text": "千",
+					"start_time": 100340,
+					"end_time": 100760
+				},
+				{
+					"text": "零",
+					"start_time": 100760,
+					"end_time": 101360
+				},
+				{
+					"text": "一",
+					"start_time": 101360,
+					"end_time": 101640
+				},
+				{
+					"text": "种",
+					"start_time": 101640,
+					"end_time": 102410
+				},
+				{
+					"text": "停",
+					"start_time": 102550,
+					"end_time": 102800
+				},
+				{
+					"text": "歇",
+					"start_time": 102800,
+					"end_time": 104030
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eintausend und eine Unentschlossenheit."
+				},
+				{
+					"language": "en",
+					"text": "A thousand and one indecisions"
+				},
+				{
+					"language": "es",
+					"text": "Una mente plagada de indecisión"
+				},
+				{
+					"language": "fr",
+					"text": "Mille et une haltes"
+				},
+				{
+					"language": "id",
+					"text": "Seribu satu keraguan"
+				},
+				{
+					"language": "ja",
+					"text": "千と一の足踏み"
+				},
+				{
+					"language": "ko",
+					"text": "무수한 휴식"
+				},
+				{
+					"language": "pt",
+					"text": "Mil e uma indecisões"
+				},
+				{
+					"language": "ru",
+					"text": "Тысяча и одна попытка перевести дух."
+				},
+				{
+					"language": "th",
+					"text": "ความลังเลนับพันครั้ง"
+				},
+				{
+					"language": "vi",
+					"text": "Một ngàn lẻ một kiểu nghỉ ngơi"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一千零一種停歇",
+					"words": [
+						{
+							"text": "一",
+							"start_time": 100090,
+							"end_time": 100340
+						},
+						{
+							"text": "千",
+							"start_time": 100340,
+							"end_time": 100760
+						},
+						{
+							"text": "零",
+							"start_time": 100760,
+							"end_time": 101360
+						},
+						{
+							"text": "一",
+							"start_time": 101360,
+							"end_time": 101640
+						},
+						{
+							"text": "種",
+							"start_time": 101640,
+							"end_time": 102410
+						},
+						{
+							"text": "停",
+							"start_time": 102550,
+							"end_time": 102800
+						},
+						{
+							"text": "歇",
+							"start_time": 102800,
+							"end_time": 104030
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì qiān líng yī zhǒng tíng xiē",
+					"words": [
+						{
+							"text": "yì",
+							"start_time": 100090,
+							"end_time": 100340,
+							"ends_with_space": true
+						},
+						{
+							"text": "qiān",
+							"start_time": 100340,
+							"end_time": 100760,
+							"ends_with_space": true
+						},
+						{
+							"text": "líng",
+							"start_time": 100760,
+							"end_time": 101360,
+							"ends_with_space": true
+						},
+						{
+							"text": "yī",
+							"start_time": 101360,
+							"end_time": 101640,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhǒng",
+							"start_time": 101640,
+							"end_time": 102410,
+							"ends_with_space": true
+						},
+						{
+							"text": "tíng",
+							"start_time": 102550,
+							"end_time": 102800,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiē",
+							"start_time": 102800,
+							"end_time": 104030
+						}
+					]
+				}
+			],
+			"id": "L20",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 5
+		},
+		{
+			"text": "不想缺席 又无法眷恋得完全",
+			"start_time": 104800,
+			"end_time": 113270,
+			"words": [
+				{
+					"text": "不",
+					"start_time": 104800,
+					"end_time": 105010
+				},
+				{
+					"text": "想",
+					"start_time": 105010,
+					"end_time": 105340
+				},
+				{
+					"text": "缺",
+					"start_time": 105340,
+					"end_time": 105630
+				},
+				{
+					"text": "席",
+					"start_time": 105630,
+					"end_time": 106660,
+					"ends_with_space": true
+				},
+				{
+					"text": "又",
+					"start_time": 107320,
+					"end_time": 107600
+				},
+				{
+					"text": "无",
+					"start_time": 107600,
+					"end_time": 107830
+				},
+				{
+					"text": "法",
+					"start_time": 107830,
+					"end_time": 108180
+				},
+				{
+					"text": "眷",
+					"start_time": 108180,
+					"end_time": 108890
+				},
+				{
+					"text": "恋",
+					"start_time": 108890,
+					"end_time": 109500
+				},
+				{
+					"text": "得",
+					"start_time": 109500,
+					"end_time": 109790
+				},
+				{
+					"text": "完",
+					"start_time": 110130,
+					"end_time": 110390
+				},
+				{
+					"text": "全",
+					"start_time": 110390,
+					"end_time": 113270
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ich will nichts verpassen, doch kann mich nicht voll und ganz darauf einzulassen."
+				},
+				{
+					"language": "en",
+					"text": "Unwilling to miss out, yet unable to fully commit"
+				},
+				{
+					"language": "es",
+					"text": "Ni la ausencia ni el compromiso son una opción"
+				},
+				{
+					"language": "fr",
+					"text": "Refuser l'absence, mais ne pas savoir s'engager"
+				},
+				{
+					"language": "id",
+					"text": "Tak ingin melewatinya, namun tak dapat berjanji"
+				},
+				{
+					"language": "ja",
+					"text": "失いたくないけど 追い求める覚悟もなくて"
+				},
+				{
+					"language": "ko",
+					"text": "빠지고 싶지도 완전히 미련을 둘 수도 없어"
+				},
+				{
+					"language": "pt",
+					"text": "Não quer perder nada, mas não consegue se comprometer totalmente"
+				},
+				{
+					"language": "ru",
+					"text": "Боюсь упустить, но не могу себя заставить."
+				},
+				{
+					"language": "th",
+					"text": "ไม่อยากพลาด แต่ยังไม่สามารถทำได้เต็มที่"
+				},
+				{
+					"language": "vi",
+					"text": "Không muốn vắng mặt, nhưng lại không thể hoàn toàn quyến luyến"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "不想缺席 又無法眷戀得完全",
+					"words": [
+						{
+							"text": "不",
+							"start_time": 104800,
+							"end_time": 105010
+						},
+						{
+							"text": "想",
+							"start_time": 105010,
+							"end_time": 105340
+						},
+						{
+							"text": "缺",
+							"start_time": 105340,
+							"end_time": 105630
+						},
+						{
+							"text": "席",
+							"start_time": 105630,
+							"end_time": 106660,
+							"ends_with_space": true
+						},
+						{
+							"text": "又",
+							"start_time": 107320,
+							"end_time": 107600
+						},
+						{
+							"text": "無",
+							"start_time": 107600,
+							"end_time": 107830
+						},
+						{
+							"text": "法",
+							"start_time": 107830,
+							"end_time": 108180
+						},
+						{
+							"text": "眷",
+							"start_time": 108180,
+							"end_time": 108890
+						},
+						{
+							"text": "戀",
+							"start_time": 108890,
+							"end_time": 109500
+						},
+						{
+							"text": "得",
+							"start_time": 109500,
+							"end_time": 109790
+						},
+						{
+							"text": "完",
+							"start_time": 110130,
+							"end_time": 110390
+						},
+						{
+							"text": "全",
+							"start_time": 110390,
+							"end_time": 113270
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "bù xiǎng quē xí yòu wú fǎ juàn liàn dé wán quán",
+					"words": [
+						{
+							"text": "bù",
+							"start_time": 104800,
+							"end_time": 105010,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiǎng",
+							"start_time": 105010,
+							"end_time": 105340,
+							"ends_with_space": true
+						},
+						{
+							"text": "quē",
+							"start_time": 105340,
+							"end_time": 105630,
+							"ends_with_space": true
+						},
+						{
+							"text": "xí",
+							"start_time": 105630,
+							"end_time": 106660,
+							"ends_with_space": true
+						},
+						{
+							"text": "yòu",
+							"start_time": 107320,
+							"end_time": 107600,
+							"ends_with_space": true
+						},
+						{
+							"text": "wú",
+							"start_time": 107600,
+							"end_time": 107830,
+							"ends_with_space": true
+						},
+						{
+							"text": "fǎ",
+							"start_time": 107830,
+							"end_time": 108180,
+							"ends_with_space": true
+						},
+						{
+							"text": "juàn",
+							"start_time": 108180,
+							"end_time": 108890,
+							"ends_with_space": true
+						},
+						{
+							"text": "liàn",
+							"start_time": 108890,
+							"end_time": 109500,
+							"ends_with_space": true
+						},
+						{
+							"text": "dé",
+							"start_time": 109500,
+							"end_time": 109790,
+							"ends_with_space": true
+						},
+						{
+							"text": "wán",
+							"start_time": 110130,
+							"end_time": 110390,
+							"ends_with_space": true
+						},
+						{
+							"text": "quán",
+							"start_time": 110390,
+							"end_time": 113270
+						}
+					]
+				}
+			],
+			"id": "L21",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 5
+		},
+		{
+			"text": "或许该学着石头忘却世界",
+			"start_time": 130760,
+			"end_time": 134570,
+			"words": [
+				{
+					"text": "或",
+					"start_time": 131040,
+					"end_time": 131230
+				},
+				{
+					"text": "许",
+					"start_time": 131230,
+					"end_time": 131650
+				},
+				{
+					"text": "该",
+					"start_time": 131650,
+					"end_time": 131900
+				},
+				{
+					"text": "学",
+					"start_time": 131900,
+					"end_time": 132270
+				},
+				{
+					"text": "着",
+					"start_time": 132270,
+					"end_time": 132500
+				},
+				{
+					"text": "石",
+					"start_time": 132500,
+					"end_time": 132870
+				},
+				{
+					"text": "头",
+					"start_time": 132870,
+					"end_time": 133260
+				},
+				{
+					"text": "忘",
+					"start_time": 133260,
+					"end_time": 133480
+				},
+				{
+					"text": "却",
+					"start_time": 133480,
+					"end_time": 133740
+				},
+				{
+					"text": "世",
+					"start_time": 133740,
+					"end_time": 134120
+				},
+				{
+					"text": "界",
+					"start_time": 134120,
+					"end_time": 134430
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Zeit, den Kopf in den Sand zu stecken und die Welt zu vergessen."
+				},
+				{
+					"language": "en",
+					"text": "Time to bury my head in the sand and forget the world"
+				},
+				{
+					"language": "es",
+					"text": "Tal vez debería esconderme y el mundo olvidar"
+				},
+				{
+					"language": "fr",
+					"text": "Tel un rocher, peut-être est-il temps d'oublier le monde"
+				},
+				{
+					"language": "id",
+					"text": "Mungkin saatnya mengubur kepalaku di pasir dan melupakan dunia"
+				},
+				{
+					"language": "ja",
+					"text": "石ころみたいに世界を忘れて"
+				},
+				{
+					"language": "ko",
+					"text": "바위처럼 세상을 잊고"
+				},
+				{
+					"language": "pt",
+					"text": "É hora de enterrar minha cabeça na areia e esquecer o mundo"
+				},
+				{
+					"language": "ru",
+					"text": "Может, просто спрятать голову в песок?"
+				},
+				{
+					"language": "th",
+					"text": "ถึงเวลาหลีกหนีทุกสิ่ง และลืมโลกนี้"
+				},
+				{
+					"language": "vi",
+					"text": "Có lẽ phải học cách quên đi thế giới như viên đá"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "或許該學著石頭忘卻世界",
+					"words": [
+						{
+							"text": "或",
+							"start_time": 131040,
+							"end_time": 131230
+						},
+						{
+							"text": "許",
+							"start_time": 131230,
+							"end_time": 131650
+						},
+						{
+							"text": "該",
+							"start_time": 131650,
+							"end_time": 131900
+						},
+						{
+							"text": "學",
+							"start_time": 131900,
+							"end_time": 132270
+						},
+						{
+							"text": "著",
+							"start_time": 132270,
+							"end_time": 132500
+						},
+						{
+							"text": "石",
+							"start_time": 132500,
+							"end_time": 132870
+						},
+						{
+							"text": "頭",
+							"start_time": 132870,
+							"end_time": 133260
+						},
+						{
+							"text": "忘",
+							"start_time": 133260,
+							"end_time": 133480
+						},
+						{
+							"text": "卻",
+							"start_time": 133480,
+							"end_time": 133740
+						},
+						{
+							"text": "世",
+							"start_time": 133740,
+							"end_time": 134120
+						},
+						{
+							"text": "界",
+							"start_time": 134120,
+							"end_time": 134430
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "huò xǔ gāi xué zhe shí tou wàng què shì jiè",
+					"words": [
+						{
+							"text": "huò",
+							"start_time": 131040,
+							"end_time": 131230,
+							"ends_with_space": true
+						},
+						{
+							"text": "xǔ",
+							"start_time": 131230,
+							"end_time": 131650,
+							"ends_with_space": true
+						},
+						{
+							"text": "gāi",
+							"start_time": 131650,
+							"end_time": 131900,
+							"ends_with_space": true
+						},
+						{
+							"text": "xué",
+							"start_time": 131900,
+							"end_time": 132270,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhe",
+							"start_time": 132270,
+							"end_time": 132500,
+							"ends_with_space": true
+						},
+						{
+							"text": "shí",
+							"start_time": 132500,
+							"end_time": 132870,
+							"ends_with_space": true
+						},
+						{
+							"text": "tou",
+							"start_time": 132870,
+							"end_time": 133260,
+							"ends_with_space": true
+						},
+						{
+							"text": "wàng",
+							"start_time": 133260,
+							"end_time": 133480,
+							"ends_with_space": true
+						},
+						{
+							"text": "què",
+							"start_time": 133480,
+							"end_time": 133740,
+							"ends_with_space": true
+						},
+						{
+							"text": "shì",
+							"start_time": 133740,
+							"end_time": 134120,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiè",
+							"start_time": 134120,
+							"end_time": 134430
+						}
+					]
+				}
+			],
+			"background_vocal": {
+				"text": "ha~ 忘却世界",
+				"start_time": 130760,
+				"end_time": 134570,
+				"words": [
+					{
+						"text": "ha~",
+						"start_time": 130760,
+						"end_time": 133050,
+						"ends_with_space": true
+					},
+					{
+						"text": "忘",
+						"start_time": 133250,
+						"end_time": 133480
+					},
+					{
+						"text": "却",
+						"start_time": 133480,
+						"end_time": 133740
+					},
+					{
+						"text": "世",
+						"start_time": 133740,
+						"end_time": 134130
+					},
+					{
+						"text": "界",
+						"start_time": 134130,
+						"end_time": 134570
+					}
+				],
+				"translations": [
+					{
+						"language": "de",
+						"text": "ha~ die Welt zu vergessen."
+					},
+					{
+						"language": "en",
+						"text": "ha~ forget the world"
+					},
+					{
+						"language": "es",
+						"text": "ha~ el mundo olvidar"
+					},
+					{
+						"language": "fr",
+						"text": "ha~ oublier le monde"
+					},
+					{
+						"language": "id",
+						"text": "ha~ melupakan dunia"
+					},
+					{
+						"language": "ja",
+						"text": "ha~ 世界を忘れて"
+					},
+					{
+						"language": "ko",
+						"text": "ha~ 세상을 잊고"
+					},
+					{
+						"language": "pt",
+						"text": "ha~ esquecer o mundo"
+					},
+					{
+						"language": "ru",
+						"text": "ha~ спрятать голову в песок?"
+					},
+					{
+						"language": "th",
+						"text": "ha~ และลืมโลกนี้"
+					},
+					{
+						"language": "vi",
+						"text": "ha~ quên đi thế giới"
+					},
+					{
+						"language": "zh-Hant",
+						"text": "ha~ 忘卻世界",
+						"words": [
+							{
+								"text": "ha~",
+								"start_time": 130760,
+								"end_time": 133050,
+								"ends_with_space": true
+							},
+							{
+								"text": "忘",
+								"start_time": 133250,
+								"end_time": 133480
+							},
+							{
+								"text": "卻",
+								"start_time": 133480,
+								"end_time": 133740
+							},
+							{
+								"text": "世",
+								"start_time": 133740,
+								"end_time": 134130
+							},
+							{
+								"text": "界",
+								"start_time": 134130,
+								"end_time": 134570
+							}
+						]
+					}
+				],
+				"romanizations": [
+					{
+						"language": "zh-Latn-pinyin",
+						"text": "ha~ wàng què shì jiè",
+						"words": [
+							{
+								"text": "ha~",
+								"start_time": 130760,
+								"end_time": 133050,
+								"ends_with_space": true
+							},
+							{
+								"text": "wàng",
+								"start_time": 133250,
+								"end_time": 133480,
+								"ends_with_space": true
+							},
+							{
+								"text": "què",
+								"start_time": 133480,
+								"end_time": 133740,
+								"ends_with_space": true
+							},
+							{
+								"text": "shì",
+								"start_time": 133740,
+								"end_time": 134130,
+								"ends_with_space": true
+							},
+							{
+								"text": "jiè",
+								"start_time": 134130,
+								"end_time": 134570
+							}
+						]
+					}
+				]
+			},
+			"id": "L22",
+			"agent_id": "v1",
+			"song_part": "Bridge",
+			"block_index": 6
+		},
+		{
+			"text": "也贪婪一点 也单纯一点",
+			"start_time": 134820,
+			"end_time": 140190,
+			"words": [
+				{
+					"text": "也",
+					"start_time": 134820,
+					"end_time": 135090
+				},
+				{
+					"text": "贪",
+					"start_time": 135090,
+					"end_time": 135440
+				},
+				{
+					"text": "婪",
+					"start_time": 135440,
+					"end_time": 135730
+				},
+				{
+					"text": "一",
+					"start_time": 135730,
+					"end_time": 136060
+				},
+				{
+					"text": "点",
+					"start_time": 136060,
+					"end_time": 136840,
+					"ends_with_space": true
+				},
+				{
+					"text": "也",
+					"start_time": 137310,
+					"end_time": 137600
+				},
+				{
+					"text": "单",
+					"start_time": 137600,
+					"end_time": 137840
+				},
+				{
+					"text": "纯",
+					"start_time": 137840,
+					"end_time": 138220
+				},
+				{
+					"text": "一",
+					"start_time": 138220,
+					"end_time": 139180
+				},
+				{
+					"text": "点",
+					"start_time": 139180,
+					"end_time": 140190
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Gierig zu sein, einfach zu sein,"
+				},
+				{
+					"language": "en",
+					"text": "To be greedy, to be simple"
+				},
+				{
+					"language": "es",
+					"text": "Por la codicia y la ingenuidad dejarme llevar"
+				},
+				{
+					"language": "fr",
+					"text": "D'être gourmand, d'être simple"
+				},
+				{
+					"language": "id",
+					"text": "Menjadi lebih serakah, berpikir lebih sederhana"
+				},
+				{
+					"language": "ja",
+					"text": "もっと欲張りで 素直になれたら"
+				},
+				{
+					"language": "ko",
+					"text": "조금 더 욕심을 내 조금 더 단순하게"
+				},
+				{
+					"language": "pt",
+					"text": "Ser ganancioso, e ser simples"
+				},
+				{
+					"language": "ru",
+					"text": "Нужно хотеть большего, но быть проще."
+				},
+				{
+					"language": "th",
+					"text": "จงเป็นคนโลภ และเป็นคนไร้เดียงสา"
+				},
+				{
+					"language": "vi",
+					"text": "Tham lam một chút, đơn giản một chút"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "也貪婪一點 也單純一點",
+					"words": [
+						{
+							"text": "也",
+							"start_time": 134820,
+							"end_time": 135090
+						},
+						{
+							"text": "貪",
+							"start_time": 135090,
+							"end_time": 135440
+						},
+						{
+							"text": "婪",
+							"start_time": 135440,
+							"end_time": 135730
+						},
+						{
+							"text": "一",
+							"start_time": 135730,
+							"end_time": 136060
+						},
+						{
+							"text": "點",
+							"start_time": 136060,
+							"end_time": 136840,
+							"ends_with_space": true
+						},
+						{
+							"text": "也",
+							"start_time": 137310,
+							"end_time": 137600
+						},
+						{
+							"text": "單",
+							"start_time": 137600,
+							"end_time": 137840
+						},
+						{
+							"text": "純",
+							"start_time": 137840,
+							"end_time": 138220
+						},
+						{
+							"text": "一",
+							"start_time": 138220,
+							"end_time": 139180
+						},
+						{
+							"text": "點",
+							"start_time": 139180,
+							"end_time": 140190
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yě tān lán yì diǎn yě dān chún yì diǎn",
+					"words": [
+						{
+							"text": "yě",
+							"start_time": 134820,
+							"end_time": 135090,
+							"ends_with_space": true
+						},
+						{
+							"text": "tān",
+							"start_time": 135090,
+							"end_time": 135440,
+							"ends_with_space": true
+						},
+						{
+							"text": "lán",
+							"start_time": 135440,
+							"end_time": 135730,
+							"ends_with_space": true
+						},
+						{
+							"text": "yì",
+							"start_time": 135730,
+							"end_time": 136060,
+							"ends_with_space": true
+						},
+						{
+							"text": "diǎn",
+							"start_time": 136060,
+							"end_time": 136840,
+							"ends_with_space": true
+						},
+						{
+							"text": "yě",
+							"start_time": 137310,
+							"end_time": 137600,
+							"ends_with_space": true
+						},
+						{
+							"text": "dān",
+							"start_time": 137600,
+							"end_time": 137840,
+							"ends_with_space": true
+						},
+						{
+							"text": "chún",
+							"start_time": 137840,
+							"end_time": 138220,
+							"ends_with_space": true
+						},
+						{
+							"text": "yì",
+							"start_time": 138220,
+							"end_time": 139180,
+							"ends_with_space": true
+						},
+						{
+							"text": "diǎn",
+							"start_time": 139180,
+							"end_time": 140190
+						}
+					]
+				}
+			],
+			"id": "L23",
+			"agent_id": "v1",
+			"song_part": "Bridge",
+			"block_index": 6
+		},
+		{
+			"text": "等到又一颗月也沉入杯底",
+			"start_time": 141070,
+			"end_time": 144440,
+			"words": [
+				{
+					"text": "等",
+					"start_time": 141070,
+					"end_time": 141370
+				},
+				{
+					"text": "到",
+					"start_time": 141370,
+					"end_time": 141660
+				},
+				{
+					"text": "又",
+					"start_time": 141660,
+					"end_time": 142010
+				},
+				{
+					"text": "一",
+					"start_time": 142010,
+					"end_time": 142240
+				},
+				{
+					"text": "颗",
+					"start_time": 142240,
+					"end_time": 142570
+				},
+				{
+					"text": "月",
+					"start_time": 142570,
+					"end_time": 142890
+				},
+				{
+					"text": "也",
+					"start_time": 142890,
+					"end_time": 143180
+				},
+				{
+					"text": "沉",
+					"start_time": 143180,
+					"end_time": 143560
+				},
+				{
+					"text": "入",
+					"start_time": 143560,
+					"end_time": 143870
+				},
+				{
+					"text": "杯",
+					"start_time": 143870,
+					"end_time": 144160
+				},
+				{
+					"text": "底",
+					"start_time": 144160,
+					"end_time": 144440
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "bis ein Neumond in die Tiefen der Tasse sinkt,"
+				},
+				{
+					"language": "en",
+					"text": "Until a new moon sinks to the bottom of the cup"
+				},
+				{
+					"language": "es",
+					"text": "Hasta que la luna se hunda en el fondo del vaso"
+				},
+				{
+					"language": "fr",
+					"text": "Jusqu'à ce qu'une nouvelle lune sombre au fond de la tasse"
+				},
+				{
+					"language": "id",
+					"text": "Hingga bulan baru tenggelam ke dasar gelas"
+				},
+				{
+					"language": "ja",
+					"text": "月がまた一粒 コップの底に沈むまで"
+				},
+				{
+					"language": "ko",
+					"text": "또 다른 달이 잔의 바닥에 가라앉을 때까지 기다려"
+				},
+				{
+					"language": "pt",
+					"text": "Até que uma lua nova afunde no fundo da xícara"
+				},
+				{
+					"language": "ru",
+					"text": "И пока новая луна не отразится в моей чашке,"
+				},
+				{
+					"language": "th",
+					"text": "จนกระทั่งพระจันทร์ดวงใหม่จมลงสู่ก้นแก้ว"
+				},
+				{
+					"language": "vi",
+					"text": "Đợi ánh trăng chìm trong ly nước"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "等到又一顆月也沉入杯底",
+					"words": [
+						{
+							"text": "等",
+							"start_time": 141070,
+							"end_time": 141370
+						},
+						{
+							"text": "到",
+							"start_time": 141370,
+							"end_time": 141660
+						},
+						{
+							"text": "又",
+							"start_time": 141660,
+							"end_time": 142010
+						},
+						{
+							"text": "一",
+							"start_time": 142010,
+							"end_time": 142240
+						},
+						{
+							"text": "顆",
+							"start_time": 142240,
+							"end_time": 142570
+						},
+						{
+							"text": "月",
+							"start_time": 142570,
+							"end_time": 142890
+						},
+						{
+							"text": "也",
+							"start_time": 142890,
+							"end_time": 143180
+						},
+						{
+							"text": "沉",
+							"start_time": 143180,
+							"end_time": 143560
+						},
+						{
+							"text": "入",
+							"start_time": 143560,
+							"end_time": 143870
+						},
+						{
+							"text": "杯",
+							"start_time": 143870,
+							"end_time": 144160
+						},
+						{
+							"text": "底",
+							"start_time": 144160,
+							"end_time": 144440
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "děng dào yòu yī kē yuè yě chén rù bēi dǐ",
+					"words": [
+						{
+							"text": "děng",
+							"start_time": 141070,
+							"end_time": 141370,
+							"ends_with_space": true
+						},
+						{
+							"text": "dào",
+							"start_time": 141370,
+							"end_time": 141660,
+							"ends_with_space": true
+						},
+						{
+							"text": "yòu",
+							"start_time": 141660,
+							"end_time": 142010,
+							"ends_with_space": true
+						},
+						{
+							"text": "yī",
+							"start_time": 142010,
+							"end_time": 142240,
+							"ends_with_space": true
+						},
+						{
+							"text": "kē",
+							"start_time": 142240,
+							"end_time": 142570,
+							"ends_with_space": true
+						},
+						{
+							"text": "yuè",
+							"start_time": 142570,
+							"end_time": 142890,
+							"ends_with_space": true
+						},
+						{
+							"text": "yě",
+							"start_time": 142890,
+							"end_time": 143180,
+							"ends_with_space": true
+						},
+						{
+							"text": "chén",
+							"start_time": 143180,
+							"end_time": 143560,
+							"ends_with_space": true
+						},
+						{
+							"text": "rù",
+							"start_time": 143560,
+							"end_time": 143870,
+							"ends_with_space": true
+						},
+						{
+							"text": "bēi",
+							"start_time": 143870,
+							"end_time": 144160,
+							"ends_with_space": true
+						},
+						{
+							"text": "dǐ",
+							"start_time": 144160,
+							"end_time": 144440
+						}
+					]
+				}
+			],
+			"id": "L24",
+			"agent_id": "v1",
+			"song_part": "Bridge",
+			"block_index": 6
+		},
+		{
+			"text": "还是会期待新的什么",
+			"start_time": 144800,
+			"end_time": 150960,
+			"words": [
+				{
+					"text": "还",
+					"start_time": 144800,
+					"end_time": 144970
+				},
+				{
+					"text": "是",
+					"start_time": 144970,
+					"end_time": 145260
+				},
+				{
+					"text": "会",
+					"start_time": 145440,
+					"end_time": 145980
+				},
+				{
+					"text": "期",
+					"start_time": 145980,
+					"end_time": 146360
+				},
+				{
+					"text": "待",
+					"start_time": 146360,
+					"end_time": 146560
+				},
+				{
+					"text": "新",
+					"start_time": 146560,
+					"end_time": 147300
+				},
+				{
+					"text": "的",
+					"start_time": 147300,
+					"end_time": 147500
+				},
+				{
+					"text": "什",
+					"start_time": 147500,
+					"end_time": 147950
+				},
+				{
+					"text": "么",
+					"start_time": 147950,
+					"end_time": 150960
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "und noch immer nach etwas Neuem sucht."
+				},
+				{
+					"language": "en",
+					"text": "Still looking for that something new"
+				},
+				{
+					"language": "es",
+					"text": "U ocurra algo que resulte novedoso"
+				},
+				{
+					"language": "fr",
+					"text": "Toujours à la recherche de ce qui est nouveau"
+				},
+				{
+					"language": "id",
+					"text": "Kita masih menantikan sesuatu yang baru"
+				},
+				{
+					"language": "ja",
+					"text": "まだ新しい何かを待ってる"
+				},
+				{
+					"language": "ko",
+					"text": "또 새로운 무언갈 기대해"
+				},
+				{
+					"language": "pt",
+					"text": "Ainda procurando por algo novo"
+				},
+				{
+					"language": "ru",
+					"text": "я буду ждать чего-то нового."
+				},
+				{
+					"language": "th",
+					"text": "ยังคงมองหาสิ่งใหม่ๆ"
+				},
+				{
+					"language": "vi",
+					"text": "Cũng vẫn mong chờ điều gì đó mới mẻ"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "還是會期待新的什麼",
+					"words": [
+						{
+							"text": "還",
+							"start_time": 144800,
+							"end_time": 144970
+						},
+						{
+							"text": "是",
+							"start_time": 144970,
+							"end_time": 145260
+						},
+						{
+							"text": "會",
+							"start_time": 145440,
+							"end_time": 145980
+						},
+						{
+							"text": "期",
+							"start_time": 145980,
+							"end_time": 146360
+						},
+						{
+							"text": "待",
+							"start_time": 146360,
+							"end_time": 146560
+						},
+						{
+							"text": "新",
+							"start_time": 146560,
+							"end_time": 147300
+						},
+						{
+							"text": "的",
+							"start_time": 147300,
+							"end_time": 147500
+						},
+						{
+							"text": "什",
+							"start_time": 147500,
+							"end_time": 147950
+						},
+						{
+							"text": "麼",
+							"start_time": 147950,
+							"end_time": 150960
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "hái shì huì qī dài xīn de shén me",
+					"words": [
+						{
+							"text": "hái",
+							"start_time": 144800,
+							"end_time": 144970,
+							"ends_with_space": true
+						},
+						{
+							"text": "shì",
+							"start_time": 144970,
+							"end_time": 145260,
+							"ends_with_space": true
+						},
+						{
+							"text": "huì",
+							"start_time": 145440,
+							"end_time": 145980,
+							"ends_with_space": true
+						},
+						{
+							"text": "qī",
+							"start_time": 145980,
+							"end_time": 146360,
+							"ends_with_space": true
+						},
+						{
+							"text": "dài",
+							"start_time": 146360,
+							"end_time": 146560,
+							"ends_with_space": true
+						},
+						{
+							"text": "xīn",
+							"start_time": 146560,
+							"end_time": 147300,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 147300,
+							"end_time": 147500,
+							"ends_with_space": true
+						},
+						{
+							"text": "shén",
+							"start_time": 147500,
+							"end_time": 147950,
+							"ends_with_space": true
+						},
+						{
+							"text": "me",
+							"start_time": 147950,
+							"end_time": 150960
+						}
+					]
+				}
+			],
+			"id": "L25",
+			"agent_id": "v1",
+			"song_part": "Bridge",
+			"block_index": 6
+		},
+		{
+			"text": "一人的 星期天",
+			"start_time": 154480,
+			"end_time": 159000,
+			"words": [
+				{
+					"text": "一",
+					"start_time": 154480,
+					"end_time": 155010
+				},
+				{
+					"text": "人",
+					"start_time": 155010,
+					"end_time": 155700
+				},
+				{
+					"text": "的",
+					"start_time": 155700,
+					"end_time": 156620,
+					"ends_with_space": true
+				},
+				{
+					"text": "星",
+					"start_time": 157250,
+					"end_time": 157550
+				},
+				{
+					"text": "期",
+					"start_time": 157550,
+					"end_time": 157840
+				},
+				{
+					"text": "天",
+					"start_time": 157840,
+					"end_time": 159000
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein Sonntag für mich alleine,"
+				},
+				{
+					"language": "en",
+					"text": "A Sunday, all on my own"
+				},
+				{
+					"language": "es",
+					"text": "Un domingo solitario"
+				},
+				{
+					"language": "fr",
+					"text": "Un dimanche, solitaire"
+				},
+				{
+					"language": "id",
+					"text": "Hari minggu, sendirian"
+				},
+				{
+					"language": "ja",
+					"text": "一人だけの 日曜日"
+				},
+				{
+					"language": "ko",
+					"text": "혼자 보내는 일요일"
+				},
+				{
+					"language": "pt",
+					"text": "Um domingo, completamente sozinho"
+				},
+				{
+					"language": "ru",
+					"text": "Воскресенье наедине с собой."
+				},
+				{
+					"language": "th",
+					"text": "วันอาทิตย์ ฉันอยู่คนเดียวได้"
+				},
+				{
+					"language": "vi",
+					"text": "Ngày chủ nhật, một mình"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一人的 星期天",
+					"words": [
+						{
+							"text": "一",
+							"start_time": 154480,
+							"end_time": 155010
+						},
+						{
+							"text": "人",
+							"start_time": 155010,
+							"end_time": 155700
+						},
+						{
+							"text": "的",
+							"start_time": 155700,
+							"end_time": 156620,
+							"ends_with_space": true
+						},
+						{
+							"text": "星",
+							"start_time": 157250,
+							"end_time": 157550
+						},
+						{
+							"text": "期",
+							"start_time": 157550,
+							"end_time": 157840
+						},
+						{
+							"text": "天",
+							"start_time": 157840,
+							"end_time": 159000
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì rén de xīng qī tiān",
+					"words": [
+						{
+							"text": "yì",
+							"start_time": 154480,
+							"end_time": 155010,
+							"ends_with_space": true
+						},
+						{
+							"text": "rén",
+							"start_time": 155010,
+							"end_time": 155700,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 155700,
+							"end_time": 156620,
+							"ends_with_space": true
+						},
+						{
+							"text": "xīng",
+							"start_time": 157250,
+							"end_time": 157550,
+							"ends_with_space": true
+						},
+						{
+							"text": "qī",
+							"start_time": 157550,
+							"end_time": 157840,
+							"ends_with_space": true
+						},
+						{
+							"text": "tiān",
+							"start_time": 157840,
+							"end_time": 159000
+						}
+					]
+				}
+			],
+			"id": "L26",
+			"agent_id": "v1",
+			"song_part": "FalseChorus",
+			"block_index": 7
+		},
+		{
+			"text": "滑入了 地平线",
+			"start_time": 159810,
+			"end_time": 163960,
+			"words": [
+				{
+					"text": "滑",
+					"start_time": 159810,
+					"end_time": 160110
+				},
+				{
+					"text": "入",
+					"start_time": 160110,
+					"end_time": 160430
+				},
+				{
+					"text": "了",
+					"start_time": 160430,
+					"end_time": 161640,
+					"ends_with_space": true
+				},
+				{
+					"text": "地",
+					"start_time": 162310,
+					"end_time": 162580
+				},
+				{
+					"text": "平",
+					"start_time": 162580,
+					"end_time": 162810
+				},
+				{
+					"text": "线",
+					"start_time": 162810,
+					"end_time": 163960
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "macht sich heimlich davon, hinter den Horizont,"
+				},
+				{
+					"language": "en",
+					"text": "Slips beyond, the horizon"
+				},
+				{
+					"language": "es",
+					"text": "se desliza hacia el horizonte con decisión"
+				},
+				{
+					"language": "fr",
+					"text": "Qui se dérobe, à l'horizon"
+				},
+				{
+					"language": "id",
+					"text": "Melayang pergi, ke cakrawala"
+				},
+				{
+					"language": "ja",
+					"text": "地平線に 溶ける"
+				},
+				{
+					"language": "ko",
+					"text": "지평선을 따라 미끄러져 가"
+				},
+				{
+					"language": "pt",
+					"text": "Deslize para além do horizonte"
+				},
+				{
+					"language": "ru",
+					"text": "Ускользает за горизонт,"
+				},
+				{
+					"language": "th",
+					"text": "ล่องลอยออกไป สู่เส้นขอบฟ้า"
+				},
+				{
+					"language": "vi",
+					"text": "Trượt vào, đường chân trời"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "滑入了 地平線",
+					"words": [
+						{
+							"text": "滑",
+							"start_time": 159810,
+							"end_time": 160110
+						},
+						{
+							"text": "入",
+							"start_time": 160110,
+							"end_time": 160430
+						},
+						{
+							"text": "了",
+							"start_time": 160430,
+							"end_time": 161640,
+							"ends_with_space": true
+						},
+						{
+							"text": "地",
+							"start_time": 162310,
+							"end_time": 162580
+						},
+						{
+							"text": "平",
+							"start_time": 162580,
+							"end_time": 162810
+						},
+						{
+							"text": "線",
+							"start_time": 162810,
+							"end_time": 163960
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "huá rù le dì píng xiàn",
+					"words": [
+						{
+							"text": "huá",
+							"start_time": 159810,
+							"end_time": 160110,
+							"ends_with_space": true
+						},
+						{
+							"text": "rù",
+							"start_time": 160110,
+							"end_time": 160430,
+							"ends_with_space": true
+						},
+						{
+							"text": "le",
+							"start_time": 160430,
+							"end_time": 161640,
+							"ends_with_space": true
+						},
+						{
+							"text": "dì",
+							"start_time": 162310,
+							"end_time": 162580,
+							"ends_with_space": true
+						},
+						{
+							"text": "píng",
+							"start_time": 162580,
+							"end_time": 162810,
+							"ends_with_space": true
+						},
+						{
+							"text": "xiàn",
+							"start_time": 162810,
+							"end_time": 163960
+						}
+					]
+				}
+			],
+			"id": "L27",
+			"agent_id": "v1",
+			"song_part": "FalseChorus",
+			"block_index": 7
+		},
+		{
+			"text": "无可名状的长夜",
+			"start_time": 165140,
+			"end_time": 168840,
+			"words": [
+				{
+					"text": "无",
+					"start_time": 165140,
+					"end_time": 165380
+				},
+				{
+					"text": "可",
+					"start_time": 165380,
+					"end_time": 165750
+				},
+				{
+					"text": "名",
+					"start_time": 165750,
+					"end_time": 166270
+				},
+				{
+					"text": "状",
+					"start_time": 166270,
+					"end_time": 166690
+				},
+				{
+					"text": "的",
+					"start_time": 166690,
+					"end_time": 167280
+				},
+				{
+					"text": "长",
+					"start_time": 167490,
+					"end_time": 167970
+				},
+				{
+					"text": "夜",
+					"start_time": 167970,
+					"end_time": 168840
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "wie eine lange Nacht ohne Namen."
+				},
+				{
+					"language": "en",
+					"text": "Like the nameless long night"
+				},
+				{
+					"language": "es",
+					"text": "Como una noche sin nombre y sin conclusión"
+				},
+				{
+					"language": "fr",
+					"text": "Une longue nuit indescriptible"
+				},
+				{
+					"language": "id",
+					"text": "Seperti malam yang tak kunjung akhir"
+				},
+				{
+					"language": "ja",
+					"text": "言い表せないような長い夜"
+				},
+				{
+					"language": "ko",
+					"text": "이름 모를 기나긴 밤"
+				},
+				{
+					"language": "pt",
+					"text": "Como a longa noite sem nome"
+				},
+				{
+					"language": "ru",
+					"text": "словно безымянная долгая ночь."
+				},
+				{
+					"language": "th",
+					"text": "เหมือนค่ำคืนอันยาวนานไร้ชื่อ"
+				},
+				{
+					"language": "vi",
+					"text": "Đêm dài yên tĩnh"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "無可名狀的長夜",
+					"words": [
+						{
+							"text": "無",
+							"start_time": 165140,
+							"end_time": 165380
+						},
+						{
+							"text": "可",
+							"start_time": 165380,
+							"end_time": 165750
+						},
+						{
+							"text": "名",
+							"start_time": 165750,
+							"end_time": 166270
+						},
+						{
+							"text": "狀",
+							"start_time": 166270,
+							"end_time": 166690
+						},
+						{
+							"text": "的",
+							"start_time": 166690,
+							"end_time": 167280
+						},
+						{
+							"text": "長",
+							"start_time": 167490,
+							"end_time": 167970
+						},
+						{
+							"text": "夜",
+							"start_time": 167970,
+							"end_time": 168840
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wú kě míng zhuàng de cháng yè",
+					"words": [
+						{
+							"text": "wú",
+							"start_time": 165140,
+							"end_time": 165380,
+							"ends_with_space": true
+						},
+						{
+							"text": "kě",
+							"start_time": 165380,
+							"end_time": 165750,
+							"ends_with_space": true
+						},
+						{
+							"text": "míng",
+							"start_time": 165750,
+							"end_time": 166270,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhuàng",
+							"start_time": 166270,
+							"end_time": 166690,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 166690,
+							"end_time": 167280,
+							"ends_with_space": true
+						},
+						{
+							"text": "cháng",
+							"start_time": 167490,
+							"end_time": 167970,
+							"ends_with_space": true
+						},
+						{
+							"text": "yè",
+							"start_time": 167970,
+							"end_time": 168840
+						}
+					]
+				}
+			],
+			"id": "L28",
+			"agent_id": "v1",
+			"song_part": "FalseChorus",
+			"block_index": 7
+		},
+		{
+			"text": "你还好吗 思绪明灭",
+			"start_time": 169800,
+			"end_time": 175680,
+			"words": [
+				{
+					"text": "你",
+					"start_time": 169800,
+					"end_time": 170040
+				},
+				{
+					"text": "还",
+					"start_time": 170040,
+					"end_time": 170310
+				},
+				{
+					"text": "好",
+					"start_time": 170310,
+					"end_time": 170760
+				},
+				{
+					"text": "吗",
+					"start_time": 170760,
+					"end_time": 171790,
+					"ends_with_space": true
+				},
+				{
+					"text": "思",
+					"start_time": 172250,
+					"end_time": 172540
+				},
+				{
+					"text": "绪",
+					"start_time": 172540,
+					"end_time": 172920
+				},
+				{
+					"text": "明",
+					"start_time": 172920,
+					"end_time": 173560
+				},
+				{
+					"text": "灭",
+					"start_time": 173560,
+					"end_time": 174100
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Geht es dir gut? Meine Gedanken flimmern."
+				},
+				{
+					"language": "en",
+					"text": "Are you alright? My thoughts flicker"
+				},
+				{
+					"language": "es",
+					"text": "¿Estás bien? Mis pensamientos han comenzado su disipación"
+				},
+				{
+					"language": "fr",
+					"text": "Tu vas bien ? Mes pensées vacillent"
+				},
+				{
+					"language": "id",
+					"text": "Apa kamu baik-baik saja? Pikiran pun datang dan pergi"
+				},
+				{
+					"language": "ja",
+					"text": "お元気ですか 浮かんでは消える"
+				},
+				{
+					"language": "ko",
+					"text": "넌 잘 지낼까 생각은 또 사라져가"
+				},
+				{
+					"language": "pt",
+					"text": "Você está bem? Meus pensamentos oscilam"
+				},
+				{
+					"language": "ru",
+					"text": "«Как ты?» — внезапный вопрос, словно вспышка."
+				},
+				{
+					"language": "th",
+					"text": "คุณสบายดีมั้ย? ความคิดของฉันกำลังสั่นคลอน"
+				},
+				{
+					"language": "vi",
+					"text": "Vẫn khỏe chứ? Suy nghĩ lướt qua"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "你還好嗎 思緒明滅",
+					"words": [
+						{
+							"text": "你",
+							"start_time": 169800,
+							"end_time": 170040
+						},
+						{
+							"text": "還",
+							"start_time": 170040,
+							"end_time": 170310
+						},
+						{
+							"text": "好",
+							"start_time": 170310,
+							"end_time": 170760
+						},
+						{
+							"text": "嗎",
+							"start_time": 170760,
+							"end_time": 171790,
+							"ends_with_space": true
+						},
+						{
+							"text": "思",
+							"start_time": 172250,
+							"end_time": 172540
+						},
+						{
+							"text": "緒",
+							"start_time": 172540,
+							"end_time": 172920
+						},
+						{
+							"text": "明",
+							"start_time": 172920,
+							"end_time": 173560
+						},
+						{
+							"text": "滅",
+							"start_time": 173560,
+							"end_time": 174100
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "nǐ hái hǎo ma sī xù míng miè",
+					"words": [
+						{
+							"text": "nǐ",
+							"start_time": 169800,
+							"end_time": 170040,
+							"ends_with_space": true
+						},
+						{
+							"text": "hái",
+							"start_time": 170040,
+							"end_time": 170310,
+							"ends_with_space": true
+						},
+						{
+							"text": "hǎo",
+							"start_time": 170310,
+							"end_time": 170760,
+							"ends_with_space": true
+						},
+						{
+							"text": "ma",
+							"start_time": 170760,
+							"end_time": 171790,
+							"ends_with_space": true
+						},
+						{
+							"text": "sī",
+							"start_time": 172250,
+							"end_time": 172540,
+							"ends_with_space": true
+						},
+						{
+							"text": "xù",
+							"start_time": 172540,
+							"end_time": 172920,
+							"ends_with_space": true
+						},
+						{
+							"text": "míng",
+							"start_time": 172920,
+							"end_time": 173560,
+							"ends_with_space": true
+						},
+						{
+							"text": "miè",
+							"start_time": 173560,
+							"end_time": 174100
+						}
+					]
+				}
+			],
+			"background_vocal": {
+				"text": "思绪明灭",
+				"start_time": 173160,
+				"end_time": 175680,
+				"words": [
+					{
+						"text": "思",
+						"start_time": 173160,
+						"end_time": 173750
+					},
+					{
+						"text": "绪",
+						"start_time": 173750,
+						"end_time": 174500
+					},
+					{
+						"text": "明",
+						"start_time": 174500,
+						"end_time": 175070
+					},
+					{
+						"text": "灭",
+						"start_time": 175070,
+						"end_time": 175680
+					}
+				],
+				"translations": [
+					{
+						"language": "de",
+						"text": "Meine Gedanken flimmern."
+					},
+					{
+						"language": "en",
+						"text": "My thoughts flicker"
+					},
+					{
+						"language": "es",
+						"text": "Mis pensamientos han comenzado su disipación"
+					},
+					{
+						"language": "fr",
+						"text": "Mes pensées vacillent"
+					},
+					{
+						"language": "id",
+						"text": "Pikiran pun datang dan pergi"
+					},
+					{
+						"language": "ja",
+						"text": "浮かんでは消える"
+					},
+					{
+						"language": "ko",
+						"text": "생각은 또 사라져가"
+					},
+					{
+						"language": "pt",
+						"text": "Meus pensamentos oscilam"
+					},
+					{
+						"language": "ru",
+						"text": "словно вспышка."
+					},
+					{
+						"language": "th",
+						"text": "ความคิดของฉันกำลังสั่นคลอน"
+					},
+					{
+						"language": "vi",
+						"text": "Suy nghĩ lướt qua"
+					},
+					{
+						"language": "zh-Hant",
+						"text": "思緒明滅",
+						"words": [
+							{
+								"text": "思",
+								"start_time": 173160,
+								"end_time": 173750
+							},
+							{
+								"text": "緒",
+								"start_time": 173750,
+								"end_time": 174500
+							},
+							{
+								"text": "明",
+								"start_time": 174500,
+								"end_time": 175070
+							},
+							{
+								"text": "滅",
+								"start_time": 175070,
+								"end_time": 175680
+							}
+						]
+					}
+				],
+				"romanizations": [
+					{
+						"language": "zh-Latn-pinyin",
+						"text": "sī xù míng miè",
+						"words": [
+							{
+								"text": "sī",
+								"start_time": 173160,
+								"end_time": 173750,
+								"ends_with_space": true
+							},
+							{
+								"text": "xù",
+								"start_time": 173750,
+								"end_time": 174500,
+								"ends_with_space": true
+							},
+							{
+								"text": "míng",
+								"start_time": 174500,
+								"end_time": 175070,
+								"ends_with_space": true
+							},
+							{
+								"text": "miè",
+								"start_time": 175070,
+								"end_time": 175680
+							}
+						]
+					}
+				]
+			},
+			"id": "L29",
+			"agent_id": "v1",
+			"song_part": "FalseChorus",
+			"block_index": 7
+		},
+		{
+			"text": "时间外 的时间",
+			"start_time": 174360,
+			"end_time": 178930,
+			"words": [
+				{
+					"text": "时",
+					"start_time": 174360,
+					"end_time": 175020
+				},
+				{
+					"text": "间",
+					"start_time": 175020,
+					"end_time": 175660
+				},
+				{
+					"text": "外",
+					"start_time": 175660,
+					"end_time": 177280,
+					"ends_with_space": true
+				},
+				{
+					"text": "的",
+					"start_time": 177280,
+					"end_time": 177470
+				},
+				{
+					"text": "时",
+					"start_time": 177470,
+					"end_time": 177840
+				},
+				{
+					"text": "间",
+					"start_time": 177840,
+					"end_time": 178930
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Zeit, jenseits der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "A time, beyond time"
+				},
+				{
+					"language": "es",
+					"text": "Más allá de la hora en el reloj"
+				},
+				{
+					"language": "fr",
+					"text": "Un temps, au-delà du temps"
+				},
+				{
+					"language": "id",
+					"text": "Waktu, di luar waktu"
+				},
+				{
+					"language": "ja",
+					"text": "時間の外に 時間"
+				},
+				{
+					"language": "ko",
+					"text": "시간 외의 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Um tempo, além do tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время вне времени."
+				},
+				{
+					"language": "th",
+					"text": "เวลาที่อยู่เหนือกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Khoảng thời gian, ở ngoài thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "時間外 的時間",
+					"words": [
+						{
+							"text": "時",
+							"start_time": 174360,
+							"end_time": 175020
+						},
+						{
+							"text": "間",
+							"start_time": 175020,
+							"end_time": 175660
+						},
+						{
+							"text": "外",
+							"start_time": 175660,
+							"end_time": 177280,
+							"ends_with_space": true
+						},
+						{
+							"text": "的",
+							"start_time": 177280,
+							"end_time": 177470
+						},
+						{
+							"text": "時",
+							"start_time": 177470,
+							"end_time": 177840
+						},
+						{
+							"text": "間",
+							"start_time": 177840,
+							"end_time": 178930
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "shí jiān wài de shí jiān",
+					"words": [
+						{
+							"text": "shí",
+							"start_time": 174360,
+							"end_time": 175020,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 175020,
+							"end_time": 175660,
+							"ends_with_space": true
+						},
+						{
+							"text": "wài",
+							"start_time": 175660,
+							"end_time": 177280,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 177280,
+							"end_time": 177470,
+							"ends_with_space": true
+						},
+						{
+							"text": "shí",
+							"start_time": 177470,
+							"end_time": 177840,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 177840,
+							"end_time": 178930
+						}
+					]
+				}
+			],
+			"id": "L30",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 8
+		},
+		{
+			"text": "温柔的 空房间",
+			"start_time": 179510,
+			"end_time": 184150,
+			"words": [
+				{
+					"text": "温",
+					"start_time": 179510,
+					"end_time": 180020
+				},
+				{
+					"text": "柔",
+					"start_time": 180020,
+					"end_time": 180750
+				},
+				{
+					"text": "的",
+					"start_time": 180750,
+					"end_time": 182010,
+					"ends_with_space": true
+				},
+				{
+					"text": "空",
+					"start_time": 182280,
+					"end_time": 182550
+				},
+				{
+					"text": "房",
+					"start_time": 182550,
+					"end_time": 182870
+				},
+				{
+					"text": "间",
+					"start_time": 182870,
+					"end_time": 184150
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein leiser, leerer Raum."
+				},
+				{
+					"language": "en",
+					"text": "A gentle, empty room"
+				},
+				{
+					"language": "es",
+					"text": "Una sala vacía con un ambiente acogedor"
+				},
+				{
+					"language": "fr",
+					"text": "Une chambre vide, pleine de douceur"
+				},
+				{
+					"language": "id",
+					"text": "Ketenangan, di ruang hampa"
+				},
+				{
+					"language": "ja",
+					"text": "空っぽの部屋は 優しくて"
+				},
+				{
+					"language": "ko",
+					"text": "따뜻한 빈방"
+				},
+				{
+					"language": "pt",
+					"text": "Uma sala gentil e vazia"
+				},
+				{
+					"language": "ru",
+					"text": "Спокойная пустая комната."
+				},
+				{
+					"language": "th",
+					"text": "ห้องอันอ่อนโยนและว่างเปล่า"
+				},
+				{
+					"language": "vi",
+					"text": "Căn phòng trống, dịu dàng"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "溫柔的 空房間",
+					"words": [
+						{
+							"text": "溫",
+							"start_time": 179510,
+							"end_time": 180020
+						},
+						{
+							"text": "柔",
+							"start_time": 180020,
+							"end_time": 180750
+						},
+						{
+							"text": "的",
+							"start_time": 180750,
+							"end_time": 182010,
+							"ends_with_space": true
+						},
+						{
+							"text": "空",
+							"start_time": 182280,
+							"end_time": 182550
+						},
+						{
+							"text": "房",
+							"start_time": 182550,
+							"end_time": 182870
+						},
+						{
+							"text": "間",
+							"start_time": 182870,
+							"end_time": 184150
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wēn róu de kōng fáng jiān",
+					"words": [
+						{
+							"text": "wēn",
+							"start_time": 179510,
+							"end_time": 180020,
+							"ends_with_space": true
+						},
+						{
+							"text": "róu",
+							"start_time": 180020,
+							"end_time": 180750,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 180750,
+							"end_time": 182010,
+							"ends_with_space": true
+						},
+						{
+							"text": "kōng",
+							"start_time": 182280,
+							"end_time": 182550,
+							"ends_with_space": true
+						},
+						{
+							"text": "fáng",
+							"start_time": 182550,
+							"end_time": 182870,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 182870,
+							"end_time": 184150
+						}
+					]
+				}
+			],
+			"id": "L31",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 8
+		},
+		{
+			"text": "方糖悬滞的时间",
+			"start_time": 185090,
+			"end_time": 190630,
+			"words": [
+				{
+					"text": "方",
+					"start_time": 185090,
+					"end_time": 185410
+				},
+				{
+					"text": "糖",
+					"start_time": 185410,
+					"end_time": 185630
+				},
+				{
+					"text": "悬",
+					"start_time": 185630,
+					"end_time": 186290
+				},
+				{
+					"text": "滞",
+					"start_time": 186290,
+					"end_time": 186700
+				},
+				{
+					"text": "的",
+					"start_time": 186700,
+					"end_time": 187450
+				},
+				{
+					"text": "时",
+					"start_time": 187450,
+					"end_time": 187880
+				},
+				{
+					"text": "间",
+					"start_time": 187880,
+					"end_time": 188970
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "So wie der Zuckerwürfel treibt, vergänglich im Fluss der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "As the sugar cube floats, fleeting in time"
+				},
+				{
+					"language": "es",
+					"text": "El tiempo fluye para este terrón"
+				},
+				{
+					"language": "fr",
+					"text": "Alors que le carré de sucre flotte, fugace dans le temps"
+				},
+				{
+					"language": "id",
+					"text": "Gula batu mengapung, larut dalam waktu"
+				},
+				{
+					"language": "ja",
+					"text": "角砂糖が沈んだら"
+				},
+				{
+					"language": "ko",
+					"text": "각설탕 하나가 떠 있는 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Enquanto o cubo de açúcar flutua no tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время тает, как кубик сахара."
+				},
+				{
+					"language": "th",
+					"text": "ขณะที่ก้อนน้ำตาลลอยละล่อง ก็ละลายไปตามกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Viên đường chậm rãi hòa tan trong dòng thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "方糖懸滯的時間",
+					"words": [
+						{
+							"text": "方",
+							"start_time": 185090,
+							"end_time": 185410
+						},
+						{
+							"text": "糖",
+							"start_time": 185410,
+							"end_time": 185630
+						},
+						{
+							"text": "懸",
+							"start_time": 185630,
+							"end_time": 186290
+						},
+						{
+							"text": "滯",
+							"start_time": 186290,
+							"end_time": 186700
+						},
+						{
+							"text": "的",
+							"start_time": 186700,
+							"end_time": 187450
+						},
+						{
+							"text": "時",
+							"start_time": 187450,
+							"end_time": 187880
+						},
+						{
+							"text": "間",
+							"start_time": 187880,
+							"end_time": 188970
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fāng táng xuán zhì de shí jiān",
+					"words": [
+						{
+							"text": "fāng",
+							"start_time": 185090,
+							"end_time": 185410,
+							"ends_with_space": true
+						},
+						{
+							"text": "táng",
+							"start_time": 185410,
+							"end_time": 185630,
+							"ends_with_space": true
+						},
+						{
+							"text": "xuán",
+							"start_time": 185630,
+							"end_time": 186290,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhì",
+							"start_time": 186290,
+							"end_time": 186700,
+							"ends_with_space": true
+						},
+						{
+							"text": "de",
+							"start_time": 186700,
+							"end_time": 187450,
+							"ends_with_space": true
+						},
+						{
+							"text": "shí",
+							"start_time": 187450,
+							"end_time": 187880,
+							"ends_with_space": true
+						},
+						{
+							"text": "jiān",
+							"start_time": 187880,
+							"end_time": 188970
+						}
+					]
+				}
+			],
+			"background_vocal": {
+				"text": "悬滞的时间",
+				"start_time": 188170,
+				"end_time": 190630,
+				"words": [
+					{
+						"text": "悬",
+						"start_time": 188170,
+						"end_time": 188500
+					},
+					{
+						"text": "滞",
+						"start_time": 188500,
+						"end_time": 188870
+					},
+					{
+						"text": "的",
+						"start_time": 188870,
+						"end_time": 189010
+					},
+					{
+						"text": "时",
+						"start_time": 189010,
+						"end_time": 189740
+					},
+					{
+						"text": "间",
+						"start_time": 189740,
+						"end_time": 190630
+					}
+				],
+				"translations": [
+					{
+						"language": "de",
+						"text": "vergänglich im Fluss der Zeit."
+					},
+					{
+						"language": "en",
+						"text": "fleeting in time"
+					},
+					{
+						"language": "es",
+						"text": "el tiempo fluye para este terrón"
+					},
+					{
+						"language": "fr",
+						"text": "fugace dans le temps"
+					},
+					{
+						"language": "id",
+						"text": "larut dalam waktu"
+					},
+					{
+						"language": "ja",
+						"text": "角砂糖が沈むまで"
+					},
+					{
+						"language": "ko",
+						"text": "각설탕 하나가 떠 있는 시간"
+					},
+					{
+						"language": "pt",
+						"text": "flutua no tempo"
+					},
+					{
+						"language": "ru",
+						"text": "как кубик сахара."
+					},
+					{
+						"language": "th",
+						"text": "ขณะที่ก้อนน้ำตาลลอยละล่อง"
+					},
+					{
+						"language": "vi",
+						"text": "hòa tan trong dòng thời gian"
+					},
+					{
+						"language": "zh-Hant",
+						"text": "懸滯的時間",
+						"words": [
+							{
+								"text": "懸",
+								"start_time": 188170,
+								"end_time": 188500
+							},
+							{
+								"text": "滯",
+								"start_time": 188500,
+								"end_time": 188870
+							},
+							{
+								"text": "的",
+								"start_time": 188870,
+								"end_time": 189010
+							},
+							{
+								"text": "時",
+								"start_time": 189010,
+								"end_time": 189740
+							},
+							{
+								"text": "間",
+								"start_time": 189740,
+								"end_time": 190630
+							}
+						]
+					}
+				],
+				"romanizations": [
+					{
+						"language": "zh-Latn-pinyin",
+						"text": "xuán zhì de shí jiān",
+						"words": [
+							{
+								"text": "xuán",
+								"start_time": 188170,
+								"end_time": 188500,
+								"ends_with_space": true
+							},
+							{
+								"text": "zhì",
+								"start_time": 188500,
+								"end_time": 188870,
+								"ends_with_space": true
+							},
+							{
+								"text": "de",
+								"start_time": 188870,
+								"end_time": 189010,
+								"ends_with_space": true
+							},
+							{
+								"text": "shí",
+								"start_time": 189010,
+								"end_time": 189740,
+								"ends_with_space": true
+							},
+							{
+								"text": "jiān",
+								"start_time": 189740,
+								"end_time": 190630
+							}
+						]
+					}
+				]
+			},
+			"id": "L32",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 8
+		},
+		{
+			"text": "融化以后 再回未知盈满明天",
+			"start_time": 189750,
+			"end_time": 199470,
+			"words": [
+				{
+					"text": "融",
+					"start_time": 189750,
+					"end_time": 190060
+				},
+				{
+					"text": "化",
+					"start_time": 190060,
+					"end_time": 190390
+				},
+				{
+					"text": "以",
+					"start_time": 190390,
+					"end_time": 190660
+				},
+				{
+					"text": "后",
+					"start_time": 190660,
+					"end_time": 191970,
+					"ends_with_space": true
+				},
+				{
+					"text": "再",
+					"start_time": 192260,
+					"end_time": 192530
+				},
+				{
+					"text": "回",
+					"start_time": 192530,
+					"end_time": 192910
+				},
+				{
+					"text": "未",
+					"start_time": 192910,
+					"end_time": 193210
+				},
+				{
+					"text": "知",
+					"start_time": 193210,
+					"end_time": 193770
+				},
+				{
+					"text": "盈",
+					"start_time": 193770,
+					"end_time": 194500
+				},
+				{
+					"text": "满",
+					"start_time": 194500,
+					"end_time": 194860
+				},
+				{
+					"text": "明",
+					"start_time": 195140,
+					"end_time": 195380
+				},
+				{
+					"text": "天",
+					"start_time": 195380,
+					"end_time": 199470
+				}
+			],
+			"translations": [
+				{
+					"language": "de",
+					"text": "so schnell geschmolzen und zurückgekehrt ins Morgen, so voller Unwissenheit."
+				},
+				{
+					"language": "en",
+					"text": "Melted away, and back to tomorrow — so full of unknowns"
+				},
+				{
+					"language": "es",
+					"text": "Una vez derretido, nuestro futuro será una interrogación"
+				},
+				{
+					"language": "fr",
+					"text": "Il a fondu, vers un nouveau lendemain, vers l'inconnu"
+				},
+				{
+					"language": "id",
+					"text": "Meleleh, dan kembali ke esok hari yang penuh kejutan"
+				},
+				{
+					"language": "ja",
+					"text": "ほらまた わからないことだらけの明日"
+				},
+				{
+					"language": "ko",
+					"text": "녹아버리면 다시 알 수 없는 내일이 찾아와"
+				},
+				{
+					"language": "pt",
+					"text": "Derretido e de volta ao amanhã - tão cheio de desconhecidos"
+				},
+				{
+					"language": "ru",
+					"text": "Когда он растает, снова наступит завтрашний день, полный неизведанного."
+				},
+				{
+					"language": "th",
+					"text": "ละลายแล้ว กลับไปสู่วันพรุ่งนี้ที่เต็มไปด้วยสิ่งที่ไม่รู้จัก"
+				},
+				{
+					"language": "vi",
+					"text": "Tan đi và trở lại ngày mai, đầy những điều chưa biết"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "融化以後 再回未知盈滿明天",
+					"words": [
+						{
+							"text": "融",
+							"start_time": 189750,
+							"end_time": 190060
+						},
+						{
+							"text": "化",
+							"start_time": 190060,
+							"end_time": 190390
+						},
+						{
+							"text": "以",
+							"start_time": 190390,
+							"end_time": 190660
+						},
+						{
+							"text": "後",
+							"start_time": 190660,
+							"end_time": 191970,
+							"ends_with_space": true
+						},
+						{
+							"text": "再",
+							"start_time": 192260,
+							"end_time": 192530
+						},
+						{
+							"text": "回",
+							"start_time": 192530,
+							"end_time": 192910
+						},
+						{
+							"text": "未",
+							"start_time": 192910,
+							"end_time": 193210
+						},
+						{
+							"text": "知",
+							"start_time": 193210,
+							"end_time": 193770
+						},
+						{
+							"text": "盈",
+							"start_time": 193770,
+							"end_time": 194500
+						},
+						{
+							"text": "滿",
+							"start_time": 194500,
+							"end_time": 194860
+						},
+						{
+							"text": "明",
+							"start_time": 195140,
+							"end_time": 195380
+						},
+						{
+							"text": "天",
+							"start_time": 195380,
+							"end_time": 199470
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "róng huà yǐ hòu zài huí wèi zhī yíng mǎn míng tiān",
+					"words": [
+						{
+							"text": "róng",
+							"start_time": 189750,
+							"end_time": 190060,
+							"ends_with_space": true
+						},
+						{
+							"text": "huà",
+							"start_time": 190060,
+							"end_time": 190390,
+							"ends_with_space": true
+						},
+						{
+							"text": "yǐ",
+							"start_time": 190390,
+							"end_time": 190660,
+							"ends_with_space": true
+						},
+						{
+							"text": "hòu",
+							"start_time": 190660,
+							"end_time": 191970,
+							"ends_with_space": true
+						},
+						{
+							"text": "zài",
+							"start_time": 192260,
+							"end_time": 192530,
+							"ends_with_space": true
+						},
+						{
+							"text": "huí",
+							"start_time": 192530,
+							"end_time": 192910,
+							"ends_with_space": true
+						},
+						{
+							"text": "wèi",
+							"start_time": 192910,
+							"end_time": 193210,
+							"ends_with_space": true
+						},
+						{
+							"text": "zhī",
+							"start_time": 193210,
+							"end_time": 193770,
+							"ends_with_space": true
+						},
+						{
+							"text": "yíng",
+							"start_time": 193770,
+							"end_time": 194500,
+							"ends_with_space": true
+						},
+						{
+							"text": "mǎn",
+							"start_time": 194500,
+							"end_time": 194860,
+							"ends_with_space": true
+						},
+						{
+							"text": "míng",
+							"start_time": 195140,
+							"end_time": 195380,
+							"ends_with_space": true
+						},
+						{
+							"text": "tiān",
+							"start_time": 195380,
+							"end_time": 199470
+						}
+					]
+				}
+			],
+			"id": "L33",
+			"agent_id": "v1",
+			"song_part": "Chorus",
+			"block_index": 8
+		}
+	]
+}

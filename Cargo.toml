@@ -1,0 +1,39 @@
+[package]
+name = "ttml_processor"
+version = "0.3.0"
+edition = "2024"
+
+[dependencies]
+quick-xml = "0.39"
+thiserror = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+indexmap = { version = "2.14", features = ["serde"] }
+serde_with = "3.18"
+
+[[bench]]
+name = "ttml_parser_benchmark"
+harness = false
+
+[dev-dependencies]
+criterion = "0.8"
+insta = { version = "1", features = ["glob"] }
+miette = { version = "7.6.0", features = ["fancy"] }
+mimalloc = "0.1"
+
+[profile.dev]
+opt-level = 0
+debug = 0
+codegen-units = 256
+incremental = true
+panic = "abort"
+
+[profile.dev.build-override]
+opt-level = 3
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+
+cast_sign_loss = "allow"
+cast_possible_truncation = "allow"
