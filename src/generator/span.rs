@@ -16,6 +16,7 @@ use crate::{
     generator::{
         GeneratorConfig,
         ext::ElementWriterExt as _,
+        sub_lyric::should_write_inline,
         utils::format_timestamp,
     },
     model::{
@@ -78,6 +79,7 @@ pub fn write_line_spans(
             writer,
             line.translations.as_deref(),
             line.romanizations.as_deref(),
+            config,
         )?;
     }
 
@@ -187,7 +189,7 @@ fn write_ruby_container(
 fn write_bg_vocal(
     writer: &mut Writer<Vec<u8>>,
     bg: &BackgroundVocal,
-    write_inline_translation: bool,
+    should_write_inline_subline: bool,
     config: &GeneratorConfig,
 ) -> Result<()> {
     let mut bg_span = writer
@@ -263,11 +265,12 @@ fn write_bg_vocal(
 
         // 写入内嵌翻译/音译
         // AMLL 的内嵌翻译和音译无括号
-        if write_inline_translation {
+        if should_write_inline_subline {
             write_inline_subline(
                 writer,
                 bg.translations.as_deref(),
                 bg.romanizations.as_deref(),
+                config,
             )?;
         }
 
@@ -281,14 +284,23 @@ fn write_inline_subline(
     writer: &mut Writer<Vec<u8>>,
     translations: Option<&[SubLyricContent]>,
     romanizations: Option<&[SubLyricContent]>,
+    config: &GeneratorConfig,
 ) -> Result<()> {
+    if config.use_apple_format_rules {
+        return Ok(());
+    }
+
     let mut write_items = |items: Option<&[SubLyricContent]>, role: &str| -> Result<()> {
-        for item in items.into_iter().flatten() {
-            writer
-                .create_element(tags::SPAN)
-                .with_attribute((attrs::TTM_ROLE, role))
-                .with_attribute_opt((attrs::XML_LANG, item.language.as_deref()))
-                .write_text_content(BytesText::new(&item.text))?;
+        if let Some(contents) = items
+            && should_write_inline(contents, config.use_apple_format_rules)
+        {
+            for item in contents {
+                writer
+                    .create_element(tags::SPAN)
+                    .with_attribute((attrs::TTM_ROLE, role))
+                    .with_attribute_opt((attrs::XML_LANG, item.language.as_deref()))
+                    .write_text_content(BytesText::new(&item.text))?;
+            }
         }
         Ok(())
     };

@@ -284,7 +284,7 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
     match &mut line.words {
         Some(words) if !words.is_empty() => {
             normalize_words_spaces(words);
-            line.text = build_full_text(words);
+            line.text = build_full_text(words, false);
         }
         _ => {
             line.words = None;
@@ -298,7 +298,7 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
         for t in translations {
             if let Some(t_words) = &mut t.words {
                 normalize_words_spaces(t_words);
-                t.text = build_full_text(t_words);
+                t.text = build_full_text(t_words, false);
             } else {
                 normalize_line_text(&mut t.text);
             }
@@ -310,7 +310,9 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
         for r in romanizations {
             if let Some(r_words) = &mut r.words {
                 normalize_words_spaces(r_words);
-                r.text = build_full_text(r_words);
+                // 对于逐字音译，始终使用空格连接，因为主要来源之一的 AMLL TTML Tool
+                // 并不会在逐字音译之间添加空格
+                r.text = build_full_text(r_words, true);
             } else {
                 normalize_line_text(&mut r.text);
             }
@@ -323,7 +325,7 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
         if let Some(bg_words) = &mut bg.words {
             strip_outer_parens_from_words(bg_words);
             normalize_words_spaces(bg_words);
-            bg.text = build_full_text(bg_words);
+            bg.text = build_full_text(bg_words, false);
         } else {
             strip_outer_parens(&mut bg.text);
             normalize_line_text(&mut bg.text);
@@ -335,7 +337,7 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
                 if let Some(t_words) = &mut t.words {
                     strip_outer_parens_from_words(t_words);
                     normalize_words_spaces(t_words);
-                    t.text = build_full_text(t_words);
+                    t.text = build_full_text(t_words, false);
                 } else {
                     strip_outer_parens(&mut t.text);
                     normalize_line_text(&mut t.text);
@@ -349,7 +351,7 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
                 if let Some(r_words) = &mut r.words {
                     strip_outer_parens_from_words(r_words);
                     normalize_words_spaces(r_words);
-                    r.text = build_full_text(r_words);
+                    r.text = build_full_text(r_words, true);
                 } else {
                     strip_outer_parens(&mut r.text);
                     normalize_line_text(&mut r.text);

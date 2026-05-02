@@ -210,13 +210,13 @@ pub fn strip_outer_parens_from_words(words: &mut [Syllable]) {
 }
 
 /// 从给定逐字歌词音节数组构建纯文本
-pub fn build_full_text(words: &[Syllable]) -> String {
+pub fn build_full_text(words: &[Syllable], always_space: bool) -> String {
     let capacity = words.iter().map(|w| w.text.len() + 1).sum();
     let mut full_text = String::with_capacity(capacity);
 
     for word in words {
         full_text.push_str(&word.text);
-        if word.ends_with_space.unwrap_or_default() {
+        if always_space || word.ends_with_space.unwrap_or_default() {
             full_text.push(' ');
         }
     }

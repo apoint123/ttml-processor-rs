@@ -101,7 +101,7 @@ input_file: tests/fixtures/complex-test-song.ttml
 			"romanizations": [
 				{
 					"language": "ja-Latn",
-					"text": "Kore wa tesuto",
+					"text": "Ko re wa tesuto",
 					"words": [
 						{
 							"text": "Ko",

@@ -241,10 +241,14 @@ fn should_write_to_head(contents: &[SubLyricContent], use_apple_format_rules: bo
 }
 
 /// 判断是否应该将翻译/音译作为内嵌 span 写入到歌词行中
-/// - 逐字翻译：从不内嵌
-/// - 逐行翻译：仅当 `use_apple_format_rules` 为 false 时内嵌
-fn should_write_inline(contents: &[SubLyricContent], use_apple_format_rules: bool) -> bool {
-    !use_apple_format_rules && contents.iter().any(|c| c.words.is_none())
+/// - 存在逐字内容：从不内嵌（无论是否有逐行内容）
+/// - 仅有逐行内容：内嵌
+/// - 启用了 `use_apple_format_rules`：始终不内嵌
+pub fn should_write_inline(contents: &[SubLyricContent], use_apple_format_rules: bool) -> bool {
+    if use_apple_format_rules {
+        return false;
+    }
+    !contents.iter().any(|c| c.words.is_some())
 }
 
 /// 检查给定歌词行数组中是否存在任何需要写入 `<iTunesMetadata>` 的翻译或音译内容

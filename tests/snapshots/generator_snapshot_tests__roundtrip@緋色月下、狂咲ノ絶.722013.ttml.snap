@@ -4250,7 +4250,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 			"romanizations": [
 				{
 					"language": "ja-Latn",
-					"text": "me i den",
+					"text": "me i de n",
 					"words": [
 						{
 							"text": "me",
@@ -6835,7 +6835,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 			"romanizations": [
 				{
 					"language": "ja-Latn",
-					"text": "a ka i ko u cha shi ta ta ru o to mo te a son de wa fu ka ku e gu ru",
+					"text": "a ka i ko u cha shi ta ta ru o to mo te a so n de wa fu ka ku e gu ru",
 					"words": [
 						{
 							"text": "a ka",
@@ -10598,7 +10598,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 			"romanizations": [
 				{
 					"language": "ja-Latn",
-					"text": "no do o ka ra shi u ta u ne i ro sen ri tsu wa shu no ni ji to na ri",
+					"text": "no do o ka ra shi u ta u n e i ro sen ri tsu wa shu no ni ji to na ri",
 					"words": [
 						{
 							"text": "no do",
@@ -13228,7 +13228,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 				"romanizations": [
 					{
 						"language": "ja-Latn",
-						"text": "do ko ni mo hon to u no wa ta shi nan te i na i no da ka ra",
+						"text": "do ko ni mo hon to u no wa ta shi na n te i na i no da ka ra",
 						"words": [
 							{
 								"text": "do",
@@ -14869,7 +14869,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 				"romanizations": [
 					{
 						"language": "ja-Latn",
-						"text": "zu tto wa ta shi no so ba ni mo u i ka sa na i ka ra",
+						"text": "zu t to wa ta shi no so ba ni mo u i ka sa na i ka ra",
 						"words": [
 							{
 								"text": "zu",
@@ -21068,7 +21068,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 			"romanizations": [
 				{
 					"language": "ja-Latn",
-					"text": "me i den",
+					"text": "me i de n",
 					"words": [
 						{
 							"text": "me",
@@ -24079,7 +24079,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 				"romanizations": [
 					{
 						"language": "ja-Latn",
-						"text": "go men na sa i ko re ga sa i go no a i shi ka ta da tta ka ra",
+						"text": "go me n na sa i ko re ga sa i go no a i shi ka ta da t ta ka ra",
 						"words": [
 							{
 								"text": "go",
@@ -24664,7 +24664,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 				"romanizations": [
 					{
 						"language": "ja-Latn",
-						"text": "zu tto wa ta shi no so ba ni a na ta to i ki ta i no",
+						"text": "zu t to wa ta shi no so ba ni a na ta to i ki ta i no",
 						"words": [
 							{
 								"text": "zu",

@@ -306,7 +306,7 @@ fn parse_sub_lyric_text(
             }
         } else {
             normalize_words_spaces(&mut words);
-            let text = build_full_text(&words);
+            let text = build_full_text(&words, false);
             Some(SubLyricContent {
                 language: lang.cloned(),
                 text,
