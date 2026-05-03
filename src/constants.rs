@@ -1,86 +1,100 @@
 //! TTML 解析和生成器内部使用的常量定义
 
+macro_rules! define_const_strs {
+    ($($name:ident = $value:literal;)*) => {
+        $(
+            pub const $name: &str = $value;
+        )*
+    };
+}
+
 pub mod tags {
-    pub const TT: &str = "tt";
-    pub const HEAD: &str = "head";
-    pub const BODY: &str = "body";
-    pub const DIV: &str = "div";
-    pub const P: &str = "p";
-    pub const SPAN: &str = "span";
-    pub const METADATA: &str = "metadata";
+    define_const_strs! {
+        TT = "tt";
+        HEAD = "head";
+        BODY = "body";
+        DIV = "div";
+        P = "p";
+        SPAN = "span";
+        METADATA = "metadata";
 
-    pub const TRANSLATIONS: &str = "translations";
-    pub const TRANSLITERATIONS: &str = "transliterations";
-    pub const TRANSLATION: &str = "translation";
-    pub const TRANSLITERATION: &str = "transliteration";
+        TRANSLATIONS = "translations";
+        TRANSLITERATIONS = "transliterations";
+        TRANSLATION = "translation";
+        TRANSLITERATION = "transliteration";
 
-    pub const TTM_AGENT: &str = "ttm:agent";
-    pub const TTM_NAME: &str = "ttm:name";
-    pub const TTM_TITLE: &str = "ttm:title";
-    pub const AMLL_META: &str = "amll:meta";
+        TTM_AGENT = "ttm:agent";
+        TTM_NAME = "ttm:name";
+        TTM_TITLE = "ttm:title";
+        AMLL_META = "amll:meta";
 
-    pub const SONGWRITERS: &str = "songwriters";
-    pub const SONGWRITER: &str = "songwriter";
-    pub const TEXT: &str = "text";
-    pub const ITUNES_METADATA: &str = "iTunesMetadata";
+        SONGWRITERS = "songwriters";
+        SONGWRITER = "songwriter";
+        TEXT = "text";
+        ITUNES_METADATA = "iTunesMetadata";
+    }
 }
 
 pub mod attrs {
-    pub const XMLNS: &str = "xmlns";
-    pub const XMLNS_TTM: &str = "xmlns:ttm";
-    pub const XMLNS_TTS: &str = "xmlns:tts";
-    pub const XMLNS_ITUNES: &str = "xmlns:itunes";
-    pub const XMLNS_AMLL: &str = "xmlns:amll";
+    define_const_strs! {
+        XMLNS = "xmlns";
+        XMLNS_TTM = "xmlns:ttm";
+        XMLNS_TTS = "xmlns:tts";
+        XMLNS_ITUNES = "xmlns:itunes";
+        XMLNS_AMLL = "xmlns:amll";
 
-    pub const XML_LANG: &str = "xml:lang";
-    pub const XML_ID: &str = "xml:id";
-    pub const ITUNES_TIMING: &str = "itunes:timing";
-    pub const ITUNES_SONGPART: &str = "itunes:songPart";
-    pub const ITUNES_SONGPART_KEBAB: &str = "itunes:song-part";
-    pub const ITUNES_KEY: &str = "itunes:key";
+        XML_LANG = "xml:lang";
+        XML_ID = "xml:id";
+        ITUNES_TIMING = "itunes:timing";
+        ITUNES_SONGPART = "itunes:songPart";
+        ITUNES_SONGPART_KEBAB = "itunes:song-part";
+        ITUNES_KEY = "itunes:key";
 
-    pub const TTM_AGENT: &str = "ttm:agent";
-    pub const TTM_ROLE: &str = "ttm:role";
-    pub const TTS_RUBY: &str = "tts:ruby";
+        TTM_AGENT = "ttm:agent";
+        TTM_ROLE = "ttm:role";
+        TTS_RUBY = "tts:ruby";
 
-    pub const AMLL_OBSCENE: &str = "amll:obscene";
-    pub const AMLL_EMPTY_BEAT: &str = "amll:empty-beat";
+        AMLL_OBSCENE = "amll:obscene";
+        AMLL_EMPTY_BEAT = "amll:empty-beat";
 
-    pub const BEGIN: &str = "begin";
-    pub const END: &str = "end";
-    pub const DUR: &str = "dur";
-    pub const TYPE: &str = "type";
-    pub const FOR: &str = "for";
-    pub const KEY: &str = "key";
-    pub const VALUE: &str = "value";
+        BEGIN = "begin";
+        END = "end";
+        DUR = "dur";
+        TYPE = "type";
+        FOR = "for";
+        KEY = "key";
+        VALUE = "value";
+    }
 }
 
 pub mod vals {
-    pub const ROLE_BG: &str = "x-bg";
-    pub const ROLE_TRANS: &str = "x-translation";
-    pub const ROLE_ROM: &str = "x-roman";
+    define_const_strs! {
+        ROLE_BG = "x-bg";
+        ROLE_TRANS = "x-translation";
+        ROLE_ROM = "x-roman";
 
-    pub const RUBY_CONTAINER: &str = "container";
-    pub const RUBY_BASE: &str = "base";
-    pub const RUBY_TEXT_CONTAINER: &str = "textContainer";
-    pub const RUBY_TEXT: &str = "text";
+        RUBY_CONTAINER = "container";
+        RUBY_BASE = "base";
+        RUBY_TEXT_CONTAINER = "textContainer";
+        RUBY_TEXT = "text";
 
-    pub const TRUE_STR: &str = "true";
+        TRUE_STR = "true";
 
-    pub const NS_TTML: &str = "http://www.w3.org/ns/ttml";
-    pub const NS_TTM: &str = "http://www.w3.org/ns/ttml#metadata";
-    pub const NS_TTS: &str = "http://www.w3.org/ns/ttml#styling";
-    pub const NS_ITUNES: &str = "http://music.apple.com/lyric-ttml-internal";
-    pub const NS_AMLL: &str = "http://www.example.com/ns/amll";
+        NS_TTML = "http://www.w3.org/ns/ttml";
+        NS_TTM = "http://www.w3.org/ns/ttml#metadata";
+        NS_TTS = "http://www.w3.org/ns/ttml#styling";
+        NS_ITUNES = "http://music.apple.com/lyric-ttml-internal";
+        NS_AMLL = "http://www.example.com/ns/amll";
 
-    pub const META_MUSIC_NAME: &str = "musicName";
-    pub const META_ARTISTS: &str = "artists";
-    pub const META_ALBUM: &str = "album";
-    pub const META_ISRC: &str = "isrc";
-    pub const META_GITHUB_ID: &str = "ttmlAuthorGithub";
-    pub const META_GITHUB_USER_NAME: &str = "ttmlAuthorGithubLogin";
-    pub const META_NCM_ID: &str = "ncmMusicId";
-    pub const META_QQ_ID: &str = "qqMusicId";
-    pub const META_SPOTIFY_ID: &str = "spotifyId";
-    pub const META_APPLE_ID: &str = "appleMusicId";
+        META_MUSIC_NAME = "musicName";
+        META_ARTISTS = "artists";
+        META_ALBUM = "album";
+        META_ISRC = "isrc";
+        META_GITHUB_ID = "ttmlAuthorGithub";
+        META_GITHUB_USER_NAME = "ttmlAuthorGithubLogin";
+        META_NCM_ID = "ncmMusicId";
+        META_QQ_ID = "qqMusicId";
+        META_SPOTIFY_ID = "spotifyId";
+        META_APPLE_ID = "appleMusicId";
+    }
 }
