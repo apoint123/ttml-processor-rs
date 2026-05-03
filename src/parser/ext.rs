@@ -17,7 +17,7 @@ use crate::{
     },
     parser::{
         state::ParserContext,
-        utils::parse_timestamp,
+        timestamp::parse_timestamp,
     },
 };
 
@@ -46,6 +46,7 @@ pub trait BytesStartExt {
         context: &ParserContext,
     ) -> Result<String>;
 
+    #[allow(dead_code)]
     fn get_timestamp_attr(
         &self,
         key: &str,

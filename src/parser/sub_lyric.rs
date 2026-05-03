@@ -223,10 +223,15 @@ fn parse_sub_lyric_text(
                 context.tag_stack.push(tag_name.to_string());
 
                 if qname.is(tags::SPAN) {
-                    if e.get_attr_value(attrs::TTM_ROLE, reader, context)?
-                        .as_deref()
-                        == Some(vals::ROLE_BG)
-                    {
+                    let mut is_current_bg = false;
+                    for attr_res in e.attributes().flatten() {
+                        if attr_res.key.as_ref() == attrs::b::TTM_ROLE {
+                            is_current_bg = attr_res.value.as_ref() == vals::b::ROLE_BG;
+                            break;
+                        }
+                    }
+
+                    if is_current_bg {
                         in_bg_span = true;
                     } else {
                         let syllable = parse_basic_syllable(reader, context, e)?;

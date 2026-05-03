@@ -31,6 +31,7 @@ use crate::{
             ReaderExt as _,
         },
         state::ParserContext,
+        timestamp::parse_timestamp,
         utils::{
             is_spacing_text,
             mark_last_syllable_space,
@@ -76,12 +77,43 @@ pub fn process_span(
     line: &mut LyricLine,
     is_bg_context: bool,
 ) -> Result<()> {
-    let role = span_event.get_attr_value(attrs::TTM_ROLE, reader, context)?;
-    let role_deref = role.as_deref();
+    let mut role_bytes = None;
+    let mut lang_bytes = None;
+    let mut is_ruby_container = false;
+    let mut explicit_bg_start_bytes = None;
+    let mut explicit_bg_end_bytes = None;
+
+    for attr_res in span_event.attributes() {
+        let attr = attr_res
+            .map_err(ParseErrorKind::from)
+            .with_context(reader, context)?;
+
+        match attr.key.as_ref() {
+            attrs::b::TTM_ROLE => role_bytes = Some(attr.value),
+            attrs::b::XML_LANG => lang_bytes = Some(attr.value),
+            attrs::b::TTS_RUBY => {
+                is_ruby_container = attr.value.as_ref() == vals::b::RUBY_CONTAINER;
+            }
+            attrs::b::BEGIN => explicit_bg_start_bytes = Some(attr.value),
+            attrs::b::END => explicit_bg_end_bytes = Some(attr.value),
+            _ => {}
+        }
+    }
+
+    let role_deref = role_bytes.as_deref();
+    let is_trans = role_deref == Some(vals::b::ROLE_TRANS);
+    let is_rom = role_deref == Some(vals::b::ROLE_ROM);
 
     // 内嵌翻译 / 音译
-    if role_deref == Some(vals::ROLE_TRANS) || role_deref == Some(vals::ROLE_ROM) {
-        let lang = span_event.get_attr_value(attrs::XML_LANG, reader, context)?;
+    if is_trans || is_rom {
+        let lang = lang_bytes
+            .map(|v| {
+                String::from_utf8(v.into_owned())
+                    .map_err(|_| ParseErrorKind::EntityError("Invalid UTF-8".to_string()))
+            })
+            .transpose()
+            .with_context(reader, context)?;
+
         let text = read_text_content(reader, context, tags::SPAN)?;
         let trimmed_text = text.trim().to_string();
 
@@ -95,12 +127,12 @@ pub fn process_span(
             if is_bg_context {
                 let bg = line.bg_vocal_mut();
 
-                if role_deref == Some(vals::ROLE_TRANS) {
+                if is_trans {
                     bg.push_translation(sub_lyric);
                 } else {
                     bg.push_romanization(sub_lyric);
                 }
-            } else if role_deref == Some(vals::ROLE_TRANS) {
+            } else if is_trans {
                 line.push_translation(sub_lyric);
             } else {
                 line.push_romanization(sub_lyric);
@@ -110,15 +142,26 @@ pub fn process_span(
     }
 
     // 背景人声
-    let is_bg = is_bg_context || role_deref == Some(vals::ROLE_BG);
-    let is_ruby_container = span_event
-        .get_attr_value(attrs::TTS_RUBY, reader, context)?
-        .as_deref()
-        == Some(vals::RUBY_CONTAINER);
+    let is_bg = is_bg_context || role_deref == Some(b"x-bg");
 
     if is_bg && !is_bg_context {
-        let explicit_bg_start = span_event.get_timestamp_attr(attrs::BEGIN, reader, context)?;
-        let explicit_bg_end = span_event.get_timestamp_attr(attrs::END, reader, context)?;
+        let explicit_bg_start = explicit_bg_start_bytes
+            .map(|b| {
+                std::str::from_utf8(b.as_ref())
+                    .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
+                    .and_then(parse_timestamp)
+            })
+            .transpose()
+            .with_attr_context(reader, context, attrs::BEGIN)?;
+
+        let explicit_bg_end = explicit_bg_end_bytes
+            .map(|b| {
+                std::str::from_utf8(b.as_ref())
+                    .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
+                    .and_then(parse_timestamp)
+            })
+            .transpose()
+            .with_attr_context(reader, context, attrs::END)?;
 
         let mut raw_bg_text = String::new();
 

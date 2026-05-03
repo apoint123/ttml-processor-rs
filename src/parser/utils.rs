@@ -1,6 +1,9 @@
 //! 工具模块
 
-use std::result::Result as StdResult;
+use std::{
+    borrow::Cow,
+    result::Result as StdResult,
+};
 
 use quick_xml::{
     Reader,
@@ -29,11 +32,11 @@ use crate::{
     },
     parser::{
         ext::{
-            BytesStartExt as _,
             QNameExt as _,
             ReaderExt as _,
         },
         state::ParserContext,
+        timestamp::parse_timestamp,
     },
 };
 
@@ -82,15 +85,47 @@ pub fn parse_basic_syllable(
     context: &ParserContext,
     span_event: &BytesStart,
 ) -> Result<Syllable> {
-    let start_time = span_event.get_required_timestamp_attr(attrs::BEGIN, reader, context)?;
-    let end_time = span_event.get_required_timestamp_attr(attrs::END, reader, context)?;
+    let mut begin_bytes: Option<Cow<[u8]>> = None;
+    let mut end_bytes: Option<Cow<[u8]>> = None;
+    let mut obscene = None;
+    let mut empty_beat = None;
 
-    let obscene = span_event
-        .get_attr_value(attrs::AMLL_OBSCENE, reader, context)?
-        .map(|v| v == vals::TRUE_STR);
-    let empty_beat = span_event
-        .get_attr_value(attrs::AMLL_EMPTY_BEAT, reader, context)?
-        .and_then(|v| v.parse::<u32>().ok());
+    for attr_res in span_event.attributes() {
+        let attr = attr_res.map_err(ParseErrorKind::from).with_attr_context(
+            reader,
+            context,
+            tags::SPAN,
+        )?;
+
+        match attr.key.as_ref() {
+            attrs::b::BEGIN => begin_bytes = Some(attr.value),
+            attrs::b::END => end_bytes = Some(attr.value),
+            attrs::b::AMLL_OBSCENE => obscene = Some(attr.value.as_ref() == vals::b::TRUE_STR),
+            attrs::b::AMLL_EMPTY_BEAT => {
+                if let Ok(s) = std::str::from_utf8(attr.value.as_ref()) {
+                    empty_beat = s.parse::<u32>().ok();
+                }
+            }
+            _ => {}
+        }
+    }
+
+    let b_bytes = begin_bytes
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(attrs::BEGIN.to_string()))
+        .with_context(reader, context)?;
+    let e_bytes = end_bytes
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(attrs::END.to_string()))
+        .with_context(reader, context)?;
+
+    let b_str = std::str::from_utf8(&b_bytes)
+        .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
+        .with_attr_context(reader, context, attrs::BEGIN)?;
+    let e_str = std::str::from_utf8(&e_bytes)
+        .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
+        .with_attr_context(reader, context, attrs::END)?;
+
+    let start_time = parse_timestamp(b_str).with_attr_context(reader, context, attrs::BEGIN)?;
+    let end_time = parse_timestamp(e_str).with_attr_context(reader, context, attrs::END)?;
 
     let text = read_text_content(reader, context, tags::SPAN)?;
 
@@ -121,39 +156,6 @@ pub fn resolve_xml_entity(reference: &BytesRef) -> StdResult<String, ParseErrorK
             |value_bytes| Ok(value_bytes.to_string()),
         )
     }
-}
-
-/// 解析给定的时间戳字符串为毫秒
-///
-/// 严格按照 Apple Music 会使用的时间戳格式来解析
-pub fn parse_timestamp(time_str: &str) -> StdResult<u32, ParseErrorKind> {
-    let mut parts = time_str.split(':');
-
-    let parse_part = |s: &str| -> StdResult<f64, ParseErrorKind> {
-        s.parse::<f64>()
-            .map_err(|_| ParseErrorKind::InvalidTimestamp(time_str.to_string()))
-    };
-
-    let total_ms = match (parts.next(), parts.next(), parts.next(), parts.next()) {
-        (Some(sec), None, None, None) => parse_part(sec)? * 1000.0,
-
-        (Some(min), Some(sec), None, None) => {
-            let min_ms = parse_part(min)? * 60_000.0;
-            parse_part(sec)?.mul_add(1000.0, min_ms)
-        }
-
-        (Some(hour), Some(min), Some(sec), None) => {
-            let hour_ms = parse_part(hour)? * 3_600_000.0;
-
-            let hour_min_ms = parse_part(min)?.mul_add(60_000.0, hour_ms);
-
-            parse_part(sec)?.mul_add(1000.0, hour_min_ms)
-        }
-
-        _ => return Err(ParseErrorKind::InvalidTimestamp(time_str.to_string())),
-    };
-
-    Ok(total_ms.round() as u32)
 }
 
 /// 从给定文本中移除括号
@@ -304,26 +306,4 @@ pub const fn mark_slice_last_space(words: &mut [Syllable]) {
 /// 要求不为空且不包含换行符（经过格式化的 TTML）
 pub fn is_spacing_text(text: &str) -> bool {
     !text.is_empty() && !text.contains('\n')
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_parse_timestamp() {
-        assert_eq!(parse_timestamp("1.152").unwrap(), 1152);
-        assert_eq!(parse_timestamp("0.046").unwrap(), 46);
-        assert_eq!(parse_timestamp("10.254").unwrap(), 10254);
-
-        assert_eq!(parse_timestamp("3:36.120").unwrap(), 216_120);
-        assert_eq!(parse_timestamp("1:00").unwrap(), 60000);
-
-        assert_eq!(parse_timestamp("1:03:36.120").unwrap(), 3_816_120);
-
-        assert!(matches!(
-            parse_timestamp("invalid"),
-            Err(ParseErrorKind::InvalidTimestamp(_))
-        ));
-    }
 }

@@ -36,6 +36,9 @@ codegen-units = 256
 incremental = true
 panic = "abort"
 
+[profile.bench]
+debug = true
+
 [profile.dev.build-override]
 opt-level = 3
 

@@ -1,15 +1,24 @@
 //! TTML 解析和生成器内部使用的常量定义
 
-macro_rules! define_const_strs {
+#![allow(clippy::string_lit_as_bytes)]
+#![allow(dead_code)]
+
+macro_rules! define_const_strs_and_bytes {
     ($($name:ident = $value:literal;)*) => {
         $(
             pub const $name: &str = $value;
         )*
+
+        pub mod b {
+            $(
+                pub const $name: &[u8] = $value.as_bytes();
+            )*
+        }
     };
 }
 
 pub mod tags {
-    define_const_strs! {
+    define_const_strs_and_bytes! {
         TT = "tt";
         HEAD = "head";
         BODY = "body";
@@ -36,7 +45,7 @@ pub mod tags {
 }
 
 pub mod attrs {
-    define_const_strs! {
+    define_const_strs_and_bytes! {
         XMLNS = "xmlns";
         XMLNS_TTM = "xmlns:ttm";
         XMLNS_TTS = "xmlns:tts";
@@ -68,7 +77,7 @@ pub mod attrs {
 }
 
 pub mod vals {
-    define_const_strs! {
+    define_const_strs_and_bytes! {
         ROLE_BG = "x-bg";
         ROLE_TRANS = "x-translation";
         ROLE_ROM = "x-roman";

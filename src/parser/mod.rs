@@ -4,6 +4,7 @@ mod head;
 mod span;
 pub mod state;
 mod sub_lyric;
+mod timestamp;
 mod utils;
 
 use quick_xml::{
