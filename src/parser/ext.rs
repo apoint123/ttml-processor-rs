@@ -13,7 +13,6 @@ use crate::{
         ParseErrorKind,
         Result,
         ResultExt as _,
-        TTMLProcessorError,
     },
     parser::{
         state::ParserContext,
@@ -78,9 +77,12 @@ impl BytesStartExt for BytesStart<'_> {
                 .with_attr_context(reader, context, key)?;
 
             if attr.key.as_ref() == key.as_bytes() {
-                let value_str = std::str::from_utf8(&attr.value)
-                    .map_err(TTMLProcessorError::Utf8Error)?
-                    .to_string();
+                let value_str = attr
+                    .unescape_value()
+                    .map_err(|e| ParseErrorKind::EntityError(e.to_string()))
+                    .with_attr_context(reader, context, key)?
+                    .into_owned();
+
                 return Ok(Some(value_str));
             }
         }
