@@ -1172,7 +1172,7 @@ dependencies = [
 
 [[package]]
 name = "ttml_processor"
-version = "0.3.2"
+version = "0.3.3"
 dependencies = [
  "criterion",
  "indexmap 2.14.0",
