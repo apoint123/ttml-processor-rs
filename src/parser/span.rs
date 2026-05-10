@@ -115,7 +115,7 @@ pub fn process_span(
             .with_context(reader, context)?;
 
         let text = read_text_content(reader, context, tags::SPAN)?;
-        let trimmed_text: CompactString = text.trim().into();
+        let trimmed_text: String = text.trim().into();
 
         if !trimmed_text.is_empty() {
             let sub_lyric = SubLyricContent {
@@ -155,7 +155,7 @@ pub fn process_span(
             .transpose()
             .with_attr_context(reader, context, attrs::END)?;
 
-        let mut raw_bg_text = CompactString::default();
+        let mut raw_bg_text = String::new();
 
         let mut buf = Vec::new();
         loop {

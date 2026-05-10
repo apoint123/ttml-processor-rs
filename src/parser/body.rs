@@ -260,7 +260,7 @@ fn parse_line(
         }
     }
 
-    let mut raw_text = CompactString::default();
+    let mut raw_text = String::new();
 
     // 解析内部的 span
     let mut buf = Vec::new();
@@ -313,7 +313,7 @@ fn parse_line(
 /// * 从逐字歌词拼接逐行文本
 /// * 规范化歌词音节、翻译、音译中的空格
 /// * 移除背景人声中的括号
-fn post_process_line(line: &mut LyricLine, raw_line_text: CompactString) {
+fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
     // 移除部分歌词可能出现的尾随空格
     if let Some(words) = &mut line.words
         && let Some(last) = words.last_mut()

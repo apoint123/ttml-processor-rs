@@ -86,6 +86,6 @@ fn benchmark_parse_amll_ttml_db(c: &mut Criterion) {
     group.finish();
 }
 
-criterion_group!(benches, benchmark_parse_ttml, benchmark_parse_amll_ttml_db);
+criterion_group!(benches, benchmark_parse_amll_ttml_db);
 
 criterion_main!(benches);

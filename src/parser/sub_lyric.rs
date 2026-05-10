@@ -208,8 +208,8 @@ fn parse_sub_lyric_text(
     let mut main_words: Vec<Syllable> = Vec::new();
     let mut bg_words: Vec<Syllable> = Vec::new();
 
-    let mut raw_main_text = CompactString::default();
-    let mut raw_bg_text = CompactString::default();
+    let mut raw_main_text = String::new();
+    let mut raw_bg_text = String::new();
 
     let mut in_bg_span = false;
     let mut buf = Vec::new();
@@ -298,29 +298,28 @@ fn parse_sub_lyric_text(
         last.ends_with_space = None;
     }
 
-    let build_content =
-        |mut words: Vec<Syllable>, raw_text: CompactString| -> Option<SubLyricContent> {
-            if words.is_empty() {
-                let text: CompactString = raw_text.trim().into();
-                if text.is_empty() {
-                    None
-                } else {
-                    Some(SubLyricContent {
-                        language: lang.cloned(),
-                        text,
-                        words: None,
-                    })
-                }
+    let build_content = |mut words: Vec<Syllable>, raw_text: String| -> Option<SubLyricContent> {
+        if words.is_empty() {
+            let text = raw_text.trim().to_string();
+            if text.is_empty() {
+                None
             } else {
-                normalize_words_spaces(&mut words);
-                let text = build_full_text(&words, false);
                 Some(SubLyricContent {
                     language: lang.cloned(),
                     text,
-                    words: Some(words),
+                    words: None,
                 })
             }
-        };
+        } else {
+            normalize_words_spaces(&mut words);
+            let text = build_full_text(&words, false);
+            Some(SubLyricContent {
+                language: lang.cloned(),
+                text,
+                words: Some(words),
+            })
+        }
+    };
 
     if let Some(main_content) = build_content(main_words, raw_main_text) {
         let map = match sub_type {

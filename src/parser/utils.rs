@@ -152,7 +152,12 @@ pub fn resolve_xml_entity(reference: &BytesRef) -> StdResult<String, ParseErrorK
 /// 从给定文本中移除括号
 ///
 /// 只有在最外侧有左括号和右括号时才移除
-pub fn strip_outer_parens(text: &mut CompactString) {
+pub fn strip_outer_parens(text: &mut String) {
+    if let Some(stripped) = strip_outer_parens_str(text) {
+        *text = stripped.into();
+    }
+}
+fn strip_outer_parens_str(text: &str) -> Option<&str> {
     let trimmed = text.trim();
 
     let has_left = trimmed.starts_with(['(', '（']);
@@ -162,7 +167,9 @@ pub fn strip_outer_parens(text: &mut CompactString) {
         let mut chars = trimmed.chars();
         chars.next();
         chars.next_back();
-        *text = chars.as_str().trim().into();
+        Some(chars.as_str().trim())
+    } else {
+        None
     }
 }
 
@@ -175,8 +182,10 @@ pub fn strip_outer_parens_from_words(words: &mut [Syllable]) {
     }
 
     if words.len() == 1 {
-        if let Some(first) = words.first_mut() {
-            strip_outer_parens(&mut first.text);
+        if let Some(first) = words.first_mut()
+            && let Some(stripped) = strip_outer_parens_str(&first.text)
+        {
+            first.text = stripped.into();
         }
         return;
     }
@@ -203,9 +212,9 @@ pub fn strip_outer_parens_from_words(words: &mut [Syllable]) {
 }
 
 /// 从给定逐字歌词音节数组构建纯文本
-pub fn build_full_text(words: &[Syllable], always_space: bool) -> CompactString {
+pub fn build_full_text(words: &[Syllable], always_space: bool) -> String {
     let capacity = words.iter().map(|w| w.text.len() + 1).sum();
-    let mut full_text = CompactString::with_capacity(capacity);
+    let mut full_text = String::with_capacity(capacity);
 
     for word in words {
         full_text.push_str(&word.text);
@@ -221,8 +230,8 @@ pub fn build_full_text(words: &[Syllable], always_space: bool) -> CompactString 
     full_text
 }
 
-pub fn normalize_line_text(text: &mut CompactString) {
-    let mut result = CompactString::with_capacity(text.len());
+pub fn normalize_line_text(text: &mut String) {
+    let mut result = String::with_capacity(text.len());
     let mut last_was_space = true;
 
     for c in text.chars() {

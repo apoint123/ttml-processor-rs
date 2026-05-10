@@ -16,7 +16,7 @@ pub struct SubLyricContent {
     pub language: Option<CompactString>,
 
     /// 完整文本
-    pub text: CompactString,
+    pub text: String,
 
     /// 逐字音节信息
     pub words: Option<Vec<Syllable>>,
@@ -28,7 +28,7 @@ pub struct SubLyricContent {
 pub struct BackgroundVocal {
     /// 完整的文本内容
     /// - 如果是逐字歌词，这里是所有字拼接后的结果
-    pub text: CompactString,
+    pub text: String,
 
     /// 开始时间，单位毫秒
     pub start_time: u32,
@@ -54,7 +54,7 @@ pub struct BackgroundVocal {
 pub struct LyricLine {
     /// 完整的文本内容
     /// - 如果是逐字歌词，这里是所有字拼接后的结果
-    pub text: CompactString,
+    pub text: String,
 
     /// 开始时间，单位毫秒
     pub start_time: u32,
