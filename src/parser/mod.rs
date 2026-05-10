@@ -50,7 +50,7 @@ pub fn parse_ttml(ttml_content: &str) -> Result<TTMLResult> {
                     .map_err(TTMLProcessorError::Utf8Error)?
                     .to_string();
 
-                context.tag_stack.push(tag_name.clone());
+                context.tag_stack.push(tag_name.clone().into());
 
                 if tag_name == tags::TT {
                     context.metadata.language =

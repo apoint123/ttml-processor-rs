@@ -16,14 +16,14 @@ fn main() {
         ..Default::default()
     };
     line.push_word(Syllable {
-        text: "Hello".to_string(),
+        text: "Hello".into(),
         start_time: 5100,
         end_time: 5500,
         ends_with_space: Some(true),
         ..Default::default()
     });
     line.push_word(Syllable {
-        text: "world".to_string(),
+        text: "world".into(),
         start_time: 5600,
         end_time: 6000,
         ..Default::default()
@@ -31,8 +31,8 @@ fn main() {
 
     let result = TTMLResult {
         metadata: TTMLMetadata {
-            timing_mode: Some("word".to_string()),
-            language: Some("en".to_string()),
+            timing_mode: Some("word".into()),
+            language: Some("en".into()),
             ..Default::default()
         },
         lines: vec![line],

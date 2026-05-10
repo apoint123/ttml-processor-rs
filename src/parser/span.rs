@@ -1,3 +1,4 @@
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     events::{
@@ -13,6 +14,7 @@ use crate::{
         vals,
     },
     error::{
+        OptionExt as _,
         ParseErrorKind,
         Result,
         ResultExt as _,
@@ -83,11 +85,7 @@ pub fn process_span(
     let mut explicit_bg_start_bytes = None;
     let mut explicit_bg_end_bytes = None;
 
-    for attr_res in span_event.attributes() {
-        let attr = attr_res
-            .map_err(ParseErrorKind::from)
-            .with_context(reader, context)?;
-
+    span_event.for_each_attr(reader, context, tags::SPAN, |attr| {
         match attr.key.as_ref() {
             attrs::b::TTM_ROLE => role_bytes = Some(attr.value),
             attrs::b::XML_LANG => lang_bytes = Some(attr.value),
@@ -98,7 +96,8 @@ pub fn process_span(
             attrs::b::END => explicit_bg_end_bytes = Some(attr.value),
             _ => {}
         }
-    }
+        Ok(())
+    })?;
 
     let role_deref = role_bytes.as_deref();
     let is_trans = role_deref == Some(vals::b::ROLE_TRANS);
@@ -108,14 +107,15 @@ pub fn process_span(
     if is_trans || is_rom {
         let lang = lang_bytes
             .map(|v| {
-                String::from_utf8(v.into_owned())
-                    .map_err(|_| ParseErrorKind::EntityError("Invalid UTF-8".to_string()))
+                CompactString::from_utf8(v).map_err(|_| {
+                    ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8"))
+                })
             })
             .transpose()
             .with_context(reader, context)?;
 
         let text = read_text_content(reader, context, tags::SPAN)?;
-        let trimmed_text = text.trim().to_string();
+        let trimmed_text: CompactString = text.trim().into();
 
         if !trimmed_text.is_empty() {
             let sub_lyric = SubLyricContent {
@@ -146,24 +146,16 @@ pub fn process_span(
 
     if is_bg && !is_bg_context {
         let explicit_bg_start = explicit_bg_start_bytes
-            .map(|b| {
-                std::str::from_utf8(b.as_ref())
-                    .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
-                    .and_then(parse_timestamp)
-            })
+            .map(|b| parse_timestamp(b.as_ref()))
             .transpose()
             .with_attr_context(reader, context, attrs::BEGIN)?;
 
         let explicit_bg_end = explicit_bg_end_bytes
-            .map(|b| {
-                std::str::from_utf8(b.as_ref())
-                    .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
-                    .and_then(parse_timestamp)
-            })
+            .map(|b| parse_timestamp(b.as_ref()))
             .transpose()
             .with_attr_context(reader, context, attrs::END)?;
 
-        let mut raw_bg_text = String::new();
+        let mut raw_bg_text = CompactString::default();
 
         let mut buf = Vec::new();
         loop {
@@ -172,7 +164,7 @@ pub fn process_span(
                     let qname = e.name();
                     let tag_name = std::str::from_utf8(qname.as_ref())
                         .map_err(TTMLProcessorError::Utf8Error)?;
-                    context.tag_stack.push(tag_name.to_string());
+                    context.tag_stack.push(tag_name.into());
 
                     if qname.is(tags::SPAN) {
                         process_span(reader, context, e, line, true)?;
@@ -267,17 +259,26 @@ fn process_ruby_container(
     line: &mut LyricLine,
     is_bg: bool,
 ) -> Result<()> {
-    let mut base_text = String::new();
+    let mut base_text = CompactString::default();
     let mut ruby_tags = Vec::new();
+
+    let mut obscene = None;
+    let mut empty_beat = None;
 
     // 目前不雅用于和空拍属性暂未明确是添加在何处
     // 暂时直接从容器上提取
-    let obscene = container_event
-        .get_attr_value(attrs::AMLL_OBSCENE, reader, context)?
-        .map(|v| v == vals::TRUE_STR);
-    let empty_beat = container_event
-        .get_attr_value(attrs::AMLL_EMPTY_BEAT, reader, context)?
-        .and_then(|v| v.parse::<u32>().ok());
+    container_event.for_each_attr(reader, context, tags::SPAN, |attr| {
+        match attr.key.as_ref() {
+            attrs::b::AMLL_OBSCENE => obscene = Some(attr.value.as_ref() == vals::b::TRUE_STR),
+            attrs::b::AMLL_EMPTY_BEAT => {
+                if let Ok(s) = std::str::from_utf8(attr.value.as_ref()) {
+                    empty_beat = s.parse::<u32>().ok();
+                }
+            }
+            _ => {}
+        }
+        Ok(())
+    })?;
 
     let mut buf = Vec::new();
     loop {
@@ -286,7 +287,7 @@ fn process_ruby_container(
                 let qname = e.name();
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(tags::SPAN) {
                     let ruby_attr = e.get_attr_value(attrs::TTS_RUBY, reader, context)?;
@@ -296,57 +297,8 @@ fn process_ruby_container(
                             context.tag_stack.pop();
                         }
                         Some(vals::RUBY_TEXT_CONTAINER) => {
-                            let mut inner_buf = Vec::new();
-                            loop {
-                                match reader.read_event_with_context(&mut inner_buf, context)? {
-                                    Event::Start(ref inner_e) => {
-                                        let inner_qname = inner_e.name();
-                                        let inner_tag = std::str::from_utf8(inner_qname.as_ref())
-                                            .map_err(TTMLProcessorError::Utf8Error)?;
-                                        context.tag_stack.push(inner_tag.to_string());
-
-                                        if inner_qname.is(tags::SPAN)
-                                            && inner_e
-                                                .get_attr_value(attrs::TTS_RUBY, reader, context)?
-                                                .as_deref()
-                                                == Some(vals::RUBY_TEXT)
-                                        {
-                                            let r_start = inner_e.get_required_timestamp_attr(
-                                                attrs::BEGIN,
-                                                reader,
-                                                context,
-                                            )?;
-                                            let r_end = inner_e.get_required_timestamp_attr(
-                                                attrs::END,
-                                                reader,
-                                                context,
-                                            )?;
-                                            let r_text =
-                                                read_text_content(reader, context, tags::SPAN)?;
-
-                                            ruby_tags.push(RubyTag {
-                                                text: r_text,
-                                                start_time: r_start,
-                                                end_time: r_end,
-                                            });
-                                            context.tag_stack.pop();
-                                        }
-                                    }
-                                    Event::End(ref inner_e) => {
-                                        if inner_e.name().is(tags::SPAN) {
-                                            break;
-                                        }
-                                        context.tag_stack.pop();
-                                    }
-                                    Event::Eof => {
-                                        return Err(ParseErrorKind::UnexpectedEof)
-                                            .with_context(reader, context);
-                                    }
-                                    _ => (),
-                                }
-                                inner_buf.clear();
-                            }
-                            context.tag_stack.pop(); // RUBY_TEXT_CONTAINER
+                            ruby_tags = process_ruby_text_container(reader, context)?;
+                            context.tag_stack.pop();
                         }
                         _ => {
                             let _ = read_text_content(reader, context, tags::SPAN)?;
@@ -386,6 +338,95 @@ fn process_ruby_container(
     }
 
     Ok(())
+}
+
+/// 解析 `tts:ruby="textContainer"` 内部的标签集合
+fn process_ruby_text_container(
+    reader: &mut Reader<&[u8]>,
+    context: &mut ParserContext,
+) -> Result<Vec<RubyTag>> {
+    let mut ruby_tags = Vec::new();
+    let mut inner_buf = Vec::new();
+
+    loop {
+        match reader.read_event_with_context(&mut inner_buf, context)? {
+            Event::Start(ref inner_e) => {
+                let inner_qname = inner_e.name();
+                let inner_tag = std::str::from_utf8(inner_qname.as_ref())
+                    .map_err(TTMLProcessorError::Utf8Error)?;
+                context.tag_stack.push(inner_tag.into());
+
+                if inner_qname.is(tags::SPAN)
+                    && let Some(ruby_tag) = process_ruby_text_span(reader, context, inner_e)?
+                {
+                    ruby_tags.push(ruby_tag);
+                    context.tag_stack.pop();
+                }
+            }
+            Event::End(ref inner_e) => {
+                if inner_e.name().is(tags::SPAN) {
+                    break;
+                }
+                context.tag_stack.pop();
+            }
+            Event::Eof => {
+                return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context);
+            }
+            _ => (),
+        }
+        inner_buf.clear();
+    }
+
+    Ok(ruby_tags)
+}
+
+/// 解析单个 `tts:ruby="text"` 标签的内容与属性
+fn process_ruby_text_span(
+    reader: &mut Reader<&[u8]>,
+    context: &ParserContext,
+    span_event: &BytesStart,
+) -> Result<Option<RubyTag>> {
+    let mut is_ruby_text = false;
+    let mut r_start = None;
+    let mut r_end = None;
+
+    span_event.for_each_attr(reader, context, tags::SPAN, |attr| {
+        match attr.key.as_ref() {
+            attrs::b::TTS_RUBY => {
+                is_ruby_text = attr.value.as_ref() == vals::b::RUBY_TEXT;
+            }
+            attrs::b::BEGIN => {
+                r_start = Some(parse_timestamp(attr.value.as_ref()).with_attr_context(
+                    reader,
+                    context,
+                    attrs::BEGIN,
+                )?);
+            }
+            attrs::b::END => {
+                r_end = Some(parse_timestamp(attr.value.as_ref()).with_attr_context(
+                    reader,
+                    context,
+                    attrs::END,
+                )?);
+            }
+            _ => {}
+        }
+        Ok(())
+    })?;
+
+    if is_ruby_text {
+        let start_time = r_start.context_missing_attr(reader, context, attrs::BEGIN)?;
+        let end_time = r_end.context_missing_attr(reader, context, attrs::END)?;
+        let text = read_text_content(reader, context, tags::SPAN)?;
+
+        Ok(Some(RubyTag {
+            text,
+            start_time,
+            end_time,
+        }))
+    } else {
+        Ok(None)
+    }
 }
 
 #[cfg(test)]

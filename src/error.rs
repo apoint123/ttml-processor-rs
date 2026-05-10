@@ -4,6 +4,7 @@ use std::{
     string::FromUtf8Error,
 };
 
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     events::attributes::AttrError,
@@ -18,13 +19,13 @@ pub struct ErrorContext {
     /// 错误发生时解析器在文件中的字节偏移量
     pub byte_offset: u64,
     /// 当前解析到的歌词行 ID（例如 "L3"），如果尚未解析到则为 None
-    pub line_id: Option<String>,
+    pub line_id: Option<CompactString>,
     /// 当前的 XML 标签路径栈（例如 `["tt", "body", "div", "p", "span"]`）
-    pub tag_stack: Vec<String>,
+    pub tag_stack: Vec<CompactString>,
     /// 正在处理的属性名
-    pub current_attribute: Option<String>,
+    pub current_attribute: Option<CompactString>,
     /// 引发错误的具体原文字符串
-    pub offending_string: Option<String>,
+    pub offending_string: Option<CompactString>,
 }
 
 #[derive(Error, Debug)]
@@ -33,13 +34,13 @@ pub enum ParseErrorKind {
     AttrError(#[from] AttrError),
 
     #[error("Unknown XML entity: {0}")]
-    EntityError(String),
+    EntityError(CompactString),
 
     #[error("Invalid timestamp format: {0}")]
-    InvalidTimestamp(String),
+    InvalidTimestamp(CompactString),
 
     #[error("Missing required attribute: {0}")]
-    MissingAttribute(String),
+    MissingAttribute(CompactString),
 
     #[error("Unexpected end of file")]
     UnexpectedEof,
@@ -133,7 +134,7 @@ impl<T> ResultExt<T> for StdResult<T, ParseErrorKind> {
                 byte_offset: reader.buffer_position(),
                 line_id: context.current_line_id.clone(),
                 tag_stack: context.tag_stack.clone(),
-                current_attribute: Some(attr_name.to_string()),
+                current_attribute: Some(attr_name.into()),
                 offending_string: None,
             }),
         })
@@ -162,7 +163,7 @@ impl<T> OptionExt<T> for Option<T> {
         context: &ParserContext,
         attr_name: &str,
     ) -> StdResult<T, TTMLProcessorError> {
-        self.ok_or_else(|| ParseErrorKind::MissingAttribute(attr_name.to_string()))
+        self.ok_or_else(|| ParseErrorKind::MissingAttribute(attr_name.into()))
             .with_attr_context(reader, context, attr_name)
     }
 }

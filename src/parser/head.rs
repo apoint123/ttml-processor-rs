@@ -1,3 +1,4 @@
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     events::{
@@ -75,7 +76,7 @@ pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Re
                 let name_str =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(name_str.to_string());
+                context.tag_stack.push(name_str.into());
 
                 match name_str {
                     tags::TRANSLATIONS => {
@@ -113,7 +114,7 @@ pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Re
                         let title = read_text_content(reader, context, tags::TTM_TITLE)?;
                         let trimmed = title.trim();
                         if !trimmed.is_empty() {
-                            context.metadata.push_title(trimmed.to_string());
+                            context.metadata.push_title(trimmed.into());
                         }
                         context.tag_stack.pop();
                     }
@@ -173,7 +174,7 @@ fn parse_agent(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if inner_e.name().is(tags::TTM_NAME) {
                     name = Some(read_text_content(reader, context, tags::TTM_NAME)?);
@@ -201,7 +202,7 @@ fn parse_agent(
 
 fn parse_amll_meta(context: &mut ParserContext, key: &str, value: &str) {
     let meta = &mut context.metadata;
-    let val = value.trim().to_string();
+    let val: CompactString = value.trim().into();
     if val.is_empty() {
         return;
     }
@@ -226,7 +227,7 @@ fn parse_amll_meta(context: &mut ParserContext, key: &str, value: &str) {
         }
 
         _ => {
-            meta.push_raw_property(key.to_string(), val);
+            meta.push_raw_property(key.into(), val);
         }
     }
 }
@@ -248,11 +249,11 @@ fn parse_songwriters(reader: &mut Reader<&[u8]>, context: &mut ParserContext) ->
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if e.name().is(tags::SONGWRITER) {
                     let text = read_text_content(reader, context, tags::SONGWRITER)?;
-                    let text = text.trim().to_string();
+                    let text: CompactString = text.trim().into();
                     if !text.is_empty() {
                         context.metadata.push_songwriter(text);
                     }

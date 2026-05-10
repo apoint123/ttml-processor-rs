@@ -1,8 +1,10 @@
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     events::{
         BytesStart,
         Event,
+        attributes::Attribute,
     },
     name::QName,
 };
@@ -14,10 +16,7 @@ use crate::{
         Result,
         ResultExt as _,
     },
-    parser::{
-        state::ParserContext,
-        timestamp::parse_timestamp,
-    },
+    parser::state::ParserContext,
 };
 
 pub trait QNameExt {
@@ -36,29 +35,24 @@ pub trait BytesStartExt {
         key: &str,
         reader: &Reader<&[u8]>,
         context: &ParserContext,
-    ) -> Result<Option<String>>;
+    ) -> Result<Option<CompactString>>;
 
     fn get_required_attr(
         &self,
         key: &str,
         reader: &Reader<&[u8]>,
         context: &ParserContext,
-    ) -> Result<String>;
+    ) -> Result<CompactString>;
 
-    #[allow(dead_code)]
-    fn get_timestamp_attr(
-        &self,
-        key: &str,
+    fn for_each_attr<'a, F>(
+        &'a self,
         reader: &Reader<&[u8]>,
         context: &ParserContext,
-    ) -> Result<Option<u32>>;
-
-    fn get_required_timestamp_attr(
-        &self,
-        key: &str,
-        reader: &Reader<&[u8]>,
-        context: &ParserContext,
-    ) -> Result<u32>;
+        tag_name: &str,
+        f: F,
+    ) -> Result<()>
+    where
+        F: FnMut(quick_xml::events::attributes::Attribute<'a>) -> Result<()>;
 }
 
 impl BytesStartExt for BytesStart<'_> {
@@ -70,8 +64,8 @@ impl BytesStartExt for BytesStart<'_> {
         key: &str,
         reader: &Reader<&[u8]>,
         context: &ParserContext,
-    ) -> Result<Option<String>> {
-        for attr_result in self.attributes() {
+    ) -> Result<Option<CompactString>> {
+        for attr_result in self.attributes().with_checks(false) {
             let attr = attr_result
                 .map_err(ParseErrorKind::from)
                 .with_attr_context(reader, context, key)?;
@@ -79,11 +73,11 @@ impl BytesStartExt for BytesStart<'_> {
             if attr.key.as_ref() == key.as_bytes() {
                 let value_str = attr
                     .unescape_value()
-                    .map_err(|e| ParseErrorKind::EntityError(e.to_string()))
+                    .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
                     .with_attr_context(reader, context, key)?
                     .into_owned();
 
-                return Ok(Some(value_str));
+                return Ok(Some(value_str.into()));
             }
         }
         Ok(None)
@@ -97,40 +91,29 @@ impl BytesStartExt for BytesStart<'_> {
         key: &str,
         reader: &Reader<&[u8]>,
         context: &ParserContext,
-    ) -> Result<String> {
+    ) -> Result<CompactString> {
         self.get_attr_value(key, reader, context)?
             .context_missing_attr(reader, context, key)
     }
 
-    /// 获取并解析时间戳属性
-    ///
-    /// 若解析失败，返回带 [`ParserContext`]（含属性名 `key`）的 `InvalidTimestamp` 错误
-    fn get_timestamp_attr(
-        &self,
-        key: &str,
+    /// 提供一个闭包一次性遍历所有属性，并自动处理底层的错误转换与上下文注入
+    fn for_each_attr<'a, F>(
+        &'a self,
         reader: &Reader<&[u8]>,
         context: &ParserContext,
-    ) -> Result<Option<u32>> {
-        if let Some(val_str) = self.get_attr_value(key, reader, context)? {
-            let ms = parse_timestamp(&val_str).with_attr_context(reader, context, key)?;
-            Ok(Some(ms))
-        } else {
-            Ok(None)
+        tag_name: &str,
+        mut f: F,
+    ) -> Result<()>
+    where
+        F: FnMut(Attribute<'a>) -> Result<()>,
+    {
+        for attr_res in self.attributes().with_checks(false) {
+            let attr = attr_res
+                .map_err(ParseErrorKind::from)
+                .with_attr_context(reader, context, tag_name)?;
+            f(attr)?;
         }
-    }
-
-    /// 获取并解析必填的时间戳属性
-    ///
-    /// 若未找到，通过 `get_required_attr` 返回 `MissingAttribute` 错误；
-    /// 若解析失败，返回 `InvalidTimestamp` 错误。
-    fn get_required_timestamp_attr(
-        &self,
-        key: &str,
-        reader: &Reader<&[u8]>,
-        context: &ParserContext,
-    ) -> Result<u32> {
-        let val_str = self.get_required_attr(key, reader, context)?;
-        parse_timestamp(&val_str).with_attr_context(reader, context, key)
+        Ok(())
     }
 }
 

@@ -1,5 +1,6 @@
 use std::collections::BTreeSet;
 
+use compact_str::CompactString;
 use quick_xml::{
     Writer,
     events::BytesText,
@@ -155,7 +156,7 @@ fn write_fallback_agents(writer: &mut Writer<Vec<u8>>, lines: &[LyricLine]) -> R
 
 /// 写入 amll:meta 元数据
 fn write_amll_metas(writer: &mut Writer<Vec<u8>>, metadata: &TTMLMetadata) -> Result<()> {
-    let mut write_meta_list = |key: &str, values: Option<&[String]>| -> Result<()> {
+    let mut write_meta_list = |key: &str, values: Option<&[CompactString]>| -> Result<()> {
         for value in values.into_iter().flatten() {
             writer
                 .create_element(tags::AMLL_META)

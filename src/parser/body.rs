@@ -1,3 +1,4 @@
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     events::{
@@ -29,6 +30,7 @@ use crate::{
         },
         span::process_span,
         state::ParserContext,
+        timestamp::parse_timestamp,
         utils::{
             build_full_text,
             is_spacing_text,
@@ -56,7 +58,7 @@ pub fn parse_body(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(tags::DIV) {
                     parse_section(reader, e, context, lines)?;
@@ -133,7 +135,7 @@ fn parse_section(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(tags::P) {
                     if let Some(line) = parse_line(reader, e, context)? {
@@ -180,15 +182,60 @@ fn parse_line(
     p_event: &BytesStart,
     context: &mut ParserContext,
 ) -> Result<Option<LyricLine>> {
-    let line_id = p_event.get_attr_value(attrs::ITUNES_KEY, reader, context)?;
-    context.current_line_id.clone_from(&line_id);
+    let mut line_id: Option<CompactString> = None;
+    let mut agent_id: Option<CompactString> = None;
+    let mut start_time = None;
+    let mut end_time = None;
 
-    let start_time = p_event.get_required_timestamp_attr(attrs::BEGIN, reader, context)?;
-    let end_time = p_event.get_required_timestamp_attr(attrs::END, reader, context)?;
+    p_event.for_each_attr(reader, context, tags::P, |attr| {
+        match attr.key.as_ref() {
+            attrs::b::ITUNES_KEY => {
+                let val = attr
+                    .unescape_value()
+                    .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
+                    .with_attr_context(reader, context, attrs::ITUNES_KEY)?
+                    .into_owned();
+                line_id = Some(val.into());
+            }
+            attrs::b::TTM_AGENT => {
+                let val = attr
+                    .unescape_value()
+                    .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
+                    .with_attr_context(reader, context, attrs::TTM_AGENT)?
+                    .into_owned();
+                agent_id = Some(val.into());
+            }
+            attrs::b::BEGIN => {
+                start_time = Some(parse_timestamp(&attr.value).with_attr_context(
+                    reader,
+                    context,
+                    attrs::BEGIN,
+                )?);
+            }
+            attrs::b::END => {
+                end_time = Some(parse_timestamp(&attr.value).with_attr_context(
+                    reader,
+                    context,
+                    attrs::END,
+                )?);
+            }
+            _ => {}
+        }
+        Ok(())
+    })?;
+
+    let start_time = start_time
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::BEGIN)))
+        .with_context(reader, context)?;
+    let end_time = end_time
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::END)))
+        .with_context(reader, context)?;
+
+    context.current_line_id.clone_from(&line_id);
 
     let mut line = LyricLine {
         id: line_id.clone(),
-        agent_id: p_event.get_attr_value(attrs::TTM_AGENT, reader, context)?,
+        agent_id,
         song_part: context.last_song_part.clone(),
         block_index: Some(context.current_block_index),
         start_time,
@@ -213,7 +260,7 @@ fn parse_line(
         }
     }
 
-    let mut raw_text = String::new();
+    let mut raw_text = CompactString::default();
 
     // 解析内部的 span
     let mut buf = Vec::new();
@@ -224,7 +271,7 @@ fn parse_line(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(tags::SPAN) {
                     process_span(reader, context, e, &mut line, false)?;
@@ -266,7 +313,7 @@ fn parse_line(
 /// * 从逐字歌词拼接逐行文本
 /// * 规范化歌词音节、翻译、音译中的空格
 /// * 移除背景人声中的括号
-fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
+fn post_process_line(line: &mut LyricLine, raw_line_text: CompactString) {
     // 移除部分歌词可能出现的尾随空格
     if let Some(words) = &mut line.words
         && let Some(last) = words.last_mut()
@@ -409,12 +456,12 @@ mod tests {
             background_vocal: Some(BackgroundVocal {
                 words: Some(vec![
                     Syllable {
-                        text: "(Ah".to_string(),
+                        text: "(Ah".into(),
                         ends_with_space: Some(true),
                         ..Default::default()
                     },
                     Syllable {
-                        text: "ha)".to_string(),
+                        text: "ha)".into(),
                         ..Default::default()
                     },
                 ]),
@@ -423,7 +470,7 @@ mod tests {
             ..Default::default()
         };
 
-        post_process_line(&mut line, "  raw   line   text  ".to_string());
+        post_process_line(&mut line, "  raw   line   text  ".into());
 
         assert_eq!(line.text, "raw line text");
         assert_eq!(line.start_time, 1000);
@@ -447,14 +494,14 @@ mod tests {
         let mut context = ParserContext::default();
 
         context.translations_map.insert(
-            "L3".to_string(),
+            "L3".into(),
             vec![SubLyricContent {
-                language: Some("zh".to_string()),
-                text: "你好".to_string(),
+                language: Some("zh".into()),
+                text: "你好".into(),
                 words: None,
             }],
         );
-        context.last_song_part = Some("Verse".to_string());
+        context.last_song_part = Some("Verse".into());
         context.current_block_index = 1;
 
         let line = parse_line(&mut reader, &start_event, &mut context)

@@ -78,7 +78,7 @@ fn main() -> miette::Result<()> {
 
             match &kind {
                 ParseErrorKind::InvalidTimestamp(v) => {
-                    if let Some(idx) = bad_ttml[..search_end].rfind(v) {
+                    if let Some(idx) = bad_ttml[..search_end].rfind(v.as_str()) {
                         exact_offset = idx;
                         exact_len = v.len();
                     }

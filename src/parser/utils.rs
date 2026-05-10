@@ -5,6 +5,7 @@ use std::{
     result::Result as StdResult,
 };
 
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     escape::resolve_predefined_entity,
@@ -32,6 +33,7 @@ use crate::{
     },
     parser::{
         ext::{
+            BytesStartExt as _,
             QNameExt as _,
             ReaderExt as _,
         },
@@ -45,9 +47,9 @@ pub fn read_text_content(
     reader: &mut Reader<&[u8]>,
     context: &ParserContext,
     end_tag: &str,
-) -> Result<String> {
+) -> Result<CompactString> {
     let mut buf = Vec::new();
-    let mut result = String::new();
+    let mut result = CompactString::default();
     let mut depth = 1;
 
     loop {
@@ -90,13 +92,7 @@ pub fn parse_basic_syllable(
     let mut obscene = None;
     let mut empty_beat = None;
 
-    for attr_res in span_event.attributes() {
-        let attr = attr_res.map_err(ParseErrorKind::from).with_attr_context(
-            reader,
-            context,
-            tags::SPAN,
-        )?;
-
+    span_event.for_each_attr(reader, context, tags::SPAN, |attr| {
         match attr.key.as_ref() {
             attrs::b::BEGIN => begin_bytes = Some(attr.value),
             attrs::b::END => end_bytes = Some(attr.value),
@@ -108,24 +104,18 @@ pub fn parse_basic_syllable(
             }
             _ => {}
         }
-    }
+        Ok(())
+    })?;
 
     let b_bytes = begin_bytes
-        .ok_or_else(|| ParseErrorKind::MissingAttribute(attrs::BEGIN.to_string()))
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::BEGIN)))
         .with_context(reader, context)?;
     let e_bytes = end_bytes
-        .ok_or_else(|| ParseErrorKind::MissingAttribute(attrs::END.to_string()))
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::END)))
         .with_context(reader, context)?;
 
-    let b_str = std::str::from_utf8(&b_bytes)
-        .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
-        .with_attr_context(reader, context, attrs::BEGIN)?;
-    let e_str = std::str::from_utf8(&e_bytes)
-        .map_err(|_| ParseErrorKind::InvalidTimestamp("Invalid UTF-8".to_string()))
-        .with_attr_context(reader, context, attrs::END)?;
-
-    let start_time = parse_timestamp(b_str).with_attr_context(reader, context, attrs::BEGIN)?;
-    let end_time = parse_timestamp(e_str).with_attr_context(reader, context, attrs::END)?;
+    let start_time = parse_timestamp(&b_bytes).with_attr_context(reader, context, attrs::BEGIN)?;
+    let end_time = parse_timestamp(&e_bytes).with_attr_context(reader, context, attrs::END)?;
 
     let text = read_text_content(reader, context, tags::SPAN)?;
 
@@ -143,16 +133,17 @@ pub fn parse_basic_syllable(
 pub fn resolve_xml_entity(reference: &BytesRef) -> StdResult<String, ParseErrorKind> {
     if let Some(ch) = reference
         .resolve_char_ref()
-        .map_err(|_| ParseErrorKind::EntityError("Invalid char ref".to_string()))?
+        .map_err(|_| ParseErrorKind::EntityError(CompactString::const_new("Invalid char ref")))?
     {
         Ok(ch.to_string())
     } else {
         let name_bytes = reference.as_ref();
-        let name = std::str::from_utf8(name_bytes)
-            .map_err(|_| ParseErrorKind::EntityError("Invalid UTF-8 entity".to_string()))?;
+        let name = std::str::from_utf8(name_bytes).map_err(|_| {
+            ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8 entity"))
+        })?;
 
         resolve_predefined_entity(name).map_or_else(
-            || Err(ParseErrorKind::EntityError(name.to_owned())),
+            || Err(ParseErrorKind::EntityError(name.into())),
             |value_bytes| Ok(value_bytes.to_string()),
         )
     }
@@ -161,7 +152,7 @@ pub fn resolve_xml_entity(reference: &BytesRef) -> StdResult<String, ParseErrorK
 /// 从给定文本中移除括号
 ///
 /// 只有在最外侧有左括号和右括号时才移除
-pub fn strip_outer_parens(text: &mut String) {
+pub fn strip_outer_parens(text: &mut CompactString) {
     let trimmed = text.trim();
 
     let has_left = trimmed.starts_with(['(', '（']);
@@ -171,7 +162,7 @@ pub fn strip_outer_parens(text: &mut String) {
         let mut chars = trimmed.chars();
         chars.next();
         chars.next_back();
-        *text = chars.as_str().trim().to_string();
+        *text = chars.as_str().trim().into();
     }
 }
 
@@ -212,9 +203,9 @@ pub fn strip_outer_parens_from_words(words: &mut [Syllable]) {
 }
 
 /// 从给定逐字歌词音节数组构建纯文本
-pub fn build_full_text(words: &[Syllable], always_space: bool) -> String {
+pub fn build_full_text(words: &[Syllable], always_space: bool) -> CompactString {
     let capacity = words.iter().map(|w| w.text.len() + 1).sum();
-    let mut full_text = String::with_capacity(capacity);
+    let mut full_text = CompactString::with_capacity(capacity);
 
     for word in words {
         full_text.push_str(&word.text);
@@ -230,8 +221,26 @@ pub fn build_full_text(words: &[Syllable], always_space: bool) -> String {
     full_text
 }
 
-pub fn normalize_line_text(text: &mut String) {
-    *text = text.split_whitespace().collect::<Vec<&str>>().join(" ");
+pub fn normalize_line_text(text: &mut CompactString) {
+    let mut result = CompactString::with_capacity(text.len());
+    let mut last_was_space = true;
+
+    for c in text.chars() {
+        if c.is_whitespace() {
+            if !last_was_space {
+                result.push(' ');
+                last_was_space = true;
+            }
+        } else {
+            result.push(c);
+            last_was_space = false;
+        }
+    }
+
+    if result.ends_with(' ') {
+        result.pop();
+    }
+    *text = result;
 }
 
 /// 规范化给定歌词音节数组的空格
@@ -277,7 +286,7 @@ pub fn normalize_words_spaces(words: &mut [Syllable]) {
             words[i].text.truncate(new_len);
         }
         if leading_spaces_len > 0 {
-            words[i].text.drain(..leading_spaces_len);
+            let _ = words[i].text.drain(..leading_spaces_len);
         }
     }
 }

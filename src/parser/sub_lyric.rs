@@ -1,5 +1,6 @@
 //! 用于解析 `<iTunesMetadata>` 中的翻译或音译内容的模块
 
+use compact_str::CompactString;
 use quick_xml::{
     Reader,
     events::Event,
@@ -86,7 +87,7 @@ pub fn parse_sub_lyrics(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(item_tag) {
                     let lang = e.get_attr_value(attrs::XML_LANG, reader, context)?;
@@ -118,7 +119,7 @@ fn parse_sub_lyric_block(
     reader: &mut Reader<&[u8]>,
     context: &mut ParserContext,
     item_tag: &str,
-    lang: Option<&String>,
+    lang: Option<&CompactString>,
     sub_type: SubLyricType,
 ) -> Result<()> {
     let mut buf = Vec::new();
@@ -129,7 +130,7 @@ fn parse_sub_lyric_block(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(tags::TEXT) {
                     let line_id = e.get_required_attr(attrs::FOR, reader, context)?;
@@ -198,8 +199,8 @@ fn parse_sub_lyric_block(
 fn parse_sub_lyric_text(
     reader: &mut Reader<&[u8]>,
     context: &mut ParserContext,
-    line_id: String,
-    lang: Option<&String>,
+    line_id: CompactString,
+    lang: Option<&CompactString>,
     sub_type: SubLyricType,
 ) -> Result<()> {
     context.current_line_id = Some(line_id.clone());
@@ -207,8 +208,8 @@ fn parse_sub_lyric_text(
     let mut main_words: Vec<Syllable> = Vec::new();
     let mut bg_words: Vec<Syllable> = Vec::new();
 
-    let mut raw_main_text = String::new();
-    let mut raw_bg_text = String::new();
+    let mut raw_main_text = CompactString::default();
+    let mut raw_bg_text = CompactString::default();
 
     let mut in_bg_span = false;
     let mut buf = Vec::new();
@@ -220,11 +221,11 @@ fn parse_sub_lyric_text(
                 let tag_name =
                     std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(tag_name.to_string());
+                context.tag_stack.push(tag_name.into());
 
                 if qname.is(tags::SPAN) {
                     let mut is_current_bg = false;
-                    for attr_res in e.attributes().flatten() {
+                    for attr_res in e.attributes().with_checks(false).flatten() {
                         if attr_res.key.as_ref() == attrs::b::TTM_ROLE {
                             is_current_bg = attr_res.value.as_ref() == vals::b::ROLE_BG;
                             break;
@@ -297,28 +298,29 @@ fn parse_sub_lyric_text(
         last.ends_with_space = None;
     }
 
-    let build_content = |mut words: Vec<Syllable>, raw_text: String| -> Option<SubLyricContent> {
-        if words.is_empty() {
-            let text = raw_text.trim().to_string();
-            if text.is_empty() {
-                None
+    let build_content =
+        |mut words: Vec<Syllable>, raw_text: CompactString| -> Option<SubLyricContent> {
+            if words.is_empty() {
+                let text: CompactString = raw_text.trim().into();
+                if text.is_empty() {
+                    None
+                } else {
+                    Some(SubLyricContent {
+                        language: lang.cloned(),
+                        text,
+                        words: None,
+                    })
+                }
             } else {
+                normalize_words_spaces(&mut words);
+                let text = build_full_text(&words, false);
                 Some(SubLyricContent {
                     language: lang.cloned(),
                     text,
-                    words: None,
+                    words: Some(words),
                 })
             }
-        } else {
-            normalize_words_spaces(&mut words);
-            let text = build_full_text(&words, false);
-            Some(SubLyricContent {
-                language: lang.cloned(),
-                text,
-                words: Some(words),
-            })
-        }
-    };
+        };
 
     if let Some(main_content) = build_content(main_words, raw_main_text) {
         let map = match sub_type {
@@ -371,14 +373,14 @@ mod tests {
 
         let mut reader = Reader::from_str(xml);
         let mut context = ParserContext::default();
-        let lang = "zh-Hans".to_string();
+        let lang = "zh-Hans".into();
 
         advance_to_start_tag(&mut reader, "text");
 
         parse_sub_lyric_text(
             &mut reader,
             &mut context,
-            "L1".to_string(),
+            "L1".into(),
             Some(&lang),
             SubLyricType::Translation,
         )
@@ -412,7 +414,7 @@ mod tests {
 
         let mut reader = Reader::from_str(xml);
         let mut context = ParserContext::default();
-        let lang = "zh-Hans".to_string();
+        let lang = "zh-Hans".into();
 
         advance_to_start_tag(&mut reader, "translation");
 

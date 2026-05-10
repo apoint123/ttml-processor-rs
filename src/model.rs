@@ -1,5 +1,6 @@
 //! TTML 解析和生成器使用的数据结构
 
+use compact_str::CompactString;
 use indexmap::IndexMap;
 use serde::{
     Deserialize,
@@ -12,10 +13,10 @@ use serde_with::skip_serializing_none;
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct SubLyricContent {
     /// 该内容的 BCP-47 语言代码
-    pub language: Option<String>,
+    pub language: Option<CompactString>,
 
     /// 完整文本
-    pub text: String,
+    pub text: CompactString,
 
     /// 逐字音节信息
     pub words: Option<Vec<Syllable>>,
@@ -27,7 +28,7 @@ pub struct SubLyricContent {
 pub struct BackgroundVocal {
     /// 完整的文本内容
     /// - 如果是逐字歌词，这里是所有字拼接后的结果
-    pub text: String,
+    pub text: CompactString,
 
     /// 开始时间，单位毫秒
     pub start_time: u32,
@@ -53,7 +54,7 @@ pub struct BackgroundVocal {
 pub struct LyricLine {
     /// 完整的文本内容
     /// - 如果是逐字歌词，这里是所有字拼接后的结果
-    pub text: String,
+    pub text: CompactString,
 
     /// 开始时间，单位毫秒
     pub start_time: u32,
@@ -78,17 +79,17 @@ pub struct LyricLine {
     /// 行 ID
     ///
     /// 例如 "L1", "L2"...
-    pub id: Option<String>,
+    pub id: Option<CompactString>,
 
     /// 演唱者 ID
     ///
     /// 可用于在 metadata.agents 中查找具体名字
-    pub agent_id: Option<String>,
+    pub agent_id: Option<CompactString>,
 
     /// 歌曲结构组成
     ///
     /// 例如: "Verse", "Chorus", "Intro", "Outro"
-    pub song_part: Option<String>,
+    pub song_part: Option<CompactString>,
 
     /// 所属的递增区块索引
     ///
@@ -151,7 +152,7 @@ impl Syllable {
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct RubyTag {
     /// 注音文本内容
-    pub text: String,
+    pub text: CompactString,
 
     /// 该注音的开始时间，单位毫秒
     pub start_time: u32,
@@ -167,7 +168,7 @@ pub struct Syllable {
     ///  该音节的内容
     /// - 如果是普通音节，为常规歌词文本
     /// - 如果是 Ruby 标注，这里对应 ruby 的基文本，通常为汉字
-    pub text: String,
+    pub text: CompactString,
 
     /// 该音节的开始时间，单位毫秒
     /// - 如果是 Ruby 标注，此值为第一个 [`RubyTag`] 的 startTime
@@ -202,15 +203,15 @@ pub struct Agent {
     ///
     /// 如果是 AMLL 的 TTML，只有 v1 和 v2 分别指代非对唱和对唱。
     /// 如果是 Apple Music 的 TTML，还会出现 v3、v4 等指代每个演唱者，以及 v1000 用于指代合唱。
-    pub id: String,
+    pub id: CompactString,
 
     /// 演唱者名称
-    pub name: Option<String>,
+    pub name: Option<CompactString>,
 
     /// 演唱者类型
     ///
     /// 通常为 "person"、"group"、"other"，也有可能是其他字符串
-    pub type_: Option<String>,
+    pub type_: Option<CompactString>,
 }
 
 /// 元数据中的各个平台 ID
@@ -235,70 +236,70 @@ pub enum PlatformId {
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct TTMLMetadata {
     /// 歌词主语言代码 (BCP-47)
-    pub language: Option<String>,
+    pub language: Option<CompactString>,
 
     /// 计时模式
-    pub timing_mode: Option<String>,
+    pub timing_mode: Option<CompactString>,
 
     /// 歌曲创作者列表
-    pub songwriters: Option<Vec<String>>,
+    pub songwriters: Option<Vec<CompactString>>,
 
     /// 歌曲标题列表
-    pub title: Option<Vec<String>>,
+    pub title: Option<Vec<CompactString>>,
 
     /// 艺术家名称列表
-    pub artist: Option<Vec<String>>,
+    pub artist: Option<Vec<CompactString>>,
 
     /// 专辑名称列表
-    pub album: Option<Vec<String>>,
+    pub album: Option<Vec<CompactString>>,
 
     /// ISRC 号码列表
-    pub isrc: Option<Vec<String>>,
+    pub isrc: Option<Vec<CompactString>>,
 
     /// 歌词作者 GitHub 数字 ID 列表
-    pub author_ids: Option<Vec<String>>,
+    pub author_ids: Option<Vec<CompactString>>,
 
     /// 歌词作者 GitHub 用户名列表
-    pub author_names: Option<Vec<String>>,
+    pub author_names: Option<Vec<CompactString>>,
 
     /// 演唱者映射表
-    pub agents: Option<IndexMap<String, Agent>>,
+    pub agents: Option<IndexMap<CompactString, Agent>>,
 
     /// 平台关联 ID
-    pub platform_ids: Option<IndexMap<PlatformId, Vec<String>>>,
+    pub platform_ids: Option<IndexMap<PlatformId, Vec<CompactString>>>,
 
     /// 其他原始的自定义属性
-    pub raw_properties: Option<IndexMap<String, Vec<String>>>,
+    pub raw_properties: Option<IndexMap<CompactString, Vec<CompactString>>>,
 }
 
 impl TTMLMetadata {
-    pub fn push_title(&mut self, title: String) {
+    pub fn push_title(&mut self, title: CompactString) {
         self.title.get_or_insert_with(Vec::new).push(title);
     }
 
-    pub fn push_artist(&mut self, artist: String) {
+    pub fn push_artist(&mut self, artist: CompactString) {
         self.artist.get_or_insert_with(Vec::new).push(artist);
     }
 
-    pub fn push_album(&mut self, album: String) {
+    pub fn push_album(&mut self, album: CompactString) {
         self.album.get_or_insert_with(Vec::new).push(album);
     }
 
-    pub fn push_songwriter(&mut self, songwriter: String) {
+    pub fn push_songwriter(&mut self, songwriter: CompactString) {
         self.songwriters
             .get_or_insert_with(Vec::new)
             .push(songwriter);
     }
 
-    pub fn push_isrc(&mut self, isrc: String) {
+    pub fn push_isrc(&mut self, isrc: CompactString) {
         self.isrc.get_or_insert_with(Vec::new).push(isrc);
     }
 
-    pub fn push_author_id(&mut self, author_id: String) {
+    pub fn push_author_id(&mut self, author_id: CompactString) {
         self.author_ids.get_or_insert_with(Vec::new).push(author_id);
     }
 
-    pub fn push_author_name(&mut self, author_name: String) {
+    pub fn push_author_name(&mut self, author_name: CompactString) {
         self.author_names
             .get_or_insert_with(Vec::new)
             .push(author_name);
@@ -310,7 +311,7 @@ impl TTMLMetadata {
             .insert(agent.id.clone(), agent);
     }
 
-    pub fn push_platform_id(&mut self, platform: PlatformId, id: String) {
+    pub fn push_platform_id(&mut self, platform: PlatformId, id: CompactString) {
         self.platform_ids
             .get_or_insert_with(IndexMap::new)
             .entry(platform)
@@ -318,7 +319,7 @@ impl TTMLMetadata {
             .push(id);
     }
 
-    pub fn push_raw_property(&mut self, key: String, value: String) {
+    pub fn push_raw_property(&mut self, key: CompactString, value: CompactString) {
         self.raw_properties
             .get_or_insert_with(IndexMap::new)
             .entry(key)
