@@ -32,15 +32,15 @@ use crate::{
         state::ParserContext,
         timestamp::parse_timestamp,
         utils::{
-            build_full_text,
             is_spacing_text,
             mark_last_syllable_space,
-            normalize_line_text,
-            normalize_words_spaces,
             resolve_xml_entity,
-            strip_outer_parens,
-            strip_outer_parens_from_words,
         },
+    },
+    utils::{
+        build_full_text,
+        normalize_line_text,
+        normalize_words_spaces,
     },
 };
 
@@ -343,68 +343,23 @@ fn post_process_line(line: &mut LyricLine, raw_line_text: String) {
     // 规范化主歌词的翻译
     if let Some(translations) = &mut line.translations {
         for t in translations {
-            if let Some(t_words) = &mut t.words {
-                normalize_words_spaces(t_words);
-                t.text = build_full_text(t_words, false);
-            } else {
-                normalize_line_text(&mut t.text);
-            }
+            // 对于主歌词，我们相信歌词制作者已经正确添加了空格，不在这里乱加空格
+            t.normalize(false);
         }
     }
 
     // 规范化主歌词的音译
     if let Some(romanizations) = &mut line.romanizations {
         for r in romanizations {
-            if let Some(r_words) = &mut r.words {
-                normalize_words_spaces(r_words);
-                // 对于逐字音译，始终使用空格连接，因为主要来源之一的 AMLL TTML Tool
-                // 并不会在逐字音译之间添加空格
-                r.text = build_full_text(r_words, true);
-            } else {
-                normalize_line_text(&mut r.text);
-            }
+            // 对于逐字音译，始终使用空格连接，因为主要来源之一的 AMLL TTML Tool
+            // 并不会在逐字音译之间添加空格
+            r.normalize(true);
         }
     }
 
     // 后处理背景人声的括号、空格与文本拼接
     if let Some(bg) = &mut line.background_vocal {
-        // 背景人声的主歌词
-        if let Some(bg_words) = &mut bg.words {
-            strip_outer_parens_from_words(bg_words);
-            normalize_words_spaces(bg_words);
-            bg.text = build_full_text(bg_words, false);
-        } else {
-            strip_outer_parens(&mut bg.text);
-            normalize_line_text(&mut bg.text);
-        }
-
-        // 背景人声的翻译
-        if let Some(translations) = &mut bg.translations {
-            for t in translations {
-                if let Some(t_words) = &mut t.words {
-                    strip_outer_parens_from_words(t_words);
-                    normalize_words_spaces(t_words);
-                    t.text = build_full_text(t_words, false);
-                } else {
-                    strip_outer_parens(&mut t.text);
-                    normalize_line_text(&mut t.text);
-                }
-            }
-        }
-
-        // 背景人声的音译
-        if let Some(romanizations) = &mut bg.romanizations {
-            for r in romanizations {
-                if let Some(r_words) = &mut r.words {
-                    strip_outer_parens_from_words(r_words);
-                    normalize_words_spaces(r_words);
-                    r.text = build_full_text(r_words, true);
-                } else {
-                    strip_outer_parens(&mut r.text);
-                    normalize_line_text(&mut r.text);
-                }
-            }
-        }
+        bg.normalize();
     }
 }
 

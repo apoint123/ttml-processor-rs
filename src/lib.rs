@@ -3,6 +3,7 @@ pub mod error;
 mod generator;
 pub mod model;
 mod parser;
+pub mod utils;
 
 pub use generator::{
     GeneratorConfig,

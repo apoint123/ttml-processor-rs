@@ -8,6 +8,14 @@ use serde::{
 };
 use serde_with::skip_serializing_none;
 
+use crate::utils::{
+    build_full_text,
+    normalize_line_text,
+    normalize_words_spaces,
+    strip_outer_parens,
+    strip_outer_parens_from_words,
+};
+
 /// 翻译/音译的内容
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
@@ -138,6 +146,38 @@ impl BackgroundVocal {
         self.romanizations
             .get_or_insert_with(Vec::new)
             .push(content);
+    }
+
+    /// 后处理背景人声及其 [`SubLyricContent`] 的括号、空格与文本拼接
+    ///
+    /// 包含：
+    /// * 移除两侧的括号
+    /// * 规范化逐字音节的空格
+    /// * 构建逐行文本
+    pub fn normalize(&mut self) {
+        // 背景人声的主歌词
+        if let Some(bg_words) = &mut self.words {
+            strip_outer_parens_from_words(bg_words);
+            normalize_words_spaces(bg_words);
+            self.text = build_full_text(bg_words, false);
+        } else {
+            strip_outer_parens(&mut self.text);
+            normalize_line_text(&mut self.text);
+        }
+
+        // 背景人声的翻译
+        if let Some(translations) = &mut self.translations {
+            for t in translations {
+                t.normalize_with_parens(false);
+            }
+        }
+
+        // 背景人声的音译
+        if let Some(romanizations) = &mut self.romanizations {
+            for r in romanizations {
+                r.normalize_with_parens(true);
+            }
+        }
     }
 }
 
@@ -325,6 +365,37 @@ impl TTMLMetadata {
             .entry(key)
             .or_default()
             .push(value);
+    }
+}
+
+impl SubLyricContent {
+    /// 规范化翻译/音译内容的空格与文本
+    ///
+    /// - 如果有逐字音节，规范化音节空格并拼接全文
+    /// - 否则，直接规范化行文本
+    ///
+    /// `space_joined`：为 `true` 时音节间始终插入空格（一般用于连接逐字音译）
+    pub fn normalize(&mut self, space_joined: bool) {
+        if let Some(words) = &mut self.words {
+            normalize_words_spaces(words);
+            self.text = build_full_text(words, space_joined);
+        } else {
+            normalize_line_text(&mut self.text);
+        }
+    }
+
+    /// 规范化翻译/音译内容，同时移除最外层括号
+    ///
+    /// * 一般用于背景人声的翻译/音译
+    pub fn normalize_with_parens(&mut self, space_joined: bool) {
+        if let Some(words) = &mut self.words {
+            strip_outer_parens_from_words(words);
+            normalize_words_spaces(words);
+            self.text = build_full_text(words, space_joined);
+        } else {
+            strip_outer_parens(&mut self.text);
+            normalize_line_text(&mut self.text);
+        }
     }
 }
 

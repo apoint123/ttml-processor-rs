@@ -30,13 +30,15 @@ use crate::{
         },
         state::ParserContext,
         utils::{
-            build_full_text,
             is_spacing_text,
             mark_slice_last_space,
-            normalize_words_spaces,
             parse_basic_syllable,
             resolve_xml_entity,
         },
+    },
+    utils::{
+        build_full_text,
+        normalize_words_spaces,
     },
 };
 
