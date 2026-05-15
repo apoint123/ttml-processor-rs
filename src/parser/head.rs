@@ -10,8 +10,8 @@ use quick_xml::{
 use crate::{
     constants::{
         attrs,
+        meta_keys,
         tags,
-        vals,
     },
     error::{
         ParseErrorKind,
@@ -208,19 +208,19 @@ fn parse_amll_meta(context: &mut ParserContext, key: &str, value: &str) {
     }
 
     match key {
-        vals::META_MUSIC_NAME => meta.push_title(val),
-        vals::META_ARTISTS => meta.push_artist(val),
-        vals::META_ALBUM => meta.push_album(val),
-        vals::META_ISRC => meta.push_isrc(val),
-        vals::META_GITHUB_ID => meta.push_author_id(val),
-        vals::META_GITHUB_USER_NAME => meta.push_author_name(val),
+        meta_keys::MUSIC_NAME => meta.push_title(val),
+        meta_keys::ARTISTS => meta.push_artist(val),
+        meta_keys::ALBUM => meta.push_album(val),
+        meta_keys::ISRC => meta.push_isrc(val),
+        meta_keys::GITHUB_ID => meta.push_author_id(val),
+        meta_keys::GITHUB_USER_NAME => meta.push_author_name(val),
 
-        vals::META_NCM_ID | vals::META_QQ_ID | vals::META_SPOTIFY_ID | vals::META_APPLE_ID => {
+        meta_keys::NCM_ID | meta_keys::QQ_ID | meta_keys::SPOTIFY_ID | meta_keys::APPLE_ID => {
             let platform = match key {
-                vals::META_NCM_ID => PlatformId::NcmMusicId,
-                vals::META_QQ_ID => PlatformId::QqMusicId,
-                vals::META_SPOTIFY_ID => PlatformId::SpotifyId,
-                vals::META_APPLE_ID => PlatformId::AppleMusicId,
+                meta_keys::NCM_ID => PlatformId::NcmMusicId,
+                meta_keys::QQ_ID => PlatformId::QqMusicId,
+                meta_keys::SPOTIFY_ID => PlatformId::SpotifyId,
+                meta_keys::APPLE_ID => PlatformId::AppleMusicId,
                 _ => unreachable!(),
             };
             meta.push_platform_id(platform, val);
@@ -300,11 +300,11 @@ mod tests {
     fn test_parse_amll_meta() {
         let mut context = ParserContext::default();
 
-        parse_amll_meta(&mut context, vals::META_MUSIC_NAME, "测试歌曲");
-        parse_amll_meta(&mut context, vals::META_ARTISTS, "测试歌手");
+        parse_amll_meta(&mut context, meta_keys::MUSIC_NAME, "测试歌曲");
+        parse_amll_meta(&mut context, meta_keys::ARTISTS, "测试歌手");
 
-        parse_amll_meta(&mut context, vals::META_NCM_ID, "12345");
-        parse_amll_meta(&mut context, vals::META_APPLE_ID, "67890");
+        parse_amll_meta(&mut context, meta_keys::NCM_ID, "12345");
+        parse_amll_meta(&mut context, meta_keys::APPLE_ID, "67890");
 
         parse_amll_meta(&mut context, "customKey", "customValue");
 

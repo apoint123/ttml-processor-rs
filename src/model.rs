@@ -128,6 +128,15 @@ impl LyricLine {
         self.background_vocal
             .get_or_insert_with(BackgroundVocal::default)
     }
+
+    /// 根据当前的 words 重新构建 text 字段
+    ///
+    /// 一般用来从逐字歌词生成逐行文本，没有 words 字段则什么也不会做
+    pub fn rebuild_text(&mut self) {
+        if let Some(words) = &self.words {
+            self.text = build_full_text(words, false);
+        }
+    }
 }
 
 impl BackgroundVocal {
@@ -146,6 +155,15 @@ impl BackgroundVocal {
         self.romanizations
             .get_or_insert_with(Vec::new)
             .push(content);
+    }
+
+    /// 根据当前的 words 重新构建 text 字段
+    ///
+    /// 一般用来从逐字歌词生成逐行文本，没有 words 字段则什么也不会做
+    pub fn rebuild_text(&mut self) {
+        if let Some(words) = &self.words {
+            self.text = build_full_text(words, false);
+        }
     }
 
     /// 后处理背景人声及其 [`SubLyricContent`] 的括号、空格与文本拼接
@@ -369,6 +387,15 @@ impl TTMLMetadata {
 }
 
 impl SubLyricContent {
+    /// 根据当前的 words 重新构建 text 字段
+    ///
+    /// 一般用来从逐字歌词生成逐行文本，没有 words 字段则什么也不会做
+    pub fn rebuild_text(&mut self) {
+        if let Some(words) = &self.words {
+            self.text = build_full_text(words, false);
+        }
+    }
+
     /// 规范化翻译/音译内容的空格与文本
     ///
     /// - 如果有逐字音节，规范化音节空格并拼接全文

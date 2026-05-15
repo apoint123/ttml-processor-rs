@@ -9,6 +9,7 @@ use quick_xml::{
 use crate::{
     constants::{
         attrs,
+        meta_keys,
         tags,
         vals,
     },
@@ -166,24 +167,24 @@ fn write_amll_metas(writer: &mut Writer<Vec<u8>>, metadata: &TTMLMetadata) -> Re
         Ok(())
     };
 
-    write_meta_list(vals::META_MUSIC_NAME, metadata.title.as_deref())?;
-    write_meta_list(vals::META_ARTISTS, metadata.artist.as_deref())?;
-    write_meta_list(vals::META_ALBUM, metadata.album.as_deref())?;
-    write_meta_list(vals::META_ISRC, metadata.isrc.as_deref())?;
+    write_meta_list(meta_keys::MUSIC_NAME, metadata.title.as_deref())?;
+    write_meta_list(meta_keys::ARTISTS, metadata.artist.as_deref())?;
+    write_meta_list(meta_keys::ALBUM, metadata.album.as_deref())?;
+    write_meta_list(meta_keys::ISRC, metadata.isrc.as_deref())?;
 
     for (platform, ids) in metadata.platform_ids.iter().flatten() {
         let key = match platform {
-            PlatformId::NcmMusicId => vals::META_NCM_ID,
-            PlatformId::QqMusicId => vals::META_QQ_ID,
-            PlatformId::SpotifyId => vals::META_SPOTIFY_ID,
-            PlatformId::AppleMusicId => vals::META_APPLE_ID,
+            PlatformId::NcmMusicId => meta_keys::NCM_ID,
+            PlatformId::QqMusicId => meta_keys::QQ_ID,
+            PlatformId::SpotifyId => meta_keys::SPOTIFY_ID,
+            PlatformId::AppleMusicId => meta_keys::APPLE_ID,
         };
         write_meta_list(key, Some(ids))?;
     }
 
-    write_meta_list(vals::META_GITHUB_ID, metadata.author_ids.as_deref())?;
+    write_meta_list(meta_keys::GITHUB_ID, metadata.author_ids.as_deref())?;
     write_meta_list(
-        vals::META_GITHUB_USER_NAME,
+        meta_keys::GITHUB_USER_NAME,
         metadata.author_names.as_deref(),
     )?;
 

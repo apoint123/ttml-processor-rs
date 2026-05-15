@@ -95,15 +95,34 @@ pub mod vals {
         NS_ITUNES = "http://music.apple.com/lyric-ttml-internal";
         NS_AMLL = "http://www.example.com/ns/amll";
 
-        META_MUSIC_NAME = "musicName";
-        META_ARTISTS = "artists";
-        META_ALBUM = "album";
-        META_ISRC = "isrc";
-        META_GITHUB_ID = "ttmlAuthorGithub";
-        META_GITHUB_USER_NAME = "ttmlAuthorGithubLogin";
-        META_NCM_ID = "ncmMusicId";
-        META_QQ_ID = "qqMusicId";
-        META_SPOTIFY_ID = "spotifyId";
-        META_APPLE_ID = "appleMusicId";
+        PERSON = "person";
+        GROUP = "group";
+        OTHER = "other";
+        AGENT_DEFAULT = "v1";
+        AGENT_DEFAULT_DUET = "v2";
+
+        TRANSLATION_DEFAULT_LANGUAGE = "zh-Hans";
+    }
+}
+
+pub mod meta_keys {
+    define_const_strs_and_bytes! {
+        LANGUAGE = "language";
+        TIMING_MODE = "timingMode";
+
+        TITLE = "title";
+        MUSIC_NAME = "musicName";
+        ARTISTS = "artists";
+        SONGWRITERS = "songwriters";
+        ALBUM = "album";
+
+        ISRC = "isrc";
+        GITHUB_ID = "ttmlAuthorGithub";
+        GITHUB_USER_NAME = "ttmlAuthorGithubLogin";
+
+        NCM_ID = "ncmMusicId";
+        QQ_ID = "qqMusicId";
+        SPOTIFY_ID = "spotifyId";
+        APPLE_ID = "appleMusicId";
     }
 }
