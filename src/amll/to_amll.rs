@@ -262,69 +262,114 @@ fn get_line_duet_status(
     current_is_duet
 }
 
+fn find_best_roman_match<'a>(
+    main_start_time: i64,
+    main_end_time: i64,
+    rom_words: &'a [Syllable],
+    search_start_index: &mut usize,
+) -> Option<&'a str> {
+    /// 交并比阈值，至少有 10% 的面积重合
+    const MIN_IOU_THRESHOLD: f64 = 0.1;
+
+    /// 快速通道，优先匹配时间戳完全相同的主歌词和音译音节，同时避免浮点数误差
+    const FAST_TRACK_TOLERANCE_MS: i64 = 2;
+
+    let mut max_iou = 0.0;
+    let mut best_match_index = None;
+
+    let mut j = *search_start_index;
+    while j < rom_words.len() {
+        let sub = &rom_words[j];
+        let sub_start_time = i64::from(sub.start_time);
+        let sub_end_time = i64::from(sub.end_time);
+
+        if (main_start_time - sub_start_time).abs() <= FAST_TRACK_TOLERANCE_MS {
+            *search_start_index = j + 1;
+            return Some(sub.text.trim());
+        }
+
+        // 交集
+        let overlap_start = main_start_time.max(sub_start_time);
+        let overlap_end = main_end_time.min(sub_end_time);
+        let intersection = 0.max(overlap_end - overlap_start) as f64;
+
+        if intersection > 0.0 {
+            // 并集
+            let union_start = main_start_time.min(sub_start_time);
+            let union_end = main_end_time.max(sub_end_time);
+            let union_duration = 1.max(union_end - union_start) as f64;
+
+            let iou = intersection / union_duration;
+
+            if iou > max_iou {
+                max_iou = iou;
+                best_match_index = Some(j);
+            }
+        }
+
+        if sub_start_time >= main_end_time {
+            break;
+        }
+
+        j += 1;
+    }
+
+    if let Some(idx) = best_match_index
+        && max_iou >= MIN_IOU_THRESHOLD
+    {
+        *search_start_index = idx + 1;
+        return Some(rom_words[idx].text.trim());
+    }
+
+    None
+}
+
 fn build_amll_words(
     words: impl IntoIterator<Item = Syllable>,
     rom_content: Option<&SubLyricContent>,
 ) -> Vec<AmllLyricWord> {
-    const TIME_TOLERANCE_MS: i64 = 30;
+    let rom_words = rom_content.and_then(|r| r.words.as_deref()).unwrap_or(&[]);
 
-    let mut rom_iter = rom_content
-        .and_then(|r| r.words.as_deref())
-        .unwrap_or(&[])
-        .iter()
-        .peekable();
+    let mut roman_search_start_index = 0;
 
-    let words_iter = words.into_iter();
-    let (lower_bound, _) = words_iter.size_hint();
-    let mut amll_words = Vec::with_capacity(lower_bound);
+    words
+        .into_iter()
+        .map(|word| {
+            let roman_word = find_best_roman_match(
+                i64::from(word.start_time),
+                i64::from(word.end_time),
+                rom_words,
+                &mut roman_search_start_index,
+            )
+            .map(Into::into);
 
-    for word in words_iter {
-        let mut roman_word = None;
+            let ruby = word.ruby.map(|rubies| {
+                rubies
+                    .into_iter()
+                    .map(|r| LyricWordBase {
+                        start_time: r.start_time,
+                        end_time: r.end_time,
+                        word: r.text,
+                    })
+                    .collect()
+            });
 
-        while let Some(&r_word) = rom_iter.peek() {
-            let w_start = i64::from(word.start_time);
-            let r_start = i64::from(r_word.start_time);
-            let diff = (w_start - r_start).abs();
-
-            if diff <= TIME_TOLERANCE_MS {
-                roman_word = Some(r_word.text.trim().into());
-                rom_iter.next();
-                break;
-            } else if r_start > w_start + TIME_TOLERANCE_MS {
-                break;
+            let mut final_text = word.text;
+            if word.ends_with_space.unwrap_or(false) {
+                final_text.push(' ');
             }
 
-            rom_iter.next();
-        }
-
-        let ruby = word.ruby.map(|rubies| {
-            rubies
-                .into_iter()
-                .map(|r| LyricWordBase {
-                    start_time: r.start_time,
-                    end_time: r.end_time,
-                    word: r.text,
-                })
-                .collect()
-        });
-
-        let mut final_text = word.text;
-        if word.ends_with_space.unwrap_or(false) {
-            final_text.push(' ');
-        }
-
-        amll_words.push(AmllLyricWord {
-            start_time: word.start_time,
-            end_time: word.end_time,
-            word: final_text,
-            roman_word,
-            obscene: word.obscene,
-            empty_beat: word.empty_beat,
-            ruby,
-        });
-    }
-
-    amll_words
+            AmllLyricWord {
+                start_time: word.start_time,
+                end_time: word.end_time,
+                word: final_text,
+                roman_word,
+                obscene: word.obscene,
+                empty_beat: word.empty_beat,
+                ruby,
+            }
+        })
+        .collect()
 }
 
 #[cfg(test)]
@@ -551,5 +596,86 @@ mod tests {
             ],
             "对唱状态机计算错误"
         );
+    }
+
+    #[test]
+    fn test_iou_match() {
+        let rom_words = vec![create_syllable("a", 300, 800, false)];
+        let mut search_idx = 0;
+
+        let result = find_best_roman_match(200, 700, &rom_words, &mut search_idx);
+
+        assert_eq!(result, Some("a"));
+        assert_eq!(search_idx, 1);
+    }
+
+    #[test]
+    fn test_iou_below_threshold() {
+        let rom_words = vec![create_syllable("a", 800, 1000, false)];
+        let mut search_idx = 0;
+
+        let result = find_best_roman_match(0, 810, &rom_words, &mut search_idx);
+
+        assert_eq!(result, None, "重叠过小，不应匹配");
+        assert_eq!(search_idx, 0, "未匹配成功时，游标不应推进");
+    }
+
+    #[test]
+    fn test_sequential_matching_and_state() {
+        let rom_words = vec![
+            create_syllable("a", 0, 500, false),
+            create_syllable("b", 500, 1000, false),
+            create_syllable("c", 1000, 1500, false),
+        ];
+        let mut search_idx = 0;
+
+        let res1 = find_best_roman_match(10, 490, &rom_words, &mut search_idx);
+        assert_eq!(res1, Some("a"));
+        assert_eq!(search_idx, 1);
+
+        let res2 = find_best_roman_match(1020, 1480, &rom_words, &mut search_idx);
+        assert_eq!(res2, Some("c"));
+        assert_eq!(search_idx, 3, "游标应正确跳过未匹配项，推进到 idx 3");
+    }
+
+    #[test]
+    fn test_empty_roman_word_match() {
+        let rom_words = vec![
+            create_syllable("ko", 120_250, 120_690, false),
+            create_syllable("u", 120_695, 120_870, false),
+            create_syllable("ki", 121_070, 121_470, false),
+        ];
+
+        let mut search_idx = 0;
+
+        let res_1 = find_best_roman_match(120_250, 120_690, &rom_words, &mut search_idx);
+        assert_eq!(res_1, Some("ko"), "应精准匹配 'ko'");
+        assert_eq!(search_idx, 1);
+
+        let res_space = find_best_roman_match(120_690, 120_695, &rom_words, &mut search_idx);
+        assert_eq!(res_space, None, "不应匹配到任何罗马音");
+
+        let res_2 = find_best_roman_match(120_695, 120_870, &rom_words, &mut search_idx);
+        assert_eq!(res_2, Some("u"), "应精准匹配 'u'");
+        assert_eq!(search_idx, 2);
+
+        let res_3 = find_best_roman_match(121_070, 121_470, &rom_words, &mut search_idx);
+        assert_eq!(res_3, Some("ki"), "应精准匹配 'ki'");
+        assert_eq!(search_idx, 3);
+    }
+
+    #[test]
+    fn test_main_word_shorter_than_roman_word() {
+        let rom_words = vec![create_syllable("shi", 100, 300, false)];
+        let mut search_idx = 0;
+
+        let result = find_best_roman_match(150, 250, &rom_words, &mut search_idx);
+
+        assert_eq!(
+            result,
+            Some("shi"),
+            "当主歌词被音译词完全包裹（且满足 IOU 阈值）时，应正确匹配"
+        );
+        assert_eq!(search_idx, 1, "匹配成功，游标应当推进");
     }
 }
