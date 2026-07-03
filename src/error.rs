@@ -167,3 +167,21 @@ impl<T> OptionExt<T> for Option<T> {
             .with_attr_context(reader, context, attr_name)
     }
 }
+
+pub trait TimestampExt<T> {
+    /// 如果时间戳解析失败，利用传入的原始 bytes 构造 [`ParseErrorKind::InvalidTimestamp`] 错误
+    ///
+    /// # Errors
+    ///
+    /// 在出错时构造错误
+    fn context_invalid_timestamp(self, bytes: &[u8]) -> StdResult<T, ParseErrorKind>;
+}
+
+impl<T> TimestampExt<T> for Option<T> {
+    fn context_invalid_timestamp(self, bytes: &[u8]) -> StdResult<T, ParseErrorKind> {
+        self.ok_or_else(|| {
+            let err_str = String::from_utf8_lossy(bytes);
+            ParseErrorKind::InvalidTimestamp(err_str.as_ref().into())
+        })
+    }
+}

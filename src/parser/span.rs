@@ -19,6 +19,7 @@ use crate::{
         Result,
         ResultExt as _,
         TTMLProcessorError,
+        TimestampExt as _,
     },
     model::{
         LyricLine,
@@ -146,12 +147,12 @@ pub fn process_span(
 
     if is_bg && !is_bg_context {
         let explicit_bg_start = explicit_bg_start_bytes
-            .map(|b| parse_timestamp(b.as_ref()))
+            .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
             .transpose()
             .with_attr_context(reader, context, attrs::BEGIN)?;
 
         let explicit_bg_end = explicit_bg_end_bytes
-            .map(|b| parse_timestamp(b.as_ref()))
+            .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
             .transpose()
             .with_attr_context(reader, context, attrs::END)?;
 
@@ -396,18 +397,18 @@ fn process_ruby_text_span(
                 is_ruby_text = attr.value.as_ref() == vals::b::RUBY_TEXT;
             }
             attrs::b::BEGIN => {
-                r_start = Some(parse_timestamp(attr.value.as_ref()).with_attr_context(
-                    reader,
-                    context,
-                    attrs::BEGIN,
-                )?);
+                r_start = Some(
+                    parse_timestamp(attr.value.as_ref())
+                        .context_invalid_timestamp(attr.value.as_ref())
+                        .with_attr_context(reader, context, attrs::BEGIN)?,
+                );
             }
             attrs::b::END => {
-                r_end = Some(parse_timestamp(attr.value.as_ref()).with_attr_context(
-                    reader,
-                    context,
-                    attrs::END,
-                )?);
+                r_end = Some(
+                    parse_timestamp(attr.value.as_ref())
+                        .context_invalid_timestamp(attr.value.as_ref())
+                        .with_attr_context(reader, context, attrs::END)?,
+                );
             }
             _ => {}
         }

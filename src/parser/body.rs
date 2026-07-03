@@ -17,6 +17,7 @@ use crate::{
         Result,
         ResultExt as _,
         TTMLProcessorError,
+        TimestampExt as _,
     },
     model::{
         BackgroundVocal,
@@ -206,18 +207,18 @@ fn parse_line(
                 agent_id = Some(val.into());
             }
             attrs::b::BEGIN => {
-                start_time = Some(parse_timestamp(&attr.value).with_attr_context(
-                    reader,
-                    context,
-                    attrs::BEGIN,
-                )?);
+                start_time = Some(
+                    parse_timestamp(&attr.value)
+                        .context_invalid_timestamp(attr.key.as_ref())
+                        .with_attr_context(reader, context, attrs::BEGIN)?,
+                );
             }
             attrs::b::END => {
-                end_time = Some(parse_timestamp(&attr.value).with_attr_context(
-                    reader,
-                    context,
-                    attrs::END,
-                )?);
+                end_time = Some(
+                    parse_timestamp(&attr.value)
+                        .context_invalid_timestamp(attr.key.as_ref())
+                        .with_attr_context(reader, context, attrs::END)?,
+                );
             }
             _ => {}
         }

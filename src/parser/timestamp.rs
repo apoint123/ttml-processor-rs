@@ -1,54 +1,45 @@
-use crate::error::ParseErrorKind;
-
 /// 解析给定的时间戳字节数组为毫秒
 ///
 /// 严格按照 Apple Music 会使用的时间戳格式来解析
-pub fn parse_timestamp(bytes: &[u8]) -> std::result::Result<u32, ParseErrorKind> {
-    let mut parts = [0u32; 3];
-    let mut part_idx = 0;
+///
+/// # Returns
+///
+/// 如果时间戳解析失败，将返回 None，否则返回毫秒数
+#[inline(never)]
+pub fn parse_timestamp(bytes: &[u8]) -> Option<u32> {
+    let mut accum = 0u32;
     let mut current = 0u32;
     let mut has_fraction = false;
+    let mut colons = 0;
 
-    let mut i = 0;
-    while i < bytes.len() {
-        let b = bytes[i];
+    let mut iter = bytes.iter().copied();
+    for b in iter.by_ref() {
         match b {
             b'0'..=b'9' => {
                 current = current * 10 + u32::from(b - b'0');
             }
             b':' => {
-                if part_idx >= 2 {
-                    return Err(ParseErrorKind::InvalidTimestamp(
-                        String::from_utf8_lossy(bytes).into(),
-                    ));
+                if colons >= 2 {
+                    return None;
                 }
-                parts[part_idx] = current;
-                part_idx += 1;
+                accum = (accum + current) * 60;
                 current = 0;
+                colons += 1;
             }
             b'.' => {
-                parts[part_idx] = current;
+                accum += current;
                 has_fraction = true;
-                i += 1;
                 break;
             }
-            _ => {
-                return Err(ParseErrorKind::InvalidTimestamp(
-                    String::from_utf8_lossy(bytes).into(),
-                ));
-            }
+            _ => return None,
         }
-        i += 1;
     }
 
-    let mut total_ms = 0;
-
-    if has_fraction {
+    let mut total_ms = if has_fraction {
         let mut fraction = 0u32;
         let mut digits = 0;
 
-        while i < bytes.len() {
-            let b = bytes[i];
+        for b in iter {
             match b {
                 b'0'..=b'9' => {
                     if digits < 3 {
@@ -56,13 +47,8 @@ pub fn parse_timestamp(bytes: &[u8]) -> std::result::Result<u32, ParseErrorKind>
                         digits += 1;
                     }
                 }
-                _ => {
-                    return Err(ParseErrorKind::InvalidTimestamp(
-                        String::from_utf8_lossy(bytes).into(),
-                    ));
-                }
+                _ => return None,
             }
-            i += 1;
         }
 
         if digits == 1 {
@@ -70,19 +56,15 @@ pub fn parse_timestamp(bytes: &[u8]) -> std::result::Result<u32, ParseErrorKind>
         } else if digits == 2 {
             fraction *= 10;
         }
-        total_ms += fraction;
+        fraction
     } else {
-        parts[part_idx] = current;
-    }
-
-    total_ms += match part_idx {
-        0 => parts[0] * 1000,
-        1 => parts[0] * 60_000 + parts[1] * 1000,
-        2 => parts[0] * 3_600_000 + parts[1] * 60_000 + parts[2] * 1000,
-        _ => unreachable!(),
+        accum += current;
+        0
     };
 
-    Ok(total_ms)
+    total_ms += accum * 1000;
+
+    Some(total_ms)
 }
 
 #[cfg(test)]
@@ -100,9 +82,6 @@ mod tests {
 
         assert_eq!(parse_timestamp(b"1:03:36.120").unwrap(), 3_816_120);
 
-        assert!(matches!(
-            parse_timestamp(b"invalid"),
-            Err(ParseErrorKind::InvalidTimestamp(_))
-        ));
+        assert!(parse_timestamp(b"invalid").is_none());
     }
 }

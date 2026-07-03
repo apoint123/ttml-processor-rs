@@ -26,6 +26,7 @@ use crate::{
         ParseErrorKind,
         Result,
         ResultExt as _,
+        TimestampExt as _,
     },
     model::{
         LyricLine,
@@ -114,8 +115,12 @@ pub fn parse_basic_syllable(
         .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::END)))
         .with_context(reader, context)?;
 
-    let start_time = parse_timestamp(&b_bytes).with_attr_context(reader, context, attrs::BEGIN)?;
-    let end_time = parse_timestamp(&e_bytes).with_attr_context(reader, context, attrs::END)?;
+    let start_time = parse_timestamp(&b_bytes)
+        .context_invalid_timestamp(&b_bytes)
+        .with_attr_context(reader, context, attrs::BEGIN)?;
+    let end_time = parse_timestamp(&e_bytes)
+        .context_invalid_timestamp(&b_bytes)
+        .with_attr_context(reader, context, attrs::END)?;
 
     let text = read_text_content(reader, context, tags::SPAN)?;
 
