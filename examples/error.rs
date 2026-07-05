@@ -42,7 +42,7 @@ fn main() -> miette::Result<()> {
     <body>
         <div itunes:songPart="Verse">
             <p begin="10.522" end="13.518" itunes:key="L1" ttm:agent="v1">
-                <span>test</span>
+                <span begin="a" end="13.518">test</span>
             </p>
         </div>
     </body>
@@ -53,12 +53,14 @@ fn main() -> miette::Result<()> {
             let tag_path = context.tag_stack.join(" > ");
             let line_info = context.line_id.as_deref().unwrap_or("未找到行 ID");
             let attr_info = context.current_attribute.as_deref().unwrap_or("无");
+            let offending_info = context.offending_string.as_deref().unwrap_or("无");
 
             let help_advice = format!(
                 "╭─ 错误发生的上下文\n\
                  │ 行 ID    : {line_info}\n\
                  │ 标签路径  : {tag_path}\n\
                  │ 目标属性  : {attr_info}\n\
+                 │ 触发内容  : {offending_info}\n\
                  ╰──────────────────────────────"
             );
 
@@ -76,27 +78,28 @@ fn main() -> miette::Result<()> {
                 .ok()
                 .map_or(bad_ttml.len(), |v| v.min(bad_ttml.len()));
 
-            match &kind {
-                ParseErrorKind::InvalidTimestamp(v) => {
-                    if let Some(idx) = bad_ttml[..search_end].rfind(v.as_str()) {
-                        exact_offset = idx;
-                        exact_len = v.len();
-                    }
+            if let Some(offending) = context.offending_string.as_deref() {
+                if let Some(idx) = bad_ttml[..search_end].rfind(offending) {
+                    exact_offset = idx;
+                    exact_len = offending.len();
                 }
-                ParseErrorKind::MissingAttribute(_a) => {
-                    if let Some(tag) = context.tag_stack.last() {
-                        let search_str = format!("<{tag}");
-                        if let Some(idx) = bad_ttml[..search_end].rfind(&search_str) {
-                            exact_offset = idx;
-                            exact_len = search_str.len() + 1;
+            } else {
+                match &kind {
+                    ParseErrorKind::MissingAttribute(_a) => {
+                        if let Some(tag) = context.tag_stack.last() {
+                            let search_str = format!("<{tag}");
+                            if let Some(idx) = bad_ttml[..search_end].rfind(&search_str) {
+                                exact_offset = idx;
+                                exact_len = search_str.len() + 1;
+                            }
                         }
                     }
+                    ParseErrorKind::XmlError(_) => {
+                        exact_offset = context.byte_offset.saturating_sub(1) as usize;
+                        exact_len = std::cmp::min(5, bad_ttml.len().saturating_sub(exact_offset));
+                    }
+                    _ => {}
                 }
-                ParseErrorKind::XmlError(_) => {
-                    exact_offset = context.byte_offset.saturating_sub(1) as usize;
-                    exact_len = std::cmp::min(5, bad_ttml.len().saturating_sub(exact_offset));
-                }
-                _ => {}
             }
             let radius = 60;
 

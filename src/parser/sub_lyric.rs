@@ -17,6 +17,7 @@ use crate::{
         Result,
         ResultExt as _,
         TTMLProcessorError,
+        TTMLResultExt as _,
     },
     model::{
         SubLyricContent,
@@ -277,7 +278,9 @@ fn parse_sub_lyric_text(
                 }
             }
             Event::GeneralRef(reference) => {
-                let ch_str = resolve_xml_entity(&reference).with_context(reader, context)?;
+                let ch_str = resolve_xml_entity(&reference)
+                    .with_context(reader, context)
+                    .with_offending_bytes(reference.as_ref())?;
                 if in_bg_span {
                     raw_bg_text.push_str(&ch_str);
                 } else {

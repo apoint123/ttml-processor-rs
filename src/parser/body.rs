@@ -17,6 +17,7 @@ use crate::{
         Result,
         ResultExt as _,
         TTMLProcessorError,
+        TTMLResultExt as _,
         TimestampExt as _,
     },
     model::{
@@ -194,7 +195,8 @@ fn parse_line(
                 let val = attr
                     .unescape_value()
                     .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
-                    .with_attr_context(reader, context, attrs::ITUNES_KEY)?
+                    .with_attr_context(reader, context, attrs::ITUNES_KEY)
+                    .with_offending_bytes(&attr.value)?
                     .into_owned();
                 line_id = Some(val.into());
             }
@@ -202,22 +204,25 @@ fn parse_line(
                 let val = attr
                     .unescape_value()
                     .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
-                    .with_attr_context(reader, context, attrs::TTM_AGENT)?
+                    .with_attr_context(reader, context, attrs::TTM_AGENT)
+                    .with_offending_bytes(&attr.value)?
                     .into_owned();
                 agent_id = Some(val.into());
             }
             attrs::b::BEGIN => {
                 start_time = Some(
                     parse_timestamp(&attr.value)
-                        .context_invalid_timestamp(attr.key.as_ref())
-                        .with_attr_context(reader, context, attrs::BEGIN)?,
+                        .context_invalid_timestamp(attr.value.as_ref())
+                        .with_attr_context(reader, context, attrs::BEGIN)
+                        .with_offending_bytes(&attr.value)?,
                 );
             }
             attrs::b::END => {
                 end_time = Some(
                     parse_timestamp(&attr.value)
-                        .context_invalid_timestamp(attr.key.as_ref())
-                        .with_attr_context(reader, context, attrs::END)?,
+                        .context_invalid_timestamp(attr.value.as_ref())
+                        .with_attr_context(reader, context, attrs::END)
+                        .with_offending_bytes(&attr.value)?,
                 );
             }
             _ => {}
@@ -288,7 +293,11 @@ fn parse_line(
                 raw_text.push_str(text);
             }
             Event::GeneralRef(reference) => {
-                raw_text.push_str(&resolve_xml_entity(&reference).with_context(reader, context)?);
+                raw_text.push_str(
+                    &resolve_xml_entity(&reference)
+                        .with_context(reader, context)
+                        .with_offending_bytes(reference.as_ref())?,
+                );
             }
             Event::End(ref e) => {
                 if e.name().is(tags::P) {

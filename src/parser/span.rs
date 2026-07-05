@@ -19,6 +19,7 @@ use crate::{
         Result,
         ResultExt as _,
         TTMLProcessorError,
+        TTMLResultExt as _,
         TimestampExt as _,
     },
     model::{
@@ -106,6 +107,10 @@ pub fn process_span(
 
     // 内嵌翻译 / 音译
     if is_trans || is_rom {
+        let lang_offending: CompactString = lang_bytes
+            .as_deref()
+            .map(|b| String::from_utf8_lossy(b).into_owned().into())
+            .unwrap_or_default();
         let lang = lang_bytes
             .map(|v| {
                 CompactString::from_utf8(v).map_err(|_| {
@@ -113,7 +118,8 @@ pub fn process_span(
                 })
             })
             .transpose()
-            .with_context(reader, context)?;
+            .with_context(reader, context)
+            .with_offending_string(&lang_offending)?;
 
         let text = read_text_content(reader, context, tags::SPAN)?;
         let trimmed_text: String = text.trim().into();
@@ -146,15 +152,25 @@ pub fn process_span(
     let is_bg = is_bg_context || role_deref == Some(b"x-bg");
 
     if is_bg && !is_bg_context {
+        let bg_start_str: CompactString = explicit_bg_start_bytes
+            .as_deref()
+            .map(|b| String::from_utf8_lossy(b).into_owned().into())
+            .unwrap_or_default();
         let explicit_bg_start = explicit_bg_start_bytes
             .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
             .transpose()
-            .with_attr_context(reader, context, attrs::BEGIN)?;
+            .with_attr_context(reader, context, attrs::BEGIN)
+            .with_offending_string(&bg_start_str)?;
 
+        let bg_end_str: CompactString = explicit_bg_end_bytes
+            .as_deref()
+            .map(|b| String::from_utf8_lossy(b).into_owned().into())
+            .unwrap_or_default();
         let explicit_bg_end = explicit_bg_end_bytes
             .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
             .transpose()
-            .with_attr_context(reader, context, attrs::END)?;
+            .with_attr_context(reader, context, attrs::END)
+            .with_offending_string(&bg_end_str)?;
 
         let mut raw_bg_text = String::new();
 
@@ -181,8 +197,11 @@ pub fn process_span(
                     raw_bg_text.push_str(text);
                 }
                 Event::GeneralRef(reference) => {
-                    raw_bg_text
-                        .push_str(&resolve_xml_entity(&reference).with_context(reader, context)?);
+                    raw_bg_text.push_str(
+                        &resolve_xml_entity(&reference)
+                            .with_context(reader, context)
+                            .with_offending_bytes(reference.as_ref())?,
+                    );
                 }
                 Event::End(ref e) => {
                     if e.name().is(tags::SPAN) {
@@ -400,14 +419,16 @@ fn process_ruby_text_span(
                 r_start = Some(
                     parse_timestamp(attr.value.as_ref())
                         .context_invalid_timestamp(attr.value.as_ref())
-                        .with_attr_context(reader, context, attrs::BEGIN)?,
+                        .with_attr_context(reader, context, attrs::BEGIN)
+                        .with_offending_bytes(&attr.value)?,
                 );
             }
             attrs::b::END => {
                 r_end = Some(
                     parse_timestamp(attr.value.as_ref())
                         .context_invalid_timestamp(attr.value.as_ref())
-                        .with_attr_context(reader, context, attrs::END)?,
+                        .with_attr_context(reader, context, attrs::END)
+                        .with_offending_bytes(&attr.value)?,
                 );
             }
             _ => {}

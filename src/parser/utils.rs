@@ -26,6 +26,7 @@ use crate::{
         ParseErrorKind,
         Result,
         ResultExt as _,
+        TTMLResultExt as _,
         TimestampExt as _,
     },
     model::{
@@ -66,7 +67,9 @@ pub fn read_text_content(
                 result.push_str(std::str::from_utf8(e.as_ref())?);
             }
             Event::GeneralRef(reference) => {
-                let resolved = resolve_xml_entity(&reference).with_context(reader, context)?;
+                let resolved = resolve_xml_entity(&reference)
+                    .with_context(reader, context)
+                    .with_offending_bytes(reference.as_ref())?;
                 result.push_str(&resolved);
             }
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
@@ -117,10 +120,12 @@ pub fn parse_basic_syllable(
 
     let start_time = parse_timestamp(&b_bytes)
         .context_invalid_timestamp(&b_bytes)
-        .with_attr_context(reader, context, attrs::BEGIN)?;
+        .with_attr_context(reader, context, attrs::BEGIN)
+        .with_offending_bytes(&b_bytes)?;
     let end_time = parse_timestamp(&e_bytes)
-        .context_invalid_timestamp(&b_bytes)
-        .with_attr_context(reader, context, attrs::END)?;
+        .context_invalid_timestamp(&e_bytes)
+        .with_attr_context(reader, context, attrs::END)
+        .with_offending_bytes(&e_bytes)?;
 
     let text = read_text_content(reader, context, tags::SPAN)?;
 

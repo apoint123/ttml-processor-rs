@@ -15,6 +15,7 @@ use crate::{
         ParseErrorKind,
         Result,
         ResultExt as _,
+        TTMLResultExt as _,
     },
     parser::state::ParserContext,
 };
@@ -74,7 +75,8 @@ impl BytesStartExt for BytesStart<'_> {
                 let value_str = attr
                     .unescape_value()
                     .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
-                    .with_attr_context(reader, context, key)?
+                    .with_attr_context(reader, context, key)
+                    .with_offending_bytes(&attr.value)?
                     .into_owned();
 
                 return Ok(Some(value_str.into()));

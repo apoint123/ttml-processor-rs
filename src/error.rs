@@ -177,6 +177,42 @@ pub trait TimestampExt<T> {
     fn context_invalid_timestamp(self, bytes: &[u8]) -> StdResult<T, ParseErrorKind>;
 }
 
+/// 已包装错误的上下文扩展，用于在 [`TTMLProcessorError::ParseError`] 上追加信息
+pub trait TTMLResultExt<T> {
+    /// 为已有的解析错误注入引发错误的原文字符串（从字节切片进行 UTF-8 损失转换）
+    fn with_offending_bytes(self, bytes: &[u8]) -> StdResult<T, TTMLProcessorError>;
+
+    /// 为已有的解析错误注入引发错误的原文字符串
+    fn with_offending_string(self, s: &str) -> StdResult<T, TTMLProcessorError>;
+}
+
+impl<T> TTMLResultExt<T> for StdResult<T, TTMLProcessorError> {
+    fn with_offending_bytes(self, bytes: &[u8]) -> StdResult<T, TTMLProcessorError> {
+        self.map_err(|mut e| {
+            if let TTMLProcessorError::ParseError {
+                ref mut context, ..
+            } = e
+            {
+                let s: CompactString = String::from_utf8_lossy(bytes).into_owned().into();
+                context.offending_string = Some(s);
+            }
+            e
+        })
+    }
+
+    fn with_offending_string(self, s: &str) -> StdResult<T, TTMLProcessorError> {
+        self.map_err(|mut e| {
+            if let TTMLProcessorError::ParseError {
+                ref mut context, ..
+            } = e
+            {
+                context.offending_string = Some(s.into());
+            }
+            e
+        })
+    }
+}
+
 impl<T> TimestampExt<T> for Option<T> {
     fn context_invalid_timestamp(self, bytes: &[u8]) -> StdResult<T, ParseErrorKind> {
         self.ok_or_else(|| {
