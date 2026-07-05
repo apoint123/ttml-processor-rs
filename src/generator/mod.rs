@@ -6,6 +6,10 @@ mod sub_lyric;
 mod utils;
 
 use quick_xml::Writer;
+use serde::{
+    Deserialize,
+    Serialize,
+};
 
 use crate::{
     constants::{
@@ -19,7 +23,8 @@ use crate::{
 };
 
 /// TTML 生成器配置
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase", default)]
 pub struct GeneratorConfig {
     /// 是否使用 Apple Music 格式规则
     ///

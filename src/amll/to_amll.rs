@@ -5,6 +5,7 @@ use crate::{
         AmllLyricLine,
         AmllLyricResult,
         AmllLyricWord,
+        AmllMetadata,
         LyricWordBase,
         TtmlToAmllOptions,
     },
@@ -96,14 +97,17 @@ pub fn to_amll_lyrics(result: TTMLResult, options: Option<&TtmlToAmllOptions>) -
     if let Some(r) = &meta.raw_properties {
         capacity += r.len();
     }
-    let mut metadata: Vec<(CompactString, Vec<CompactString>)> = Vec::with_capacity(capacity);
+    let mut metadata: Vec<AmllMetadata> = Vec::with_capacity(capacity);
 
     let mut push_meta = |key: &'static str, vals: Option<Vec<CompactString>>| {
         if let Some(mut v) = vals {
             v.retain(|s| !s.trim().is_empty());
 
             if !v.is_empty() {
-                metadata.push((CompactString::const_new(key), v));
+                metadata.push(AmllMetadata {
+                    key: CompactString::const_new(key),
+                    value: v,
+                });
             }
         }
     };
@@ -131,12 +135,18 @@ pub fn to_amll_lyrics(result: TTMLResult, options: Option<&TtmlToAmllOptions>) -
                 PlatformId::SpotifyId => meta_keys::SPOTIFY_ID,
                 PlatformId::AppleMusicId => meta_keys::APPLE_ID,
             };
-            (CompactString::const_new(key_str), v)
+            AmllMetadata {
+                key: CompactString::const_new(key_str),
+                value: v,
+            }
         }));
     }
 
     if let Some(raw) = meta.raw_properties {
-        metadata.extend(raw);
+        metadata.extend(
+            raw.into_iter()
+                .map(|(key, value)| AmllMetadata { key, value }),
+        );
     }
 
     AmllLyricResult {
@@ -420,7 +430,7 @@ mod tests {
         let meta_map: std::collections::HashMap<_, _> = amll_result
             .metadata
             .into_iter()
-            .map(|(k, v)| (k.to_string(), v))
+            .map(|m| (m.key.to_string(), m.value))
             .collect();
 
         assert_eq!(meta_map.get(meta_keys::TITLE).unwrap()[0], "Test Song");

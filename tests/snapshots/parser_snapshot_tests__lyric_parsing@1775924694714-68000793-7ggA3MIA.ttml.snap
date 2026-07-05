@@ -6,7 +6,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 {
 	"metadata": {
 		"language": "zh-Hans",
-		"timing_mode": "Word",
+		"timingMode": "Word",
 		"songwriters": [
 			"熊子"
 		],
@@ -53,35 +53,35 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 			"DGA082410574",
 			"DGA082410599"
 		],
-		"author_ids": [
+		"authorIds": [
 			"68000793",
 			"50747104"
 		],
-		"author_names": [
+		"authorNames": [
 			"ranhengzhang",
 			"Xionghaizi001"
 		],
 		"agents": {
 			"v1": {
 				"id": "v1",
-				"type_": "person"
+				"type": "person"
 			}
 		},
-		"platform_ids": {
-			"ncm_music_id": [
+		"platformIds": {
+			"ncmMusicId": [
 				"2612750275"
 			],
-			"qq_music_id": [
+			"qqMusicId": [
 				"002TFWxI3SlNwx",
 				"503998396"
 			],
-			"spotify_id": [
+			"spotifyId": [
 				"66izH92bA85wuJFFgJ0HRy",
 				"4o9pXElZZFjQBlhSWTNBQC",
 				"2excpOrcz3wOViAA3cBMpU",
 				"52GlYDlUFY2v9NfA1kGyEQ"
 			],
-			"apple_music_id": [
+			"appleMusicId": [
 				"1758391074",
 				"1758774905",
 				"1759153566",
@@ -89,7 +89,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 				"1758784690"
 			]
 		},
-		"raw_properties": {
+		"rawProperties": {
 			"Arranger": [
 				"杨武韬"
 			],
@@ -125,33 +125,33 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 	"lines": [
 		{
 			"text": "窗外的春天",
-			"start_time": 10640,
-			"end_time": 13820,
+			"startTime": 10640,
+			"endTime": 13820,
 			"words": [
 				{
 					"text": "窗",
-					"start_time": 10640,
-					"end_time": 11300
+					"startTime": 10640,
+					"endTime": 11300
 				},
 				{
 					"text": "外",
-					"start_time": 11300,
-					"end_time": 11670
+					"startTime": 11300,
+					"endTime": 11670
 				},
 				{
 					"text": "的",
-					"start_time": 11670,
-					"end_time": 12020
+					"startTime": 11670,
+					"endTime": 12020
 				},
 				{
 					"text": "春",
-					"start_time": 12250,
-					"end_time": 12860
+					"startTime": 12250,
+					"endTime": 12860
 				},
 				{
 					"text": "天",
-					"start_time": 12860,
-					"end_time": 13820
+					"startTime": 12860,
+					"endTime": 13820
 				}
 			],
 			"translations": [
@@ -205,28 +205,28 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "窗",
-							"start_time": 10640,
-							"end_time": 11300
+							"startTime": 10640,
+							"endTime": 11300
 						},
 						{
 							"text": "外",
-							"start_time": 11300,
-							"end_time": 11670
+							"startTime": 11300,
+							"endTime": 11670
 						},
 						{
 							"text": "的",
-							"start_time": 11670,
-							"end_time": 12020
+							"startTime": 11670,
+							"endTime": 12020
 						},
 						{
 							"text": "春",
-							"start_time": 12250,
-							"end_time": 12860
+							"startTime": 12250,
+							"endTime": 12860
 						},
 						{
 							"text": "天",
-							"start_time": 12860,
-							"end_time": 13820
+							"startTime": 12860,
+							"endTime": 13820
 						}
 					]
 				}
@@ -238,80 +238,80 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "chuāng",
-							"start_time": 10640,
-							"end_time": 11300,
-							"ends_with_space": true
+							"startTime": 10640,
+							"endTime": 11300,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wài",
-							"start_time": 11300,
-							"end_time": 11670,
-							"ends_with_space": true
+							"startTime": 11300,
+							"endTime": 11670,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 11670,
-							"end_time": 12020,
-							"ends_with_space": true
+							"startTime": 11670,
+							"endTime": 12020,
+							"endsWithSpace": true
 						},
 						{
 							"text": "chūn",
-							"start_time": 12250,
-							"end_time": 12860,
-							"ends_with_space": true
+							"startTime": 12250,
+							"endTime": 12860,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tiān",
-							"start_time": 12860,
-							"end_time": 13820
+							"startTime": 12860,
+							"endTime": 13820
 						}
 					]
 				}
 			],
 			"id": "L1",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 1
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
 		},
 		{
 			"text": "停在枝头的麻雀",
-			"start_time": 15080,
-			"end_time": 18570,
+			"startTime": 15080,
+			"endTime": 18570,
 			"words": [
 				{
 					"text": "停",
-					"start_time": 15080,
-					"end_time": 15400
+					"startTime": 15080,
+					"endTime": 15400
 				},
 				{
 					"text": "在",
-					"start_time": 15400,
-					"end_time": 15720
+					"startTime": 15400,
+					"endTime": 15720
 				},
 				{
 					"text": "枝",
-					"start_time": 15720,
-					"end_time": 16200
+					"startTime": 15720,
+					"endTime": 16200
 				},
 				{
 					"text": "头",
-					"start_time": 16310,
-					"end_time": 16680
+					"startTime": 16310,
+					"endTime": 16680
 				},
 				{
 					"text": "的",
-					"start_time": 16680,
-					"end_time": 17150
+					"startTime": 16680,
+					"endTime": 17150
 				},
 				{
 					"text": "麻",
-					"start_time": 17310,
-					"end_time": 17790
+					"startTime": 17310,
+					"endTime": 17790
 				},
 				{
 					"text": "雀",
-					"start_time": 17790,
-					"end_time": 18570
+					"startTime": 17790,
+					"endTime": 18570
 				}
 			],
 			"translations": [
@@ -365,38 +365,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "停",
-							"start_time": 15080,
-							"end_time": 15400
+							"startTime": 15080,
+							"endTime": 15400
 						},
 						{
 							"text": "在",
-							"start_time": 15400,
-							"end_time": 15720
+							"startTime": 15400,
+							"endTime": 15720
 						},
 						{
 							"text": "枝",
-							"start_time": 15720,
-							"end_time": 16200
+							"startTime": 15720,
+							"endTime": 16200
 						},
 						{
 							"text": "頭",
-							"start_time": 16310,
-							"end_time": 16680
+							"startTime": 16310,
+							"endTime": 16680
 						},
 						{
 							"text": "的",
-							"start_time": 16680,
-							"end_time": 17150
+							"startTime": 16680,
+							"endTime": 17150
 						},
 						{
 							"text": "麻",
-							"start_time": 17310,
-							"end_time": 17790
+							"startTime": 17310,
+							"endTime": 17790
 						},
 						{
 							"text": "雀",
-							"start_time": 17790,
-							"end_time": 18570
+							"startTime": 17790,
+							"endTime": 18570
 						}
 					]
 				}
@@ -408,92 +408,92 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "tíng",
-							"start_time": 15080,
-							"end_time": 15400,
-							"ends_with_space": true
+							"startTime": 15080,
+							"endTime": 15400,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zài",
-							"start_time": 15400,
-							"end_time": 15720,
-							"ends_with_space": true
+							"startTime": 15400,
+							"endTime": 15720,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhī",
-							"start_time": 15720,
-							"end_time": 16200,
-							"ends_with_space": true
+							"startTime": 15720,
+							"endTime": 16200,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tóu",
-							"start_time": 16310,
-							"end_time": 16680,
-							"ends_with_space": true
+							"startTime": 16310,
+							"endTime": 16680,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 16680,
-							"end_time": 17150,
-							"ends_with_space": true
+							"startTime": 16680,
+							"endTime": 17150,
+							"endsWithSpace": true
 						},
 						{
 							"text": "má",
-							"start_time": 17310,
-							"end_time": 17790,
-							"ends_with_space": true
+							"startTime": 17310,
+							"endTime": 17790,
+							"endsWithSpace": true
 						},
 						{
 							"text": "què",
-							"start_time": 17790,
-							"end_time": 18570
+							"startTime": 17790,
+							"endTime": 18570
 						}
 					]
 				}
 			],
 			"id": "L2",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 1
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
 		},
 		{
 			"text": "初次察觉的旋律",
-			"start_time": 20060,
-			"end_time": 23320,
+			"startTime": 20060,
+			"endTime": 23320,
 			"words": [
 				{
 					"text": "初",
-					"start_time": 20060,
-					"end_time": 20360
+					"startTime": 20060,
+					"endTime": 20360
 				},
 				{
 					"text": "次",
-					"start_time": 20360,
-					"end_time": 20650
+					"startTime": 20360,
+					"endTime": 20650
 				},
 				{
 					"text": "察",
-					"start_time": 20650,
-					"end_time": 21240
+					"startTime": 20650,
+					"endTime": 21240
 				},
 				{
 					"text": "觉",
-					"start_time": 21240,
-					"end_time": 21710
+					"startTime": 21240,
+					"endTime": 21710
 				},
 				{
 					"text": "的",
-					"start_time": 21710,
-					"end_time": 22000
+					"startTime": 21710,
+					"endTime": 22000
 				},
 				{
 					"text": "旋",
-					"start_time": 22110,
-					"end_time": 23010
+					"startTime": 22110,
+					"endTime": 23010
 				},
 				{
 					"text": "律",
-					"start_time": 23010,
-					"end_time": 23320
+					"startTime": 23010,
+					"endTime": 23320
 				}
 			],
 			"translations": [
@@ -547,38 +547,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "初",
-							"start_time": 20060,
-							"end_time": 20360
+							"startTime": 20060,
+							"endTime": 20360
 						},
 						{
 							"text": "次",
-							"start_time": 20360,
-							"end_time": 20650
+							"startTime": 20360,
+							"endTime": 20650
 						},
 						{
 							"text": "察",
-							"start_time": 20650,
-							"end_time": 21240
+							"startTime": 20650,
+							"endTime": 21240
 						},
 						{
 							"text": "覺",
-							"start_time": 21240,
-							"end_time": 21710
+							"startTime": 21240,
+							"endTime": 21710
 						},
 						{
 							"text": "的",
-							"start_time": 21710,
-							"end_time": 22000
+							"startTime": 21710,
+							"endTime": 22000
 						},
 						{
 							"text": "旋",
-							"start_time": 22110,
-							"end_time": 23010
+							"startTime": 22110,
+							"endTime": 23010
 						},
 						{
 							"text": "律",
-							"start_time": 23010,
-							"end_time": 23320
+							"startTime": 23010,
+							"endTime": 23320
 						}
 					]
 				}
@@ -590,92 +590,92 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "chū",
-							"start_time": 20060,
-							"end_time": 20360,
-							"ends_with_space": true
+							"startTime": 20060,
+							"endTime": 20360,
+							"endsWithSpace": true
 						},
 						{
 							"text": "cì",
-							"start_time": 20360,
-							"end_time": 20650,
-							"ends_with_space": true
+							"startTime": 20360,
+							"endTime": 20650,
+							"endsWithSpace": true
 						},
 						{
 							"text": "chá",
-							"start_time": 20650,
-							"end_time": 21240,
-							"ends_with_space": true
+							"startTime": 20650,
+							"endTime": 21240,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jué",
-							"start_time": 21240,
-							"end_time": 21710,
-							"ends_with_space": true
+							"startTime": 21240,
+							"endTime": 21710,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 21710,
-							"end_time": 22000,
-							"ends_with_space": true
+							"startTime": 21710,
+							"endTime": 22000,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xuán",
-							"start_time": 22110,
-							"end_time": 23010,
-							"ends_with_space": true
+							"startTime": 22110,
+							"endTime": 23010,
+							"endsWithSpace": true
 						},
 						{
 							"text": "lǜ",
-							"start_time": 23010,
-							"end_time": 23320
+							"startTime": 23010,
+							"endTime": 23320
 						}
 					]
 				}
 			],
 			"id": "L3",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 1
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
 		},
 		{
 			"text": "不经意拂过心尖",
-			"start_time": 24790,
-			"end_time": 28550,
+			"startTime": 24790,
+			"endTime": 28550,
 			"words": [
 				{
 					"text": "不",
-					"start_time": 24790,
-					"end_time": 25340
+					"startTime": 24790,
+					"endTime": 25340
 				},
 				{
 					"text": "经",
-					"start_time": 25340,
-					"end_time": 25740
+					"startTime": 25340,
+					"endTime": 25740
 				},
 				{
 					"text": "意",
-					"start_time": 25740,
-					"end_time": 26240
+					"startTime": 25740,
+					"endTime": 26240
 				},
 				{
 					"text": "拂",
-					"start_time": 26400,
-					"end_time": 26670
+					"startTime": 26400,
+					"endTime": 26670
 				},
 				{
 					"text": "过",
-					"start_time": 26670,
-					"end_time": 27020
+					"startTime": 26670,
+					"endTime": 27020
 				},
 				{
 					"text": "心",
-					"start_time": 27510,
-					"end_time": 27980
+					"startTime": 27510,
+					"endTime": 27980
 				},
 				{
 					"text": "尖",
-					"start_time": 27980,
-					"end_time": 28550
+					"startTime": 27980,
+					"endTime": 28550
 				}
 			],
 			"translations": [
@@ -729,38 +729,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "不",
-							"start_time": 24790,
-							"end_time": 25340
+							"startTime": 24790,
+							"endTime": 25340
 						},
 						{
 							"text": "經",
-							"start_time": 25340,
-							"end_time": 25740
+							"startTime": 25340,
+							"endTime": 25740
 						},
 						{
 							"text": "意",
-							"start_time": 25740,
-							"end_time": 26240
+							"startTime": 25740,
+							"endTime": 26240
 						},
 						{
 							"text": "拂",
-							"start_time": 26400,
-							"end_time": 26670
+							"startTime": 26400,
+							"endTime": 26670
 						},
 						{
 							"text": "過",
-							"start_time": 26670,
-							"end_time": 27020
+							"startTime": 26670,
+							"endTime": 27020
 						},
 						{
 							"text": "心",
-							"start_time": 27510,
-							"end_time": 27980
+							"startTime": 27510,
+							"endTime": 27980
 						},
 						{
 							"text": "尖",
-							"start_time": 27980,
-							"end_time": 28550
+							"startTime": 27980,
+							"endTime": 28550
 						}
 					]
 				}
@@ -772,82 +772,82 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "bù",
-							"start_time": 24790,
-							"end_time": 25340,
-							"ends_with_space": true
+							"startTime": 24790,
+							"endTime": 25340,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jīng",
-							"start_time": 25340,
-							"end_time": 25740,
-							"ends_with_space": true
+							"startTime": 25340,
+							"endTime": 25740,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yì",
-							"start_time": 25740,
-							"end_time": 26240,
-							"ends_with_space": true
+							"startTime": 25740,
+							"endTime": 26240,
+							"endsWithSpace": true
 						},
 						{
 							"text": "fú",
-							"start_time": 26400,
-							"end_time": 26670,
-							"ends_with_space": true
+							"startTime": 26400,
+							"endTime": 26670,
+							"endsWithSpace": true
 						},
 						{
 							"text": "guò",
-							"start_time": 26670,
-							"end_time": 27020,
-							"ends_with_space": true
+							"startTime": 26670,
+							"endTime": 27020,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xīn",
-							"start_time": 27510,
-							"end_time": 27980,
-							"ends_with_space": true
+							"startTime": 27510,
+							"endTime": 27980,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 27980,
-							"end_time": 28550
+							"startTime": 27980,
+							"endTime": 28550
 						}
 					]
 				}
 			],
 			"id": "L4",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 1
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
 		},
 		{
 			"text": "点一支香签",
-			"start_time": 30760,
-			"end_time": 34270,
+			"startTime": 30760,
+			"endTime": 34270,
 			"words": [
 				{
 					"text": "点",
-					"start_time": 30760,
-					"end_time": 31320
+					"startTime": 30760,
+					"endTime": 31320
 				},
 				{
 					"text": "一",
-					"start_time": 31320,
-					"end_time": 31650
+					"startTime": 31320,
+					"endTime": 31650
 				},
 				{
 					"text": "支",
-					"start_time": 31650,
-					"end_time": 32090
+					"startTime": 31650,
+					"endTime": 32090
 				},
 				{
 					"text": "香",
-					"start_time": 32090,
-					"end_time": 32830
+					"startTime": 32090,
+					"endTime": 32830
 				},
 				{
 					"text": "签",
-					"start_time": 32830,
-					"end_time": 34270
+					"startTime": 32830,
+					"endTime": 34270
 				}
 			],
 			"translations": [
@@ -901,28 +901,28 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "點",
-							"start_time": 30760,
-							"end_time": 31320
+							"startTime": 30760,
+							"endTime": 31320
 						},
 						{
 							"text": "一",
-							"start_time": 31320,
-							"end_time": 31650
+							"startTime": 31320,
+							"endTime": 31650
 						},
 						{
 							"text": "支",
-							"start_time": 31650,
-							"end_time": 32090
+							"startTime": 31650,
+							"endTime": 32090
 						},
 						{
 							"text": "香",
-							"start_time": 32090,
-							"end_time": 32830
+							"startTime": 32090,
+							"endTime": 32830
 						},
 						{
 							"text": "籤",
-							"start_time": 32830,
-							"end_time": 34270
+							"startTime": 32830,
+							"endTime": 34270
 						}
 					]
 				}
@@ -934,80 +934,80 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "diǎn",
-							"start_time": 30760,
-							"end_time": 31320,
-							"ends_with_space": true
+							"startTime": 30760,
+							"endTime": 31320,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yì",
-							"start_time": 31320,
-							"end_time": 31650,
-							"ends_with_space": true
+							"startTime": 31320,
+							"endTime": 31650,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhī",
-							"start_time": 31650,
-							"end_time": 32090,
-							"ends_with_space": true
+							"startTime": 31650,
+							"endTime": 32090,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiāng",
-							"start_time": 32090,
-							"end_time": 32830,
-							"ends_with_space": true
+							"startTime": 32090,
+							"endTime": 32830,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qiān",
-							"start_time": 32830,
-							"end_time": 34270
+							"startTime": 32830,
+							"endTime": 34270
 						}
 					]
 				}
 			],
 			"id": "L5",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 2
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
 		},
 		{
 			"text": "放下系紧的发辫",
-			"start_time": 35120,
-			"end_time": 38430,
+			"startTime": 35120,
+			"endTime": 38430,
 			"words": [
 				{
 					"text": "放",
-					"start_time": 35120,
-					"end_time": 35330
+					"startTime": 35120,
+					"endTime": 35330
 				},
 				{
 					"text": "下",
-					"start_time": 35330,
-					"end_time": 35700
+					"startTime": 35330,
+					"endTime": 35700
 				},
 				{
 					"text": "系",
-					"start_time": 35700,
-					"end_time": 36270
+					"startTime": 35700,
+					"endTime": 36270
 				},
 				{
 					"text": "紧",
-					"start_time": 36270,
-					"end_time": 36680
+					"startTime": 36270,
+					"endTime": 36680
 				},
 				{
 					"text": "的",
-					"start_time": 36680,
-					"end_time": 37020
+					"startTime": 36680,
+					"endTime": 37020
 				},
 				{
 					"text": "发",
-					"start_time": 37310,
-					"end_time": 37790
+					"startTime": 37310,
+					"endTime": 37790
 				},
 				{
 					"text": "辫",
-					"start_time": 37910,
-					"end_time": 38430
+					"startTime": 37910,
+					"endTime": 38430
 				}
 			],
 			"translations": [
@@ -1061,38 +1061,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "放",
-							"start_time": 35120,
-							"end_time": 35330
+							"startTime": 35120,
+							"endTime": 35330
 						},
 						{
 							"text": "下",
-							"start_time": 35330,
-							"end_time": 35700
+							"startTime": 35330,
+							"endTime": 35700
 						},
 						{
 							"text": "繫",
-							"start_time": 35700,
-							"end_time": 36270
+							"startTime": 35700,
+							"endTime": 36270
 						},
 						{
 							"text": "緊",
-							"start_time": 36270,
-							"end_time": 36680
+							"startTime": 36270,
+							"endTime": 36680
 						},
 						{
 							"text": "的",
-							"start_time": 36680,
-							"end_time": 37020
+							"startTime": 36680,
+							"endTime": 37020
 						},
 						{
 							"text": "髮",
-							"start_time": 37310,
-							"end_time": 37790
+							"startTime": 37310,
+							"endTime": 37790
 						},
 						{
 							"text": "辮",
-							"start_time": 37910,
-							"end_time": 38430
+							"startTime": 37910,
+							"endTime": 38430
 						}
 					]
 				}
@@ -1104,92 +1104,92 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "fàng",
-							"start_time": 35120,
-							"end_time": 35330,
-							"ends_with_space": true
+							"startTime": 35120,
+							"endTime": 35330,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xià",
-							"start_time": 35330,
-							"end_time": 35700,
-							"ends_with_space": true
+							"startTime": 35330,
+							"endTime": 35700,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jì",
-							"start_time": 35700,
-							"end_time": 36270,
-							"ends_with_space": true
+							"startTime": 35700,
+							"endTime": 36270,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jǐn",
-							"start_time": 36270,
-							"end_time": 36680,
-							"ends_with_space": true
+							"startTime": 36270,
+							"endTime": 36680,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 36680,
-							"end_time": 37020,
-							"ends_with_space": true
+							"startTime": 36680,
+							"endTime": 37020,
+							"endsWithSpace": true
 						},
 						{
 							"text": "fà",
-							"start_time": 37310,
-							"end_time": 37790,
-							"ends_with_space": true
+							"startTime": 37310,
+							"endTime": 37790,
+							"endsWithSpace": true
 						},
 						{
 							"text": "biàn",
-							"start_time": 37910,
-							"end_time": 38430
+							"startTime": 37910,
+							"endTime": 38430
 						}
 					]
 				}
 			],
 			"id": "L6",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 2
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
 		},
 		{
 			"text": "看陌生柔软光线",
-			"start_time": 40110,
-			"end_time": 43460,
+			"startTime": 40110,
+			"endTime": 43460,
 			"words": [
 				{
 					"text": "看",
-					"start_time": 40110,
-					"end_time": 40430
+					"startTime": 40110,
+					"endTime": 40430
 				},
 				{
 					"text": "陌",
-					"start_time": 40430,
-					"end_time": 40650
+					"startTime": 40430,
+					"endTime": 40650
 				},
 				{
 					"text": "生",
-					"start_time": 40650,
-					"end_time": 41330
+					"startTime": 40650,
+					"endTime": 41330
 				},
 				{
 					"text": "柔",
-					"start_time": 41330,
-					"end_time": 41690
+					"startTime": 41330,
+					"endTime": 41690
 				},
 				{
 					"text": "软",
-					"start_time": 41690,
-					"end_time": 42170
+					"startTime": 41690,
+					"endTime": 42170
 				},
 				{
 					"text": "光",
-					"start_time": 42330,
-					"end_time": 42850
+					"startTime": 42330,
+					"endTime": 42850
 				},
 				{
 					"text": "线",
-					"start_time": 42850,
-					"end_time": 43460
+					"startTime": 42850,
+					"endTime": 43460
 				}
 			],
 			"translations": [
@@ -1243,38 +1243,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "看",
-							"start_time": 40110,
-							"end_time": 40430
+							"startTime": 40110,
+							"endTime": 40430
 						},
 						{
 							"text": "陌",
-							"start_time": 40430,
-							"end_time": 40650
+							"startTime": 40430,
+							"endTime": 40650
 						},
 						{
 							"text": "生",
-							"start_time": 40650,
-							"end_time": 41330
+							"startTime": 40650,
+							"endTime": 41330
 						},
 						{
 							"text": "柔",
-							"start_time": 41330,
-							"end_time": 41690
+							"startTime": 41330,
+							"endTime": 41690
 						},
 						{
 							"text": "軟",
-							"start_time": 41690,
-							"end_time": 42170
+							"startTime": 41690,
+							"endTime": 42170
 						},
 						{
 							"text": "光",
-							"start_time": 42330,
-							"end_time": 42850
+							"startTime": 42330,
+							"endTime": 42850
 						},
 						{
 							"text": "線",
-							"start_time": 42850,
-							"end_time": 43460
+							"startTime": 42850,
+							"endTime": 43460
 						}
 					]
 				}
@@ -1286,97 +1286,97 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "kàn",
-							"start_time": 40110,
-							"end_time": 40430,
-							"ends_with_space": true
+							"startTime": 40110,
+							"endTime": 40430,
+							"endsWithSpace": true
 						},
 						{
 							"text": "mò",
-							"start_time": 40430,
-							"end_time": 40650,
-							"ends_with_space": true
+							"startTime": 40430,
+							"endTime": 40650,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shēng",
-							"start_time": 40650,
-							"end_time": 41330,
-							"ends_with_space": true
+							"startTime": 40650,
+							"endTime": 41330,
+							"endsWithSpace": true
 						},
 						{
 							"text": "róu",
-							"start_time": 41330,
-							"end_time": 41690,
-							"ends_with_space": true
+							"startTime": 41330,
+							"endTime": 41690,
+							"endsWithSpace": true
 						},
 						{
 							"text": "ruǎn",
-							"start_time": 41690,
-							"end_time": 42170,
-							"ends_with_space": true
+							"startTime": 41690,
+							"endTime": 42170,
+							"endsWithSpace": true
 						},
 						{
 							"text": "guāng",
-							"start_time": 42330,
-							"end_time": 42850,
-							"ends_with_space": true
+							"startTime": 42330,
+							"endTime": 42850,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiàn",
-							"start_time": 42850,
-							"end_time": 43460
+							"startTime": 42850,
+							"endTime": 43460
 						}
 					]
 				}
 			],
 			"id": "L7",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 2
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
 		},
 		{
 			"text": "照平整如纸的晨间",
-			"start_time": 44150,
-			"end_time": 48840,
+			"startTime": 44150,
+			"endTime": 48840,
 			"words": [
 				{
 					"text": "照",
-					"start_time": 44150,
-					"end_time": 44760
+					"startTime": 44150,
+					"endTime": 44760
 				},
 				{
 					"text": "平",
-					"start_time": 44760,
-					"end_time": 45100
+					"startTime": 44760,
+					"endTime": 45100
 				},
 				{
 					"text": "整",
-					"start_time": 45410,
-					"end_time": 45700
+					"startTime": 45410,
+					"endTime": 45700
 				},
 				{
 					"text": "如",
-					"start_time": 45700,
-					"end_time": 46280
+					"startTime": 45700,
+					"endTime": 46280
 				},
 				{
 					"text": "纸",
-					"start_time": 46280,
-					"end_time": 46690
+					"startTime": 46280,
+					"endTime": 46690
 				},
 				{
 					"text": "的",
-					"start_time": 46690,
-					"end_time": 47090
+					"startTime": 46690,
+					"endTime": 47090
 				},
 				{
 					"text": "晨",
-					"start_time": 47570,
-					"end_time": 47910
+					"startTime": 47570,
+					"endTime": 47910
 				},
 				{
 					"text": "间",
-					"start_time": 47910,
-					"end_time": 48840
+					"startTime": 47910,
+					"endTime": 48840
 				}
 			],
 			"translations": [
@@ -1430,43 +1430,43 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "照",
-							"start_time": 44150,
-							"end_time": 44760
+							"startTime": 44150,
+							"endTime": 44760
 						},
 						{
 							"text": "平",
-							"start_time": 44760,
-							"end_time": 45100
+							"startTime": 44760,
+							"endTime": 45100
 						},
 						{
 							"text": "整",
-							"start_time": 45410,
-							"end_time": 45700
+							"startTime": 45410,
+							"endTime": 45700
 						},
 						{
 							"text": "如",
-							"start_time": 45700,
-							"end_time": 46280
+							"startTime": 45700,
+							"endTime": 46280
 						},
 						{
 							"text": "紙",
-							"start_time": 46280,
-							"end_time": 46690
+							"startTime": 46280,
+							"endTime": 46690
 						},
 						{
 							"text": "的",
-							"start_time": 46690,
-							"end_time": 47090
+							"startTime": 46690,
+							"endTime": 47090
 						},
 						{
 							"text": "晨",
-							"start_time": 47570,
-							"end_time": 47910
+							"startTime": 47570,
+							"endTime": 47910
 						},
 						{
 							"text": "間",
-							"start_time": 47910,
-							"end_time": 48840
+							"startTime": 47910,
+							"endTime": 48840
 						}
 					]
 				}
@@ -1478,93 +1478,93 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "zhào",
-							"start_time": 44150,
-							"end_time": 44760,
-							"ends_with_space": true
+							"startTime": 44150,
+							"endTime": 44760,
+							"endsWithSpace": true
 						},
 						{
 							"text": "píng",
-							"start_time": 44760,
-							"end_time": 45100,
-							"ends_with_space": true
+							"startTime": 44760,
+							"endTime": 45100,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhěng",
-							"start_time": 45410,
-							"end_time": 45700,
-							"ends_with_space": true
+							"startTime": 45410,
+							"endTime": 45700,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rú",
-							"start_time": 45700,
-							"end_time": 46280,
-							"ends_with_space": true
+							"startTime": 45700,
+							"endTime": 46280,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhǐ",
-							"start_time": 46280,
-							"end_time": 46690,
-							"ends_with_space": true
+							"startTime": 46280,
+							"endTime": 46690,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 46690,
-							"end_time": 47090,
-							"ends_with_space": true
+							"startTime": 46690,
+							"endTime": 47090,
+							"endsWithSpace": true
 						},
 						{
 							"text": "chén",
-							"start_time": 47570,
-							"end_time": 47910,
-							"ends_with_space": true
+							"startTime": 47570,
+							"endTime": 47910,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 47910,
-							"end_time": 48840
+							"startTime": 47910,
+							"endTime": 48840
 						}
 					]
 				}
 			],
 			"id": "L8",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 2
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
 		},
 		{
 			"text": "追云影的羊群",
-			"start_time": 49430,
-			"end_time": 53780,
+			"startTime": 49430,
+			"endTime": 53780,
 			"words": [
 				{
 					"text": "追",
-					"start_time": 49430,
-					"end_time": 50020
+					"startTime": 49430,
+					"endTime": 50020
 				},
 				{
 					"text": "云",
-					"start_time": 50020,
-					"end_time": 50400
+					"startTime": 50020,
+					"endTime": 50400
 				},
 				{
 					"text": "影",
-					"start_time": 50400,
-					"end_time": 51410
+					"startTime": 50400,
+					"endTime": 51410
 				},
 				{
 					"text": "的",
-					"start_time": 52290,
-					"end_time": 52600
+					"startTime": 52290,
+					"endTime": 52600
 				},
 				{
 					"text": "羊",
-					"start_time": 52600,
-					"end_time": 52870
+					"startTime": 52600,
+					"endTime": 52870
 				},
 				{
 					"text": "群",
-					"start_time": 52870,
-					"end_time": 53780
+					"startTime": 52870,
+					"endTime": 53780
 				}
 			],
 			"translations": [
@@ -1618,33 +1618,33 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "追",
-							"start_time": 49430,
-							"end_time": 50020
+							"startTime": 49430,
+							"endTime": 50020
 						},
 						{
 							"text": "雲",
-							"start_time": 50020,
-							"end_time": 50400
+							"startTime": 50020,
+							"endTime": 50400
 						},
 						{
 							"text": "影",
-							"start_time": 50400,
-							"end_time": 51410
+							"startTime": 50400,
+							"endTime": 51410
 						},
 						{
 							"text": "的",
-							"start_time": 52290,
-							"end_time": 52600
+							"startTime": 52290,
+							"endTime": 52600
 						},
 						{
 							"text": "羊",
-							"start_time": 52600,
-							"end_time": 52870
+							"startTime": 52600,
+							"endTime": 52870
 						},
 						{
 							"text": "群",
-							"start_time": 52870,
-							"end_time": 53780
+							"startTime": 52870,
+							"endTime": 53780
 						}
 					]
 				}
@@ -1656,86 +1656,86 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "zhuī",
-							"start_time": 49430,
-							"end_time": 50020,
-							"ends_with_space": true
+							"startTime": 49430,
+							"endTime": 50020,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yún",
-							"start_time": 50020,
-							"end_time": 50400,
-							"ends_with_space": true
+							"startTime": 50020,
+							"endTime": 50400,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yǐng",
-							"start_time": 50400,
-							"end_time": 51410,
-							"ends_with_space": true
+							"startTime": 50400,
+							"endTime": 51410,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 52290,
-							"end_time": 52600,
-							"ends_with_space": true
+							"startTime": 52290,
+							"endTime": 52600,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yáng",
-							"start_time": 52600,
-							"end_time": 52870,
-							"ends_with_space": true
+							"startTime": 52600,
+							"endTime": 52870,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qún",
-							"start_time": 52870,
-							"end_time": 53780
+							"startTime": 52870,
+							"endTime": 53780
 						}
 					]
 				}
 			],
 			"id": "L9",
-			"agent_id": "v1",
-			"song_part": "PreChorus",
-			"block_index": 3
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
 		},
 		{
 			"text": "任言语缓缓入眠",
-			"start_time": 54500,
-			"end_time": 60440,
+			"startTime": 54500,
+			"endTime": 60440,
 			"words": [
 				{
 					"text": "任",
-					"start_time": 54500,
-					"end_time": 55060
+					"startTime": 54500,
+					"endTime": 55060
 				},
 				{
 					"text": "言",
-					"start_time": 55060,
-					"end_time": 55400
+					"startTime": 55060,
+					"endTime": 55400
 				},
 				{
 					"text": "语",
-					"start_time": 55400,
-					"end_time": 56550
+					"startTime": 55400,
+					"endTime": 56550
 				},
 				{
 					"text": "缓",
-					"start_time": 57310,
-					"end_time": 57560
+					"startTime": 57310,
+					"endTime": 57560
 				},
 				{
 					"text": "缓",
-					"start_time": 57560,
-					"end_time": 57910
+					"startTime": 57560,
+					"endTime": 57910
 				},
 				{
 					"text": "入",
-					"start_time": 57910,
-					"end_time": 58580
+					"startTime": 57910,
+					"endTime": 58580
 				},
 				{
 					"text": "眠",
-					"start_time": 58580,
-					"end_time": 59580
+					"startTime": 58580,
+					"endTime": 59580
 				}
 			],
 			"translations": [
@@ -1789,38 +1789,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "任",
-							"start_time": 54500,
-							"end_time": 55060
+							"startTime": 54500,
+							"endTime": 55060
 						},
 						{
 							"text": "言",
-							"start_time": 55060,
-							"end_time": 55400
+							"startTime": 55060,
+							"endTime": 55400
 						},
 						{
 							"text": "語",
-							"start_time": 55400,
-							"end_time": 56550
+							"startTime": 55400,
+							"endTime": 56550
 						},
 						{
 							"text": "緩",
-							"start_time": 57310,
-							"end_time": 57560
+							"startTime": 57310,
+							"endTime": 57560
 						},
 						{
 							"text": "緩",
-							"start_time": 57560,
-							"end_time": 57910
+							"startTime": 57560,
+							"endTime": 57910
 						},
 						{
 							"text": "入",
-							"start_time": 57910,
-							"end_time": 58580
+							"startTime": 57910,
+							"endTime": 58580
 						},
 						{
 							"text": "眠",
-							"start_time": 58580,
-							"end_time": 59580
+							"startTime": 58580,
+							"endTime": 59580
 						}
 					]
 				}
@@ -1832,72 +1832,72 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "rèn",
-							"start_time": 54500,
-							"end_time": 55060,
-							"ends_with_space": true
+							"startTime": 54500,
+							"endTime": 55060,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yán",
-							"start_time": 55060,
-							"end_time": 55400,
-							"ends_with_space": true
+							"startTime": 55060,
+							"endTime": 55400,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yǔ",
-							"start_time": 55400,
-							"end_time": 56550,
-							"ends_with_space": true
+							"startTime": 55400,
+							"endTime": 56550,
+							"endsWithSpace": true
 						},
 						{
 							"text": "huǎn",
-							"start_time": 57310,
-							"end_time": 57560,
-							"ends_with_space": true
+							"startTime": 57310,
+							"endTime": 57560,
+							"endsWithSpace": true
 						},
 						{
 							"text": "huǎn",
-							"start_time": 57560,
-							"end_time": 57910,
-							"ends_with_space": true
+							"startTime": 57560,
+							"endTime": 57910,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rù",
-							"start_time": 57910,
-							"end_time": 58580,
-							"ends_with_space": true
+							"startTime": 57910,
+							"endTime": 58580,
+							"endsWithSpace": true
 						},
 						{
 							"text": "mián",
-							"start_time": 58580,
-							"end_time": 59580
+							"startTime": 58580,
+							"endTime": 59580
 						}
 					]
 				}
 			],
-			"background_vocal": {
+			"backgroundVocal": {
 				"text": "缓缓入眠",
-				"start_time": 58560,
-				"end_time": 60440,
+				"startTime": 58560,
+				"endTime": 60440,
 				"words": [
 					{
 						"text": "缓",
-						"start_time": 58560,
-						"end_time": 58890
+						"startTime": 58560,
+						"endTime": 58890
 					},
 					{
 						"text": "缓",
-						"start_time": 58890,
-						"end_time": 59110
+						"startTime": 58890,
+						"endTime": 59110
 					},
 					{
 						"text": "入",
-						"start_time": 59110,
-						"end_time": 59490
+						"startTime": 59110,
+						"endTime": 59490
 					},
 					{
 						"text": "眠",
-						"start_time": 59490,
-						"end_time": 60440
+						"startTime": 59490,
+						"endTime": 60440
 					}
 				],
 				"translations": [
@@ -1951,23 +1951,23 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "緩",
-								"start_time": 58560,
-								"end_time": 58890
+								"startTime": 58560,
+								"endTime": 58890
 							},
 							{
 								"text": "緩",
-								"start_time": 58890,
-								"end_time": 59110
+								"startTime": 58890,
+								"endTime": 59110
 							},
 							{
 								"text": "入",
-								"start_time": 59110,
-								"end_time": 59490
+								"startTime": 59110,
+								"endTime": 59490
 							},
 							{
 								"text": "眠",
-								"start_time": 59490,
-								"end_time": 60440
+								"startTime": 59490,
+								"endTime": 60440
 							}
 						]
 					}
@@ -1979,85 +1979,85 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "huǎn",
-								"start_time": 58560,
-								"end_time": 58890,
-								"ends_with_space": true
+								"startTime": 58560,
+								"endTime": 58890,
+								"endsWithSpace": true
 							},
 							{
 								"text": "huǎn",
-								"start_time": 58890,
-								"end_time": 59110,
-								"ends_with_space": true
+								"startTime": 58890,
+								"endTime": 59110,
+								"endsWithSpace": true
 							},
 							{
 								"text": "rù",
-								"start_time": 59110,
-								"end_time": 59490,
-								"ends_with_space": true
+								"startTime": 59110,
+								"endTime": 59490,
+								"endsWithSpace": true
 							},
 							{
 								"text": "mián",
-								"start_time": 59490,
-								"end_time": 60440
+								"startTime": 59490,
+								"endTime": 60440
 							}
 						]
 					}
 				]
 			},
 			"id": "L10",
-			"agent_id": "v1",
-			"song_part": "PreChorus",
-			"block_index": 3
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
 		},
 		{
 			"text": "余白的哲学独自领会",
-			"start_time": 60120,
-			"end_time": 65010,
+			"startTime": 60120,
+			"endTime": 65010,
 			"words": [
 				{
 					"text": "余",
-					"start_time": 60120,
-					"end_time": 60430
+					"startTime": 60120,
+					"endTime": 60430
 				},
 				{
 					"text": "白",
-					"start_time": 60430,
-					"end_time": 60750
+					"startTime": 60430,
+					"endTime": 60750
 				},
 				{
 					"text": "的",
-					"start_time": 60750,
-					"end_time": 61300
+					"startTime": 60750,
+					"endTime": 61300
 				},
 				{
 					"text": "哲",
-					"start_time": 61300,
-					"end_time": 61590
+					"startTime": 61300,
+					"endTime": 61590
 				},
 				{
 					"text": "学",
-					"start_time": 61590,
-					"end_time": 62490
+					"startTime": 61590,
+					"endTime": 62490
 				},
 				{
 					"text": "独",
-					"start_time": 62930,
-					"end_time": 63200
+					"startTime": 62930,
+					"endTime": 63200
 				},
 				{
 					"text": "自",
-					"start_time": 63200,
-					"end_time": 63880
+					"startTime": 63200,
+					"endTime": 63880
 				},
 				{
 					"text": "领",
-					"start_time": 63880,
-					"end_time": 64080
+					"startTime": 63880,
+					"endTime": 64080
 				},
 				{
 					"text": "会",
-					"start_time": 64210,
-					"end_time": 65010
+					"startTime": 64210,
+					"endTime": 65010
 				}
 			],
 			"translations": [
@@ -2111,48 +2111,48 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "餘",
-							"start_time": 60120,
-							"end_time": 60430
+							"startTime": 60120,
+							"endTime": 60430
 						},
 						{
 							"text": "白",
-							"start_time": 60430,
-							"end_time": 60750
+							"startTime": 60430,
+							"endTime": 60750
 						},
 						{
 							"text": "的",
-							"start_time": 60750,
-							"end_time": 61300
+							"startTime": 60750,
+							"endTime": 61300
 						},
 						{
 							"text": "哲",
-							"start_time": 61300,
-							"end_time": 61590
+							"startTime": 61300,
+							"endTime": 61590
 						},
 						{
 							"text": "學",
-							"start_time": 61590,
-							"end_time": 62490
+							"startTime": 61590,
+							"endTime": 62490
 						},
 						{
 							"text": "獨",
-							"start_time": 62930,
-							"end_time": 63200
+							"startTime": 62930,
+							"endTime": 63200
 						},
 						{
 							"text": "自",
-							"start_time": 63200,
-							"end_time": 63880
+							"startTime": 63200,
+							"endTime": 63880
 						},
 						{
 							"text": "領",
-							"start_time": 63880,
-							"end_time": 64080
+							"startTime": 63880,
+							"endTime": 64080
 						},
 						{
 							"text": "會",
-							"start_time": 64210,
-							"end_time": 65010
+							"startTime": 64210,
+							"endTime": 65010
 						}
 					]
 				}
@@ -2164,79 +2164,79 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "yú",
-							"start_time": 60120,
-							"end_time": 60430,
-							"ends_with_space": true
+							"startTime": 60120,
+							"endTime": 60430,
+							"endsWithSpace": true
 						},
 						{
 							"text": "bái",
-							"start_time": 60430,
-							"end_time": 60750,
-							"ends_with_space": true
+							"startTime": 60430,
+							"endTime": 60750,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 60750,
-							"end_time": 61300,
-							"ends_with_space": true
+							"startTime": 60750,
+							"endTime": 61300,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhé",
-							"start_time": 61300,
-							"end_time": 61590,
-							"ends_with_space": true
+							"startTime": 61300,
+							"endTime": 61590,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xué",
-							"start_time": 61590,
-							"end_time": 62490,
-							"ends_with_space": true
+							"startTime": 61590,
+							"endTime": 62490,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dú",
-							"start_time": 62930,
-							"end_time": 63200,
-							"ends_with_space": true
+							"startTime": 62930,
+							"endTime": 63200,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zì",
-							"start_time": 63200,
-							"end_time": 63880,
-							"ends_with_space": true
+							"startTime": 63200,
+							"endTime": 63880,
+							"endsWithSpace": true
 						},
 						{
 							"text": "lǐng",
-							"start_time": 63880,
-							"end_time": 64080,
-							"ends_with_space": true
+							"startTime": 63880,
+							"endTime": 64080,
+							"endsWithSpace": true
 						},
 						{
 							"text": "huì",
-							"start_time": 64210,
-							"end_time": 65010
+							"startTime": 64210,
+							"endTime": 65010
 						}
 					]
 				}
 			],
 			"id": "L11",
-			"agent_id": "v1",
-			"song_part": "PreChorus",
-			"block_index": 3
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
 		},
 		{
 			"text": "练习",
-			"start_time": 65690,
-			"end_time": 66520,
+			"startTime": 65690,
+			"endTime": 66520,
 			"words": [
 				{
 					"text": "练",
-					"start_time": 65690,
-					"end_time": 66040
+					"startTime": 65690,
+					"endTime": 66040
 				},
 				{
 					"text": "习",
-					"start_time": 66040,
-					"end_time": 66520
+					"startTime": 66040,
+					"endTime": 66520
 				}
 			],
 			"translations": [
@@ -2290,13 +2290,13 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "練",
-							"start_time": 65690,
-							"end_time": 66040
+							"startTime": 65690,
+							"endTime": 66040
 						},
 						{
 							"text": "習",
-							"start_time": 66040,
-							"end_time": 66520
+							"startTime": 66040,
+							"endTime": 66520
 						}
 					]
 				}
@@ -2308,47 +2308,47 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "liàn",
-							"start_time": 65690,
-							"end_time": 66040,
-							"ends_with_space": true
+							"startTime": 65690,
+							"endTime": 66040,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xí",
-							"start_time": 66040,
-							"end_time": 66520
+							"startTime": 66040,
+							"endTime": 66520
 						}
 					]
 				}
 			],
 			"id": "L12",
-			"agent_id": "v1",
-			"song_part": "PreChorus",
-			"block_index": 3
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
 		},
 		{
 			"text": "浮起一些",
-			"start_time": 67250,
-			"end_time": 68890,
+			"startTime": 67250,
+			"endTime": 68890,
 			"words": [
 				{
 					"text": "浮",
-					"start_time": 67250,
-					"end_time": 67530
+					"startTime": 67250,
+					"endTime": 67530
 				},
 				{
 					"text": "起",
-					"start_time": 67530,
-					"end_time": 67890
+					"startTime": 67530,
+					"endTime": 67890
 				},
 				{
 					"text": "一",
-					"start_time": 67890,
-					"end_time": 68190
+					"startTime": 67890,
+					"endTime": 68190
 				},
 				{
 					"text": "些",
-					"start_time": 68190,
-					"end_time": 68890
+					"startTime": 68190,
+					"endTime": 68890
 				}
 			],
 			"translations": [
@@ -2402,23 +2402,23 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "浮",
-							"start_time": 67250,
-							"end_time": 67530
+							"startTime": 67250,
+							"endTime": 67530
 						},
 						{
 							"text": "起",
-							"start_time": 67530,
-							"end_time": 67890
+							"startTime": 67530,
+							"endTime": 67890
 						},
 						{
 							"text": "一",
-							"start_time": 67890,
-							"end_time": 68190
+							"startTime": 67890,
+							"endTime": 68190
 						},
 						{
 							"text": "些",
-							"start_time": 68190,
-							"end_time": 68890
+							"startTime": 68190,
+							"endTime": 68890
 						}
 					]
 				}
@@ -2430,70 +2430,70 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "fú",
-							"start_time": 67250,
-							"end_time": 67530,
-							"ends_with_space": true
+							"startTime": 67250,
+							"endTime": 67530,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qǐ",
-							"start_time": 67530,
-							"end_time": 67890,
-							"ends_with_space": true
+							"startTime": 67530,
+							"endTime": 67890,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yì",
-							"start_time": 67890,
-							"end_time": 68190,
-							"ends_with_space": true
+							"startTime": 67890,
+							"endTime": 68190,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiē",
-							"start_time": 68190,
-							"end_time": 68890
+							"startTime": 68190,
+							"endTime": 68890
 						}
 					]
 				}
 			],
 			"id": "L13",
-			"agent_id": "v1",
-			"song_part": "PreChorus",
-			"block_index": 3
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
 		},
 		{
 			"text": "一人的 星期天",
-			"start_time": 69500,
-			"end_time": 73960,
+			"startTime": 69500,
+			"endTime": 73960,
 			"words": [
 				{
 					"text": "一",
-					"start_time": 69500,
-					"end_time": 70090
+					"startTime": 69500,
+					"endTime": 70090
 				},
 				{
 					"text": "人",
-					"start_time": 70090,
-					"end_time": 70700
+					"startTime": 70090,
+					"endTime": 70700
 				},
 				{
 					"text": "的",
-					"start_time": 70700,
-					"end_time": 71880,
-					"ends_with_space": true
+					"startTime": 70700,
+					"endTime": 71880,
+					"endsWithSpace": true
 				},
 				{
 					"text": "星",
-					"start_time": 72230,
-					"end_time": 72540
+					"startTime": 72230,
+					"endTime": 72540
 				},
 				{
 					"text": "期",
-					"start_time": 72540,
-					"end_time": 72800
+					"startTime": 72540,
+					"endTime": 72800
 				},
 				{
 					"text": "天",
-					"start_time": 72800,
-					"end_time": 73960
+					"startTime": 72800,
+					"endTime": 73960
 				}
 			],
 			"translations": [
@@ -2547,34 +2547,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "一",
-							"start_time": 69500,
-							"end_time": 70090
+							"startTime": 69500,
+							"endTime": 70090
 						},
 						{
 							"text": "人",
-							"start_time": 70090,
-							"end_time": 70700
+							"startTime": 70090,
+							"endTime": 70700
 						},
 						{
 							"text": "的",
-							"start_time": 70700,
-							"end_time": 71880,
-							"ends_with_space": true
+							"startTime": 70700,
+							"endTime": 71880,
+							"endsWithSpace": true
 						},
 						{
 							"text": "星",
-							"start_time": 72230,
-							"end_time": 72540
+							"startTime": 72230,
+							"endTime": 72540
 						},
 						{
 							"text": "期",
-							"start_time": 72540,
-							"end_time": 72800
+							"startTime": 72540,
+							"endTime": 72800
 						},
 						{
 							"text": "天",
-							"start_time": 72800,
-							"end_time": 73960
+							"startTime": 72800,
+							"endTime": 73960
 						}
 					]
 				}
@@ -2586,82 +2586,82 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "yì",
-							"start_time": 69500,
-							"end_time": 70090,
-							"ends_with_space": true
+							"startTime": 69500,
+							"endTime": 70090,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rén",
-							"start_time": 70090,
-							"end_time": 70700,
-							"ends_with_space": true
+							"startTime": 70090,
+							"endTime": 70700,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 70700,
-							"end_time": 71880,
-							"ends_with_space": true
+							"startTime": 70700,
+							"endTime": 71880,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xīng",
-							"start_time": 72230,
-							"end_time": 72540,
-							"ends_with_space": true
+							"startTime": 72230,
+							"endTime": 72540,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qī",
-							"start_time": 72540,
-							"end_time": 72800,
-							"ends_with_space": true
+							"startTime": 72540,
+							"endTime": 72800,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tiān",
-							"start_time": 72800,
-							"end_time": 73960
+							"startTime": 72800,
+							"endTime": 73960
 						}
 					]
 				}
 			],
 			"id": "L14",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 4
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
 		},
 		{
 			"text": "轻轻拢 慢慢捻",
-			"start_time": 74420,
-			"end_time": 79170,
+			"startTime": 74420,
+			"endTime": 79170,
 			"words": [
 				{
 					"text": "轻",
-					"start_time": 74420,
-					"end_time": 75000
+					"startTime": 74420,
+					"endTime": 75000
 				},
 				{
 					"text": "轻",
-					"start_time": 75000,
-					"end_time": 75750
+					"startTime": 75000,
+					"endTime": 75750
 				},
 				{
 					"text": "拢",
-					"start_time": 75750,
-					"end_time": 76920,
-					"ends_with_space": true
+					"startTime": 75750,
+					"endTime": 76920,
+					"endsWithSpace": true
 				},
 				{
 					"text": "慢",
-					"start_time": 77290,
-					"end_time": 77590
+					"startTime": 77290,
+					"endTime": 77590
 				},
 				{
 					"text": "慢",
-					"start_time": 77590,
-					"end_time": 77920
+					"startTime": 77590,
+					"endTime": 77920
 				},
 				{
 					"text": "捻",
-					"start_time": 77920,
-					"end_time": 79170
+					"startTime": 77920,
+					"endTime": 79170
 				}
 			],
 			"translations": [
@@ -2715,34 +2715,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "輕",
-							"start_time": 74420,
-							"end_time": 75000
+							"startTime": 74420,
+							"endTime": 75000
 						},
 						{
 							"text": "輕",
-							"start_time": 75000,
-							"end_time": 75750
+							"startTime": 75000,
+							"endTime": 75750
 						},
 						{
 							"text": "攏",
-							"start_time": 75750,
-							"end_time": 76920,
-							"ends_with_space": true
+							"startTime": 75750,
+							"endTime": 76920,
+							"endsWithSpace": true
 						},
 						{
 							"text": "慢",
-							"start_time": 77290,
-							"end_time": 77590
+							"startTime": 77290,
+							"endTime": 77590
 						},
 						{
 							"text": "慢",
-							"start_time": 77590,
-							"end_time": 77920
+							"startTime": 77590,
+							"endTime": 77920
 						},
 						{
 							"text": "捻",
-							"start_time": 77920,
-							"end_time": 79170
+							"startTime": 77920,
+							"endTime": 79170
 						}
 					]
 				}
@@ -2754,86 +2754,86 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "qīng",
-							"start_time": 74420,
-							"end_time": 75000,
-							"ends_with_space": true
+							"startTime": 74420,
+							"endTime": 75000,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qīng",
-							"start_time": 75000,
-							"end_time": 75750,
-							"ends_with_space": true
+							"startTime": 75000,
+							"endTime": 75750,
+							"endsWithSpace": true
 						},
 						{
 							"text": "lǒng",
-							"start_time": 75750,
-							"end_time": 76920,
-							"ends_with_space": true
+							"startTime": 75750,
+							"endTime": 76920,
+							"endsWithSpace": true
 						},
 						{
 							"text": "màn",
-							"start_time": 77290,
-							"end_time": 77590,
-							"ends_with_space": true
+							"startTime": 77290,
+							"endTime": 77590,
+							"endsWithSpace": true
 						},
 						{
 							"text": "màn",
-							"start_time": 77590,
-							"end_time": 77920,
-							"ends_with_space": true
+							"startTime": 77590,
+							"endTime": 77920,
+							"endsWithSpace": true
 						},
 						{
 							"text": "niǎn",
-							"start_time": 77920,
-							"end_time": 79170
+							"startTime": 77920,
+							"endTime": 79170
 						}
 					]
 				}
 			],
 			"id": "L15",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 4
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
 		},
 		{
 			"text": "方糖悬滞的时间",
-			"start_time": 80050,
-			"end_time": 83930,
+			"startTime": 80050,
+			"endTime": 83930,
 			"words": [
 				{
 					"text": "方",
-					"start_time": 80050,
-					"end_time": 80430
+					"startTime": 80050,
+					"endTime": 80430
 				},
 				{
 					"text": "糖",
-					"start_time": 80430,
-					"end_time": 80650
+					"startTime": 80430,
+					"endTime": 80650
 				},
 				{
 					"text": "悬",
-					"start_time": 80650,
-					"end_time": 81300
+					"startTime": 80650,
+					"endTime": 81300
 				},
 				{
 					"text": "滞",
-					"start_time": 81300,
-					"end_time": 81680
+					"startTime": 81300,
+					"endTime": 81680
 				},
 				{
 					"text": "的",
-					"start_time": 81680,
-					"end_time": 82310
+					"startTime": 81680,
+					"endTime": 82310
 				},
 				{
 					"text": "时",
-					"start_time": 82480,
-					"end_time": 82870
+					"startTime": 82480,
+					"endTime": 82870
 				},
 				{
 					"text": "间",
-					"start_time": 82870,
-					"end_time": 83930
+					"startTime": 82870,
+					"endTime": 83930
 				}
 			],
 			"translations": [
@@ -2887,38 +2887,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "方",
-							"start_time": 80050,
-							"end_time": 80430
+							"startTime": 80050,
+							"endTime": 80430
 						},
 						{
 							"text": "糖",
-							"start_time": 80430,
-							"end_time": 80650
+							"startTime": 80430,
+							"endTime": 80650
 						},
 						{
 							"text": "懸",
-							"start_time": 80650,
-							"end_time": 81300
+							"startTime": 80650,
+							"endTime": 81300
 						},
 						{
 							"text": "滯",
-							"start_time": 81300,
-							"end_time": 81680
+							"startTime": 81300,
+							"endTime": 81680
 						},
 						{
 							"text": "的",
-							"start_time": 81680,
-							"end_time": 82310
+							"startTime": 81680,
+							"endTime": 82310
 						},
 						{
 							"text": "時",
-							"start_time": 82480,
-							"end_time": 82870
+							"startTime": 82480,
+							"endTime": 82870
 						},
 						{
 							"text": "間",
-							"start_time": 82870,
-							"end_time": 83930
+							"startTime": 82870,
+							"endTime": 83930
 						}
 					]
 				}
@@ -2930,98 +2930,98 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "fāng",
-							"start_time": 80050,
-							"end_time": 80430,
-							"ends_with_space": true
+							"startTime": 80050,
+							"endTime": 80430,
+							"endsWithSpace": true
 						},
 						{
 							"text": "táng",
-							"start_time": 80430,
-							"end_time": 80650,
-							"ends_with_space": true
+							"startTime": 80430,
+							"endTime": 80650,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xuán",
-							"start_time": 80650,
-							"end_time": 81300,
-							"ends_with_space": true
+							"startTime": 80650,
+							"endTime": 81300,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhì",
-							"start_time": 81300,
-							"end_time": 81680,
-							"ends_with_space": true
+							"startTime": 81300,
+							"endTime": 81680,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 81680,
-							"end_time": 82310,
-							"ends_with_space": true
+							"startTime": 81680,
+							"endTime": 82310,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shí",
-							"start_time": 82480,
-							"end_time": 82870,
-							"ends_with_space": true
+							"startTime": 82480,
+							"endTime": 82870,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 82870,
-							"end_time": 83930
+							"startTime": 82870,
+							"endTime": 83930
 						}
 					]
 				}
 			],
 			"id": "L16",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 4
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
 		},
 		{
 			"text": "一杯闲暇 两种挂念",
-			"start_time": 84830,
-			"end_time": 89070,
+			"startTime": 84830,
+			"endTime": 89070,
 			"words": [
 				{
 					"text": "一",
-					"start_time": 84830,
-					"end_time": 85110
+					"startTime": 84830,
+					"endTime": 85110
 				},
 				{
 					"text": "杯",
-					"start_time": 85110,
-					"end_time": 85290
+					"startTime": 85110,
+					"endTime": 85290
 				},
 				{
 					"text": "闲",
-					"start_time": 85290,
-					"end_time": 85630
+					"startTime": 85290,
+					"endTime": 85630
 				},
 				{
 					"text": "暇",
-					"start_time": 85630,
-					"end_time": 86690,
-					"ends_with_space": true
+					"startTime": 85630,
+					"endTime": 86690,
+					"endsWithSpace": true
 				},
 				{
 					"text": "两",
-					"start_time": 87340,
-					"end_time": 87590
+					"startTime": 87340,
+					"endTime": 87590
 				},
 				{
 					"text": "种",
-					"start_time": 87590,
-					"end_time": 87940
+					"startTime": 87590,
+					"endTime": 87940
 				},
 				{
 					"text": "挂",
-					"start_time": 87940,
-					"end_time": 88430
+					"startTime": 87940,
+					"endTime": 88430
 				},
 				{
 					"text": "念",
-					"start_time": 88550,
-					"end_time": 89070
+					"startTime": 88550,
+					"endTime": 89070
 				}
 			],
 			"translations": [
@@ -3075,44 +3075,44 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "一",
-							"start_time": 84830,
-							"end_time": 85110
+							"startTime": 84830,
+							"endTime": 85110
 						},
 						{
 							"text": "杯",
-							"start_time": 85110,
-							"end_time": 85290
+							"startTime": 85110,
+							"endTime": 85290
 						},
 						{
 							"text": "閒",
-							"start_time": 85290,
-							"end_time": 85630
+							"startTime": 85290,
+							"endTime": 85630
 						},
 						{
 							"text": "暇",
-							"start_time": 85630,
-							"end_time": 86690,
-							"ends_with_space": true
+							"startTime": 85630,
+							"endTime": 86690,
+							"endsWithSpace": true
 						},
 						{
 							"text": "兩",
-							"start_time": 87340,
-							"end_time": 87590
+							"startTime": 87340,
+							"endTime": 87590
 						},
 						{
 							"text": "種",
-							"start_time": 87590,
-							"end_time": 87940
+							"startTime": 87590,
+							"endTime": 87940
 						},
 						{
 							"text": "掛",
-							"start_time": 87940,
-							"end_time": 88430
+							"startTime": 87940,
+							"endTime": 88430
 						},
 						{
 							"text": "念",
-							"start_time": 88550,
-							"end_time": 89070
+							"startTime": 88550,
+							"endTime": 89070
 						}
 					]
 				}
@@ -3124,94 +3124,94 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "yì",
-							"start_time": 84830,
-							"end_time": 85110,
-							"ends_with_space": true
+							"startTime": 84830,
+							"endTime": 85110,
+							"endsWithSpace": true
 						},
 						{
 							"text": "bēi",
-							"start_time": 85110,
-							"end_time": 85290,
-							"ends_with_space": true
+							"startTime": 85110,
+							"endTime": 85290,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xián",
-							"start_time": 85290,
-							"end_time": 85630,
-							"ends_with_space": true
+							"startTime": 85290,
+							"endTime": 85630,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiá",
-							"start_time": 85630,
-							"end_time": 86690,
-							"ends_with_space": true
+							"startTime": 85630,
+							"endTime": 86690,
+							"endsWithSpace": true
 						},
 						{
 							"text": "liǎng",
-							"start_time": 87340,
-							"end_time": 87590,
-							"ends_with_space": true
+							"startTime": 87340,
+							"endTime": 87590,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhǒng",
-							"start_time": 87590,
-							"end_time": 87940,
-							"ends_with_space": true
+							"startTime": 87590,
+							"endTime": 87940,
+							"endsWithSpace": true
 						},
 						{
 							"text": "guà",
-							"start_time": 87940,
-							"end_time": 88430,
-							"ends_with_space": true
+							"startTime": 87940,
+							"endTime": 88430,
+							"endsWithSpace": true
 						},
 						{
 							"text": "niàn",
-							"start_time": 88550,
-							"end_time": 89070
+							"startTime": 88550,
+							"endTime": 89070
 						}
 					]
 				}
 			],
 			"id": "L17",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 4
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
 		},
 		{
 			"text": "时间外 的时间",
-			"start_time": 89400,
-			"end_time": 94000,
+			"startTime": 89400,
+			"endTime": 94000,
 			"words": [
 				{
 					"text": "时",
-					"start_time": 89400,
-					"end_time": 90060
+					"startTime": 89400,
+					"endTime": 90060
 				},
 				{
 					"text": "间",
-					"start_time": 90060,
-					"end_time": 90700
+					"startTime": 90060,
+					"endTime": 90700
 				},
 				{
 					"text": "外",
-					"start_time": 90700,
-					"end_time": 91980,
-					"ends_with_space": true
+					"startTime": 90700,
+					"endTime": 91980,
+					"endsWithSpace": true
 				},
 				{
 					"text": "的",
-					"start_time": 92320,
-					"end_time": 92500
+					"startTime": 92320,
+					"endTime": 92500
 				},
 				{
 					"text": "时",
-					"start_time": 92500,
-					"end_time": 92870
+					"startTime": 92500,
+					"endTime": 92870
 				},
 				{
 					"text": "间",
-					"start_time": 92870,
-					"end_time": 94000
+					"startTime": 92870,
+					"endTime": 94000
 				}
 			],
 			"translations": [
@@ -3265,34 +3265,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "時",
-							"start_time": 89400,
-							"end_time": 90060
+							"startTime": 89400,
+							"endTime": 90060
 						},
 						{
 							"text": "間",
-							"start_time": 90060,
-							"end_time": 90700
+							"startTime": 90060,
+							"endTime": 90700
 						},
 						{
 							"text": "外",
-							"start_time": 90700,
-							"end_time": 91980,
-							"ends_with_space": true
+							"startTime": 90700,
+							"endTime": 91980,
+							"endsWithSpace": true
 						},
 						{
 							"text": "的",
-							"start_time": 92320,
-							"end_time": 92500
+							"startTime": 92320,
+							"endTime": 92500
 						},
 						{
 							"text": "時",
-							"start_time": 92500,
-							"end_time": 92870
+							"startTime": 92500,
+							"endTime": 92870
 						},
 						{
 							"text": "間",
-							"start_time": 92870,
-							"end_time": 94000
+							"startTime": 92870,
+							"endTime": 94000
 						}
 					]
 				}
@@ -3304,82 +3304,82 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "shí",
-							"start_time": 89400,
-							"end_time": 90060,
-							"ends_with_space": true
+							"startTime": 89400,
+							"endTime": 90060,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 90060,
-							"end_time": 90700,
-							"ends_with_space": true
+							"startTime": 90060,
+							"endTime": 90700,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wài",
-							"start_time": 90700,
-							"end_time": 91980,
-							"ends_with_space": true
+							"startTime": 90700,
+							"endTime": 91980,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 92320,
-							"end_time": 92500,
-							"ends_with_space": true
+							"startTime": 92320,
+							"endTime": 92500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shí",
-							"start_time": 92500,
-							"end_time": 92870,
-							"ends_with_space": true
+							"startTime": 92500,
+							"endTime": 92870,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 92870,
-							"end_time": 94000
+							"startTime": 92870,
+							"endTime": 94000
 						}
 					]
 				}
 			],
 			"id": "L18",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 5
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
 		},
 		{
 			"text": "温柔的 空房间",
-			"start_time": 94460,
-			"end_time": 99300,
+			"startTime": 94460,
+			"endTime": 99300,
 			"words": [
 				{
 					"text": "温",
-					"start_time": 94460,
-					"end_time": 95070
+					"startTime": 94460,
+					"endTime": 95070
 				},
 				{
 					"text": "柔",
-					"start_time": 95070,
-					"end_time": 95750
+					"startTime": 95070,
+					"endTime": 95750
 				},
 				{
 					"text": "的",
-					"start_time": 95750,
-					"end_time": 96880,
-					"ends_with_space": true
+					"startTime": 95750,
+					"endTime": 96880,
+					"endsWithSpace": true
 				},
 				{
 					"text": "空",
-					"start_time": 97270,
-					"end_time": 97550
+					"startTime": 97270,
+					"endTime": 97550
 				},
 				{
 					"text": "房",
-					"start_time": 97550,
-					"end_time": 97860
+					"startTime": 97550,
+					"endTime": 97860
 				},
 				{
 					"text": "间",
-					"start_time": 97860,
-					"end_time": 99300
+					"startTime": 97860,
+					"endTime": 99300
 				}
 			],
 			"translations": [
@@ -3433,34 +3433,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "溫",
-							"start_time": 94460,
-							"end_time": 95070
+							"startTime": 94460,
+							"endTime": 95070
 						},
 						{
 							"text": "柔",
-							"start_time": 95070,
-							"end_time": 95750
+							"startTime": 95070,
+							"endTime": 95750
 						},
 						{
 							"text": "的",
-							"start_time": 95750,
-							"end_time": 96880,
-							"ends_with_space": true
+							"startTime": 95750,
+							"endTime": 96880,
+							"endsWithSpace": true
 						},
 						{
 							"text": "空",
-							"start_time": 97270,
-							"end_time": 97550
+							"startTime": 97270,
+							"endTime": 97550
 						},
 						{
 							"text": "房",
-							"start_time": 97550,
-							"end_time": 97860
+							"startTime": 97550,
+							"endTime": 97860
 						},
 						{
 							"text": "間",
-							"start_time": 97860,
-							"end_time": 99300
+							"startTime": 97860,
+							"endTime": 99300
 						}
 					]
 				}
@@ -3472,86 +3472,86 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "wēn",
-							"start_time": 94460,
-							"end_time": 95070,
-							"ends_with_space": true
+							"startTime": 94460,
+							"endTime": 95070,
+							"endsWithSpace": true
 						},
 						{
 							"text": "róu",
-							"start_time": 95070,
-							"end_time": 95750,
-							"ends_with_space": true
+							"startTime": 95070,
+							"endTime": 95750,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 95750,
-							"end_time": 96880,
-							"ends_with_space": true
+							"startTime": 95750,
+							"endTime": 96880,
+							"endsWithSpace": true
 						},
 						{
 							"text": "kōng",
-							"start_time": 97270,
-							"end_time": 97550,
-							"ends_with_space": true
+							"startTime": 97270,
+							"endTime": 97550,
+							"endsWithSpace": true
 						},
 						{
 							"text": "fáng",
-							"start_time": 97550,
-							"end_time": 97860,
-							"ends_with_space": true
+							"startTime": 97550,
+							"endTime": 97860,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 97860,
-							"end_time": 99300
+							"startTime": 97860,
+							"endTime": 99300
 						}
 					]
 				}
 			],
 			"id": "L19",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 5
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
 		},
 		{
 			"text": "一千零一种停歇",
-			"start_time": 100090,
-			"end_time": 104030,
+			"startTime": 100090,
+			"endTime": 104030,
 			"words": [
 				{
 					"text": "一",
-					"start_time": 100090,
-					"end_time": 100340
+					"startTime": 100090,
+					"endTime": 100340
 				},
 				{
 					"text": "千",
-					"start_time": 100340,
-					"end_time": 100760
+					"startTime": 100340,
+					"endTime": 100760
 				},
 				{
 					"text": "零",
-					"start_time": 100760,
-					"end_time": 101360
+					"startTime": 100760,
+					"endTime": 101360
 				},
 				{
 					"text": "一",
-					"start_time": 101360,
-					"end_time": 101640
+					"startTime": 101360,
+					"endTime": 101640
 				},
 				{
 					"text": "种",
-					"start_time": 101640,
-					"end_time": 102410
+					"startTime": 101640,
+					"endTime": 102410
 				},
 				{
 					"text": "停",
-					"start_time": 102550,
-					"end_time": 102800
+					"startTime": 102550,
+					"endTime": 102800
 				},
 				{
 					"text": "歇",
-					"start_time": 102800,
-					"end_time": 104030
+					"startTime": 102800,
+					"endTime": 104030
 				}
 			],
 			"translations": [
@@ -3605,38 +3605,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "一",
-							"start_time": 100090,
-							"end_time": 100340
+							"startTime": 100090,
+							"endTime": 100340
 						},
 						{
 							"text": "千",
-							"start_time": 100340,
-							"end_time": 100760
+							"startTime": 100340,
+							"endTime": 100760
 						},
 						{
 							"text": "零",
-							"start_time": 100760,
-							"end_time": 101360
+							"startTime": 100760,
+							"endTime": 101360
 						},
 						{
 							"text": "一",
-							"start_time": 101360,
-							"end_time": 101640
+							"startTime": 101360,
+							"endTime": 101640
 						},
 						{
 							"text": "種",
-							"start_time": 101640,
-							"end_time": 102410
+							"startTime": 101640,
+							"endTime": 102410
 						},
 						{
 							"text": "停",
-							"start_time": 102550,
-							"end_time": 102800
+							"startTime": 102550,
+							"endTime": 102800
 						},
 						{
 							"text": "歇",
-							"start_time": 102800,
-							"end_time": 104030
+							"startTime": 102800,
+							"endTime": 104030
 						}
 					]
 				}
@@ -3648,118 +3648,118 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "yì",
-							"start_time": 100090,
-							"end_time": 100340,
-							"ends_with_space": true
+							"startTime": 100090,
+							"endTime": 100340,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qiān",
-							"start_time": 100340,
-							"end_time": 100760,
-							"ends_with_space": true
+							"startTime": 100340,
+							"endTime": 100760,
+							"endsWithSpace": true
 						},
 						{
 							"text": "líng",
-							"start_time": 100760,
-							"end_time": 101360,
-							"ends_with_space": true
+							"startTime": 100760,
+							"endTime": 101360,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yī",
-							"start_time": 101360,
-							"end_time": 101640,
-							"ends_with_space": true
+							"startTime": 101360,
+							"endTime": 101640,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhǒng",
-							"start_time": 101640,
-							"end_time": 102410,
-							"ends_with_space": true
+							"startTime": 101640,
+							"endTime": 102410,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tíng",
-							"start_time": 102550,
-							"end_time": 102800,
-							"ends_with_space": true
+							"startTime": 102550,
+							"endTime": 102800,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiē",
-							"start_time": 102800,
-							"end_time": 104030
+							"startTime": 102800,
+							"endTime": 104030
 						}
 					]
 				}
 			],
 			"id": "L20",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 5
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
 		},
 		{
 			"text": "不想缺席 又无法眷恋得完全",
-			"start_time": 104800,
-			"end_time": 113270,
+			"startTime": 104800,
+			"endTime": 113270,
 			"words": [
 				{
 					"text": "不",
-					"start_time": 104800,
-					"end_time": 105010
+					"startTime": 104800,
+					"endTime": 105010
 				},
 				{
 					"text": "想",
-					"start_time": 105010,
-					"end_time": 105340
+					"startTime": 105010,
+					"endTime": 105340
 				},
 				{
 					"text": "缺",
-					"start_time": 105340,
-					"end_time": 105630
+					"startTime": 105340,
+					"endTime": 105630
 				},
 				{
 					"text": "席",
-					"start_time": 105630,
-					"end_time": 106660,
-					"ends_with_space": true
+					"startTime": 105630,
+					"endTime": 106660,
+					"endsWithSpace": true
 				},
 				{
 					"text": "又",
-					"start_time": 107320,
-					"end_time": 107600
+					"startTime": 107320,
+					"endTime": 107600
 				},
 				{
 					"text": "无",
-					"start_time": 107600,
-					"end_time": 107830
+					"startTime": 107600,
+					"endTime": 107830
 				},
 				{
 					"text": "法",
-					"start_time": 107830,
-					"end_time": 108180
+					"startTime": 107830,
+					"endTime": 108180
 				},
 				{
 					"text": "眷",
-					"start_time": 108180,
-					"end_time": 108890
+					"startTime": 108180,
+					"endTime": 108890
 				},
 				{
 					"text": "恋",
-					"start_time": 108890,
-					"end_time": 109500
+					"startTime": 108890,
+					"endTime": 109500
 				},
 				{
 					"text": "得",
-					"start_time": 109500,
-					"end_time": 109790
+					"startTime": 109500,
+					"endTime": 109790
 				},
 				{
 					"text": "完",
-					"start_time": 110130,
-					"end_time": 110390
+					"startTime": 110130,
+					"endTime": 110390
 				},
 				{
 					"text": "全",
-					"start_time": 110390,
-					"end_time": 113270
+					"startTime": 110390,
+					"endTime": 113270
 				}
 			],
 			"translations": [
@@ -3813,64 +3813,64 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "不",
-							"start_time": 104800,
-							"end_time": 105010
+							"startTime": 104800,
+							"endTime": 105010
 						},
 						{
 							"text": "想",
-							"start_time": 105010,
-							"end_time": 105340
+							"startTime": 105010,
+							"endTime": 105340
 						},
 						{
 							"text": "缺",
-							"start_time": 105340,
-							"end_time": 105630
+							"startTime": 105340,
+							"endTime": 105630
 						},
 						{
 							"text": "席",
-							"start_time": 105630,
-							"end_time": 106660,
-							"ends_with_space": true
+							"startTime": 105630,
+							"endTime": 106660,
+							"endsWithSpace": true
 						},
 						{
 							"text": "又",
-							"start_time": 107320,
-							"end_time": 107600
+							"startTime": 107320,
+							"endTime": 107600
 						},
 						{
 							"text": "無",
-							"start_time": 107600,
-							"end_time": 107830
+							"startTime": 107600,
+							"endTime": 107830
 						},
 						{
 							"text": "法",
-							"start_time": 107830,
-							"end_time": 108180
+							"startTime": 107830,
+							"endTime": 108180
 						},
 						{
 							"text": "眷",
-							"start_time": 108180,
-							"end_time": 108890
+							"startTime": 108180,
+							"endTime": 108890
 						},
 						{
 							"text": "戀",
-							"start_time": 108890,
-							"end_time": 109500
+							"startTime": 108890,
+							"endTime": 109500
 						},
 						{
 							"text": "得",
-							"start_time": 109500,
-							"end_time": 109790
+							"startTime": 109500,
+							"endTime": 109790
 						},
 						{
 							"text": "完",
-							"start_time": 110130,
-							"end_time": 110390
+							"startTime": 110130,
+							"endTime": 110390
 						},
 						{
 							"text": "全",
-							"start_time": 110390,
-							"end_time": 113270
+							"startTime": 110390,
+							"endTime": 113270
 						}
 					]
 				}
@@ -3882,142 +3882,142 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "bù",
-							"start_time": 104800,
-							"end_time": 105010,
-							"ends_with_space": true
+							"startTime": 104800,
+							"endTime": 105010,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiǎng",
-							"start_time": 105010,
-							"end_time": 105340,
-							"ends_with_space": true
+							"startTime": 105010,
+							"endTime": 105340,
+							"endsWithSpace": true
 						},
 						{
 							"text": "quē",
-							"start_time": 105340,
-							"end_time": 105630,
-							"ends_with_space": true
+							"startTime": 105340,
+							"endTime": 105630,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xí",
-							"start_time": 105630,
-							"end_time": 106660,
-							"ends_with_space": true
+							"startTime": 105630,
+							"endTime": 106660,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yòu",
-							"start_time": 107320,
-							"end_time": 107600,
-							"ends_with_space": true
+							"startTime": 107320,
+							"endTime": 107600,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wú",
-							"start_time": 107600,
-							"end_time": 107830,
-							"ends_with_space": true
+							"startTime": 107600,
+							"endTime": 107830,
+							"endsWithSpace": true
 						},
 						{
 							"text": "fǎ",
-							"start_time": 107830,
-							"end_time": 108180,
-							"ends_with_space": true
+							"startTime": 107830,
+							"endTime": 108180,
+							"endsWithSpace": true
 						},
 						{
 							"text": "juàn",
-							"start_time": 108180,
-							"end_time": 108890,
-							"ends_with_space": true
+							"startTime": 108180,
+							"endTime": 108890,
+							"endsWithSpace": true
 						},
 						{
 							"text": "liàn",
-							"start_time": 108890,
-							"end_time": 109500,
-							"ends_with_space": true
+							"startTime": 108890,
+							"endTime": 109500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dé",
-							"start_time": 109500,
-							"end_time": 109790,
-							"ends_with_space": true
+							"startTime": 109500,
+							"endTime": 109790,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wán",
-							"start_time": 110130,
-							"end_time": 110390,
-							"ends_with_space": true
+							"startTime": 110130,
+							"endTime": 110390,
+							"endsWithSpace": true
 						},
 						{
 							"text": "quán",
-							"start_time": 110390,
-							"end_time": 113270
+							"startTime": 110390,
+							"endTime": 113270
 						}
 					]
 				}
 			],
 			"id": "L21",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 5
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
 		},
 		{
 			"text": "或许该学着石头忘却世界",
-			"start_time": 130760,
-			"end_time": 134570,
+			"startTime": 130760,
+			"endTime": 134570,
 			"words": [
 				{
 					"text": "或",
-					"start_time": 131040,
-					"end_time": 131230
+					"startTime": 131040,
+					"endTime": 131230
 				},
 				{
 					"text": "许",
-					"start_time": 131230,
-					"end_time": 131650
+					"startTime": 131230,
+					"endTime": 131650
 				},
 				{
 					"text": "该",
-					"start_time": 131650,
-					"end_time": 131900
+					"startTime": 131650,
+					"endTime": 131900
 				},
 				{
 					"text": "学",
-					"start_time": 131900,
-					"end_time": 132270
+					"startTime": 131900,
+					"endTime": 132270
 				},
 				{
 					"text": "着",
-					"start_time": 132270,
-					"end_time": 132500
+					"startTime": 132270,
+					"endTime": 132500
 				},
 				{
 					"text": "石",
-					"start_time": 132500,
-					"end_time": 132870
+					"startTime": 132500,
+					"endTime": 132870
 				},
 				{
 					"text": "头",
-					"start_time": 132870,
-					"end_time": 133260
+					"startTime": 132870,
+					"endTime": 133260
 				},
 				{
 					"text": "忘",
-					"start_time": 133260,
-					"end_time": 133480
+					"startTime": 133260,
+					"endTime": 133480
 				},
 				{
 					"text": "却",
-					"start_time": 133480,
-					"end_time": 133740
+					"startTime": 133480,
+					"endTime": 133740
 				},
 				{
 					"text": "世",
-					"start_time": 133740,
-					"end_time": 134120
+					"startTime": 133740,
+					"endTime": 134120
 				},
 				{
 					"text": "界",
-					"start_time": 134120,
-					"end_time": 134430
+					"startTime": 134120,
+					"endTime": 134430
 				}
 			],
 			"translations": [
@@ -4071,58 +4071,58 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "或",
-							"start_time": 131040,
-							"end_time": 131230
+							"startTime": 131040,
+							"endTime": 131230
 						},
 						{
 							"text": "許",
-							"start_time": 131230,
-							"end_time": 131650
+							"startTime": 131230,
+							"endTime": 131650
 						},
 						{
 							"text": "該",
-							"start_time": 131650,
-							"end_time": 131900
+							"startTime": 131650,
+							"endTime": 131900
 						},
 						{
 							"text": "學",
-							"start_time": 131900,
-							"end_time": 132270
+							"startTime": 131900,
+							"endTime": 132270
 						},
 						{
 							"text": "著",
-							"start_time": 132270,
-							"end_time": 132500
+							"startTime": 132270,
+							"endTime": 132500
 						},
 						{
 							"text": "石",
-							"start_time": 132500,
-							"end_time": 132870
+							"startTime": 132500,
+							"endTime": 132870
 						},
 						{
 							"text": "頭",
-							"start_time": 132870,
-							"end_time": 133260
+							"startTime": 132870,
+							"endTime": 133260
 						},
 						{
 							"text": "忘",
-							"start_time": 133260,
-							"end_time": 133480
+							"startTime": 133260,
+							"endTime": 133480
 						},
 						{
 							"text": "卻",
-							"start_time": 133480,
-							"end_time": 133740
+							"startTime": 133480,
+							"endTime": 133740
 						},
 						{
 							"text": "世",
-							"start_time": 133740,
-							"end_time": 134120
+							"startTime": 133740,
+							"endTime": 134120
 						},
 						{
 							"text": "界",
-							"start_time": 134120,
-							"end_time": 134430
+							"startTime": 134120,
+							"endTime": 134430
 						}
 					]
 				}
@@ -4134,102 +4134,102 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "huò",
-							"start_time": 131040,
-							"end_time": 131230,
-							"ends_with_space": true
+							"startTime": 131040,
+							"endTime": 131230,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xǔ",
-							"start_time": 131230,
-							"end_time": 131650,
-							"ends_with_space": true
+							"startTime": 131230,
+							"endTime": 131650,
+							"endsWithSpace": true
 						},
 						{
 							"text": "gāi",
-							"start_time": 131650,
-							"end_time": 131900,
-							"ends_with_space": true
+							"startTime": 131650,
+							"endTime": 131900,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xué",
-							"start_time": 131900,
-							"end_time": 132270,
-							"ends_with_space": true
+							"startTime": 131900,
+							"endTime": 132270,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhe",
-							"start_time": 132270,
-							"end_time": 132500,
-							"ends_with_space": true
+							"startTime": 132270,
+							"endTime": 132500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shí",
-							"start_time": 132500,
-							"end_time": 132870,
-							"ends_with_space": true
+							"startTime": 132500,
+							"endTime": 132870,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tou",
-							"start_time": 132870,
-							"end_time": 133260,
-							"ends_with_space": true
+							"startTime": 132870,
+							"endTime": 133260,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wàng",
-							"start_time": 133260,
-							"end_time": 133480,
-							"ends_with_space": true
+							"startTime": 133260,
+							"endTime": 133480,
+							"endsWithSpace": true
 						},
 						{
 							"text": "què",
-							"start_time": 133480,
-							"end_time": 133740,
-							"ends_with_space": true
+							"startTime": 133480,
+							"endTime": 133740,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shì",
-							"start_time": 133740,
-							"end_time": 134120,
-							"ends_with_space": true
+							"startTime": 133740,
+							"endTime": 134120,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiè",
-							"start_time": 134120,
-							"end_time": 134430
+							"startTime": 134120,
+							"endTime": 134430
 						}
 					]
 				}
 			],
-			"background_vocal": {
+			"backgroundVocal": {
 				"text": "ha~ 忘却世界",
-				"start_time": 130760,
-				"end_time": 134570,
+				"startTime": 130760,
+				"endTime": 134570,
 				"words": [
 					{
 						"text": "ha~",
-						"start_time": 130760,
-						"end_time": 133050,
-						"ends_with_space": true
+						"startTime": 130760,
+						"endTime": 133050,
+						"endsWithSpace": true
 					},
 					{
 						"text": "忘",
-						"start_time": 133250,
-						"end_time": 133480
+						"startTime": 133250,
+						"endTime": 133480
 					},
 					{
 						"text": "却",
-						"start_time": 133480,
-						"end_time": 133740
+						"startTime": 133480,
+						"endTime": 133740
 					},
 					{
 						"text": "世",
-						"start_time": 133740,
-						"end_time": 134130
+						"startTime": 133740,
+						"endTime": 134130
 					},
 					{
 						"text": "界",
-						"start_time": 134130,
-						"end_time": 134570
+						"startTime": 134130,
+						"endTime": 134570
 					}
 				],
 				"translations": [
@@ -4283,29 +4283,29 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "ha~",
-								"start_time": 130760,
-								"end_time": 133050,
-								"ends_with_space": true
+								"startTime": 130760,
+								"endTime": 133050,
+								"endsWithSpace": true
 							},
 							{
 								"text": "忘",
-								"start_time": 133250,
-								"end_time": 133480
+								"startTime": 133250,
+								"endTime": 133480
 							},
 							{
 								"text": "卻",
-								"start_time": 133480,
-								"end_time": 133740
+								"startTime": 133480,
+								"endTime": 133740
 							},
 							{
 								"text": "世",
-								"start_time": 133740,
-								"end_time": 134130
+								"startTime": 133740,
+								"endTime": 134130
 							},
 							{
 								"text": "界",
-								"start_time": 134130,
-								"end_time": 134570
+								"startTime": 134130,
+								"endTime": 134570
 							}
 						]
 					}
@@ -4317,97 +4317,97 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "ha~",
-								"start_time": 130760,
-								"end_time": 133050,
-								"ends_with_space": true
+								"startTime": 130760,
+								"endTime": 133050,
+								"endsWithSpace": true
 							},
 							{
 								"text": "wàng",
-								"start_time": 133250,
-								"end_time": 133480,
-								"ends_with_space": true
+								"startTime": 133250,
+								"endTime": 133480,
+								"endsWithSpace": true
 							},
 							{
 								"text": "què",
-								"start_time": 133480,
-								"end_time": 133740,
-								"ends_with_space": true
+								"startTime": 133480,
+								"endTime": 133740,
+								"endsWithSpace": true
 							},
 							{
 								"text": "shì",
-								"start_time": 133740,
-								"end_time": 134130,
-								"ends_with_space": true
+								"startTime": 133740,
+								"endTime": 134130,
+								"endsWithSpace": true
 							},
 							{
 								"text": "jiè",
-								"start_time": 134130,
-								"end_time": 134570
+								"startTime": 134130,
+								"endTime": 134570
 							}
 						]
 					}
 				]
 			},
 			"id": "L22",
-			"agent_id": "v1",
-			"song_part": "Bridge",
-			"block_index": 6
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
 		},
 		{
 			"text": "也贪婪一点 也单纯一点",
-			"start_time": 134820,
-			"end_time": 140190,
+			"startTime": 134820,
+			"endTime": 140190,
 			"words": [
 				{
 					"text": "也",
-					"start_time": 134820,
-					"end_time": 135090
+					"startTime": 134820,
+					"endTime": 135090
 				},
 				{
 					"text": "贪",
-					"start_time": 135090,
-					"end_time": 135440
+					"startTime": 135090,
+					"endTime": 135440
 				},
 				{
 					"text": "婪",
-					"start_time": 135440,
-					"end_time": 135730
+					"startTime": 135440,
+					"endTime": 135730
 				},
 				{
 					"text": "一",
-					"start_time": 135730,
-					"end_time": 136060
+					"startTime": 135730,
+					"endTime": 136060
 				},
 				{
 					"text": "点",
-					"start_time": 136060,
-					"end_time": 136840,
-					"ends_with_space": true
+					"startTime": 136060,
+					"endTime": 136840,
+					"endsWithSpace": true
 				},
 				{
 					"text": "也",
-					"start_time": 137310,
-					"end_time": 137600
+					"startTime": 137310,
+					"endTime": 137600
 				},
 				{
 					"text": "单",
-					"start_time": 137600,
-					"end_time": 137840
+					"startTime": 137600,
+					"endTime": 137840
 				},
 				{
 					"text": "纯",
-					"start_time": 137840,
-					"end_time": 138220
+					"startTime": 137840,
+					"endTime": 138220
 				},
 				{
 					"text": "一",
-					"start_time": 138220,
-					"end_time": 139180
+					"startTime": 138220,
+					"endTime": 139180
 				},
 				{
 					"text": "点",
-					"start_time": 139180,
-					"end_time": 140190
+					"startTime": 139180,
+					"endTime": 140190
 				}
 			],
 			"translations": [
@@ -4461,54 +4461,54 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "也",
-							"start_time": 134820,
-							"end_time": 135090
+							"startTime": 134820,
+							"endTime": 135090
 						},
 						{
 							"text": "貪",
-							"start_time": 135090,
-							"end_time": 135440
+							"startTime": 135090,
+							"endTime": 135440
 						},
 						{
 							"text": "婪",
-							"start_time": 135440,
-							"end_time": 135730
+							"startTime": 135440,
+							"endTime": 135730
 						},
 						{
 							"text": "一",
-							"start_time": 135730,
-							"end_time": 136060
+							"startTime": 135730,
+							"endTime": 136060
 						},
 						{
 							"text": "點",
-							"start_time": 136060,
-							"end_time": 136840,
-							"ends_with_space": true
+							"startTime": 136060,
+							"endTime": 136840,
+							"endsWithSpace": true
 						},
 						{
 							"text": "也",
-							"start_time": 137310,
-							"end_time": 137600
+							"startTime": 137310,
+							"endTime": 137600
 						},
 						{
 							"text": "單",
-							"start_time": 137600,
-							"end_time": 137840
+							"startTime": 137600,
+							"endTime": 137840
 						},
 						{
 							"text": "純",
-							"start_time": 137840,
-							"end_time": 138220
+							"startTime": 137840,
+							"endTime": 138220
 						},
 						{
 							"text": "一",
-							"start_time": 138220,
-							"end_time": 139180
+							"startTime": 138220,
+							"endTime": 139180
 						},
 						{
 							"text": "點",
-							"start_time": 139180,
-							"end_time": 140190
+							"startTime": 139180,
+							"endTime": 140190
 						}
 					]
 				}
@@ -4520,130 +4520,130 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "yě",
-							"start_time": 134820,
-							"end_time": 135090,
-							"ends_with_space": true
+							"startTime": 134820,
+							"endTime": 135090,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tān",
-							"start_time": 135090,
-							"end_time": 135440,
-							"ends_with_space": true
+							"startTime": 135090,
+							"endTime": 135440,
+							"endsWithSpace": true
 						},
 						{
 							"text": "lán",
-							"start_time": 135440,
-							"end_time": 135730,
-							"ends_with_space": true
+							"startTime": 135440,
+							"endTime": 135730,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yì",
-							"start_time": 135730,
-							"end_time": 136060,
-							"ends_with_space": true
+							"startTime": 135730,
+							"endTime": 136060,
+							"endsWithSpace": true
 						},
 						{
 							"text": "diǎn",
-							"start_time": 136060,
-							"end_time": 136840,
-							"ends_with_space": true
+							"startTime": 136060,
+							"endTime": 136840,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yě",
-							"start_time": 137310,
-							"end_time": 137600,
-							"ends_with_space": true
+							"startTime": 137310,
+							"endTime": 137600,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dān",
-							"start_time": 137600,
-							"end_time": 137840,
-							"ends_with_space": true
+							"startTime": 137600,
+							"endTime": 137840,
+							"endsWithSpace": true
 						},
 						{
 							"text": "chún",
-							"start_time": 137840,
-							"end_time": 138220,
-							"ends_with_space": true
+							"startTime": 137840,
+							"endTime": 138220,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yì",
-							"start_time": 138220,
-							"end_time": 139180,
-							"ends_with_space": true
+							"startTime": 138220,
+							"endTime": 139180,
+							"endsWithSpace": true
 						},
 						{
 							"text": "diǎn",
-							"start_time": 139180,
-							"end_time": 140190
+							"startTime": 139180,
+							"endTime": 140190
 						}
 					]
 				}
 			],
 			"id": "L23",
-			"agent_id": "v1",
-			"song_part": "Bridge",
-			"block_index": 6
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
 		},
 		{
 			"text": "等到又一颗月也沉入杯底",
-			"start_time": 141070,
-			"end_time": 144440,
+			"startTime": 141070,
+			"endTime": 144440,
 			"words": [
 				{
 					"text": "等",
-					"start_time": 141070,
-					"end_time": 141370
+					"startTime": 141070,
+					"endTime": 141370
 				},
 				{
 					"text": "到",
-					"start_time": 141370,
-					"end_time": 141660
+					"startTime": 141370,
+					"endTime": 141660
 				},
 				{
 					"text": "又",
-					"start_time": 141660,
-					"end_time": 142010
+					"startTime": 141660,
+					"endTime": 142010
 				},
 				{
 					"text": "一",
-					"start_time": 142010,
-					"end_time": 142240
+					"startTime": 142010,
+					"endTime": 142240
 				},
 				{
 					"text": "颗",
-					"start_time": 142240,
-					"end_time": 142570
+					"startTime": 142240,
+					"endTime": 142570
 				},
 				{
 					"text": "月",
-					"start_time": 142570,
-					"end_time": 142890
+					"startTime": 142570,
+					"endTime": 142890
 				},
 				{
 					"text": "也",
-					"start_time": 142890,
-					"end_time": 143180
+					"startTime": 142890,
+					"endTime": 143180
 				},
 				{
 					"text": "沉",
-					"start_time": 143180,
-					"end_time": 143560
+					"startTime": 143180,
+					"endTime": 143560
 				},
 				{
 					"text": "入",
-					"start_time": 143560,
-					"end_time": 143870
+					"startTime": 143560,
+					"endTime": 143870
 				},
 				{
 					"text": "杯",
-					"start_time": 143870,
-					"end_time": 144160
+					"startTime": 143870,
+					"endTime": 144160
 				},
 				{
 					"text": "底",
-					"start_time": 144160,
-					"end_time": 144440
+					"startTime": 144160,
+					"endTime": 144440
 				}
 			],
 			"translations": [
@@ -4697,58 +4697,58 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "等",
-							"start_time": 141070,
-							"end_time": 141370
+							"startTime": 141070,
+							"endTime": 141370
 						},
 						{
 							"text": "到",
-							"start_time": 141370,
-							"end_time": 141660
+							"startTime": 141370,
+							"endTime": 141660
 						},
 						{
 							"text": "又",
-							"start_time": 141660,
-							"end_time": 142010
+							"startTime": 141660,
+							"endTime": 142010
 						},
 						{
 							"text": "一",
-							"start_time": 142010,
-							"end_time": 142240
+							"startTime": 142010,
+							"endTime": 142240
 						},
 						{
 							"text": "顆",
-							"start_time": 142240,
-							"end_time": 142570
+							"startTime": 142240,
+							"endTime": 142570
 						},
 						{
 							"text": "月",
-							"start_time": 142570,
-							"end_time": 142890
+							"startTime": 142570,
+							"endTime": 142890
 						},
 						{
 							"text": "也",
-							"start_time": 142890,
-							"end_time": 143180
+							"startTime": 142890,
+							"endTime": 143180
 						},
 						{
 							"text": "沉",
-							"start_time": 143180,
-							"end_time": 143560
+							"startTime": 143180,
+							"endTime": 143560
 						},
 						{
 							"text": "入",
-							"start_time": 143560,
-							"end_time": 143870
+							"startTime": 143560,
+							"endTime": 143870
 						},
 						{
 							"text": "杯",
-							"start_time": 143870,
-							"end_time": 144160
+							"startTime": 143870,
+							"endTime": 144160
 						},
 						{
 							"text": "底",
-							"start_time": 144160,
-							"end_time": 144440
+							"startTime": 144160,
+							"endTime": 144440
 						}
 					]
 				}
@@ -4760,126 +4760,126 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "děng",
-							"start_time": 141070,
-							"end_time": 141370,
-							"ends_with_space": true
+							"startTime": 141070,
+							"endTime": 141370,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dào",
-							"start_time": 141370,
-							"end_time": 141660,
-							"ends_with_space": true
+							"startTime": 141370,
+							"endTime": 141660,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yòu",
-							"start_time": 141660,
-							"end_time": 142010,
-							"ends_with_space": true
+							"startTime": 141660,
+							"endTime": 142010,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yī",
-							"start_time": 142010,
-							"end_time": 142240,
-							"ends_with_space": true
+							"startTime": 142010,
+							"endTime": 142240,
+							"endsWithSpace": true
 						},
 						{
 							"text": "kē",
-							"start_time": 142240,
-							"end_time": 142570,
-							"ends_with_space": true
+							"startTime": 142240,
+							"endTime": 142570,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yuè",
-							"start_time": 142570,
-							"end_time": 142890,
-							"ends_with_space": true
+							"startTime": 142570,
+							"endTime": 142890,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yě",
-							"start_time": 142890,
-							"end_time": 143180,
-							"ends_with_space": true
+							"startTime": 142890,
+							"endTime": 143180,
+							"endsWithSpace": true
 						},
 						{
 							"text": "chén",
-							"start_time": 143180,
-							"end_time": 143560,
-							"ends_with_space": true
+							"startTime": 143180,
+							"endTime": 143560,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rù",
-							"start_time": 143560,
-							"end_time": 143870,
-							"ends_with_space": true
+							"startTime": 143560,
+							"endTime": 143870,
+							"endsWithSpace": true
 						},
 						{
 							"text": "bēi",
-							"start_time": 143870,
-							"end_time": 144160,
-							"ends_with_space": true
+							"startTime": 143870,
+							"endTime": 144160,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dǐ",
-							"start_time": 144160,
-							"end_time": 144440
+							"startTime": 144160,
+							"endTime": 144440
 						}
 					]
 				}
 			],
 			"id": "L24",
-			"agent_id": "v1",
-			"song_part": "Bridge",
-			"block_index": 6
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
 		},
 		{
 			"text": "还是会期待新的什么",
-			"start_time": 144800,
-			"end_time": 150960,
+			"startTime": 144800,
+			"endTime": 150960,
 			"words": [
 				{
 					"text": "还",
-					"start_time": 144800,
-					"end_time": 144970
+					"startTime": 144800,
+					"endTime": 144970
 				},
 				{
 					"text": "是",
-					"start_time": 144970,
-					"end_time": 145260
+					"startTime": 144970,
+					"endTime": 145260
 				},
 				{
 					"text": "会",
-					"start_time": 145440,
-					"end_time": 145980
+					"startTime": 145440,
+					"endTime": 145980
 				},
 				{
 					"text": "期",
-					"start_time": 145980,
-					"end_time": 146360
+					"startTime": 145980,
+					"endTime": 146360
 				},
 				{
 					"text": "待",
-					"start_time": 146360,
-					"end_time": 146560
+					"startTime": 146360,
+					"endTime": 146560
 				},
 				{
 					"text": "新",
-					"start_time": 146560,
-					"end_time": 147300
+					"startTime": 146560,
+					"endTime": 147300
 				},
 				{
 					"text": "的",
-					"start_time": 147300,
-					"end_time": 147500
+					"startTime": 147300,
+					"endTime": 147500
 				},
 				{
 					"text": "什",
-					"start_time": 147500,
-					"end_time": 147950
+					"startTime": 147500,
+					"endTime": 147950
 				},
 				{
 					"text": "么",
-					"start_time": 147950,
-					"end_time": 150960
+					"startTime": 147950,
+					"endTime": 150960
 				}
 			],
 			"translations": [
@@ -4933,48 +4933,48 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "還",
-							"start_time": 144800,
-							"end_time": 144970
+							"startTime": 144800,
+							"endTime": 144970
 						},
 						{
 							"text": "是",
-							"start_time": 144970,
-							"end_time": 145260
+							"startTime": 144970,
+							"endTime": 145260
 						},
 						{
 							"text": "會",
-							"start_time": 145440,
-							"end_time": 145980
+							"startTime": 145440,
+							"endTime": 145980
 						},
 						{
 							"text": "期",
-							"start_time": 145980,
-							"end_time": 146360
+							"startTime": 145980,
+							"endTime": 146360
 						},
 						{
 							"text": "待",
-							"start_time": 146360,
-							"end_time": 146560
+							"startTime": 146360,
+							"endTime": 146560
 						},
 						{
 							"text": "新",
-							"start_time": 146560,
-							"end_time": 147300
+							"startTime": 146560,
+							"endTime": 147300
 						},
 						{
 							"text": "的",
-							"start_time": 147300,
-							"end_time": 147500
+							"startTime": 147300,
+							"endTime": 147500
 						},
 						{
 							"text": "什",
-							"start_time": 147500,
-							"end_time": 147950
+							"startTime": 147500,
+							"endTime": 147950
 						},
 						{
 							"text": "麼",
-							"start_time": 147950,
-							"end_time": 150960
+							"startTime": 147950,
+							"endTime": 150960
 						}
 					]
 				}
@@ -4986,100 +4986,100 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "hái",
-							"start_time": 144800,
-							"end_time": 144970,
-							"ends_with_space": true
+							"startTime": 144800,
+							"endTime": 144970,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shì",
-							"start_time": 144970,
-							"end_time": 145260,
-							"ends_with_space": true
+							"startTime": 144970,
+							"endTime": 145260,
+							"endsWithSpace": true
 						},
 						{
 							"text": "huì",
-							"start_time": 145440,
-							"end_time": 145980,
-							"ends_with_space": true
+							"startTime": 145440,
+							"endTime": 145980,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qī",
-							"start_time": 145980,
-							"end_time": 146360,
-							"ends_with_space": true
+							"startTime": 145980,
+							"endTime": 146360,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dài",
-							"start_time": 146360,
-							"end_time": 146560,
-							"ends_with_space": true
+							"startTime": 146360,
+							"endTime": 146560,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xīn",
-							"start_time": 146560,
-							"end_time": 147300,
-							"ends_with_space": true
+							"startTime": 146560,
+							"endTime": 147300,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 147300,
-							"end_time": 147500,
-							"ends_with_space": true
+							"startTime": 147300,
+							"endTime": 147500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shén",
-							"start_time": 147500,
-							"end_time": 147950,
-							"ends_with_space": true
+							"startTime": 147500,
+							"endTime": 147950,
+							"endsWithSpace": true
 						},
 						{
 							"text": "me",
-							"start_time": 147950,
-							"end_time": 150960
+							"startTime": 147950,
+							"endTime": 150960
 						}
 					]
 				}
 			],
 			"id": "L25",
-			"agent_id": "v1",
-			"song_part": "Bridge",
-			"block_index": 6
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
 		},
 		{
 			"text": "一人的 星期天",
-			"start_time": 154480,
-			"end_time": 159000,
+			"startTime": 154480,
+			"endTime": 159000,
 			"words": [
 				{
 					"text": "一",
-					"start_time": 154480,
-					"end_time": 155010
+					"startTime": 154480,
+					"endTime": 155010
 				},
 				{
 					"text": "人",
-					"start_time": 155010,
-					"end_time": 155700
+					"startTime": 155010,
+					"endTime": 155700
 				},
 				{
 					"text": "的",
-					"start_time": 155700,
-					"end_time": 156620,
-					"ends_with_space": true
+					"startTime": 155700,
+					"endTime": 156620,
+					"endsWithSpace": true
 				},
 				{
 					"text": "星",
-					"start_time": 157250,
-					"end_time": 157550
+					"startTime": 157250,
+					"endTime": 157550
 				},
 				{
 					"text": "期",
-					"start_time": 157550,
-					"end_time": 157840
+					"startTime": 157550,
+					"endTime": 157840
 				},
 				{
 					"text": "天",
-					"start_time": 157840,
-					"end_time": 159000
+					"startTime": 157840,
+					"endTime": 159000
 				}
 			],
 			"translations": [
@@ -5133,34 +5133,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "一",
-							"start_time": 154480,
-							"end_time": 155010
+							"startTime": 154480,
+							"endTime": 155010
 						},
 						{
 							"text": "人",
-							"start_time": 155010,
-							"end_time": 155700
+							"startTime": 155010,
+							"endTime": 155700
 						},
 						{
 							"text": "的",
-							"start_time": 155700,
-							"end_time": 156620,
-							"ends_with_space": true
+							"startTime": 155700,
+							"endTime": 156620,
+							"endsWithSpace": true
 						},
 						{
 							"text": "星",
-							"start_time": 157250,
-							"end_time": 157550
+							"startTime": 157250,
+							"endTime": 157550
 						},
 						{
 							"text": "期",
-							"start_time": 157550,
-							"end_time": 157840
+							"startTime": 157550,
+							"endTime": 157840
 						},
 						{
 							"text": "天",
-							"start_time": 157840,
-							"end_time": 159000
+							"startTime": 157840,
+							"endTime": 159000
 						}
 					]
 				}
@@ -5172,82 +5172,82 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "yì",
-							"start_time": 154480,
-							"end_time": 155010,
-							"ends_with_space": true
+							"startTime": 154480,
+							"endTime": 155010,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rén",
-							"start_time": 155010,
-							"end_time": 155700,
-							"ends_with_space": true
+							"startTime": 155010,
+							"endTime": 155700,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 155700,
-							"end_time": 156620,
-							"ends_with_space": true
+							"startTime": 155700,
+							"endTime": 156620,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xīng",
-							"start_time": 157250,
-							"end_time": 157550,
-							"ends_with_space": true
+							"startTime": 157250,
+							"endTime": 157550,
+							"endsWithSpace": true
 						},
 						{
 							"text": "qī",
-							"start_time": 157550,
-							"end_time": 157840,
-							"ends_with_space": true
+							"startTime": 157550,
+							"endTime": 157840,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tiān",
-							"start_time": 157840,
-							"end_time": 159000
+							"startTime": 157840,
+							"endTime": 159000
 						}
 					]
 				}
 			],
 			"id": "L26",
-			"agent_id": "v1",
-			"song_part": "FalseChorus",
-			"block_index": 7
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
 		},
 		{
 			"text": "滑入了 地平线",
-			"start_time": 159810,
-			"end_time": 163960,
+			"startTime": 159810,
+			"endTime": 163960,
 			"words": [
 				{
 					"text": "滑",
-					"start_time": 159810,
-					"end_time": 160110
+					"startTime": 159810,
+					"endTime": 160110
 				},
 				{
 					"text": "入",
-					"start_time": 160110,
-					"end_time": 160430
+					"startTime": 160110,
+					"endTime": 160430
 				},
 				{
 					"text": "了",
-					"start_time": 160430,
-					"end_time": 161640,
-					"ends_with_space": true
+					"startTime": 160430,
+					"endTime": 161640,
+					"endsWithSpace": true
 				},
 				{
 					"text": "地",
-					"start_time": 162310,
-					"end_time": 162580
+					"startTime": 162310,
+					"endTime": 162580
 				},
 				{
 					"text": "平",
-					"start_time": 162580,
-					"end_time": 162810
+					"startTime": 162580,
+					"endTime": 162810
 				},
 				{
 					"text": "线",
-					"start_time": 162810,
-					"end_time": 163960
+					"startTime": 162810,
+					"endTime": 163960
 				}
 			],
 			"translations": [
@@ -5301,34 +5301,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "滑",
-							"start_time": 159810,
-							"end_time": 160110
+							"startTime": 159810,
+							"endTime": 160110
 						},
 						{
 							"text": "入",
-							"start_time": 160110,
-							"end_time": 160430
+							"startTime": 160110,
+							"endTime": 160430
 						},
 						{
 							"text": "了",
-							"start_time": 160430,
-							"end_time": 161640,
-							"ends_with_space": true
+							"startTime": 160430,
+							"endTime": 161640,
+							"endsWithSpace": true
 						},
 						{
 							"text": "地",
-							"start_time": 162310,
-							"end_time": 162580
+							"startTime": 162310,
+							"endTime": 162580
 						},
 						{
 							"text": "平",
-							"start_time": 162580,
-							"end_time": 162810
+							"startTime": 162580,
+							"endTime": 162810
 						},
 						{
 							"text": "線",
-							"start_time": 162810,
-							"end_time": 163960
+							"startTime": 162810,
+							"endTime": 163960
 						}
 					]
 				}
@@ -5340,86 +5340,86 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "huá",
-							"start_time": 159810,
-							"end_time": 160110,
-							"ends_with_space": true
+							"startTime": 159810,
+							"endTime": 160110,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rù",
-							"start_time": 160110,
-							"end_time": 160430,
-							"ends_with_space": true
+							"startTime": 160110,
+							"endTime": 160430,
+							"endsWithSpace": true
 						},
 						{
 							"text": "le",
-							"start_time": 160430,
-							"end_time": 161640,
-							"ends_with_space": true
+							"startTime": 160430,
+							"endTime": 161640,
+							"endsWithSpace": true
 						},
 						{
 							"text": "dì",
-							"start_time": 162310,
-							"end_time": 162580,
-							"ends_with_space": true
+							"startTime": 162310,
+							"endTime": 162580,
+							"endsWithSpace": true
 						},
 						{
 							"text": "píng",
-							"start_time": 162580,
-							"end_time": 162810,
-							"ends_with_space": true
+							"startTime": 162580,
+							"endTime": 162810,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xiàn",
-							"start_time": 162810,
-							"end_time": 163960
+							"startTime": 162810,
+							"endTime": 163960
 						}
 					]
 				}
 			],
 			"id": "L27",
-			"agent_id": "v1",
-			"song_part": "FalseChorus",
-			"block_index": 7
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
 		},
 		{
 			"text": "无可名状的长夜",
-			"start_time": 165140,
-			"end_time": 168840,
+			"startTime": 165140,
+			"endTime": 168840,
 			"words": [
 				{
 					"text": "无",
-					"start_time": 165140,
-					"end_time": 165380
+					"startTime": 165140,
+					"endTime": 165380
 				},
 				{
 					"text": "可",
-					"start_time": 165380,
-					"end_time": 165750
+					"startTime": 165380,
+					"endTime": 165750
 				},
 				{
 					"text": "名",
-					"start_time": 165750,
-					"end_time": 166270
+					"startTime": 165750,
+					"endTime": 166270
 				},
 				{
 					"text": "状",
-					"start_time": 166270,
-					"end_time": 166690
+					"startTime": 166270,
+					"endTime": 166690
 				},
 				{
 					"text": "的",
-					"start_time": 166690,
-					"end_time": 167280
+					"startTime": 166690,
+					"endTime": 167280
 				},
 				{
 					"text": "长",
-					"start_time": 167490,
-					"end_time": 167970
+					"startTime": 167490,
+					"endTime": 167970
 				},
 				{
 					"text": "夜",
-					"start_time": 167970,
-					"end_time": 168840
+					"startTime": 167970,
+					"endTime": 168840
 				}
 			],
 			"translations": [
@@ -5473,38 +5473,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "無",
-							"start_time": 165140,
-							"end_time": 165380
+							"startTime": 165140,
+							"endTime": 165380
 						},
 						{
 							"text": "可",
-							"start_time": 165380,
-							"end_time": 165750
+							"startTime": 165380,
+							"endTime": 165750
 						},
 						{
 							"text": "名",
-							"start_time": 165750,
-							"end_time": 166270
+							"startTime": 165750,
+							"endTime": 166270
 						},
 						{
 							"text": "狀",
-							"start_time": 166270,
-							"end_time": 166690
+							"startTime": 166270,
+							"endTime": 166690
 						},
 						{
 							"text": "的",
-							"start_time": 166690,
-							"end_time": 167280
+							"startTime": 166690,
+							"endTime": 167280
 						},
 						{
 							"text": "長",
-							"start_time": 167490,
-							"end_time": 167970
+							"startTime": 167490,
+							"endTime": 167970
 						},
 						{
 							"text": "夜",
-							"start_time": 167970,
-							"end_time": 168840
+							"startTime": 167970,
+							"endTime": 168840
 						}
 					]
 				}
@@ -5516,98 +5516,98 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "wú",
-							"start_time": 165140,
-							"end_time": 165380,
-							"ends_with_space": true
+							"startTime": 165140,
+							"endTime": 165380,
+							"endsWithSpace": true
 						},
 						{
 							"text": "kě",
-							"start_time": 165380,
-							"end_time": 165750,
-							"ends_with_space": true
+							"startTime": 165380,
+							"endTime": 165750,
+							"endsWithSpace": true
 						},
 						{
 							"text": "míng",
-							"start_time": 165750,
-							"end_time": 166270,
-							"ends_with_space": true
+							"startTime": 165750,
+							"endTime": 166270,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhuàng",
-							"start_time": 166270,
-							"end_time": 166690,
-							"ends_with_space": true
+							"startTime": 166270,
+							"endTime": 166690,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 166690,
-							"end_time": 167280,
-							"ends_with_space": true
+							"startTime": 166690,
+							"endTime": 167280,
+							"endsWithSpace": true
 						},
 						{
 							"text": "cháng",
-							"start_time": 167490,
-							"end_time": 167970,
-							"ends_with_space": true
+							"startTime": 167490,
+							"endTime": 167970,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yè",
-							"start_time": 167970,
-							"end_time": 168840
+							"startTime": 167970,
+							"endTime": 168840
 						}
 					]
 				}
 			],
 			"id": "L28",
-			"agent_id": "v1",
-			"song_part": "FalseChorus",
-			"block_index": 7
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
 		},
 		{
 			"text": "你还好吗 思绪明灭",
-			"start_time": 169800,
-			"end_time": 175680,
+			"startTime": 169800,
+			"endTime": 175680,
 			"words": [
 				{
 					"text": "你",
-					"start_time": 169800,
-					"end_time": 170040
+					"startTime": 169800,
+					"endTime": 170040
 				},
 				{
 					"text": "还",
-					"start_time": 170040,
-					"end_time": 170310
+					"startTime": 170040,
+					"endTime": 170310
 				},
 				{
 					"text": "好",
-					"start_time": 170310,
-					"end_time": 170760
+					"startTime": 170310,
+					"endTime": 170760
 				},
 				{
 					"text": "吗",
-					"start_time": 170760,
-					"end_time": 171790,
-					"ends_with_space": true
+					"startTime": 170760,
+					"endTime": 171790,
+					"endsWithSpace": true
 				},
 				{
 					"text": "思",
-					"start_time": 172250,
-					"end_time": 172540
+					"startTime": 172250,
+					"endTime": 172540
 				},
 				{
 					"text": "绪",
-					"start_time": 172540,
-					"end_time": 172920
+					"startTime": 172540,
+					"endTime": 172920
 				},
 				{
 					"text": "明",
-					"start_time": 172920,
-					"end_time": 173560
+					"startTime": 172920,
+					"endTime": 173560
 				},
 				{
 					"text": "灭",
-					"start_time": 173560,
-					"end_time": 174100
+					"startTime": 173560,
+					"endTime": 174100
 				}
 			],
 			"translations": [
@@ -5661,44 +5661,44 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "你",
-							"start_time": 169800,
-							"end_time": 170040
+							"startTime": 169800,
+							"endTime": 170040
 						},
 						{
 							"text": "還",
-							"start_time": 170040,
-							"end_time": 170310
+							"startTime": 170040,
+							"endTime": 170310
 						},
 						{
 							"text": "好",
-							"start_time": 170310,
-							"end_time": 170760
+							"startTime": 170310,
+							"endTime": 170760
 						},
 						{
 							"text": "嗎",
-							"start_time": 170760,
-							"end_time": 171790,
-							"ends_with_space": true
+							"startTime": 170760,
+							"endTime": 171790,
+							"endsWithSpace": true
 						},
 						{
 							"text": "思",
-							"start_time": 172250,
-							"end_time": 172540
+							"startTime": 172250,
+							"endTime": 172540
 						},
 						{
 							"text": "緒",
-							"start_time": 172540,
-							"end_time": 172920
+							"startTime": 172540,
+							"endTime": 172920
 						},
 						{
 							"text": "明",
-							"start_time": 172920,
-							"end_time": 173560
+							"startTime": 172920,
+							"endTime": 173560
 						},
 						{
 							"text": "滅",
-							"start_time": 173560,
-							"end_time": 174100
+							"startTime": 173560,
+							"endTime": 174100
 						}
 					]
 				}
@@ -5710,78 +5710,78 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "nǐ",
-							"start_time": 169800,
-							"end_time": 170040,
-							"ends_with_space": true
+							"startTime": 169800,
+							"endTime": 170040,
+							"endsWithSpace": true
 						},
 						{
 							"text": "hái",
-							"start_time": 170040,
-							"end_time": 170310,
-							"ends_with_space": true
+							"startTime": 170040,
+							"endTime": 170310,
+							"endsWithSpace": true
 						},
 						{
 							"text": "hǎo",
-							"start_time": 170310,
-							"end_time": 170760,
-							"ends_with_space": true
+							"startTime": 170310,
+							"endTime": 170760,
+							"endsWithSpace": true
 						},
 						{
 							"text": "ma",
-							"start_time": 170760,
-							"end_time": 171790,
-							"ends_with_space": true
+							"startTime": 170760,
+							"endTime": 171790,
+							"endsWithSpace": true
 						},
 						{
 							"text": "sī",
-							"start_time": 172250,
-							"end_time": 172540,
-							"ends_with_space": true
+							"startTime": 172250,
+							"endTime": 172540,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xù",
-							"start_time": 172540,
-							"end_time": 172920,
-							"ends_with_space": true
+							"startTime": 172540,
+							"endTime": 172920,
+							"endsWithSpace": true
 						},
 						{
 							"text": "míng",
-							"start_time": 172920,
-							"end_time": 173560,
-							"ends_with_space": true
+							"startTime": 172920,
+							"endTime": 173560,
+							"endsWithSpace": true
 						},
 						{
 							"text": "miè",
-							"start_time": 173560,
-							"end_time": 174100
+							"startTime": 173560,
+							"endTime": 174100
 						}
 					]
 				}
 			],
-			"background_vocal": {
+			"backgroundVocal": {
 				"text": "思绪明灭",
-				"start_time": 173160,
-				"end_time": 175680,
+				"startTime": 173160,
+				"endTime": 175680,
 				"words": [
 					{
 						"text": "思",
-						"start_time": 173160,
-						"end_time": 173750
+						"startTime": 173160,
+						"endTime": 173750
 					},
 					{
 						"text": "绪",
-						"start_time": 173750,
-						"end_time": 174500
+						"startTime": 173750,
+						"endTime": 174500
 					},
 					{
 						"text": "明",
-						"start_time": 174500,
-						"end_time": 175070
+						"startTime": 174500,
+						"endTime": 175070
 					},
 					{
 						"text": "灭",
-						"start_time": 175070,
-						"end_time": 175680
+						"startTime": 175070,
+						"endTime": 175680
 					}
 				],
 				"translations": [
@@ -5835,23 +5835,23 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "思",
-								"start_time": 173160,
-								"end_time": 173750
+								"startTime": 173160,
+								"endTime": 173750
 							},
 							{
 								"text": "緒",
-								"start_time": 173750,
-								"end_time": 174500
+								"startTime": 173750,
+								"endTime": 174500
 							},
 							{
 								"text": "明",
-								"start_time": 174500,
-								"end_time": 175070
+								"startTime": 174500,
+								"endTime": 175070
 							},
 							{
 								"text": "滅",
-								"start_time": 175070,
-								"end_time": 175680
+								"startTime": 175070,
+								"endTime": 175680
 							}
 						]
 					}
@@ -5863,71 +5863,71 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "sī",
-								"start_time": 173160,
-								"end_time": 173750,
-								"ends_with_space": true
+								"startTime": 173160,
+								"endTime": 173750,
+								"endsWithSpace": true
 							},
 							{
 								"text": "xù",
-								"start_time": 173750,
-								"end_time": 174500,
-								"ends_with_space": true
+								"startTime": 173750,
+								"endTime": 174500,
+								"endsWithSpace": true
 							},
 							{
 								"text": "míng",
-								"start_time": 174500,
-								"end_time": 175070,
-								"ends_with_space": true
+								"startTime": 174500,
+								"endTime": 175070,
+								"endsWithSpace": true
 							},
 							{
 								"text": "miè",
-								"start_time": 175070,
-								"end_time": 175680
+								"startTime": 175070,
+								"endTime": 175680
 							}
 						]
 					}
 				]
 			},
 			"id": "L29",
-			"agent_id": "v1",
-			"song_part": "FalseChorus",
-			"block_index": 7
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
 		},
 		{
 			"text": "时间外 的时间",
-			"start_time": 174360,
-			"end_time": 178930,
+			"startTime": 174360,
+			"endTime": 178930,
 			"words": [
 				{
 					"text": "时",
-					"start_time": 174360,
-					"end_time": 175020
+					"startTime": 174360,
+					"endTime": 175020
 				},
 				{
 					"text": "间",
-					"start_time": 175020,
-					"end_time": 175660
+					"startTime": 175020,
+					"endTime": 175660
 				},
 				{
 					"text": "外",
-					"start_time": 175660,
-					"end_time": 177280,
-					"ends_with_space": true
+					"startTime": 175660,
+					"endTime": 177280,
+					"endsWithSpace": true
 				},
 				{
 					"text": "的",
-					"start_time": 177280,
-					"end_time": 177470
+					"startTime": 177280,
+					"endTime": 177470
 				},
 				{
 					"text": "时",
-					"start_time": 177470,
-					"end_time": 177840
+					"startTime": 177470,
+					"endTime": 177840
 				},
 				{
 					"text": "间",
-					"start_time": 177840,
-					"end_time": 178930
+					"startTime": 177840,
+					"endTime": 178930
 				}
 			],
 			"translations": [
@@ -5981,34 +5981,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "時",
-							"start_time": 174360,
-							"end_time": 175020
+							"startTime": 174360,
+							"endTime": 175020
 						},
 						{
 							"text": "間",
-							"start_time": 175020,
-							"end_time": 175660
+							"startTime": 175020,
+							"endTime": 175660
 						},
 						{
 							"text": "外",
-							"start_time": 175660,
-							"end_time": 177280,
-							"ends_with_space": true
+							"startTime": 175660,
+							"endTime": 177280,
+							"endsWithSpace": true
 						},
 						{
 							"text": "的",
-							"start_time": 177280,
-							"end_time": 177470
+							"startTime": 177280,
+							"endTime": 177470
 						},
 						{
 							"text": "時",
-							"start_time": 177470,
-							"end_time": 177840
+							"startTime": 177470,
+							"endTime": 177840
 						},
 						{
 							"text": "間",
-							"start_time": 177840,
-							"end_time": 178930
+							"startTime": 177840,
+							"endTime": 178930
 						}
 					]
 				}
@@ -6020,82 +6020,82 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "shí",
-							"start_time": 174360,
-							"end_time": 175020,
-							"ends_with_space": true
+							"startTime": 174360,
+							"endTime": 175020,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 175020,
-							"end_time": 175660,
-							"ends_with_space": true
+							"startTime": 175020,
+							"endTime": 175660,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wài",
-							"start_time": 175660,
-							"end_time": 177280,
-							"ends_with_space": true
+							"startTime": 175660,
+							"endTime": 177280,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 177280,
-							"end_time": 177470,
-							"ends_with_space": true
+							"startTime": 177280,
+							"endTime": 177470,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shí",
-							"start_time": 177470,
-							"end_time": 177840,
-							"ends_with_space": true
+							"startTime": 177470,
+							"endTime": 177840,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 177840,
-							"end_time": 178930
+							"startTime": 177840,
+							"endTime": 178930
 						}
 					]
 				}
 			],
 			"id": "L30",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 8
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
 		},
 		{
 			"text": "温柔的 空房间",
-			"start_time": 179510,
-			"end_time": 184150,
+			"startTime": 179510,
+			"endTime": 184150,
 			"words": [
 				{
 					"text": "温",
-					"start_time": 179510,
-					"end_time": 180020
+					"startTime": 179510,
+					"endTime": 180020
 				},
 				{
 					"text": "柔",
-					"start_time": 180020,
-					"end_time": 180750
+					"startTime": 180020,
+					"endTime": 180750
 				},
 				{
 					"text": "的",
-					"start_time": 180750,
-					"end_time": 182010,
-					"ends_with_space": true
+					"startTime": 180750,
+					"endTime": 182010,
+					"endsWithSpace": true
 				},
 				{
 					"text": "空",
-					"start_time": 182280,
-					"end_time": 182550
+					"startTime": 182280,
+					"endTime": 182550
 				},
 				{
 					"text": "房",
-					"start_time": 182550,
-					"end_time": 182870
+					"startTime": 182550,
+					"endTime": 182870
 				},
 				{
 					"text": "间",
-					"start_time": 182870,
-					"end_time": 184150
+					"startTime": 182870,
+					"endTime": 184150
 				}
 			],
 			"translations": [
@@ -6149,34 +6149,34 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "溫",
-							"start_time": 179510,
-							"end_time": 180020
+							"startTime": 179510,
+							"endTime": 180020
 						},
 						{
 							"text": "柔",
-							"start_time": 180020,
-							"end_time": 180750
+							"startTime": 180020,
+							"endTime": 180750
 						},
 						{
 							"text": "的",
-							"start_time": 180750,
-							"end_time": 182010,
-							"ends_with_space": true
+							"startTime": 180750,
+							"endTime": 182010,
+							"endsWithSpace": true
 						},
 						{
 							"text": "空",
-							"start_time": 182280,
-							"end_time": 182550
+							"startTime": 182280,
+							"endTime": 182550
 						},
 						{
 							"text": "房",
-							"start_time": 182550,
-							"end_time": 182870
+							"startTime": 182550,
+							"endTime": 182870
 						},
 						{
 							"text": "間",
-							"start_time": 182870,
-							"end_time": 184150
+							"startTime": 182870,
+							"endTime": 184150
 						}
 					]
 				}
@@ -6188,86 +6188,86 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "wēn",
-							"start_time": 179510,
-							"end_time": 180020,
-							"ends_with_space": true
+							"startTime": 179510,
+							"endTime": 180020,
+							"endsWithSpace": true
 						},
 						{
 							"text": "róu",
-							"start_time": 180020,
-							"end_time": 180750,
-							"ends_with_space": true
+							"startTime": 180020,
+							"endTime": 180750,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 180750,
-							"end_time": 182010,
-							"ends_with_space": true
+							"startTime": 180750,
+							"endTime": 182010,
+							"endsWithSpace": true
 						},
 						{
 							"text": "kōng",
-							"start_time": 182280,
-							"end_time": 182550,
-							"ends_with_space": true
+							"startTime": 182280,
+							"endTime": 182550,
+							"endsWithSpace": true
 						},
 						{
 							"text": "fáng",
-							"start_time": 182550,
-							"end_time": 182870,
-							"ends_with_space": true
+							"startTime": 182550,
+							"endTime": 182870,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 182870,
-							"end_time": 184150
+							"startTime": 182870,
+							"endTime": 184150
 						}
 					]
 				}
 			],
 			"id": "L31",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 8
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
 		},
 		{
 			"text": "方糖悬滞的时间",
-			"start_time": 185090,
-			"end_time": 190630,
+			"startTime": 185090,
+			"endTime": 190630,
 			"words": [
 				{
 					"text": "方",
-					"start_time": 185090,
-					"end_time": 185410
+					"startTime": 185090,
+					"endTime": 185410
 				},
 				{
 					"text": "糖",
-					"start_time": 185410,
-					"end_time": 185630
+					"startTime": 185410,
+					"endTime": 185630
 				},
 				{
 					"text": "悬",
-					"start_time": 185630,
-					"end_time": 186290
+					"startTime": 185630,
+					"endTime": 186290
 				},
 				{
 					"text": "滞",
-					"start_time": 186290,
-					"end_time": 186700
+					"startTime": 186290,
+					"endTime": 186700
 				},
 				{
 					"text": "的",
-					"start_time": 186700,
-					"end_time": 187450
+					"startTime": 186700,
+					"endTime": 187450
 				},
 				{
 					"text": "时",
-					"start_time": 187450,
-					"end_time": 187880
+					"startTime": 187450,
+					"endTime": 187880
 				},
 				{
 					"text": "间",
-					"start_time": 187880,
-					"end_time": 188970
+					"startTime": 187880,
+					"endTime": 188970
 				}
 			],
 			"translations": [
@@ -6321,38 +6321,38 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "方",
-							"start_time": 185090,
-							"end_time": 185410
+							"startTime": 185090,
+							"endTime": 185410
 						},
 						{
 							"text": "糖",
-							"start_time": 185410,
-							"end_time": 185630
+							"startTime": 185410,
+							"endTime": 185630
 						},
 						{
 							"text": "懸",
-							"start_time": 185630,
-							"end_time": 186290
+							"startTime": 185630,
+							"endTime": 186290
 						},
 						{
 							"text": "滯",
-							"start_time": 186290,
-							"end_time": 186700
+							"startTime": 186290,
+							"endTime": 186700
 						},
 						{
 							"text": "的",
-							"start_time": 186700,
-							"end_time": 187450
+							"startTime": 186700,
+							"endTime": 187450
 						},
 						{
 							"text": "時",
-							"start_time": 187450,
-							"end_time": 187880
+							"startTime": 187450,
+							"endTime": 187880
 						},
 						{
 							"text": "間",
-							"start_time": 187880,
-							"end_time": 188970
+							"startTime": 187880,
+							"endTime": 188970
 						}
 					]
 				}
@@ -6364,77 +6364,77 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "fāng",
-							"start_time": 185090,
-							"end_time": 185410,
-							"ends_with_space": true
+							"startTime": 185090,
+							"endTime": 185410,
+							"endsWithSpace": true
 						},
 						{
 							"text": "táng",
-							"start_time": 185410,
-							"end_time": 185630,
-							"ends_with_space": true
+							"startTime": 185410,
+							"endTime": 185630,
+							"endsWithSpace": true
 						},
 						{
 							"text": "xuán",
-							"start_time": 185630,
-							"end_time": 186290,
-							"ends_with_space": true
+							"startTime": 185630,
+							"endTime": 186290,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhì",
-							"start_time": 186290,
-							"end_time": 186700,
-							"ends_with_space": true
+							"startTime": 186290,
+							"endTime": 186700,
+							"endsWithSpace": true
 						},
 						{
 							"text": "de",
-							"start_time": 186700,
-							"end_time": 187450,
-							"ends_with_space": true
+							"startTime": 186700,
+							"endTime": 187450,
+							"endsWithSpace": true
 						},
 						{
 							"text": "shí",
-							"start_time": 187450,
-							"end_time": 187880,
-							"ends_with_space": true
+							"startTime": 187450,
+							"endTime": 187880,
+							"endsWithSpace": true
 						},
 						{
 							"text": "jiān",
-							"start_time": 187880,
-							"end_time": 188970
+							"startTime": 187880,
+							"endTime": 188970
 						}
 					]
 				}
 			],
-			"background_vocal": {
+			"backgroundVocal": {
 				"text": "悬滞的时间",
-				"start_time": 188170,
-				"end_time": 190630,
+				"startTime": 188170,
+				"endTime": 190630,
 				"words": [
 					{
 						"text": "悬",
-						"start_time": 188170,
-						"end_time": 188500
+						"startTime": 188170,
+						"endTime": 188500
 					},
 					{
 						"text": "滞",
-						"start_time": 188500,
-						"end_time": 188870
+						"startTime": 188500,
+						"endTime": 188870
 					},
 					{
 						"text": "的",
-						"start_time": 188870,
-						"end_time": 189010
+						"startTime": 188870,
+						"endTime": 189010
 					},
 					{
 						"text": "时",
-						"start_time": 189010,
-						"end_time": 189740
+						"startTime": 189010,
+						"endTime": 189740
 					},
 					{
 						"text": "间",
-						"start_time": 189740,
-						"end_time": 190630
+						"startTime": 189740,
+						"endTime": 190630
 					}
 				],
 				"translations": [
@@ -6488,28 +6488,28 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "懸",
-								"start_time": 188170,
-								"end_time": 188500
+								"startTime": 188170,
+								"endTime": 188500
 							},
 							{
 								"text": "滯",
-								"start_time": 188500,
-								"end_time": 188870
+								"startTime": 188500,
+								"endTime": 188870
 							},
 							{
 								"text": "的",
-								"start_time": 188870,
-								"end_time": 189010
+								"startTime": 188870,
+								"endTime": 189010
 							},
 							{
 								"text": "時",
-								"start_time": 189010,
-								"end_time": 189740
+								"startTime": 189010,
+								"endTime": 189740
 							},
 							{
 								"text": "間",
-								"start_time": 189740,
-								"end_time": 190630
+								"startTime": 189740,
+								"endTime": 190630
 							}
 						]
 					}
@@ -6521,107 +6521,107 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 						"words": [
 							{
 								"text": "xuán",
-								"start_time": 188170,
-								"end_time": 188500,
-								"ends_with_space": true
+								"startTime": 188170,
+								"endTime": 188500,
+								"endsWithSpace": true
 							},
 							{
 								"text": "zhì",
-								"start_time": 188500,
-								"end_time": 188870,
-								"ends_with_space": true
+								"startTime": 188500,
+								"endTime": 188870,
+								"endsWithSpace": true
 							},
 							{
 								"text": "de",
-								"start_time": 188870,
-								"end_time": 189010,
-								"ends_with_space": true
+								"startTime": 188870,
+								"endTime": 189010,
+								"endsWithSpace": true
 							},
 							{
 								"text": "shí",
-								"start_time": 189010,
-								"end_time": 189740,
-								"ends_with_space": true
+								"startTime": 189010,
+								"endTime": 189740,
+								"endsWithSpace": true
 							},
 							{
 								"text": "jiān",
-								"start_time": 189740,
-								"end_time": 190630
+								"startTime": 189740,
+								"endTime": 190630
 							}
 						]
 					}
 				]
 			},
 			"id": "L32",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 8
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
 		},
 		{
 			"text": "融化以后 再回未知盈满明天",
-			"start_time": 189750,
-			"end_time": 199470,
+			"startTime": 189750,
+			"endTime": 199470,
 			"words": [
 				{
 					"text": "融",
-					"start_time": 189750,
-					"end_time": 190060
+					"startTime": 189750,
+					"endTime": 190060
 				},
 				{
 					"text": "化",
-					"start_time": 190060,
-					"end_time": 190390
+					"startTime": 190060,
+					"endTime": 190390
 				},
 				{
 					"text": "以",
-					"start_time": 190390,
-					"end_time": 190660
+					"startTime": 190390,
+					"endTime": 190660
 				},
 				{
 					"text": "后",
-					"start_time": 190660,
-					"end_time": 191970,
-					"ends_with_space": true
+					"startTime": 190660,
+					"endTime": 191970,
+					"endsWithSpace": true
 				},
 				{
 					"text": "再",
-					"start_time": 192260,
-					"end_time": 192530
+					"startTime": 192260,
+					"endTime": 192530
 				},
 				{
 					"text": "回",
-					"start_time": 192530,
-					"end_time": 192910
+					"startTime": 192530,
+					"endTime": 192910
 				},
 				{
 					"text": "未",
-					"start_time": 192910,
-					"end_time": 193210
+					"startTime": 192910,
+					"endTime": 193210
 				},
 				{
 					"text": "知",
-					"start_time": 193210,
-					"end_time": 193770
+					"startTime": 193210,
+					"endTime": 193770
 				},
 				{
 					"text": "盈",
-					"start_time": 193770,
-					"end_time": 194500
+					"startTime": 193770,
+					"endTime": 194500
 				},
 				{
 					"text": "满",
-					"start_time": 194500,
-					"end_time": 194860
+					"startTime": 194500,
+					"endTime": 194860
 				},
 				{
 					"text": "明",
-					"start_time": 195140,
-					"end_time": 195380
+					"startTime": 195140,
+					"endTime": 195380
 				},
 				{
 					"text": "天",
-					"start_time": 195380,
-					"end_time": 199470
+					"startTime": 195380,
+					"endTime": 199470
 				}
 			],
 			"translations": [
@@ -6675,64 +6675,64 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "融",
-							"start_time": 189750,
-							"end_time": 190060
+							"startTime": 189750,
+							"endTime": 190060
 						},
 						{
 							"text": "化",
-							"start_time": 190060,
-							"end_time": 190390
+							"startTime": 190060,
+							"endTime": 190390
 						},
 						{
 							"text": "以",
-							"start_time": 190390,
-							"end_time": 190660
+							"startTime": 190390,
+							"endTime": 190660
 						},
 						{
 							"text": "後",
-							"start_time": 190660,
-							"end_time": 191970,
-							"ends_with_space": true
+							"startTime": 190660,
+							"endTime": 191970,
+							"endsWithSpace": true
 						},
 						{
 							"text": "再",
-							"start_time": 192260,
-							"end_time": 192530
+							"startTime": 192260,
+							"endTime": 192530
 						},
 						{
 							"text": "回",
-							"start_time": 192530,
-							"end_time": 192910
+							"startTime": 192530,
+							"endTime": 192910
 						},
 						{
 							"text": "未",
-							"start_time": 192910,
-							"end_time": 193210
+							"startTime": 192910,
+							"endTime": 193210
 						},
 						{
 							"text": "知",
-							"start_time": 193210,
-							"end_time": 193770
+							"startTime": 193210,
+							"endTime": 193770
 						},
 						{
 							"text": "盈",
-							"start_time": 193770,
-							"end_time": 194500
+							"startTime": 193770,
+							"endTime": 194500
 						},
 						{
 							"text": "滿",
-							"start_time": 194500,
-							"end_time": 194860
+							"startTime": 194500,
+							"endTime": 194860
 						},
 						{
 							"text": "明",
-							"start_time": 195140,
-							"end_time": 195380
+							"startTime": 195140,
+							"endTime": 195380
 						},
 						{
 							"text": "天",
-							"start_time": 195380,
-							"end_time": 199470
+							"startTime": 195380,
+							"endTime": 199470
 						}
 					]
 				}
@@ -6744,82 +6744,82 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 					"words": [
 						{
 							"text": "róng",
-							"start_time": 189750,
-							"end_time": 190060,
-							"ends_with_space": true
+							"startTime": 189750,
+							"endTime": 190060,
+							"endsWithSpace": true
 						},
 						{
 							"text": "huà",
-							"start_time": 190060,
-							"end_time": 190390,
-							"ends_with_space": true
+							"startTime": 190060,
+							"endTime": 190390,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yǐ",
-							"start_time": 190390,
-							"end_time": 190660,
-							"ends_with_space": true
+							"startTime": 190390,
+							"endTime": 190660,
+							"endsWithSpace": true
 						},
 						{
 							"text": "hòu",
-							"start_time": 190660,
-							"end_time": 191970,
-							"ends_with_space": true
+							"startTime": 190660,
+							"endTime": 191970,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zài",
-							"start_time": 192260,
-							"end_time": 192530,
-							"ends_with_space": true
+							"startTime": 192260,
+							"endTime": 192530,
+							"endsWithSpace": true
 						},
 						{
 							"text": "huí",
-							"start_time": 192530,
-							"end_time": 192910,
-							"ends_with_space": true
+							"startTime": 192530,
+							"endTime": 192910,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wèi",
-							"start_time": 192910,
-							"end_time": 193210,
-							"ends_with_space": true
+							"startTime": 192910,
+							"endTime": 193210,
+							"endsWithSpace": true
 						},
 						{
 							"text": "zhī",
-							"start_time": 193210,
-							"end_time": 193770,
-							"ends_with_space": true
+							"startTime": 193210,
+							"endTime": 193770,
+							"endsWithSpace": true
 						},
 						{
 							"text": "yíng",
-							"start_time": 193770,
-							"end_time": 194500,
-							"ends_with_space": true
+							"startTime": 193770,
+							"endTime": 194500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "mǎn",
-							"start_time": 194500,
-							"end_time": 194860,
-							"ends_with_space": true
+							"startTime": 194500,
+							"endTime": 194860,
+							"endsWithSpace": true
 						},
 						{
 							"text": "míng",
-							"start_time": 195140,
-							"end_time": 195380,
-							"ends_with_space": true
+							"startTime": 195140,
+							"endTime": 195380,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tiān",
-							"start_time": 195380,
-							"end_time": 199470
+							"startTime": 195380,
+							"endTime": 199470
 						}
 					]
 				}
 			],
 			"id": "L33",
-			"agent_id": "v1",
-			"song_part": "Chorus",
-			"block_index": 8
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
 		}
 	]
 }

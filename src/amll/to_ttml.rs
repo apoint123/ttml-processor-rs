@@ -139,8 +139,8 @@ pub fn to_ttml_result(
 fn convert_metadata(amll_metadata: Vec<AmllMetadata>) -> TTMLMetadata {
     let mut metadata = TTMLMetadata::default();
 
-    for (key, values) in amll_metadata {
-        let mut iter = values.into_iter();
+    for AmllMetadata { key, value } in amll_metadata {
+        let mut iter = value.into_iter();
 
         match key.as_str() {
             meta_keys::LANGUAGE => metadata.language = iter.next(),
@@ -276,25 +276,25 @@ mod tests {
         let amll_result = AmllLyricResult {
             lines: vec![],
             metadata: vec![
-                (
-                    CompactString::const_new(meta_keys::TITLE),
-                    vec![CompactString::new("Test Song")],
-                ),
-                (
-                    CompactString::const_new(meta_keys::ARTISTS),
-                    vec![
+                AmllMetadata {
+                    key: CompactString::const_new(meta_keys::TITLE),
+                    value: vec![CompactString::new("Test Song")],
+                },
+                AmllMetadata {
+                    key: CompactString::const_new(meta_keys::ARTISTS),
+                    value: vec![
                         CompactString::new("Artist A"),
                         CompactString::new("Artist B"),
                     ],
-                ),
-                (
-                    CompactString::const_new(meta_keys::NCM_ID),
-                    vec![CompactString::new("123456")],
-                ),
-                (
-                    CompactString::const_new("CUSTOM_KEY"),
-                    vec![CompactString::new("custom_val")],
-                ),
+                },
+                AmllMetadata {
+                    key: CompactString::const_new(meta_keys::NCM_ID),
+                    value: vec![CompactString::new("123456")],
+                },
+                AmllMetadata {
+                    key: CompactString::const_new("CUSTOM_KEY"),
+                    value: vec![CompactString::new("custom_val")],
+                },
             ],
         };
 

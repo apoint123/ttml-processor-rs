@@ -15,20 +15,20 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 		"album": [
 			"我是歌手第二季 第5期"
 		],
-		"author_ids": [
+		"authorIds": [
 			"151196223"
 		],
-		"author_names": [
+		"authorNames": [
 			"Torotar"
 		],
 		"agents": {
 			"v1": {
 				"id": "v1",
-				"type_": "person"
+				"type": "person"
 			}
 		},
-		"platform_ids": {
-			"ncm_music_id": [
+		"platformIds": {
+			"ncmMusicId": [
 				"28427750"
 			]
 		}
@@ -36,8 +36,8 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 	"lines": [
 		{
 			"text": "I took my baby on a Saturday bang",
-			"start_time": 19828,
-			"end_time": 23752,
+			"startTime": 19828,
+			"endTime": 23752,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -45,13 +45,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L1",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Boy is that girl with you",
-			"start_time": 24271,
-			"end_time": 25889,
+			"startTime": 24271,
+			"endTime": 25889,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -59,13 +59,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L2",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Yes we're one and the same",
-			"start_time": 25889,
-			"end_time": 27967,
+			"startTime": 25889,
+			"endTime": 27967,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -73,13 +73,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L3",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Now I believe in miracles",
-			"start_time": 28302,
-			"end_time": 30036,
+			"startTime": 28302,
+			"endTime": 30036,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -87,13 +87,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L4",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "And a miracle has happened tonight",
-			"start_time": 30036,
-			"end_time": 33319,
+			"startTime": 30036,
+			"endTime": 33319,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -101,13 +101,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L5",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "But, if you're thinkin' about my baby",
-			"start_time": 36083,
-			"end_time": 38633,
+			"startTime": 36083,
+			"endTime": 38633,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -115,13 +115,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L6",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It don't matter if you're black or white",
-			"start_time": 38633,
-			"end_time": 42171,
+			"startTime": 38633,
+			"endTime": 42171,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -129,13 +129,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L7",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I said If You're Thinkin' About My Baby",
-			"start_time": 44345,
-			"end_time": 47462,
+			"startTime": 44345,
+			"endTime": 47462,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -143,13 +143,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L8",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It Don't Matter If You're Black Or White",
-			"start_time": 47462,
-			"end_time": 51107,
+			"startTime": 47462,
+			"endTime": 51107,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -157,13 +157,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L9",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I said If You're Thinkin' About My brother",
-			"start_time": 53358,
-			"end_time": 56220,
+			"startTime": 53358,
+			"endTime": 56220,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -171,13 +171,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L10",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It Don't Matter If You're Black Or White",
-			"start_time": 56220,
-			"end_time": 61400,
+			"startTime": 56220,
+			"endTime": 61400,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -185,13 +185,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L11",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "They print my message in the Saturday Sun",
-			"start_time": 86458,
-			"end_time": 89824,
+			"startTime": 86458,
+			"endTime": 89824,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -199,13 +199,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L12",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I had to tell them I ain't second to none",
-			"start_time": 90513,
-			"end_time": 94011,
+			"startTime": 90513,
+			"endTime": 94011,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -213,13 +213,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L13",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "And I told about equality and it's true",
-			"start_time": 94316,
-			"end_time": 96713,
+			"startTime": 94316,
+			"endTime": 96713,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -227,13 +227,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L14",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Either you're wrong or you're right",
-			"start_time": 96713,
-			"end_time": 99651,
+			"startTime": 96713,
+			"endTime": 99651,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -241,13 +241,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L15",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "But, if you're thinkin' about my baby",
-			"start_time": 101074,
-			"end_time": 104579,
+			"startTime": 101074,
+			"endTime": 104579,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -255,13 +255,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L16",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It don't matter if you're black or white",
-			"start_time": 104579,
-			"end_time": 107699,
+			"startTime": 104579,
+			"endTime": 107699,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -269,13 +269,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L17",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I am tired of this devil",
-			"start_time": 123409,
-			"end_time": 125324,
+			"startTime": 123409,
+			"endTime": 125324,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -283,13 +283,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L18",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I am tired of this stuff",
-			"start_time": 125324,
-			"end_time": 127282,
+			"startTime": 125324,
+			"endTime": 127282,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -297,13 +297,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L19",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I am tired of this business",
-			"start_time": 127282,
-			"end_time": 129369,
+			"startTime": 127282,
+			"endTime": 129369,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -311,13 +311,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L20",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Sew when the going gets rough",
-			"start_time": 129369,
-			"end_time": 131495,
+			"startTime": 129369,
+			"endTime": 131495,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -325,13 +325,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L21",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I ain't scared of your brother",
-			"start_time": 131495,
-			"end_time": 133466,
+			"startTime": 131495,
+			"endTime": 133466,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -339,13 +339,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L22",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I ain'ts scared of no sheets",
-			"start_time": 133466,
-			"end_time": 135498,
+			"startTime": 133466,
+			"endTime": 135498,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -353,13 +353,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L23",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I ain't scared of nobody",
-			"start_time": 135498,
-			"end_time": 137634,
+			"startTime": 135498,
+			"endTime": 137634,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -367,13 +367,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L24",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Girl when the goin' gets mean",
-			"start_time": 137634,
-			"end_time": 139528,
+			"startTime": 137634,
+			"endTime": 139528,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -381,13 +381,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L25",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Protection For gangs, clubs, and nations",
-			"start_time": 142098,
-			"end_time": 144499,
+			"startTime": 142098,
+			"endTime": 144499,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -395,13 +395,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L26",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Causing grief in human relations",
-			"start_time": 144499,
-			"end_time": 146163,
+			"startTime": 144499,
+			"endTime": 146163,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -409,13 +409,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L27",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It's a turf war on a global scale",
-			"start_time": 146163,
-			"end_time": 148335,
+			"startTime": 146163,
+			"endTime": 148335,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -423,13 +423,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L28",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I'd rather hear both sides of the tale",
-			"start_time": 148335,
-			"end_time": 150260,
+			"startTime": 148335,
+			"endTime": 150260,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -437,13 +437,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L29",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "See, it's not about races",
-			"start_time": 150260,
-			"end_time": 151552,
+			"startTime": 150260,
+			"endTime": 151552,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -451,13 +451,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L30",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Just places Faces",
-			"start_time": 151552,
-			"end_time": 153406,
+			"startTime": 151552,
+			"endTime": 153406,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -465,13 +465,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L31",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Where your blood comes from",
-			"start_time": 153406,
-			"end_time": 154210,
+			"startTime": 153406,
+			"endTime": 154210,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -479,13 +479,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L32",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Is were your space is",
-			"start_time": 154210,
-			"end_time": 155237,
+			"startTime": 154210,
+			"endTime": 155237,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -493,13 +493,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L33",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I've seen the bright get duller",
-			"start_time": 155237,
-			"end_time": 156662,
+			"startTime": 155237,
+			"endTime": 156662,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -507,13 +507,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L34",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I'm not going to spend my life being a color",
-			"start_time": 156662,
-			"end_time": 158780,
+			"startTime": 156662,
+			"endTime": 158780,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -521,13 +521,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L35",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Don't tell me you agree with me",
-			"start_time": 162784,
-			"end_time": 164515,
+			"startTime": 162784,
+			"endTime": 164515,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -535,13 +535,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L36",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "When I saw you kicking dirt in my eye",
-			"start_time": 164515,
-			"end_time": 167618,
+			"startTime": 164515,
+			"endTime": 167618,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -549,13 +549,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L37",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "But, if you're thinkin' about my baby",
-			"start_time": 169859,
-			"end_time": 172627,
+			"startTime": 169859,
+			"endTime": 172627,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -563,13 +563,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L38",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It don't matter if you're black or white",
-			"start_time": 172627,
-			"end_time": 176094,
+			"startTime": 172627,
+			"endTime": 176094,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -577,13 +577,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L39",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I said if you're thinkin' of being my baby",
-			"start_time": 178353,
-			"end_time": 181518,
+			"startTime": 178353,
+			"endTime": 181518,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -591,13 +591,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L40",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It don't matter if you're black or white",
-			"start_time": 181518,
-			"end_time": 184244,
+			"startTime": 181518,
+			"endTime": 184244,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -605,13 +605,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L41",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "I said if you're thinkin' of being my brother",
-			"start_time": 186575,
-			"end_time": 189362,
+			"startTime": 186575,
+			"endTime": 189362,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -619,13 +619,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L42",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It don't matter if you're black or white",
-			"start_time": 189362,
-			"end_time": 195441,
+			"startTime": 189362,
+			"endTime": 195441,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -633,13 +633,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L43",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "NO Matter If You're Black Or White",
-			"start_time": 200897,
-			"end_time": 204087,
+			"startTime": 200897,
+			"endTime": 204087,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -647,13 +647,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L44",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "NO Matter If You're Black Or White",
-			"start_time": 204958,
-			"end_time": 209557,
+			"startTime": 204958,
+			"endTime": 209557,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -661,13 +661,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L45",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It's Black, It's White It's Tough For You To Get By",
-			"start_time": 210340,
-			"end_time": 214399,
+			"startTime": 210340,
+			"endTime": 214399,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -675,13 +675,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L46",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It's Black , It's White It's Tough For You To Get By",
-			"start_time": 214399,
-			"end_time": 218348,
+			"startTime": 214399,
+			"endTime": 218348,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -689,13 +689,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L47",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It's Black, It's White It's Tough For You To Get By",
-			"start_time": 218348,
-			"end_time": 222424,
+			"startTime": 218348,
+			"endTime": 222424,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -703,13 +703,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L48",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "It's Black , It's White It's Tough For You To Get By",
-			"start_time": 222424,
-			"end_time": 226484,
+			"startTime": 222424,
+			"endTime": 226484,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -717,13 +717,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L49",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Black Or White",
-			"start_time": 227058,
-			"end_time": 230314,
+			"startTime": 227058,
+			"endTime": 230314,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -731,13 +731,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L50",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Black Or White",
-			"start_time": 231961,
-			"end_time": 235406,
+			"startTime": 231961,
+			"endTime": 235406,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -745,13 +745,13 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L51",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		},
 		{
 			"text": "Black Or White",
-			"start_time": 253909,
-			"end_time": 256274,
+			"startTime": 253909,
+			"endTime": 256274,
 			"translations": [
 				{
 					"language": "zh-CN",
@@ -759,8 +759,8 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 				}
 			],
 			"id": "L52",
-			"agent_id": "v1",
-			"block_index": 1
+			"agentId": "v1",
+			"blockIndex": 1
 		}
 	]
 }

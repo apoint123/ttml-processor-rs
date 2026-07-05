@@ -6,7 +6,7 @@ input_file: tests/fixtures/complex-test-song.ttml
 {
 	"metadata": {
 		"language": "ja",
-		"timing_mode": "Word",
+		"timingMode": "Word",
 		"songwriters": [
 			"作曲者1号",
 			"作曲者2号"
@@ -25,40 +25,40 @@ input_file: tests/fixtures/complex-test-song.ttml
 		"isrc": [
 			"JPXX02500001"
 		],
-		"author_ids": [
+		"authorIds": [
 			"10001"
 		],
-		"author_names": [
+		"authorNames": [
 			"TestUser"
 		],
 		"agents": {
 			"v1": {
 				"id": "v1",
 				"name": "Vocalist A (Taro)",
-				"type_": "person"
+				"type": "person"
 			},
 			"v2": {
 				"id": "v2",
 				"name": "Vocalist B (Hanako)",
-				"type_": "person"
+				"type": "person"
 			},
 			"v1000": {
 				"id": "v1000",
 				"name": "Chorus Group",
-				"type_": "group"
+				"type": "group"
 			}
 		},
-		"platform_ids": {
-			"ncm_music_id": [
+		"platformIds": {
+			"ncmMusicId": [
 				"123456789"
 			],
-			"qq_music_id": [
+			"qqMusicId": [
 				"987654321"
 			],
-			"spotify_id": [
+			"spotifyId": [
 				"abc123xyz"
 			],
-			"apple_music_id": [
+			"appleMusicId": [
 				"999888777"
 			]
 		}
@@ -66,26 +66,26 @@ input_file: tests/fixtures/complex-test-song.ttml
 	"lines": [
 		{
 			"text": "これは テスト",
-			"start_time": 10000,
-			"end_time": 12000,
+			"startTime": 10000,
+			"endTime": 12000,
 			"words": [
 				{
 					"text": "これ",
-					"start_time": 10000,
-					"end_time": 10500,
+					"startTime": 10000,
+					"endTime": 10500,
 					"obscene": true
 				},
 				{
 					"text": "は",
-					"start_time": 10500,
-					"end_time": 10800,
-					"ends_with_space": true
+					"startTime": 10500,
+					"endTime": 10800,
+					"endsWithSpace": true
 				},
 				{
 					"text": "テスト",
-					"start_time": 11200,
-					"end_time": 11800,
-					"empty_beat": 5
+					"startTime": 11200,
+					"endTime": 11800,
+					"emptyBeat": 5
 				}
 			],
 			"translations": [
@@ -105,55 +105,55 @@ input_file: tests/fixtures/complex-test-song.ttml
 					"words": [
 						{
 							"text": "Ko",
-							"start_time": 10000,
-							"end_time": 10500
+							"startTime": 10000,
+							"endTime": 10500
 						},
 						{
 							"text": "re",
-							"start_time": 10500,
-							"end_time": 10800,
-							"ends_with_space": true
+							"startTime": 10500,
+							"endTime": 10800,
+							"endsWithSpace": true
 						},
 						{
 							"text": "wa",
-							"start_time": 10800,
-							"end_time": 11000,
-							"ends_with_space": true
+							"startTime": 10800,
+							"endTime": 11000,
+							"endsWithSpace": true
 						},
 						{
 							"text": "tesuto",
-							"start_time": 11200,
-							"end_time": 11800
+							"startTime": 11200,
+							"endTime": 11800
 						}
 					]
 				}
 			],
 			"id": "L1",
-			"agent_id": "v1",
-			"song_part": "Verse",
-			"block_index": 1
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
 		},
 		{
 			"text": "二つ目 の ライン",
-			"start_time": 15000,
-			"end_time": 17000,
+			"startTime": 15000,
+			"endTime": 17000,
 			"words": [
 				{
 					"text": "二つ目",
-					"start_time": 15000,
-					"end_time": 15800,
-					"ends_with_space": true
+					"startTime": 15000,
+					"endTime": 15800,
+					"endsWithSpace": true
 				},
 				{
 					"text": "の",
-					"start_time": 16000,
-					"end_time": 16500,
-					"ends_with_space": true
+					"startTime": 16000,
+					"endTime": 16500,
+					"endsWithSpace": true
 				},
 				{
 					"text": "ライン",
-					"start_time": 16500,
-					"end_time": 17000
+					"startTime": 16500,
+					"endTime": 17000
 				}
 			],
 			"translations": [
@@ -173,44 +173,44 @@ input_file: tests/fixtures/complex-test-song.ttml
 					"words": [
 						{
 							"text": "Futatsume",
-							"start_time": 15000,
-							"end_time": 15800,
-							"ends_with_space": true
+							"startTime": 15000,
+							"endTime": 15800,
+							"endsWithSpace": true
 						},
 						{
 							"text": "no",
-							"start_time": 16000,
-							"end_time": 16500,
-							"ends_with_space": true
+							"startTime": 16000,
+							"endTime": 16500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "rain",
-							"start_time": 16500,
-							"end_time": 17000
+							"startTime": 16500,
+							"endTime": 17000
 						}
 					]
 				}
 			],
 			"id": "L2",
-			"agent_id": "v2",
-			"song_part": "Verse",
-			"block_index": 1
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
 		},
 		{
 			"text": "コーラス です",
-			"start_time": 20000,
-			"end_time": 25000,
+			"startTime": 20000,
+			"endTime": 25000,
 			"words": [
 				{
 					"text": "コーラス",
-					"start_time": 20000,
-					"end_time": 21500,
-					"ends_with_space": true
+					"startTime": 20000,
+					"endTime": 21500,
+					"endsWithSpace": true
 				},
 				{
 					"text": "です",
-					"start_time": 21500,
-					"end_time": 22000
+					"startTime": 21500,
+					"endTime": 22000
 				}
 			],
 			"translations": [
@@ -230,27 +230,27 @@ input_file: tests/fixtures/complex-test-song.ttml
 					"words": [
 						{
 							"text": "Kōrasu",
-							"start_time": 20000,
-							"end_time": 21500,
-							"ends_with_space": true
+							"startTime": 20000,
+							"endTime": 21500,
+							"endsWithSpace": true
 						},
 						{
 							"text": "desu",
-							"start_time": 21500,
-							"end_time": 22000
+							"startTime": 21500,
+							"endTime": 22000
 						}
 					]
 				}
 			],
-			"background_vocal": {
+			"backgroundVocal": {
 				"text": "背景",
-				"start_time": 22500,
-				"end_time": 23800,
+				"startTime": 22500,
+				"endTime": 23800,
 				"words": [
 					{
 						"text": "背景",
-						"start_time": 22500,
-						"end_time": 23800
+						"startTime": 22500,
+						"endTime": 23800
 					}
 				],
 				"translations": [
@@ -270,17 +270,17 @@ input_file: tests/fixtures/complex-test-song.ttml
 						"words": [
 							{
 								"text": "haikei",
-								"start_time": 22500,
-								"end_time": 23800
+								"startTime": 22500,
+								"endTime": 23800
 							}
 						]
 					}
 				]
 			},
 			"id": "L3",
-			"agent_id": "v1000",
-			"song_part": "Chorus",
-			"block_index": 2
+			"agentId": "v1000",
+			"songPart": "Chorus",
+			"blockIndex": 2
 		}
 	]
 }

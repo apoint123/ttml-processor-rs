@@ -19,6 +19,7 @@ use crate::utils::{
 /// 翻译/音译的内容
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct SubLyricContent {
     /// 该内容的 BCP-47 语言代码
     pub language: Option<CompactString>,
@@ -33,6 +34,7 @@ pub struct SubLyricContent {
 /// 背景人声内容
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct BackgroundVocal {
     /// 完整的文本内容
     /// - 如果是逐字歌词，这里是所有字拼接后的结果
@@ -59,6 +61,7 @@ pub struct BackgroundVocal {
 /// 一个主歌词行
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct LyricLine {
     /// 完整的文本内容
     /// - 如果是逐字歌词，这里是所有字拼接后的结果
@@ -208,6 +211,7 @@ impl Syllable {
 
 /// Ruby 标注的单个注音音节
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct RubyTag {
     /// 注音文本内容
     pub text: CompactString,
@@ -222,6 +226,7 @@ pub struct RubyTag {
 /// 一个歌词音节
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct Syllable {
     ///  该音节的内容
     /// - 如果是普通音节，为常规歌词文本
@@ -256,6 +261,7 @@ pub struct Syllable {
 /// 演唱者信息结构
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct Agent {
     /// 演唱者的 ID
     ///
@@ -274,7 +280,7 @@ pub struct Agent {
 
 /// 元数据中的各个平台 ID
 #[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
-#[serde(rename_all = "snake_case")]
+#[serde(rename_all = "camelCase")]
 pub enum PlatformId {
     /// 网易云音乐 ID
     NcmMusicId,
@@ -292,6 +298,7 @@ pub enum PlatformId {
 /// TTML 歌词的元数据内容
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct TTMLMetadata {
     /// 歌词主语言代码 (BCP-47)
     pub language: Option<CompactString>,
@@ -428,6 +435,7 @@ impl SubLyricContent {
 
 /// 解析器返回的结果对象
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct TTMLResult {
     /// TTML 歌词的元数据内容
     pub metadata: TTMLMetadata,

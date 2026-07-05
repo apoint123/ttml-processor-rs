@@ -9,6 +9,7 @@ use serde_with::skip_serializing_none;
 
 /// 一个歌词单词
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
 pub struct LyricWordBase {
     /// 单词的起始时间，单位为毫秒
     pub start_time: u32,
@@ -23,6 +24,7 @@ pub struct LyricWordBase {
 /// 一个歌词单词
 #[skip_serializing_none]
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
 pub struct AmllLyricWord {
     /// 单词的起始时间，单位为毫秒
     pub start_time: u32,
@@ -48,6 +50,7 @@ pub struct AmllLyricWord {
 
 /// 一行歌词，存储多个单词
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
 pub struct AmllLyricLine {
     /// 该行的所有单词
     pub words: Vec<AmllLyricWord>,
@@ -59,6 +62,7 @@ pub struct AmllLyricLine {
     pub roman_lyric: String,
 
     /// 该行是否为背景歌词行
+    #[serde(rename = "isBG")]
     pub is_bg: bool,
 
     /// 该行是否为对唱歌词行（即歌词行靠右对齐）
@@ -76,12 +80,18 @@ pub struct AmllLyricLine {
 }
 
 /// 一个元数据，以 `[键, 值数组]` 的形式存储。
-pub type AmllMetadata = (CompactString, Vec<CompactString>);
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+pub struct AmllMetadata {
+    pub key: CompactString,
+    pub value: Vec<CompactString>,
+}
 
 /// 一个 TTML 歌词对象，存储了歌词行信息和 AMLL 元数据信息
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
 pub struct AmllLyricResult {
     /// TTML 中存储的歌词行信息
+    #[serde(rename = "lyricLines")]
     pub lines: Vec<AmllLyricLine>,
 
     /// 一个元数据表，以 `[键, 值数组]` 的形式存储
@@ -90,6 +100,7 @@ pub struct AmllLyricResult {
 
 /// 解析器生成的原始 TTML 数据结构转换为 AMLL 的数据结构时的配置选项
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(rename_all = "camelCase", default)]
 pub struct TtmlToAmllOptions {
     /// 提取翻译时的首选目标语言 (如 `"zh-Hans"`)
     ///
@@ -104,6 +115,7 @@ pub struct TtmlToAmllOptions {
 
 /// AMLL 简单的数据结构转换为解析器内部复杂的 TTML 数据结构时的配置选项
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(rename_all = "camelCase", default)]
 pub struct AmllToTtmlOptions {
     /// 翻译的目标语言代码
     ///
