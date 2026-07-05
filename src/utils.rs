@@ -109,8 +109,8 @@ pub fn normalize_line_text(text: &mut String) {
 /// 规范化给定歌词音节数组的空格
 ///
 /// 会提取前导和尾随空格并分别标记上一个音节和当前音节的 `ends_with_space`
-/// 标志，同时从音节文本内移除空格
-pub fn normalize_words_spaces(words: &mut [Syllable]) {
+/// 标志，同时从音节文本内移除空格。如果移除空格后音节变为空，则会将其从数组中移除。
+pub fn normalize_words_spaces(words: &mut Vec<Syllable>) {
     for i in 0..words.len() {
         let text = &words[i].text;
         let original_len = text.len();
@@ -123,8 +123,6 @@ pub fn normalize_words_spaces(words: &mut [Syllable]) {
         let leading_spaces_len = original_len - trimmed_start.len();
 
         // 空音节删除内容并标记上一个音节的空格
-        // 不删除音节以便使用者可以通过索引匹配主歌词和逐字音译/翻译
-        //（如果歌词作者用空的逐字音译/翻译音节表示占位音节）
         if trimmed_start.is_empty() {
             if i > 0 {
                 words[i - 1].ends_with_space = Some(true);
@@ -152,4 +150,7 @@ pub fn normalize_words_spaces(words: &mut [Syllable]) {
             let _ = words[i].text.drain(..leading_spaces_len);
         }
     }
+
+    // 移除所有文本为空的音节，包括原本就为空，以及只包含空格被清空的音节
+    words.retain(|w| !w.text.is_empty());
 }
