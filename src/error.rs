@@ -178,6 +178,7 @@ pub trait TimestampExt<T> {
 }
 
 /// 已包装错误的上下文扩展，用于在 [`TTMLProcessorError::ParseError`] 上追加信息
+#[allow(clippy::missing_errors_doc)]
 pub trait TTMLResultExt<T> {
     /// 为已有的解析错误注入引发错误的原文字符串（从字节切片进行 UTF-8 损失转换）
     fn with_offending_bytes(self, bytes: &[u8]) -> StdResult<T, TTMLProcessorError>;
@@ -187,7 +188,7 @@ pub trait TTMLResultExt<T> {
 }
 
 impl<T> TTMLResultExt<T> for StdResult<T, TTMLProcessorError> {
-    fn with_offending_bytes(self, bytes: &[u8]) -> StdResult<T, TTMLProcessorError> {
+    fn with_offending_bytes(self, bytes: &[u8]) -> Self {
         self.map_err(|mut e| {
             if let TTMLProcessorError::ParseError {
                 ref mut context, ..
@@ -200,7 +201,7 @@ impl<T> TTMLResultExt<T> for StdResult<T, TTMLProcessorError> {
         })
     }
 
-    fn with_offending_string(self, s: &str) -> StdResult<T, TTMLProcessorError> {
+    fn with_offending_string(self, s: &str) -> Self {
         self.map_err(|mut e| {
             if let TTMLProcessorError::ParseError {
                 ref mut context, ..
