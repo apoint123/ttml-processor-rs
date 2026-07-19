@@ -47,6 +47,7 @@ pub fn to_ttml_result(
     let mut has_duet_in_song = false;
     let mut last_was_bg = false;
     let mut last_main_is_duet = false;
+    let mut line_index = 1;
 
     for amll_line in amll_result.lines {
         let is_bg = amll_line.is_bg;
@@ -94,7 +95,7 @@ pub fn to_ttml_result(
                 translations: trans_opt,
                 romanizations: rom_opt,
                 background_vocal: None,
-                id: None,
+                id: Some(CompactString::new(format!("L{line_index}"))),
                 agent_id: Some(CompactString::const_new(agent_id)),
                 song_part: None,
                 block_index: None,
@@ -102,6 +103,7 @@ pub fn to_ttml_result(
 
             line.rebuild_text();
             lines.push(line);
+            line_index += 1;
         } else if let Some(last_line) = lines.last_mut() {
             let mut bg_vocal = BackgroundVocal {
                 text: String::new(),
