@@ -20,7 +20,10 @@ use crate::{
     error::Result,
     generator::{
         GeneratorConfig,
-        utils::format_timestamp,
+        utils::{
+            format_timestamp,
+            line_text,
+        },
     },
     model::{
         LyricLine,
@@ -50,6 +53,13 @@ impl SubLyricKind {
             Self::Transliteration => tags::TRANSLITERATION,
         }
     }
+
+    /// 逐字内容拼接为逐行文本时，音节之间是否始终插入空格
+    ///
+    /// 与解析器 `SubLyricContent::normalize` 的约定保持一致
+    const fn space_joined(self) -> bool {
+        matches!(self, Self::Transliteration)
+    }
 }
 
 struct LineSubLyricEntry<'a> {
@@ -73,18 +83,21 @@ pub fn write_sub_lyrics(
                 SubLyricKind::Translation => line.translations.as_deref(),
                 SubLyricKind::Transliteration => line.romanizations.as_deref(),
             };
-            let main_contents = main_contents
-                .filter(|contents| should_write_to_head(contents, config.use_apple_format_rules));
+            let main_contents =
+                main_contents.filter(|contents| should_write_to_head(contents, config));
 
-            let bg_contents = line.background_vocal.as_ref().and_then(|bg| {
-                let bg_sub = match kind {
-                    SubLyricKind::Translation => bg.translations.as_deref(),
-                    SubLyricKind::Transliteration => bg.romanizations.as_deref(),
-                };
-                bg_sub.filter(|contents| {
-                    config.use_apple_format_rules || contents.iter().any(|c| c.words.is_some())
-                })
-            });
+            // 逐行模式下不输出背景人声，其翻译/音译也一并跳过
+            let bg_contents = line
+                .background_vocal
+                .as_ref()
+                .filter(|_| !config.line_timing)
+                .and_then(|bg| {
+                    let bg_sub = match kind {
+                        SubLyricKind::Translation => bg.translations.as_deref(),
+                        SubLyricKind::Transliteration => bg.romanizations.as_deref(),
+                    };
+                    bg_sub.filter(|contents| should_write_to_head(contents, config))
+                });
 
             if main_contents.is_none() && bg_contents.is_none() {
                 return None;
@@ -143,7 +156,13 @@ pub fn write_sub_lyrics(
                             .with_attribute((attrs::FOR, entry.line_id))
                             .write_inner_content(|writer| {
                                 if let Some(content) = main_content {
-                                    write_sub_lyric_content(writer, content, false, config.format)?;
+                                    write_sub_lyric_content(
+                                        writer,
+                                        content,
+                                        false,
+                                        config,
+                                        kind.space_joined(),
+                                    )?;
                                 }
                                 if let Some(bg_content) = bg_content {
                                     writer
@@ -154,7 +173,8 @@ pub fn write_sub_lyrics(
                                                 writer,
                                                 bg_content,
                                                 true,
-                                                config.format,
+                                                config,
+                                                kind.space_joined(),
                                             )?;
                                             Ok(())
                                         })?;
@@ -175,17 +195,27 @@ fn write_sub_lyric_content(
     writer: &mut Writer<Vec<u8>>,
     content: &SubLyricContent,
     is_bg: bool,
-    format_xml: bool,
+    config: &GeneratorConfig,
+    space_joined: bool,
 ) -> Result<()> {
-    if let Some(words) = &content.words {
-        write_sub_lyric_syllables(writer, words, is_bg, format_xml)?;
-    } else if is_bg {
+    let words = content.words.as_deref();
+
+    // 逐行模式下将逐字内容降级为逐行文本
+    if let Some(words) = words.filter(|_| !config.line_timing) {
+        write_sub_lyric_syllables(writer, words, is_bg, config.format)?;
+        return Ok(());
+    }
+
+    let text = line_text(&content.text, words, space_joined);
+
+    if is_bg {
         writer.write_event(Event::Text(BytesText::new("(")))?;
-        writer.write_event(Event::Text(BytesText::new(&content.text)))?;
+        writer.write_event(Event::Text(BytesText::new(&text)))?;
         writer.write_event(Event::Text(BytesText::new(")")))?;
     } else {
-        writer.write_event(Event::Text(BytesText::new(&content.text)))?;
+        writer.write_event(Event::Text(BytesText::new(&text)))?;
     }
+
     Ok(())
 }
 
@@ -236,33 +266,40 @@ fn write_sub_lyric_syllables(
 /// 判断是否应该将翻译/音译写入到 `<iTunesMetadata> `中
 /// - 逐字翻译：始终写入
 /// - 逐行翻译：仅当 `use_apple_format_rules` 为 true 时写入
-fn should_write_to_head(contents: &[SubLyricContent], use_apple_format_rules: bool) -> bool {
-    use_apple_format_rules || contents.iter().any(|c| c.words.is_some())
+/// - 启用了 `line_timing`：逐字内容会降级为逐行，因此与逐行翻译同等对待
+fn should_write_to_head(contents: &[SubLyricContent], config: &GeneratorConfig) -> bool {
+    config.use_apple_format_rules
+        || (!config.line_timing && contents.iter().any(|c| c.words.is_some()))
 }
 
 /// 判断是否应该将翻译/音译作为内嵌 span 写入到歌词行中
 /// - 存在逐字内容：从不内嵌（无论是否有逐行内容）
 /// - 仅有逐行内容：内嵌
 /// - 启用了 `use_apple_format_rules`：始终不内嵌
-pub fn should_write_inline(contents: &[SubLyricContent], use_apple_format_rules: bool) -> bool {
-    if use_apple_format_rules {
+/// - 启用了 `line_timing`：逐字内容会降级为逐行，因此也可以内嵌
+pub fn should_write_inline(contents: &[SubLyricContent], config: &GeneratorConfig) -> bool {
+    if config.use_apple_format_rules {
         return false;
     }
-    !contents.iter().any(|c| c.words.is_some())
+    config.line_timing || !contents.iter().any(|c| c.words.is_some())
 }
 
 /// 检查给定歌词行数组中是否存在任何需要写入 `<iTunesMetadata>` 的翻译或音译内容
 pub fn has_any_itunes_sub_lyrics(lines: &[LyricLine], config: &GeneratorConfig) -> bool {
     let check = |contents: Option<&[SubLyricContent]>| {
-        contents.is_some_and(|c| should_write_to_head(c, config.use_apple_format_rules))
+        contents.is_some_and(|c| should_write_to_head(c, config))
     };
 
     lines.iter().any(|line| {
         check(line.translations.as_deref())
             || check(line.romanizations.as_deref())
-            || line.background_vocal.as_ref().is_some_and(|bg| {
-                check(bg.translations.as_deref()) || check(bg.romanizations.as_deref())
-            })
+            || line
+                .background_vocal
+                .as_ref()
+                .filter(|_| !config.line_timing)
+                .is_some_and(|bg| {
+                    check(bg.translations.as_deref()) || check(bg.romanizations.as_deref())
+                })
     })
 }
 
@@ -273,12 +310,16 @@ pub fn has_inline_sub_lyrics(line: &LyricLine, config: &GeneratorConfig) -> bool
     }
 
     let check = |contents: Option<&[SubLyricContent]>| {
-        contents.is_some_and(|c| should_write_inline(c, config.use_apple_format_rules))
+        contents.is_some_and(|c| should_write_inline(c, config))
     };
 
     check(line.translations.as_deref())
         || check(line.romanizations.as_deref())
-        || line.background_vocal.as_ref().is_some_and(|bg| {
-            check(bg.translations.as_deref()) || check(bg.romanizations.as_deref())
-        })
+        || line
+            .background_vocal
+            .as_ref()
+            .filter(|_| !config.line_timing)
+            .is_some_and(|bg| {
+                check(bg.translations.as_deref()) || check(bg.romanizations.as_deref())
+            })
 }

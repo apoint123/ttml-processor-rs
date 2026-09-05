@@ -101,12 +101,35 @@ fn main() {
     let config = GeneratorConfig {
         use_apple_format_rules: false,
         format: true,
+        line_timing: false,
     };
 
     let ttml_string = generate_ttml(&result, &config).expect("Failed to generate TTML");
     println!("{ttml_string}");
 }
 ```
+
+### Generator Options
+
+`GeneratorConfig` controls the shape of the generated TTML:
+
+- `use_apple_format_rules` — write per-line translations/transliterations into `<head>` and
+  follow Apple Music's background-vocal conventions. When `false`, per-line
+  translations/transliterations are emitted as inline `x-translation` / `x-roman` spans instead.
+  Word-by-word translations/transliterations always go into `<head>`.
+- `format` — pretty-print the XML instead of emitting it as a single line.
+- `line_timing` — generate line-by-line lyrics: `itunes:timing="Line"`, plain text inside each
+  `<p>` with no per-syllable `<span>`, word-by-word translations/transliterations flattened to
+  line text (their placement still follows `use_apple_format_rules`), and background vocals
+  omitted.
+
+> [!NOTE]
+> `line_timing` is the only way to produce line-by-line TTML. Setting the `timing_mode` metadata
+> to `"Line"` merely writes that value into the `itunes:timing` attribute, the per-syllable
+> `<span>`s are still emitted. Callers usually decide whether to enable `line_timing` either by
+> checking that every main lyric line has at most one syllable, or — when the input comes from a
+> trustworthy source — by reading the parsed `TTMLMetadata.timing_mode` or another
+> high-confidence timing-mode signal.
 
 ## License
 

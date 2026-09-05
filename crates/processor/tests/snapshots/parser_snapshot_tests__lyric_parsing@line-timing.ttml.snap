@@ -1,0 +1,908 @@
+---
+source: crates/processor/tests/parser_snapshot_tests.rs
+expression: json_string
+input_file: crates/processor/tests/fixtures/line-timing.ttml
+---
+{
+	"metadata": {
+		"language": "zh-Hans",
+		"timingMode": "Line",
+		"songwriters": [
+			"刘佳"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"name": "劉佳",
+				"type": "person"
+			}
+		}
+	},
+	"lines": [
+		{
+			"text": "无论我走到哪里 都不能停止想你",
+			"startTime": 32512,
+			"endTime": 37482,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wu lun wo zou dao na li dou bu neng ting zhi xiang ni"
+				}
+			],
+			"id": "L76",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "亲爱的 在我心底 没人比你更美丽",
+			"startTime": 37729,
+			"endTime": 42881,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qin ai de zai wo xin di mei ren bi ni geng mei li"
+				}
+			],
+			"id": "L77",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "轻轻唱 Do-re-mi 为你谱下一段旋律",
+			"startTime": 42891,
+			"endTime": 47848,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qing qing chang Do-re-mi wei ni pu xia yi duan xuan lv"
+				}
+			],
+			"id": "L78",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "让星星解开童话故事中的谜底",
+			"startTime": 48028,
+			"endTime": 52612,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "rang xing xing jie kai tong hua gu shi zhong de mi di"
+				}
+			],
+			"id": "L79",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "Oh, my god",
+			"startTime": 52622,
+			"endTime": 53423,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Oh, my god"
+				}
+			],
+			"id": "L80",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "我已经爱上她 真实的表达",
+			"startTime": 53433,
+			"endTime": 55345,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo yi jing ai shang ta zhen shi de biao da"
+				}
+			],
+			"id": "L81",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "像喝了奇怪药水 中了魔法",
+			"startTime": 55355,
+			"endTime": 57449,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang he le qi guai yao shui zhong le mo fa"
+				}
+			],
+			"id": "L82",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "街上溜溜达达 还是不想回家",
+			"startTime": 57459,
+			"endTime": 60109,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "jie shang liu liu da da hai shi bu xiang hui jia"
+				}
+			],
+			"id": "L83",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "一个人看着电影 嘴里嚼着爆米花 (Oh-oh )",
+			"startTime": 60168,
+			"endTime": 63186,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yi ge ren kan zhe dian ying zui li jue zhe bao mi hua (Oh-oh)"
+				}
+			],
+			"id": "L84",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "每分每秒都想和你通电话",
+			"startTime": 63196,
+			"endTime": 65493,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "mei fen mei miao dou xiang he ni tong dian hua"
+				}
+			],
+			"id": "L85",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "飞到巴黎铁塔下 自在的喝奶咖",
+			"startTime": 65505,
+			"endTime": 68006,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fei dao ba li tie ta xia zi zai de he nai ka"
+				}
+			],
+			"id": "L86",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "去百慕达 看海和沙 跳桑巴",
+			"startTime": 68016,
+			"endTime": 70362,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qu bai mu da kan hai he sha tiao sang ba"
+				}
+			],
+			"id": "L87",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "点燃了火把 我们尽情唱吧 (Come on)",
+			"startTime": 70525,
+			"endTime": 73980,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "dian ran le huo ba wo men jin qing chang ba (Come on)"
+				}
+			],
+			"id": "L88",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "我要爱爱爱的就是你 可爱女孩",
+			"startTime": 72897,
+			"endTime": 78045,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo yao ai ai ai de jiu shi ni ke ai nv hai"
+				}
+			],
+			"id": "L89",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "天上星星我为你摘",
+			"startTime": 78055,
+			"endTime": 81292,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tian shang xing xing wo wei ni zhai"
+				}
+			],
+			"id": "L90",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "所有账单我来买",
+			"startTime": 81302,
+			"endTime": 83156,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "suo you zhang dan wo lai mai"
+				}
+			],
+			"id": "L91",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "跟我来 Yeah-yeah 甩甩帽子 一起歪歪戴",
+			"startTime": 83233,
+			"endTime": 88191,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai"
+				}
+			],
+			"id": "L92",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "全世界我只爱你一个 永不言改",
+			"startTime": 88359,
+			"endTime": 94565,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "quan shi jie wo zhi ai ni yi ge yong bu yan gai"
+				}
+			],
+			"id": "L93",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "看窗外出现彩虹 天空就会放晴",
+			"startTime": 94575,
+			"endTime": 99408,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "kan chuang wai chu xian cai hong tian kong jiu hui fang qing"
+				}
+			],
+			"id": "L94",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "公主和王子剧情害你哭红了眼睛",
+			"startTime": 99588,
+			"endTime": 104886,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "gong zhu he wang zi ju qing hai ni ku hong le yan jing"
+				}
+			],
+			"id": "L95",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "六合彩你总赢 点双人份冰淇淋",
+			"startTime": 104896,
+			"endTime": 109659,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "liu he cai ni zong ying dian shuang ren fen bing qi lin"
+				}
+			],
+			"id": "L96",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "让所有情敌胆怯 比谁拳头更硬 (Come on)",
+			"startTime": 109928,
+			"endTime": 114929,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "rang suo you qing di dan qie bi shei quan tou geng ying (Come on)"
+				}
+			],
+			"id": "L97",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "你向左走 向右走 我陪你左右",
+			"startTime": 114313,
+			"endTime": 117234,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni xiang zuo zou xiang you zou wo pei ni zuo you"
+				}
+			],
+			"id": "L98",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "满脑子都是你 不再想某 某 某",
+			"startTime": 117244,
+			"endTime": 119529,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "man nao zi dou shi ni bu zai xiang mou mou mou"
+				}
+			],
+			"id": "L99",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "交通灯切换红黄绿",
+			"startTime": 119539,
+			"endTime": 121117,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "jiao tong deng qie huan hong huang lv"
+				}
+			],
+			"id": "L100",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "恋爱要遵守的规律",
+			"startTime": 121127,
+			"endTime": 122461,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "lian ai yao zun shou de gui lv"
+				}
+			],
+			"id": "L101",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "别整天痛哭流涕 突然又笑得像喝了罐蜜",
+			"startTime": 122471,
+			"endTime": 124866,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "bie zheng tian tong ku liu ti tu ran you xiao de xiang he le guan mi"
+				}
+			],
+			"id": "L102",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "Baby, baby, honey, you like sweet candy",
+			"startTime": 124470,
+			"endTime": 127217,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Baby, baby, honey, you like sweet candy"
+				}
+			],
+			"id": "L104",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "城堡的交响曲 哼唱着 Do-re-mi-fa-so-la-si",
+			"startTime": 127299,
+			"endTime": 130307,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "cheng bao de jiao xiang qu heng chang zhe Do-re-mi-fa-so-la-si"
+				}
+			],
+			"id": "L105",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "滴滴 随时随地call你",
+			"startTime": 130349,
+			"endTime": 132329,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "di di sui shi sui di call ni"
+				}
+			],
+			"id": "L107",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "Hey, come on, come on 我形影不离",
+			"startTime": 132520,
+			"endTime": 136520,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Hey, come on, come on wo xing ying bu li"
+				}
+			],
+			"id": "L108",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "我要爱爱爱的就是你 可爱女孩",
+			"startTime": 134835,
+			"endTime": 139948,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo yao ai ai ai de jiu shi ni ke ai nv hai"
+				}
+			],
+			"id": "L109",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "天上星星我为你摘",
+			"startTime": 140012,
+			"endTime": 143234,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tian shang xing xing wo wei ni zhai"
+				}
+			],
+			"id": "L110",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "所有账单我来买",
+			"startTime": 143244,
+			"endTime": 145092,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "suo you zhang dan wo lai mai"
+				}
+			],
+			"id": "L111",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "跟我来 Yeah-yeah 甩甩帽子 一起歪歪戴",
+			"startTime": 145176,
+			"endTime": 150108,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai"
+				}
+			],
+			"id": "L112",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "全世界我只爱你一个 永不言改",
+			"startTime": 150259,
+			"endTime": 157289,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "quan shi jie wo zhi ai ni yi ge yong bu yan gai"
+				}
+			],
+			"id": "L113",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "Come on 爱情像龙卷风 我们被卷入其中",
+			"startTime": 175784,
+			"endTime": 178935,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Come on ai qing xiang long juan feng wo men bei juan ru qi zhong"
+				}
+			],
+			"id": "L118",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "就是要爱得天崩地裂 轰轰隆隆",
+			"startTime": 178945,
+			"endTime": 181526,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "jiu shi yao ai de tian beng di lie hong hong long long"
+				}
+			],
+			"id": "L119",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "爱难免会失控 也别装可怜虫",
+			"startTime": 181536,
+			"endTime": 184048,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai nan mian hui shi kong ye bie zhuang ke lian chong"
+				}
+			],
+			"id": "L120",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "陷入迷宫 惊恐 伤痛 难做英雄",
+			"startTime": 184058,
+			"endTime": 186972,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xian ru mi gong jing kong shang tong nan zuo ying xiong"
+				}
+			],
+			"id": "L121",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "喜欢你笑啊 像鲜艳的花",
+			"startTime": 186982,
+			"endTime": 189362,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xi huan ni xiao a xiang xian yan de hua"
+				}
+			],
+			"id": "L122",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "偷偷传的情话 被报成八卦",
+			"startTime": 189565,
+			"endTime": 191949,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tou tou chuan de qing hua bei bao cheng ba gua"
+				}
+			],
+			"id": "L123",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "解开爱的密码 开心我随便刷",
+			"startTime": 191959,
+			"endTime": 194637,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "jie kai ai de mi ma kai xin wo sui bian shua"
+				}
+			],
+			"id": "L124",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "Di-la-di-di-la-di 咒语被施法",
+			"startTime": 194826,
+			"endTime": 197731,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Di-la-di-di-la-di zhou yu bei shi fa"
+				}
+			],
+			"id": "L125",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "Oh 想你 Oh 爱你",
+			"startTime": 196544,
+			"endTime": 201541,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Oh xiang ni Oh ai ni"
+				}
+			],
+			"id": "L126",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "在一起 永远永远不分离",
+			"startTime": 201551,
+			"endTime": 208921,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "zai yi qi yong yuan yong yuan bu fen li"
+				}
+			],
+			"id": "L127",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "我要爱爱爱的就是你 可爱女孩",
+			"startTime": 207045,
+			"endTime": 212073,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo yao ai ai ai de jiu shi ni ke ai nv hai"
+				}
+			],
+			"id": "L128",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "天上星星我为你摘",
+			"startTime": 212249,
+			"endTime": 215453,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tian shang xing xing wo wei ni zhai"
+				}
+			],
+			"id": "L129",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "所有账单我来买",
+			"startTime": 215505,
+			"endTime": 217423,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "suo you zhang dan wo lai mai"
+				}
+			],
+			"id": "L130",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "跟我来 Yeah-yeah 甩甩帽子 一起歪歪戴",
+			"startTime": 217433,
+			"endTime": 222390,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai"
+				}
+			],
+			"id": "L131",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "全世界我只爱你一个 永不言改",
+			"startTime": 222564,
+			"endTime": 229908,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "quan shi jie wo zhi ai ni yi ge yong bu yan gai"
+				}
+			],
+			"id": "L132",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "我要爱爱爱的就是你 可爱女孩",
+			"startTime": 227678,
+			"endTime": 232711,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo yao ai ai ai de jiu shi ni ke ai nv hai"
+				}
+			],
+			"id": "L133",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "天上星星我为你摘",
+			"startTime": 232901,
+			"endTime": 236067,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tian shang xing xing wo wei ni zhai"
+				}
+			],
+			"id": "L134",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "所有账单我来买",
+			"startTime": 236148,
+			"endTime": 238039,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "suo you zhang dan wo lai mai"
+				}
+			],
+			"id": "L135",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "跟我来 Yeah-yeah 甩甩帽子一起歪歪戴",
+			"startTime": 238049,
+			"endTime": 243009,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai"
+				}
+			],
+			"id": "L136",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "全世界我只爱你一个 永不言改",
+			"startTime": 243204,
+			"endTime": 250241,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "quan shi jie wo zhi ai ni yi ge yong bu yan gai"
+				}
+			],
+			"id": "L137",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "Whoa, yeah",
+			"startTime": 250256,
+			"endTime": 253147,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Whoa, yeah"
+				}
+			],
+			"id": "L39671",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Oh, yeah, come on",
+			"startTime": 256091,
+			"endTime": 259243,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Oh, yeah, come on"
+				}
+			],
+			"id": "L139",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Oh 愛的就是你",
+			"startTime": 268189,
+			"endTime": 270663,
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "Oh ai de jiu shi ni"
+				}
+			],
+			"id": "L142",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		}
+	]
+}

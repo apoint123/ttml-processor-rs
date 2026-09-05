@@ -1,0 +1,4491 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: crates/processor/tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
+---
+{
+	"metadata": {
+		"language": "ja",
+		"timingMode": "Line",
+		"songwriters": [
+			"EastNewSound"
+		],
+		"title": [
+			"緋色月下、狂咲ノ絶　-1st Anniversary Remix-",
+			"原曲：U.N.オーエンは彼女なのか？",
+			"Hiirogekka, Kyousyounozetsu -1st Anniversary Remix-",
+			"Hiirogekka, Kyousyounozetsu (1st Anniversary Remix)",
+			"緋色月下、狂咲ノ絶 -1st Anniversary Remix-"
+		],
+		"artist": [
+			"EastNewSound",
+			"ENS",
+			"东方新声"
+		],
+		"album": [
+			"Sacred Factor"
+		],
+		"isrc": [
+			"JPW562101257"
+		],
+		"authorIds": [
+			"68000793"
+		],
+		"authorNames": [
+			"ranhengzhang"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type": "person"
+			},
+			"v2": {
+				"id": "v2",
+				"type": "other"
+			}
+		},
+		"platformIds": {
+			"ncmMusicId": [
+				"722013"
+			],
+			"spotifyId": [
+				"54BCBHVE768LRKC8W9b8tb"
+			],
+			"appleMusicId": [
+				"1570066003"
+			]
+		},
+		"rawProperties": {
+			"Composer": [
+				"ZUN"
+			]
+		}
+	},
+	"lines": [
+		{
+			"text": "私の中の",
+			"startTime": 1600,
+			"endTime": 2540,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Inside of me"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我身体中的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi no na ka no"
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "私の中の",
+			"startTime": 2400,
+			"endTime": 3280,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Inside of me"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我身体中的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi no na ka no"
+				}
+			],
+			"id": "L2",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "私の中の",
+			"startTime": 3200,
+			"endTime": 4000,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Inside of me"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我身体中的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi no na ka no"
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "私が",
+			"startTime": 4010,
+			"endTime": 4470,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Myself"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi ga"
+				}
+			],
+			"id": "L4",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "ひとつの",
+			"startTime": 4820,
+			"endTime": 5320,
+			"translations": [
+				{
+					"language": "en",
+					"text": "There’s one to describe it"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "要把这一个"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "hi to tsu no"
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "ひとつの",
+			"startTime": 5140,
+			"endTime": 5790,
+			"translations": [
+				{
+					"language": "en",
+					"text": "There’s one to describe it"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "要把这一个"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "hi to tsu no"
+				}
+			],
+			"id": "L6",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "単語を",
+			"startTime": 5580,
+			"endTime": 6190,
+			"translations": [
+				{
+					"language": "en",
+					"text": "One word"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "单词"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "tan go o"
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "何度も",
+			"startTime": 6410,
+			"endTime": 6980,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L8",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "何度も",
+			"startTime": 6780,
+			"endTime": 7200,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "何度も",
+			"startTime": 7200,
+			"endTime": 7780,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L10",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "何度も",
+			"startTime": 8000,
+			"endTime": 8490,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L11",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "無尽蔵に",
+			"startTime": 8200,
+			"endTime": 8990,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Ceaselessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "无休止地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "mu jin zo u ni"
+				}
+			],
+			"id": "L12",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 8980,
+			"endTime": 9830,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L13",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返す",
+			"startTime": 9590,
+			"endTime": 10370,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e su"
+				}
+			],
+			"id": "L14",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 10020,
+			"endTime": 10720,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L15",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 10430,
+			"endTime": 11180,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L16",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 11110,
+			"endTime": 11870,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L17",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 11630,
+			"endTime": 12290,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L18",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 11990,
+			"endTime": 12760,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L19",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 12760,
+			"endTime": 13600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L20",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "歌う",
+			"startTime": 13760,
+			"endTime": 14250,
+			"translations": [
+				{
+					"language": "en",
+					"text": "The screaming"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "歌唱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "u ta u"
+				}
+			],
+			"id": "L21",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "掴む左手が甘くて",
+			"startTime": 15300,
+			"endTime": 16880,
+			"translations": [
+				{
+					"language": "en",
+					"text": "The left arm I’ve caught with was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "紧握的左手腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "tsu ka mu hi da ri te ga a ma ku te"
+				}
+			],
+			"id": "L22",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "振るう右手が甘くて",
+			"startTime": 16770,
+			"endTime": 35040,
+			"translations": [
+				{
+					"language": "en",
+					"text": "The right arm I’ve swung with was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "挥舞的右手腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ru u mi gi te ga a ma ku te"
+				}
+			],
+			"id": "L23",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "甘くて",
+			"startTime": 18360,
+			"endTime": 18990,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma ku te"
+				}
+			],
+			"id": "L24",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "甘くて",
+			"startTime": 18760,
+			"endTime": 19350,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma ku te"
+				}
+			],
+			"id": "L25",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "笑う口が裂けても",
+			"startTime": 19260,
+			"endTime": 20470,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Even if my mouth with a smile gets torn"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "笑著的嘴巴裂著"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ra u ku chi ga sa ke te mo"
+				}
+			],
+			"id": "L26",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "それがまた楽しくて",
+			"startTime": 20060,
+			"endTime": 21520,
+			"translations": [
+				{
+					"language": "en",
+					"text": "That’s just fun, so fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "即使如此依然很快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so re ga ma ta ta no shi ku te"
+				}
+			],
+			"id": "L27",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 21480,
+			"endTime": 22160,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L28",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "脳髄を焼くように",
+			"startTime": 21730,
+			"endTime": 22980,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Like burning a brain"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "脑髓在燃烧"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "no u zu i o ya ku yo u ni"
+				}
+			],
+			"id": "L29",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 22670,
+			"endTime": 23470,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L30",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 23140,
+			"endTime": 23920,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L31",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "震えて",
+			"startTime": 23680,
+			"endTime": 24320,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’m shaking"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "震动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ru e te"
+				}
+			],
+			"id": "L32",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "震えて",
+			"startTime": 24080,
+			"endTime": 24680,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’m shaking"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "震动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ru e te"
+				}
+			],
+			"id": "L33",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 24680,
+			"endTime": 25510,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L34",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 25580,
+			"endTime": 26470,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L35",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "赤い",
+			"startTime": 27420,
+			"endTime": 27790,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L36",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 27790,
+			"endTime": 28190,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L37",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 28220,
+			"endTime": 28610,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L38",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 28610,
+			"endTime": 28980,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L39",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 29010,
+			"endTime": 29440,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L40",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 29430,
+			"endTime": 29840,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L41",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 29810,
+			"endTime": 30370,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L42",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 30190,
+			"endTime": 30650,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L43",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 30620,
+			"endTime": 31130,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L44",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 31000,
+			"endTime": 31410,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L45",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 31380,
+			"endTime": 31940,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L46",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 31790,
+			"endTime": 32290,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L47",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 32220,
+			"endTime": 32640,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L48",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 32650,
+			"endTime": 33000,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L49",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "メイデン",
+			"startTime": 33000,
+			"endTime": 33480,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Young girl"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "天真的少女"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "me i de n"
+				}
+			],
+			"id": "L50",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "私とあなたが",
+			"startTime": 33040,
+			"endTime": 33920,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You and I"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我和你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi to a na ta ga"
+				}
+			],
+			"id": "L51",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 33800,
+			"endTime": 34210,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L52",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 34230,
+			"endTime": 34640,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L53",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 34630,
+			"endTime": 35060,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L54",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 35030,
+			"endTime": 35450,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L55",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 35430,
+			"endTime": 35840,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L56",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 35860,
+			"endTime": 36330,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L57",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 36250,
+			"endTime": 36650,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L58",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 36620,
+			"endTime": 37060,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L59",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "甘い",
+			"startTime": 37020,
+			"endTime": 37440,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L60",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 37390,
+			"endTime": 37900,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L61",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 37790,
+			"endTime": 38220,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L62",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 38220,
+			"endTime": 38720,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L63",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 38600,
+			"endTime": 39160,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L64",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "赤い",
+			"startTime": 39050,
+			"endTime": 39550,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L65",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "あなた 甘い",
+			"startTime": 39690,
+			"endTime": 41100,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You... So sweet!"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "你 好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a na ta a ma i"
+				}
+			],
+			"id": "L66",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "甘い",
+			"startTime": 42100,
+			"endTime": 42790,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L67",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "赤い",
+			"startTime": 43720,
+			"endTime": 44390,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L68",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "赤い",
+			"startTime": 45450,
+			"endTime": 46270,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L69",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "殺してあげる",
+			"startTime": 51210,
+			"endTime": 52170,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’ll kill you!"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "让我杀了你！"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko ro shi te a ge ru"
+				}
+			],
+			"id": "L70",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "深く朱き潤む瞳 甘い色のスカート揺らす",
+			"startTime": 78350,
+			"endTime": 84770,
+			"translations": [
+				{
+					"language": "en",
+					"text": "My dewy eyes are deep crimson, I ruffle my sweetly colored skirt"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "深红的温润眼眸 艳色的裙尾摇摆"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ka ku a ka ki u ru mu hi to mi a ma i i ro no su ka a to yu ra su"
+				}
+			],
+			"id": "L71",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "幼き頰 朱を滲ませ 疼きに足を崩される",
+			"startTime": 84780,
+			"endTime": 91150,
+			"translations": [
+				{
+					"language": "en",
+					"text": "My childish cheeks are flushed crimson, my legs collapse in tingly pain"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "幼小的脸颊浸染朱红 疼痛撕裂了双腿"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "o sa na ki ho o shu o ni ji ma se u zu ki ni a shi o ku zu sa re ru"
+				}
+			],
+			"id": "L72",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "甘い幻視に支配され 奏でては咲く五指の調べ",
+			"startTime": 91160,
+			"endTime": 97560,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You’re controlled by these sweet hallucinations, I play a tune that blooms from my five fingers"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "被甜美的幻视支配 伸展五指弹奏的旋律"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i gen shi ni shi ha i sa re ka na de te wa sa ku go shi no shi ra be"
+				}
+			],
+			"id": "L73",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "赤い紅茶 滴る音弄んでは 深く抉る",
+			"startTime": 97570,
+			"endTime": 103890,
+			"translations": [
+				{
+					"language": "en",
+					"text": "In the sound of the red black tea dripping, I gouge you deep when I toy with you"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "赤色红茶滴下的声音 是我向深处剜心"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i ko u cha shi ta ta ru o to mo te a so n de wa fu ka ku e gu ru"
+				}
+			],
+			"id": "L74",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "「この想い届かないのかな？」",
+			"startTime": 103660,
+			"endTime": 107970,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Will my thoughts not reach you?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“这份思念无法传达吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko no o mo i to do ka na i no ka na"
+				}
+			],
+			"id": "L75",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 6
+		},
+		{
+			"text": "「その瞳には誰が映るのかな？」",
+			"startTime": 109940,
+			"endTime": 114320,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Who is reflected in your eyes?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“那双眼眸映出的是谁？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no hi to mi ni wa da re ga u tsu ru no ka na"
+				}
+			],
+			"id": "L76",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 6
+		},
+		{
+			"text": "「心壊れているのかな？」",
+			"startTime": 116470,
+			"endTime": 120350,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Is my heart broken?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“心已毁坏了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko ko ro ko wa re te i ru no ka na"
+				}
+			],
+			"id": "L77",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 6
+		},
+		{
+			"text": "「壊れたなら戻らないのかな？」",
+			"startTime": 119680,
+			"endTime": 123600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"It won’t come back if it breaks?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“毁坏后无法恢复了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko wa re ta na ra mo do ra na i no ka na"
+				}
+			],
+			"id": "L78",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 6
+		},
+		{
+			"text": "「刻む傷は癒えないのかな？」",
+			"startTime": 122840,
+			"endTime": 126820,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Will deeply cut wounds never heal?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“受的伤害无法痊愈了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ki za mu ki zu wa i e na i no ka na"
+				}
+			],
+			"id": "L79",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 6
+		},
+		{
+			"text": "「そうして時を刻むの？」",
+			"startTime": 126110,
+			"endTime": 129410,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Will you tick away the time in that way?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“这样做能刻画下时间吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so u shi te to ki o ki za mu no"
+				}
+			],
+			"id": "L80",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 6
+		},
+		{
+			"text": "あなたのその全てが欲しくて 欲しくて震えてる",
+			"startTime": 129140,
+			"endTime": 135600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "All of you, I want it, I want it so much I’m shaking"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我想要你的全部 想到浑身颤抖"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a na ta no so no su be te ga ho shi ku te ho shi ku te fu ru e te ru"
+				}
+			],
+			"id": "L81",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "甘美なその鼓動を 穿ち尽くして止めようか",
+			"startTime": 135710,
+			"endTime": 142050,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Shall I completely pierce through your sweet pulse and stop it?"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "就让那甜美的心跳 竭尽气力就此停止吧"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "kam bi na so no ko do u o u ga chi tsu ku shi te to me yo u ka"
+				}
+			],
+			"id": "L82",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "その肌を穢し尽し 辱めるのは私だけ",
+			"startTime": 142060,
+			"endTime": 148420,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It’s only me who will completely soil your skin and humiliate you"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "尽情弄脏那片肌肤 污辱你的只有我"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no ha da o ke ga shi tsu ku shi ha zu ka shi me ru no wa wa ta shi da ke"
+				}
+			],
+			"id": "L83",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "愛で撫でて揺さ振らせて この衝動を殺してよ",
+			"startTime": 148530,
+			"endTime": 154940,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’m shaken when you adore me and pat me, so kill my urges"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "快点平息这份爱抚 和操弄你的冲动吧"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "me de na de te yu sa fu ra se te ko no sho u do u o ko ro shi te yo"
+				}
+			],
+			"id": "L84",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "喉を枯らし叫ウ音色 旋律は朱の虹となり",
+			"startTime": 155130,
+			"endTime": 161550,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You make your throat hoarse screaming a timbre, the melody turns into a crimson rainbow"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "声嘶力竭歌唱的音色 旋律化作朱之虹"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "no do o ka ra shi u ta u n e i ro sen ri tsu wa shu no ni ji to na ri"
+				}
+			],
+			"id": "L85",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "君屠る此ノ色彩 甘く深き色を放つ",
+			"startTime": 161550,
+			"endTime": 167890,
+			"translations": [
+				{
+					"language": "en",
+					"text": "This hue from slaughtering you, what a sweet, deep color it releases!"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "这一抹屠杀你的色彩 又甜又深的颜色"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ki mi ho fu ru ko no shi ki sa i a ma ku fu ka ki i ro o ha na tsu"
+				}
+			],
+			"id": "L86",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "喉を枯らし叫ウ音色 赤キ雨に彩られたら",
+			"startTime": 167930,
+			"endTime": 174310,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You make your throat hoarse screaming a timbre, if it’s colored by the red rain"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "声嘶力竭歌唱的音色 赤色的雨四处飞溅"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "no do o ka ra shi u ta u ne i ro a ka ki a me ni i ro do ra re ta ra"
+				}
+			],
+			"id": "L87",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "綺麗な舞台の出来上がり 私独り其処で踊る",
+			"startTime": 174310,
+			"endTime": 180700,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It’ll be the completion of the beautiful stage, and I’ll dance alone there"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "筑成华丽的舞台 我在上面独自起舞"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ki re i na bu ta i no de ki a ga ri wa ta shi hi to ri so ko de o do ru"
+				}
+			],
+			"id": "L88",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "「その願い潰えたのかな？」",
+			"startTime": 180410,
+			"endTime": 184760,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Did your wishes get ruined?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“希望破灭了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no ne ga i tsu i e ta no ka na"
+				}
+			],
+			"id": "L89",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "「その想い断たれたのかな？」",
+			"startTime": 186710,
+			"endTime": 191200,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Have those thoughts been suppressed?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“思念断绝了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no o mo i ta ta re ta no ka na"
+				}
+			],
+			"id": "L90",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "「その希望絶えたのかな？」",
+			"startTime": 193190,
+			"endTime": 197280,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Has that hope been severed?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“希望磨灭了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no ki bo u ta e ta no ka na"
+				}
+			],
+			"id": "L91",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "「その瞳焼かれたのかな？」",
+			"startTime": 196440,
+			"endTime": 200480,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Have those pupils been set aflame?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“目光燃烧了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no hi to mi ya ka re ta no ka na"
+				}
+			],
+			"id": "L92",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "「その肌は穢されたかな？」",
+			"startTime": 199600,
+			"endTime": 203580,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"Has that skin been defiled?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“肌肤污秽了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no ha da wa ke ga sa re ta ka na"
+				}
+			],
+			"id": "L93",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "「そして誰もいなくなる？」",
+			"startTime": 202720,
+			"endTime": 205780,
+			"translations": [
+				{
+					"language": "en",
+					"text": "\"And then there were none?\""
+				},
+				{
+					"language": "zh-Hans",
+					"text": "“大家都离开我了吗？”"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so shi te da re mo i na ku na ru"
+				}
+			],
+			"id": "L94",
+			"agentId": "v2",
+			"songPart": "PreChorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "其ノ生を引き裂かれて 赤銀を吐き消し飛べ",
+			"startTime": 205810,
+			"endTime": 212410,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Your life is torn apart, you spit up something red and silver and they spray away"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "就算把这具身体撕裂 只有赤银烟雾扩散"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no se i o hi ki sa ka re te se ki gin o ha ki ke shi to be"
+				}
+			],
+			"id": "L95",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 10
+		},
+		{
+			"text": "其ノ生の華散らして 極彩に咲き我が糧に",
+			"startTime": 212510,
+			"endTime": 218890,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I scatter the flower of your life, blooming in rich colors, and turn you into my food"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "让那具身体四分五裂 绽放鲜艳的色彩即我的粮食"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no se i no ha na chi ra shi te go ku sa i ni sa ki wa ga ka te ni"
+				}
+			],
+			"id": "L96",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 10
+		},
+		{
+			"text": "其ノ生がお前ならば 喰らい尽くして血肉にす",
+			"startTime": 218880,
+			"endTime": 225110,
+			"translations": [
+				{
+					"language": "en",
+					"text": "If your life is you, then I’ll eat you up into flesh and blood"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "如果那具身体就是你 我会将肉都吃得干干净净"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no se i ga o ma e na ra ba ku ra i tsu ku shi te chi ni ku ni su"
+				}
+			],
+			"id": "L97",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 10
+		},
+		{
+			"text": "其ノ四肢を贄と捧げ 我が足元の死屍となれ",
+			"startTime": 225320,
+			"endTime": 232330,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’ll offer up your limbs as sacrifice- Become the corpse at my feet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "把四肢作为供物 让你成为我脚边的死尸"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no shi shi o ni e to sa sa ge wa ga a shi mo to no shi shi to na re"
+				}
+			],
+			"id": "L98",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 10
+		},
+		{
+			"text": "私の中の",
+			"startTime": 231950,
+			"endTime": 235440,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Inside of me"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我身体中的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi no na ka no"
+				}
+			],
+			"id": "L99",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "私の中の",
+			"startTime": 232810,
+			"endTime": 233630,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Inside of me"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我身体中的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi no na ka no"
+				}
+			],
+			"id": "L100",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "私の中の",
+			"startTime": 233610,
+			"endTime": 234400,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Inside of me"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我身体中的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi no na ka no"
+				}
+			],
+			"id": "L101",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "私が",
+			"startTime": 234400,
+			"endTime": 234890,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Myself"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi ga"
+				}
+			],
+			"id": "L102",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "ひとつの",
+			"startTime": 235220,
+			"endTime": 235720,
+			"translations": [
+				{
+					"language": "en",
+					"text": "There’s one to describe it"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "要把这一个"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "hi to tsu no"
+				}
+			],
+			"id": "L103",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "ひとつの",
+			"startTime": 235540,
+			"endTime": 236160,
+			"translations": [
+				{
+					"language": "en",
+					"text": "There’s one to describe it"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "要把这一个"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "hi to tsu no"
+				}
+			],
+			"id": "L104",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "単語を",
+			"startTime": 235990,
+			"endTime": 236660,
+			"translations": [
+				{
+					"language": "en",
+					"text": "One word"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "单词"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "tan go o"
+				}
+			],
+			"id": "L105",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "何度も",
+			"startTime": 236810,
+			"endTime": 237370,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L106",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "何度も",
+			"startTime": 237180,
+			"endTime": 237800,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L107",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "何度も",
+			"startTime": 237610,
+			"endTime": 238170,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L108",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "何度も",
+			"startTime": 238360,
+			"endTime": 241600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Endlessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "一次次地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "nan do mo"
+				}
+			],
+			"id": "L109",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "無尽蔵に",
+			"startTime": 238620,
+			"endTime": 239480,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Ceaselessly"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "无休止地"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "mu jin zo u ni"
+				}
+			],
+			"id": "L110",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 239380,
+			"endTime": 240140,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L111",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返す",
+			"startTime": 240010,
+			"endTime": 240730,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e su"
+				}
+			],
+			"id": "L112",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 240420,
+			"endTime": 241110,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L113",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 240830,
+			"endTime": 241610,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L114",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 241510,
+			"endTime": 242270,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L115",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 242040,
+			"endTime": 242750,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L116",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 242370,
+			"endTime": 243150,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L117",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "繰り返し",
+			"startTime": 243160,
+			"endTime": 244000,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It repeats"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "重复"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ku ri ka e shi"
+				}
+			],
+			"id": "L118",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "歌う",
+			"startTime": 244150,
+			"endTime": 244650,
+			"translations": [
+				{
+					"language": "en",
+					"text": "The screaming"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "歌唱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "u ta u"
+				}
+			],
+			"id": "L119",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "掴む左手が甘くて",
+			"startTime": 244740,
+			"endTime": 248010,
+			"translations": [
+				{
+					"language": "en",
+					"text": "The left arm I’ve caught with was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "紧握的左手腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "tsu ka mu hi da ri te ga a ma ku te"
+				}
+			],
+			"id": "L120",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "振るう右手が甘くて",
+			"startTime": 247180,
+			"endTime": 248480,
+			"translations": [
+				{
+					"language": "en",
+					"text": "The right arm I’ve swung with was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "挥舞的右手腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ru u mi gi te ga a ma ku te"
+				}
+			],
+			"id": "L121",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "甘くて",
+			"startTime": 248760,
+			"endTime": 249380,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma ku te"
+				}
+			],
+			"id": "L122",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "甘くて",
+			"startTime": 249150,
+			"endTime": 249700,
+			"translations": [
+				{
+					"language": "en",
+					"text": "It was sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "腥甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma ku te"
+				}
+			],
+			"id": "L123",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "笑う口が裂けても",
+			"startTime": 249660,
+			"endTime": 250880,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Even if my mouth with a smile gets torn"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "笑著的嘴巴裂著"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ra u ku chi ga sa ke te mo"
+				}
+			],
+			"id": "L124",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "それがまた楽しくて",
+			"startTime": 250450,
+			"endTime": 254250,
+			"translations": [
+				{
+					"language": "en",
+					"text": "That’s just fun, so fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "即使如此依然很快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so re ga ma ta ta no shi ku te"
+				}
+			],
+			"id": "L125",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 251890,
+			"endTime": 252630,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L126",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "脳髄を焼くように",
+			"startTime": 252130,
+			"endTime": 253360,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Like burning a brain"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "脑髓在燃烧"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "no u zu i o ya ku yo u ni"
+				}
+			],
+			"id": "L127",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 253080,
+			"endTime": 253870,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L128",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 253550,
+			"endTime": 254320,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L129",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "震えて",
+			"startTime": 254110,
+			"endTime": 257400,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’m shaking"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "震动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ru e te"
+				}
+			],
+			"id": "L130",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "震えて",
+			"startTime": 254490,
+			"endTime": 255120,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’m shaking"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "震动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "fu ru e te"
+				}
+			],
+			"id": "L131",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 255090,
+			"endTime": 255900,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L132",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "楽しくて",
+			"startTime": 255980,
+			"endTime": 256850,
+			"translations": [
+				{
+					"language": "en",
+					"text": "So fun"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好快乐"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ta no shi ku te"
+				}
+			],
+			"id": "L133",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "この気持ち気付いて どうして気付いてくれないの",
+			"startTime": 257510,
+			"endTime": 263640,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Notice my feelings. Why won’t you notice my feelings?"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "希望你察觉我的心情 为什麼没有察觉到呢？"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko no ki mo chi ki zu i te do u shi te ki zu i te ku re na i no"
+				}
+			],
+			"id": "L134",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 13
+		},
+		{
+			"text": "狂気満ちて行くわ どうすれば止まるの",
+			"startTime": 263940,
+			"endTime": 269950,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’m overflowing with insanity, how can I stop?"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "渐渐地被陷入疯狂 无论怎样也无法抑止"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "kyo u ki mi chi te i ku wa do u su re ba to ma ru no"
+				}
+			],
+			"id": "L135",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 13
+		},
+		{
+			"text": "この気持ち壊れて どこへ辿り着くのでしょうか",
+			"startTime": 270350,
+			"endTime": 276480,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Where will I make my way to when my feelings break down?"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "心情都被毁坏 接著该如何是好"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko no ki mo chi ko wa re te do ko e ta do ri tsu ku no de sho u ka"
+				}
+			],
+			"id": "L136",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 13
+		},
+		{
+			"text": "愛溢れて行くわ 止めることはできない…",
+			"startTime": 276790,
+			"endTime": 283300,
+			"translations": [
+				{
+					"language": "en",
+					"text": "My love is overflowing, I can’t stop it..."
+				},
+				{
+					"language": "zh-Hans",
+					"text": "爱就要满溢出来 无法停止……"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a i a fu re te i ku wa to me ru ko to wa de ki na i"
+				}
+			],
+			"id": "L137",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 13
+		},
+		{
+			"text": "赤い",
+			"startTime": 283050,
+			"endTime": 283470,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L138",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 283370,
+			"endTime": 283830,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L139",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 283790,
+			"endTime": 284210,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L140",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 284220,
+			"endTime": 284700,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L141",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 284600,
+			"endTime": 285000,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L142",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 285020,
+			"endTime": 285430,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L143",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 285430,
+			"endTime": 285850,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L144",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 285800,
+			"endTime": 286290,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L145",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 286190,
+			"endTime": 286640,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L146",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 286620,
+			"endTime": 287090,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L147",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 286990,
+			"endTime": 287420,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L148",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 287390,
+			"endTime": 287930,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L149",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 287790,
+			"endTime": 288240,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L150",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 288230,
+			"endTime": 288630,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L151",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 288640,
+			"endTime": 289000,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L152",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "メイデン",
+			"startTime": 289000,
+			"endTime": 289600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Young girl"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "天真的少女"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "me i de n"
+				}
+			],
+			"id": "L153",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "私とあなたと",
+			"startTime": 289040,
+			"endTime": 289930,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You and I"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "我和你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "wa ta shi to a na ta to"
+				}
+			],
+			"id": "L154",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 289800,
+			"endTime": 290210,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L155",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 290230,
+			"endTime": 290720,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L156",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 290620,
+			"endTime": 291060,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L157",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 291030,
+			"endTime": 291530,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L158",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 291430,
+			"endTime": 291850,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L159",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 291860,
+			"endTime": 292330,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L160",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 292250,
+			"endTime": 292690,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L161",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 292610,
+			"endTime": 293130,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L162",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "甘い",
+			"startTime": 293010,
+			"endTime": 293460,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L163",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 293430,
+			"endTime": 293890,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L164",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 293810,
+			"endTime": 294230,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L165",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 294230,
+			"endTime": 294630,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L166",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 294600,
+			"endTime": 295140,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L167",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "赤い",
+			"startTime": 295050,
+			"endTime": 295540,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L168",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 14
+		},
+		{
+			"text": "あなた 甘い",
+			"startTime": 295690,
+			"endTime": 297100,
+			"translations": [
+				{
+					"language": "en",
+					"text": "You... So sweet!"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "你 好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a na ta a ma i"
+				}
+			],
+			"id": "L169",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 15
+		},
+		{
+			"text": "甘い",
+			"startTime": 298100,
+			"endTime": 298720,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Sweet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好甜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ma i"
+				}
+			],
+			"id": "L170",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 15
+		},
+		{
+			"text": "赤い",
+			"startTime": 299710,
+			"endTime": 300410,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L171",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 15
+		},
+		{
+			"text": "赤い",
+			"startTime": 301460,
+			"endTime": 302410,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Red"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "好红"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "a ka i"
+				}
+			],
+			"id": "L172",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 15
+		},
+		{
+			"text": "殺してあげる",
+			"startTime": 307250,
+			"endTime": 308200,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’ll kill you!"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "让我杀了你！"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "ko ro shi te a ge ru"
+				}
+			],
+			"id": "L173",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 15
+		},
+		{
+			"text": "其ノ生を引き裂かれて 赤銀を吐き消し飛べ",
+			"startTime": 308210,
+			"endTime": 314800,
+			"translations": [
+				{
+					"language": "en",
+					"text": "Your life is torn apart, you spit up something red and silver and they spray away"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "就算把这具身体撕裂 只有赤银烟雾扩散"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no se i o hi ki sa ka re te se ki gin o ha ki ke shi to be"
+				}
+			],
+			"id": "L174",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 16
+		},
+		{
+			"text": "其ノ生の華散らして 極彩に咲き我が糧に",
+			"startTime": 314910,
+			"endTime": 321090,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I scatter the flower of your life, blooming in rich colors, and turn you into my food"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "让那具身体四分五裂 绽放鲜艳的色彩即我的粮食"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no se i no ha na chi ra shi te go ku se i ni sa ki wa ga ka te ni"
+				}
+			],
+			"id": "L175",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 16
+		},
+		{
+			"text": "其ノ生がお前ならば 喰らい尽くして血肉にす",
+			"startTime": 321290,
+			"endTime": 327600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "If your life is you, then I’ll eat you up into flesh and blood"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "如果那具身体就是你 我会将肉都吃得干干净净"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no se i ga o ma e na ra ba ku ra i tsu ku shi te chi ni ku ni su"
+				}
+			],
+			"id": "L176",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 16
+		},
+		{
+			"text": "其ノ四肢を贄と捧げ 我が足元の死屍となれ",
+			"startTime": 327700,
+			"endTime": 334600,
+			"translations": [
+				{
+					"language": "en",
+					"text": "I’ll offer up your limbs as sacrifice- Become the corpse at my feet"
+				},
+				{
+					"language": "zh-Hans",
+					"text": "把四肢作为供物 让你成为我脚边的死尸"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ja-Latn",
+					"text": "so no shi shi o ni e to sa sa ge wa ga a shi mo to no shi shi to na re"
+				}
+			],
+			"id": "L177",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 16
+		}
+	]
+}

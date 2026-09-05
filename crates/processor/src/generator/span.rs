@@ -17,7 +17,10 @@ use crate::{
         GeneratorConfig,
         ext::ElementWriterExt as _,
         sub_lyric::should_write_inline,
-        utils::format_timestamp,
+        utils::{
+            format_timestamp,
+            line_text,
+        },
     },
     model::{
         BackgroundVocal,
@@ -35,41 +38,44 @@ pub fn write_line_spans(
     should_write_inline_subline: bool,
     config: &GeneratorConfig,
 ) -> Result<()> {
+    // 逐行模式下不输出背景人声
+    let background_vocal = line
+        .background_vocal
+        .as_ref()
+        .filter(|_| !config.line_timing);
+
     // Apple Music 特有，背景人声先开始就先在主歌词之前写入
     let should_write_bg_first = config.use_apple_format_rules
-        && line
-            .background_vocal
-            .as_ref()
+        && background_vocal
             .zip(line.words.as_ref().and_then(|w| w.first()))
             .is_some_and(|(bg, first_word)| bg.start_time < first_word.start_time);
 
-    if should_write_bg_first && let Some(bg) = &line.background_vocal {
+    if should_write_bg_first && let Some(bg) = background_vocal {
         write_bg_vocal(writer, bg, should_write_inline_subline, config)?;
     }
 
     // 写入主歌词音节或逐行文本
-    match &line.words {
-        Some(words) if !words.is_empty() => {
-            for syllable in words {
-                let trailing_space = syllable.ends_with_space.unwrap_or_default();
-                // 格式化输出时将尾随空格写入 span 内容以便保留空格
-                //
-                // 写在后面的话，格式化输出时 quick-xml 也会把一堆带空格的
-                // span 写在一行以保留这些空格，不美观
-                let space_in_span = config.format && trailing_space && syllable.ruby.is_none();
-                let suffix = if space_in_span { Some(" ") } else { None };
-                write_syllable(writer, syllable, None, suffix)?;
+    let words = line.words.as_deref().filter(|w| !w.is_empty());
+    if let Some(words) = words.filter(|_| !config.line_timing) {
+        for syllable in words {
+            let trailing_space = syllable.ends_with_space.unwrap_or_default();
+            // 格式化输出时将尾随空格写入 span 内容以便保留空格
+            //
+            // 写在后面的话，格式化输出时 quick-xml 也会把一堆带空格的
+            // span 写在一行以保留这些空格，不美观
+            let space_in_span = config.format && trailing_space && syllable.ruby.is_none();
+            let suffix = if space_in_span { Some(" ") } else { None };
+            write_syllable(writer, syllable, None, suffix)?;
 
-                if trailing_space && !space_in_span {
-                    writer.write_event(Event::Text(BytesText::new(" ")))?;
-                }
+            if trailing_space && !space_in_span {
+                writer.write_event(Event::Text(BytesText::new(" ")))?;
             }
         }
-        _ => {
-            // 逐行歌词，直接将 text 作为纯文本写入
-            if !line.text.is_empty() {
-                writer.write_event(Event::Text(BytesText::new(&line.text)))?;
-            }
+    } else {
+        // 逐行歌词，直接将整行文本作为纯文本写入
+        let text = line_text(&line.text, words, false);
+        if !text.is_empty() {
+            writer.write_event(Event::Text(BytesText::new(&text)))?;
         }
     }
 
@@ -83,7 +89,7 @@ pub fn write_line_spans(
         )?;
     }
 
-    if !should_write_bg_first && let Some(bg) = &line.background_vocal {
+    if !should_write_bg_first && let Some(bg) = background_vocal {
         write_bg_vocal(writer, bg, should_write_inline_subline, config)?;
     }
 
@@ -290,23 +296,26 @@ fn write_inline_subline(
         return Ok(());
     }
 
-    let mut write_items = |items: Option<&[SubLyricContent]>, role: &str| -> Result<()> {
-        if let Some(contents) = items
-            && should_write_inline(contents, config.use_apple_format_rules)
-        {
-            for item in contents {
-                writer
-                    .create_element(tags::SPAN)
-                    .with_attribute((attrs::TTM_ROLE, role))
-                    .with_attribute_opt((attrs::XML_LANG, item.language.as_deref()))
-                    .write_text_content(BytesText::new(&item.text))?;
+    let mut write_items =
+        |items: Option<&[SubLyricContent]>, role: &str, space_joined: bool| -> Result<()> {
+            if let Some(contents) = items
+                && should_write_inline(contents, config)
+            {
+                for item in contents {
+                    // 逐行模式下逐字内容也降级为逐行文本
+                    let text = line_text(&item.text, item.words.as_deref(), space_joined);
+                    writer
+                        .create_element(tags::SPAN)
+                        .with_attribute((attrs::TTM_ROLE, role))
+                        .with_attribute_opt((attrs::XML_LANG, item.language.as_deref()))
+                        .write_text_content(BytesText::new(&text))?;
+                }
             }
-        }
-        Ok(())
-    };
+            Ok(())
+        };
 
-    write_items(translations, vals::ROLE_TRANS)?;
-    write_items(romanizations, vals::ROLE_ROM)?;
+    write_items(translations, vals::ROLE_TRANS, false)?;
+    write_items(romanizations, vals::ROLE_ROM, true)?;
 
     Ok(())
 }

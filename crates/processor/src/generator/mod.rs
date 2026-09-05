@@ -40,6 +40,17 @@ pub struct GeneratorConfig {
 
     /// 是否输出格式化后的 XML 而不是压缩成一行的
     pub format: bool,
+
+    /// 是否按逐行格式生成歌词
+    ///
+    /// - `true`:
+    ///    - `<tt>` 上写入 `itunes:timing="Line"`，忽略 `metadata.timing_mode`
+    ///    - `<p>` 内只写入整行纯文本，不写入逐字 `<span>`
+    ///    - 逐字翻译/音译降级为逐行文本，写入位置仍然遵循 `use_apple_format_rules`
+    ///    - 不写入背景人声，其翻译/音译也一并不写入
+    /// - `false`:
+    ///    - 按逐字格式生成
+    pub line_timing: bool,
 }
 
 /// 将解析后的 TTML 结构体生成为 TTML 字符串
@@ -55,6 +66,13 @@ pub fn generate_ttml(result: &TTMLResult, config: &GeneratorConfig) -> Result<St
         Writer::new(buffer)
     };
 
+    // 逐行模式下强制写入 Line，忽略元数据里记录的计时模式
+    let timing_mode = if config.line_timing {
+        Some(vals::TIMING_LINE)
+    } else {
+        result.metadata.timing_mode.as_deref()
+    };
+
     // <tt>
     writer
         .create_element(tags::TT)
@@ -65,7 +83,7 @@ pub fn generate_ttml(result: &TTMLResult, config: &GeneratorConfig) -> Result<St
             (attrs::XMLNS_TTS, vals::NS_TTS),
             (attrs::XMLNS_AMLL, vals::NS_AMLL),
         ])
-        .with_attribute_opt((attrs::ITUNES_TIMING, result.metadata.timing_mode.as_deref()))
+        .with_attribute_opt((attrs::ITUNES_TIMING, timing_mode))
         .with_attribute_opt((attrs::XML_LANG, result.metadata.language.as_deref()))
         .write_inner_content(|writer| {
             // <head>

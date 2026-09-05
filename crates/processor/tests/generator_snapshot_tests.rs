@@ -66,6 +66,7 @@ fn test_generate_ttml_formatted() {
     let config = GeneratorConfig {
         use_apple_format_rules: true,
         format: true,
+        ..Default::default()
     };
 
     insta::glob!("fixtures/*.ttml", |path| {
@@ -83,6 +84,64 @@ fn test_roundtrip_formatted() {
     let config = GeneratorConfig {
         use_apple_format_rules: true,
         format: true,
+        ..Default::default()
+    };
+
+    insta::glob!("fixtures/*.ttml", |path| {
+        let xml_content = fs::read_to_string(path).unwrap();
+        let parsed = parse_ttml(&xml_content).unwrap();
+
+        let generated_xml = generate_ttml(&parsed, &config).unwrap();
+        let reparsed = parse_ttml(&generated_xml).unwrap();
+
+        let json_string = to_string_tab_indent(&reparsed).unwrap();
+
+        assert_snapshot!(json_string);
+    });
+}
+
+#[test]
+fn test_generate_ttml_line_timing() {
+    let config = GeneratorConfig {
+        use_apple_format_rules: true,
+        format: true,
+        line_timing: true,
+    };
+
+    insta::glob!("fixtures/*.ttml", |path| {
+        let xml_content = fs::read_to_string(path).unwrap();
+        let parsed = parse_ttml(&xml_content).unwrap();
+
+        let generated_xml = generate_ttml(&parsed, &config).unwrap();
+
+        assert_snapshot!(generated_xml);
+    });
+}
+
+#[test]
+fn test_generate_ttml_line_timing_inline() {
+    let config = GeneratorConfig {
+        use_apple_format_rules: false,
+        format: true,
+        line_timing: true,
+    };
+
+    insta::glob!("fixtures/*.ttml", |path| {
+        let xml_content = fs::read_to_string(path).unwrap();
+        let parsed = parse_ttml(&xml_content).unwrap();
+
+        let generated_xml = generate_ttml(&parsed, &config).unwrap();
+
+        assert_snapshot!(generated_xml);
+    });
+}
+
+#[test]
+fn test_roundtrip_line_timing() {
+    let config = GeneratorConfig {
+        use_apple_format_rules: true,
+        format: true,
+        line_timing: true,
     };
 
     insta::glob!("fixtures/*.ttml", |path| {

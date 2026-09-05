@@ -1,0 +1,786 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: crates/processor/tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="ja">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1"/>
+            <ttm:agent type="other" xml:id="v2"/>
+            <amll:meta key="musicName" value="緋色月下、狂咲ノ絶　-1st Anniversary Remix-"/>
+            <amll:meta key="musicName" value="原曲：U.N.オーエンは彼女なのか？"/>
+            <amll:meta key="musicName" value="Hiirogekka, Kyousyounozetsu -1st Anniversary Remix-"/>
+            <amll:meta key="musicName" value="Hiirogekka, Kyousyounozetsu (1st Anniversary Remix)"/>
+            <amll:meta key="musicName" value="緋色月下、狂咲ノ絶 -1st Anniversary Remix-"/>
+            <amll:meta key="artists" value="EastNewSound"/>
+            <amll:meta key="artists" value="ENS"/>
+            <amll:meta key="artists" value="东方新声"/>
+            <amll:meta key="album" value="Sacred Factor"/>
+            <amll:meta key="isrc" value="JPW562101257"/>
+            <amll:meta key="ncmMusicId" value="722013"/>
+            <amll:meta key="spotifyId" value="54BCBHVE768LRKC8W9b8tb"/>
+            <amll:meta key="appleMusicId" value="1570066003"/>
+            <amll:meta key="ttmlAuthorGithub" value="68000793"/>
+            <amll:meta key="ttmlAuthorGithubLogin" value="ranhengzhang"/>
+            <amll:meta key="Composer" value="ZUN"/>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <translations>
+                    <translation xml:lang="en">
+                        <text for="L1">Inside of me</text>
+                        <text for="L2">Inside of me</text>
+                        <text for="L3">Inside of me</text>
+                        <text for="L4">Myself</text>
+                        <text for="L5">There’s one to describe it</text>
+                        <text for="L6">There’s one to describe it</text>
+                        <text for="L7">One word</text>
+                        <text for="L8">Endlessly</text>
+                        <text for="L9">Endlessly</text>
+                        <text for="L10">Endlessly</text>
+                        <text for="L11">Endlessly</text>
+                        <text for="L12">Ceaselessly</text>
+                        <text for="L13">It repeats</text>
+                        <text for="L14">It repeats</text>
+                        <text for="L15">It repeats</text>
+                        <text for="L16">It repeats</text>
+                        <text for="L17">It repeats</text>
+                        <text for="L18">It repeats</text>
+                        <text for="L19">It repeats</text>
+                        <text for="L20">It repeats</text>
+                        <text for="L21">The screaming</text>
+                        <text for="L22">The left arm I’ve caught with was sweet</text>
+                        <text for="L23">The right arm I’ve swung with was sweet</text>
+                        <text for="L24">It was sweet</text>
+                        <text for="L25">It was sweet</text>
+                        <text for="L26">Even if my mouth with a smile gets torn</text>
+                        <text for="L27">That’s just fun, so fun</text>
+                        <text for="L28">So fun</text>
+                        <text for="L29">Like burning a brain</text>
+                        <text for="L30">So fun</text>
+                        <text for="L31">So fun</text>
+                        <text for="L32">I’m shaking</text>
+                        <text for="L33">I’m shaking</text>
+                        <text for="L34">So fun</text>
+                        <text for="L35">So fun</text>
+                        <text for="L36">Red</text>
+                        <text for="L37">Red</text>
+                        <text for="L38">Red</text>
+                        <text for="L39">Red</text>
+                        <text for="L40">Red</text>
+                        <text for="L41">Sweet</text>
+                        <text for="L42">Sweet</text>
+                        <text for="L43">Sweet</text>
+                        <text for="L44">Sweet</text>
+                        <text for="L45">Sweet</text>
+                        <text for="L46">Sweet</text>
+                        <text for="L47">Sweet</text>
+                        <text for="L48">Sweet</text>
+                        <text for="L49">Sweet</text>
+                        <text for="L50">Young girl</text>
+                        <text for="L51">You and I</text>
+                        <text for="L52">Red</text>
+                        <text for="L53">Red</text>
+                        <text for="L54">Red</text>
+                        <text for="L55">Red</text>
+                        <text for="L56">Red</text>
+                        <text for="L57">Sweet</text>
+                        <text for="L58">Sweet</text>
+                        <text for="L59">Sweet</text>
+                        <text for="L60">Sweet</text>
+                        <text for="L61">Red</text>
+                        <text for="L62">Red</text>
+                        <text for="L63">Red</text>
+                        <text for="L64">Red</text>
+                        <text for="L65">Red</text>
+                        <text for="L66">You... So sweet!</text>
+                        <text for="L67">Sweet</text>
+                        <text for="L68">Red</text>
+                        <text for="L69">Red</text>
+                        <text for="L70">I’ll kill you!</text>
+                        <text for="L71">My dewy eyes are deep crimson, I ruffle my sweetly colored skirt</text>
+                        <text for="L72">My childish cheeks are flushed crimson, my legs collapse in tingly pain</text>
+                        <text for="L73">You’re controlled by these sweet hallucinations, I play a tune that blooms from my five fingers</text>
+                        <text for="L74">In the sound of the red black tea dripping, I gouge you deep when I toy with you</text>
+                        <text for="L75">&quot;Will my thoughts not reach you?&quot;</text>
+                        <text for="L76">&quot;Who is reflected in your eyes?&quot;</text>
+                        <text for="L77">&quot;Is my heart broken?&quot;</text>
+                        <text for="L78">&quot;It won’t come back if it breaks?&quot;</text>
+                        <text for="L79">&quot;Will deeply cut wounds never heal?&quot;</text>
+                        <text for="L80">&quot;Will you tick away the time in that way?&quot;</text>
+                        <text for="L81">All of you, I want it, I want it so much I’m shaking</text>
+                        <text for="L82">Shall I completely pierce through your sweet pulse and stop it?</text>
+                        <text for="L83">It’s only me who will completely soil your skin and humiliate you</text>
+                        <text for="L84">I’m shaken when you adore me and pat me, so kill my urges</text>
+                        <text for="L85">You make your throat hoarse screaming a timbre, the melody turns into a crimson rainbow</text>
+                        <text for="L86">This hue from slaughtering you, what a sweet, deep color it releases!</text>
+                        <text for="L87">You make your throat hoarse screaming a timbre, if it’s colored by the red rain</text>
+                        <text for="L88">It’ll be the completion of the beautiful stage, and I’ll dance alone there</text>
+                        <text for="L89">&quot;Did your wishes get ruined?&quot;</text>
+                        <text for="L90">&quot;Have those thoughts been suppressed?&quot;</text>
+                        <text for="L91">&quot;Has that hope been severed?&quot;</text>
+                        <text for="L92">&quot;Have those pupils been set aflame?&quot;</text>
+                        <text for="L93">&quot;Has that skin been defiled?&quot;</text>
+                        <text for="L94">&quot;And then there were none?&quot;</text>
+                        <text for="L95">Your life is torn apart, you spit up something red and silver and they spray away</text>
+                        <text for="L96">I scatter the flower of your life, blooming in rich colors, and turn you into my food</text>
+                        <text for="L97">If your life is you, then I’ll eat you up into flesh and blood</text>
+                        <text for="L98">I’ll offer up your limbs as sacrifice- Become the corpse at my feet</text>
+                        <text for="L99">Inside of me</text>
+                        <text for="L100">Inside of me</text>
+                        <text for="L101">Inside of me</text>
+                        <text for="L102">Myself</text>
+                        <text for="L103">There’s one to describe it</text>
+                        <text for="L104">There’s one to describe it</text>
+                        <text for="L105">One word</text>
+                        <text for="L106">Endlessly</text>
+                        <text for="L107">Endlessly</text>
+                        <text for="L108">Endlessly</text>
+                        <text for="L109">Endlessly</text>
+                        <text for="L110">Ceaselessly</text>
+                        <text for="L111">It repeats</text>
+                        <text for="L112">It repeats</text>
+                        <text for="L113">It repeats</text>
+                        <text for="L114">It repeats</text>
+                        <text for="L115">It repeats</text>
+                        <text for="L116">It repeats</text>
+                        <text for="L117">It repeats</text>
+                        <text for="L118">It repeats</text>
+                        <text for="L119">The screaming</text>
+                        <text for="L120">The left arm I’ve caught with was sweet</text>
+                        <text for="L121">The right arm I’ve swung with was sweet</text>
+                        <text for="L122">It was sweet</text>
+                        <text for="L123">It was sweet</text>
+                        <text for="L124">Even if my mouth with a smile gets torn</text>
+                        <text for="L125">That’s just fun, so fun</text>
+                        <text for="L126">So fun</text>
+                        <text for="L127">Like burning a brain</text>
+                        <text for="L128">So fun</text>
+                        <text for="L129">So fun</text>
+                        <text for="L130">I’m shaking</text>
+                        <text for="L131">I’m shaking</text>
+                        <text for="L132">So fun</text>
+                        <text for="L133">So fun</text>
+                        <text for="L134">Notice my feelings. Why won’t you notice my feelings?</text>
+                        <text for="L135">I’m overflowing with insanity, how can I stop?</text>
+                        <text for="L136">Where will I make my way to when my feelings break down?</text>
+                        <text for="L137">My love is overflowing, I can’t stop it...</text>
+                        <text for="L138">Red</text>
+                        <text for="L139">Red</text>
+                        <text for="L140">Red</text>
+                        <text for="L141">Red</text>
+                        <text for="L142">Red</text>
+                        <text for="L143">Red</text>
+                        <text for="L144">Sweet</text>
+                        <text for="L145">Sweet</text>
+                        <text for="L146">Sweet</text>
+                        <text for="L147">Sweet</text>
+                        <text for="L148">Sweet</text>
+                        <text for="L149">Sweet</text>
+                        <text for="L150">Sweet</text>
+                        <text for="L151">Sweet</text>
+                        <text for="L152">Sweet</text>
+                        <text for="L153">Young girl</text>
+                        <text for="L154">You and I</text>
+                        <text for="L155">Red</text>
+                        <text for="L156">Red</text>
+                        <text for="L157">Red</text>
+                        <text for="L158">Red</text>
+                        <text for="L159">Red</text>
+                        <text for="L160">Sweet</text>
+                        <text for="L161">Sweet</text>
+                        <text for="L162">Sweet</text>
+                        <text for="L163">Sweet</text>
+                        <text for="L164">Red</text>
+                        <text for="L165">Red</text>
+                        <text for="L166">Red</text>
+                        <text for="L167">Red</text>
+                        <text for="L168">Red</text>
+                        <text for="L169">You... So sweet!</text>
+                        <text for="L170">Sweet</text>
+                        <text for="L171">Red</text>
+                        <text for="L172">Red</text>
+                        <text for="L173">I’ll kill you!</text>
+                        <text for="L174">Your life is torn apart, you spit up something red and silver and they spray away</text>
+                        <text for="L175">I scatter the flower of your life, blooming in rich colors, and turn you into my food</text>
+                        <text for="L176">If your life is you, then I’ll eat you up into flesh and blood</text>
+                        <text for="L177">I’ll offer up your limbs as sacrifice- Become the corpse at my feet</text>
+                    </translation>
+                    <translation xml:lang="zh-Hans">
+                        <text for="L1">我身体中的</text>
+                        <text for="L2">我身体中的</text>
+                        <text for="L3">我身体中的</text>
+                        <text for="L4">我</text>
+                        <text for="L5">要把这一个</text>
+                        <text for="L6">要把这一个</text>
+                        <text for="L7">单词</text>
+                        <text for="L8">一次次地</text>
+                        <text for="L9">一次次地</text>
+                        <text for="L10">一次次地</text>
+                        <text for="L11">一次次地</text>
+                        <text for="L12">无休止地</text>
+                        <text for="L13">重复</text>
+                        <text for="L14">重复</text>
+                        <text for="L15">重复</text>
+                        <text for="L16">重复</text>
+                        <text for="L17">重复</text>
+                        <text for="L18">重复</text>
+                        <text for="L19">重复</text>
+                        <text for="L20">重复</text>
+                        <text for="L21">歌唱</text>
+                        <text for="L22">紧握的左手腥甜</text>
+                        <text for="L23">挥舞的右手腥甜</text>
+                        <text for="L24">腥甜</text>
+                        <text for="L25">腥甜</text>
+                        <text for="L26">笑著的嘴巴裂著</text>
+                        <text for="L27">即使如此依然很快乐</text>
+                        <text for="L28">好快乐</text>
+                        <text for="L29">脑髓在燃烧</text>
+                        <text for="L30">好快乐</text>
+                        <text for="L31">好快乐</text>
+                        <text for="L32">震动</text>
+                        <text for="L33">震动</text>
+                        <text for="L34">好快乐</text>
+                        <text for="L35">好快乐</text>
+                        <text for="L36">好红</text>
+                        <text for="L37">好红</text>
+                        <text for="L38">好红</text>
+                        <text for="L39">好红</text>
+                        <text for="L40">好红</text>
+                        <text for="L41">好甜</text>
+                        <text for="L42">好甜</text>
+                        <text for="L43">好甜</text>
+                        <text for="L44">好甜</text>
+                        <text for="L45">好甜</text>
+                        <text for="L46">好甜</text>
+                        <text for="L47">好甜</text>
+                        <text for="L48">好甜</text>
+                        <text for="L49">好甜</text>
+                        <text for="L50">天真的少女</text>
+                        <text for="L51">我和你</text>
+                        <text for="L52">好红</text>
+                        <text for="L53">好红</text>
+                        <text for="L54">好红</text>
+                        <text for="L55">好红</text>
+                        <text for="L56">好红</text>
+                        <text for="L57">好甜</text>
+                        <text for="L58">好甜</text>
+                        <text for="L59">好甜</text>
+                        <text for="L60">好甜</text>
+                        <text for="L61">好红</text>
+                        <text for="L62">好红</text>
+                        <text for="L63">好红</text>
+                        <text for="L64">好红</text>
+                        <text for="L65">好红</text>
+                        <text for="L66">你 好甜</text>
+                        <text for="L67">好甜</text>
+                        <text for="L68">好红</text>
+                        <text for="L69">好红</text>
+                        <text for="L70">让我杀了你！</text>
+                        <text for="L71">深红的温润眼眸 艳色的裙尾摇摆</text>
+                        <text for="L72">幼小的脸颊浸染朱红 疼痛撕裂了双腿</text>
+                        <text for="L73">被甜美的幻视支配 伸展五指弹奏的旋律</text>
+                        <text for="L74">赤色红茶滴下的声音 是我向深处剜心</text>
+                        <text for="L75">“这份思念无法传达吗？”</text>
+                        <text for="L76">“那双眼眸映出的是谁？”</text>
+                        <text for="L77">“心已毁坏了吗？”</text>
+                        <text for="L78">“毁坏后无法恢复了吗？”</text>
+                        <text for="L79">“受的伤害无法痊愈了吗？”</text>
+                        <text for="L80">“这样做能刻画下时间吗？”</text>
+                        <text for="L81">我想要你的全部 想到浑身颤抖</text>
+                        <text for="L82">就让那甜美的心跳 竭尽气力就此停止吧</text>
+                        <text for="L83">尽情弄脏那片肌肤 污辱你的只有我</text>
+                        <text for="L84">快点平息这份爱抚 和操弄你的冲动吧</text>
+                        <text for="L85">声嘶力竭歌唱的音色 旋律化作朱之虹</text>
+                        <text for="L86">这一抹屠杀你的色彩 又甜又深的颜色</text>
+                        <text for="L87">声嘶力竭歌唱的音色 赤色的雨四处飞溅</text>
+                        <text for="L88">筑成华丽的舞台 我在上面独自起舞</text>
+                        <text for="L89">“希望破灭了吗？”</text>
+                        <text for="L90">“思念断绝了吗？”</text>
+                        <text for="L91">“希望磨灭了吗？”</text>
+                        <text for="L92">“目光燃烧了吗？”</text>
+                        <text for="L93">“肌肤污秽了吗？”</text>
+                        <text for="L94">“大家都离开我了吗？”</text>
+                        <text for="L95">就算把这具身体撕裂 只有赤银烟雾扩散</text>
+                        <text for="L96">让那具身体四分五裂 绽放鲜艳的色彩即我的粮食</text>
+                        <text for="L97">如果那具身体就是你 我会将肉都吃得干干净净</text>
+                        <text for="L98">把四肢作为供物 让你成为我脚边的死尸</text>
+                        <text for="L99">我身体中的</text>
+                        <text for="L100">我身体中的</text>
+                        <text for="L101">我身体中的</text>
+                        <text for="L102">我</text>
+                        <text for="L103">要把这一个</text>
+                        <text for="L104">要把这一个</text>
+                        <text for="L105">单词</text>
+                        <text for="L106">一次次地</text>
+                        <text for="L107">一次次地</text>
+                        <text for="L108">一次次地</text>
+                        <text for="L109">一次次地</text>
+                        <text for="L110">无休止地</text>
+                        <text for="L111">重复</text>
+                        <text for="L112">重复</text>
+                        <text for="L113">重复</text>
+                        <text for="L114">重复</text>
+                        <text for="L115">重复</text>
+                        <text for="L116">重复</text>
+                        <text for="L117">重复</text>
+                        <text for="L118">重复</text>
+                        <text for="L119">歌唱</text>
+                        <text for="L120">紧握的左手腥甜</text>
+                        <text for="L121">挥舞的右手腥甜</text>
+                        <text for="L122">腥甜</text>
+                        <text for="L123">腥甜</text>
+                        <text for="L124">笑著的嘴巴裂著</text>
+                        <text for="L125">即使如此依然很快乐</text>
+                        <text for="L126">好快乐</text>
+                        <text for="L127">脑髓在燃烧</text>
+                        <text for="L128">好快乐</text>
+                        <text for="L129">好快乐</text>
+                        <text for="L130">震动</text>
+                        <text for="L131">震动</text>
+                        <text for="L132">好快乐</text>
+                        <text for="L133">好快乐</text>
+                        <text for="L134">希望你察觉我的心情 为什麼没有察觉到呢？</text>
+                        <text for="L135">渐渐地被陷入疯狂 无论怎样也无法抑止</text>
+                        <text for="L136">心情都被毁坏 接著该如何是好</text>
+                        <text for="L137">爱就要满溢出来 无法停止……</text>
+                        <text for="L138">好红</text>
+                        <text for="L139">好红</text>
+                        <text for="L140">好红</text>
+                        <text for="L141">好红</text>
+                        <text for="L142">好红</text>
+                        <text for="L143">好红</text>
+                        <text for="L144">好甜</text>
+                        <text for="L145">好甜</text>
+                        <text for="L146">好甜</text>
+                        <text for="L147">好甜</text>
+                        <text for="L148">好甜</text>
+                        <text for="L149">好甜</text>
+                        <text for="L150">好甜</text>
+                        <text for="L151">好甜</text>
+                        <text for="L152">好甜</text>
+                        <text for="L153">天真的少女</text>
+                        <text for="L154">我和你</text>
+                        <text for="L155">好红</text>
+                        <text for="L156">好红</text>
+                        <text for="L157">好红</text>
+                        <text for="L158">好红</text>
+                        <text for="L159">好红</text>
+                        <text for="L160">好甜</text>
+                        <text for="L161">好甜</text>
+                        <text for="L162">好甜</text>
+                        <text for="L163">好甜</text>
+                        <text for="L164">好红</text>
+                        <text for="L165">好红</text>
+                        <text for="L166">好红</text>
+                        <text for="L167">好红</text>
+                        <text for="L168">好红</text>
+                        <text for="L169">你 好甜</text>
+                        <text for="L170">好甜</text>
+                        <text for="L171">好红</text>
+                        <text for="L172">好红</text>
+                        <text for="L173">让我杀了你！</text>
+                        <text for="L174">就算把这具身体撕裂 只有赤银烟雾扩散</text>
+                        <text for="L175">让那具身体四分五裂 绽放鲜艳的色彩即我的粮食</text>
+                        <text for="L176">如果那具身体就是你 我会将肉都吃得干干净净</text>
+                        <text for="L177">把四肢作为供物 让你成为我脚边的死尸</text>
+                    </translation>
+                </translations>
+                <transliterations>
+                    <transliteration xml:lang="ja-Latn">
+                        <text for="L1">wa ta shi no na ka no</text>
+                        <text for="L2">wa ta shi no na ka no</text>
+                        <text for="L3">wa ta shi no na ka no</text>
+                        <text for="L4">wa ta shi ga</text>
+                        <text for="L5">hi to tsu no</text>
+                        <text for="L6">hi to tsu no</text>
+                        <text for="L7">tan go o</text>
+                        <text for="L8">nan do mo</text>
+                        <text for="L9">nan do mo</text>
+                        <text for="L10">nan do mo</text>
+                        <text for="L11">nan do mo</text>
+                        <text for="L12">mu jin zo u ni</text>
+                        <text for="L13">ku ri ka e shi</text>
+                        <text for="L14">ku ri ka e su</text>
+                        <text for="L15">ku ri ka e shi</text>
+                        <text for="L16">ku ri ka e shi</text>
+                        <text for="L17">ku ri ka e shi</text>
+                        <text for="L18">ku ri ka e shi</text>
+                        <text for="L19">ku ri ka e shi</text>
+                        <text for="L20">ku ri ka e shi</text>
+                        <text for="L21">u ta u</text>
+                        <text for="L22">tsu ka mu hi da ri te ga a ma ku te</text>
+                        <text for="L23">fu ru u mi gi te ga a ma ku te</text>
+                        <text for="L24">a ma ku te</text>
+                        <text for="L25">a ma ku te</text>
+                        <text for="L26">wa ra u ku chi ga sa ke te mo</text>
+                        <text for="L27">so re ga ma ta ta no shi ku te</text>
+                        <text for="L28">ta no shi ku te</text>
+                        <text for="L29">no u zu i o ya ku yo u ni</text>
+                        <text for="L30">ta no shi ku te</text>
+                        <text for="L31">ta no shi ku te</text>
+                        <text for="L32">fu ru e te</text>
+                        <text for="L33">fu ru e te</text>
+                        <text for="L34">ta no shi ku te</text>
+                        <text for="L35">ta no shi ku te</text>
+                        <text for="L36">a ka i</text>
+                        <text for="L37">a ka i</text>
+                        <text for="L38">a ka i</text>
+                        <text for="L39">a ka i</text>
+                        <text for="L40">a ka i</text>
+                        <text for="L41">a ma i</text>
+                        <text for="L42">a ma i</text>
+                        <text for="L43">a ma i</text>
+                        <text for="L44">a ma i</text>
+                        <text for="L45">a ma i</text>
+                        <text for="L46">a ma i</text>
+                        <text for="L47">a ma i</text>
+                        <text for="L48">a ma i</text>
+                        <text for="L49">a ma i</text>
+                        <text for="L50">me i de n</text>
+                        <text for="L51">wa ta shi to a na ta ga</text>
+                        <text for="L52">a ka i</text>
+                        <text for="L53">a ka i</text>
+                        <text for="L54">a ka i</text>
+                        <text for="L55">a ka i</text>
+                        <text for="L56">a ka i</text>
+                        <text for="L57">a ma i</text>
+                        <text for="L58">a ma i</text>
+                        <text for="L59">a ma i</text>
+                        <text for="L60">a ma i</text>
+                        <text for="L61">a ka i</text>
+                        <text for="L62">a ka i</text>
+                        <text for="L63">a ka i</text>
+                        <text for="L64">a ka i</text>
+                        <text for="L65">a ka i</text>
+                        <text for="L66">a na ta a ma i</text>
+                        <text for="L67">a ma i</text>
+                        <text for="L68">a ka i</text>
+                        <text for="L69">a ka i</text>
+                        <text for="L70">ko ro shi te a ge ru</text>
+                        <text for="L71">fu ka ku a ka ki u ru mu hi to mi a ma i i ro no su ka a to yu ra su</text>
+                        <text for="L72">o sa na ki ho o shu o ni ji ma se u zu ki ni a shi o ku zu sa re ru</text>
+                        <text for="L73">a ma i gen shi ni shi ha i sa re ka na de te wa sa ku go shi no shi ra be</text>
+                        <text for="L74">a ka i ko u cha shi ta ta ru o to mo te a so n de wa fu ka ku e gu ru</text>
+                        <text for="L75">ko no o mo i to do ka na i no ka na</text>
+                        <text for="L76">so no hi to mi ni wa da re ga u tsu ru no ka na</text>
+                        <text for="L77">ko ko ro ko wa re te i ru no ka na</text>
+                        <text for="L78">ko wa re ta na ra mo do ra na i no ka na</text>
+                        <text for="L79">ki za mu ki zu wa i e na i no ka na</text>
+                        <text for="L80">so u shi te to ki o ki za mu no</text>
+                        <text for="L81">a na ta no so no su be te ga ho shi ku te ho shi ku te fu ru e te ru</text>
+                        <text for="L82">kam bi na so no ko do u o u ga chi tsu ku shi te to me yo u ka</text>
+                        <text for="L83">so no ha da o ke ga shi tsu ku shi ha zu ka shi me ru no wa wa ta shi da ke</text>
+                        <text for="L84">me de na de te yu sa fu ra se te ko no sho u do u o ko ro shi te yo</text>
+                        <text for="L85">no do o ka ra shi u ta u n e i ro sen ri tsu wa shu no ni ji to na ri</text>
+                        <text for="L86">ki mi ho fu ru ko no shi ki sa i a ma ku fu ka ki i ro o ha na tsu</text>
+                        <text for="L87">no do o ka ra shi u ta u ne i ro a ka ki a me ni i ro do ra re ta ra</text>
+                        <text for="L88">ki re i na bu ta i no de ki a ga ri wa ta shi hi to ri so ko de o do ru</text>
+                        <text for="L89">so no ne ga i tsu i e ta no ka na</text>
+                        <text for="L90">so no o mo i ta ta re ta no ka na</text>
+                        <text for="L91">so no ki bo u ta e ta no ka na</text>
+                        <text for="L92">so no hi to mi ya ka re ta no ka na</text>
+                        <text for="L93">so no ha da wa ke ga sa re ta ka na</text>
+                        <text for="L94">so shi te da re mo i na ku na ru</text>
+                        <text for="L95">so no se i o hi ki sa ka re te se ki gin o ha ki ke shi to be</text>
+                        <text for="L96">so no se i no ha na chi ra shi te go ku sa i ni sa ki wa ga ka te ni</text>
+                        <text for="L97">so no se i ga o ma e na ra ba ku ra i tsu ku shi te chi ni ku ni su</text>
+                        <text for="L98">so no shi shi o ni e to sa sa ge wa ga a shi mo to no shi shi to na re</text>
+                        <text for="L99">wa ta shi no na ka no</text>
+                        <text for="L100">wa ta shi no na ka no</text>
+                        <text for="L101">wa ta shi no na ka no</text>
+                        <text for="L102">wa ta shi ga</text>
+                        <text for="L103">hi to tsu no</text>
+                        <text for="L104">hi to tsu no</text>
+                        <text for="L105">tan go o</text>
+                        <text for="L106">nan do mo</text>
+                        <text for="L107">nan do mo</text>
+                        <text for="L108">nan do mo</text>
+                        <text for="L109">nan do mo</text>
+                        <text for="L110">mu jin zo u ni</text>
+                        <text for="L111">ku ri ka e shi</text>
+                        <text for="L112">ku ri ka e su</text>
+                        <text for="L113">ku ri ka e shi</text>
+                        <text for="L114">ku ri ka e shi</text>
+                        <text for="L115">ku ri ka e shi</text>
+                        <text for="L116">ku ri ka e shi</text>
+                        <text for="L117">ku ri ka e shi</text>
+                        <text for="L118">ku ri ka e shi</text>
+                        <text for="L119">u ta u</text>
+                        <text for="L120">tsu ka mu hi da ri te ga a ma ku te</text>
+                        <text for="L121">fu ru u mi gi te ga a ma ku te</text>
+                        <text for="L122">a ma ku te</text>
+                        <text for="L123">a ma ku te</text>
+                        <text for="L124">wa ra u ku chi ga sa ke te mo</text>
+                        <text for="L125">so re ga ma ta ta no shi ku te</text>
+                        <text for="L126">ta no shi ku te</text>
+                        <text for="L127">no u zu i o ya ku yo u ni</text>
+                        <text for="L128">ta no shi ku te</text>
+                        <text for="L129">ta no shi ku te</text>
+                        <text for="L130">fu ru e te</text>
+                        <text for="L131">fu ru e te</text>
+                        <text for="L132">ta no shi ku te</text>
+                        <text for="L133">ta no shi ku te</text>
+                        <text for="L134">ko no ki mo chi ki zu i te do u shi te ki zu i te ku re na i no</text>
+                        <text for="L135">kyo u ki mi chi te i ku wa do u su re ba to ma ru no</text>
+                        <text for="L136">ko no ki mo chi ko wa re te do ko e ta do ri tsu ku no de sho u ka</text>
+                        <text for="L137">a i a fu re te i ku wa to me ru ko to wa de ki na i</text>
+                        <text for="L138">a ka i</text>
+                        <text for="L139">a ka i</text>
+                        <text for="L140">a ka i</text>
+                        <text for="L141">a ka i</text>
+                        <text for="L142">a ka i</text>
+                        <text for="L143">a ka i</text>
+                        <text for="L144">a ma i</text>
+                        <text for="L145">a ma i</text>
+                        <text for="L146">a ma i</text>
+                        <text for="L147">a ma i</text>
+                        <text for="L148">a ma i</text>
+                        <text for="L149">a ma i</text>
+                        <text for="L150">a ma i</text>
+                        <text for="L151">a ma i</text>
+                        <text for="L152">a ma i</text>
+                        <text for="L153">me i de n</text>
+                        <text for="L154">wa ta shi to a na ta to</text>
+                        <text for="L155">a ka i</text>
+                        <text for="L156">a ka i</text>
+                        <text for="L157">a ka i</text>
+                        <text for="L158">a ka i</text>
+                        <text for="L159">a ka i</text>
+                        <text for="L160">a ma i</text>
+                        <text for="L161">a ma i</text>
+                        <text for="L162">a ma i</text>
+                        <text for="L163">a ma i</text>
+                        <text for="L164">a ka i</text>
+                        <text for="L165">a ka i</text>
+                        <text for="L166">a ka i</text>
+                        <text for="L167">a ka i</text>
+                        <text for="L168">a ka i</text>
+                        <text for="L169">a na ta a ma i</text>
+                        <text for="L170">a ma i</text>
+                        <text for="L171">a ka i</text>
+                        <text for="L172">a ka i</text>
+                        <text for="L173">ko ro shi te a ge ru</text>
+                        <text for="L174">so no se i o hi ki sa ka re te se ki gin o ha ki ke shi to be</text>
+                        <text for="L175">so no se i no ha na chi ra shi te go ku se i ni sa ki wa ga ka te ni</text>
+                        <text for="L176">so no se i ga o ma e na ra ba ku ra i tsu ku shi te chi ni ku ni su</text>
+                        <text for="L177">so no shi shi o ni e to sa sa ge wa ga a shi mo to no shi shi to na re</text>
+                    </transliteration>
+                </transliterations>
+                <songwriters>
+                    <songwriter>EastNewSound</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="5:34.600">
+        <div begin="1.600" end="14.250" itunes:songPart="Verse">
+            <p begin="1.600" end="2.540" itunes:key="L1" ttm:agent="v1">私の中の</p>
+            <p begin="2.400" end="3.280" itunes:key="L2" ttm:agent="v2">私の中の</p>
+            <p begin="3.200" end="4.000" itunes:key="L3" ttm:agent="v1">私の中の</p>
+            <p begin="4.010" end="4.470" itunes:key="L4" ttm:agent="v2">私が</p>
+            <p begin="4.820" end="5.320" itunes:key="L5" ttm:agent="v1">ひとつの</p>
+            <p begin="5.140" end="5.790" itunes:key="L6" ttm:agent="v2">ひとつの</p>
+            <p begin="5.580" end="6.190" itunes:key="L7" ttm:agent="v1">単語を</p>
+            <p begin="6.410" end="6.980" itunes:key="L8" ttm:agent="v2">何度も</p>
+            <p begin="6.780" end="7.200" itunes:key="L9" ttm:agent="v1">何度も</p>
+            <p begin="7.200" end="7.780" itunes:key="L10" ttm:agent="v2">何度も</p>
+            <p begin="8.000" end="8.490" itunes:key="L11" ttm:agent="v1">何度も</p>
+            <p begin="8.200" end="8.990" itunes:key="L12" ttm:agent="v2">無尽蔵に</p>
+            <p begin="8.980" end="9.830" itunes:key="L13" ttm:agent="v1">繰り返し</p>
+            <p begin="9.590" end="10.370" itunes:key="L14" ttm:agent="v2">繰り返す</p>
+            <p begin="10.020" end="10.720" itunes:key="L15" ttm:agent="v1">繰り返し</p>
+            <p begin="10.430" end="11.180" itunes:key="L16" ttm:agent="v2">繰り返し</p>
+            <p begin="11.110" end="11.870" itunes:key="L17" ttm:agent="v1">繰り返し</p>
+            <p begin="11.630" end="12.290" itunes:key="L18" ttm:agent="v2">繰り返し</p>
+            <p begin="11.990" end="12.760" itunes:key="L19" ttm:agent="v1">繰り返し</p>
+            <p begin="12.760" end="13.600" itunes:key="L20" ttm:agent="v2">繰り返し</p>
+            <p begin="13.760" end="14.250" itunes:key="L21" ttm:agent="v2">歌う</p>
+        </div>
+        <div begin="15.300" end="35.040" itunes:songPart="Verse">
+            <p begin="15.300" end="16.880" itunes:key="L22" ttm:agent="v1">掴む左手が甘くて</p>
+            <p begin="16.770" end="35.040" itunes:key="L23" ttm:agent="v2">振るう右手が甘くて</p>
+            <p begin="18.360" end="18.990" itunes:key="L24" ttm:agent="v1">甘くて</p>
+            <p begin="18.760" end="19.350" itunes:key="L25" ttm:agent="v2">甘くて</p>
+            <p begin="19.260" end="20.470" itunes:key="L26" ttm:agent="v1">笑う口が裂けても</p>
+            <p begin="20.060" end="21.520" itunes:key="L27" ttm:agent="v2">それがまた楽しくて</p>
+            <p begin="21.480" end="22.160" itunes:key="L28" ttm:agent="v1">楽しくて</p>
+            <p begin="21.730" end="22.980" itunes:key="L29" ttm:agent="v2">脳髄を焼くように</p>
+            <p begin="22.670" end="23.470" itunes:key="L30" ttm:agent="v1">楽しくて</p>
+            <p begin="23.140" end="23.920" itunes:key="L31" ttm:agent="v2">楽しくて</p>
+            <p begin="23.680" end="24.320" itunes:key="L32" ttm:agent="v1">震えて</p>
+            <p begin="24.080" end="24.680" itunes:key="L33" ttm:agent="v2">震えて</p>
+            <p begin="24.680" end="25.510" itunes:key="L34" ttm:agent="v1">楽しくて</p>
+            <p begin="25.580" end="26.470" itunes:key="L35" ttm:agent="v2">楽しくて</p>
+        </div>
+        <div begin="27.420" end="39.550" itunes:songPart="Verse">
+            <p begin="27.420" end="27.790" itunes:key="L36" ttm:agent="v1">赤い</p>
+            <p begin="27.790" end="28.190" itunes:key="L37" ttm:agent="v2">赤い</p>
+            <p begin="28.220" end="28.610" itunes:key="L38" ttm:agent="v1">赤い</p>
+            <p begin="28.610" end="28.980" itunes:key="L39" ttm:agent="v2">赤い</p>
+            <p begin="29.010" end="29.440" itunes:key="L40" ttm:agent="v1">赤い</p>
+            <p begin="29.430" end="29.840" itunes:key="L41" ttm:agent="v2">甘い</p>
+            <p begin="29.810" end="30.370" itunes:key="L42" ttm:agent="v1">甘い</p>
+            <p begin="30.190" end="30.650" itunes:key="L43" ttm:agent="v2">甘い</p>
+            <p begin="30.620" end="31.130" itunes:key="L44" ttm:agent="v1">甘い</p>
+            <p begin="31.000" end="31.410" itunes:key="L45" ttm:agent="v2">甘い</p>
+            <p begin="31.380" end="31.940" itunes:key="L46" ttm:agent="v1">甘い</p>
+            <p begin="31.790" end="32.290" itunes:key="L47" ttm:agent="v2">甘い</p>
+            <p begin="32.220" end="32.640" itunes:key="L48" ttm:agent="v1">甘い</p>
+            <p begin="32.650" end="33.000" itunes:key="L49" ttm:agent="v2">甘い</p>
+            <p begin="33.000" end="33.480" itunes:key="L50" ttm:agent="v2">メイデン</p>
+            <p begin="33.040" end="33.920" itunes:key="L51" ttm:agent="v1">私とあなたが</p>
+            <p begin="33.800" end="34.210" itunes:key="L52" ttm:agent="v2">赤い</p>
+            <p begin="34.230" end="34.640" itunes:key="L53" ttm:agent="v1">赤い</p>
+            <p begin="34.630" end="35.060" itunes:key="L54" ttm:agent="v2">赤い</p>
+            <p begin="35.030" end="35.450" itunes:key="L55" ttm:agent="v1">赤い</p>
+            <p begin="35.430" end="35.840" itunes:key="L56" ttm:agent="v2">赤い</p>
+            <p begin="35.860" end="36.330" itunes:key="L57" ttm:agent="v1">甘い</p>
+            <p begin="36.250" end="36.650" itunes:key="L58" ttm:agent="v2">甘い</p>
+            <p begin="36.620" end="37.060" itunes:key="L59" ttm:agent="v1">甘い</p>
+            <p begin="37.020" end="37.440" itunes:key="L60" ttm:agent="v2">甘い</p>
+            <p begin="37.390" end="37.900" itunes:key="L61" ttm:agent="v1">赤い</p>
+            <p begin="37.790" end="38.220" itunes:key="L62" ttm:agent="v2">赤い</p>
+            <p begin="38.220" end="38.720" itunes:key="L63" ttm:agent="v1">赤い</p>
+            <p begin="38.600" end="39.160" itunes:key="L64" ttm:agent="v2">赤い</p>
+            <p begin="39.050" end="39.550" itunes:key="L65" ttm:agent="v1">赤い</p>
+        </div>
+        <div begin="39.690" end="52.170" itunes:songPart="Verse">
+            <p begin="39.690" end="41.100" itunes:key="L66" ttm:agent="v1">あなた 甘い</p>
+            <p begin="42.100" end="42.790" itunes:key="L67" ttm:agent="v1">甘い</p>
+            <p begin="43.720" end="44.390" itunes:key="L68" ttm:agent="v1">赤い</p>
+            <p begin="45.450" end="46.270" itunes:key="L69" ttm:agent="v1">赤い</p>
+            <p begin="51.210" end="52.170" itunes:key="L70" ttm:agent="v1">殺してあげる</p>
+        </div>
+        <div begin="1:18.350" end="1:43.890" itunes:songPart="Verse">
+            <p begin="1:18.350" end="1:24.770" itunes:key="L71" ttm:agent="v1">深く朱き潤む瞳 甘い色のスカート揺らす</p>
+            <p begin="1:24.780" end="1:31.150" itunes:key="L72" ttm:agent="v1">幼き頰 朱を滲ませ 疼きに足を崩される</p>
+            <p begin="1:31.160" end="1:37.560" itunes:key="L73" ttm:agent="v1">甘い幻視に支配され 奏でては咲く五指の調べ</p>
+            <p begin="1:37.570" end="1:43.890" itunes:key="L74" ttm:agent="v1">赤い紅茶 滴る音弄んでは 深く抉る</p>
+        </div>
+        <div begin="1:43.660" end="2:09.410" itunes:songPart="PreChorus">
+            <p begin="1:43.660" end="1:47.970" itunes:key="L75" ttm:agent="v2">「この想い届かないのかな？」</p>
+            <p begin="1:49.940" end="1:54.320" itunes:key="L76" ttm:agent="v2">「その瞳には誰が映るのかな？」</p>
+            <p begin="1:56.470" end="2:00.350" itunes:key="L77" ttm:agent="v2">「心壊れているのかな？」</p>
+            <p begin="1:59.680" end="2:03.600" itunes:key="L78" ttm:agent="v2">「壊れたなら戻らないのかな？」</p>
+            <p begin="2:02.840" end="2:06.820" itunes:key="L79" ttm:agent="v2">「刻む傷は癒えないのかな？」</p>
+            <p begin="2:06.110" end="2:09.410" itunes:key="L80" ttm:agent="v2">「そうして時を刻むの？」</p>
+        </div>
+        <div begin="2:09.140" end="2:34.940" itunes:songPart="Chorus">
+            <p begin="2:09.140" end="2:15.600" itunes:key="L81" ttm:agent="v1">あなたのその全てが欲しくて 欲しくて震えてる</p>
+            <p begin="2:15.710" end="2:22.050" itunes:key="L82" ttm:agent="v1">甘美なその鼓動を 穿ち尽くして止めようか</p>
+            <p begin="2:22.060" end="2:28.420" itunes:key="L83" ttm:agent="v1">その肌を穢し尽し 辱めるのは私だけ</p>
+            <p begin="2:28.530" end="2:34.940" itunes:key="L84" ttm:agent="v1">愛で撫でて揺さ振らせて この衝動を殺してよ</p>
+        </div>
+        <div begin="2:35.130" end="3:00.700" itunes:songPart="Verse">
+            <p begin="2:35.130" end="2:41.550" itunes:key="L85" ttm:agent="v1">喉を枯らし叫ウ音色 旋律は朱の虹となり</p>
+            <p begin="2:41.550" end="2:47.890" itunes:key="L86" ttm:agent="v1">君屠る此ノ色彩 甘く深き色を放つ</p>
+            <p begin="2:47.930" end="2:54.310" itunes:key="L87" ttm:agent="v1">喉を枯らし叫ウ音色 赤キ雨に彩られたら</p>
+            <p begin="2:54.310" end="3:00.700" itunes:key="L88" ttm:agent="v1">綺麗な舞台の出来上がり 私独り其処で踊る</p>
+        </div>
+        <div begin="3:00.410" end="3:25.780" itunes:songPart="PreChorus">
+            <p begin="3:00.410" end="3:04.760" itunes:key="L89" ttm:agent="v2">「その願い潰えたのかな？」</p>
+            <p begin="3:06.710" end="3:11.200" itunes:key="L90" ttm:agent="v2">「その想い断たれたのかな？」</p>
+            <p begin="3:13.190" end="3:17.280" itunes:key="L91" ttm:agent="v2">「その希望絶えたのかな？」</p>
+            <p begin="3:16.440" end="3:20.480" itunes:key="L92" ttm:agent="v2">「その瞳焼かれたのかな？」</p>
+            <p begin="3:19.600" end="3:23.580" itunes:key="L93" ttm:agent="v2">「その肌は穢されたかな？」</p>
+            <p begin="3:22.720" end="3:25.780" itunes:key="L94" ttm:agent="v2">「そして誰もいなくなる？」</p>
+        </div>
+        <div begin="3:25.810" end="3:52.330" itunes:songPart="Chorus">
+            <p begin="3:25.810" end="3:32.410" itunes:key="L95" ttm:agent="v1">其ノ生を引き裂かれて 赤銀を吐き消し飛べ</p>
+            <p begin="3:32.510" end="3:38.890" itunes:key="L96" ttm:agent="v1">其ノ生の華散らして 極彩に咲き我が糧に</p>
+            <p begin="3:38.880" end="3:45.110" itunes:key="L97" ttm:agent="v1">其ノ生がお前ならば 喰らい尽くして血肉にす</p>
+            <p begin="3:45.320" end="3:52.330" itunes:key="L98" ttm:agent="v1">其ノ四肢を贄と捧げ 我が足元の死屍となれ</p>
+        </div>
+        <div begin="3:51.950" end="4:04.650" itunes:songPart="Verse">
+            <p begin="3:51.950" end="3:55.440" itunes:key="L99" ttm:agent="v1">私の中の</p>
+            <p begin="3:52.810" end="3:53.630" itunes:key="L100" ttm:agent="v2">私の中の</p>
+            <p begin="3:53.610" end="3:54.400" itunes:key="L101" ttm:agent="v1">私の中の</p>
+            <p begin="3:54.400" end="3:54.890" itunes:key="L102" ttm:agent="v2">私が</p>
+            <p begin="3:55.220" end="3:55.720" itunes:key="L103" ttm:agent="v1">ひとつの</p>
+            <p begin="3:55.540" end="3:56.160" itunes:key="L104" ttm:agent="v2">ひとつの</p>
+            <p begin="3:55.990" end="3:56.660" itunes:key="L105" ttm:agent="v1">単語を</p>
+            <p begin="3:56.810" end="3:57.370" itunes:key="L106" ttm:agent="v2">何度も</p>
+            <p begin="3:57.180" end="3:57.800" itunes:key="L107" ttm:agent="v1">何度も</p>
+            <p begin="3:57.610" end="3:58.170" itunes:key="L108" ttm:agent="v2">何度も</p>
+            <p begin="3:58.360" end="4:01.600" itunes:key="L109" ttm:agent="v1">何度も</p>
+            <p begin="3:58.620" end="3:59.480" itunes:key="L110" ttm:agent="v2">無尽蔵に</p>
+            <p begin="3:59.380" end="4:00.140" itunes:key="L111" ttm:agent="v1">繰り返し</p>
+            <p begin="4:00.010" end="4:00.730" itunes:key="L112" ttm:agent="v2">繰り返す</p>
+            <p begin="4:00.420" end="4:01.110" itunes:key="L113" ttm:agent="v1">繰り返し</p>
+            <p begin="4:00.830" end="4:01.610" itunes:key="L114" ttm:agent="v2">繰り返し</p>
+            <p begin="4:01.510" end="4:02.270" itunes:key="L115" ttm:agent="v1">繰り返し</p>
+            <p begin="4:02.040" end="4:02.750" itunes:key="L116" ttm:agent="v2">繰り返し</p>
+            <p begin="4:02.370" end="4:03.150" itunes:key="L117" ttm:agent="v1">繰り返し</p>
+            <p begin="4:03.160" end="4:04.000" itunes:key="L118" ttm:agent="v1">繰り返し</p>
+            <p begin="4:04.150" end="4:04.650" itunes:key="L119" ttm:agent="v1">歌う</p>
+        </div>
+        <div begin="4:04.740" end="4:17.400" itunes:songPart="Verse">
+            <p begin="4:04.740" end="4:08.010" itunes:key="L120" ttm:agent="v1">掴む左手が甘くて</p>
+            <p begin="4:07.180" end="4:08.480" itunes:key="L121" ttm:agent="v2">振るう右手が甘くて</p>
+            <p begin="4:08.760" end="4:09.380" itunes:key="L122" ttm:agent="v1">甘くて</p>
+            <p begin="4:09.150" end="4:09.700" itunes:key="L123" ttm:agent="v2">甘くて</p>
+            <p begin="4:09.660" end="4:10.880" itunes:key="L124" ttm:agent="v1">笑う口が裂けても</p>
+            <p begin="4:10.450" end="4:14.250" itunes:key="L125" ttm:agent="v2">それがまた楽しくて</p>
+            <p begin="4:11.890" end="4:12.630" itunes:key="L126" ttm:agent="v1">楽しくて</p>
+            <p begin="4:12.130" end="4:13.360" itunes:key="L127" ttm:agent="v2">脳髄を焼くように</p>
+            <p begin="4:13.080" end="4:13.870" itunes:key="L128" ttm:agent="v1">楽しくて</p>
+            <p begin="4:13.550" end="4:14.320" itunes:key="L129" ttm:agent="v2">楽しくて</p>
+            <p begin="4:14.110" end="4:17.400" itunes:key="L130" ttm:agent="v1">震えて</p>
+            <p begin="4:14.490" end="4:15.120" itunes:key="L131" ttm:agent="v2">震えて</p>
+            <p begin="4:15.090" end="4:15.900" itunes:key="L132" ttm:agent="v1">楽しくて</p>
+            <p begin="4:15.980" end="4:16.850" itunes:key="L133" ttm:agent="v2">楽しくて</p>
+        </div>
+        <div begin="4:17.510" end="4:43.300" itunes:songPart="Chorus">
+            <p begin="4:17.510" end="4:23.640" itunes:key="L134" ttm:agent="v1">この気持ち気付いて どうして気付いてくれないの</p>
+            <p begin="4:23.940" end="4:29.950" itunes:key="L135" ttm:agent="v1">狂気満ちて行くわ どうすれば止まるの</p>
+            <p begin="4:30.350" end="4:36.480" itunes:key="L136" ttm:agent="v1">この気持ち壊れて どこへ辿り着くのでしょうか</p>
+            <p begin="4:36.790" end="4:43.300" itunes:key="L137" ttm:agent="v1">愛溢れて行くわ 止めることはできない…</p>
+        </div>
+        <div begin="4:43.050" end="4:55.540" itunes:songPart="Verse">
+            <p begin="4:43.050" end="4:43.470" itunes:key="L138" ttm:agent="v2">赤い</p>
+            <p begin="4:43.370" end="4:43.830" itunes:key="L139" ttm:agent="v1">赤い</p>
+            <p begin="4:43.790" end="4:44.210" itunes:key="L140" ttm:agent="v2">赤い</p>
+            <p begin="4:44.220" end="4:44.700" itunes:key="L141" ttm:agent="v1">赤い</p>
+            <p begin="4:44.600" end="4:45.000" itunes:key="L142" ttm:agent="v2">赤い</p>
+            <p begin="4:45.020" end="4:45.430" itunes:key="L143" ttm:agent="v1">赤い</p>
+            <p begin="4:45.430" end="4:45.850" itunes:key="L144" ttm:agent="v2">甘い</p>
+            <p begin="4:45.800" end="4:46.290" itunes:key="L145" ttm:agent="v1">甘い</p>
+            <p begin="4:46.190" end="4:46.640" itunes:key="L146" ttm:agent="v2">甘い</p>
+            <p begin="4:46.620" end="4:47.090" itunes:key="L147" ttm:agent="v1">甘い</p>
+            <p begin="4:46.990" end="4:47.420" itunes:key="L148" ttm:agent="v2">甘い</p>
+            <p begin="4:47.390" end="4:47.930" itunes:key="L149" ttm:agent="v1">甘い</p>
+            <p begin="4:47.790" end="4:48.240" itunes:key="L150" ttm:agent="v2">甘い</p>
+            <p begin="4:48.230" end="4:48.630" itunes:key="L151" ttm:agent="v1">甘い</p>
+            <p begin="4:48.640" end="4:49.000" itunes:key="L152" ttm:agent="v2">甘い</p>
+            <p begin="4:49.000" end="4:49.600" itunes:key="L153" ttm:agent="v2">メイデン</p>
+            <p begin="4:49.040" end="4:49.930" itunes:key="L154" ttm:agent="v1">私とあなたと</p>
+            <p begin="4:49.800" end="4:50.210" itunes:key="L155" ttm:agent="v2">赤い</p>
+            <p begin="4:50.230" end="4:50.720" itunes:key="L156" ttm:agent="v1">赤い</p>
+            <p begin="4:50.620" end="4:51.060" itunes:key="L157" ttm:agent="v2">赤い</p>
+            <p begin="4:51.030" end="4:51.530" itunes:key="L158" ttm:agent="v1">赤い</p>
+            <p begin="4:51.430" end="4:51.850" itunes:key="L159" ttm:agent="v2">赤い</p>
+            <p begin="4:51.860" end="4:52.330" itunes:key="L160" ttm:agent="v1">甘い</p>
+            <p begin="4:52.250" end="4:52.690" itunes:key="L161" ttm:agent="v2">甘い</p>
+            <p begin="4:52.610" end="4:53.130" itunes:key="L162" ttm:agent="v1">甘い</p>
+            <p begin="4:53.010" end="4:53.460" itunes:key="L163" ttm:agent="v2">甘い</p>
+            <p begin="4:53.430" end="4:53.890" itunes:key="L164" ttm:agent="v1">赤い</p>
+            <p begin="4:53.810" end="4:54.230" itunes:key="L165" ttm:agent="v2">赤い</p>
+            <p begin="4:54.230" end="4:54.630" itunes:key="L166" ttm:agent="v1">赤い</p>
+            <p begin="4:54.600" end="4:55.140" itunes:key="L167" ttm:agent="v2">赤い</p>
+            <p begin="4:55.050" end="4:55.540" itunes:key="L168" ttm:agent="v1">赤い</p>
+        </div>
+        <div begin="4:55.690" end="5:08.200" itunes:songPart="Verse">
+            <p begin="4:55.690" end="4:57.100" itunes:key="L169" ttm:agent="v1">あなた 甘い</p>
+            <p begin="4:58.100" end="4:58.720" itunes:key="L170" ttm:agent="v1">甘い</p>
+            <p begin="4:59.710" end="5:00.410" itunes:key="L171" ttm:agent="v1">赤い</p>
+            <p begin="5:01.460" end="5:02.410" itunes:key="L172" ttm:agent="v1">赤い</p>
+            <p begin="5:07.250" end="5:08.200" itunes:key="L173" ttm:agent="v1">殺してあげる</p>
+        </div>
+        <div begin="5:08.210" end="5:34.600" itunes:songPart="Chorus">
+            <p begin="5:08.210" end="5:14.800" itunes:key="L174" ttm:agent="v1">其ノ生を引き裂かれて 赤銀を吐き消し飛べ</p>
+            <p begin="5:14.910" end="5:21.090" itunes:key="L175" ttm:agent="v1">其ノ生の華散らして 極彩に咲き我が糧に</p>
+            <p begin="5:21.290" end="5:27.600" itunes:key="L176" ttm:agent="v1">其ノ生がお前ならば 喰らい尽くして血肉にす</p>
+            <p begin="5:27.700" end="5:34.600" itunes:key="L177" ttm:agent="v1">其ノ四肢を贄と捧げ 我が足元の死屍となれ</p>
+        </div>
+    </body>
+</tt>

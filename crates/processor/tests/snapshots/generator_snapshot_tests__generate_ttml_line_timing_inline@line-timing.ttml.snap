@@ -1,0 +1,165 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: crates/processor/tests/fixtures/line-timing.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="zh-Hans">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1">
+                <ttm:name>劉佳</ttm:name>
+            </ttm:agent>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <songwriters>
+                    <songwriter>刘佳</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="4:30.663">
+        <div begin="32.512" end="52.612" itunes:songPart="Verse">
+            <p begin="32.512" end="37.482" itunes:key="L76" ttm:agent="v1">无论我走到哪里 都不能停止想你<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wu lun wo zou dao na li dou bu neng ting zhi xiang ni</span>
+            </p>
+            <p begin="37.729" end="42.881" itunes:key="L77" ttm:agent="v1">亲爱的 在我心底 没人比你更美丽<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">qin ai de zai wo xin di mei ren bi ni geng mei li</span>
+            </p>
+            <p begin="42.891" end="47.848" itunes:key="L78" ttm:agent="v1">轻轻唱 Do-re-mi 为你谱下一段旋律<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">qing qing chang Do-re-mi wei ni pu xia yi duan xuan lv</span>
+            </p>
+            <p begin="48.028" end="52.612" itunes:key="L79" ttm:agent="v1">让星星解开童话故事中的谜底<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">rang xing xing jie kai tong hua gu shi zhong de mi di</span>
+            </p>
+        </div>
+        <div begin="52.622" end="1:03.186" itunes:songPart="Verse">
+            <p begin="52.622" end="53.423" itunes:key="L80" ttm:agent="v1">Oh, my god<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Oh, my god</span>
+            </p>
+            <p begin="53.433" end="55.345" itunes:key="L81" ttm:agent="v1">我已经爱上她 真实的表达<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wo yi jing ai shang ta zhen shi de biao da</span>
+            </p>
+            <p begin="55.355" end="57.449" itunes:key="L82" ttm:agent="v1">像喝了奇怪药水 中了魔法<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">xiang he le qi guai yao shui zhong le mo fa</span>
+            </p>
+            <p begin="57.459" end="1:00.109" itunes:key="L83" ttm:agent="v1">街上溜溜达达 还是不想回家<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">jie shang liu liu da da hai shi bu xiang hui jia</span>
+            </p>
+            <p begin="1:00.168" end="1:03.186" itunes:key="L84" ttm:agent="v1">一个人看着电影 嘴里嚼着爆米花 (Oh-oh )<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yi ge ren kan zhe dian ying zui li jue zhe bao mi hua (Oh-oh)</span>
+            </p>
+        </div>
+        <div begin="1:03.196" end="1:13.980" itunes:songPart="Verse">
+            <p begin="1:03.196" end="1:05.493" itunes:key="L85" ttm:agent="v1">每分每秒都想和你通电话<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">mei fen mei miao dou xiang he ni tong dian hua</span>
+            </p>
+            <p begin="1:05.505" end="1:08.006" itunes:key="L86" ttm:agent="v1">飞到巴黎铁塔下 自在的喝奶咖<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">fei dao ba li tie ta xia zi zai de he nai ka</span>
+            </p>
+            <p begin="1:08.016" end="1:10.362" itunes:key="L87" ttm:agent="v1">去百慕达 看海和沙 跳桑巴<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">qu bai mu da kan hai he sha tiao sang ba</span>
+            </p>
+            <p begin="1:10.525" end="1:13.980" itunes:key="L88" ttm:agent="v1">点燃了火把 我们尽情唱吧 (Come on)<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">dian ran le huo ba wo men jin qing chang ba (Come on)</span>
+            </p>
+        </div>
+        <div begin="1:12.897" end="1:34.565" itunes:songPart="Verse">
+            <p begin="1:12.897" end="1:18.045" itunes:key="L89" ttm:agent="v1">我要爱爱爱的就是你 可爱女孩<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wo yao ai ai ai de jiu shi ni ke ai nv hai</span>
+            </p>
+            <p begin="1:18.055" end="1:21.292" itunes:key="L90" ttm:agent="v1">天上星星我为你摘<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">tian shang xing xing wo wei ni zhai</span>
+            </p>
+            <p begin="1:21.302" end="1:23.156" itunes:key="L91" ttm:agent="v1">所有账单我来买<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">suo you zhang dan wo lai mai</span>
+            </p>
+            <p begin="1:23.233" end="1:28.191" itunes:key="L92" ttm:agent="v1">跟我来 Yeah-yeah 甩甩帽子 一起歪歪戴<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai</span>
+            </p>
+            <p begin="1:28.359" end="1:34.565" itunes:key="L93" ttm:agent="v1">全世界我只爱你一个 永不言改<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">quan shi jie wo zhi ai ni yi ge yong bu yan gai</span>
+            </p>
+        </div>
+        <div begin="1:34.575" end="1:54.929" itunes:songPart="Verse">
+            <p begin="1:34.575" end="1:39.408" itunes:key="L94" ttm:agent="v1">看窗外出现彩虹 天空就会放晴<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">kan chuang wai chu xian cai hong tian kong jiu hui fang qing</span>
+            </p>
+            <p begin="1:39.588" end="1:44.886" itunes:key="L95" ttm:agent="v1">公主和王子剧情害你哭红了眼睛<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">gong zhu he wang zi ju qing hai ni ku hong le yan jing</span>
+            </p>
+            <p begin="1:44.896" end="1:49.659" itunes:key="L96" ttm:agent="v1">六合彩你总赢 点双人份冰淇淋<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">liu he cai ni zong ying dian shuang ren fen bing qi lin</span>
+            </p>
+            <p begin="1:49.928" end="1:54.929" itunes:key="L97" ttm:agent="v1">让所有情敌胆怯 比谁拳头更硬 (Come on)<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">rang suo you qing di dan qie bi shei quan tou geng ying (Come on)</span>
+            </p>
+        </div>
+        <div begin="1:54.313" end="2:04.866" itunes:songPart="Verse">
+            <p begin="1:54.313" end="1:57.234" itunes:key="L98" ttm:agent="v1">你向左走 向右走 我陪你左右<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">ni xiang zuo zou xiang you zou wo pei ni zuo you</span>
+            </p>
+            <p begin="1:57.244" end="1:59.529" itunes:key="L99" ttm:agent="v1">满脑子都是你 不再想某 某 某<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">man nao zi dou shi ni bu zai xiang mou mou mou</span>
+            </p>
+            <p begin="1:59.539" end="2:01.117" itunes:key="L100" ttm:agent="v1">交通灯切换红黄绿<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">jiao tong deng qie huan hong huang lv</span>
+            </p>
+            <p begin="2:01.127" end="2:02.461" itunes:key="L101" ttm:agent="v1">恋爱要遵守的规律<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">lian ai yao zun shou de gui lv</span>
+            </p>
+            <p begin="2:02.471" end="2:04.866" itunes:key="L102" ttm:agent="v1">别整天痛哭流涕 突然又笑得像喝了罐蜜<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">bie zheng tian tong ku liu ti tu ran you xiao de xiang he le guan mi</span>
+            </p>
+        </div>
+        <div begin="2:04.470" end="2:16.520" itunes:songPart="Verse">
+            <p begin="2:04.470" end="2:07.217" itunes:key="L104" ttm:agent="v1">Baby, baby, honey, you like sweet candy<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Baby, baby, honey, you like sweet candy</span>
+            </p>
+            <p begin="2:07.299" end="2:10.307" itunes:key="L105" ttm:agent="v1">城堡的交响曲 哼唱着 Do-re-mi-fa-so-la-si<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">cheng bao de jiao xiang qu heng chang zhe Do-re-mi-fa-so-la-si</span>
+            </p>
+            <p begin="2:10.349" end="2:12.329" itunes:key="L107" ttm:agent="v1">滴滴 随时随地call你<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">di di sui shi sui di call ni</span>
+            </p>
+            <p begin="2:12.520" end="2:16.520" itunes:key="L108" ttm:agent="v1">Hey, come on, come on 我形影不离<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Hey, come on, come on wo xing ying bu li</span>
+            </p>
+        </div>
+        <div begin="2:14.835" end="2:37.289" itunes:songPart="Verse">
+            <p begin="2:14.835" end="2:19.948" itunes:key="L109" ttm:agent="v1">我要爱爱爱的就是你 可爱女孩<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wo yao ai ai ai de jiu shi ni ke ai nv hai</span>
+            </p>
+            <p begin="2:20.012" end="2:23.234" itunes:key="L110" ttm:agent="v1">天上星星我为你摘<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">tian shang xing xing wo wei ni zhai</span>
+            </p>
+            <p begin="2:23.244" end="2:25.092" itunes:key="L111" ttm:agent="v1">所有账单我来买<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">suo you zhang dan wo lai mai</span>
+            </p>
+            <p begin="2:25.176" end="2:30.108" itunes:key="L112" ttm:agent="v1">跟我来 Yeah-yeah 甩甩帽子 一起歪歪戴<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai</span>
+            </p>
+            <p begin="2:30.259" end="2:37.289" itunes:key="L113" ttm:agent="v1">全世界我只爱你一个 永不言改<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">quan shi jie wo zhi ai ni yi ge yong bu yan gai</span>
+            </p>
+        </div>
+        <div begin="2:55.784" end="3:28.921" itunes:songPart="Verse">
+            <p begin="2:55.784" end="2:58.935" itunes:key="L118" ttm:agent="v1">Come on 爱情像龙卷风 我们被卷入其中<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Come on ai qing xiang long juan feng wo men bei juan ru qi zhong</span>
+            </p>
+            <p begin="2:58.945" end="3:01.526" itunes:key="L119" ttm:agent="v1">就是要爱得天崩地裂 轰轰隆隆<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">jiu shi yao ai de tian beng di lie hong hong long long</span>
+            </p>
+            <p begin="3:01.536" end="3:04.048" itunes:key="L120" ttm:agent="v1">爱难免会失控 也别装可怜虫<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">ai nan mian hui shi kong ye bie zhuang ke lian chong</span>
+            </p>
+            <p begin="3:04.058" end="3:06.972" itunes:key="L121" ttm:agent="v1">陷入迷宫 惊恐 伤痛 难做英雄<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">xian ru mi gong jing kong shang tong nan zuo ying xiong</span>
+            </p>
+            <p begin="3:06.982" end="3:09.362" itunes:key="L122" ttm:agent="v1">喜欢你笑啊 像鲜艳的花<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">xi huan ni xiao a xiang xian yan de hua</span>
+            </p>
+            <p begin="3:09.565" end="3:11.949" itunes:key="L123" ttm:agent="v1">偷偷传的情话 被报成八卦<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">tou tou chuan de qing hua bei bao cheng ba gua</span>
+            </p>
+            <p begin="3:11.959" end="3:14.637" itunes:key="L124" ttm:agent="v1">解开爱的密码 开心我随便刷<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">jie kai ai de mi ma kai xin wo sui bian shua</span>
+            </p>
+            <p begin="3:14.826" end="3:17.731" itunes:key="L125" ttm:agent="v1">Di-la-di-di-la-di 咒语被施法<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Di-la-di-di-la-di zhou yu bei shi fa</span>
+            </p>
+            <p begin="3:16.544" end="3:21.541" itunes:key="L126" ttm:agent="v1">Oh 想你 Oh 爱你<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Oh xiang ni Oh ai ni</span>
+            </p>
+            <p begin="3:21.551" end="3:28.921" itunes:key="L127" ttm:agent="v1">在一起 永远永远不分离<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">zai yi qi yong yuan yong yuan bu fen li</span>
+            </p>
+        </div>
+        <div begin="3:27.045" end="3:49.908" itunes:songPart="Verse">
+            <p begin="3:27.045" end="3:32.073" itunes:key="L128" ttm:agent="v1">我要爱爱爱的就是你 可爱女孩<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wo yao ai ai ai de jiu shi ni ke ai nv hai</span>
+            </p>
+            <p begin="3:32.249" end="3:35.453" itunes:key="L129" ttm:agent="v1">天上星星我为你摘<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">tian shang xing xing wo wei ni zhai</span>
+            </p>
+            <p begin="3:35.505" end="3:37.423" itunes:key="L130" ttm:agent="v1">所有账单我来买<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">suo you zhang dan wo lai mai</span>
+            </p>
+            <p begin="3:37.433" end="3:42.390" itunes:key="L131" ttm:agent="v1">跟我来 Yeah-yeah 甩甩帽子 一起歪歪戴<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai</span>
+            </p>
+            <p begin="3:42.564" end="3:49.908" itunes:key="L132" ttm:agent="v1">全世界我只爱你一个 永不言改<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">quan shi jie wo zhi ai ni yi ge yong bu yan gai</span>
+            </p>
+        </div>
+        <div begin="3:47.678" end="4:10.241" itunes:songPart="Verse">
+            <p begin="3:47.678" end="3:52.711" itunes:key="L133" ttm:agent="v1">我要爱爱爱的就是你 可爱女孩<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wo yao ai ai ai de jiu shi ni ke ai nv hai</span>
+            </p>
+            <p begin="3:52.901" end="3:56.067" itunes:key="L134" ttm:agent="v1">天上星星我为你摘<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">tian shang xing xing wo wei ni zhai</span>
+            </p>
+            <p begin="3:56.148" end="3:58.039" itunes:key="L135" ttm:agent="v1">所有账单我来买<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">suo you zhang dan wo lai mai</span>
+            </p>
+            <p begin="3:58.049" end="4:03.009" itunes:key="L136" ttm:agent="v1">跟我来 Yeah-yeah 甩甩帽子一起歪歪戴<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">gen wo lai Yeah-yeah shuai shuai mao zi yi qi wai wai dai</span>
+            </p>
+            <p begin="4:03.204" end="4:10.241" itunes:key="L137" ttm:agent="v1">全世界我只爱你一个 永不言改<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">quan shi jie wo zhi ai ni yi ge yong bu yan gai</span>
+            </p>
+        </div>
+        <div begin="4:10.256" end="4:19.243" itunes:songPart="Verse">
+            <p begin="4:10.256" end="4:13.147" itunes:key="L39671" ttm:agent="v1">Whoa, yeah<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Whoa, yeah</span>
+            </p>
+            <p begin="4:16.091" end="4:19.243" itunes:key="L139" ttm:agent="v1">Oh, yeah, come on<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Oh, yeah, come on</span>
+            </p>
+        </div>
+        <div begin="4:28.189" end="4:30.663" itunes:songPart="Verse">
+            <p begin="4:28.189" end="4:30.663" itunes:key="L142" ttm:agent="v1">Oh 愛的就是你<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">Oh ai de jiu shi ni</span>
+            </p>
+        </div>
+    </body>
+</tt>

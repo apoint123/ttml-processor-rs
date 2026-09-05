@@ -1,0 +1,558 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: crates/processor/tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="zh-Hans">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1"/>
+            <amll:meta key="musicName" value="一颗方糖悬滞的时间 (feat. 阿兰·达瓦卓玛)"/>
+            <amll:meta key="musicName" value="一颗方糖悬滞的时间"/>
+            <amll:meta key="musicName" value="《绝区零》朱鸢EP"/>
+            <amll:meta key="musicName" value="《绝区零》朱鸢角色曲"/>
+            <amll:meta key="musicName" value="一顆方糖懸滯的時間 (feat. 阿蘭·達瓦卓瑪)"/>
+            <amll:meta key="musicName" value="一顆方糖懸滯的時間"/>
+            <amll:meta key="musicName" value="角砂糖が沈むまで (feat. 阿兰·达瓦卓玛)"/>
+            <amll:meta key="musicName" value="角砂糖が沈むまで"/>
+            <amll:meta key="musicName" value="각설탕 하나가 떠 있는 시간 (feat. 阿兰·达瓦卓玛)"/>
+            <amll:meta key="musicName" value="각설탕 하나가 떠 있는 시간"/>
+            <amll:meta key="musicName" value="As the sugar cube floats, fleeting in time (feat. 阿兰·达瓦卓玛)"/>
+            <amll:meta key="musicName" value="As the sugar cube floats, fleeting in time"/>
+            <amll:meta key="artists" value="HOYO-MiX"/>
+            <amll:meta key="artists" value="三Z-STUDIO"/>
+            <amll:meta key="artists" value="Sān-Z"/>
+            <amll:meta key="artists" value="阿兰"/>
+            <amll:meta key="artists" value="阿兰·达瓦卓玛"/>
+            <amll:meta key="artists" value="ALAN"/>
+            <amll:meta key="artists" value="Alan Dawa Dolma"/>
+            <amll:meta key="artists" value="アラン·ダワジュオマ"/>
+            <amll:meta key="album" value="绝区零-一颗方糖悬滞的时间"/>
+            <amll:meta key="album" value="一颗方糖悬滞的时间 - Single"/>
+            <amll:meta key="album" value="一顆方糖懸滯的時間 - Single"/>
+            <amll:meta key="album" value="一顆方糖懸滯的時間"/>
+            <amll:meta key="album" value="角砂糖が沈むまで (feat. 阿兰·达瓦卓玛) - Single"/>
+            <amll:meta key="album" value="角砂糖が沈むまで"/>
+            <amll:meta key="album" value="각설탕 하나가 떠 있는 시간 - Single"/>
+            <amll:meta key="album" value="각설탕 하나가 떠 있는 시간"/>
+            <amll:meta key="album" value="As the sugar cube floats, fleeting in time - Single"/>
+            <amll:meta key="album" value="As the sugar cube floats, fleeting in time"/>
+            <amll:meta key="isrc" value="DGA072492989"/>
+            <amll:meta key="isrc" value="DGA082412140"/>
+            <amll:meta key="isrc" value="DGA082421563"/>
+            <amll:meta key="isrc" value="DGA082410574"/>
+            <amll:meta key="isrc" value="DGA082410599"/>
+            <amll:meta key="ncmMusicId" value="2612750275"/>
+            <amll:meta key="qqMusicId" value="002TFWxI3SlNwx"/>
+            <amll:meta key="qqMusicId" value="503998396"/>
+            <amll:meta key="spotifyId" value="66izH92bA85wuJFFgJ0HRy"/>
+            <amll:meta key="spotifyId" value="4o9pXElZZFjQBlhSWTNBQC"/>
+            <amll:meta key="spotifyId" value="2excpOrcz3wOViAA3cBMpU"/>
+            <amll:meta key="spotifyId" value="52GlYDlUFY2v9NfA1kGyEQ"/>
+            <amll:meta key="appleMusicId" value="1758391074"/>
+            <amll:meta key="appleMusicId" value="1758774905"/>
+            <amll:meta key="appleMusicId" value="1759153566"/>
+            <amll:meta key="appleMusicId" value="1758774295"/>
+            <amll:meta key="appleMusicId" value="1758784690"/>
+            <amll:meta key="ttmlAuthorGithub" value="68000793"/>
+            <amll:meta key="ttmlAuthorGithub" value="50747104"/>
+            <amll:meta key="ttmlAuthorGithubLogin" value="ranhengzhang"/>
+            <amll:meta key="ttmlAuthorGithubLogin" value="Xionghaizi001"/>
+            <amll:meta key="Arranger" value="杨武韬"/>
+            <amll:meta key="Composer" value="杨武韬"/>
+            <amll:meta key="Drums" value="眭逸凡"/>
+            <amll:meta key="Editing Engineer" value="徐威"/>
+            <amll:meta key="Guitar" value="雷十一"/>
+            <amll:meta key="Lyrics" value="熊子"/>
+            <amll:meta key="Mixing Engineer" value="黄钦胜"/>
+            <amll:meta key="Producer" value="杨武韬"/>
+            <amll:meta key="Recording Engineer" value="袁雄宇"/>
+            <amll:meta key="Vocals" value="阿兰"/>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <songwriters>
+                    <songwriter>熊子</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="3:19.470">
+        <div begin="10.640" end="28.550" itunes:songPart="Verse">
+            <p begin="10.640" end="13.820" itunes:key="L1" ttm:agent="v1">窗外的春天<span ttm:role="x-translation" xml:lang="de">erblühen die Frühlingsblumen gerade außerhalb,</span>
+                <span ttm:role="x-translation" xml:lang="en">The springtime blooming just outside</span>
+                <span ttm:role="x-translation" xml:lang="es">El aire primaveral sopla fuera de la habitación</span>
+                <span ttm:role="x-translation" xml:lang="fr">Le printemps fleurit par la fenêtre</span>
+                <span ttm:role="x-translation" xml:lang="id">Musim semi di luar jendela</span>
+                <span ttm:role="x-translation" xml:lang="ja">窓の外は春</span>
+                <span ttm:role="x-translation" xml:lang="ko">창밖의 봄날</span>
+                <span ttm:role="x-translation" xml:lang="pt">A primavera florescendo do lado de fora</span>
+                <span ttm:role="x-translation" xml:lang="ru">За окном расцветает весна,</span>
+                <span ttm:role="x-translation" xml:lang="th">ฤดูใบไม้ผลิกำลังเบ่งบานอยู่ด้านนอก</span>
+                <span ttm:role="x-translation" xml:lang="vi">Mùa xuân nở rộ ngoài ô cửa</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">窗外的春天</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">chuāng wài de chūn tiān</span>
+            </p>
+            <p begin="15.080" end="18.570" itunes:key="L2" ttm:agent="v1">停在枝头的麻雀<span ttm:role="x-translation" xml:lang="de">und ein Spatz sitzt sanft auf einem Zweig.</span>
+                <span ttm:role="x-translation" xml:lang="en">A sparrow perched on a branch</span>
+                <span ttm:role="x-translation" xml:lang="es">Sobre la rama descansa un gorrión</span>
+                <span ttm:role="x-translation" xml:lang="fr">Un moineau perché sur une branche</span>
+                <span ttm:role="x-translation" xml:lang="id">Burung pipit bertengger di dahan</span>
+                <span ttm:role="x-translation" xml:lang="ja">枝にすずめがとまり</span>
+                <span ttm:role="x-translation" xml:lang="ko">가지에 머무는 참새</span>
+                <span ttm:role="x-translation" xml:lang="pt">Um pardal pousado suavemente em um galho</span>
+                <span ttm:role="x-translation" xml:lang="ru">воробьи присели на ветку.</span>
+                <span ttm:role="x-translation" xml:lang="th">นกกระจอกเกาะอยู่บนกิ่งไม้</span>
+                <span ttm:role="x-translation" xml:lang="vi">Chim sẻ đậu trên cành</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">停在枝頭的麻雀</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">tíng zài zhī tóu de má què</span>
+            </p>
+            <p begin="20.060" end="23.320" itunes:key="L3" ttm:agent="v1">初次察觉的旋律<span ttm:role="x-translation" xml:lang="de">Eine Melodie, zum ersten Mal wahrgenommen,</span>
+                <span ttm:role="x-translation" xml:lang="en">A melody heard for the first time</span>
+                <span ttm:role="x-translation" xml:lang="es">Se escucha por primera vez una canción</span>
+                <span ttm:role="x-translation" xml:lang="fr">Une mélodie perçue pour la première fois</span>
+                <span ttm:role="x-translation" xml:lang="id">Melodi yang kudengar untuk pertama kalinya</span>
+                <span ttm:role="x-translation" xml:lang="ja">聞き覚えのない旋律が</span>
+                <span ttm:role="x-translation" xml:lang="ko">처음 느껴본 선율이</span>
+                <span ttm:role="x-translation" xml:lang="pt">Uma melodia que se escuta pela primeira vez</span>
+                <span ttm:role="x-translation" xml:lang="ru">Эту мелодию слышу впервые,</span>
+                <span ttm:role="x-translation" xml:lang="th">ท่วงทำนองที่ได้ยินเป็นครั้งแรก</span>
+                <span ttm:role="x-translation" xml:lang="vi">Giai điệu lần đầu tiên được nghe</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">初次察覺的旋律</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">chū cì chá jué de xuán lǜ</span>
+            </p>
+            <p begin="24.790" end="28.550" itunes:key="L4" ttm:agent="v1">不经意拂过心尖<span ttm:role="x-translation" xml:lang="de">geht mir unerwartet zu Herzen.</span>
+                <span ttm:role="x-translation" xml:lang="en">Plucks at my heartstrings unforeseen</span>
+                <span ttm:role="x-translation" xml:lang="es">Siento caricias en el corazón</span>
+                <span ttm:role="x-translation" xml:lang="fr">A soudain effleuré mon cœur</span>
+                <span ttm:role="x-translation" xml:lang="id">Tanpa sadar telah menyentuh hati</span>
+                <span ttm:role="x-translation" xml:lang="ja">ふいに心を撫でる</span>
+                <span ttm:role="x-translation" xml:lang="ko">무심결에 마음을 스쳐</span>
+                <span ttm:role="x-translation" xml:lang="pt">Atrai meu coração inesperadamente</span>
+                <span ttm:role="x-translation" xml:lang="ru">она вдруг трогает меня за сердце.</span>
+                <span ttm:role="x-translation" xml:lang="th">ดึงดูดใจฉันอย่างไม่คาดฝัน</span>
+                <span ttm:role="x-translation" xml:lang="vi">Vô tình chạm đến trái tim</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">不經意拂過心尖</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">bù jīng yì fú guò xīn jiān</span>
+            </p>
+        </div>
+        <div begin="30.760" end="48.840" itunes:songPart="Verse">
+            <p begin="30.760" end="34.270" itunes:key="L5" ttm:agent="v1">点一支香签<span ttm:role="x-translation" xml:lang="de">Das Räucherstäbchen verbrennt.</span>
+                <span ttm:role="x-translation" xml:lang="en">Incense burning</span>
+                <span ttm:role="x-translation" xml:lang="es">Una varilla de incienso que arde con pasión</span>
+                <span ttm:role="x-translation" xml:lang="fr">L&apos;encens brûle</span>
+                <span ttm:role="x-translation" xml:lang="id">Menyalakan pewangi</span>
+                <span ttm:role="x-translation" xml:lang="ja">お香に火をつけ</span>
+                <span ttm:role="x-translation" xml:lang="ko">향을 피우고</span>
+                <span ttm:role="x-translation" xml:lang="pt">O incenso queimando</span>
+                <span ttm:role="x-translation" xml:lang="ru">Зажгу свечу,</span>
+                <span ttm:role="x-translation" xml:lang="th">จุดธูปหอม</span>
+                <span ttm:role="x-translation" xml:lang="vi">Đốt ngọn nến thơm</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">點一支香籤</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">diǎn yì zhī xiāng qiān</span>
+            </p>
+            <p begin="35.120" end="38.430" itunes:key="L6" ttm:agent="v1">放下系紧的发辫<span ttm:role="x-translation" xml:lang="de">Ich lasse meine Haare herunter,</span>
+                <span ttm:role="x-translation" xml:lang="en">I let down my hair</span>
+                <span ttm:role="x-translation" xml:lang="es">El cabello suelto sin restricción</span>
+                <span ttm:role="x-translation" xml:lang="fr">J&apos;ai détaché mes cheveux</span>
+                <span ttm:role="x-translation" xml:lang="id">Aku menggerai rambutku</span>
+                <span ttm:role="x-translation" xml:lang="ja">きつく結んだ髪をほどく</span>
+                <span ttm:role="x-translation" xml:lang="ko">꽉 묶었던 머리를 풀어</span>
+                <span ttm:role="x-translation" xml:lang="pt">Soltei meu cabelo</span>
+                <span ttm:role="x-translation" xml:lang="ru">распущу свои косы.</span>
+                <span ttm:role="x-translation" xml:lang="th">ฉันปล่อยผมลง</span>
+                <span ttm:role="x-translation" xml:lang="vi">Buông xõa mái tóc</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">放下繫緊的髮辮</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">fàng xià jì jǐn de fà biàn</span>
+            </p>
+            <p begin="40.110" end="43.460" itunes:key="L7" ttm:agent="v1">看陌生柔软光线<span ttm:role="x-translation" xml:lang="de">und bestaune das unbekannte weiche Licht,</span>
+                <span ttm:role="x-translation" xml:lang="en">Gazing at the unfamiliar soft light</span>
+                <span ttm:role="x-translation" xml:lang="es">La luz tenue y desconocida ilumina mi visión</span>
+                <span ttm:role="x-translation" xml:lang="fr">J&apos;observe la lumière tamisée qui m&apos;est inconnue</span>
+                <span ttm:role="x-translation" xml:lang="id">Melihat cahaya lembut yang tidak familier</span>
+                <span ttm:role="x-translation" xml:lang="ja">見知らぬ光が柔らかく</span>
+                <span ttm:role="x-translation" xml:lang="ko">낯선 부드러운 빛을 바라봐</span>
+                <span ttm:role="x-translation" xml:lang="pt">Contemplando a luz suave e desconhecida</span>
+                <span ttm:role="x-translation" xml:lang="ru">Смотрю я на свет, что так мягко блестит.</span>
+                <span ttm:role="x-translation" xml:lang="th">จ้องมองแสงอันนุ่มนวลที่ไม่แปลกตา</span>
+                <span ttm:role="x-translation" xml:lang="vi">Nhìn ánh sáng dịu nhẹ xa lạ</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">看陌生柔軟光線</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">kàn mò shēng róu ruǎn guāng xiàn</span>
+            </p>
+            <p begin="44.150" end="48.840" itunes:key="L8" ttm:agent="v1">照平整如纸的晨间<span ttm:role="x-translation" xml:lang="de">das an einem Morgen glatt wie Papier erstrahlt.</span>
+                <span ttm:role="x-translation" xml:lang="en">That shines upon on a morning paper-flat</span>
+                <span ttm:role="x-translation" xml:lang="es">Un amanecer despejado</span>
+                <span ttm:role="x-translation" xml:lang="fr">Qui illumine un matin aussi plat que du papier</span>
+                <span ttm:role="x-translation" xml:lang="id">Menyinari pagi yang datar bagai kertas</span>
+                <span ttm:role="x-translation" xml:lang="ja">昼を照らす まっ平な紙のよう</span>
+                <span ttm:role="x-translation" xml:lang="ko">종이처럼 평평한 낮을 비춰</span>
+                <span ttm:role="x-translation" xml:lang="pt">Que brilha sobre um jornal matinal</span>
+                <span ttm:role="x-translation" xml:lang="ru">Освещается утро, словно белый лист.</span>
+                <span ttm:role="x-translation" xml:lang="th">ส่องสว่างยามเช้าที่ราบเรียบราวกับกระดาษ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Soi sáng buổi sáng bình yên</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">照平整如紙的晨間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">zhào píng zhěng rú zhǐ de chén jiān</span>
+            </p>
+        </div>
+        <div begin="49.430" end="1:08.890" itunes:songPart="PreChorus">
+            <p begin="49.430" end="53.780" itunes:key="L9" ttm:agent="v1">追云影的羊群<span ttm:role="x-translation" xml:lang="de">Eine Schafherde jagt hinter den Schatten der Wolken hinterher.</span>
+                <span ttm:role="x-translation" xml:lang="en">A flock of sheep chasing shadows cast by clouds</span>
+                <span ttm:role="x-translation" xml:lang="es">Un rebaño de ovejas que persigue las nubes</span>
+                <span ttm:role="x-translation" xml:lang="fr">Des moutons chassent l&apos;ombre des nuages</span>
+                <span ttm:role="x-translation" xml:lang="id">Sekawanan domba mengejar bayangan awan</span>
+                <span ttm:role="x-translation" xml:lang="ja">雲の影を追う羊たち</span>
+                <span ttm:role="x-translation" xml:lang="ko">구름 그림자를 쫓는 양 떼</span>
+                <span ttm:role="x-translation" xml:lang="pt">Um rebanho de ovelhas perseguindo as sombras projetadas pelas nuvens</span>
+                <span ttm:role="x-translation" xml:lang="ru">Барашки в небе гонят облака.</span>
+                <span ttm:role="x-translation" xml:lang="th">ฝูงแกะที่วิ่งไล่ตามเงาเมฆ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Đàn cừu đuổi theo bóng mây</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">追雲影的羊群</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">zhuī yún yǐng de yáng qún</span>
+            </p>
+            <p begin="54.500" end="1:00.440" itunes:key="L10" ttm:agent="v1">任言语缓缓入眠<span ttm:role="x-translation" xml:lang="de">Sag irgendetwas, um mich in den Schlaf zu wiegen.</span>
+                <span ttm:role="x-translation" xml:lang="en">Say anything to lull me to sleep</span>
+                <span ttm:role="x-translation" xml:lang="es">Palabras que llevan a un mundo de ilusiones</span>
+                <span ttm:role="x-translation" xml:lang="fr">Les mots m&apos;emportent vers les bras Morphée</span>
+                <span ttm:role="x-translation" xml:lang="id">Bisikkan sesuatu dan antar aku ke alam mimpi</span>
+                <span ttm:role="x-translation" xml:lang="ja">言葉の微睡むに任せ</span>
+                <span ttm:role="x-translation" xml:lang="ko">말소리조차 천천히 잠에 들어</span>
+                <span ttm:role="x-translation" xml:lang="pt">Diga qualquer coisa para me fazer dormir</span>
+                <span ttm:role="x-translation" xml:lang="ru">Я усну под твои слова.</span>
+                <span ttm:role="x-translation" xml:lang="th">พูดอะไรก็ได้เพื่อกล่อมฉันให้นอนหลับ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Chầm chậm bước vào giấc ngủ</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">任言語緩緩入眠</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">rèn yán yǔ huǎn huǎn rù mián</span>
+            </p>
+            <p begin="1:00.120" end="1:05.010" itunes:key="L11" ttm:agent="v1">余白的哲学独自领会<span ttm:role="x-translation" xml:lang="de">Ein hohles Weltbild, von mir allein erfasst,</span>
+                <span ttm:role="x-translation" xml:lang="en">An empty philosophy realized alone</span>
+                <span ttm:role="x-translation" xml:lang="es">En la filosofía vacía no hay colaboraciones</span>
+                <span ttm:role="x-translation" xml:lang="fr">Une philosophie vide réalisée par soi-même</span>
+                <span ttm:role="x-translation" xml:lang="id">Filosofi kosong yang disadari sendiri</span>
+                <span ttm:role="x-translation" xml:lang="ja">余白のある哲学にひとり頷き</span>
+                <span ttm:role="x-translation" xml:lang="ko">홀로 깨닫는 여백의 철학</span>
+                <span ttm:role="x-translation" xml:lang="pt">Uma filosofia vazia realizada sozinha</span>
+                <span ttm:role="x-translation" xml:lang="ru">Философию пустоты познаёшь лишь в одиночестве.</span>
+                <span ttm:role="x-translation" xml:lang="th">ปรัชญาที่ว่างเปล่าต้องตระหนักรู้ด้วยตัวเอง</span>
+                <span ttm:role="x-translation" xml:lang="vi">Tự lĩnh hội triết học</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">餘白的哲學獨自領會</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yú bái de zhé xué dú zì lǐng huì</span>
+            </p>
+            <p begin="1:05.690" end="1:06.520" itunes:key="L12" ttm:agent="v1">练习<span ttm:role="x-translation" xml:lang="de">und sodann in die Tat umgesetzt.</span>
+                <span ttm:role="x-translation" xml:lang="en">Then put into practice</span>
+                <span ttm:role="x-translation" xml:lang="es">Practicar</span>
+                <span ttm:role="x-translation" xml:lang="fr">Puis pratiquée</span>
+                <span ttm:role="x-translation" xml:lang="id">Lalu diterapkan dalam praktik</span>
+                <span ttm:role="x-translation" xml:lang="ja">反芻しては</span>
+                <span ttm:role="x-translation" xml:lang="ko">홀로 연습해</span>
+                <span ttm:role="x-translation" xml:lang="pt">E coloque em prática</span>
+                <span ttm:role="x-translation" xml:lang="ru">Познаёшь и практикуешь.</span>
+                <span ttm:role="x-translation" xml:lang="th">แล้วนำไปปฏิบัติ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Luyện tập</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">練習</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">liàn xí</span>
+            </p>
+            <p begin="1:07.250" end="1:08.890" itunes:key="L13" ttm:agent="v1">浮起一些<span ttm:role="x-translation" xml:lang="de">Es schwellt an,</span>
+                <span ttm:role="x-translation" xml:lang="en">Slowly rising</span>
+                <span ttm:role="x-translation" xml:lang="es">Elevarse hasta ciertos niveles</span>
+                <span ttm:role="x-translation" xml:lang="fr">Qui s&apos;élève lentement</span>
+                <span ttm:role="x-translation" xml:lang="id">Perlahan mengambang</span>
+                <span ttm:role="x-translation" xml:lang="ja">浮かぶ</span>
+                <span ttm:role="x-translation" xml:lang="ko">조금씩 떠올라</span>
+                <span ttm:role="x-translation" xml:lang="pt">Subindo lentamente</span>
+                <span ttm:role="x-translation" xml:lang="ru">Я встречаю новый день.</span>
+                <span ttm:role="x-translation" xml:lang="th">ลอยขึ้นมาช้าๆ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Dần quen với</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">浮起一些</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">fú qǐ yì xiē</span>
+            </p>
+        </div>
+        <div begin="1:09.500" end="1:29.070" itunes:songPart="Chorus">
+            <p begin="1:09.500" end="1:13.960" itunes:key="L14" ttm:agent="v1">一人的 星期天<span ttm:role="x-translation" xml:lang="de">ein Sonntag für mich alleine,</span>
+                <span ttm:role="x-translation" xml:lang="en">A Sunday, all on my own</span>
+                <span ttm:role="x-translation" xml:lang="es">Un domingo solitario</span>
+                <span ttm:role="x-translation" xml:lang="fr">Un dimanche, solitaire</span>
+                <span ttm:role="x-translation" xml:lang="id">Hari minggu, sendirian</span>
+                <span ttm:role="x-translation" xml:lang="ja">一人だけの 日曜日</span>
+                <span ttm:role="x-translation" xml:lang="ko">혼자 보내는 일요일</span>
+                <span ttm:role="x-translation" xml:lang="pt">Um domingo, completamente sozinho</span>
+                <span ttm:role="x-translation" xml:lang="ru">Воскресенье наедине с собой.</span>
+                <span ttm:role="x-translation" xml:lang="th">วันอาทิตย์ ฉันอยู่คนเดียวได้</span>
+                <span ttm:role="x-translation" xml:lang="vi">Ngày chủ nhật, một mình</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">一人的 星期天</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yì rén de xīng qī tiān</span>
+            </p>
+            <p begin="1:14.420" end="1:19.170" itunes:key="L15" ttm:agent="v1">轻轻拢 慢慢捻<span ttm:role="x-translation" xml:lang="de">um mich leise zu besinnen, langsam zu erinnern.</span>
+                <span ttm:role="x-translation" xml:lang="en">Gently reflecting, slowly recollecting</span>
+                <span ttm:role="x-translation" xml:lang="es">Con suavidad y dilación</span>
+                <span ttm:role="x-translation" xml:lang="fr">Réfléchir doucement, se souvenir lentement</span>
+                <span ttm:role="x-translation" xml:lang="id">Dengan lembut merenung, dengan perlahan mengenang</span>
+                <span ttm:role="x-translation" xml:lang="ja">そっと振り返り 触れる</span>
+                <span ttm:role="x-translation" xml:lang="ko">살며시 모아 천천히 매만져</span>
+                <span ttm:role="x-translation" xml:lang="pt">Refletindo suavemente, lembrando-se lentamente</span>
+                <span ttm:role="x-translation" xml:lang="ru">К воспоминаньям возвращаюсь.</span>
+                <span ttm:role="x-translation" xml:lang="th">ค่อยๆ ไตร่ตรอง ค่อยๆ จดจำ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Nhẹ nhàng ghép lại, chầm chậm hòa trộn</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">輕輕攏 慢慢捻</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">qīng qīng lǒng màn màn niǎn</span>
+            </p>
+            <p begin="1:20.050" end="1:23.930" itunes:key="L16" ttm:agent="v1">方糖悬滞的时间<span ttm:role="x-translation" xml:lang="de">So wie der Zuckerwürfel treibt, vergänglich im Fluss der Zeit.</span>
+                <span ttm:role="x-translation" xml:lang="en">As the sugar cube floats, fleeting in time</span>
+                <span ttm:role="x-translation" xml:lang="es">El tiempo fluye para este terrón</span>
+                <span ttm:role="x-translation" xml:lang="fr">Alors que le carré de sucre flotte, fugace dans le temps</span>
+                <span ttm:role="x-translation" xml:lang="id">Gula batu mengapung, larut dalam waktu</span>
+                <span ttm:role="x-translation" xml:lang="ja">角砂糖が沈むまで</span>
+                <span ttm:role="x-translation" xml:lang="ko">각설탕 하나가 떠 있는 시간</span>
+                <span ttm:role="x-translation" xml:lang="pt">Enquanto o cubo de açúcar flutua no tempo</span>
+                <span ttm:role="x-translation" xml:lang="ru">Время тает, как кубик сахара.</span>
+                <span ttm:role="x-translation" xml:lang="th">ขณะที่ก้อนน้ำตาลลอยละล่อง ก็ละลายไปตามกาลเวลา</span>
+                <span ttm:role="x-translation" xml:lang="vi">Viên đường chậm rãi hòa tan trong dòng thời gian</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">方糖懸滯的時間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">fāng táng xuán zhì de shí jiān</span>
+            </p>
+            <p begin="1:24.830" end="1:29.070" itunes:key="L17" ttm:agent="v1">一杯闲暇 两种挂念<span ttm:role="x-translation" xml:lang="de">Eine Tasse voll Erholung, zwei Gefühle der Sorge.</span>
+                <span ttm:role="x-translation" xml:lang="en">One cup of respite, two feelings of fret</span>
+                <span ttm:role="x-translation" xml:lang="es">Una taza de tranquilidad, dos de preocupación</span>
+                <span ttm:role="x-translation" xml:lang="fr">Un verre de répit, deux soucis</span>
+                <span ttm:role="x-translation" xml:lang="id">Secangkir rasa ketenangan, dua rasa kegelisahan</span>
+                <span ttm:role="x-translation" xml:lang="ja">一杯のお暇 気がかりは二つ</span>
+                <span ttm:role="x-translation" xml:lang="ko">한 잔의 여유 두 가지 걱정</span>
+                <span ttm:role="x-translation" xml:lang="pt">Uma xícara de descanso, com dois sentimentos de preocupação</span>
+                <span ttm:role="x-translation" xml:lang="ru">И в это мгновение спокойствия в голове лишь две мысли.</span>
+                <span ttm:role="x-translation" xml:lang="th">ในช่วงเวลาแห่งความสงบ มีสองความคิดในหัวของฉัน</span>
+                <span ttm:role="x-translation" xml:lang="vi">Một ly nhàn rỗi, hai nỗi nhớ mong</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">一杯閒暇 兩種掛念</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yì bēi xián xiá liǎng zhǒng guà niàn</span>
+            </p>
+        </div>
+        <div begin="1:29.400" end="1:53.270" itunes:songPart="Chorus">
+            <p begin="1:29.400" end="1:34.000" itunes:key="L18" ttm:agent="v1">时间外 的时间<span ttm:role="x-translation" xml:lang="de">Eine Zeit, jenseits der Zeit.</span>
+                <span ttm:role="x-translation" xml:lang="en">A time, beyond time</span>
+                <span ttm:role="x-translation" xml:lang="es">Más allá de la hora en el reloj</span>
+                <span ttm:role="x-translation" xml:lang="fr">Un temps, au-delà du temps</span>
+                <span ttm:role="x-translation" xml:lang="id">Waktu, di luar waktu</span>
+                <span ttm:role="x-translation" xml:lang="ja">時間の外に 時間</span>
+                <span ttm:role="x-translation" xml:lang="ko">시간 외의 시간</span>
+                <span ttm:role="x-translation" xml:lang="pt">Um tempo, além do tempo</span>
+                <span ttm:role="x-translation" xml:lang="ru">Время вне времени.</span>
+                <span ttm:role="x-translation" xml:lang="th">เวลาที่อยู่เหนือกาลเวลา</span>
+                <span ttm:role="x-translation" xml:lang="vi">Khoảng thời gian, ở ngoài thời gian</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">時間外 的時間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">shí jiān wài de shí jiān</span>
+            </p>
+            <p begin="1:34.460" end="1:39.300" itunes:key="L19" ttm:agent="v1">温柔的 空房间<span ttm:role="x-translation" xml:lang="de">Ein leiser, leerer Raum.</span>
+                <span ttm:role="x-translation" xml:lang="en">A gentle, empty room</span>
+                <span ttm:role="x-translation" xml:lang="es">Una sala vacía con un ambiente acogedor</span>
+                <span ttm:role="x-translation" xml:lang="fr">Une chambre vide, pleine de douceur</span>
+                <span ttm:role="x-translation" xml:lang="id">Ketenangan, di ruang hampa</span>
+                <span ttm:role="x-translation" xml:lang="ja">空っぽの部屋は 優しくて</span>
+                <span ttm:role="x-translation" xml:lang="ko">따뜻한 빈방</span>
+                <span ttm:role="x-translation" xml:lang="pt">Uma sala gentil e vazia</span>
+                <span ttm:role="x-translation" xml:lang="ru">Спокойная пустая комната.</span>
+                <span ttm:role="x-translation" xml:lang="th">ห้องอันอ่อนโยนและว่างเปล่า</span>
+                <span ttm:role="x-translation" xml:lang="vi">Căn phòng trống, dịu dàng</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">溫柔的 空房間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wēn róu de kōng fáng jiān</span>
+            </p>
+            <p begin="1:40.090" end="1:44.030" itunes:key="L20" ttm:agent="v1">一千零一种停歇<span ttm:role="x-translation" xml:lang="de">Eintausend und eine Unentschlossenheit.</span>
+                <span ttm:role="x-translation" xml:lang="en">A thousand and one indecisions</span>
+                <span ttm:role="x-translation" xml:lang="es">Una mente plagada de indecisión</span>
+                <span ttm:role="x-translation" xml:lang="fr">Mille et une haltes</span>
+                <span ttm:role="x-translation" xml:lang="id">Seribu satu keraguan</span>
+                <span ttm:role="x-translation" xml:lang="ja">千と一の足踏み</span>
+                <span ttm:role="x-translation" xml:lang="ko">무수한 휴식</span>
+                <span ttm:role="x-translation" xml:lang="pt">Mil e uma indecisões</span>
+                <span ttm:role="x-translation" xml:lang="ru">Тысяча и одна попытка перевести дух.</span>
+                <span ttm:role="x-translation" xml:lang="th">ความลังเลนับพันครั้ง</span>
+                <span ttm:role="x-translation" xml:lang="vi">Một ngàn lẻ một kiểu nghỉ ngơi</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">一千零一種停歇</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yì qiān líng yī zhǒng tíng xiē</span>
+            </p>
+            <p begin="1:44.800" end="1:53.270" itunes:key="L21" ttm:agent="v1">不想缺席 又无法眷恋得完全<span ttm:role="x-translation" xml:lang="de">Ich will nichts verpassen, doch kann mich nicht voll und ganz darauf einzulassen.</span>
+                <span ttm:role="x-translation" xml:lang="en">Unwilling to miss out, yet unable to fully commit</span>
+                <span ttm:role="x-translation" xml:lang="es">Ni la ausencia ni el compromiso son una opción</span>
+                <span ttm:role="x-translation" xml:lang="fr">Refuser l&apos;absence, mais ne pas savoir s&apos;engager</span>
+                <span ttm:role="x-translation" xml:lang="id">Tak ingin melewatinya, namun tak dapat berjanji</span>
+                <span ttm:role="x-translation" xml:lang="ja">失いたくないけど 追い求める覚悟もなくて</span>
+                <span ttm:role="x-translation" xml:lang="ko">빠지고 싶지도 완전히 미련을 둘 수도 없어</span>
+                <span ttm:role="x-translation" xml:lang="pt">Não quer perder nada, mas não consegue se comprometer totalmente</span>
+                <span ttm:role="x-translation" xml:lang="ru">Боюсь упустить, но не могу себя заставить.</span>
+                <span ttm:role="x-translation" xml:lang="th">ไม่อยากพลาด แต่ยังไม่สามารถทำได้เต็มที่</span>
+                <span ttm:role="x-translation" xml:lang="vi">Không muốn vắng mặt, nhưng lại không thể hoàn toàn quyến luyến</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">不想缺席 又無法眷戀得完全</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">bù xiǎng quē xí yòu wú fǎ juàn liàn dé wán quán</span>
+            </p>
+        </div>
+        <div begin="2:10.760" end="2:30.960" itunes:songPart="Bridge">
+            <p begin="2:10.760" end="2:14.570" itunes:key="L22" ttm:agent="v1">或许该学着石头忘却世界<span ttm:role="x-translation" xml:lang="de">Zeit, den Kopf in den Sand zu stecken und die Welt zu vergessen.</span>
+                <span ttm:role="x-translation" xml:lang="en">Time to bury my head in the sand and forget the world</span>
+                <span ttm:role="x-translation" xml:lang="es">Tal vez debería esconderme y el mundo olvidar</span>
+                <span ttm:role="x-translation" xml:lang="fr">Tel un rocher, peut-être est-il temps d&apos;oublier le monde</span>
+                <span ttm:role="x-translation" xml:lang="id">Mungkin saatnya mengubur kepalaku di pasir dan melupakan dunia</span>
+                <span ttm:role="x-translation" xml:lang="ja">石ころみたいに世界を忘れて</span>
+                <span ttm:role="x-translation" xml:lang="ko">바위처럼 세상을 잊고</span>
+                <span ttm:role="x-translation" xml:lang="pt">É hora de enterrar minha cabeça na areia e esquecer o mundo</span>
+                <span ttm:role="x-translation" xml:lang="ru">Может, просто спрятать голову в песок?</span>
+                <span ttm:role="x-translation" xml:lang="th">ถึงเวลาหลีกหนีทุกสิ่ง และลืมโลกนี้</span>
+                <span ttm:role="x-translation" xml:lang="vi">Có lẽ phải học cách quên đi thế giới như viên đá</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">或許該學著石頭忘卻世界</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">huò xǔ gāi xué zhe shí tou wàng què shì jiè</span>
+            </p>
+            <p begin="2:14.820" end="2:20.190" itunes:key="L23" ttm:agent="v1">也贪婪一点 也单纯一点<span ttm:role="x-translation" xml:lang="de">Gierig zu sein, einfach zu sein,</span>
+                <span ttm:role="x-translation" xml:lang="en">To be greedy, to be simple</span>
+                <span ttm:role="x-translation" xml:lang="es">Por la codicia y la ingenuidad dejarme llevar</span>
+                <span ttm:role="x-translation" xml:lang="fr">D&apos;être gourmand, d&apos;être simple</span>
+                <span ttm:role="x-translation" xml:lang="id">Menjadi lebih serakah, berpikir lebih sederhana</span>
+                <span ttm:role="x-translation" xml:lang="ja">もっと欲張りで 素直になれたら</span>
+                <span ttm:role="x-translation" xml:lang="ko">조금 더 욕심을 내 조금 더 단순하게</span>
+                <span ttm:role="x-translation" xml:lang="pt">Ser ganancioso, e ser simples</span>
+                <span ttm:role="x-translation" xml:lang="ru">Нужно хотеть большего, но быть проще.</span>
+                <span ttm:role="x-translation" xml:lang="th">จงเป็นคนโลภ และเป็นคนไร้เดียงสา</span>
+                <span ttm:role="x-translation" xml:lang="vi">Tham lam một chút, đơn giản một chút</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">也貪婪一點 也單純一點</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yě tān lán yì diǎn yě dān chún yì diǎn</span>
+            </p>
+            <p begin="2:21.070" end="2:24.440" itunes:key="L24" ttm:agent="v1">等到又一颗月也沉入杯底<span ttm:role="x-translation" xml:lang="de">bis ein Neumond in die Tiefen der Tasse sinkt,</span>
+                <span ttm:role="x-translation" xml:lang="en">Until a new moon sinks to the bottom of the cup</span>
+                <span ttm:role="x-translation" xml:lang="es">Hasta que la luna se hunda en el fondo del vaso</span>
+                <span ttm:role="x-translation" xml:lang="fr">Jusqu&apos;à ce qu&apos;une nouvelle lune sombre au fond de la tasse</span>
+                <span ttm:role="x-translation" xml:lang="id">Hingga bulan baru tenggelam ke dasar gelas</span>
+                <span ttm:role="x-translation" xml:lang="ja">月がまた一粒 コップの底に沈むまで</span>
+                <span ttm:role="x-translation" xml:lang="ko">또 다른 달이 잔의 바닥에 가라앉을 때까지 기다려</span>
+                <span ttm:role="x-translation" xml:lang="pt">Até que uma lua nova afunde no fundo da xícara</span>
+                <span ttm:role="x-translation" xml:lang="ru">И пока новая луна не отразится в моей чашке,</span>
+                <span ttm:role="x-translation" xml:lang="th">จนกระทั่งพระจันทร์ดวงใหม่จมลงสู่ก้นแก้ว</span>
+                <span ttm:role="x-translation" xml:lang="vi">Đợi ánh trăng chìm trong ly nước</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">等到又一顆月也沉入杯底</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">děng dào yòu yī kē yuè yě chén rù bēi dǐ</span>
+            </p>
+            <p begin="2:24.800" end="2:30.960" itunes:key="L25" ttm:agent="v1">还是会期待新的什么<span ttm:role="x-translation" xml:lang="de">und noch immer nach etwas Neuem sucht.</span>
+                <span ttm:role="x-translation" xml:lang="en">Still looking for that something new</span>
+                <span ttm:role="x-translation" xml:lang="es">U ocurra algo que resulte novedoso</span>
+                <span ttm:role="x-translation" xml:lang="fr">Toujours à la recherche de ce qui est nouveau</span>
+                <span ttm:role="x-translation" xml:lang="id">Kita masih menantikan sesuatu yang baru</span>
+                <span ttm:role="x-translation" xml:lang="ja">まだ新しい何かを待ってる</span>
+                <span ttm:role="x-translation" xml:lang="ko">또 새로운 무언갈 기대해</span>
+                <span ttm:role="x-translation" xml:lang="pt">Ainda procurando por algo novo</span>
+                <span ttm:role="x-translation" xml:lang="ru">я буду ждать чего-то нового.</span>
+                <span ttm:role="x-translation" xml:lang="th">ยังคงมองหาสิ่งใหม่ๆ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Cũng vẫn mong chờ điều gì đó mới mẻ</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">還是會期待新的什麼</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">hái shì huì qī dài xīn de shén me</span>
+            </p>
+        </div>
+        <div begin="2:34.480" end="2:55.680" itunes:songPart="FalseChorus">
+            <p begin="2:34.480" end="2:39.000" itunes:key="L26" ttm:agent="v1">一人的 星期天<span ttm:role="x-translation" xml:lang="de">Ein Sonntag für mich alleine,</span>
+                <span ttm:role="x-translation" xml:lang="en">A Sunday, all on my own</span>
+                <span ttm:role="x-translation" xml:lang="es">Un domingo solitario</span>
+                <span ttm:role="x-translation" xml:lang="fr">Un dimanche, solitaire</span>
+                <span ttm:role="x-translation" xml:lang="id">Hari minggu, sendirian</span>
+                <span ttm:role="x-translation" xml:lang="ja">一人だけの 日曜日</span>
+                <span ttm:role="x-translation" xml:lang="ko">혼자 보내는 일요일</span>
+                <span ttm:role="x-translation" xml:lang="pt">Um domingo, completamente sozinho</span>
+                <span ttm:role="x-translation" xml:lang="ru">Воскресенье наедине с собой.</span>
+                <span ttm:role="x-translation" xml:lang="th">วันอาทิตย์ ฉันอยู่คนเดียวได้</span>
+                <span ttm:role="x-translation" xml:lang="vi">Ngày chủ nhật, một mình</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">一人的 星期天</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">yì rén de xīng qī tiān</span>
+            </p>
+            <p begin="2:39.810" end="2:43.960" itunes:key="L27" ttm:agent="v1">滑入了 地平线<span ttm:role="x-translation" xml:lang="de">macht sich heimlich davon, hinter den Horizont,</span>
+                <span ttm:role="x-translation" xml:lang="en">Slips beyond, the horizon</span>
+                <span ttm:role="x-translation" xml:lang="es">se desliza hacia el horizonte con decisión</span>
+                <span ttm:role="x-translation" xml:lang="fr">Qui se dérobe, à l&apos;horizon</span>
+                <span ttm:role="x-translation" xml:lang="id">Melayang pergi, ke cakrawala</span>
+                <span ttm:role="x-translation" xml:lang="ja">地平線に 溶ける</span>
+                <span ttm:role="x-translation" xml:lang="ko">지평선을 따라 미끄러져 가</span>
+                <span ttm:role="x-translation" xml:lang="pt">Deslize para além do horizonte</span>
+                <span ttm:role="x-translation" xml:lang="ru">Ускользает за горизонт,</span>
+                <span ttm:role="x-translation" xml:lang="th">ล่องลอยออกไป สู่เส้นขอบฟ้า</span>
+                <span ttm:role="x-translation" xml:lang="vi">Trượt vào, đường chân trời</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">滑入了 地平線</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">huá rù le dì píng xiàn</span>
+            </p>
+            <p begin="2:45.140" end="2:48.840" itunes:key="L28" ttm:agent="v1">无可名状的长夜<span ttm:role="x-translation" xml:lang="de">wie eine lange Nacht ohne Namen.</span>
+                <span ttm:role="x-translation" xml:lang="en">Like the nameless long night</span>
+                <span ttm:role="x-translation" xml:lang="es">Como una noche sin nombre y sin conclusión</span>
+                <span ttm:role="x-translation" xml:lang="fr">Une longue nuit indescriptible</span>
+                <span ttm:role="x-translation" xml:lang="id">Seperti malam yang tak kunjung akhir</span>
+                <span ttm:role="x-translation" xml:lang="ja">言い表せないような長い夜</span>
+                <span ttm:role="x-translation" xml:lang="ko">이름 모를 기나긴 밤</span>
+                <span ttm:role="x-translation" xml:lang="pt">Como a longa noite sem nome</span>
+                <span ttm:role="x-translation" xml:lang="ru">словно безымянная долгая ночь.</span>
+                <span ttm:role="x-translation" xml:lang="th">เหมือนค่ำคืนอันยาวนานไร้ชื่อ</span>
+                <span ttm:role="x-translation" xml:lang="vi">Đêm dài yên tĩnh</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">無可名狀的長夜</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wú kě míng zhuàng de cháng yè</span>
+            </p>
+            <p begin="2:49.800" end="2:55.680" itunes:key="L29" ttm:agent="v1">你还好吗 思绪明灭<span ttm:role="x-translation" xml:lang="de">Geht es dir gut? Meine Gedanken flimmern.</span>
+                <span ttm:role="x-translation" xml:lang="en">Are you alright? My thoughts flicker</span>
+                <span ttm:role="x-translation" xml:lang="es">¿Estás bien? Mis pensamientos han comenzado su disipación</span>
+                <span ttm:role="x-translation" xml:lang="fr">Tu vas bien ? Mes pensées vacillent</span>
+                <span ttm:role="x-translation" xml:lang="id">Apa kamu baik-baik saja? Pikiran pun datang dan pergi</span>
+                <span ttm:role="x-translation" xml:lang="ja">お元気ですか 浮かんでは消える</span>
+                <span ttm:role="x-translation" xml:lang="ko">넌 잘 지낼까 생각은 또 사라져가</span>
+                <span ttm:role="x-translation" xml:lang="pt">Você está bem? Meus pensamentos oscilam</span>
+                <span ttm:role="x-translation" xml:lang="ru">«Как ты?» — внезапный вопрос, словно вспышка.</span>
+                <span ttm:role="x-translation" xml:lang="th">คุณสบายดีมั้ย? ความคิดของฉันกำลังสั่นคลอน</span>
+                <span ttm:role="x-translation" xml:lang="vi">Vẫn khỏe chứ? Suy nghĩ lướt qua</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">你還好嗎 思緒明滅</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">nǐ hái hǎo ma sī xù míng miè</span>
+            </p>
+        </div>
+        <div begin="2:54.360" end="3:19.470" itunes:songPart="Chorus">
+            <p begin="2:54.360" end="2:58.930" itunes:key="L30" ttm:agent="v1">时间外 的时间<span ttm:role="x-translation" xml:lang="de">Eine Zeit, jenseits der Zeit.</span>
+                <span ttm:role="x-translation" xml:lang="en">A time, beyond time</span>
+                <span ttm:role="x-translation" xml:lang="es">Más allá de la hora en el reloj</span>
+                <span ttm:role="x-translation" xml:lang="fr">Un temps, au-delà du temps</span>
+                <span ttm:role="x-translation" xml:lang="id">Waktu, di luar waktu</span>
+                <span ttm:role="x-translation" xml:lang="ja">時間の外に 時間</span>
+                <span ttm:role="x-translation" xml:lang="ko">시간 외의 시간</span>
+                <span ttm:role="x-translation" xml:lang="pt">Um tempo, além do tempo</span>
+                <span ttm:role="x-translation" xml:lang="ru">Время вне времени.</span>
+                <span ttm:role="x-translation" xml:lang="th">เวลาที่อยู่เหนือกาลเวลา</span>
+                <span ttm:role="x-translation" xml:lang="vi">Khoảng thời gian, ở ngoài thời gian</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">時間外 的時間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">shí jiān wài de shí jiān</span>
+            </p>
+            <p begin="2:59.510" end="3:04.150" itunes:key="L31" ttm:agent="v1">温柔的 空房间<span ttm:role="x-translation" xml:lang="de">Ein leiser, leerer Raum.</span>
+                <span ttm:role="x-translation" xml:lang="en">A gentle, empty room</span>
+                <span ttm:role="x-translation" xml:lang="es">Una sala vacía con un ambiente acogedor</span>
+                <span ttm:role="x-translation" xml:lang="fr">Une chambre vide, pleine de douceur</span>
+                <span ttm:role="x-translation" xml:lang="id">Ketenangan, di ruang hampa</span>
+                <span ttm:role="x-translation" xml:lang="ja">空っぽの部屋は 優しくて</span>
+                <span ttm:role="x-translation" xml:lang="ko">따뜻한 빈방</span>
+                <span ttm:role="x-translation" xml:lang="pt">Uma sala gentil e vazia</span>
+                <span ttm:role="x-translation" xml:lang="ru">Спокойная пустая комната.</span>
+                <span ttm:role="x-translation" xml:lang="th">ห้องอันอ่อนโยนและว่างเปล่า</span>
+                <span ttm:role="x-translation" xml:lang="vi">Căn phòng trống, dịu dàng</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">溫柔的 空房間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wēn róu de kōng fáng jiān</span>
+            </p>
+            <p begin="3:05.090" end="3:10.630" itunes:key="L32" ttm:agent="v1">方糖悬滞的时间<span ttm:role="x-translation" xml:lang="de">So wie der Zuckerwürfel treibt, vergänglich im Fluss der Zeit.</span>
+                <span ttm:role="x-translation" xml:lang="en">As the sugar cube floats, fleeting in time</span>
+                <span ttm:role="x-translation" xml:lang="es">El tiempo fluye para este terrón</span>
+                <span ttm:role="x-translation" xml:lang="fr">Alors que le carré de sucre flotte, fugace dans le temps</span>
+                <span ttm:role="x-translation" xml:lang="id">Gula batu mengapung, larut dalam waktu</span>
+                <span ttm:role="x-translation" xml:lang="ja">角砂糖が沈んだら</span>
+                <span ttm:role="x-translation" xml:lang="ko">각설탕 하나가 떠 있는 시간</span>
+                <span ttm:role="x-translation" xml:lang="pt">Enquanto o cubo de açúcar flutua no tempo</span>
+                <span ttm:role="x-translation" xml:lang="ru">Время тает, как кубик сахара.</span>
+                <span ttm:role="x-translation" xml:lang="th">ขณะที่ก้อนน้ำตาลลอยละล่อง ก็ละลายไปตามกาลเวลา</span>
+                <span ttm:role="x-translation" xml:lang="vi">Viên đường chậm rãi hòa tan trong dòng thời gian</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">方糖懸滯的時間</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">fāng táng xuán zhì de shí jiān</span>
+            </p>
+            <p begin="3:09.750" end="3:19.470" itunes:key="L33" ttm:agent="v1">融化以后 再回未知盈满明天<span ttm:role="x-translation" xml:lang="de">so schnell geschmolzen und zurückgekehrt ins Morgen, so voller Unwissenheit.</span>
+                <span ttm:role="x-translation" xml:lang="en">Melted away, and back to tomorrow — so full of unknowns</span>
+                <span ttm:role="x-translation" xml:lang="es">Una vez derretido, nuestro futuro será una interrogación</span>
+                <span ttm:role="x-translation" xml:lang="fr">Il a fondu, vers un nouveau lendemain, vers l&apos;inconnu</span>
+                <span ttm:role="x-translation" xml:lang="id">Meleleh, dan kembali ke esok hari yang penuh kejutan</span>
+                <span ttm:role="x-translation" xml:lang="ja">ほらまた わからないことだらけの明日</span>
+                <span ttm:role="x-translation" xml:lang="ko">녹아버리면 다시 알 수 없는 내일이 찾아와</span>
+                <span ttm:role="x-translation" xml:lang="pt">Derretido e de volta ao amanhã - tão cheio de desconhecidos</span>
+                <span ttm:role="x-translation" xml:lang="ru">Когда он растает, снова наступит завтрашний день, полный неизведанного.</span>
+                <span ttm:role="x-translation" xml:lang="th">ละลายแล้ว กลับไปสู่วันพรุ่งนี้ที่เต็มไปด้วยสิ่งที่ไม่รู้จัก</span>
+                <span ttm:role="x-translation" xml:lang="vi">Tan đi và trở lại ngày mai, đầy những điều chưa biết</span>
+                <span ttm:role="x-translation" xml:lang="zh-Hant">融化以後 再回未知盈滿明天</span>
+                <span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">róng huà yǐ hòu zài huí wèi zhī yíng mǎn míng tiān</span>
+            </p>
+        </div>
+    </body>
+</tt>

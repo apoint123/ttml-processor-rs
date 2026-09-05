@@ -1,0 +1,170 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: crates/processor/tests/fixtures/apple-music-duet.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="en">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1"/>
+            <ttm:agent type="person" xml:id="v2"/>
+            <ttm:agent type="person" xml:id="v3"/>
+            <ttm:agent type="group" xml:id="v4"/>
+            <ttm:agent type="person" xml:id="v5"/>
+            <ttm:agent type="person" xml:id="v6"/>
+            <ttm:agent type="person" xml:id="v7"/>
+            <ttm:agent type="person" xml:id="v8"/>
+            <ttm:agent type="person" xml:id="v9"/>
+            <ttm:agent type="person" xml:id="v10"/>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <songwriters>
+                    <songwriter>Lin-Manuel Miranda</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="3:26.128">
+        <div begin="1.152" end="10.254" itunes:songPart="Intro">
+            <p begin="1.152" end="5.552" itunes:key="L1" ttm:agent="v1">We don&apos;t talk about Bruno, no, no, no<span ttm:role="x-translation" xml:lang="zh-Hans">我们不提布鲁诺 不 不 不</span>
+            </p>
+            <p begin="5.838" end="10.254" itunes:key="L2" ttm:agent="v1">We don&apos;t talk about Bruno, but<span ttm:role="x-translation" xml:lang="zh-Hans">我们不提布鲁诺 可是</span>
+            </p>
+        </div>
+        <div begin="10.522" end="43.125" itunes:songPart="Verse">
+            <p begin="10.522" end="13.518" itunes:key="L3" ttm:agent="v1">It was my wedding day<span ttm:role="x-translation" xml:lang="zh-Hans">那天是我结婚的日子</span>
+            </p>
+            <p begin="12.791" end="19.911" itunes:key="L4" ttm:agent="v1">We were getting ready and there wasn&apos;t a cloud in the sky<span ttm:role="x-translation" xml:lang="zh-Hans">我们在做准备 天空万里无云</span>
+            </p>
+            <p begin="19.257" end="24.640" itunes:key="L5" ttm:agent="v1">Bruno walks in with a mischievous grin<span ttm:role="x-translation" xml:lang="zh-Hans">布鲁诺坏笑着走了进来</span>
+            </p>
+            <p begin="24.262" end="29.397" itunes:key="L6" ttm:agent="v1">You telling this story or am I?<span ttm:role="x-translation" xml:lang="zh-Hans">你讲还是我讲</span>
+            </p>
+            <p begin="28.487" end="34.116" itunes:key="L7" ttm:agent="v1">Bruno says, &quot;It looks like rain&quot;<span ttm:role="x-translation" xml:lang="zh-Hans">布鲁诺说 看来要下雨</span>
+            </p>
+            <p begin="32.977" end="38.719" itunes:key="L8" ttm:agent="v1">In doing so, he floods my brain<span ttm:role="x-translation" xml:lang="zh-Hans">那样做让我心绪难宁</span>
+            </p>
+            <p begin="37.894" end="43.125" itunes:key="L9" ttm:agent="v1">Married in a hurricane<span ttm:role="x-translation" xml:lang="zh-Hans">在狂风骤雨的天气结婚</span>
+            </p>
+        </div>
+        <div begin="43.125" end="51.533" itunes:songPart="Bridge">
+            <p begin="43.125" end="47.605" itunes:key="L10" ttm:agent="v4">We don&apos;t talk about Bruno, no, no, no<span ttm:role="x-translation" xml:lang="zh-Hans">我们不提布鲁诺 不 不 不</span>
+            </p>
+            <p begin="47.798" end="51.533" itunes:key="L11" ttm:agent="v4">We don&apos;t talk about Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">我们不提布鲁诺</span>
+            </p>
+        </div>
+        <div begin="51.331" end="1:10.408" itunes:songPart="Verse">
+            <p begin="51.331" end="54.202" itunes:key="L12" ttm:agent="v2">Hey, grew to live in fear of Bruno stuttering or stumbling<span ttm:role="x-translation" xml:lang="zh-Hans">嘿 从小就害怕布鲁诺开口讲话</span>
+            </p>
+            <p begin="54.202" end="56.522" itunes:key="L13" ttm:agent="v2">I can always hear him sort of muttering and mumbling<span ttm:role="x-translation" xml:lang="zh-Hans">我总是能听到他喃喃自语</span>
+            </p>
+            <p begin="56.532" end="1:01.162" itunes:key="L14" ttm:agent="v2">I associate him with the sound of falling sand<span ttm:role="x-translation" xml:lang="zh-Hans">想起他 我就想到沙子滑落的声音</span>
+            </p>
+            <p begin="1:01.226" end="1:03.529" itunes:key="L15" ttm:agent="v2">It&apos;s a heavy lift with a gift so humbling<span ttm:role="x-translation" xml:lang="zh-Hans">这份令人谦卑的天赋太沉重</span>
+            </p>
+            <p begin="1:03.529" end="1:05.818" itunes:key="L16" ttm:agent="v2">Always left Abuela and the family fumbling<span ttm:role="x-translation" xml:lang="zh-Hans">总是让奶奶和家人手足无措</span>
+            </p>
+            <p begin="1:05.850" end="1:08.943" itunes:key="L17" ttm:agent="v2">Grappling with prophecies they couldn&apos;t understand<span ttm:role="x-translation" xml:lang="zh-Hans">让他们面对无法理解的预言</span>
+            </p>
+            <p begin="1:09.038" end="1:10.408" itunes:key="L18" ttm:agent="v2">Do you understand?<span ttm:role="x-translation" xml:lang="zh-Hans">你懂吗</span>
+            </p>
+        </div>
+        <div begin="1:10.408" end="1:25.043" itunes:songPart="Verse">
+            <p begin="1:10.408" end="1:14.598" itunes:key="L19" ttm:agent="v3">Seven-foot frame, rats along his back<span ttm:role="x-translation" xml:lang="zh-Hans">身高七尺 背上爬老鼠</span>
+            </p>
+            <p begin="1:14.598" end="1:19.148" itunes:key="L20" ttm:agent="v3">When he calls your name, it all fades to black<span ttm:role="x-translation" xml:lang="zh-Hans">他若唤你名字 万物隐进黑暗</span>
+            </p>
+            <p begin="1:19.253" end="1:25.043" itunes:key="L21" ttm:agent="v3">Yeah, he sees your dreams and feasts on your screams<span ttm:role="x-translation" xml:lang="zh-Hans">没错 他潜入你梦境 乐见你尖叫</span>
+            </p>
+        </div>
+        <div begin="1:25.063" end="1:33.976" itunes:songPart="Bridge">
+            <p begin="1:25.063" end="1:29.683" itunes:key="L22" ttm:agent="v4">We don&apos;t talk about Bruno, no, no, no<span ttm:role="x-translation" xml:lang="zh-Hans">我们不提布鲁诺 不 不 不</span>
+            </p>
+            <p begin="1:29.713" end="1:33.976" itunes:key="L23" ttm:agent="v4">We don&apos;t talk about Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">我们不提布鲁诺</span>
+            </p>
+        </div>
+        <div begin="1:34.081" end="1:52.495" itunes:songPart="Verse">
+            <p begin="1:34.081" end="1:38.910" itunes:key="L24" ttm:agent="v5">He told me my fish would die, the next day, dead<span ttm:role="x-translation" xml:lang="zh-Hans">他说我的鱼会死 第二天鱼真的死了</span>
+            </p>
+            <p begin="1:38.788" end="1:43.704" itunes:key="L25" ttm:agent="v6">He told me I&apos;d grow a gut and just like he said<span ttm:role="x-translation" xml:lang="zh-Hans">他说我会发福 让他说中了</span>
+            </p>
+            <p begin="1:42.378" end="1:48.537" itunes:key="L26" ttm:agent="v7">He said that all my hair would disappear, now look at my head<span ttm:role="x-translation" xml:lang="zh-Hans">他说我会头秃 结果你看看我的头</span>
+            </p>
+            <p begin="1:48.147" end="1:52.495" itunes:key="L27" ttm:agent="v4">Your fate is sealed when your prophecy is read<span ttm:role="x-translation" xml:lang="zh-Hans">预言既出 命中注定</span>
+            </p>
+        </div>
+        <div begin="1:52.505" end="2:11.895" itunes:songPart="Verse">
+            <p begin="1:52.505" end="1:56.209" itunes:key="L28" ttm:agent="v8">He told me that the life of my dreams<span ttm:role="x-translation" xml:lang="zh-Hans">他说我梦想的生活</span>
+            </p>
+            <p begin="1:56.329" end="2:00.447" itunes:key="L29" ttm:agent="v8">Would be promised, and someday be mine<span ttm:role="x-translation" xml:lang="zh-Hans">将会成真 终有一天属于我</span>
+            </p>
+            <p begin="2:01.776" end="2:05.541" itunes:key="L30" ttm:agent="v8">He told me that my power would grow<span ttm:role="x-translation" xml:lang="zh-Hans">他说我的力量会增长</span>
+            </p>
+            <p begin="2:05.541" end="2:11.895" itunes:key="L31" ttm:agent="v8">Like the grapes that thrive on the vine<span ttm:role="x-translation" xml:lang="zh-Hans">像藤上茁壮成长的葡萄</span>
+            </p>
+        </div>
+        <div begin="2:11.047" end="2:30.252" itunes:songPart="Verse">
+            <p begin="2:11.047" end="2:14.773" itunes:key="L32" ttm:agent="v2">He told me that the man of my dreams<span ttm:role="x-translation" xml:lang="zh-Hans">他说我的梦中情人</span>
+            </p>
+            <p begin="2:14.852" end="2:17.370" itunes:key="L33" ttm:agent="v2">Would be just out of reach<span ttm:role="x-translation" xml:lang="zh-Hans">终将遥不可及</span>
+            </p>
+            <p begin="2:17.810" end="2:20.408" itunes:key="L34" ttm:agent="v2">Betrothed to another<span ttm:role="x-translation" xml:lang="zh-Hans">会与别人订婚</span>
+            </p>
+            <p begin="2:20.722" end="2:23.950" itunes:key="L35" ttm:agent="v2">It&apos;s like I hear him now<span ttm:role="x-translation" xml:lang="zh-Hans">仿佛我现在就听到他说话</span>
+            </p>
+            <p begin="2:22.152" end="2:28.488" itunes:key="L36" ttm:agent="v8">Hey sis, I want not a sound out of you<span ttm:role="x-translation" xml:lang="zh-Hans">嘿 妹妹 我不想听到你出声</span>
+            </p>
+            <p begin="2:25.379" end="2:28.093" itunes:key="L37" ttm:agent="v2">It&apos;s like I can hear him now<span ttm:role="x-translation" xml:lang="zh-Hans">仿佛我现在就能听到他说话</span>
+            </p>
+            <p begin="2:28.299" end="2:30.252" itunes:key="L38" ttm:agent="v2">I can hear him now<span ttm:role="x-translation" xml:lang="zh-Hans">我现在就能听到他说话</span>
+            </p>
+        </div>
+        <div begin="2:29.751" end="2:43.729" itunes:songPart="Verse">
+            <p begin="2:29.751" end="2:31.342" itunes:key="L39" ttm:agent="v9">Um, Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">呃 布鲁诺</span>
+            </p>
+            <p begin="2:32.317" end="2:33.915" itunes:key="L40" ttm:agent="v9">Yeah, about that Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">没错 说到那个布鲁诺</span>
+            </p>
+            <p begin="2:34.230" end="2:36.222" itunes:key="L41" ttm:agent="v9">I really need to know about Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">我真的需要了解布鲁诺</span>
+            </p>
+            <p begin="2:36.358" end="2:41.745" itunes:key="L42" ttm:agent="v9">Gimme the truth and the whole truth, Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">告诉我真相 全部真相 布鲁诺</span>
+            </p>
+            <p begin="2:41.745" end="2:43.729" itunes:key="L43" ttm:agent="v4">Time for dinner<span ttm:role="x-translation" xml:lang="zh-Hans">晚宴时间到</span>
+            </p>
+        </div>
+        <div begin="2:43.729" end="3:00.502" itunes:songPart="Verse">
+            <p begin="2:43.729" end="2:47.749" itunes:key="L44" ttm:agent="v3">Seven-foot frame, rats along his back<span ttm:role="x-translation" xml:lang="zh-Hans">身高七尺 背上爬老鼠</span>
+            </p>
+            <p begin="2:46.632" end="2:52.466" itunes:key="L45" ttm:agent="v3">When he calls your name, it all fades to black<span ttm:role="x-translation" xml:lang="zh-Hans">他若唤你名字 万物隐进黑暗</span>
+            </p>
+            <p begin="2:50.701" end="2:53.573" itunes:key="L46" ttm:agent="v3">No clouds allowed in the sky<span ttm:role="x-translation" xml:lang="zh-Hans">天空不许有一朵云</span>
+            </p>
+            <p begin="2:52.480" end="2:57.210" itunes:key="L47" ttm:agent="v3">Yeah, he sees your dreams and feasts on your screams<span ttm:role="x-translation" xml:lang="zh-Hans">没错 他潜入你梦境 乐见你尖叫</span>
+            </p>
+            <p begin="2:56.810" end="3:00.502" itunes:key="L48" ttm:agent="v3">You telling this story or am I?<span ttm:role="x-translation" xml:lang="zh-Hans">你讲还是我讲</span>
+            </p>
+        </div>
+        <div begin="3:00.348" end="3:16.986" itunes:songPart="Verse">
+            <p begin="3:00.348" end="3:02.868" itunes:key="L49" ttm:agent="v10">Óye, Mariano&apos;s on his way<span ttm:role="x-translation" xml:lang="zh-Hans">喂 马里亚诺在路上</span>
+            </p>
+            <p begin="3:02.369" end="3:08.505" itunes:key="L50" ttm:agent="v1">Bruno says, &quot;It looks like rain&quot;<span ttm:role="x-translation" xml:lang="zh-Hans">布鲁诺说 看来要下雨</span>
+            </p>
+            <p begin="3:05.208" end="3:07.659" itunes:key="L51" ttm:agent="v3">Why did he tell us?<span ttm:role="x-translation" xml:lang="zh-Hans">他为何说出来</span>
+            </p>
+            <p begin="3:06.739" end="3:11.072" itunes:key="L52" ttm:agent="v1">In doing so, he floods my brain<span ttm:role="x-translation" xml:lang="zh-Hans">那样做让我心绪难宁</span>
+            </p>
+            <p begin="3:11.101" end="3:16.446" itunes:key="L53" ttm:agent="v1">Married in a hurricane<span ttm:role="x-translation" xml:lang="zh-Hans">在狂风骤雨的天气结婚</span>
+            </p>
+            <p begin="3:16.053" end="3:16.986" itunes:key="L54" ttm:agent="v4">He&apos;s here<span ttm:role="x-translation" xml:lang="zh-Hans">他来了</span>
+            </p>
+        </div>
+        <div begin="3:16.935" end="3:26.128" itunes:songPart="Outro">
+            <p begin="3:16.935" end="3:20.359" itunes:key="L55" ttm:agent="v4">Don&apos;t talk about Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">不提布鲁诺</span>
+            </p>
+            <p begin="3:18.973" end="3:22.348" itunes:key="L56" ttm:agent="v9">Why did I talk about Bruno?<span ttm:role="x-translation" xml:lang="zh-Hans">我为何提起布鲁诺</span>
+            </p>
+            <p begin="3:21.602" end="3:25.212" itunes:key="L57" ttm:agent="v4">Not a word about Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">绝口不提布鲁诺</span>
+            </p>
+            <p begin="3:23.215" end="3:26.128" itunes:key="L58" ttm:agent="v9">I never shoulda brought up Bruno<span ttm:role="x-translation" xml:lang="zh-Hans">我真不该提起布鲁诺</span>
+            </p>
+        </div>
+    </body>
+</tt>

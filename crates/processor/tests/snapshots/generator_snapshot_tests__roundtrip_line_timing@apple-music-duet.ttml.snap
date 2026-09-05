@@ -1,0 +1,928 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: crates/processor/tests/fixtures/apple-music-duet.ttml
+---
+{
+	"metadata": {
+		"language": "en",
+		"timingMode": "Line",
+		"songwriters": [
+			"Lin-Manuel Miranda"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type": "person"
+			},
+			"v2": {
+				"id": "v2",
+				"type": "person"
+			},
+			"v3": {
+				"id": "v3",
+				"type": "person"
+			},
+			"v4": {
+				"id": "v4",
+				"type": "group"
+			},
+			"v5": {
+				"id": "v5",
+				"type": "person"
+			},
+			"v6": {
+				"id": "v6",
+				"type": "person"
+			},
+			"v7": {
+				"id": "v7",
+				"type": "person"
+			},
+			"v8": {
+				"id": "v8",
+				"type": "person"
+			},
+			"v9": {
+				"id": "v9",
+				"type": "person"
+			},
+			"v10": {
+				"id": "v10",
+				"type": "person"
+			}
+		}
+	},
+	"lines": [
+		{
+			"text": "We don't talk about Bruno, no, no, no",
+			"startTime": 1152,
+			"endTime": 5552,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们不提布鲁诺 不 不 不"
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Intro",
+			"blockIndex": 1
+		},
+		{
+			"text": "We don't talk about Bruno, but",
+			"startTime": 5838,
+			"endTime": 10254,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们不提布鲁诺 可是"
+				}
+			],
+			"id": "L2",
+			"agentId": "v1",
+			"songPart": "Intro",
+			"blockIndex": 1
+		},
+		{
+			"text": "It was my wedding day",
+			"startTime": 10522,
+			"endTime": 13518,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "那天是我结婚的日子"
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "We were getting ready and there wasn't a cloud in the sky",
+			"startTime": 12791,
+			"endTime": 19911,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们在做准备 天空万里无云"
+				}
+			],
+			"id": "L4",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "Bruno walks in with a mischievous grin",
+			"startTime": 19257,
+			"endTime": 24640,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "布鲁诺坏笑着走了进来"
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "You telling this story or am I?",
+			"startTime": 24262,
+			"endTime": 29397,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你讲还是我讲"
+				}
+			],
+			"id": "L6",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "Bruno says, \"It looks like rain\"",
+			"startTime": 28487,
+			"endTime": 34116,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "布鲁诺说 看来要下雨"
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "In doing so, he floods my brain",
+			"startTime": 32977,
+			"endTime": 38719,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "那样做让我心绪难宁"
+				}
+			],
+			"id": "L8",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "Married in a hurricane",
+			"startTime": 37894,
+			"endTime": 43125,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "在狂风骤雨的天气结婚"
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "We don't talk about Bruno, no, no, no",
+			"startTime": 43125,
+			"endTime": 47605,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们不提布鲁诺 不 不 不"
+				}
+			],
+			"id": "L10",
+			"agentId": "v4",
+			"songPart": "Bridge",
+			"blockIndex": 3
+		},
+		{
+			"text": "We don't talk about Bruno",
+			"startTime": 47798,
+			"endTime": 51533,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们不提布鲁诺"
+				}
+			],
+			"id": "L11",
+			"agentId": "v4",
+			"songPart": "Bridge",
+			"blockIndex": 3
+		},
+		{
+			"text": "Hey, grew to live in fear of Bruno stuttering or stumbling",
+			"startTime": 51331,
+			"endTime": 54202,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "嘿 从小就害怕布鲁诺开口讲话"
+				}
+			],
+			"id": "L12",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "I can always hear him sort of muttering and mumbling",
+			"startTime": 54202,
+			"endTime": 56522,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我总是能听到他喃喃自语"
+				}
+			],
+			"id": "L13",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "I associate him with the sound of falling sand",
+			"startTime": 56532,
+			"endTime": 61162,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想起他 我就想到沙子滑落的声音"
+				}
+			],
+			"id": "L14",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "It's a heavy lift with a gift so humbling",
+			"startTime": 61226,
+			"endTime": 63529,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "这份令人谦卑的天赋太沉重"
+				}
+			],
+			"id": "L15",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "Always left Abuela and the family fumbling",
+			"startTime": 63529,
+			"endTime": 65818,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "总是让奶奶和家人手足无措"
+				}
+			],
+			"id": "L16",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "Grappling with prophecies they couldn't understand",
+			"startTime": 65850,
+			"endTime": 68943,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "让他们面对无法理解的预言"
+				}
+			],
+			"id": "L17",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "Do you understand?",
+			"startTime": 69038,
+			"endTime": 70408,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你懂吗"
+				}
+			],
+			"id": "L18",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 4
+		},
+		{
+			"text": "Seven-foot frame, rats along his back",
+			"startTime": 70408,
+			"endTime": 74598,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "身高七尺 背上爬老鼠"
+				}
+			],
+			"id": "L19",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "When he calls your name, it all fades to black",
+			"startTime": 74598,
+			"endTime": 79148,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他若唤你名字 万物隐进黑暗"
+				}
+			],
+			"id": "L20",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "Yeah, he sees your dreams and feasts on your screams",
+			"startTime": 79253,
+			"endTime": 85043,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 他潜入你梦境 乐见你尖叫"
+				}
+			],
+			"id": "L21",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 5
+		},
+		{
+			"text": "We don't talk about Bruno, no, no, no",
+			"startTime": 85063,
+			"endTime": 89683,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们不提布鲁诺 不 不 不"
+				}
+			],
+			"id": "L22",
+			"agentId": "v4",
+			"songPart": "Bridge",
+			"blockIndex": 6
+		},
+		{
+			"text": "We don't talk about Bruno",
+			"startTime": 89713,
+			"endTime": 93976,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们不提布鲁诺"
+				}
+			],
+			"id": "L23",
+			"agentId": "v4",
+			"songPart": "Bridge",
+			"blockIndex": 6
+		},
+		{
+			"text": "He told me my fish would die, the next day, dead",
+			"startTime": 94081,
+			"endTime": 98910,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他说我的鱼会死 第二天鱼真的死了"
+				}
+			],
+			"id": "L24",
+			"agentId": "v5",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "He told me I'd grow a gut and just like he said",
+			"startTime": 98788,
+			"endTime": 103704,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他说我会发福 让他说中了"
+				}
+			],
+			"id": "L25",
+			"agentId": "v6",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "He said that all my hair would disappear, now look at my head",
+			"startTime": 102378,
+			"endTime": 108537,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他说我会头秃 结果你看看我的头"
+				}
+			],
+			"id": "L26",
+			"agentId": "v7",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "Your fate is sealed when your prophecy is read",
+			"startTime": 108147,
+			"endTime": 112495,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "预言既出 命中注定"
+				}
+			],
+			"id": "L27",
+			"agentId": "v4",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "He told me that the life of my dreams",
+			"startTime": 112505,
+			"endTime": 116209,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他说我梦想的生活"
+				}
+			],
+			"id": "L28",
+			"agentId": "v8",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "Would be promised, and someday be mine",
+			"startTime": 116329,
+			"endTime": 120447,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "将会成真 终有一天属于我"
+				}
+			],
+			"id": "L29",
+			"agentId": "v8",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "He told me that my power would grow",
+			"startTime": 121776,
+			"endTime": 125541,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他说我的力量会增长"
+				}
+			],
+			"id": "L30",
+			"agentId": "v8",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "Like the grapes that thrive on the vine",
+			"startTime": 125541,
+			"endTime": 131895,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像藤上茁壮成长的葡萄"
+				}
+			],
+			"id": "L31",
+			"agentId": "v8",
+			"songPart": "Verse",
+			"blockIndex": 8
+		},
+		{
+			"text": "He told me that the man of my dreams",
+			"startTime": 131047,
+			"endTime": 134773,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他说我的梦中情人"
+				}
+			],
+			"id": "L32",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "Would be just out of reach",
+			"startTime": 134852,
+			"endTime": 137370,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "终将遥不可及"
+				}
+			],
+			"id": "L33",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "Betrothed to another",
+			"startTime": 137810,
+			"endTime": 140408,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "会与别人订婚"
+				}
+			],
+			"id": "L34",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "It's like I hear him now",
+			"startTime": 140722,
+			"endTime": 143950,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "仿佛我现在就听到他说话"
+				}
+			],
+			"id": "L35",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "Hey sis, I want not a sound out of you",
+			"startTime": 142152,
+			"endTime": 148488,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "嘿 妹妹 我不想听到你出声"
+				}
+			],
+			"id": "L36",
+			"agentId": "v8",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "It's like I can hear him now",
+			"startTime": 145379,
+			"endTime": 148093,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "仿佛我现在就能听到他说话"
+				}
+			],
+			"id": "L37",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "I can hear him now",
+			"startTime": 148299,
+			"endTime": 150252,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我现在就能听到他说话"
+				}
+			],
+			"id": "L38",
+			"agentId": "v2",
+			"songPart": "Verse",
+			"blockIndex": 9
+		},
+		{
+			"text": "Um, Bruno",
+			"startTime": 149751,
+			"endTime": 151342,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "呃 布鲁诺"
+				}
+			],
+			"id": "L39",
+			"agentId": "v9",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "Yeah, about that Bruno",
+			"startTime": 152317,
+			"endTime": 153915,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 说到那个布鲁诺"
+				}
+			],
+			"id": "L40",
+			"agentId": "v9",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "I really need to know about Bruno",
+			"startTime": 154230,
+			"endTime": 156222,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我真的需要了解布鲁诺"
+				}
+			],
+			"id": "L41",
+			"agentId": "v9",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "Gimme the truth and the whole truth, Bruno",
+			"startTime": 156358,
+			"endTime": 161745,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "告诉我真相 全部真相 布鲁诺"
+				}
+			],
+			"id": "L42",
+			"agentId": "v9",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "Time for dinner",
+			"startTime": 161745,
+			"endTime": 163729,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "晚宴时间到"
+				}
+			],
+			"id": "L43",
+			"agentId": "v4",
+			"songPart": "Verse",
+			"blockIndex": 10
+		},
+		{
+			"text": "Seven-foot frame, rats along his back",
+			"startTime": 163729,
+			"endTime": 167749,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "身高七尺 背上爬老鼠"
+				}
+			],
+			"id": "L44",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "When he calls your name, it all fades to black",
+			"startTime": 166632,
+			"endTime": 172466,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他若唤你名字 万物隐进黑暗"
+				}
+			],
+			"id": "L45",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "No clouds allowed in the sky",
+			"startTime": 170701,
+			"endTime": 173573,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "天空不许有一朵云"
+				}
+			],
+			"id": "L46",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "Yeah, he sees your dreams and feasts on your screams",
+			"startTime": 172480,
+			"endTime": 177210,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 他潜入你梦境 乐见你尖叫"
+				}
+			],
+			"id": "L47",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "You telling this story or am I?",
+			"startTime": 176810,
+			"endTime": 180502,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你讲还是我讲"
+				}
+			],
+			"id": "L48",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 11
+		},
+		{
+			"text": "Óye, Mariano's on his way",
+			"startTime": 180348,
+			"endTime": 182868,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "喂 马里亚诺在路上"
+				}
+			],
+			"id": "L49",
+			"agentId": "v10",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Bruno says, \"It looks like rain\"",
+			"startTime": 182369,
+			"endTime": 188505,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "布鲁诺说 看来要下雨"
+				}
+			],
+			"id": "L50",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Why did he tell us?",
+			"startTime": 185208,
+			"endTime": 187659,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他为何说出来"
+				}
+			],
+			"id": "L51",
+			"agentId": "v3",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "In doing so, he floods my brain",
+			"startTime": 186739,
+			"endTime": 191072,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "那样做让我心绪难宁"
+				}
+			],
+			"id": "L52",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Married in a hurricane",
+			"startTime": 191101,
+			"endTime": 196446,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "在狂风骤雨的天气结婚"
+				}
+			],
+			"id": "L53",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "He's here",
+			"startTime": 196053,
+			"endTime": 196986,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "他来了"
+				}
+			],
+			"id": "L54",
+			"agentId": "v4",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Don't talk about Bruno",
+			"startTime": 196935,
+			"endTime": 200359,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "不提布鲁诺"
+				}
+			],
+			"id": "L55",
+			"agentId": "v4",
+			"songPart": "Outro",
+			"blockIndex": 13
+		},
+		{
+			"text": "Why did I talk about Bruno?",
+			"startTime": 198973,
+			"endTime": 202348,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我为何提起布鲁诺"
+				}
+			],
+			"id": "L56",
+			"agentId": "v9",
+			"songPart": "Outro",
+			"blockIndex": 13
+		},
+		{
+			"text": "Not a word about Bruno",
+			"startTime": 201602,
+			"endTime": 205212,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "绝口不提布鲁诺"
+				}
+			],
+			"id": "L57",
+			"agentId": "v4",
+			"songPart": "Outro",
+			"blockIndex": 13
+		},
+		{
+			"text": "I never shoulda brought up Bruno",
+			"startTime": 203215,
+			"endTime": 206128,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我真不该提起布鲁诺"
+				}
+			],
+			"id": "L58",
+			"agentId": "v9",
+			"songPart": "Outro",
+			"blockIndex": 13
+		}
+	]
+}

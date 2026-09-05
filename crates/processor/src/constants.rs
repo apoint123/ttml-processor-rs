@@ -87,6 +87,8 @@ pub mod vals {
         RUBY_TEXT_CONTAINER = "textContainer";
         RUBY_TEXT = "text";
 
+        TIMING_LINE = "Line";
+
         TRUE_STR = "true";
 
         NS_TTML = "http://www.w3.org/ns/ttml";

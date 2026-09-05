@@ -1,3 +1,10 @@
+use std::borrow::Cow;
+
+use crate::{
+    model::Syllable,
+    utils::build_full_text,
+};
+
 pub fn format_timestamp(total_ms: u32) -> String {
     let ms = total_ms % 1000;
     let total_seconds = total_ms / 1000;
@@ -13,6 +20,25 @@ pub fn format_timestamp(total_ms: u32) -> String {
     } else {
         format!("{s}.{ms:03}")
     }
+}
+
+/// 取出用于逐行输出的纯文本
+///
+/// `text` 为空时回退到从音节拼接，以兼容只填写了 `words` 的调用方
+///
+/// `space_joined`：为 `true` 时音节间始终插入空格，一般用于逐字音译
+pub fn line_text<'a>(
+    text: &'a str,
+    words: Option<&[Syllable]>,
+    space_joined: bool,
+) -> Cow<'a, str> {
+    if !text.is_empty() {
+        return Cow::Borrowed(text);
+    }
+
+    words.map_or(Cow::Borrowed(""), |words| {
+        Cow::Owned(build_full_text(words, space_joined))
+    })
 }
 
 #[cfg(test)]

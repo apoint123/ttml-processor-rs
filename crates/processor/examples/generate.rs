@@ -41,6 +41,7 @@ fn main() {
     let config = GeneratorConfig {
         use_apple_format_rules: false,
         format: true,
+        ..Default::default()
     };
 
     let ttml_string = generate_ttml(&result, &config).expect("Failed to generate TTML");

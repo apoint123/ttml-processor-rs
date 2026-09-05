@@ -23,6 +23,21 @@ use crate::{
     model::LyricLine,
 };
 
+/// 计算一行歌词参与 `<body dur>` 与 `<div begin|end>` 范围计算的起止时间
+///
+/// 逐行模式下不输出背景人声，因此其时间也不应该扩大范围
+fn line_time_range(line: &LyricLine, config: &GeneratorConfig) -> (u32, u32) {
+    line.background_vocal
+        .as_ref()
+        .filter(|_| !config.line_timing)
+        .map_or((line.start_time, line.end_time), |bg| {
+            (
+                line.start_time.min(bg.start_time),
+                line.end_time.max(bg.end_time),
+            )
+        })
+}
+
 /// 写入 `<body>` 部分
 pub fn write_body(
     writer: &mut Writer<Vec<u8>>,
@@ -33,10 +48,7 @@ pub fn write_body(
     // 理论上这个值应该是歌曲的时长，不过 Apple Music 和其他使用者应该不会在乎这个值的（
     let max_end_time = lines
         .iter()
-        .map(|line| {
-            let bg_end = line.background_vocal.as_ref().map_or(0, |bg| bg.end_time);
-            line.end_time.max(bg_end)
-        })
+        .map(|line| line_time_range(line, config).1)
         .max()
         .unwrap_or(0);
 
@@ -76,21 +88,13 @@ fn write_section(
     if let (Some(first), Some(_last)) = (chunk.first(), chunk.last()) {
         let min_start = chunk
             .iter()
-            .map(|l| {
-                l.background_vocal
-                    .as_ref()
-                    .map_or(l.start_time, |bg| bg.start_time.min(l.start_time))
-            })
+            .map(|l| line_time_range(l, config).0)
             .min()
             .unwrap_or(0);
 
         let max_end = chunk
             .iter()
-            .map(|l| {
-                l.background_vocal
-                    .as_ref()
-                    .map_or(l.end_time, |bg| bg.end_time.max(l.end_time))
-            })
+            .map(|l| line_time_range(l, config).1)
             .max()
             .unwrap_or(0);
 

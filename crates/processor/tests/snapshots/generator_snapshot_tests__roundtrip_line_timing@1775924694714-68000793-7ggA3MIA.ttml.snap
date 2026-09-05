@@ -1,0 +1,2272 @@
+---
+source: crates/processor/tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: crates/processor/tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
+---
+{
+	"metadata": {
+		"language": "zh-Hans",
+		"timingMode": "Line",
+		"songwriters": [
+			"熊子"
+		],
+		"title": [
+			"一颗方糖悬滞的时间 (feat. 阿兰·达瓦卓玛)",
+			"一颗方糖悬滞的时间",
+			"《绝区零》朱鸢EP",
+			"《绝区零》朱鸢角色曲",
+			"一顆方糖懸滯的時間 (feat. 阿蘭·達瓦卓瑪)",
+			"一顆方糖懸滯的時間",
+			"角砂糖が沈むまで (feat. 阿兰·达瓦卓玛)",
+			"角砂糖が沈むまで",
+			"각설탕 하나가 떠 있는 시간 (feat. 阿兰·达瓦卓玛)",
+			"각설탕 하나가 떠 있는 시간",
+			"As the sugar cube floats, fleeting in time (feat. 阿兰·达瓦卓玛)",
+			"As the sugar cube floats, fleeting in time"
+		],
+		"artist": [
+			"HOYO-MiX",
+			"三Z-STUDIO",
+			"Sān-Z",
+			"阿兰",
+			"阿兰·达瓦卓玛",
+			"ALAN",
+			"Alan Dawa Dolma",
+			"アラン·ダワジュオマ"
+		],
+		"album": [
+			"绝区零-一颗方糖悬滞的时间",
+			"一颗方糖悬滞的时间 - Single",
+			"一顆方糖懸滯的時間 - Single",
+			"一顆方糖懸滯的時間",
+			"角砂糖が沈むまで (feat. 阿兰·达瓦卓玛) - Single",
+			"角砂糖が沈むまで",
+			"각설탕 하나가 떠 있는 시간 - Single",
+			"각설탕 하나가 떠 있는 시간",
+			"As the sugar cube floats, fleeting in time - Single",
+			"As the sugar cube floats, fleeting in time"
+		],
+		"isrc": [
+			"DGA072492989",
+			"DGA082412140",
+			"DGA082421563",
+			"DGA082410574",
+			"DGA082410599"
+		],
+		"authorIds": [
+			"68000793",
+			"50747104"
+		],
+		"authorNames": [
+			"ranhengzhang",
+			"Xionghaizi001"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type": "person"
+			}
+		},
+		"platformIds": {
+			"ncmMusicId": [
+				"2612750275"
+			],
+			"qqMusicId": [
+				"002TFWxI3SlNwx",
+				"503998396"
+			],
+			"spotifyId": [
+				"66izH92bA85wuJFFgJ0HRy",
+				"4o9pXElZZFjQBlhSWTNBQC",
+				"2excpOrcz3wOViAA3cBMpU",
+				"52GlYDlUFY2v9NfA1kGyEQ"
+			],
+			"appleMusicId": [
+				"1758391074",
+				"1758774905",
+				"1759153566",
+				"1758774295",
+				"1758784690"
+			]
+		},
+		"rawProperties": {
+			"Arranger": [
+				"杨武韬"
+			],
+			"Composer": [
+				"杨武韬"
+			],
+			"Drums": [
+				"眭逸凡"
+			],
+			"Editing Engineer": [
+				"徐威"
+			],
+			"Guitar": [
+				"雷十一"
+			],
+			"Lyrics": [
+				"熊子"
+			],
+			"Mixing Engineer": [
+				"黄钦胜"
+			],
+			"Producer": [
+				"杨武韬"
+			],
+			"Recording Engineer": [
+				"袁雄宇"
+			],
+			"Vocals": [
+				"阿兰"
+			]
+		}
+	},
+	"lines": [
+		{
+			"text": "窗外的春天",
+			"startTime": 10640,
+			"endTime": 13820,
+			"translations": [
+				{
+					"language": "de",
+					"text": "erblühen die Frühlingsblumen gerade außerhalb,"
+				},
+				{
+					"language": "en",
+					"text": "The springtime blooming just outside"
+				},
+				{
+					"language": "es",
+					"text": "El aire primaveral sopla fuera de la habitación"
+				},
+				{
+					"language": "fr",
+					"text": "Le printemps fleurit par la fenêtre"
+				},
+				{
+					"language": "id",
+					"text": "Musim semi di luar jendela"
+				},
+				{
+					"language": "ja",
+					"text": "窓の外は春"
+				},
+				{
+					"language": "ko",
+					"text": "창밖의 봄날"
+				},
+				{
+					"language": "pt",
+					"text": "A primavera florescendo do lado de fora"
+				},
+				{
+					"language": "ru",
+					"text": "За окном расцветает весна,"
+				},
+				{
+					"language": "th",
+					"text": "ฤดูใบไม้ผลิกำลังเบ่งบานอยู่ด้านนอก"
+				},
+				{
+					"language": "vi",
+					"text": "Mùa xuân nở rộ ngoài ô cửa"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "窗外的春天"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "chuāng wài de chūn tiān"
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "停在枝头的麻雀",
+			"startTime": 15080,
+			"endTime": 18570,
+			"translations": [
+				{
+					"language": "de",
+					"text": "und ein Spatz sitzt sanft auf einem Zweig."
+				},
+				{
+					"language": "en",
+					"text": "A sparrow perched on a branch"
+				},
+				{
+					"language": "es",
+					"text": "Sobre la rama descansa un gorrión"
+				},
+				{
+					"language": "fr",
+					"text": "Un moineau perché sur une branche"
+				},
+				{
+					"language": "id",
+					"text": "Burung pipit bertengger di dahan"
+				},
+				{
+					"language": "ja",
+					"text": "枝にすずめがとまり"
+				},
+				{
+					"language": "ko",
+					"text": "가지에 머무는 참새"
+				},
+				{
+					"language": "pt",
+					"text": "Um pardal pousado suavemente em um galho"
+				},
+				{
+					"language": "ru",
+					"text": "воробьи присели на ветку."
+				},
+				{
+					"language": "th",
+					"text": "นกกระจอกเกาะอยู่บนกิ่งไม้"
+				},
+				{
+					"language": "vi",
+					"text": "Chim sẻ đậu trên cành"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "停在枝頭的麻雀"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "tíng zài zhī tóu de má què"
+				}
+			],
+			"id": "L2",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "初次察觉的旋律",
+			"startTime": 20060,
+			"endTime": 23320,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Melodie, zum ersten Mal wahrgenommen,"
+				},
+				{
+					"language": "en",
+					"text": "A melody heard for the first time"
+				},
+				{
+					"language": "es",
+					"text": "Se escucha por primera vez una canción"
+				},
+				{
+					"language": "fr",
+					"text": "Une mélodie perçue pour la première fois"
+				},
+				{
+					"language": "id",
+					"text": "Melodi yang kudengar untuk pertama kalinya"
+				},
+				{
+					"language": "ja",
+					"text": "聞き覚えのない旋律が"
+				},
+				{
+					"language": "ko",
+					"text": "처음 느껴본 선율이"
+				},
+				{
+					"language": "pt",
+					"text": "Uma melodia que se escuta pela primeira vez"
+				},
+				{
+					"language": "ru",
+					"text": "Эту мелодию слышу впервые,"
+				},
+				{
+					"language": "th",
+					"text": "ท่วงทำนองที่ได้ยินเป็นครั้งแรก"
+				},
+				{
+					"language": "vi",
+					"text": "Giai điệu lần đầu tiên được nghe"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "初次察覺的旋律"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "chū cì chá jué de xuán lǜ"
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "不经意拂过心尖",
+			"startTime": 24790,
+			"endTime": 28550,
+			"translations": [
+				{
+					"language": "de",
+					"text": "geht mir unerwartet zu Herzen."
+				},
+				{
+					"language": "en",
+					"text": "Plucks at my heartstrings unforeseen"
+				},
+				{
+					"language": "es",
+					"text": "Siento caricias en el corazón"
+				},
+				{
+					"language": "fr",
+					"text": "A soudain effleuré mon cœur"
+				},
+				{
+					"language": "id",
+					"text": "Tanpa sadar telah menyentuh hati"
+				},
+				{
+					"language": "ja",
+					"text": "ふいに心を撫でる"
+				},
+				{
+					"language": "ko",
+					"text": "무심결에 마음을 스쳐"
+				},
+				{
+					"language": "pt",
+					"text": "Atrai meu coração inesperadamente"
+				},
+				{
+					"language": "ru",
+					"text": "она вдруг трогает меня за сердце."
+				},
+				{
+					"language": "th",
+					"text": "ดึงดูดใจฉันอย่างไม่คาดฝัน"
+				},
+				{
+					"language": "vi",
+					"text": "Vô tình chạm đến trái tim"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "不經意拂過心尖"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "bù jīng yì fú guò xīn jiān"
+				}
+			],
+			"id": "L4",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "点一支香签",
+			"startTime": 30760,
+			"endTime": 34270,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Das Räucherstäbchen verbrennt."
+				},
+				{
+					"language": "en",
+					"text": "Incense burning"
+				},
+				{
+					"language": "es",
+					"text": "Una varilla de incienso que arde con pasión"
+				},
+				{
+					"language": "fr",
+					"text": "L'encens brûle"
+				},
+				{
+					"language": "id",
+					"text": "Menyalakan pewangi"
+				},
+				{
+					"language": "ja",
+					"text": "お香に火をつけ"
+				},
+				{
+					"language": "ko",
+					"text": "향을 피우고"
+				},
+				{
+					"language": "pt",
+					"text": "O incenso queimando"
+				},
+				{
+					"language": "ru",
+					"text": "Зажгу свечу,"
+				},
+				{
+					"language": "th",
+					"text": "จุดธูปหอม"
+				},
+				{
+					"language": "vi",
+					"text": "Đốt ngọn nến thơm"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "點一支香籤"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "diǎn yì zhī xiāng qiān"
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "放下系紧的发辫",
+			"startTime": 35120,
+			"endTime": 38430,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ich lasse meine Haare herunter,"
+				},
+				{
+					"language": "en",
+					"text": "I let down my hair"
+				},
+				{
+					"language": "es",
+					"text": "El cabello suelto sin restricción"
+				},
+				{
+					"language": "fr",
+					"text": "J'ai détaché mes cheveux"
+				},
+				{
+					"language": "id",
+					"text": "Aku menggerai rambutku"
+				},
+				{
+					"language": "ja",
+					"text": "きつく結んだ髪をほどく"
+				},
+				{
+					"language": "ko",
+					"text": "꽉 묶었던 머리를 풀어"
+				},
+				{
+					"language": "pt",
+					"text": "Soltei meu cabelo"
+				},
+				{
+					"language": "ru",
+					"text": "распущу свои косы."
+				},
+				{
+					"language": "th",
+					"text": "ฉันปล่อยผมลง"
+				},
+				{
+					"language": "vi",
+					"text": "Buông xõa mái tóc"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "放下繫緊的髮辮"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fàng xià jì jǐn de fà biàn"
+				}
+			],
+			"id": "L6",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "看陌生柔软光线",
+			"startTime": 40110,
+			"endTime": 43460,
+			"translations": [
+				{
+					"language": "de",
+					"text": "und bestaune das unbekannte weiche Licht,"
+				},
+				{
+					"language": "en",
+					"text": "Gazing at the unfamiliar soft light"
+				},
+				{
+					"language": "es",
+					"text": "La luz tenue y desconocida ilumina mi visión"
+				},
+				{
+					"language": "fr",
+					"text": "J'observe la lumière tamisée qui m'est inconnue"
+				},
+				{
+					"language": "id",
+					"text": "Melihat cahaya lembut yang tidak familier"
+				},
+				{
+					"language": "ja",
+					"text": "見知らぬ光が柔らかく"
+				},
+				{
+					"language": "ko",
+					"text": "낯선 부드러운 빛을 바라봐"
+				},
+				{
+					"language": "pt",
+					"text": "Contemplando a luz suave e desconhecida"
+				},
+				{
+					"language": "ru",
+					"text": "Смотрю я на свет, что так мягко блестит."
+				},
+				{
+					"language": "th",
+					"text": "จ้องมองแสงอันนุ่มนวลที่ไม่แปลกตา"
+				},
+				{
+					"language": "vi",
+					"text": "Nhìn ánh sáng dịu nhẹ xa lạ"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "看陌生柔軟光線"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "kàn mò shēng róu ruǎn guāng xiàn"
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "照平整如纸的晨间",
+			"startTime": 44150,
+			"endTime": 48840,
+			"translations": [
+				{
+					"language": "de",
+					"text": "das an einem Morgen glatt wie Papier erstrahlt."
+				},
+				{
+					"language": "en",
+					"text": "That shines upon on a morning paper-flat"
+				},
+				{
+					"language": "es",
+					"text": "Un amanecer despejado"
+				},
+				{
+					"language": "fr",
+					"text": "Qui illumine un matin aussi plat que du papier"
+				},
+				{
+					"language": "id",
+					"text": "Menyinari pagi yang datar bagai kertas"
+				},
+				{
+					"language": "ja",
+					"text": "昼を照らす まっ平な紙のよう"
+				},
+				{
+					"language": "ko",
+					"text": "종이처럼 평평한 낮을 비춰"
+				},
+				{
+					"language": "pt",
+					"text": "Que brilha sobre um jornal matinal"
+				},
+				{
+					"language": "ru",
+					"text": "Освещается утро, словно белый лист."
+				},
+				{
+					"language": "th",
+					"text": "ส่องสว่างยามเช้าที่ราบเรียบราวกับกระดาษ"
+				},
+				{
+					"language": "vi",
+					"text": "Soi sáng buổi sáng bình yên"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "照平整如紙的晨間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "zhào píng zhěng rú zhǐ de chén jiān"
+				}
+			],
+			"id": "L8",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "追云影的羊群",
+			"startTime": 49430,
+			"endTime": 53780,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Schafherde jagt hinter den Schatten der Wolken hinterher."
+				},
+				{
+					"language": "en",
+					"text": "A flock of sheep chasing shadows cast by clouds"
+				},
+				{
+					"language": "es",
+					"text": "Un rebaño de ovejas que persigue las nubes"
+				},
+				{
+					"language": "fr",
+					"text": "Des moutons chassent l'ombre des nuages"
+				},
+				{
+					"language": "id",
+					"text": "Sekawanan domba mengejar bayangan awan"
+				},
+				{
+					"language": "ja",
+					"text": "雲の影を追う羊たち"
+				},
+				{
+					"language": "ko",
+					"text": "구름 그림자를 쫓는 양 떼"
+				},
+				{
+					"language": "pt",
+					"text": "Um rebanho de ovelhas perseguindo as sombras projetadas pelas nuvens"
+				},
+				{
+					"language": "ru",
+					"text": "Барашки в небе гонят облака."
+				},
+				{
+					"language": "th",
+					"text": "ฝูงแกะที่วิ่งไล่ตามเงาเมฆ"
+				},
+				{
+					"language": "vi",
+					"text": "Đàn cừu đuổi theo bóng mây"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "追雲影的羊群"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "zhuī yún yǐng de yáng qún"
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "任言语缓缓入眠",
+			"startTime": 54500,
+			"endTime": 60440,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Sag irgendetwas, um mich in den Schlaf zu wiegen."
+				},
+				{
+					"language": "en",
+					"text": "Say anything to lull me to sleep"
+				},
+				{
+					"language": "es",
+					"text": "Palabras que llevan a un mundo de ilusiones"
+				},
+				{
+					"language": "fr",
+					"text": "Les mots m'emportent vers les bras Morphée"
+				},
+				{
+					"language": "id",
+					"text": "Bisikkan sesuatu dan antar aku ke alam mimpi"
+				},
+				{
+					"language": "ja",
+					"text": "言葉の微睡むに任せ"
+				},
+				{
+					"language": "ko",
+					"text": "말소리조차 천천히 잠에 들어"
+				},
+				{
+					"language": "pt",
+					"text": "Diga qualquer coisa para me fazer dormir"
+				},
+				{
+					"language": "ru",
+					"text": "Я усну под твои слова."
+				},
+				{
+					"language": "th",
+					"text": "พูดอะไรก็ได้เพื่อกล่อมฉันให้นอนหลับ"
+				},
+				{
+					"language": "vi",
+					"text": "Chầm chậm bước vào giấc ngủ"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "任言語緩緩入眠"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "rèn yán yǔ huǎn huǎn rù mián"
+				}
+			],
+			"id": "L10",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "余白的哲学独自领会",
+			"startTime": 60120,
+			"endTime": 65010,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein hohles Weltbild, von mir allein erfasst,"
+				},
+				{
+					"language": "en",
+					"text": "An empty philosophy realized alone"
+				},
+				{
+					"language": "es",
+					"text": "En la filosofía vacía no hay colaboraciones"
+				},
+				{
+					"language": "fr",
+					"text": "Une philosophie vide réalisée par soi-même"
+				},
+				{
+					"language": "id",
+					"text": "Filosofi kosong yang disadari sendiri"
+				},
+				{
+					"language": "ja",
+					"text": "余白のある哲学にひとり頷き"
+				},
+				{
+					"language": "ko",
+					"text": "홀로 깨닫는 여백의 철학"
+				},
+				{
+					"language": "pt",
+					"text": "Uma filosofia vazia realizada sozinha"
+				},
+				{
+					"language": "ru",
+					"text": "Философию пустоты познаёшь лишь в одиночестве."
+				},
+				{
+					"language": "th",
+					"text": "ปรัชญาที่ว่างเปล่าต้องตระหนักรู้ด้วยตัวเอง"
+				},
+				{
+					"language": "vi",
+					"text": "Tự lĩnh hội triết học"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "餘白的哲學獨自領會"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yú bái de zhé xué dú zì lǐng huì"
+				}
+			],
+			"id": "L11",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "练习",
+			"startTime": 65690,
+			"endTime": 66520,
+			"translations": [
+				{
+					"language": "de",
+					"text": "und sodann in die Tat umgesetzt."
+				},
+				{
+					"language": "en",
+					"text": "Then put into practice"
+				},
+				{
+					"language": "es",
+					"text": "Practicar"
+				},
+				{
+					"language": "fr",
+					"text": "Puis pratiquée"
+				},
+				{
+					"language": "id",
+					"text": "Lalu diterapkan dalam praktik"
+				},
+				{
+					"language": "ja",
+					"text": "反芻しては"
+				},
+				{
+					"language": "ko",
+					"text": "홀로 연습해"
+				},
+				{
+					"language": "pt",
+					"text": "E coloque em prática"
+				},
+				{
+					"language": "ru",
+					"text": "Познаёшь и практикуешь."
+				},
+				{
+					"language": "th",
+					"text": "แล้วนำไปปฏิบัติ"
+				},
+				{
+					"language": "vi",
+					"text": "Luyện tập"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "練習"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "liàn xí"
+				}
+			],
+			"id": "L12",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "浮起一些",
+			"startTime": 67250,
+			"endTime": 68890,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Es schwellt an,"
+				},
+				{
+					"language": "en",
+					"text": "Slowly rising"
+				},
+				{
+					"language": "es",
+					"text": "Elevarse hasta ciertos niveles"
+				},
+				{
+					"language": "fr",
+					"text": "Qui s'élève lentement"
+				},
+				{
+					"language": "id",
+					"text": "Perlahan mengambang"
+				},
+				{
+					"language": "ja",
+					"text": "浮かぶ"
+				},
+				{
+					"language": "ko",
+					"text": "조금씩 떠올라"
+				},
+				{
+					"language": "pt",
+					"text": "Subindo lentamente"
+				},
+				{
+					"language": "ru",
+					"text": "Я встречаю новый день."
+				},
+				{
+					"language": "th",
+					"text": "ลอยขึ้นมาช้าๆ"
+				},
+				{
+					"language": "vi",
+					"text": "Dần quen với"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "浮起一些"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fú qǐ yì xiē"
+				}
+			],
+			"id": "L13",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "一人的 星期天",
+			"startTime": 69500,
+			"endTime": 73960,
+			"translations": [
+				{
+					"language": "de",
+					"text": "ein Sonntag für mich alleine,"
+				},
+				{
+					"language": "en",
+					"text": "A Sunday, all on my own"
+				},
+				{
+					"language": "es",
+					"text": "Un domingo solitario"
+				},
+				{
+					"language": "fr",
+					"text": "Un dimanche, solitaire"
+				},
+				{
+					"language": "id",
+					"text": "Hari minggu, sendirian"
+				},
+				{
+					"language": "ja",
+					"text": "一人だけの 日曜日"
+				},
+				{
+					"language": "ko",
+					"text": "혼자 보내는 일요일"
+				},
+				{
+					"language": "pt",
+					"text": "Um domingo, completamente sozinho"
+				},
+				{
+					"language": "ru",
+					"text": "Воскресенье наедине с собой."
+				},
+				{
+					"language": "th",
+					"text": "วันอาทิตย์ ฉันอยู่คนเดียวได้"
+				},
+				{
+					"language": "vi",
+					"text": "Ngày chủ nhật, một mình"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一人的 星期天"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì rén de xīng qī tiān"
+				}
+			],
+			"id": "L14",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "轻轻拢 慢慢捻",
+			"startTime": 74420,
+			"endTime": 79170,
+			"translations": [
+				{
+					"language": "de",
+					"text": "um mich leise zu besinnen, langsam zu erinnern."
+				},
+				{
+					"language": "en",
+					"text": "Gently reflecting, slowly recollecting"
+				},
+				{
+					"language": "es",
+					"text": "Con suavidad y dilación"
+				},
+				{
+					"language": "fr",
+					"text": "Réfléchir doucement, se souvenir lentement"
+				},
+				{
+					"language": "id",
+					"text": "Dengan lembut merenung, dengan perlahan mengenang"
+				},
+				{
+					"language": "ja",
+					"text": "そっと振り返り 触れる"
+				},
+				{
+					"language": "ko",
+					"text": "살며시 모아 천천히 매만져"
+				},
+				{
+					"language": "pt",
+					"text": "Refletindo suavemente, lembrando-se lentamente"
+				},
+				{
+					"language": "ru",
+					"text": "К воспоминаньям возвращаюсь."
+				},
+				{
+					"language": "th",
+					"text": "ค่อยๆ ไตร่ตรอง ค่อยๆ จดจำ"
+				},
+				{
+					"language": "vi",
+					"text": "Nhẹ nhàng ghép lại, chầm chậm hòa trộn"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "輕輕攏 慢慢捻"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qīng qīng lǒng màn màn niǎn"
+				}
+			],
+			"id": "L15",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "方糖悬滞的时间",
+			"startTime": 80050,
+			"endTime": 83930,
+			"translations": [
+				{
+					"language": "de",
+					"text": "So wie der Zuckerwürfel treibt, vergänglich im Fluss der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "As the sugar cube floats, fleeting in time"
+				},
+				{
+					"language": "es",
+					"text": "El tiempo fluye para este terrón"
+				},
+				{
+					"language": "fr",
+					"text": "Alors que le carré de sucre flotte, fugace dans le temps"
+				},
+				{
+					"language": "id",
+					"text": "Gula batu mengapung, larut dalam waktu"
+				},
+				{
+					"language": "ja",
+					"text": "角砂糖が沈むまで"
+				},
+				{
+					"language": "ko",
+					"text": "각설탕 하나가 떠 있는 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Enquanto o cubo de açúcar flutua no tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время тает, как кубик сахара."
+				},
+				{
+					"language": "th",
+					"text": "ขณะที่ก้อนน้ำตาลลอยละล่อง ก็ละลายไปตามกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Viên đường chậm rãi hòa tan trong dòng thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "方糖懸滯的時間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fāng táng xuán zhì de shí jiān"
+				}
+			],
+			"id": "L16",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "一杯闲暇 两种挂念",
+			"startTime": 84830,
+			"endTime": 89070,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Tasse voll Erholung, zwei Gefühle der Sorge."
+				},
+				{
+					"language": "en",
+					"text": "One cup of respite, two feelings of fret"
+				},
+				{
+					"language": "es",
+					"text": "Una taza de tranquilidad, dos de preocupación"
+				},
+				{
+					"language": "fr",
+					"text": "Un verre de répit, deux soucis"
+				},
+				{
+					"language": "id",
+					"text": "Secangkir rasa ketenangan, dua rasa kegelisahan"
+				},
+				{
+					"language": "ja",
+					"text": "一杯のお暇 気がかりは二つ"
+				},
+				{
+					"language": "ko",
+					"text": "한 잔의 여유 두 가지 걱정"
+				},
+				{
+					"language": "pt",
+					"text": "Uma xícara de descanso, com dois sentimentos de preocupação"
+				},
+				{
+					"language": "ru",
+					"text": "И в это мгновение спокойствия в голове лишь две мысли."
+				},
+				{
+					"language": "th",
+					"text": "ในช่วงเวลาแห่งความสงบ มีสองความคิดในหัวของฉัน"
+				},
+				{
+					"language": "vi",
+					"text": "Một ly nhàn rỗi, hai nỗi nhớ mong"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一杯閒暇 兩種掛念"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì bēi xián xiá liǎng zhǒng guà niàn"
+				}
+			],
+			"id": "L17",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "时间外 的时间",
+			"startTime": 89400,
+			"endTime": 94000,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Zeit, jenseits der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "A time, beyond time"
+				},
+				{
+					"language": "es",
+					"text": "Más allá de la hora en el reloj"
+				},
+				{
+					"language": "fr",
+					"text": "Un temps, au-delà du temps"
+				},
+				{
+					"language": "id",
+					"text": "Waktu, di luar waktu"
+				},
+				{
+					"language": "ja",
+					"text": "時間の外に 時間"
+				},
+				{
+					"language": "ko",
+					"text": "시간 외의 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Um tempo, além do tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время вне времени."
+				},
+				{
+					"language": "th",
+					"text": "เวลาที่อยู่เหนือกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Khoảng thời gian, ở ngoài thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "時間外 的時間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "shí jiān wài de shí jiān"
+				}
+			],
+			"id": "L18",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "温柔的 空房间",
+			"startTime": 94460,
+			"endTime": 99300,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein leiser, leerer Raum."
+				},
+				{
+					"language": "en",
+					"text": "A gentle, empty room"
+				},
+				{
+					"language": "es",
+					"text": "Una sala vacía con un ambiente acogedor"
+				},
+				{
+					"language": "fr",
+					"text": "Une chambre vide, pleine de douceur"
+				},
+				{
+					"language": "id",
+					"text": "Ketenangan, di ruang hampa"
+				},
+				{
+					"language": "ja",
+					"text": "空っぽの部屋は 優しくて"
+				},
+				{
+					"language": "ko",
+					"text": "따뜻한 빈방"
+				},
+				{
+					"language": "pt",
+					"text": "Uma sala gentil e vazia"
+				},
+				{
+					"language": "ru",
+					"text": "Спокойная пустая комната."
+				},
+				{
+					"language": "th",
+					"text": "ห้องอันอ่อนโยนและว่างเปล่า"
+				},
+				{
+					"language": "vi",
+					"text": "Căn phòng trống, dịu dàng"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "溫柔的 空房間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wēn róu de kōng fáng jiān"
+				}
+			],
+			"id": "L19",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "一千零一种停歇",
+			"startTime": 100090,
+			"endTime": 104030,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eintausend und eine Unentschlossenheit."
+				},
+				{
+					"language": "en",
+					"text": "A thousand and one indecisions"
+				},
+				{
+					"language": "es",
+					"text": "Una mente plagada de indecisión"
+				},
+				{
+					"language": "fr",
+					"text": "Mille et une haltes"
+				},
+				{
+					"language": "id",
+					"text": "Seribu satu keraguan"
+				},
+				{
+					"language": "ja",
+					"text": "千と一の足踏み"
+				},
+				{
+					"language": "ko",
+					"text": "무수한 휴식"
+				},
+				{
+					"language": "pt",
+					"text": "Mil e uma indecisões"
+				},
+				{
+					"language": "ru",
+					"text": "Тысяча и одна попытка перевести дух."
+				},
+				{
+					"language": "th",
+					"text": "ความลังเลนับพันครั้ง"
+				},
+				{
+					"language": "vi",
+					"text": "Một ngàn lẻ một kiểu nghỉ ngơi"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一千零一種停歇"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì qiān líng yī zhǒng tíng xiē"
+				}
+			],
+			"id": "L20",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "不想缺席 又无法眷恋得完全",
+			"startTime": 104800,
+			"endTime": 113270,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ich will nichts verpassen, doch kann mich nicht voll und ganz darauf einzulassen."
+				},
+				{
+					"language": "en",
+					"text": "Unwilling to miss out, yet unable to fully commit"
+				},
+				{
+					"language": "es",
+					"text": "Ni la ausencia ni el compromiso son una opción"
+				},
+				{
+					"language": "fr",
+					"text": "Refuser l'absence, mais ne pas savoir s'engager"
+				},
+				{
+					"language": "id",
+					"text": "Tak ingin melewatinya, namun tak dapat berjanji"
+				},
+				{
+					"language": "ja",
+					"text": "失いたくないけど 追い求める覚悟もなくて"
+				},
+				{
+					"language": "ko",
+					"text": "빠지고 싶지도 완전히 미련을 둘 수도 없어"
+				},
+				{
+					"language": "pt",
+					"text": "Não quer perder nada, mas não consegue se comprometer totalmente"
+				},
+				{
+					"language": "ru",
+					"text": "Боюсь упустить, но не могу себя заставить."
+				},
+				{
+					"language": "th",
+					"text": "ไม่อยากพลาด แต่ยังไม่สามารถทำได้เต็มที่"
+				},
+				{
+					"language": "vi",
+					"text": "Không muốn vắng mặt, nhưng lại không thể hoàn toàn quyến luyến"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "不想缺席 又無法眷戀得完全"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "bù xiǎng quē xí yòu wú fǎ juàn liàn dé wán quán"
+				}
+			],
+			"id": "L21",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "或许该学着石头忘却世界",
+			"startTime": 130760,
+			"endTime": 134570,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Zeit, den Kopf in den Sand zu stecken und die Welt zu vergessen."
+				},
+				{
+					"language": "en",
+					"text": "Time to bury my head in the sand and forget the world"
+				},
+				{
+					"language": "es",
+					"text": "Tal vez debería esconderme y el mundo olvidar"
+				},
+				{
+					"language": "fr",
+					"text": "Tel un rocher, peut-être est-il temps d'oublier le monde"
+				},
+				{
+					"language": "id",
+					"text": "Mungkin saatnya mengubur kepalaku di pasir dan melupakan dunia"
+				},
+				{
+					"language": "ja",
+					"text": "石ころみたいに世界を忘れて"
+				},
+				{
+					"language": "ko",
+					"text": "바위처럼 세상을 잊고"
+				},
+				{
+					"language": "pt",
+					"text": "É hora de enterrar minha cabeça na areia e esquecer o mundo"
+				},
+				{
+					"language": "ru",
+					"text": "Может, просто спрятать голову в песок?"
+				},
+				{
+					"language": "th",
+					"text": "ถึงเวลาหลีกหนีทุกสิ่ง และลืมโลกนี้"
+				},
+				{
+					"language": "vi",
+					"text": "Có lẽ phải học cách quên đi thế giới như viên đá"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "或許該學著石頭忘卻世界"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "huò xǔ gāi xué zhe shí tou wàng què shì jiè"
+				}
+			],
+			"id": "L22",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
+		},
+		{
+			"text": "也贪婪一点 也单纯一点",
+			"startTime": 134820,
+			"endTime": 140190,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Gierig zu sein, einfach zu sein,"
+				},
+				{
+					"language": "en",
+					"text": "To be greedy, to be simple"
+				},
+				{
+					"language": "es",
+					"text": "Por la codicia y la ingenuidad dejarme llevar"
+				},
+				{
+					"language": "fr",
+					"text": "D'être gourmand, d'être simple"
+				},
+				{
+					"language": "id",
+					"text": "Menjadi lebih serakah, berpikir lebih sederhana"
+				},
+				{
+					"language": "ja",
+					"text": "もっと欲張りで 素直になれたら"
+				},
+				{
+					"language": "ko",
+					"text": "조금 더 욕심을 내 조금 더 단순하게"
+				},
+				{
+					"language": "pt",
+					"text": "Ser ganancioso, e ser simples"
+				},
+				{
+					"language": "ru",
+					"text": "Нужно хотеть большего, но быть проще."
+				},
+				{
+					"language": "th",
+					"text": "จงเป็นคนโลภ และเป็นคนไร้เดียงสา"
+				},
+				{
+					"language": "vi",
+					"text": "Tham lam một chút, đơn giản một chút"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "也貪婪一點 也單純一點"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yě tān lán yì diǎn yě dān chún yì diǎn"
+				}
+			],
+			"id": "L23",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
+		},
+		{
+			"text": "等到又一颗月也沉入杯底",
+			"startTime": 141070,
+			"endTime": 144440,
+			"translations": [
+				{
+					"language": "de",
+					"text": "bis ein Neumond in die Tiefen der Tasse sinkt,"
+				},
+				{
+					"language": "en",
+					"text": "Until a new moon sinks to the bottom of the cup"
+				},
+				{
+					"language": "es",
+					"text": "Hasta que la luna se hunda en el fondo del vaso"
+				},
+				{
+					"language": "fr",
+					"text": "Jusqu'à ce qu'une nouvelle lune sombre au fond de la tasse"
+				},
+				{
+					"language": "id",
+					"text": "Hingga bulan baru tenggelam ke dasar gelas"
+				},
+				{
+					"language": "ja",
+					"text": "月がまた一粒 コップの底に沈むまで"
+				},
+				{
+					"language": "ko",
+					"text": "또 다른 달이 잔의 바닥에 가라앉을 때까지 기다려"
+				},
+				{
+					"language": "pt",
+					"text": "Até que uma lua nova afunde no fundo da xícara"
+				},
+				{
+					"language": "ru",
+					"text": "И пока новая луна не отразится в моей чашке,"
+				},
+				{
+					"language": "th",
+					"text": "จนกระทั่งพระจันทร์ดวงใหม่จมลงสู่ก้นแก้ว"
+				},
+				{
+					"language": "vi",
+					"text": "Đợi ánh trăng chìm trong ly nước"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "等到又一顆月也沉入杯底"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "děng dào yòu yī kē yuè yě chén rù bēi dǐ"
+				}
+			],
+			"id": "L24",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
+		},
+		{
+			"text": "还是会期待新的什么",
+			"startTime": 144800,
+			"endTime": 150960,
+			"translations": [
+				{
+					"language": "de",
+					"text": "und noch immer nach etwas Neuem sucht."
+				},
+				{
+					"language": "en",
+					"text": "Still looking for that something new"
+				},
+				{
+					"language": "es",
+					"text": "U ocurra algo que resulte novedoso"
+				},
+				{
+					"language": "fr",
+					"text": "Toujours à la recherche de ce qui est nouveau"
+				},
+				{
+					"language": "id",
+					"text": "Kita masih menantikan sesuatu yang baru"
+				},
+				{
+					"language": "ja",
+					"text": "まだ新しい何かを待ってる"
+				},
+				{
+					"language": "ko",
+					"text": "또 새로운 무언갈 기대해"
+				},
+				{
+					"language": "pt",
+					"text": "Ainda procurando por algo novo"
+				},
+				{
+					"language": "ru",
+					"text": "я буду ждать чего-то нового."
+				},
+				{
+					"language": "th",
+					"text": "ยังคงมองหาสิ่งใหม่ๆ"
+				},
+				{
+					"language": "vi",
+					"text": "Cũng vẫn mong chờ điều gì đó mới mẻ"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "還是會期待新的什麼"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "hái shì huì qī dài xīn de shén me"
+				}
+			],
+			"id": "L25",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 6
+		},
+		{
+			"text": "一人的 星期天",
+			"startTime": 154480,
+			"endTime": 159000,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein Sonntag für mich alleine,"
+				},
+				{
+					"language": "en",
+					"text": "A Sunday, all on my own"
+				},
+				{
+					"language": "es",
+					"text": "Un domingo solitario"
+				},
+				{
+					"language": "fr",
+					"text": "Un dimanche, solitaire"
+				},
+				{
+					"language": "id",
+					"text": "Hari minggu, sendirian"
+				},
+				{
+					"language": "ja",
+					"text": "一人だけの 日曜日"
+				},
+				{
+					"language": "ko",
+					"text": "혼자 보내는 일요일"
+				},
+				{
+					"language": "pt",
+					"text": "Um domingo, completamente sozinho"
+				},
+				{
+					"language": "ru",
+					"text": "Воскресенье наедине с собой."
+				},
+				{
+					"language": "th",
+					"text": "วันอาทิตย์ ฉันอยู่คนเดียวได้"
+				},
+				{
+					"language": "vi",
+					"text": "Ngày chủ nhật, một mình"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "一人的 星期天"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yì rén de xīng qī tiān"
+				}
+			],
+			"id": "L26",
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "滑入了 地平线",
+			"startTime": 159810,
+			"endTime": 163960,
+			"translations": [
+				{
+					"language": "de",
+					"text": "macht sich heimlich davon, hinter den Horizont,"
+				},
+				{
+					"language": "en",
+					"text": "Slips beyond, the horizon"
+				},
+				{
+					"language": "es",
+					"text": "se desliza hacia el horizonte con decisión"
+				},
+				{
+					"language": "fr",
+					"text": "Qui se dérobe, à l'horizon"
+				},
+				{
+					"language": "id",
+					"text": "Melayang pergi, ke cakrawala"
+				},
+				{
+					"language": "ja",
+					"text": "地平線に 溶ける"
+				},
+				{
+					"language": "ko",
+					"text": "지평선을 따라 미끄러져 가"
+				},
+				{
+					"language": "pt",
+					"text": "Deslize para além do horizonte"
+				},
+				{
+					"language": "ru",
+					"text": "Ускользает за горизонт,"
+				},
+				{
+					"language": "th",
+					"text": "ล่องลอยออกไป สู่เส้นขอบฟ้า"
+				},
+				{
+					"language": "vi",
+					"text": "Trượt vào, đường chân trời"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "滑入了 地平線"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "huá rù le dì píng xiàn"
+				}
+			],
+			"id": "L27",
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "无可名状的长夜",
+			"startTime": 165140,
+			"endTime": 168840,
+			"translations": [
+				{
+					"language": "de",
+					"text": "wie eine lange Nacht ohne Namen."
+				},
+				{
+					"language": "en",
+					"text": "Like the nameless long night"
+				},
+				{
+					"language": "es",
+					"text": "Como una noche sin nombre y sin conclusión"
+				},
+				{
+					"language": "fr",
+					"text": "Une longue nuit indescriptible"
+				},
+				{
+					"language": "id",
+					"text": "Seperti malam yang tak kunjung akhir"
+				},
+				{
+					"language": "ja",
+					"text": "言い表せないような長い夜"
+				},
+				{
+					"language": "ko",
+					"text": "이름 모를 기나긴 밤"
+				},
+				{
+					"language": "pt",
+					"text": "Como a longa noite sem nome"
+				},
+				{
+					"language": "ru",
+					"text": "словно безымянная долгая ночь."
+				},
+				{
+					"language": "th",
+					"text": "เหมือนค่ำคืนอันยาวนานไร้ชื่อ"
+				},
+				{
+					"language": "vi",
+					"text": "Đêm dài yên tĩnh"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "無可名狀的長夜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wú kě míng zhuàng de cháng yè"
+				}
+			],
+			"id": "L28",
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "你还好吗 思绪明灭",
+			"startTime": 169800,
+			"endTime": 175680,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Geht es dir gut? Meine Gedanken flimmern."
+				},
+				{
+					"language": "en",
+					"text": "Are you alright? My thoughts flicker"
+				},
+				{
+					"language": "es",
+					"text": "¿Estás bien? Mis pensamientos han comenzado su disipación"
+				},
+				{
+					"language": "fr",
+					"text": "Tu vas bien ? Mes pensées vacillent"
+				},
+				{
+					"language": "id",
+					"text": "Apa kamu baik-baik saja? Pikiran pun datang dan pergi"
+				},
+				{
+					"language": "ja",
+					"text": "お元気ですか 浮かんでは消える"
+				},
+				{
+					"language": "ko",
+					"text": "넌 잘 지낼까 생각은 또 사라져가"
+				},
+				{
+					"language": "pt",
+					"text": "Você está bem? Meus pensamentos oscilam"
+				},
+				{
+					"language": "ru",
+					"text": "«Как ты?» — внезапный вопрос, словно вспышка."
+				},
+				{
+					"language": "th",
+					"text": "คุณสบายดีมั้ย? ความคิดของฉันกำลังสั่นคลอน"
+				},
+				{
+					"language": "vi",
+					"text": "Vẫn khỏe chứ? Suy nghĩ lướt qua"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "你還好嗎 思緒明滅"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "nǐ hái hǎo ma sī xù míng miè"
+				}
+			],
+			"id": "L29",
+			"agentId": "v1",
+			"songPart": "FalseChorus",
+			"blockIndex": 7
+		},
+		{
+			"text": "时间外 的时间",
+			"startTime": 174360,
+			"endTime": 178930,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Eine Zeit, jenseits der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "A time, beyond time"
+				},
+				{
+					"language": "es",
+					"text": "Más allá de la hora en el reloj"
+				},
+				{
+					"language": "fr",
+					"text": "Un temps, au-delà du temps"
+				},
+				{
+					"language": "id",
+					"text": "Waktu, di luar waktu"
+				},
+				{
+					"language": "ja",
+					"text": "時間の外に 時間"
+				},
+				{
+					"language": "ko",
+					"text": "시간 외의 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Um tempo, além do tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время вне времени."
+				},
+				{
+					"language": "th",
+					"text": "เวลาที่อยู่เหนือกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Khoảng thời gian, ở ngoài thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "時間外 的時間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "shí jiān wài de shí jiān"
+				}
+			],
+			"id": "L30",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "温柔的 空房间",
+			"startTime": 179510,
+			"endTime": 184150,
+			"translations": [
+				{
+					"language": "de",
+					"text": "Ein leiser, leerer Raum."
+				},
+				{
+					"language": "en",
+					"text": "A gentle, empty room"
+				},
+				{
+					"language": "es",
+					"text": "Una sala vacía con un ambiente acogedor"
+				},
+				{
+					"language": "fr",
+					"text": "Une chambre vide, pleine de douceur"
+				},
+				{
+					"language": "id",
+					"text": "Ketenangan, di ruang hampa"
+				},
+				{
+					"language": "ja",
+					"text": "空っぽの部屋は 優しくて"
+				},
+				{
+					"language": "ko",
+					"text": "따뜻한 빈방"
+				},
+				{
+					"language": "pt",
+					"text": "Uma sala gentil e vazia"
+				},
+				{
+					"language": "ru",
+					"text": "Спокойная пустая комната."
+				},
+				{
+					"language": "th",
+					"text": "ห้องอันอ่อนโยนและว่างเปล่า"
+				},
+				{
+					"language": "vi",
+					"text": "Căn phòng trống, dịu dàng"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "溫柔的 空房間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wēn róu de kōng fáng jiān"
+				}
+			],
+			"id": "L31",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "方糖悬滞的时间",
+			"startTime": 185090,
+			"endTime": 190630,
+			"translations": [
+				{
+					"language": "de",
+					"text": "So wie der Zuckerwürfel treibt, vergänglich im Fluss der Zeit."
+				},
+				{
+					"language": "en",
+					"text": "As the sugar cube floats, fleeting in time"
+				},
+				{
+					"language": "es",
+					"text": "El tiempo fluye para este terrón"
+				},
+				{
+					"language": "fr",
+					"text": "Alors que le carré de sucre flotte, fugace dans le temps"
+				},
+				{
+					"language": "id",
+					"text": "Gula batu mengapung, larut dalam waktu"
+				},
+				{
+					"language": "ja",
+					"text": "角砂糖が沈んだら"
+				},
+				{
+					"language": "ko",
+					"text": "각설탕 하나가 떠 있는 시간"
+				},
+				{
+					"language": "pt",
+					"text": "Enquanto o cubo de açúcar flutua no tempo"
+				},
+				{
+					"language": "ru",
+					"text": "Время тает, как кубик сахара."
+				},
+				{
+					"language": "th",
+					"text": "ขณะที่ก้อนน้ำตาลลอยละล่อง ก็ละลายไปตามกาลเวลา"
+				},
+				{
+					"language": "vi",
+					"text": "Viên đường chậm rãi hòa tan trong dòng thời gian"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "方糖懸滯的時間"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "fāng táng xuán zhì de shí jiān"
+				}
+			],
+			"id": "L32",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "融化以后 再回未知盈满明天",
+			"startTime": 189750,
+			"endTime": 199470,
+			"translations": [
+				{
+					"language": "de",
+					"text": "so schnell geschmolzen und zurückgekehrt ins Morgen, so voller Unwissenheit."
+				},
+				{
+					"language": "en",
+					"text": "Melted away, and back to tomorrow — so full of unknowns"
+				},
+				{
+					"language": "es",
+					"text": "Una vez derretido, nuestro futuro será una interrogación"
+				},
+				{
+					"language": "fr",
+					"text": "Il a fondu, vers un nouveau lendemain, vers l'inconnu"
+				},
+				{
+					"language": "id",
+					"text": "Meleleh, dan kembali ke esok hari yang penuh kejutan"
+				},
+				{
+					"language": "ja",
+					"text": "ほらまた わからないことだらけの明日"
+				},
+				{
+					"language": "ko",
+					"text": "녹아버리면 다시 알 수 없는 내일이 찾아와"
+				},
+				{
+					"language": "pt",
+					"text": "Derretido e de volta ao amanhã - tão cheio de desconhecidos"
+				},
+				{
+					"language": "ru",
+					"text": "Когда он растает, снова наступит завтрашний день, полный неизведанного."
+				},
+				{
+					"language": "th",
+					"text": "ละลายแล้ว กลับไปสู่วันพรุ่งนี้ที่เต็มไปด้วยสิ่งที่ไม่รู้จัก"
+				},
+				{
+					"language": "vi",
+					"text": "Tan đi và trở lại ngày mai, đầy những điều chưa biết"
+				},
+				{
+					"language": "zh-Hant",
+					"text": "融化以後 再回未知盈滿明天"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "róng huà yǐ hòu zài huí wèi zhī yíng mǎn míng tiān"
+				}
+			],
+			"id": "L33",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		}
+	]
+}
