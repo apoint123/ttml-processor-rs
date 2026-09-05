@@ -1,0 +1,30 @@
+[package]
+name = "ttml_processor_wasm"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["amll"]
+amll = []
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+js-sys = "0.3.103"
+serde = { version = "1.0.228", features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
+ttml_processor = { path = "../processor" }
+wasm-bindgen = "0.2"
+
+[lints]
+workspace = true
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = [
+    "-O",
+    "--enable-bulk-memory",
+    "--enable-nontrapping-float-to-int",
+    "--enable-sign-ext",
+]

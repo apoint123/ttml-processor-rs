@@ -1,34 +1,17 @@
-[package]
-name = "ttml_processor"
-version = "0.3.3"
-edition = "2024"
-authors = ["apoint123 <vpnzaph@outlook.com>"]
-description = "A Rust library for parsing and generating TTML lyrics files, specifically designed for Apple Music and AMLL formats."
-readme = "README.md"
-homepage = "https://github.com/apoint123/ttml-processor-rs"
-repository = "https://github.com/apoint123/ttml-processor-rs"
-license = "MIT"
-keywords = ["ttml", "lyrics", "parser", "generator", "xml"]
-categories = ["multimedia::audio", "parsing", "text-processing"]
+[workspace]
+members = [
+    "crates/processor",
+    "crates/wasm",
+]
+resolver = "3"
 
-[dependencies]
-quick-xml = "0.39"
-thiserror = "2.0"
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-indexmap = { version = "2.14", features = ["serde"] }
-serde_with = "3.18"
-compact_str = { version = "0.9", features = ["serde"] }
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
 
-[[bench]]
-name = "ttml_parser_benchmark"
-harness = false
-
-[dev-dependencies]
-criterion = "0.8"
-insta = { version = "1", features = ["glob"] }
-miette = { version = "7.6.0", features = ["fancy"] }
-mimalloc = "0.1"
+cast_sign_loss = "allow"
+cast_possible_truncation = "allow"
+cast_precision_loss = "allow"
 
 [profile.dev]
 opt-level = 0
@@ -43,10 +26,10 @@ debug = true
 [profile.dev.build-override]
 opt-level = 3
 
-[lints.clippy]
-pedantic = { level = "warn", priority = -1 }
-nursery = { level = "warn", priority = -1 }
-
-cast_sign_loss = "allow"
-cast_possible_truncation = "allow"
-cast_precision_loss = "allow"
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+debug = false
+strip = true
+panic = "abort"
