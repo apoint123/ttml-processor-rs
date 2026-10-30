@@ -6,6 +6,9 @@ input_file: crates/processor/tests/fixtures/1752892462960-151196223-4b4faff5.ttm
 {
 	"metadata": {
 		"timingMode": "Line",
+		"audio": {
+			"duration": 256274
+		},
 		"title": [
 			"Black Or White"
 		],

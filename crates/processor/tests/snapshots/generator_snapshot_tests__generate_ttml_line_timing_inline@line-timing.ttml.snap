@@ -9,14 +9,14 @@ input_file: crates/processor/tests/fixtures/line-timing.ttml
             <ttm:agent type="person" xml:id="v1">
                 <ttm:name type="full">劉佳</ttm:name>
             </ttm:agent>
-            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal" leadingSilence="0.040">
                 <songwriters>
                     <songwriter>刘佳</songwriter>
                 </songwriters>
             </iTunesMetadata>
         </metadata>
     </head>
-    <body dur="4:30.663">
+    <body dur="4:33.476">
         <div begin="32.512" end="52.612" itunes:songPart="Verse">
             <p begin="32.512" end="37.482" itunes:key="L76" ttm:agent="v1">无论我走到哪里 都不能停止想你<span ttm:role="x-roman" xml:lang="zh-Latn-pinyin">wu lun wo zou dao na li dou bu neng ting zhi xiang ni</span>
             </p>

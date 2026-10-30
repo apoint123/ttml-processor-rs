@@ -62,7 +62,7 @@ pub fn parse_ttml(ttml_content: &str) -> Result<TTMLResult> {
 
                     context.tag_stack.pop();
                 } else if tag_name == tags::BODY {
-                    body::parse_body(&mut reader, &mut context, &mut lines)?;
+                    body::parse_body(&mut reader, e, &mut context, &mut lines)?;
 
                     context.tag_stack.pop();
                 }

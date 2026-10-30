@@ -109,7 +109,7 @@ input_file: tests/fixtures/周杰伦 - 简单爱.ttml
             </iTunesMetadata>
         </metadata>
     </head>
-    <body dur="4:13.905">
+    <body dur="4:30.987">
         <div begin="26.663" end="46.202" itunes:songPart="Verse">
             <p begin="26.663" end="31.477" itunes:key="L1" ttm:agent="v1">說不上為什麼 我變得很主動</p>
             <p begin="31.673" end="36.245" itunes:key="L2" ttm:agent="v1">若愛上一個人 什麼都會值得去做</p>

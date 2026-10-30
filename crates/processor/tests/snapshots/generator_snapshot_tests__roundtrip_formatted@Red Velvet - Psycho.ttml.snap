@@ -7,6 +7,9 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 	"metadata": {
 		"language": "ko",
 		"timingMode": "Word",
+		"audio": {
+			"duration": 210560
+		},
 		"songwriters": [
 			"Andrew Scott",
 			"Cazzi Opeia",

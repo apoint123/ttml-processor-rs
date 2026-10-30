@@ -5,6 +5,9 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
 ---
 {
 	"metadata": {
+		"audio": {
+			"duration": 256274
+		},
 		"title": [
 			"Black Or White"
 		],

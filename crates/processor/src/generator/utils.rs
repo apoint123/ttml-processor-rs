@@ -85,6 +85,20 @@ pub const fn format_timestamp(total_ms: u32) -> Timestamp {
     Timestamp { buf, len: pos }
 }
 
+/// 将毫秒格式化为秒数
+///
+/// 零写作 `"0"`，非零固定保留 3 位小数，例如 `"0.040"`、`"0.046"`、`"-0.271"`。
+pub fn format_seconds(total_ms: i64) -> String {
+    if total_ms == 0 {
+        return "0".to_string();
+    }
+
+    let sign = if total_ms < 0 { "-" } else { "" };
+    let abs = total_ms.unsigned_abs();
+
+    format!("{sign}{}.{:03}", abs / 1000, abs % 1000)
+}
+
 /// 取出用于逐行输出的纯文本
 ///
 /// `text` 为空时回退到从音节拼接，以兼容只填写了 `words` 的调用方
@@ -123,5 +137,15 @@ mod tests {
         assert_eq!(format_timestamp(60000).as_str(), "1:00.000");
 
         assert_eq!(format_timestamp(3_816_120).as_str(), "1:03:36.120");
+    }
+
+    #[test]
+    fn test_format_seconds() {
+        assert_eq!(format_seconds(0), "0");
+        assert_eq!(format_seconds(40), "0.040");
+        assert_eq!(format_seconds(46), "0.046");
+        assert_eq!(format_seconds(500), "0.500");
+        assert_eq!(format_seconds(-271), "-0.271");
+        assert_eq!(format_seconds(1152), "1.152");
     }
 }

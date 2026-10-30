@@ -7,6 +7,10 @@ input_file: crates/processor/tests/fixtures/line-timing.ttml
 	"metadata": {
 		"language": "zh-Hans",
 		"timingMode": "Line",
+		"audio": {
+			"duration": 273476,
+			"leadingSilence": 40
+		},
 		"songwriters": [
 			"刘佳"
 		],

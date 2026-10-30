@@ -41,6 +41,7 @@ pub mod tags {
         SONGWRITER = "songwriter";
         TEXT = "text";
         ITUNES_METADATA = "iTunesMetadata";
+        AUDIO = "audio";
     }
 }
 
@@ -69,6 +70,9 @@ pub mod attrs {
         BEGIN = "begin";
         END = "end";
         DUR = "dur";
+        LEADING_SILENCE = "leadingSilence";
+        LYRIC_OFFSET = "lyricOffset";
+        ROLE = "role";
         TYPE = "type";
         AUTOMATICALLY_CREATED = "automaticallyCreated";
         FOR = "for";

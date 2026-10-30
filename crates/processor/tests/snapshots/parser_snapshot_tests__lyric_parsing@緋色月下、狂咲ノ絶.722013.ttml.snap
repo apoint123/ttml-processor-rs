@@ -7,6 +7,9 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
 	"metadata": {
 		"language": "ja",
 		"timingMode": "Word",
+		"audio": {
+			"duration": 334600
+		},
 		"songwriters": [
 			"EastNewSound"
 		],

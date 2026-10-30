@@ -16,13 +16,16 @@ use crate::{
     error::Result,
     generator::{
         GeneratorConfig,
+        ext::ElementWriterExt as _,
         sub_lyric::{
             SubLyricKind,
             has_any_itunes_sub_lyrics,
             write_sub_lyrics,
         },
+        utils::format_seconds,
     },
     model::{
+        AudioMetadata,
         LyricLine,
         PlatformId,
         TTMLMetadata,
@@ -55,10 +58,25 @@ pub fn write_head(
 
                     let has_sub_lyrics = has_any_itunes_sub_lyrics(lines, config);
 
-                    if has_songwriters || has_sub_lyrics {
+                    let audio = metadata.audio.as_ref();
+                    let has_audio_element = audio
+                        .is_some_and(|audio| audio.lyric_offset.is_some() || audio.role.is_some());
+                    let leading_silence = audio
+                        .and_then(|audio| audio.leading_silence)
+                        .map(|ms| format_seconds(i64::from(ms)));
+
+                    if has_songwriters
+                        || has_sub_lyrics
+                        || has_audio_element
+                        || leading_silence.is_some()
+                    {
                         writer
                             .create_element(tags::ITUNES_METADATA)
                             .with_attribute((attrs::XMLNS, vals::NS_ITUNES))
+                            .with_attribute_opt((
+                                attrs::LEADING_SILENCE,
+                                leading_silence.as_deref(),
+                            ))
                             .write_inner_content(|writer| {
                                 // 写入翻译
                                 write_sub_lyrics(writer, lines, SubLyricKind::Translation, config)?;
@@ -86,6 +104,11 @@ pub fn write_head(
                                         })?;
                                 }
 
+                                // 写入音频偏移与角色
+                                if has_audio_element {
+                                    write_audio(writer, audio.expect("音频元素字段已确认存在"))?;
+                                }
+
                                 Ok(())
                             })?;
                     }
@@ -94,6 +117,21 @@ pub fn write_head(
                 })?;
             Ok(())
         })?;
+
+    Ok(())
+}
+
+/// 写入 `<audio>` 元素
+///
+/// `lyricOffset` 在前、`role` 在后，与 Apple Music 的输出一致
+fn write_audio(writer: &mut Writer<Vec<u8>>, audio: &AudioMetadata) -> Result<()> {
+    let lyric_offset = audio.lyric_offset.map(|ms| format_seconds(i64::from(ms)));
+
+    writer
+        .create_element(tags::AUDIO)
+        .with_attribute_opt((attrs::LYRIC_OFFSET, lyric_offset.as_deref()))
+        .with_attribute_opt((attrs::ROLE, audio.role.as_deref()))
+        .write_empty()?;
 
     Ok(())
 }

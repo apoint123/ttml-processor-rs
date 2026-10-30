@@ -621,7 +621,7 @@ input_file: tests/fixtures/周杰伦 - 简单爱.ttml
             </iTunesMetadata>
         </metadata>
     </head>
-    <body dur="4:13.905">
+    <body dur="4:30.987">
         <div begin="26.663" end="46.202" itunes:songPart="Verse">
             <p begin="26.663" end="31.477" itunes:key="L1" ttm:agent="v1">
                 <span begin="26.663" end="28.242">說不上為什</span>

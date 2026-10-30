@@ -49,9 +49,17 @@ use crate::{
 /// 解析 `<body>` 标签，其中包含多个歌词区块
 pub fn parse_body(
     reader: &mut Reader<&[u8]>,
+    body_event: &BytesStart,
     context: &mut ParserContext,
     lines: &mut Vec<LyricLine>,
 ) -> Result<()> {
+    // 音频时长；属性缺失或格式无法识别时按缺失处理
+    if let Some(dur) = body_event.get_attr_value(attrs::DUR, reader, context)?
+        && let Some(ms) = parse_timestamp(dur.trim().as_bytes())
+    {
+        context.metadata.audio_mut().duration = Some(ms);
+    }
+
     let mut buf = Vec::new();
     loop {
         match reader.read_event_with_context(&mut buf, context)? {
@@ -387,18 +395,6 @@ mod tests {
         Syllable,
     };
 
-    fn advance_to_start_tag(reader: &mut Reader<&[u8]>, tag_name: &str) {
-        let mut buf = Vec::new();
-        loop {
-            match reader.read_event_into(&mut buf) {
-                Ok(Event::Start(ref e)) if e.name().is(tag_name) => break,
-                Ok(Event::Eof) => panic!("Reached EOF before finding tag: {tag_name}"),
-                _ => (),
-            }
-            buf.clear();
-        }
-    }
-
     fn get_start_event<'a>(reader: &mut Reader<&'a [u8]>, tag: &str) -> BytesStart<'a> {
         let mut buf = Vec::new();
         loop {
@@ -520,7 +516,7 @@ mod tests {
 
     #[test]
     fn test_parse_body() {
-        let xml = r#"<body>
+        let xml = r#"<body dur="3:36.120">
             <div itunes:songPart="Verse">
                 <p begin="0.0" end="1.0">V1</p>
             </div>
@@ -529,13 +525,13 @@ mod tests {
             </div>
         </body>"#;
         let mut reader = Reader::from_str(xml);
-
-        advance_to_start_tag(&mut reader, "body");
+        let body_event = get_start_event(&mut reader, "body");
 
         let mut context = ParserContext::default();
         let mut lines = Vec::new();
 
-        parse_body(&mut reader, &mut context, &mut lines).expect("Failed to parse body");
+        parse_body(&mut reader, &body_event, &mut context, &mut lines)
+            .expect("Failed to parse body");
 
         assert_eq!(lines.len(), 2);
         assert_eq!(lines[0].song_part.as_deref(), Some("Verse"));
@@ -543,5 +539,9 @@ mod tests {
         assert_eq!(lines[1].song_part.as_deref(), Some("Chorus"));
         assert_eq!(lines[1].block_index, Some(2));
         assert_eq!(context.current_block_index, 2);
+        assert_eq!(
+            context.metadata.audio.as_ref().unwrap().duration,
+            Some(216_120)
+        );
     }
 }

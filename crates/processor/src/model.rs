@@ -302,6 +302,51 @@ pub enum PlatformId {
     AppleMusicId,
 }
 
+/// 音频相关信息
+///
+/// 对应 Apple Music TTML 中的以下内容：
+/// - `<body dur>`：音频时长
+/// - `<iTunesMetadata leadingSilence>`：前导静音
+/// - `<iTunesMetadata><audio lyricOffset role>`：音频偏移与音频角色
+///
+/// 所有时间均以毫秒为单位。字段缺失或取值无法识别时为 `None`。
+#[skip_serializing_none]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AudioMetadata {
+    /// 音频时长，单位毫秒
+    ///
+    /// 对应 `<body>` 上的 `dur` 属性。
+    pub duration: Option<u32>,
+
+    /// 音频偏移，单位毫秒
+    ///
+    /// 对应 `<audio>` 上的 `lyricOffset` 属性，原始值为秒，可以为负数。
+    pub lyric_offset: Option<i32>,
+
+    /// 音频角色
+    ///
+    /// 对应 `<audio>` 上的 `role` 属性，例如 `"spatial"`。
+    /// 本库只保存该值，不解释其具体语义。
+    pub role: Option<CompactString>,
+
+    /// 前导静音，单位毫秒
+    ///
+    /// 对应 `<iTunesMetadata>` 上的 `leadingSilence` 属性，原始值为秒。
+    pub leading_silence: Option<u32>,
+}
+
+impl AudioMetadata {
+    /// 是否所有字段均为 `None`
+    #[must_use]
+    pub const fn is_empty(&self) -> bool {
+        self.duration.is_none()
+            && self.lyric_offset.is_none()
+            && self.role.is_none()
+            && self.leading_silence.is_none()
+    }
+}
+
 /// TTML 歌词的元数据内容
 #[skip_serializing_none]
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
@@ -312,6 +357,12 @@ pub struct TTMLMetadata {
 
     /// 计时模式
     pub timing_mode: Option<CompactString>,
+
+    /// 音频相关信息
+    ///
+    /// 解析自 `<body dur>`、`<iTunesMetadata leadingSilence>` 与 `<audio>`；
+    /// 仅在解析到至少一项时存在，且不会通过 AMLL 转换保留。
+    pub audio: Option<AudioMetadata>,
 
     /// 歌曲创作者列表
     pub songwriters: Option<Vec<CompactString>>,
@@ -345,6 +396,11 @@ pub struct TTMLMetadata {
 }
 
 impl TTMLMetadata {
+    /// 获取或初始化 [`AudioMetadata`] 的可变引用
+    pub fn audio_mut(&mut self) -> &mut AudioMetadata {
+        self.audio.get_or_insert_with(AudioMetadata::default)
+    }
+
     pub fn push_title(&mut self, title: CompactString) {
         self.title.get_or_insert_with(Vec::new).push(title);
     }

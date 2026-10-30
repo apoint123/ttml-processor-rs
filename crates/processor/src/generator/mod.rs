@@ -90,7 +90,16 @@ pub fn generate_ttml(result: &TTMLResult, config: &GeneratorConfig) -> Result<St
             head::write_head(writer, &result.metadata, &result.lines, config)?;
 
             // <body>
-            body::write_body(writer, &result.lines, config)?;
+            body::write_body(
+                writer,
+                &result.lines,
+                result
+                    .metadata
+                    .audio
+                    .as_ref()
+                    .and_then(|audio| audio.duration),
+                config,
+            )?;
             Ok(())
         })?;
 

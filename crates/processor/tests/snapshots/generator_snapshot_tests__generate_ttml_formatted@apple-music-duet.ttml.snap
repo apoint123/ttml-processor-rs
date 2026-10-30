@@ -16,7 +16,7 @@ input_file: tests/fixtures/apple-music-duet.ttml
             <ttm:agent type="person" xml:id="v8"/>
             <ttm:agent type="person" xml:id="v9"/>
             <ttm:agent type="person" xml:id="v10"/>
-            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal" leadingSilence="0">
                 <translations>
                     <translation xml:lang="zh-Hans" type="subtitle">
                         <text for="L1">我们不提布鲁诺 不 不 不</text>
@@ -103,10 +103,11 @@ input_file: tests/fixtures/apple-music-duet.ttml
                 <songwriters>
                     <songwriter>Lin-Manuel Miranda</songwriter>
                 </songwriters>
+                <audio lyricOffset="0.046" role="spatial"/>
             </iTunesMetadata>
         </metadata>
     </head>
-    <body dur="3:26.128">
+    <body dur="3:36.120">
         <div begin="1.152" end="10.254" itunes:songPart="Intro">
             <p begin="1.152" end="5.552" itunes:key="L1" ttm:agent="v1">
                 <span begin="1.152" end="1.528">We </span>

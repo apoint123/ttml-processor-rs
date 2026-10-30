@@ -604,7 +604,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
             </iTunesMetadata>
         </metadata>
     </head>
-    <body dur="3:27.245">
+    <body dur="3:30.560">
         <div begin="12.026" end="12.999" itunes:songPart="Intro">
             <p begin="12.026" end="12.999" itunes:key="L1" ttm:agent="v1">
                 <span begin="12.026" end="12.999">Psycho</span>

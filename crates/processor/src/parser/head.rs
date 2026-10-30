@@ -34,6 +34,7 @@ use crate::{
             SubLyricType,
             parse_sub_lyrics,
         },
+        timestamp::parse_decimal_seconds,
         utils::read_text_content,
     },
 };
@@ -127,6 +128,20 @@ pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Re
                             parse_amll_meta(context, &key, &value);
                         }
                     }
+
+                    tags::ITUNES_METADATA => {
+                        if let Some(value) =
+                            e.get_attr_value(attrs::LEADING_SILENCE, reader, context)?
+                            && let Some(ms) = parse_decimal_seconds(value.trim().as_bytes())
+                            && let Ok(ms) = u32::try_from(ms)
+                        {
+                            context.metadata.audio_mut().leading_silence = Some(ms);
+                        }
+                    }
+
+                    tags::AUDIO => {
+                        parse_audio_element(reader, e, context)?;
+                    }
                     _ => (),
                 }
             }
@@ -141,6 +156,55 @@ pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Re
         }
         buf.clear();
     }
+    Ok(())
+}
+
+/// 解析 `<iTunesMetadata>` 下的 `<audio>` 标签
+///
+/// ## 示例
+/// ```xml
+/// <iTunesMetadata leadingSilence="0.040">
+///     <audio lyricOffset="-0.271" role="spatial" />
+/// </iTunesMetadata>
+/// ```
+///
+/// 仅保留文档中第一个 `<audio>`，且只处理 `<iTunesMetadata>` 的直接子元素；
+/// `role` 为空串时按缺失处理，其他无法识别的属性一律忽略。
+fn parse_audio_element(
+    reader: &Reader<&[u8]>,
+    e: &BytesStart,
+    context: &mut ParserContext,
+) -> Result<()> {
+    let is_direct_child = context
+        .tag_stack
+        .len()
+        .checked_sub(2)
+        .and_then(|idx| context.tag_stack.get(idx))
+        .is_some_and(|parent| parent.as_str() == tags::ITUNES_METADATA);
+
+    if !is_direct_child || context.seen_audio_element {
+        return Ok(());
+    }
+    context.seen_audio_element = true;
+
+    let role = e
+        .get_attr_value(attrs::ROLE, reader, context)?
+        .and_then(|value| {
+            let value = value.trim();
+            (!value.is_empty()).then(|| CompactString::from(value))
+        });
+
+    let lyric_offset = e
+        .get_attr_value(attrs::LYRIC_OFFSET, reader, context)?
+        .and_then(|value| parse_decimal_seconds(value.trim().as_bytes()))
+        .and_then(|ms| i32::try_from(ms).ok());
+
+    if role.is_some() || lyric_offset.is_some() {
+        let audio = context.metadata.audio_mut();
+        audio.role = role;
+        audio.lyric_offset = lyric_offset;
+    }
+
     Ok(())
 }
 
@@ -400,5 +464,52 @@ mod tests {
             "We Don't Talk About Bruno"
         );
         assert_eq!(context.metadata.album.as_ref().unwrap()[0], "Encanto");
+    }
+
+    #[test]
+    fn test_parse_audio_metadata() {
+        let xml = r#"
+        <head>
+            <metadata>
+                <iTunesMetadata leadingSilence="0.040">
+                    <audio lyricOffset="-0.271" role="spatial" />
+                </iTunesMetadata>
+            </metadata>
+        </head>"#;
+
+        let mut reader = Reader::from_str(xml);
+        reader.config_mut().expand_empty_elements = true;
+
+        let mut context = ParserContext::default();
+
+        advance_to_start_tag(&mut reader, tags::HEAD);
+
+        parse_head(&mut reader, &mut context).expect("Failed to parse head");
+
+        let audio = context.metadata.audio.as_ref().unwrap();
+        assert_eq!(audio.leading_silence, Some(40));
+        assert_eq!(audio.lyric_offset, Some(-271));
+        assert_eq!(audio.role.as_deref(), Some("spatial"));
+    }
+
+    #[test]
+    fn test_parse_audio_element_outside_itunes_metadata() {
+        let xml = r#"
+        <head>
+            <metadata>
+                <audio lyricOffset="0.5" role="spatial" />
+            </metadata>
+        </head>"#;
+
+        let mut reader = Reader::from_str(xml);
+        reader.config_mut().expand_empty_elements = true;
+
+        let mut context = ParserContext::default();
+
+        advance_to_start_tag(&mut reader, tags::HEAD);
+
+        parse_head(&mut reader, &mut context).expect("Failed to parse head");
+
+        assert!(context.metadata.audio.is_none());
     }
 }

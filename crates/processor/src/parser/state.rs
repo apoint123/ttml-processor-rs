@@ -34,4 +34,6 @@ pub struct ParserContext {
     pub tag_stack: Vec<CompactString>,
     /// 当前解析到的歌词行 ID (对应 itunes:key)，离开 <p> 标签时应清空
     pub current_line_id: Option<CompactString>,
+    /// 是否已经遇到过 `<iTunesMetadata>` 下的 `<audio>`，仅第一个生效
+    pub seen_audio_element: bool,
 }

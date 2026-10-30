@@ -7,6 +7,9 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
 	"metadata": {
 		"language": "zh-Hans",
 		"timingMode": "Word",
+		"audio": {
+			"duration": 199470
+		},
 		"songwriters": [
 			"熊子"
 		],

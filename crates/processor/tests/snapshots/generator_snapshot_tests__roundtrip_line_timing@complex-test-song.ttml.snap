@@ -7,6 +7,9 @@ input_file: crates/processor/tests/fixtures/complex-test-song.ttml
 	"metadata": {
 		"language": "ja",
 		"timingMode": "Line",
+		"audio": {
+			"duration": 30000
+		},
 		"songwriters": [
 			"作曲者1号",
 			"作曲者2号"

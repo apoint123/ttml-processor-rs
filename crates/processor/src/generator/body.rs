@@ -42,21 +42,23 @@ fn line_time_range(line: &LyricLine, config: &GeneratorConfig) -> (u32, u32) {
 pub fn write_body(
     writer: &mut Writer<Vec<u8>>,
     lines: &[LyricLine],
+    declared_duration: Option<u32>,
     config: &GeneratorConfig,
 ) -> Result<()> {
-    // 计算歌词时长
-    // 理论上这个值应该是歌曲的时长，不过 Apple Music 和其他使用者应该不会在乎这个值的（
+    // 优先使用模型中记录的歌曲时长；缺失时回退到歌词的最大结束时间
     let max_end_time = lines
         .iter()
         .map(|line| line_time_range(line, config).1)
         .max()
         .unwrap_or(0);
 
+    let duration = declared_duration.or_else(|| (max_end_time > 0).then_some(max_end_time));
+
     let mut body_start = BytesStart::new(tags::BODY);
 
     // 添加 dur 属性
-    if max_end_time > 0 {
-        let dur_str = format_timestamp(max_end_time);
+    if let Some(duration) = duration {
+        let dur_str = format_timestamp(duration);
         body_start.push_attribute((attrs::DUR, dur_str.as_str()));
     }
 

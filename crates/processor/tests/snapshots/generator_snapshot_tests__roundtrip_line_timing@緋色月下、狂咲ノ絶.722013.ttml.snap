@@ -7,6 +7,9 @@ input_file: crates/processor/tests/fixtures/緋色月下、狂咲ノ絶.722013.t
 	"metadata": {
 		"language": "ja",
 		"timingMode": "Line",
+		"audio": {
+			"duration": 334600
+		},
 		"songwriters": [
 			"EastNewSound"
 		],

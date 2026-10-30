@@ -7,6 +7,12 @@ input_file: tests/fixtures/apple-music-duet.ttml
 	"metadata": {
 		"language": "en",
 		"timingMode": "Word",
+		"audio": {
+			"duration": 216120,
+			"lyricOffset": 46,
+			"role": "spatial",
+			"leadingSilence": 0
+		},
 		"songwriters": [
 			"Lin-Manuel Miranda"
 		],

@@ -9,7 +9,7 @@ input_file: crates/processor/tests/fixtures/line-timing.ttml
             <ttm:agent type="person" xml:id="v1">
                 <ttm:name type="full">劉佳</ttm:name>
             </ttm:agent>
-            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal" leadingSilence="0.040">
                 <transliterations>
                     <transliteration xml:lang="zh-Latn-pinyin">
                         <text for="L76">wu lun wo zou dao na li dou bu neng ting zhi xiang ni</text>
@@ -79,7 +79,7 @@ input_file: crates/processor/tests/fixtures/line-timing.ttml
             </iTunesMetadata>
         </metadata>
     </head>
-    <body dur="4:30.663">
+    <body dur="4:33.476">
         <div begin="32.512" end="52.612" itunes:songPart="Verse">
             <p begin="32.512" end="37.482" itunes:key="L76" ttm:agent="v1">无论我走到哪里 都不能停止想你</p>
             <p begin="37.729" end="42.881" itunes:key="L77" ttm:agent="v1">亲爱的 在我心底 没人比你更美丽</p>

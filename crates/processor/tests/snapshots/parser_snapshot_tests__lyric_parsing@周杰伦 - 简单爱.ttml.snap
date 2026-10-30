@@ -7,6 +7,9 @@ input_file: tests/fixtures/周杰伦 - 简单爱.ttml
 	"metadata": {
 		"language": "zh-Hant",
 		"timingMode": "Word",
+		"audio": {
+			"duration": 270987
+		},
 		"songwriters": [
 			"周杰倫",
 			"徐若瑄"
