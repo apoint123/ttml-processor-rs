@@ -1,0 +1,5 @@
+# 所有文本文件在仓库与工作区中统一使用 LF
+* text=auto eol=lf
+
+# insta 快照由测试生成、体积大，在 GitHub 上默认折叠 diff
+*.snap linguist-generated=true
