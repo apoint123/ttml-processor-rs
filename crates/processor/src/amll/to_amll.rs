@@ -504,11 +504,13 @@ mod tests {
         line.translations = Some(vec![
             SubLyricContent {
                 language: Some("en".into()),
+                automatically_created: None,
                 text: "Hello".to_string(),
                 words: None,
             },
             SubLyricContent {
                 language: Some("zh-Hant".into()),
+                automatically_created: None,
                 text: "你好".to_string(),
                 words: None,
             },
@@ -516,6 +518,7 @@ mod tests {
 
         line.romanizations = Some(vec![SubLyricContent {
             language: Some("zh-Latn".into()),
+            automatically_created: None,
             text: "ni hao".to_string(),
             words: Some(vec![
                 create_syllable("ni", 5, 505, true),

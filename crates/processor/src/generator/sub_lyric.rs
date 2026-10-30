@@ -132,6 +132,11 @@ pub fn write_sub_lyrics(
         .write_inner_content(|writer| {
             for &lang in &languages {
                 let mut item = writer.create_element(kind.item_tag());
+
+                if is_automatically_created(&entries, lang) {
+                    item = item.with_attribute((attrs::AUTOMATICALLY_CREATED, vals::TRUE_STR));
+                }
+
                 if let Some(lang_str) = lang {
                     item = item.with_attribute((attrs::XML_LANG, lang_str));
                 }
@@ -206,6 +211,22 @@ pub fn write_sub_lyrics(
         })?;
 
     Ok(())
+}
+
+/// 判断 `<translation>` / `<transliteration>` 块是否应写入 `automaticallyCreated="true"`
+///
+/// 解析时同一块内的所有内容共享该标志；手工构造的模型若在同一语言下混用，
+/// 只要存在任一 `Some(true)` 即视为自动生成
+fn is_automatically_created(entries: &[LineSubLyricEntry<'_>], lang: Option<&str>) -> bool {
+    entries.iter().any(|entry| {
+        entry
+            .main_contents
+            .iter()
+            .chain(entry.bg_contents.unwrap_or(&[]))
+            .any(|content| {
+                content.language.as_deref() == lang && content.automatically_created == Some(true)
+            })
+    })
 }
 
 /// 推断 `<translation>` 块应写入的 `type` 属性

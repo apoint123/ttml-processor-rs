@@ -24,6 +24,13 @@ pub struct SubLyricContent {
     /// 该内容的 BCP-47 语言代码
     pub language: Option<CompactString>,
 
+    /// 该内容是否由系统自动生成
+    ///
+    /// 对应 `<translation>` / `<transliteration>` 上的 `automaticallyCreated` 属性。
+    /// 仅解析与生成 head 中的这两个元素；内嵌的 `x-translation` / `x-roman`
+    /// span 与 AMLL 转换不会保留该标志。属性缺失、取值为 `false` 或无法识别时均为 `None`。
+    pub automatically_created: Option<bool>,
+
     /// 完整文本
     pub text: String,
 

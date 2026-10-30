@@ -49,6 +49,14 @@ pub enum SubLyricType {
     Transliteration,
 }
 
+/// 解析 `automaticallyCreated` 属性
+///
+/// 仅 `true` / `1` 视为自动生成；`false` / `0` 与其他无法识别的取值都与属性缺失等价
+fn parse_automatically_created(value: Option<&CompactString>) -> Option<bool> {
+    let value = value?;
+    matches!(value.as_str(), "true" | "1").then_some(true)
+}
+
 /// 解析 `<iTunesMetadata>` 中的翻译或音译内容
 ///
 /// ## 示例
@@ -94,7 +102,18 @@ pub fn parse_sub_lyrics(
 
                 if qname.is(item_tag) {
                     let lang = e.get_attr_value(attrs::XML_LANG, reader, context)?;
-                    parse_sub_lyric_block(reader, context, item_tag, lang.as_ref(), sub_type)?;
+                    let automatically_created = parse_automatically_created(
+                        e.get_attr_value(attrs::AUTOMATICALLY_CREATED, reader, context)?
+                            .as_ref(),
+                    );
+                    parse_sub_lyric_block(
+                        reader,
+                        context,
+                        item_tag,
+                        lang.as_ref(),
+                        automatically_created,
+                        sub_type,
+                    )?;
                     context.tag_stack.pop();
                 }
             }
@@ -123,6 +142,7 @@ fn parse_sub_lyric_block(
     context: &mut ParserContext,
     item_tag: &str,
     lang: Option<&CompactString>,
+    automatically_created: Option<bool>,
     sub_type: SubLyricType,
 ) -> Result<()> {
     let mut buf = Vec::new();
@@ -137,7 +157,14 @@ fn parse_sub_lyric_block(
 
                 if qname.is(tags::TEXT) {
                     let line_id = e.get_required_attr(attrs::FOR, reader, context)?;
-                    parse_sub_lyric_text(reader, context, line_id, lang, sub_type)?;
+                    parse_sub_lyric_text(
+                        reader,
+                        context,
+                        line_id,
+                        lang,
+                        automatically_created,
+                        sub_type,
+                    )?;
                     context.tag_stack.pop();
                 }
             }
@@ -204,6 +231,7 @@ fn parse_sub_lyric_text(
     context: &mut ParserContext,
     line_id: CompactString,
     lang: Option<&CompactString>,
+    automatically_created: Option<bool>,
     sub_type: SubLyricType,
 ) -> Result<()> {
     context.current_line_id = Some(line_id.clone());
@@ -311,6 +339,7 @@ fn parse_sub_lyric_text(
             } else {
                 Some(SubLyricContent {
                     language: lang.cloned(),
+                    automatically_created,
                     text,
                     words: None,
                 })
@@ -320,6 +349,7 @@ fn parse_sub_lyric_text(
             let text = build_full_text(&words, false);
             Some(SubLyricContent {
                 language: lang.cloned(),
+                automatically_created,
                 text,
                 words: Some(words),
             })
@@ -365,6 +395,21 @@ mod tests {
     }
 
     #[test]
+    fn test_parse_automatically_created() {
+        let value = |s: &str| CompactString::from(s);
+
+        assert_eq!(
+            parse_automatically_created(Some(&value("true"))),
+            Some(true)
+        );
+        assert_eq!(parse_automatically_created(Some(&value("1"))), Some(true));
+        assert_eq!(parse_automatically_created(Some(&value("false"))), None);
+        assert_eq!(parse_automatically_created(Some(&value("0"))), None);
+        assert_eq!(parse_automatically_created(Some(&value("auto"))), None);
+        assert_eq!(parse_automatically_created(None), None);
+    }
+
+    #[test]
     fn test_parse_sub_lyric_text() {
         let xml = r#"
         <text for="L1">
@@ -386,6 +431,7 @@ mod tests {
             &mut context,
             "L1".into(),
             Some(&lang),
+            None,
             SubLyricType::Translation,
         )
         .expect("Failed to parse sub lyric text");
@@ -427,6 +473,7 @@ mod tests {
             &mut context,
             "translation",
             Some(&lang),
+            None,
             SubLyricType::Translation,
         )
         .expect("Failed to parse sub lyric block");

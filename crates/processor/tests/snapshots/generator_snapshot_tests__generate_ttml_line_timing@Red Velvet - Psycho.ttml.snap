@@ -84,7 +84,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
                     </translation>
                 </translations>
                 <transliterations>
-                    <transliteration xml:lang="ko-Latn">
+                    <transliteration automaticallyCreated="true" xml:lang="ko-Latn">
                         <text for="L1">Psycho</text>
                         <text for="L2">neol eo jjeo myeon jo eul kka</text>
                         <text for="L3">i reon ma meun tto cheo mi ra</text>

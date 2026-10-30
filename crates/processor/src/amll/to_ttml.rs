@@ -227,6 +227,7 @@ fn convert_single_line(
     if !amll_line.translated_lyric.is_empty() {
         let mut trans = SubLyricContent {
             language: Some(trans_lang.into()),
+            automatically_created: None,
             text: amll_line.translated_lyric,
             words: None,
         };
@@ -239,6 +240,7 @@ fn convert_single_line(
     if has_rom_words {
         let mut rom_content = SubLyricContent {
             language: rom_lang.map(CompactString::new),
+            automatically_created: None,
             text: String::new(),
             words: Some(rom_syllables),
         };
@@ -248,6 +250,7 @@ fn convert_single_line(
     } else if !amll_line.roman_lyric.is_empty() {
         let mut rom_content = SubLyricContent {
             language: rom_lang.map(CompactString::new),
+            automatically_created: None,
             text: amll_line.roman_lyric,
             words: None,
         };

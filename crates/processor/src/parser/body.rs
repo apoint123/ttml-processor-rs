@@ -462,6 +462,7 @@ mod tests {
             "L3".into(),
             vec![SubLyricContent {
                 language: Some("zh".into()),
+                automatically_created: None,
                 text: "你好".into(),
                 words: None,
             }],

@@ -93,7 +93,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
                     </translation>
                 </translations>
                 <transliterations>
-                    <transliteration xml:lang="ko-Latn">
+                    <transliteration automaticallyCreated="true" xml:lang="ko-Latn">
                         <text for="L1">
                             <span begin="12.026" end="12.999">Psycho</span>
                         </text>

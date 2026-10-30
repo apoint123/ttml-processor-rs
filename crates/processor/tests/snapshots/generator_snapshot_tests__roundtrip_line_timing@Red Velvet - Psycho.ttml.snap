@@ -34,6 +34,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Psycho"
 				}
 			],
@@ -55,6 +56,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "neol eo jjeo myeon jo eul kka"
 				}
 			],
@@ -76,6 +78,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "i reon ma meun tto cheo mi ra"
 				}
 			],
@@ -97,6 +100,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Up and down i jom sim hae"
 				}
 			],
@@ -118,6 +122,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "jo jeo ri ja kku jal an dwae"
 				}
 			],
@@ -139,6 +144,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "ha na hwak sil han geon"
 				}
 			],
@@ -160,6 +166,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "I don't play the game"
 				}
 			],
@@ -181,6 +188,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u ri jin jja byeol na dae"
 				}
 			],
@@ -202,6 +210,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "geu nyang nae ga neo mu jo a hae"
 				}
 			],
@@ -223,6 +232,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "neon geu geol neo mu jal al go"
 				}
 			],
@@ -244,6 +254,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "nal jwi rak pyeo rak hae"
 				}
 			],
@@ -265,6 +276,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "na do ma chan ga ji in geol"
 				}
 			],
@@ -286,6 +298,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u rin cham byeol na go i sang han sa i ya"
 				}
 			],
@@ -307,6 +320,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "seo ro reul bu seo ji ge"
 				}
 			],
@@ -328,6 +342,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "geu ri gon tto kkyeo a na"
 				}
 			],
@@ -349,6 +364,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "You got me feeling like a psycho, psycho"
 				}
 			],
@@ -370,6 +386,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u ril bo go mal hae ja kku ja kku"
 				}
 			],
@@ -391,6 +408,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya"
 				}
 			],
@@ -412,6 +430,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "i hae ga an gan dae ut gi ji do an tae"
 				}
 			],
@@ -433,6 +452,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "ma ja Psycho, psycho"
 				}
 			],
@@ -454,6 +474,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "seo ro jo a juk neun ba bo ba bo"
 				}
 			],
@@ -475,6 +496,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "neo eop sin eo ji reop go seul peo jyeo"
 				}
 			],
@@ -496,6 +518,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "gi un do mak eop seo yo"
 				}
 			],
@@ -517,6 +540,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "du ri jal man nat dae"
 				}
 			],
@@ -538,6 +562,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -559,6 +584,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey, trouble gyeong go tta win eop si o neun neo"
 				}
 			],
@@ -580,6 +606,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "I'm original visual"
 				}
 			],
@@ -601,6 +628,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u rin won rae i rae sseo Yeah"
 				}
 			],
@@ -622,6 +650,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "du ryeop ji neun a na"
 				}
 			],
@@ -643,6 +672,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "It's hot! Let me just hop"
 				}
 			],
@@ -664,6 +694,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "eo tteo ke neol da rul kka"
 				}
 			],
@@ -685,6 +716,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "eo jjeol ju reul mol ra neo reul dal rae go"
 				}
 			],
@@ -706,6 +738,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "mae seop ge bal ro cha do"
 				}
 			],
@@ -727,6 +760,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "ga kkeum nae ge mi so jit neun neol"
 				}
 			],
@@ -748,6 +782,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "eo tteo ke no ke sseo Ooh- ooh"
 				}
 			],
@@ -769,6 +804,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u rin a reum dap go cham seul peun sa i ya"
 				}
 			],
@@ -790,6 +826,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "seo ro reul bit na ge hae"
 				}
 			],
@@ -811,6 +848,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "ma chi dal gwa gang cheo reom geu ri gon tto kkyeo a na"
 				}
 			],
@@ -832,6 +870,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "You got me feeling like a psycho, psycho"
 				}
 			],
@@ -853,6 +892,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u ril bo go mal hae ja kku ja kku"
 				}
 			],
@@ -874,6 +914,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya"
 				}
 			],
@@ -895,6 +936,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "i hae ga an gan dae ut gi ji do an tae"
 				}
 			],
@@ -916,6 +958,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "ma ja Psycho, psycho"
 				}
 			],
@@ -937,6 +980,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "seo ro jo a juk neun ba bo ba bo"
 				}
 			],
@@ -958,6 +1002,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "neo eop sin eo ji reop go seul peo jyeo"
 				}
 			],
@@ -979,6 +1024,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "gi un do mak eop seo yo"
 				}
 			],
@@ -1000,6 +1046,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "du ri jal man nat dae"
 				}
 			],
@@ -1021,6 +1068,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1042,6 +1090,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Don't look back"
 				}
 			],
@@ -1063,6 +1112,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "geu reo ke u ri dap ge ga bo ja"
 				}
 			],
@@ -1084,6 +1134,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "nan on mo meu ro neol neu kki go i sseo"
 				}
 			],
@@ -1105,6 +1156,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Everything will be OK"
 				}
 			],
@@ -1126,6 +1178,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Like a psycho, psycho"
 				}
 			],
@@ -1147,6 +1200,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u ril bo go mal hae ja kku ja kku"
 				}
 			],
@@ -1168,6 +1222,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya"
 				}
 			],
@@ -1189,6 +1244,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "du ri jal man nat dae"
 				}
 			],
@@ -1210,6 +1266,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1231,6 +1288,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1252,6 +1310,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1273,6 +1332,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1294,6 +1354,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1315,6 +1376,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "It's alright"
 				}
 			],
@@ -1336,6 +1398,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "It's alright"
 				}
 			],
@@ -1357,6 +1420,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1378,6 +1442,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1399,6 +1464,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1420,6 +1486,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Hey now, we'll be ok"
 				}
 			],
@@ -1441,6 +1508,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "It's alright"
 				}
 			],
@@ -1462,6 +1530,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "It's alright"
 				}
 			],
@@ -1483,6 +1552,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "u rin jom i sang hae"
 				}
 			],
@@ -1504,6 +1574,7 @@ input_file: tests/fixtures/Red Velvet - Psycho.ttml
 			"romanizations": [
 				{
 					"language": "ko-Latn",
+					"automaticallyCreated": true,
 					"text": "Psy cho"
 				}
 			],

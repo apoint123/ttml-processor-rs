@@ -126,6 +126,7 @@ pub fn process_span(
         if !trimmed_text.is_empty() {
             let sub_lyric = SubLyricContent {
                 language: lang,
+                automatically_created: None,
                 text: trimmed_text,
                 words: None, // 内嵌翻译/音译始终只有逐行的
             };

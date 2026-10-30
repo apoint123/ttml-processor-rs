@@ -70,6 +70,7 @@ pub mod attrs {
         END = "end";
         DUR = "dur";
         TYPE = "type";
+        AUTOMATICALLY_CREATED = "automaticallyCreated";
         FOR = "for";
         KEY = "key";
         VALUE = "value";
