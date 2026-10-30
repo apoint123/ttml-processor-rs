@@ -109,8 +109,7 @@ pub fn process_span(
     if is_trans || is_rom {
         let lang_offending: CompactString = lang_bytes
             .as_deref()
-            .map(|b| String::from_utf8_lossy(b).into_owned().into())
-            .unwrap_or_default();
+            .map_or_default(|b| String::from_utf8_lossy(b).into_owned().into());
         let lang = lang_bytes
             .map(|v| {
                 CompactString::from_utf8(v).map_err(|_| {
@@ -154,8 +153,7 @@ pub fn process_span(
     if is_bg && !is_bg_context {
         let bg_start_str: CompactString = explicit_bg_start_bytes
             .as_deref()
-            .map(|b| String::from_utf8_lossy(b).into_owned().into())
-            .unwrap_or_default();
+            .map_or_default(|b| String::from_utf8_lossy(b).into_owned().into());
         let explicit_bg_start = explicit_bg_start_bytes
             .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
             .transpose()
@@ -164,8 +162,7 @@ pub fn process_span(
 
         let bg_end_str: CompactString = explicit_bg_end_bytes
             .as_deref()
-            .map(|b| String::from_utf8_lossy(b).into_owned().into())
-            .unwrap_or_default();
+            .map_or_default(|b| String::from_utf8_lossy(b).into_owned().into());
         let explicit_bg_end = explicit_bg_end_bytes
             .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
             .transpose()

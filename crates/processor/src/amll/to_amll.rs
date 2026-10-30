@@ -172,14 +172,13 @@ fn convert_to_amll_line(
     } = base;
 
     let trans_content = take_sub_lyric(translations, trans_lang);
-    let translated_lyric = trans_content.map(|t| t.text).unwrap_or_default();
+    let translated_lyric = trans_content.map_or_default(|t| t.text);
 
     let rom_content = take_sub_lyric(romanizations, rom_lang);
     let roman_lyric = rom_content
         .as_ref()
         .filter(|r| r.words.as_ref().is_none_or(Vec::is_empty))
-        .map(|r| r.text.clone())
-        .unwrap_or_default();
+        .map_or_default(|r| r.text.clone());
 
     let amll_words = match words {
         Some(line_words) if !line_words.is_empty() => {
