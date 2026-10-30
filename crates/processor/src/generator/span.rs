@@ -177,8 +177,8 @@ fn write_ruby_container(
                         .create_element(tags::SPAN)
                         .with_attributes([
                             (attrs::TTS_RUBY, vals::RUBY_TEXT),
-                            (attrs::BEGIN, &r_begin),
-                            (attrs::END, &r_end),
+                            (attrs::BEGIN, r_begin.as_str()),
+                            (attrs::END, r_end.as_str()),
                         ])
                         .write_text_content(BytesText::new(&ruby_tag.text))?;
                 }

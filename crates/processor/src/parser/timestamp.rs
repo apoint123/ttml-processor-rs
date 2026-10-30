@@ -5,7 +5,7 @@
 /// # Returns
 ///
 /// 如果时间戳解析失败，将返回 None，否则返回毫秒数
-#[inline(never)]
+#[inline]
 pub fn parse_timestamp(bytes: &[u8]) -> Option<u32> {
     let mut accum = 0u32;
     let mut current = 0u32;
