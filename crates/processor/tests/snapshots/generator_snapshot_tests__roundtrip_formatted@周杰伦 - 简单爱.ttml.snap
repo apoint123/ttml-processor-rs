@@ -1,0 +1,4574 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/周杰伦 - 简单爱.ttml
+---
+{
+	"metadata": {
+		"language": "zh-Hant",
+		"timingMode": "Word",
+		"songwriters": [
+			"周杰倫",
+			"徐若瑄"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"name": "周杰倫",
+				"type": "person"
+			}
+		}
+	},
+	"lines": [
+		{
+			"text": "說不上為什麼 我變得很主動",
+			"startTime": 26663,
+			"endTime": 31477,
+			"words": [
+				{
+					"text": "說不上為什",
+					"startTime": 26663,
+					"endTime": 28242
+				},
+				{
+					"text": "麼",
+					"startTime": 28242,
+					"endTime": 28843,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我變得很主",
+					"startTime": 29262,
+					"endTime": 30755
+				},
+				{
+					"text": "動",
+					"startTime": 30755,
+					"endTime": 31477
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "说不上为什么 我变得很主动",
+					"words": [
+						{
+							"text": "说不上为什",
+							"startTime": 26663,
+							"endTime": 28242
+						},
+						{
+							"text": "么",
+							"startTime": 28242,
+							"endTime": 28843,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我变得很主",
+							"startTime": 29262,
+							"endTime": 30755
+						},
+						{
+							"text": "动",
+							"startTime": 30755,
+							"endTime": 31477
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "shuo bu shang wei shen me wo bian de hen zhu dong",
+					"words": [
+						{
+							"text": "shuo bu shang wei shen",
+							"startTime": 26663,
+							"endTime": 28242,
+							"endsWithSpace": true
+						},
+						{
+							"text": "me",
+							"startTime": 28242,
+							"endTime": 28843,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo bian de hen zhu",
+							"startTime": 29262,
+							"endTime": 30755,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dong",
+							"startTime": 30755,
+							"endTime": 31477
+						}
+					]
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "若愛上一個人 什麼都會值得去做",
+			"startTime": 31673,
+			"endTime": 36245,
+			"words": [
+				{
+					"text": "若愛上一個人",
+					"startTime": 31673,
+					"endTime": 33552,
+					"endsWithSpace": true
+				},
+				{
+					"text": "什麼",
+					"startTime": 33552,
+					"endTime": 33850
+				},
+				{
+					"text": "都會值得",
+					"startTime": 33850,
+					"endTime": 35064
+				},
+				{
+					"text": "去做",
+					"startTime": 35064,
+					"endTime": 36245
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "若爱上一个人 什么都会值得去做",
+					"words": [
+						{
+							"text": "若爱上一个人",
+							"startTime": 31673,
+							"endTime": 33552,
+							"endsWithSpace": true
+						},
+						{
+							"text": "什么",
+							"startTime": 33552,
+							"endTime": 33850
+						},
+						{
+							"text": "都会值得",
+							"startTime": 33850,
+							"endTime": 35064
+						},
+						{
+							"text": "去做",
+							"startTime": 35064,
+							"endTime": 36245
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ruo ai shang yi ge ren shen me du hui zhi de qu zuo",
+					"words": [
+						{
+							"text": "ruo ai shang yi ge ren",
+							"startTime": 31673,
+							"endTime": 33552,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shen me",
+							"startTime": 33552,
+							"endTime": 33850,
+							"endsWithSpace": true
+						},
+						{
+							"text": "du hui zhi de",
+							"startTime": 33850,
+							"endTime": 35064,
+							"endsWithSpace": true
+						},
+						{
+							"text": "qu zuo",
+							"startTime": 35064,
+							"endTime": 36245
+						}
+					]
+				}
+			],
+			"id": "L2",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "我想大聲宣佈 對妳依依不捨",
+			"startTime": 36622,
+			"endTime": 41280,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 36622,
+					"endTime": 36934
+				},
+				{
+					"text": "想",
+					"startTime": 36934,
+					"endTime": 37280
+				},
+				{
+					"text": "大",
+					"startTime": 37280,
+					"endTime": 37585
+				},
+				{
+					"text": "聲",
+					"startTime": 37585,
+					"endTime": 37800
+				},
+				{
+					"text": "宣",
+					"startTime": 37800,
+					"endTime": 38205
+				},
+				{
+					"text": "佈",
+					"startTime": 38205,
+					"endTime": 38795,
+					"endsWithSpace": true
+				},
+				{
+					"text": "對妳依依",
+					"startTime": 39096,
+					"endTime": 40305
+				},
+				{
+					"text": "不",
+					"startTime": 40385,
+					"endTime": 40637
+				},
+				{
+					"text": "捨",
+					"startTime": 40637,
+					"endTime": 41280
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想大声宣布 对你依依不舍",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 36622,
+							"endTime": 36934
+						},
+						{
+							"text": "想",
+							"startTime": 36934,
+							"endTime": 37280
+						},
+						{
+							"text": "大",
+							"startTime": 37280,
+							"endTime": 37585
+						},
+						{
+							"text": "声",
+							"startTime": 37585,
+							"endTime": 37800
+						},
+						{
+							"text": "宣",
+							"startTime": 37800,
+							"endTime": 38205
+						},
+						{
+							"text": "布",
+							"startTime": 38205,
+							"endTime": 38795,
+							"endsWithSpace": true
+						},
+						{
+							"text": "对你依依",
+							"startTime": 39096,
+							"endTime": 40305
+						},
+						{
+							"text": "不",
+							"startTime": 40385,
+							"endTime": 40637
+						},
+						{
+							"text": "舍",
+							"startTime": 40637,
+							"endTime": 41280
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang da sheng xuan bu dui ni yi yi bu she",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 36622,
+							"endTime": 36934,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang",
+							"startTime": 36934,
+							"endTime": 37280,
+							"endsWithSpace": true
+						},
+						{
+							"text": "da",
+							"startTime": 37280,
+							"endTime": 37585,
+							"endsWithSpace": true
+						},
+						{
+							"text": "sheng",
+							"startTime": 37585,
+							"endTime": 37800,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xuan",
+							"startTime": 37800,
+							"endTime": 38205,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu",
+							"startTime": 38205,
+							"endTime": 38795,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dui ni yi yi",
+							"startTime": 39096,
+							"endTime": 40305,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu",
+							"startTime": 40385,
+							"endTime": 40637,
+							"endsWithSpace": true
+						},
+						{
+							"text": "she",
+							"startTime": 40637,
+							"endTime": 41280
+						}
+					]
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "連隔壁鄰居都 猜到我現在的感受",
+			"startTime": 41541,
+			"endTime": 46202,
+			"words": [
+				{
+					"text": "連隔壁鄰居",
+					"startTime": 41541,
+					"endTime": 43135
+				},
+				{
+					"text": "都",
+					"startTime": 43135,
+					"endTime": 43474,
+					"endsWithSpace": true
+				},
+				{
+					"text": "猜到",
+					"startTime": 43474,
+					"endTime": 43777
+				},
+				{
+					"text": "我現在的",
+					"startTime": 43777,
+					"endTime": 44964
+				},
+				{
+					"text": "感受",
+					"startTime": 44964,
+					"endTime": 46202
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "连隔壁邻居都 猜到我现在的感受",
+					"words": [
+						{
+							"text": "连隔壁邻居",
+							"startTime": 41541,
+							"endTime": 43135
+						},
+						{
+							"text": "都",
+							"startTime": 43135,
+							"endTime": 43474,
+							"endsWithSpace": true
+						},
+						{
+							"text": "猜到",
+							"startTime": 43474,
+							"endTime": 43777
+						},
+						{
+							"text": "我现在的",
+							"startTime": 43777,
+							"endTime": 44964
+						},
+						{
+							"text": "感受",
+							"startTime": 44964,
+							"endTime": 46202
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "lian ge bi lin ju dou cai dao wo xian zai de gan shou",
+					"words": [
+						{
+							"text": "lian ge bi lin ju",
+							"startTime": 41541,
+							"endTime": 43135,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dou",
+							"startTime": 43135,
+							"endTime": 43474,
+							"endsWithSpace": true
+						},
+						{
+							"text": "cai dao",
+							"startTime": 43474,
+							"endTime": 43777,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo xian zai de",
+							"startTime": 43777,
+							"endTime": 44964,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gan shou",
+							"startTime": 44964,
+							"endTime": 46202
+						}
+					]
+				}
+			],
+			"id": "L4",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "河邊的風在吹著頭髮 飄動",
+			"startTime": 46495,
+			"endTime": 51272,
+			"words": [
+				{
+					"text": "河",
+					"startTime": 46495,
+					"endTime": 46825
+				},
+				{
+					"text": "邊",
+					"startTime": 46825,
+					"endTime": 47463
+				},
+				{
+					"text": "的",
+					"startTime": 47463,
+					"endTime": 47719
+				},
+				{
+					"text": "風",
+					"startTime": 47719,
+					"endTime": 48289
+				},
+				{
+					"text": "在吹著頭",
+					"startTime": 48392,
+					"endTime": 49612
+				},
+				{
+					"text": "髮",
+					"startTime": 49612,
+					"endTime": 50371,
+					"endsWithSpace": true
+				},
+				{
+					"text": "飄動",
+					"startTime": 50614,
+					"endTime": 51272
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "河边的风在吹着头发 飘动",
+					"words": [
+						{
+							"text": "河",
+							"startTime": 46495,
+							"endTime": 46825
+						},
+						{
+							"text": "边",
+							"startTime": 46825,
+							"endTime": 47463
+						},
+						{
+							"text": "的",
+							"startTime": 47463,
+							"endTime": 47719
+						},
+						{
+							"text": "风",
+							"startTime": 47719,
+							"endTime": 48289
+						},
+						{
+							"text": "在吹着头",
+							"startTime": 48392,
+							"endTime": 49612
+						},
+						{
+							"text": "发",
+							"startTime": 49612,
+							"endTime": 50371,
+							"endsWithSpace": true
+						},
+						{
+							"text": "飘动",
+							"startTime": 50614,
+							"endTime": 51272
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "he bian de feng zai chui zhe tou fa piao dong",
+					"words": [
+						{
+							"text": "he",
+							"startTime": 46495,
+							"endTime": 46825,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bian",
+							"startTime": 46825,
+							"endTime": 47463,
+							"endsWithSpace": true
+						},
+						{
+							"text": "de",
+							"startTime": 47463,
+							"endTime": 47719,
+							"endsWithSpace": true
+						},
+						{
+							"text": "feng",
+							"startTime": 47719,
+							"endTime": 48289,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zai chui zhe tou",
+							"startTime": 48392,
+							"endTime": 49612,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fa",
+							"startTime": 49612,
+							"endTime": 50371,
+							"endsWithSpace": true
+						},
+						{
+							"text": "piao dong",
+							"startTime": 50614,
+							"endTime": 51272
+						}
+					]
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "牽著妳的手一陣莫名感動",
+			"startTime": 51472,
+			"endTime": 56200,
+			"words": [
+				{
+					"text": "牽著",
+					"startTime": 51472,
+					"endTime": 52232
+				},
+				{
+					"text": "妳的",
+					"startTime": 52514,
+					"endTime": 53077
+				},
+				{
+					"text": "手",
+					"startTime": 53280,
+					"endTime": 53659
+				},
+				{
+					"text": "一陣莫",
+					"startTime": 53659,
+					"endTime": 54533
+				},
+				{
+					"text": "名",
+					"startTime": 54533,
+					"endTime": 55525
+				},
+				{
+					"text": "感動",
+					"startTime": 55525,
+					"endTime": 56200
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "牵着你的手一阵莫名感动",
+					"words": [
+						{
+							"text": "牵着",
+							"startTime": 51472,
+							"endTime": 52232
+						},
+						{
+							"text": "你的",
+							"startTime": 52514,
+							"endTime": 53077
+						},
+						{
+							"text": "手",
+							"startTime": 53280,
+							"endTime": 53659
+						},
+						{
+							"text": "一阵莫",
+							"startTime": 53659,
+							"endTime": 54533
+						},
+						{
+							"text": "名",
+							"startTime": 54533,
+							"endTime": 55525
+						},
+						{
+							"text": "感动",
+							"startTime": 55525,
+							"endTime": 56200
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qian zhe ni de shou yi zhen mo ming gan dong",
+					"words": [
+						{
+							"text": "qian zhe",
+							"startTime": 51472,
+							"endTime": 52232,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni de",
+							"startTime": 52514,
+							"endTime": 53077,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shou",
+							"startTime": 53280,
+							"endTime": 53659,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yi zhen mo",
+							"startTime": 53659,
+							"endTime": 54533,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ming",
+							"startTime": 54533,
+							"endTime": 55525,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gan dong",
+							"startTime": 55525,
+							"endTime": 56200
+						}
+					]
+				}
+			],
+			"id": "L6",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "我想帶妳回我的外婆家",
+			"startTime": 56396,
+			"endTime": 60192,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 56396,
+					"endTime": 56661
+				},
+				{
+					"text": "想",
+					"startTime": 56661,
+					"endTime": 57366
+				},
+				{
+					"text": "帶",
+					"startTime": 57366,
+					"endTime": 57720
+				},
+				{
+					"text": "妳回我",
+					"startTime": 57720,
+					"endTime": 58618
+				},
+				{
+					"text": "的外婆",
+					"startTime": 58618,
+					"endTime": 59572
+				},
+				{
+					"text": "家",
+					"startTime": 59572,
+					"endTime": 60192
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你回我的外婆家",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 56396,
+							"endTime": 56661
+						},
+						{
+							"text": "想",
+							"startTime": 56661,
+							"endTime": 57366
+						},
+						{
+							"text": "带",
+							"startTime": 57366,
+							"endTime": 57720
+						},
+						{
+							"text": "你回我",
+							"startTime": 57720,
+							"endTime": 58618
+						},
+						{
+							"text": "的外婆",
+							"startTime": 58618,
+							"endTime": 59572
+						},
+						{
+							"text": "家",
+							"startTime": 59572,
+							"endTime": 60192
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni hui wo de wai po jia",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 56396,
+							"endTime": 56661,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang",
+							"startTime": 56661,
+							"endTime": 57366,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dai",
+							"startTime": 57366,
+							"endTime": 57720,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni hui wo",
+							"startTime": 57720,
+							"endTime": 58618,
+							"endsWithSpace": true
+						},
+						{
+							"text": "de wai po",
+							"startTime": 58618,
+							"endTime": 59572,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jia",
+							"startTime": 59572,
+							"endTime": 60192
+						}
+					]
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "一起看著日落 一直到我們都睡著",
+			"startTime": 60196,
+			"endTime": 66128,
+			"words": [
+				{
+					"text": "一起",
+					"startTime": 60196,
+					"endTime": 60825
+				},
+				{
+					"text": "看著",
+					"startTime": 61076,
+					"endTime": 61694
+				},
+				{
+					"text": "日落",
+					"startTime": 61694,
+					"endTime": 62810,
+					"endsWithSpace": true
+				},
+				{
+					"text": "一直到我們都",
+					"startTime": 62946,
+					"endTime": 64721
+				},
+				{
+					"text": "睡著",
+					"startTime": 64721,
+					"endTime": 66128
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "一起看着日落 一直到我们都睡着",
+					"words": [
+						{
+							"text": "一起",
+							"startTime": 60196,
+							"endTime": 60825
+						},
+						{
+							"text": "看着",
+							"startTime": 61076,
+							"endTime": 61694
+						},
+						{
+							"text": "日落",
+							"startTime": 61694,
+							"endTime": 62810,
+							"endsWithSpace": true
+						},
+						{
+							"text": "一直到我们都",
+							"startTime": 62946,
+							"endTime": 64721
+						},
+						{
+							"text": "睡着",
+							"startTime": 64721,
+							"endTime": 66128
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yi qi kan zhe ri luo yi zhi dao wo men dou shui zhao",
+					"words": [
+						{
+							"text": "yi qi",
+							"startTime": 60196,
+							"endTime": 60825,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kan zhe",
+							"startTime": 61076,
+							"endTime": 61694,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ri luo",
+							"startTime": 61694,
+							"endTime": 62810,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yi zhi dao wo men dou",
+							"startTime": 62946,
+							"endTime": 64721,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shui zhao",
+							"startTime": 64721,
+							"endTime": 66128
+						}
+					]
+				}
+			],
+			"id": "L8",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 66350,
+			"endTime": 70943,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 66350,
+					"endTime": 66610
+				},
+				{
+					"text": "想",
+					"startTime": 66610,
+					"endTime": 67024
+				},
+				{
+					"text": "就這",
+					"startTime": 67024,
+					"endTime": 67607
+				},
+				{
+					"text": "樣",
+					"startTime": 67607,
+					"endTime": 67916
+				},
+				{
+					"text": "牽著",
+					"startTime": 67916,
+					"endTime": 68455
+				},
+				{
+					"text": "妳",
+					"startTime": 68455,
+					"endTime": 68796
+				},
+				{
+					"text": "的",
+					"startTime": 68796,
+					"endTime": 69033
+				},
+				{
+					"text": "手不",
+					"startTime": 69033,
+					"endTime": 69661
+				},
+				{
+					"text": "放開",
+					"startTime": 69661,
+					"endTime": 70943
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 66350,
+							"endTime": 66610
+						},
+						{
+							"text": "想",
+							"startTime": 66610,
+							"endTime": 67024
+						},
+						{
+							"text": "就这",
+							"startTime": 67024,
+							"endTime": 67607
+						},
+						{
+							"text": "样",
+							"startTime": 67607,
+							"endTime": 67916
+						},
+						{
+							"text": "牵着",
+							"startTime": 67916,
+							"endTime": 68455
+						},
+						{
+							"text": "你",
+							"startTime": 68455,
+							"endTime": 68796
+						},
+						{
+							"text": "的",
+							"startTime": 68796,
+							"endTime": 69033
+						},
+						{
+							"text": "手不",
+							"startTime": 69033,
+							"endTime": 69661
+						},
+						{
+							"text": "放开",
+							"startTime": 69661,
+							"endTime": 70943
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 66350,
+							"endTime": 66610,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang",
+							"startTime": 66610,
+							"endTime": 67024,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jiu zhe",
+							"startTime": 67024,
+							"endTime": 67607,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yang",
+							"startTime": 67607,
+							"endTime": 67916,
+							"endsWithSpace": true
+						},
+						{
+							"text": "qian zhe",
+							"startTime": 67916,
+							"endTime": 68455,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni",
+							"startTime": 68455,
+							"endTime": 68796,
+							"endsWithSpace": true
+						},
+						{
+							"text": "de",
+							"startTime": 68796,
+							"endTime": 69033,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shou bu",
+							"startTime": 69033,
+							"endTime": 69661,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fang kai",
+							"startTime": 69661,
+							"endTime": 70943
+						}
+					]
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "愛能不能夠永遠單純沒有悲哀",
+			"startTime": 71278,
+			"endTime": 75908,
+			"words": [
+				{
+					"text": "愛能",
+					"startTime": 71278,
+					"endTime": 71926
+				},
+				{
+					"text": "不能夠",
+					"startTime": 71926,
+					"endTime": 72789
+				},
+				{
+					"text": "永遠單純",
+					"startTime": 72789,
+					"endTime": 74100
+				},
+				{
+					"text": "沒有",
+					"startTime": 74100,
+					"endTime": 74645
+				},
+				{
+					"text": "悲哀",
+					"startTime": 74645,
+					"endTime": 75908
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱能不能够永远单纯没有悲哀",
+					"words": [
+						{
+							"text": "爱能",
+							"startTime": 71278,
+							"endTime": 71926
+						},
+						{
+							"text": "不能够",
+							"startTime": 71926,
+							"endTime": 72789
+						},
+						{
+							"text": "永远单纯",
+							"startTime": 72789,
+							"endTime": 74100
+						},
+						{
+							"text": "没有",
+							"startTime": 74100,
+							"endTime": 74645
+						},
+						{
+							"text": "悲哀",
+							"startTime": 74645,
+							"endTime": 75908
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai neng bu neng gou yong yuan dan chun mei you bei ai",
+					"words": [
+						{
+							"text": "ai neng",
+							"startTime": 71278,
+							"endTime": 71926,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu neng gou",
+							"startTime": 71926,
+							"endTime": 72789,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yong yuan dan chun",
+							"startTime": 72789,
+							"endTime": 74100,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei you",
+							"startTime": 74100,
+							"endTime": 74645,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bei ai",
+							"startTime": 74645,
+							"endTime": 75908
+						}
+					]
+				}
+			],
+			"id": "L10",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "我想帶妳騎單車 我想和妳看棒球",
+			"startTime": 75894,
+			"endTime": 80898,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 75894,
+					"endTime": 76434
+				},
+				{
+					"text": "想帶妳騎單車",
+					"startTime": 76434,
+					"endTime": 78373,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我",
+					"startTime": 78373,
+					"endTime": 78879
+				},
+				{
+					"text": "想和妳看棒球",
+					"startTime": 78879,
+					"endTime": 80898
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你骑单车 我想和你看棒球",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 75894,
+							"endTime": 76434
+						},
+						{
+							"text": "想带你骑单车",
+							"startTime": 76434,
+							"endTime": 78373,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我",
+							"startTime": 78373,
+							"endTime": 78879
+						},
+						{
+							"text": "想和你看棒球",
+							"startTime": 78879,
+							"endTime": 80898
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 75894,
+							"endTime": 76434,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang dai ni qi dan che",
+							"startTime": 76434,
+							"endTime": 78373,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo",
+							"startTime": 78373,
+							"endTime": 78879,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang he ni kan bang qiu",
+							"startTime": 78879,
+							"endTime": 80898
+						}
+					]
+				}
+			],
+			"id": "L11",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "想這樣沒擔憂唱著歌一直走",
+			"startTime": 81397,
+			"endTime": 85739,
+			"words": [
+				{
+					"text": "想",
+					"startTime": 81397,
+					"endTime": 81837
+				},
+				{
+					"text": "這",
+					"startTime": 81837,
+					"endTime": 82141
+				},
+				{
+					"text": "樣",
+					"startTime": 82141,
+					"endTime": 82445
+				},
+				{
+					"text": "沒",
+					"startTime": 82445,
+					"endTime": 82729
+				},
+				{
+					"text": "擔憂",
+					"startTime": 82729,
+					"endTime": 83341
+				},
+				{
+					"text": "唱著歌一",
+					"startTime": 83341,
+					"endTime": 84613
+				},
+				{
+					"text": "直走",
+					"startTime": 84613,
+					"endTime": 85739
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想这样没担忧唱着歌一直走",
+					"words": [
+						{
+							"text": "想",
+							"startTime": 81397,
+							"endTime": 81837
+						},
+						{
+							"text": "这",
+							"startTime": 81837,
+							"endTime": 82141
+						},
+						{
+							"text": "样",
+							"startTime": 82141,
+							"endTime": 82445
+						},
+						{
+							"text": "没",
+							"startTime": 82445,
+							"endTime": 82729
+						},
+						{
+							"text": "担忧",
+							"startTime": 82729,
+							"endTime": 83341
+						},
+						{
+							"text": "唱着歌一",
+							"startTime": 83341,
+							"endTime": 84613
+						},
+						{
+							"text": "直走",
+							"startTime": 84613,
+							"endTime": 85739
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang mei dan you chang zhe ge yi zhi zou",
+					"words": [
+						{
+							"text": "xiang",
+							"startTime": 81397,
+							"endTime": 81837,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhe",
+							"startTime": 81837,
+							"endTime": 82141,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yang",
+							"startTime": 82141,
+							"endTime": 82445,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei",
+							"startTime": 82445,
+							"endTime": 82729,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dan you",
+							"startTime": 82729,
+							"endTime": 83341,
+							"endsWithSpace": true
+						},
+						{
+							"text": "chang zhe ge yi",
+							"startTime": 83341,
+							"endTime": 84613,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhi zou",
+							"startTime": 84613,
+							"endTime": 85739
+						}
+					]
+				}
+			],
+			"id": "L12",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 86116,
+			"endTime": 90754,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 86116,
+					"endTime": 86376
+				},
+				{
+					"text": "想",
+					"startTime": 86376,
+					"endTime": 86790
+				},
+				{
+					"text": "就這",
+					"startTime": 86790,
+					"endTime": 87347
+				},
+				{
+					"text": "樣",
+					"startTime": 87347,
+					"endTime": 87599
+				},
+				{
+					"text": "牽著",
+					"startTime": 87599,
+					"endTime": 88317
+				},
+				{
+					"text": "妳",
+					"startTime": 88317,
+					"endTime": 88653
+				},
+				{
+					"text": "的",
+					"startTime": 88653,
+					"endTime": 88826
+				},
+				{
+					"text": "手不",
+					"startTime": 88826,
+					"endTime": 89445
+				},
+				{
+					"text": "放開",
+					"startTime": 89445,
+					"endTime": 90754
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 86116,
+							"endTime": 86376
+						},
+						{
+							"text": "想",
+							"startTime": 86376,
+							"endTime": 86790
+						},
+						{
+							"text": "就这",
+							"startTime": 86790,
+							"endTime": 87347
+						},
+						{
+							"text": "样",
+							"startTime": 87347,
+							"endTime": 87599
+						},
+						{
+							"text": "牵着",
+							"startTime": 87599,
+							"endTime": 88317
+						},
+						{
+							"text": "你",
+							"startTime": 88317,
+							"endTime": 88653
+						},
+						{
+							"text": "的",
+							"startTime": 88653,
+							"endTime": 88826
+						},
+						{
+							"text": "手不",
+							"startTime": 88826,
+							"endTime": 89445
+						},
+						{
+							"text": "放开",
+							"startTime": 89445,
+							"endTime": 90754
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 86116,
+							"endTime": 86376,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang",
+							"startTime": 86376,
+							"endTime": 86790,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jiu zhe",
+							"startTime": 86790,
+							"endTime": 87347,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yang",
+							"startTime": 87347,
+							"endTime": 87599,
+							"endsWithSpace": true
+						},
+						{
+							"text": "qian zhe",
+							"startTime": 87599,
+							"endTime": 88317,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni",
+							"startTime": 88317,
+							"endTime": 88653,
+							"endsWithSpace": true
+						},
+						{
+							"text": "de",
+							"startTime": 88653,
+							"endTime": 88826,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shou bu",
+							"startTime": 88826,
+							"endTime": 89445,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fang kai",
+							"startTime": 89445,
+							"endTime": 90754
+						}
+					]
+				}
+			],
+			"id": "L13",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "愛可不可以簡簡單單沒有傷害",
+			"startTime": 91030,
+			"endTime": 95666,
+			"words": [
+				{
+					"text": "愛",
+					"startTime": 91030,
+					"endTime": 91373
+				},
+				{
+					"text": "可不可以",
+					"startTime": 91373,
+					"endTime": 92582
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 92582,
+					"endTime": 93870
+				},
+				{
+					"text": "沒有",
+					"startTime": 93870,
+					"endTime": 94359
+				},
+				{
+					"text": "傷害",
+					"startTime": 94359,
+					"endTime": 95666
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱可不可以简简单单没有伤害",
+					"words": [
+						{
+							"text": "爱",
+							"startTime": 91030,
+							"endTime": 91373
+						},
+						{
+							"text": "可不可以",
+							"startTime": 91373,
+							"endTime": 92582
+						},
+						{
+							"text": "简简单单",
+							"startTime": 92582,
+							"endTime": 93870
+						},
+						{
+							"text": "没有",
+							"startTime": 93870,
+							"endTime": 94359
+						},
+						{
+							"text": "伤害",
+							"startTime": 94359,
+							"endTime": 95666
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai ke bu ke yi jian jian dan dan mei you shang hai",
+					"words": [
+						{
+							"text": "ai",
+							"startTime": 91030,
+							"endTime": 91373,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ke bu ke yi",
+							"startTime": 91373,
+							"endTime": 92582,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 92582,
+							"endTime": 93870,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei you",
+							"startTime": 93870,
+							"endTime": 94359,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shang hai",
+							"startTime": 94359,
+							"endTime": 95666
+						}
+					]
+				}
+			],
+			"id": "L14",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "妳靠著我的肩膀 妳在我胸口睡著",
+			"startTime": 95737,
+			"endTime": 100683,
+			"words": [
+				{
+					"text": "妳",
+					"startTime": 95737,
+					"endTime": 96186
+				},
+				{
+					"text": "靠著我的肩膀",
+					"startTime": 96385,
+					"endTime": 98128,
+					"endsWithSpace": true
+				},
+				{
+					"text": "妳",
+					"startTime": 98128,
+					"endTime": 98711
+				},
+				{
+					"text": "在我胸口睡著",
+					"startTime": 98829,
+					"endTime": 100683
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你靠着我的肩膀 你在我胸口睡着",
+					"words": [
+						{
+							"text": "你",
+							"startTime": 95737,
+							"endTime": 96186
+						},
+						{
+							"text": "靠着我的肩膀",
+							"startTime": 96385,
+							"endTime": 98128,
+							"endsWithSpace": true
+						},
+						{
+							"text": "你",
+							"startTime": 98128,
+							"endTime": 98711
+						},
+						{
+							"text": "在我胸口睡着",
+							"startTime": 98829,
+							"endTime": 100683
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao",
+					"words": [
+						{
+							"text": "ni",
+							"startTime": 95737,
+							"endTime": 96186,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kao zhe wo de jian bang",
+							"startTime": 96385,
+							"endTime": 98128,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni",
+							"startTime": 98128,
+							"endTime": 98711,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zai wo xiong kou shui zhao",
+							"startTime": 98829,
+							"endTime": 100683
+						}
+					]
+				}
+			],
+			"id": "L15",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "像這樣的生活 我愛妳 妳愛我",
+			"startTime": 101188,
+			"endTime": 105480,
+			"words": [
+				{
+					"text": "像這樣的生活",
+					"startTime": 101188,
+					"endTime": 103168,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我愛",
+					"startTime": 103168,
+					"endTime": 103785
+				},
+				{
+					"text": "妳",
+					"startTime": 103785,
+					"endTime": 104212,
+					"endsWithSpace": true
+				},
+				{
+					"text": "妳愛",
+					"startTime": 104412,
+					"endTime": 105032
+				},
+				{
+					"text": "我",
+					"startTime": 105032,
+					"endTime": 105480
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像这样的生活 我爱你 你爱我",
+					"words": [
+						{
+							"text": "像这样的生活",
+							"startTime": 101188,
+							"endTime": 103168,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我爱",
+							"startTime": 103168,
+							"endTime": 103785
+						},
+						{
+							"text": "你",
+							"startTime": 103785,
+							"endTime": 104212,
+							"endsWithSpace": true
+						},
+						{
+							"text": "你爱",
+							"startTime": 104412,
+							"endTime": 105032
+						},
+						{
+							"text": "我",
+							"startTime": 105032,
+							"endTime": 105480
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang de sheng huo wo ai ni ni ai wo",
+					"words": [
+						{
+							"text": "xiang zhe yang de sheng huo",
+							"startTime": 101188,
+							"endTime": 103168,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo ai",
+							"startTime": 103168,
+							"endTime": 103785,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni",
+							"startTime": 103785,
+							"endTime": 104212,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni ai",
+							"startTime": 104412,
+							"endTime": 105032,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo",
+							"startTime": 105032,
+							"endTime": 105480
+						}
+					]
+				}
+			],
+			"id": "L16",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 105532,
+			"endTime": 112802,
+			"words": [
+				{
+					"text": "想",
+					"startTime": 105532,
+					"endTime": 108041,
+					"endsWithSpace": true
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 108041,
+					"endTime": 110549
+				},
+				{
+					"text": "愛",
+					"startTime": 110549,
+					"endTime": 112802
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱",
+					"words": [
+						{
+							"text": "想",
+							"startTime": 105532,
+							"endTime": 108041,
+							"endsWithSpace": true
+						},
+						{
+							"text": "简简单单",
+							"startTime": 108041,
+							"endTime": 110549
+						},
+						{
+							"text": "爱",
+							"startTime": 110549,
+							"endTime": 112802
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai",
+					"words": [
+						{
+							"text": "xiang",
+							"startTime": 105532,
+							"endTime": 108041,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 108041,
+							"endTime": 110549,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ai",
+							"startTime": 110549,
+							"endTime": 112802
+						}
+					]
+				}
+			],
+			"id": "L17",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 5
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 115437,
+			"endTime": 122444,
+			"words": [
+				{
+					"text": "想",
+					"startTime": 115437,
+					"endTime": 117941,
+					"endsWithSpace": true
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 117941,
+					"endTime": 120444
+				},
+				{
+					"text": "愛",
+					"startTime": 120444,
+					"endTime": 122444
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱",
+					"words": [
+						{
+							"text": "想",
+							"startTime": 115437,
+							"endTime": 117941,
+							"endsWithSpace": true
+						},
+						{
+							"text": "简简单单",
+							"startTime": 117941,
+							"endTime": 120444
+						},
+						{
+							"text": "爱",
+							"startTime": 120444,
+							"endTime": 122444
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai",
+					"words": [
+						{
+							"text": "xiang",
+							"startTime": 115437,
+							"endTime": 117941,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 117941,
+							"endTime": 120444,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ai",
+							"startTime": 120444,
+							"endTime": 122444
+						}
+					]
+				}
+			],
+			"id": "L18",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 5
+		},
+		{
+			"text": "我想大聲宣佈 對妳依依不捨",
+			"startTime": 125710,
+			"endTime": 130395,
+			"words": [
+				{
+					"text": "我想大聲宣",
+					"startTime": 125710,
+					"endTime": 127209
+				},
+				{
+					"text": "佈",
+					"startTime": 127209,
+					"endTime": 127771,
+					"endsWithSpace": true
+				},
+				{
+					"text": "對妳依依不",
+					"startTime": 128213,
+					"endTime": 129561
+				},
+				{
+					"text": "捨",
+					"startTime": 129633,
+					"endTime": 130395
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想大声宣布 对你依依不舍",
+					"words": [
+						{
+							"text": "我想大声宣",
+							"startTime": 125710,
+							"endTime": 127209
+						},
+						{
+							"text": "布",
+							"startTime": 127209,
+							"endTime": 127771,
+							"endsWithSpace": true
+						},
+						{
+							"text": "对你依依不",
+							"startTime": 128213,
+							"endTime": 129561
+						},
+						{
+							"text": "舍",
+							"startTime": 129633,
+							"endTime": 130395
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang da sheng xuan bu dui ni yi yi bu she",
+					"words": [
+						{
+							"text": "wo xiang da sheng xuan",
+							"startTime": 125710,
+							"endTime": 127209,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu",
+							"startTime": 127209,
+							"endTime": 127771,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dui ni yi yi bu",
+							"startTime": 128213,
+							"endTime": 129561,
+							"endsWithSpace": true
+						},
+						{
+							"text": "she",
+							"startTime": 129633,
+							"endTime": 130395
+						}
+					]
+				}
+			],
+			"id": "L19",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "連隔壁鄰居都 猜到我現在的感受",
+			"startTime": 130646,
+			"endTime": 135385,
+			"words": [
+				{
+					"text": "連隔壁鄰居",
+					"startTime": 130646,
+					"endTime": 132197
+				},
+				{
+					"text": "都",
+					"startTime": 132197,
+					"endTime": 132541,
+					"endsWithSpace": true
+				},
+				{
+					"text": "猜到",
+					"startTime": 132541,
+					"endTime": 132843
+				},
+				{
+					"text": "我現在的",
+					"startTime": 132843,
+					"endTime": 134018
+				},
+				{
+					"text": "感受",
+					"startTime": 134018,
+					"endTime": 135385
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "连隔壁邻居都 猜到我现在的感受",
+					"words": [
+						{
+							"text": "连隔壁邻居",
+							"startTime": 130646,
+							"endTime": 132197
+						},
+						{
+							"text": "都",
+							"startTime": 132197,
+							"endTime": 132541,
+							"endsWithSpace": true
+						},
+						{
+							"text": "猜到",
+							"startTime": 132541,
+							"endTime": 132843
+						},
+						{
+							"text": "我现在的",
+							"startTime": 132843,
+							"endTime": 134018
+						},
+						{
+							"text": "感受",
+							"startTime": 134018,
+							"endTime": 135385
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "lian ge bi lin ju dou cai dao wo xian zai de gan shou",
+					"words": [
+						{
+							"text": "lian ge bi lin ju",
+							"startTime": 130646,
+							"endTime": 132197,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dou",
+							"startTime": 132197,
+							"endTime": 132541,
+							"endsWithSpace": true
+						},
+						{
+							"text": "cai dao",
+							"startTime": 132541,
+							"endTime": 132843,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo xian zai de",
+							"startTime": 132843,
+							"endTime": 134018,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gan shou",
+							"startTime": 134018,
+							"endTime": 135385
+						}
+					]
+				}
+			],
+			"id": "L20",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "河邊的風在吹著頭髮飄動",
+			"startTime": 135579,
+			"endTime": 140266,
+			"words": [
+				{
+					"text": "河",
+					"startTime": 135579,
+					"endTime": 135901
+				},
+				{
+					"text": "邊",
+					"startTime": 135901,
+					"endTime": 136542
+				},
+				{
+					"text": "的",
+					"startTime": 136542,
+					"endTime": 136844
+				},
+				{
+					"text": "風",
+					"startTime": 136844,
+					"endTime": 137358
+				},
+				{
+					"text": "在吹著頭",
+					"startTime": 137484,
+					"endTime": 138726
+				},
+				{
+					"text": "髮",
+					"startTime": 138726,
+					"endTime": 139317
+				},
+				{
+					"text": "飄動",
+					"startTime": 139687,
+					"endTime": 140266
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "河边的风在吹着头发飘动",
+					"words": [
+						{
+							"text": "河",
+							"startTime": 135579,
+							"endTime": 135901
+						},
+						{
+							"text": "边",
+							"startTime": 135901,
+							"endTime": 136542
+						},
+						{
+							"text": "的",
+							"startTime": 136542,
+							"endTime": 136844
+						},
+						{
+							"text": "风",
+							"startTime": 136844,
+							"endTime": 137358
+						},
+						{
+							"text": "在吹着头",
+							"startTime": 137484,
+							"endTime": 138726
+						},
+						{
+							"text": "发",
+							"startTime": 138726,
+							"endTime": 139317
+						},
+						{
+							"text": "飘动",
+							"startTime": 139687,
+							"endTime": 140266
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "he bian de feng zai chui zhe tou fa piao dong",
+					"words": [
+						{
+							"text": "he",
+							"startTime": 135579,
+							"endTime": 135901,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bian",
+							"startTime": 135901,
+							"endTime": 136542,
+							"endsWithSpace": true
+						},
+						{
+							"text": "de",
+							"startTime": 136542,
+							"endTime": 136844,
+							"endsWithSpace": true
+						},
+						{
+							"text": "feng",
+							"startTime": 136844,
+							"endTime": 137358,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zai chui zhe tou",
+							"startTime": 137484,
+							"endTime": 138726,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fa",
+							"startTime": 138726,
+							"endTime": 139317,
+							"endsWithSpace": true
+						},
+						{
+							"text": "piao dong",
+							"startTime": 139687,
+							"endTime": 140266
+						}
+					]
+				}
+			],
+			"id": "L21",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "牽著妳的手一陣莫名感動",
+			"startTime": 140503,
+			"endTime": 145280,
+			"words": [
+				{
+					"text": "牽著",
+					"startTime": 140503,
+					"endTime": 141311
+				},
+				{
+					"text": "妳的",
+					"startTime": 141501,
+					"endTime": 142168
+				},
+				{
+					"text": "手",
+					"startTime": 142394,
+					"endTime": 142725
+				},
+				{
+					"text": "一陣莫",
+					"startTime": 142725,
+					"endTime": 143611
+				},
+				{
+					"text": "名",
+					"startTime": 143611,
+					"endTime": 144577
+				},
+				{
+					"text": "感動",
+					"startTime": 144577,
+					"endTime": 145280
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "牵着你的手一阵莫名感动",
+					"words": [
+						{
+							"text": "牵着",
+							"startTime": 140503,
+							"endTime": 141311
+						},
+						{
+							"text": "你的",
+							"startTime": 141501,
+							"endTime": 142168
+						},
+						{
+							"text": "手",
+							"startTime": 142394,
+							"endTime": 142725
+						},
+						{
+							"text": "一阵莫",
+							"startTime": 142725,
+							"endTime": 143611
+						},
+						{
+							"text": "名",
+							"startTime": 143611,
+							"endTime": 144577
+						},
+						{
+							"text": "感动",
+							"startTime": 144577,
+							"endTime": 145280
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qian zhe ni de shou yi zhen mo ming gan dong",
+					"words": [
+						{
+							"text": "qian zhe",
+							"startTime": 140503,
+							"endTime": 141311,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni de",
+							"startTime": 141501,
+							"endTime": 142168,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shou",
+							"startTime": 142394,
+							"endTime": 142725,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yi zhen mo",
+							"startTime": 142725,
+							"endTime": 143611,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ming",
+							"startTime": 143611,
+							"endTime": 144577,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gan dong",
+							"startTime": 144577,
+							"endTime": 145280
+						}
+					]
+				}
+			],
+			"id": "L22",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "我想帶妳回我的外婆家",
+			"startTime": 145501,
+			"endTime": 149273,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 145501,
+					"endTime": 145735
+				},
+				{
+					"text": "想",
+					"startTime": 145735,
+					"endTime": 146422
+				},
+				{
+					"text": "帶妳回我的外婆",
+					"startTime": 146422,
+					"endTime": 148583
+				},
+				{
+					"text": "家",
+					"startTime": 148583,
+					"endTime": 149273
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你回我的外婆家",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 145501,
+							"endTime": 145735
+						},
+						{
+							"text": "想",
+							"startTime": 145735,
+							"endTime": 146422
+						},
+						{
+							"text": "带你回我的外婆",
+							"startTime": 146422,
+							"endTime": 148583
+						},
+						{
+							"text": "家",
+							"startTime": 148583,
+							"endTime": 149273
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni hui wo de wai po jia",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 145501,
+							"endTime": 145735,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang",
+							"startTime": 145735,
+							"endTime": 146422,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dai ni hui wo de wai po",
+							"startTime": 146422,
+							"endTime": 148583,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jia",
+							"startTime": 148583,
+							"endTime": 149273
+						}
+					]
+				}
+			],
+			"id": "L23",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "一起看著日落 一直到我們都睡著",
+			"startTime": 149280,
+			"endTime": 155065,
+			"words": [
+				{
+					"text": "一",
+					"startTime": 149280,
+					"endTime": 149508
+				},
+				{
+					"text": "起",
+					"startTime": 149508,
+					"endTime": 150001
+				},
+				{
+					"text": "看著",
+					"startTime": 150138,
+					"endTime": 150780
+				},
+				{
+					"text": "日落",
+					"startTime": 150780,
+					"endTime": 151886,
+					"endsWithSpace": true
+				},
+				{
+					"text": "一直到我們都",
+					"startTime": 152042,
+					"endTime": 153797
+				},
+				{
+					"text": "睡著",
+					"startTime": 153797,
+					"endTime": 155065
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "一起看着日落 一直到我们都睡着",
+					"words": [
+						{
+							"text": "一",
+							"startTime": 149280,
+							"endTime": 149508
+						},
+						{
+							"text": "起",
+							"startTime": 149508,
+							"endTime": 150001
+						},
+						{
+							"text": "看着",
+							"startTime": 150138,
+							"endTime": 150780
+						},
+						{
+							"text": "日落",
+							"startTime": 150780,
+							"endTime": 151886,
+							"endsWithSpace": true
+						},
+						{
+							"text": "一直到我们都",
+							"startTime": 152042,
+							"endTime": 153797
+						},
+						{
+							"text": "睡着",
+							"startTime": 153797,
+							"endTime": 155065
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yi qi kan zhe ri luo yi zhi dao wo men dou shui zhao",
+					"words": [
+						{
+							"text": "yi",
+							"startTime": 149280,
+							"endTime": 149508,
+							"endsWithSpace": true
+						},
+						{
+							"text": "qi",
+							"startTime": 149508,
+							"endTime": 150001,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kan zhe",
+							"startTime": 150138,
+							"endTime": 150780,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ri luo",
+							"startTime": 150780,
+							"endTime": 151886,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yi zhi dao wo men dou",
+							"startTime": 152042,
+							"endTime": 153797,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shui zhao",
+							"startTime": 153797,
+							"endTime": 155065
+						}
+					]
+				}
+			],
+			"id": "L24",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 155421,
+			"endTime": 159955,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 155421,
+					"endTime": 155620
+				},
+				{
+					"text": "想就",
+					"startTime": 155620,
+					"endTime": 156253
+				},
+				{
+					"text": "這樣牽著",
+					"startTime": 156253,
+					"endTime": 157565
+				},
+				{
+					"text": "妳的手不",
+					"startTime": 157565,
+					"endTime": 158733
+				},
+				{
+					"text": "放開",
+					"startTime": 158733,
+					"endTime": 159955
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 155421,
+							"endTime": 155620
+						},
+						{
+							"text": "想就",
+							"startTime": 155620,
+							"endTime": 156253
+						},
+						{
+							"text": "这样牵着",
+							"startTime": 156253,
+							"endTime": 157565
+						},
+						{
+							"text": "你的手不",
+							"startTime": 157565,
+							"endTime": 158733
+						},
+						{
+							"text": "放开",
+							"startTime": 158733,
+							"endTime": 159955
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 155421,
+							"endTime": 155620,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang jiu",
+							"startTime": 155620,
+							"endTime": 156253,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhe yang qian zhe",
+							"startTime": 156253,
+							"endTime": 157565,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni de shou bu",
+							"startTime": 157565,
+							"endTime": 158733,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fang kai",
+							"startTime": 158733,
+							"endTime": 159955
+						}
+					]
+				}
+			],
+			"id": "L25",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "愛能不能夠永遠單純沒有悲哀",
+			"startTime": 160344,
+			"endTime": 164876,
+			"words": [
+				{
+					"text": "愛",
+					"startTime": 160344,
+					"endTime": 160635
+				},
+				{
+					"text": "能不能夠",
+					"startTime": 160635,
+					"endTime": 161829
+				},
+				{
+					"text": "永遠單純",
+					"startTime": 161829,
+					"endTime": 163100
+				},
+				{
+					"text": "沒有",
+					"startTime": 163100,
+					"endTime": 163751
+				},
+				{
+					"text": "悲哀",
+					"startTime": 163751,
+					"endTime": 164876
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱能不能够永远单纯没有悲哀",
+					"words": [
+						{
+							"text": "爱",
+							"startTime": 160344,
+							"endTime": 160635
+						},
+						{
+							"text": "能不能够",
+							"startTime": 160635,
+							"endTime": 161829
+						},
+						{
+							"text": "永远单纯",
+							"startTime": 161829,
+							"endTime": 163100
+						},
+						{
+							"text": "没有",
+							"startTime": 163100,
+							"endTime": 163751
+						},
+						{
+							"text": "悲哀",
+							"startTime": 163751,
+							"endTime": 164876
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai neng bu neng gou yong yuan dan chun mei you bei ai",
+					"words": [
+						{
+							"text": "ai",
+							"startTime": 160344,
+							"endTime": 160635,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neng bu neng gou",
+							"startTime": 160635,
+							"endTime": 161829,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yong yuan dan chun",
+							"startTime": 161829,
+							"endTime": 163100,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei you",
+							"startTime": 163100,
+							"endTime": 163751,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bei ai",
+							"startTime": 163751,
+							"endTime": 164876
+						}
+					]
+				}
+			],
+			"id": "L26",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "我想帶妳騎單車 我想和妳看棒球",
+			"startTime": 164978,
+			"endTime": 170002,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 164978,
+					"endTime": 165505
+				},
+				{
+					"text": "想帶妳騎單車",
+					"startTime": 165582,
+					"endTime": 167433,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我",
+					"startTime": 167433,
+					"endTime": 167973
+				},
+				{
+					"text": "想和妳看棒球",
+					"startTime": 168087,
+					"endTime": 170002
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你骑单车 我想和你看棒球",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 164978,
+							"endTime": 165505
+						},
+						{
+							"text": "想带你骑单车",
+							"startTime": 165582,
+							"endTime": 167433,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我",
+							"startTime": 167433,
+							"endTime": 167973
+						},
+						{
+							"text": "想和你看棒球",
+							"startTime": 168087,
+							"endTime": 170002
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 164978,
+							"endTime": 165505,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang dai ni qi dan che",
+							"startTime": 165582,
+							"endTime": 167433,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo",
+							"startTime": 167433,
+							"endTime": 167973,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang he ni kan bang qiu",
+							"startTime": 168087,
+							"endTime": 170002
+						}
+					]
+				}
+			],
+			"id": "L27",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "想這樣沒擔憂唱著歌一直走",
+			"startTime": 170503,
+			"endTime": 174897,
+			"words": [
+				{
+					"text": "想這樣沒擔憂",
+					"startTime": 170503,
+					"endTime": 172388
+				},
+				{
+					"text": "唱著歌一",
+					"startTime": 172388,
+					"endTime": 173627
+				},
+				{
+					"text": "直走",
+					"startTime": 173627,
+					"endTime": 174897
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想这样没担忧唱着歌一直走",
+					"words": [
+						{
+							"text": "想这样没担忧",
+							"startTime": 170503,
+							"endTime": 172388
+						},
+						{
+							"text": "唱着歌一",
+							"startTime": 172388,
+							"endTime": 173627
+						},
+						{
+							"text": "直走",
+							"startTime": 173627,
+							"endTime": 174897
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang mei dan you chang zhe ge yi zhi zou",
+					"words": [
+						{
+							"text": "xiang zhe yang mei dan you",
+							"startTime": 170503,
+							"endTime": 172388,
+							"endsWithSpace": true
+						},
+						{
+							"text": "chang zhe ge yi",
+							"startTime": 172388,
+							"endTime": 173627,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhi zou",
+							"startTime": 173627,
+							"endTime": 174897
+						}
+					]
+				}
+			],
+			"id": "L28",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 175187,
+			"endTime": 179746,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 175187,
+					"endTime": 175470
+				},
+				{
+					"text": "想就",
+					"startTime": 175470,
+					"endTime": 176083
+				},
+				{
+					"text": "這樣牽著",
+					"startTime": 176083,
+					"endTime": 177350
+				},
+				{
+					"text": "妳的手不",
+					"startTime": 177350,
+					"endTime": 178518
+				},
+				{
+					"text": "放開",
+					"startTime": 178649,
+					"endTime": 179746
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 175187,
+							"endTime": 175470
+						},
+						{
+							"text": "想就",
+							"startTime": 175470,
+							"endTime": 176083
+						},
+						{
+							"text": "这样牵着",
+							"startTime": 176083,
+							"endTime": 177350
+						},
+						{
+							"text": "你的手不",
+							"startTime": 177350,
+							"endTime": 178518
+						},
+						{
+							"text": "放开",
+							"startTime": 178649,
+							"endTime": 179746
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 175187,
+							"endTime": 175470,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang jiu",
+							"startTime": 175470,
+							"endTime": 176083,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhe yang qian zhe",
+							"startTime": 176083,
+							"endTime": 177350,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni de shou bu",
+							"startTime": 177350,
+							"endTime": 178518,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fang kai",
+							"startTime": 178649,
+							"endTime": 179746
+						}
+					]
+				}
+			],
+			"id": "L29",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "愛可不可以簡簡單單沒有傷害",
+			"startTime": 180081,
+			"endTime": 184679,
+			"words": [
+				{
+					"text": "愛",
+					"startTime": 180081,
+					"endTime": 180424
+				},
+				{
+					"text": "可不可以",
+					"startTime": 180424,
+					"endTime": 181633
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 181633,
+					"endTime": 182961
+				},
+				{
+					"text": "沒有",
+					"startTime": 182961,
+					"endTime": 183418
+				},
+				{
+					"text": "傷害",
+					"startTime": 183418,
+					"endTime": 184679
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱可不可以简简单单没有伤害",
+					"words": [
+						{
+							"text": "爱",
+							"startTime": 180081,
+							"endTime": 180424
+						},
+						{
+							"text": "可不可以",
+							"startTime": 180424,
+							"endTime": 181633
+						},
+						{
+							"text": "简简单单",
+							"startTime": 181633,
+							"endTime": 182961
+						},
+						{
+							"text": "没有",
+							"startTime": 182961,
+							"endTime": 183418
+						},
+						{
+							"text": "伤害",
+							"startTime": 183418,
+							"endTime": 184679
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai ke bu ke yi jian jian dan dan mei you shang hai",
+					"words": [
+						{
+							"text": "ai",
+							"startTime": 180081,
+							"endTime": 180424,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ke bu ke yi",
+							"startTime": 180424,
+							"endTime": 181633,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 181633,
+							"endTime": 182961,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei you",
+							"startTime": 182961,
+							"endTime": 183418,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shang hai",
+							"startTime": 183418,
+							"endTime": 184679
+						}
+					]
+				}
+			],
+			"id": "L30",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "妳靠著我的肩膀 妳在我胸口睡著",
+			"startTime": 184761,
+			"endTime": 189781,
+			"words": [
+				{
+					"text": "妳",
+					"startTime": 184761,
+					"endTime": 185300
+				},
+				{
+					"text": "靠著我的肩膀",
+					"startTime": 185435,
+					"endTime": 187314,
+					"endsWithSpace": true
+				},
+				{
+					"text": "妳",
+					"startTime": 187314,
+					"endTime": 187751
+				},
+				{
+					"text": "在我胸口睡著",
+					"startTime": 187936,
+					"endTime": 189781
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你靠着我的肩膀 你在我胸口睡着",
+					"words": [
+						{
+							"text": "你",
+							"startTime": 184761,
+							"endTime": 185300
+						},
+						{
+							"text": "靠着我的肩膀",
+							"startTime": 185435,
+							"endTime": 187314,
+							"endsWithSpace": true
+						},
+						{
+							"text": "你",
+							"startTime": 187314,
+							"endTime": 187751
+						},
+						{
+							"text": "在我胸口睡着",
+							"startTime": 187936,
+							"endTime": 189781
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao",
+					"words": [
+						{
+							"text": "ni",
+							"startTime": 184761,
+							"endTime": 185300,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kao zhe wo de jian bang",
+							"startTime": 185435,
+							"endTime": 187314,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni",
+							"startTime": 187314,
+							"endTime": 187751,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zai wo xiong kou shui zhao",
+							"startTime": 187936,
+							"endTime": 189781
+						}
+					]
+				}
+			],
+			"id": "L31",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "像這樣的生活 我愛妳 妳愛我",
+			"startTime": 190289,
+			"endTime": 194467,
+			"words": [
+				{
+					"text": "像這樣的生活",
+					"startTime": 190289,
+					"endTime": 192192,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我愛妳",
+					"startTime": 192192,
+					"endTime": 193201,
+					"endsWithSpace": true
+				},
+				{
+					"text": "妳愛我",
+					"startTime": 193415,
+					"endTime": 194467
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像这样的生活 我爱你 你爱我",
+					"words": [
+						{
+							"text": "像这样的生活",
+							"startTime": 190289,
+							"endTime": 192192,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我爱你",
+							"startTime": 192192,
+							"endTime": 193201,
+							"endsWithSpace": true
+						},
+						{
+							"text": "你爱我",
+							"startTime": 193415,
+							"endTime": 194467
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang de sheng huo wo ai ni ni ai wo",
+					"words": [
+						{
+							"text": "xiang zhe yang de sheng huo",
+							"startTime": 190289,
+							"endTime": 192192,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo ai ni",
+							"startTime": 192192,
+							"endTime": 193201,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni ai wo",
+							"startTime": 193415,
+							"endTime": 194467
+						}
+					]
+				}
+			],
+			"id": "L32",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 194666,
+			"endTime": 204437,
+			"words": [
+				{
+					"text": "想",
+					"startTime": 194666,
+					"endTime": 197117,
+					"endsWithSpace": true
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 197117,
+					"endTime": 199506
+				},
+				{
+					"text": "愛",
+					"startTime": 199634,
+					"endTime": 201875
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱",
+					"words": [
+						{
+							"text": "想",
+							"startTime": 194666,
+							"endTime": 197117,
+							"endsWithSpace": true
+						},
+						{
+							"text": "简简单单",
+							"startTime": 197117,
+							"endTime": 199506
+						},
+						{
+							"text": "爱",
+							"startTime": 199634,
+							"endTime": 201875
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai",
+					"words": [
+						{
+							"text": "xiang",
+							"startTime": 194666,
+							"endTime": 197117,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 197117,
+							"endTime": 199506,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ai",
+							"startTime": 199634,
+							"endTime": 201875
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "妳在我胸口睡著 妳靠著我的肩膀",
+				"startTime": 195208,
+				"endTime": 204437,
+				"words": [
+					{
+						"text": "妳在我胸口睡著",
+						"startTime": 195208,
+						"endTime": 199541,
+						"endsWithSpace": true
+					},
+					{
+						"text": "妳靠著我的肩膀",
+						"startTime": 200227,
+						"endTime": 204437
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "你在我胸口睡着 你靠着我的肩膀",
+						"words": [
+							{
+								"text": "你在我胸口睡着",
+								"startTime": 195208,
+								"endTime": 199541,
+								"endsWithSpace": true
+							},
+							{
+								"text": "你靠着我的肩膀",
+								"startTime": 200227,
+								"endTime": 204437
+							}
+						]
+					}
+				],
+				"romanizations": [
+					{
+						"language": "zh-Latn-pinyin",
+						"text": "ni zai wo xiong kou shui zhao ni kao zhe wo de jian bang",
+						"words": [
+							{
+								"text": "ni zai wo xiong kou shui zhao",
+								"startTime": 195208,
+								"endTime": 199541,
+								"endsWithSpace": true
+							},
+							{
+								"text": "ni kao zhe wo de jian bang",
+								"startTime": 200227,
+								"endTime": 204437
+							}
+						]
+					}
+				]
+			},
+			"id": "L33",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 204516,
+			"endTime": 214389,
+			"words": [
+				{
+					"text": "想",
+					"startTime": 204516,
+					"endTime": 207171,
+					"endsWithSpace": true
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 207171,
+					"endTime": 209496
+				},
+				{
+					"text": "愛",
+					"startTime": 209496,
+					"endTime": 211565
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱",
+					"words": [
+						{
+							"text": "想",
+							"startTime": 204516,
+							"endTime": 207171,
+							"endsWithSpace": true
+						},
+						{
+							"text": "简简单单",
+							"startTime": 207171,
+							"endTime": 209496
+						},
+						{
+							"text": "爱",
+							"startTime": 209496,
+							"endTime": 211565
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai",
+					"words": [
+						{
+							"text": "xiang",
+							"startTime": 204516,
+							"endTime": 207171,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 207171,
+							"endTime": 209496,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ai",
+							"startTime": 209496,
+							"endTime": 211565
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "我想帶妳騎單車 我想和妳看棒球",
+				"startTime": 205132,
+				"endTime": 214389,
+				"words": [
+					{
+						"text": "我想帶妳騎單車",
+						"startTime": 205132,
+						"endTime": 209495,
+						"endsWithSpace": true
+					},
+					{
+						"text": "我想和妳看棒球",
+						"startTime": 210136,
+						"endTime": 214389
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "我想带你骑单车 我想和你看棒球",
+						"words": [
+							{
+								"text": "我想带你骑单车",
+								"startTime": 205132,
+								"endTime": 209495,
+								"endsWithSpace": true
+							},
+							{
+								"text": "我想和你看棒球",
+								"startTime": 210136,
+								"endTime": 214389
+							}
+						]
+					}
+				],
+				"romanizations": [
+					{
+						"language": "zh-Latn-pinyin",
+						"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu",
+						"words": [
+							{
+								"text": "wo xiang dai ni qi dan che",
+								"startTime": 205132,
+								"endTime": 209495,
+								"endsWithSpace": true
+							},
+							{
+								"text": "wo xiang he ni kan bang qiu",
+								"startTime": 210136,
+								"endTime": 214389
+							}
+						]
+					}
+				]
+			},
+			"id": "L34",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 214783,
+			"endTime": 219389,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 214783,
+					"endTime": 215005
+				},
+				{
+					"text": "想就",
+					"startTime": 215005,
+					"endTime": 215736
+				},
+				{
+					"text": "這樣牽著",
+					"startTime": 215736,
+					"endTime": 216934
+				},
+				{
+					"text": "妳的手不",
+					"startTime": 216934,
+					"endTime": 218074
+				},
+				{
+					"text": "放開",
+					"startTime": 218074,
+					"endTime": 219389
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 214783,
+							"endTime": 215005
+						},
+						{
+							"text": "想就",
+							"startTime": 215005,
+							"endTime": 215736
+						},
+						{
+							"text": "这样牵着",
+							"startTime": 215736,
+							"endTime": 216934
+						},
+						{
+							"text": "你的手不",
+							"startTime": 216934,
+							"endTime": 218074
+						},
+						{
+							"text": "放开",
+							"startTime": 218074,
+							"endTime": 219389
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 214783,
+							"endTime": 215005,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang jiu",
+							"startTime": 215005,
+							"endTime": 215736,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhe yang qian zhe",
+							"startTime": 215736,
+							"endTime": 216934,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni de shou bu",
+							"startTime": 216934,
+							"endTime": 218074,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fang kai",
+							"startTime": 218074,
+							"endTime": 219389
+						}
+					]
+				}
+			],
+			"id": "L35",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "愛能不能夠永遠單純沒有悲哀",
+			"startTime": 219714,
+			"endTime": 224281,
+			"words": [
+				{
+					"text": "愛",
+					"startTime": 219714,
+					"endTime": 220046
+				},
+				{
+					"text": "能不能夠",
+					"startTime": 220046,
+					"endTime": 221296
+				},
+				{
+					"text": "永遠單純",
+					"startTime": 221296,
+					"endTime": 222520
+				},
+				{
+					"text": "沒有",
+					"startTime": 222520,
+					"endTime": 223132
+				},
+				{
+					"text": "悲哀",
+					"startTime": 223132,
+					"endTime": 224281
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱能不能够永远单纯没有悲哀",
+					"words": [
+						{
+							"text": "爱",
+							"startTime": 219714,
+							"endTime": 220046
+						},
+						{
+							"text": "能不能够",
+							"startTime": 220046,
+							"endTime": 221296
+						},
+						{
+							"text": "永远单纯",
+							"startTime": 221296,
+							"endTime": 222520
+						},
+						{
+							"text": "没有",
+							"startTime": 222520,
+							"endTime": 223132
+						},
+						{
+							"text": "悲哀",
+							"startTime": 223132,
+							"endTime": 224281
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai neng bu neng gou yong yuan dan chun mei you bei ai",
+					"words": [
+						{
+							"text": "ai",
+							"startTime": 219714,
+							"endTime": 220046,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neng bu neng gou",
+							"startTime": 220046,
+							"endTime": 221296,
+							"endsWithSpace": true
+						},
+						{
+							"text": "yong yuan dan chun",
+							"startTime": 221296,
+							"endTime": 222520,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei you",
+							"startTime": 222520,
+							"endTime": 223132,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bei ai",
+							"startTime": 223132,
+							"endTime": 224281
+						}
+					]
+				}
+			],
+			"id": "L36",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "我想帶妳騎單車 我想和妳看棒球",
+			"startTime": 224328,
+			"endTime": 229344,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 224328,
+					"endTime": 224831
+				},
+				{
+					"text": "想帶妳騎單車",
+					"startTime": 224831,
+					"endTime": 226846,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我",
+					"startTime": 226846,
+					"endTime": 227371
+				},
+				{
+					"text": "想和妳看棒球",
+					"startTime": 227371,
+					"endTime": 229344
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你骑单车 我想和你看棒球",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 224328,
+							"endTime": 224831
+						},
+						{
+							"text": "想带你骑单车",
+							"startTime": 224831,
+							"endTime": 226846,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我",
+							"startTime": 226846,
+							"endTime": 227371
+						},
+						{
+							"text": "想和你看棒球",
+							"startTime": 227371,
+							"endTime": 229344
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 224328,
+							"endTime": 224831,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang dai ni qi dan che",
+							"startTime": 224831,
+							"endTime": 226846,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo",
+							"startTime": 226846,
+							"endTime": 227371,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang he ni kan bang qiu",
+							"startTime": 227371,
+							"endTime": 229344
+						}
+					]
+				}
+			],
+			"id": "L37",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "想這樣沒擔憂唱著歌一直走",
+			"startTime": 229906,
+			"endTime": 234227,
+			"words": [
+				{
+					"text": "想這樣沒擔憂",
+					"startTime": 229906,
+					"endTime": 231766
+				},
+				{
+					"text": "唱著歌一",
+					"startTime": 231766,
+					"endTime": 233000
+				},
+				{
+					"text": "直走",
+					"startTime": 233000,
+					"endTime": 234227
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想这样没担忧唱着歌一直走",
+					"words": [
+						{
+							"text": "想这样没担忧",
+							"startTime": 229906,
+							"endTime": 231766
+						},
+						{
+							"text": "唱着歌一",
+							"startTime": 231766,
+							"endTime": 233000
+						},
+						{
+							"text": "直走",
+							"startTime": 233000,
+							"endTime": 234227
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang mei dan you chang zhe ge yi zhi zou",
+					"words": [
+						{
+							"text": "xiang zhe yang mei dan you",
+							"startTime": 229906,
+							"endTime": 231766,
+							"endsWithSpace": true
+						},
+						{
+							"text": "chang zhe ge yi",
+							"startTime": 231766,
+							"endTime": 233000,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhi zou",
+							"startTime": 233000,
+							"endTime": 234227
+						}
+					]
+				}
+			],
+			"id": "L38",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 234587,
+			"endTime": 239120,
+			"words": [
+				{
+					"text": "我",
+					"startTime": 234587,
+					"endTime": 234807
+				},
+				{
+					"text": "想就",
+					"startTime": 234807,
+					"endTime": 235514
+				},
+				{
+					"text": "這樣牽著",
+					"startTime": 235514,
+					"endTime": 236752
+				},
+				{
+					"text": "妳的手不",
+					"startTime": 236752,
+					"endTime": 237970
+				},
+				{
+					"text": "放開",
+					"startTime": 237970,
+					"endTime": 239120
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开",
+					"words": [
+						{
+							"text": "我",
+							"startTime": 234587,
+							"endTime": 234807
+						},
+						{
+							"text": "想就",
+							"startTime": 234807,
+							"endTime": 235514
+						},
+						{
+							"text": "这样牵着",
+							"startTime": 235514,
+							"endTime": 236752
+						},
+						{
+							"text": "你的手不",
+							"startTime": 236752,
+							"endTime": 237970
+						},
+						{
+							"text": "放开",
+							"startTime": 237970,
+							"endTime": 239120
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai",
+					"words": [
+						{
+							"text": "wo",
+							"startTime": 234587,
+							"endTime": 234807,
+							"endsWithSpace": true
+						},
+						{
+							"text": "xiang jiu",
+							"startTime": 234807,
+							"endTime": 235514,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zhe yang qian zhe",
+							"startTime": 235514,
+							"endTime": 236752,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni de shou bu",
+							"startTime": 236752,
+							"endTime": 237970,
+							"endsWithSpace": true
+						},
+						{
+							"text": "fang kai",
+							"startTime": 237970,
+							"endTime": 239120
+						}
+					]
+				}
+			],
+			"id": "L39",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		},
+		{
+			"text": "愛可不可以簡簡單單沒有傷害",
+			"startTime": 239512,
+			"endTime": 244077,
+			"words": [
+				{
+					"text": "愛",
+					"startTime": 239512,
+					"endTime": 239816
+				},
+				{
+					"text": "可不可以",
+					"startTime": 239816,
+					"endTime": 241051
+				},
+				{
+					"text": "簡簡單單",
+					"startTime": 241051,
+					"endTime": 242325
+				},
+				{
+					"text": "沒有",
+					"startTime": 242325,
+					"endTime": 242888
+				},
+				{
+					"text": "傷害",
+					"startTime": 242888,
+					"endTime": 244077
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱可不可以简简单单没有伤害",
+					"words": [
+						{
+							"text": "爱",
+							"startTime": 239512,
+							"endTime": 239816
+						},
+						{
+							"text": "可不可以",
+							"startTime": 239816,
+							"endTime": 241051
+						},
+						{
+							"text": "简简单单",
+							"startTime": 241051,
+							"endTime": 242325
+						},
+						{
+							"text": "没有",
+							"startTime": 242325,
+							"endTime": 242888
+						},
+						{
+							"text": "伤害",
+							"startTime": 242888,
+							"endTime": 244077
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai ke bu ke yi jian jian dan dan mei you shang hai",
+					"words": [
+						{
+							"text": "ai",
+							"startTime": 239512,
+							"endTime": 239816,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ke bu ke yi",
+							"startTime": 239816,
+							"endTime": 241051,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jian jian dan dan",
+							"startTime": 241051,
+							"endTime": 242325,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mei you",
+							"startTime": 242325,
+							"endTime": 242888,
+							"endsWithSpace": true
+						},
+						{
+							"text": "shang hai",
+							"startTime": 242888,
+							"endTime": 244077
+						}
+					]
+				}
+			],
+			"id": "L40",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		},
+		{
+			"text": "妳靠著我的肩膀 妳在我胸口睡著",
+			"startTime": 244103,
+			"endTime": 249146,
+			"words": [
+				{
+					"text": "妳",
+					"startTime": 244103,
+					"endTime": 244711
+				},
+				{
+					"text": "靠著我的肩膀",
+					"startTime": 244757,
+					"endTime": 246698,
+					"endsWithSpace": true
+				},
+				{
+					"text": "妳",
+					"startTime": 246698,
+					"endTime": 247150
+				},
+				{
+					"text": "在我胸口睡著",
+					"startTime": 247247,
+					"endTime": 249146
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你靠着我的肩膀 你在我胸口睡着",
+					"words": [
+						{
+							"text": "你",
+							"startTime": 244103,
+							"endTime": 244711
+						},
+						{
+							"text": "靠着我的肩膀",
+							"startTime": 244757,
+							"endTime": 246698,
+							"endsWithSpace": true
+						},
+						{
+							"text": "你",
+							"startTime": 246698,
+							"endTime": 247150
+						},
+						{
+							"text": "在我胸口睡着",
+							"startTime": 247247,
+							"endTime": 249146
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao",
+					"words": [
+						{
+							"text": "ni",
+							"startTime": 244103,
+							"endTime": 244711,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kao zhe wo de jian bang",
+							"startTime": 244757,
+							"endTime": 246698,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni",
+							"startTime": 246698,
+							"endTime": 247150,
+							"endsWithSpace": true
+						},
+						{
+							"text": "zai wo xiong kou shui zhao",
+							"startTime": 247247,
+							"endTime": 249146
+						}
+					]
+				}
+			],
+			"id": "L41",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		},
+		{
+			"text": "像這樣的生活 我愛妳 妳愛我",
+			"startTime": 249702,
+			"endTime": 253905,
+			"words": [
+				{
+					"text": "像這樣的生活",
+					"startTime": 249702,
+					"endTime": 251588,
+					"endsWithSpace": true
+				},
+				{
+					"text": "我愛妳",
+					"startTime": 251588,
+					"endTime": 252659,
+					"endsWithSpace": true
+				},
+				{
+					"text": "妳愛我",
+					"startTime": 252874,
+					"endTime": 253905
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像这样的生活 我爱你 你爱我",
+					"words": [
+						{
+							"text": "像这样的生活",
+							"startTime": 249702,
+							"endTime": 251588,
+							"endsWithSpace": true
+						},
+						{
+							"text": "我爱你",
+							"startTime": 251588,
+							"endTime": 252659,
+							"endsWithSpace": true
+						},
+						{
+							"text": "你爱我",
+							"startTime": 252874,
+							"endTime": 253905
+						}
+					]
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang de sheng huo wo ai ni ni ai wo",
+					"words": [
+						{
+							"text": "xiang zhe yang de sheng huo",
+							"startTime": 249702,
+							"endTime": 251588,
+							"endsWithSpace": true
+						},
+						{
+							"text": "wo ai ni",
+							"startTime": 251588,
+							"endTime": 252659,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ni ai wo",
+							"startTime": 252874,
+							"endTime": 253905
+						}
+					]
+				}
+			],
+			"id": "L42",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		}
+	]
+}

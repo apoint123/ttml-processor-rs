@@ -1,0 +1,271 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: tests/fixtures/Red Velvet - Psycho.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="ko">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1"/>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <translations>
+                    <translation xml:lang="zh-Hans" type="subtitle">
+                        <text for="L1">Psycho</text>
+                        <text for="L2">该拿你怎么办呢</text>
+                        <text for="L3">这种心情还是第一次</text>
+                        <text for="L4">Up and down 有些严重</text>
+                        <text for="L5">总是控制不好</text>
+                        <text for="L6">唯一确定的是</text>
+                        <text for="L7">I don&apos;t play the game</text>
+                        <text for="L8">都说我们很奇怪</text>
+                        <text for="L9">我就是太喜欢你了</text>
+                        <text for="L10">你又太清楚这一点</text>
+                        <text for="L11">将我玩弄于股掌之间</text>
+                        <text for="L12">而我又何尝不是一样</text>
+                        <text for="L13">我们真是离奇又古怪的关系</text>
+                        <text for="L14">一次次击碎对方</text>
+                        <text for="L15">之后又紧紧拥抱</text>
+                        <text for="L16">You got me feeling like a psycho, psycho</text>
+                        <text for="L17">都在说我们 一遍又一遍</text>
+                        <text for="L18">吵架时就像水火不容 一转头却又黏在一起</text>
+                        <text for="L19">都说无法理解 一点也不好笑</text>
+                        <text for="L20">没错 Psycho, psycho</text>
+                        <text for="L21">爱死了对方的傻瓜 傻瓜</text>
+                        <text for="L22">没有你 我会头晕又悲伤</text>
+                        <text for="L23">甚至浑身没有力气</text>
+                        <text for="L24">都说我们天生一对</text>
+                        <text for="L25">Hey now, we&apos;ll be ok</text>
+                        <text for="L26">Hey, trouble 没有预警就走来的你</text>
+                        <text for="L27">I&apos;m original visual</text>
+                        <text for="L28">我们本来就这样 Yeah</text>
+                        <text for="L29">没什么可怕的</text>
+                        <text for="L30">It&apos;s hot! Let me just hop</text>
+                        <text for="L31">该怎么处理你呢</text>
+                        <text for="L32">不知所措地哄你开心</text>
+                        <text for="L33">就算我发狠踢你</text>
+                        <text for="L34">你也会不时对我微笑</text>
+                        <text for="L35">这让我怎能放手 Ooh-ooh</text>
+                        <text for="L36">我们真是美丽又悲伤的关系</text>
+                        <text for="L37">让彼此闪耀光芒</text>
+                        <text for="L38">就像月亮和江水 之后又紧紧拥抱</text>
+                        <text for="L39">You got me feeling like a psycho, psycho</text>
+                        <text for="L40">都在说我们 一遍又一遍</text>
+                        <text for="L41">吵架时就像水火不容 一转头却又黏在一起</text>
+                        <text for="L42">都说无法理解 一点也不好笑</text>
+                        <text for="L43">没错 Psycho, psycho</text>
+                        <text for="L44">爱死了对方的傻瓜 傻瓜</text>
+                        <text for="L45">没有你 我会头晕又悲伤</text>
+                        <text for="L46">甚至浑身没有力气</text>
+                        <text for="L47">都说我们天生一对</text>
+                        <text for="L48">Hey now, we&apos;ll be ok</text>
+                        <text for="L49">Don&apos;t look back</text>
+                        <text for="L50">就按我们的方式继续吧</text>
+                        <text for="L51">我正在用全身心感受你</text>
+                        <text for="L52">Everything will be OK</text>
+                        <text for="L53">Like a psycho, psycho</text>
+                        <text for="L54">都在说我们 一遍又一遍</text>
+                        <text for="L55">吵架时就像水火不容 一转头却又黏在一起</text>
+                        <text for="L56">都说我们天生一对</text>
+                        <text for="L57">Hey now, we&apos;ll be ok</text>
+                        <text for="L58">Hey now, we&apos;ll be ok</text>
+                        <text for="L59">Hey now, we&apos;ll be ok</text>
+                        <text for="L60">Hey now, we&apos;ll be ok</text>
+                        <text for="L61">Hey now, we&apos;ll be ok</text>
+                        <text for="L62">It&apos;s alright</text>
+                        <text for="L63">It&apos;s alright</text>
+                        <text for="L64">Hey now, we&apos;ll be ok</text>
+                        <text for="L65">Hey now, we&apos;ll be ok</text>
+                        <text for="L66">Hey now, we&apos;ll be ok</text>
+                        <text for="L67">Hey now, we&apos;ll be ok</text>
+                        <text for="L68">It&apos;s alright</text>
+                        <text for="L69">It&apos;s alright</text>
+                        <text for="L70">我们有点奇怪</text>
+                        <text for="L71">Psycho</text>
+                    </translation>
+                </translations>
+                <transliterations>
+                    <transliteration xml:lang="ko-Latn">
+                        <text for="L1">Psycho</text>
+                        <text for="L2">neol eo jjeo myeon jo eul kka</text>
+                        <text for="L3">i reon ma meun tto cheo mi ra</text>
+                        <text for="L4">Up and down i jom sim hae</text>
+                        <text for="L5">jo jeo ri ja kku jal an dwae</text>
+                        <text for="L6">ha na hwak sil han geon</text>
+                        <text for="L7">I don&apos;t play the game</text>
+                        <text for="L8">u ri jin jja byeol na dae</text>
+                        <text for="L9">geu nyang nae ga neo mu jo a hae</text>
+                        <text for="L10">neon geu geol neo mu jal al go</text>
+                        <text for="L11">nal jwi rak pyeo rak hae</text>
+                        <text for="L12">na do ma chan ga ji in geol</text>
+                        <text for="L13">u rin cham byeol na go i sang han sa i ya</text>
+                        <text for="L14">seo ro reul bu seo ji ge</text>
+                        <text for="L15">geu ri gon tto kkyeo a na</text>
+                        <text for="L16">You got me feeling like a psycho, psycho</text>
+                        <text for="L17">u ril bo go mal hae ja kku ja kku</text>
+                        <text for="L18">da si an bol deut ssa u da ga do bu teo da ni ni ma rya</text>
+                        <text for="L19">i hae ga an gan dae ut gi ji do an tae</text>
+                        <text for="L20">ma ja Psycho, psycho</text>
+                        <text for="L21">seo ro jo a juk neun ba bo ba bo</text>
+                        <text for="L22">neo eop sin eo ji reop go seul peo jyeo</text>
+                        <text for="L23">gi un do mak eop seo yo</text>
+                        <text for="L24">du ri jal man nat dae</text>
+                        <text for="L25">Hey now, we&apos;ll be ok</text>
+                        <text for="L26">Hey, trouble gyeong go tta win eop si o neun neo</text>
+                        <text for="L27">I&apos;m original visual</text>
+                        <text for="L28">u rin won rae i rae sseo Yeah</text>
+                        <text for="L29">du ryeop ji neun a na</text>
+                        <text for="L30">It&apos;s hot! Let me just hop</text>
+                        <text for="L31">eo tteo ke neol da rul kka</text>
+                        <text for="L32">eo jjeol ju reul mol ra neo reul dal rae go</text>
+                        <text for="L33">mae seop ge bal ro cha do</text>
+                        <text for="L34">ga kkeum nae ge mi so jit neun neol</text>
+                        <text for="L35">eo tteo ke no ke sseo Ooh- ooh</text>
+                        <text for="L36">u rin a reum dap go cham seul peun sa i ya</text>
+                        <text for="L37">seo ro reul bit na ge hae</text>
+                        <text for="L38">ma chi dal gwa gang cheo reom geu ri gon tto kkyeo a na</text>
+                        <text for="L39">You got me feeling like a psycho, psycho</text>
+                        <text for="L40">u ril bo go mal hae ja kku ja kku</text>
+                        <text for="L41">da si an bol deut ssa u da ga do bu teo da ni ni ma rya</text>
+                        <text for="L42">i hae ga an gan dae ut gi ji do an tae</text>
+                        <text for="L43">ma ja Psycho, psycho</text>
+                        <text for="L44">seo ro jo a juk neun ba bo ba bo</text>
+                        <text for="L45">neo eop sin eo ji reop go seul peo jyeo</text>
+                        <text for="L46">gi un do mak eop seo yo</text>
+                        <text for="L47">du ri jal man nat dae</text>
+                        <text for="L48">Hey now, we&apos;ll be ok</text>
+                        <text for="L49">Don&apos;t look back</text>
+                        <text for="L50">geu reo ke u ri dap ge ga bo ja</text>
+                        <text for="L51">nan on mo meu ro neol neu kki go i sseo</text>
+                        <text for="L52">Everything will be OK</text>
+                        <text for="L53">Like a psycho, psycho</text>
+                        <text for="L54">u ril bo go mal hae ja kku ja kku</text>
+                        <text for="L55">da si an bol deut ssa u da ga do bu teo da ni ni ma rya</text>
+                        <text for="L56">du ri jal man nat dae</text>
+                        <text for="L57">Hey now, we&apos;ll be ok</text>
+                        <text for="L58">Hey now, we&apos;ll be ok</text>
+                        <text for="L59">Hey now, we&apos;ll be ok</text>
+                        <text for="L60">Hey now, we&apos;ll be ok</text>
+                        <text for="L61">Hey now, we&apos;ll be ok</text>
+                        <text for="L62">It&apos;s alright</text>
+                        <text for="L63">It&apos;s alright</text>
+                        <text for="L64">Hey now, we&apos;ll be ok</text>
+                        <text for="L65">Hey now, we&apos;ll be ok</text>
+                        <text for="L66">Hey now, we&apos;ll be ok</text>
+                        <text for="L67">Hey now, we&apos;ll be ok</text>
+                        <text for="L68">It&apos;s alright</text>
+                        <text for="L69">It&apos;s alright</text>
+                        <text for="L70">u rin jom i sang hae</text>
+                        <text for="L71">Psy cho</text>
+                    </transliteration>
+                </transliterations>
+                <songwriters>
+                    <songwriter>Andrew Scott</songwriter>
+                    <songwriter>Cazzi Opeia</songwriter>
+                    <songwriter>EJAE</songwriter>
+                    <songwriter>Kenzie</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="3:27.245">
+        <div begin="12.026" end="12.999" itunes:songPart="Intro">
+            <p begin="12.026" end="12.999" itunes:key="L1" ttm:agent="v1">Psycho</p>
+        </div>
+        <div begin="13.271" end="26.490" itunes:songPart="Verse">
+            <p begin="13.271" end="15.601" itunes:key="L2" ttm:agent="v1">널 어쩌면 좋을까</p>
+            <p begin="16.495" end="18.925" itunes:key="L3" ttm:agent="v1">이런 맘은 또 첨이라</p>
+            <p begin="19.665" end="21.802" itunes:key="L4" ttm:agent="v1">Up and down이 좀 심해</p>
+            <p begin="21.616" end="23.375" itunes:key="L5" ttm:agent="v1">조절이 자꾸 잘 안 돼</p>
+            <p begin="23.449" end="25.350" itunes:key="L6" ttm:agent="v1">하나 확실한 건</p>
+            <p begin="25.208" end="26.490" itunes:key="L7" ttm:agent="v1">I don&apos;t play the game</p>
+        </div>
+        <div begin="26.895" end="39.808" itunes:songPart="Verse">
+            <p begin="26.895" end="29.740" itunes:key="L8" ttm:agent="v1">우리 진짜 별나대</p>
+            <p begin="30.015" end="33.149" itunes:key="L9" ttm:agent="v1">그냥 내가 너무 좋아해</p>
+            <p begin="33.365" end="35.327" itunes:key="L10" ttm:agent="v1">넌 그걸 너무 잘 알고</p>
+            <p begin="35.337" end="36.839" itunes:key="L11" ttm:agent="v1">날 쥐락펴락해</p>
+            <p begin="37.067" end="39.808" itunes:key="L12" ttm:agent="v1">나도 마찬가지인 걸</p>
+        </div>
+        <div begin="41.631" end="53.811" itunes:songPart="PreChorus">
+            <p begin="41.631" end="45.859" itunes:key="L13" ttm:agent="v1">우린 참 별나고 이상한 사이야</p>
+            <p begin="46.659" end="49.598" itunes:key="L14" ttm:agent="v1">서로를 부서지게</p>
+            <p begin="50.079" end="53.811" itunes:key="L15" ttm:agent="v1">그리곤 또 껴안아</p>
+        </div>
+        <div begin="53.821" end="1:22.103" itunes:songPart="Chorus">
+            <p begin="53.821" end="57.491" itunes:key="L16" ttm:agent="v1">You got me feeling like a psycho, psycho</p>
+            <p begin="57.535" end="1:00.761" itunes:key="L17" ttm:agent="v1">우릴 보고 말해 자꾸 자꾸</p>
+            <p begin="1:00.980" end="1:04.977" itunes:key="L18" ttm:agent="v1">다시 안 볼 듯 싸우다가도 붙어다니니 말야</p>
+            <p begin="1:05.356" end="1:08.446" itunes:key="L19" ttm:agent="v1">이해가 안 간대 웃기지도 않대</p>
+            <p begin="1:08.543" end="1:10.804" itunes:key="L20" ttm:agent="v1">맞아 Psycho, psycho</p>
+            <p begin="1:11.177" end="1:14.437" itunes:key="L21" ttm:agent="v1">서로 좋아 죽는 바보 바보</p>
+            <p begin="1:14.765" end="1:16.929" itunes:key="L22" ttm:agent="v1">너 없인 어지럽고 슬퍼져</p>
+            <p begin="1:17.122" end="1:18.648" itunes:key="L23" ttm:agent="v1">기운도 막 없어요</p>
+            <p begin="1:19.079" end="1:20.375" itunes:key="L24" ttm:agent="v1">둘이 잘 만났대</p>
+            <p begin="1:20.966" end="1:22.103" itunes:key="L25" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+        </div>
+        <div begin="1:22.698" end="1:36.538" itunes:songPart="Verse">
+            <p begin="1:22.698" end="1:25.673" itunes:key="L26" ttm:agent="v1">Hey, trouble 경고 따윈 없이 오는 너</p>
+            <p begin="1:25.853" end="1:27.476" itunes:key="L27" ttm:agent="v1">I&apos;m original visual</p>
+            <p begin="1:27.434" end="1:29.608" itunes:key="L28" ttm:agent="v1">우린 원래 이랬어 Yeah</p>
+            <p begin="1:29.673" end="1:31.382" itunes:key="L29" ttm:agent="v1">두렵지는 않아</p>
+            <p begin="1:31.493" end="1:32.795" itunes:key="L30" ttm:agent="v1">It&apos;s hot! Let me just hop</p>
+            <p begin="1:33.086" end="1:36.538" itunes:key="L31" ttm:agent="v1">어떻게 널 다룰까</p>
+        </div>
+        <div begin="1:35.323" end="1:49.453" itunes:songPart="Verse">
+            <p begin="1:35.323" end="1:38.788" itunes:key="L32" ttm:agent="v1">어쩔 줄을 몰라 너를 달래고</p>
+            <p begin="1:38.687" end="1:40.300" itunes:key="L33" ttm:agent="v1">매섭게 발로 차도</p>
+            <p begin="1:40.623" end="1:44.089" itunes:key="L34" ttm:agent="v1">가끔 내게 미소 짓는 널</p>
+            <p begin="1:44.728" end="1:49.453" itunes:key="L35" ttm:agent="v1">어떻게 놓겠어 Ooh-ooh</p>
+        </div>
+        <div begin="1:50.164" end="2:02.533" itunes:songPart="PreChorus">
+            <p begin="1:50.164" end="1:53.840" itunes:key="L36" ttm:agent="v1">우린 아름답고 참 슬픈 사이야</p>
+            <p begin="1:55.191" end="1:58.056" itunes:key="L37" ttm:agent="v1">서로를 빛나게 해</p>
+            <p begin="1:58.697" end="2:02.533" itunes:key="L38" ttm:agent="v1">마치 달과 강처럼 그리곤 또 껴안아</p>
+        </div>
+        <div begin="2:02.365" end="2:30.523" itunes:songPart="Chorus">
+            <p begin="2:02.365" end="2:06.066" itunes:key="L39" ttm:agent="v1">You got me feeling like a psycho, psycho</p>
+            <p begin="2:06.076" end="2:09.473" itunes:key="L40" ttm:agent="v1">우릴 보고 말해 자꾸 자꾸</p>
+            <p begin="2:09.622" end="2:13.669" itunes:key="L41" ttm:agent="v1">다시 안 볼 듯 싸우다가도 붙어다니니 말야</p>
+            <p begin="2:13.969" end="2:17.009" itunes:key="L42" ttm:agent="v1">이해가 안 간대 웃기지도 않대</p>
+            <p begin="2:17.174" end="2:21.135" itunes:key="L43" ttm:agent="v1">맞아 Psycho, psycho</p>
+            <p begin="2:19.594" end="2:24.232" itunes:key="L44" ttm:agent="v1">서로 좋아 죽는 바보 바보</p>
+            <p begin="2:23.341" end="2:25.421" itunes:key="L45" ttm:agent="v1">너 없인 어지럽고 슬퍼져</p>
+            <p begin="2:25.648" end="2:27.314" itunes:key="L46" ttm:agent="v1">기운도 막 없어요</p>
+            <p begin="2:27.682" end="2:28.847" itunes:key="L47" ttm:agent="v1">둘이 잘 만났대</p>
+            <p begin="2:29.430" end="2:30.523" itunes:key="L48" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+        </div>
+        <div begin="2:31.278" end="2:44.371" itunes:songPart="Bridge">
+            <p begin="2:31.278" end="2:32.886" itunes:key="L49" ttm:agent="v1">Don&apos;t look back</p>
+            <p begin="2:33.091" end="2:36.806" itunes:key="L50" ttm:agent="v1">그렇게 우리답게 가보자</p>
+            <p begin="2:38.004" end="2:41.245" itunes:key="L51" ttm:agent="v1">난 온몸으로 널 느끼고 있어</p>
+            <p begin="2:41.437" end="2:44.371" itunes:key="L52" ttm:agent="v1">Everything will be OK</p>
+        </div>
+        <div begin="2:43.675" end="2:58.321" itunes:songPart="Chorus">
+            <p begin="2:43.675" end="2:47.207" itunes:key="L53" ttm:agent="v1">Like a psycho, psycho</p>
+            <p begin="2:47.217" end="2:50.443" itunes:key="L54" ttm:agent="v1">우릴 보고 말해 자꾸 자꾸</p>
+            <p begin="2:50.756" end="2:54.753" itunes:key="L55" ttm:agent="v1">다시 안 볼 듯 싸우다가도 붙어다니니 말야</p>
+            <p begin="2:55.086" end="2:56.474" itunes:key="L56" ttm:agent="v1">둘이 잘 만났대</p>
+            <p begin="2:56.853" end="2:58.321" itunes:key="L57" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+        </div>
+        <div begin="2:58.702" end="3:09.288" itunes:songPart="Verse">
+            <p begin="2:58.702" end="2:59.839" itunes:key="L58" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:00.469" end="3:01.606" itunes:key="L59" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:02.176" end="3:03.313" itunes:key="L60" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:03.917" end="3:05.054" itunes:key="L61" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:05.056" end="3:07.055" itunes:key="L62" ttm:agent="v1">It&apos;s alright</p>
+            <p begin="3:08.379" end="3:09.288" itunes:key="L63" ttm:agent="v1">It&apos;s alright</p>
+        </div>
+        <div begin="3:12.304" end="3:23.034" itunes:songPart="Verse">
+            <p begin="3:12.304" end="3:13.441" itunes:key="L64" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:14.157" end="3:15.294" itunes:key="L65" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:15.934" end="3:17.071" itunes:key="L66" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:17.663" end="3:18.800" itunes:key="L67" ttm:agent="v1">Hey now, we&apos;ll be ok</p>
+            <p begin="3:18.776" end="3:19.685" itunes:key="L68" ttm:agent="v1">It&apos;s alright</p>
+            <p begin="3:22.125" end="3:23.034" itunes:key="L69" ttm:agent="v1">It&apos;s alright</p>
+        </div>
+        <div begin="3:24.004" end="3:27.245" itunes:songPart="Outro">
+            <p begin="3:24.004" end="3:26.165" itunes:key="L70" ttm:agent="v1">우린 좀 이상해</p>
+            <p begin="3:26.175" end="3:27.245" itunes:key="L71" ttm:agent="v1">Psycho</p>
+        </div>
+    </body>
+</tt>

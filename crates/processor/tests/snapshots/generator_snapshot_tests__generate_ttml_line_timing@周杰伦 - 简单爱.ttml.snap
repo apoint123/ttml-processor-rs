@@ -1,0 +1,180 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: tests/fixtures/周杰伦 - 简单爱.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="zh-Hant">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1">
+                <ttm:name type="full">周杰倫</ttm:name>
+            </ttm:agent>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <translations>
+                    <translation xml:lang="zh-Hans" type="subtitle">
+                        <text for="L1">说不上为什么 我变得很主动</text>
+                        <text for="L2">若爱上一个人 什么都会值得去做</text>
+                        <text for="L3">我想大声宣布 对你依依不舍</text>
+                        <text for="L4">连隔壁邻居都 猜到我现在的感受</text>
+                        <text for="L5">河边的风在吹着头发 飘动</text>
+                        <text for="L6">牵着你的手一阵莫名感动</text>
+                        <text for="L7">我想带你回我的外婆家</text>
+                        <text for="L8">一起看着日落 一直到我们都睡着</text>
+                        <text for="L9">我想就这样牵着你的手不放开</text>
+                        <text for="L10">爱能不能够永远单纯没有悲哀</text>
+                        <text for="L11">我想带你骑单车 我想和你看棒球</text>
+                        <text for="L12">想这样没担忧唱着歌一直走</text>
+                        <text for="L13">我想就这样牵着你的手不放开</text>
+                        <text for="L14">爱可不可以简简单单没有伤害</text>
+                        <text for="L15">你靠着我的肩膀 你在我胸口睡着</text>
+                        <text for="L16">像这样的生活 我爱你 你爱我</text>
+                        <text for="L17">想 简简单单爱</text>
+                        <text for="L18">想 简简单单爱</text>
+                        <text for="L19">我想大声宣布 对你依依不舍</text>
+                        <text for="L20">连隔壁邻居都 猜到我现在的感受</text>
+                        <text for="L21">河边的风在吹着头发飘动</text>
+                        <text for="L22">牵着你的手一阵莫名感动</text>
+                        <text for="L23">我想带你回我的外婆家</text>
+                        <text for="L24">一起看着日落 一直到我们都睡着</text>
+                        <text for="L25">我想就这样牵着你的手不放开</text>
+                        <text for="L26">爱能不能够永远单纯没有悲哀</text>
+                        <text for="L27">我想带你骑单车 我想和你看棒球</text>
+                        <text for="L28">想这样没担忧唱着歌一直走</text>
+                        <text for="L29">我想就这样牵着你的手不放开</text>
+                        <text for="L30">爱可不可以简简单单没有伤害</text>
+                        <text for="L31">你靠着我的肩膀 你在我胸口睡着</text>
+                        <text for="L32">像这样的生活 我爱你 你爱我</text>
+                        <text for="L33">想 简简单单爱</text>
+                        <text for="L34">想 简简单单爱</text>
+                        <text for="L35">我想就这样牵着你的手不放开</text>
+                        <text for="L36">爱能不能够永远单纯没有悲哀</text>
+                        <text for="L37">我想带你骑单车 我想和你看棒球</text>
+                        <text for="L38">想这样没担忧唱着歌一直走</text>
+                        <text for="L39">我想就这样牵着你的手不放开</text>
+                        <text for="L40">爱可不可以简简单单没有伤害</text>
+                        <text for="L41">你靠着我的肩膀 你在我胸口睡着</text>
+                        <text for="L42">像这样的生活 我爱你 你爱我</text>
+                    </translation>
+                </translations>
+                <transliterations>
+                    <transliteration xml:lang="zh-Latn-pinyin">
+                        <text for="L1">shuo bu shang wei shen me wo bian de hen zhu dong</text>
+                        <text for="L2">ruo ai shang yi ge ren shen me du hui zhi de qu zuo</text>
+                        <text for="L3">wo xiang da sheng xuan bu dui ni yi yi bu she</text>
+                        <text for="L4">lian ge bi lin ju dou cai dao wo xian zai de gan shou</text>
+                        <text for="L5">he bian de feng zai chui zhe tou fa piao dong</text>
+                        <text for="L6">qian zhe ni de shou yi zhen mo ming gan dong</text>
+                        <text for="L7">wo xiang dai ni hui wo de wai po jia</text>
+                        <text for="L8">yi qi kan zhe ri luo yi zhi dao wo men dou shui zhao</text>
+                        <text for="L9">wo xiang jiu zhe yang qian zhe ni de shou bu fang kai</text>
+                        <text for="L10">ai neng bu neng gou yong yuan dan chun mei you bei ai</text>
+                        <text for="L11">wo xiang dai ni qi dan che wo xiang he ni kan bang qiu</text>
+                        <text for="L12">xiang zhe yang mei dan you chang zhe ge yi zhi zou</text>
+                        <text for="L13">wo xiang jiu zhe yang qian zhe ni de shou bu fang kai</text>
+                        <text for="L14">ai ke bu ke yi jian jian dan dan mei you shang hai</text>
+                        <text for="L15">ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao</text>
+                        <text for="L16">xiang zhe yang de sheng huo wo ai ni ni ai wo</text>
+                        <text for="L17">xiang jian jian dan dan ai</text>
+                        <text for="L18">xiang jian jian dan dan ai</text>
+                        <text for="L19">wo xiang da sheng xuan bu dui ni yi yi bu she</text>
+                        <text for="L20">lian ge bi lin ju dou cai dao wo xian zai de gan shou</text>
+                        <text for="L21">he bian de feng zai chui zhe tou fa piao dong</text>
+                        <text for="L22">qian zhe ni de shou yi zhen mo ming gan dong</text>
+                        <text for="L23">wo xiang dai ni hui wo de wai po jia</text>
+                        <text for="L24">yi qi kan zhe ri luo yi zhi dao wo men dou shui zhao</text>
+                        <text for="L25">wo xiang jiu zhe yang qian zhe ni de shou bu fang kai</text>
+                        <text for="L26">ai neng bu neng gou yong yuan dan chun mei you bei ai</text>
+                        <text for="L27">wo xiang dai ni qi dan che wo xiang he ni kan bang qiu</text>
+                        <text for="L28">xiang zhe yang mei dan you chang zhe ge yi zhi zou</text>
+                        <text for="L29">wo xiang jiu zhe yang qian zhe ni de shou bu fang kai</text>
+                        <text for="L30">ai ke bu ke yi jian jian dan dan mei you shang hai</text>
+                        <text for="L31">ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao</text>
+                        <text for="L32">xiang zhe yang de sheng huo wo ai ni ni ai wo</text>
+                        <text for="L33">xiang jian jian dan dan ai</text>
+                        <text for="L34">xiang jian jian dan dan ai</text>
+                        <text for="L35">wo xiang jiu zhe yang qian zhe ni de shou bu fang kai</text>
+                        <text for="L36">ai neng bu neng gou yong yuan dan chun mei you bei ai</text>
+                        <text for="L37">wo xiang dai ni qi dan che wo xiang he ni kan bang qiu</text>
+                        <text for="L38">xiang zhe yang mei dan you chang zhe ge yi zhi zou</text>
+                        <text for="L39">wo xiang jiu zhe yang qian zhe ni de shou bu fang kai</text>
+                        <text for="L40">ai ke bu ke yi jian jian dan dan mei you shang hai</text>
+                        <text for="L41">ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao</text>
+                        <text for="L42">xiang zhe yang de sheng huo wo ai ni ni ai wo</text>
+                    </transliteration>
+                </transliterations>
+                <songwriters>
+                    <songwriter>周杰倫</songwriter>
+                    <songwriter>徐若瑄</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="4:13.905">
+        <div begin="26.663" end="46.202" itunes:songPart="Verse">
+            <p begin="26.663" end="31.477" itunes:key="L1" ttm:agent="v1">說不上為什麼 我變得很主動</p>
+            <p begin="31.673" end="36.245" itunes:key="L2" ttm:agent="v1">若愛上一個人 什麼都會值得去做</p>
+            <p begin="36.622" end="41.280" itunes:key="L3" ttm:agent="v1">我想大聲宣佈 對妳依依不捨</p>
+            <p begin="41.541" end="46.202" itunes:key="L4" ttm:agent="v1">連隔壁鄰居都 猜到我現在的感受</p>
+        </div>
+        <div begin="46.495" end="1:06.128" itunes:songPart="Verse">
+            <p begin="46.495" end="51.272" itunes:key="L5" ttm:agent="v1">河邊的風在吹著頭髮 飄動</p>
+            <p begin="51.472" end="56.200" itunes:key="L6" ttm:agent="v1">牽著妳的手一陣莫名感動</p>
+            <p begin="56.396" end="1:00.192" itunes:key="L7" ttm:agent="v1">我想帶妳回我的外婆家</p>
+            <p begin="1:00.196" end="1:06.128" itunes:key="L8" ttm:agent="v1">一起看著日落 一直到我們都睡著</p>
+        </div>
+        <div begin="1:06.350" end="1:25.739" itunes:songPart="Chorus">
+            <p begin="1:06.350" end="1:10.943" itunes:key="L9" ttm:agent="v1">我想就這樣牽著妳的手不放開</p>
+            <p begin="1:11.278" end="1:15.908" itunes:key="L10" ttm:agent="v1">愛能不能夠永遠單純沒有悲哀</p>
+            <p begin="1:15.894" end="1:20.898" itunes:key="L11" ttm:agent="v1">我想帶妳騎單車 我想和妳看棒球</p>
+            <p begin="1:21.397" end="1:25.739" itunes:key="L12" ttm:agent="v1">想這樣沒擔憂唱著歌一直走</p>
+        </div>
+        <div begin="1:26.116" end="1:45.480" itunes:songPart="Chorus">
+            <p begin="1:26.116" end="1:30.754" itunes:key="L13" ttm:agent="v1">我想就這樣牽著妳的手不放開</p>
+            <p begin="1:31.030" end="1:35.666" itunes:key="L14" ttm:agent="v1">愛可不可以簡簡單單沒有傷害</p>
+            <p begin="1:35.737" end="1:40.683" itunes:key="L15" ttm:agent="v1">妳靠著我的肩膀 妳在我胸口睡著</p>
+            <p begin="1:41.188" end="1:45.480" itunes:key="L16" ttm:agent="v1">像這樣的生活 我愛妳 妳愛我</p>
+        </div>
+        <div begin="1:45.532" end="2:02.444" itunes:songPart="Bridge">
+            <p begin="1:45.532" end="1:52.802" itunes:key="L17" ttm:agent="v1">想 簡簡單單愛</p>
+            <p begin="1:55.437" end="2:02.444" itunes:key="L18" ttm:agent="v1">想 簡簡單單愛</p>
+        </div>
+        <div begin="2:05.710" end="2:15.385" itunes:songPart="Verse">
+            <p begin="2:05.710" end="2:10.395" itunes:key="L19" ttm:agent="v1">我想大聲宣佈 對妳依依不捨</p>
+            <p begin="2:10.646" end="2:15.385" itunes:key="L20" ttm:agent="v1">連隔壁鄰居都 猜到我現在的感受</p>
+        </div>
+        <div begin="2:15.579" end="2:35.065" itunes:songPart="Verse">
+            <p begin="2:15.579" end="2:20.266" itunes:key="L21" ttm:agent="v1">河邊的風在吹著頭髮飄動</p>
+            <p begin="2:20.503" end="2:25.280" itunes:key="L22" ttm:agent="v1">牽著妳的手一陣莫名感動</p>
+            <p begin="2:25.501" end="2:29.273" itunes:key="L23" ttm:agent="v1">我想帶妳回我的外婆家</p>
+            <p begin="2:29.280" end="2:35.065" itunes:key="L24" ttm:agent="v1">一起看著日落 一直到我們都睡著</p>
+        </div>
+        <div begin="2:35.421" end="2:54.897" itunes:songPart="Chorus">
+            <p begin="2:35.421" end="2:39.955" itunes:key="L25" ttm:agent="v1">我想就這樣牽著妳的手不放開</p>
+            <p begin="2:40.344" end="2:44.876" itunes:key="L26" ttm:agent="v1">愛能不能夠永遠單純沒有悲哀</p>
+            <p begin="2:44.978" end="2:50.002" itunes:key="L27" ttm:agent="v1">我想帶妳騎單車 我想和妳看棒球</p>
+            <p begin="2:50.503" end="2:54.897" itunes:key="L28" ttm:agent="v1">想這樣沒擔憂唱著歌一直走</p>
+        </div>
+        <div begin="2:55.187" end="3:14.467" itunes:songPart="Chorus">
+            <p begin="2:55.187" end="2:59.746" itunes:key="L29" ttm:agent="v1">我想就這樣牽著妳的手不放開</p>
+            <p begin="3:00.081" end="3:04.679" itunes:key="L30" ttm:agent="v1">愛可不可以簡簡單單沒有傷害</p>
+            <p begin="3:04.761" end="3:09.781" itunes:key="L31" ttm:agent="v1">妳靠著我的肩膀 妳在我胸口睡著</p>
+            <p begin="3:10.289" end="3:14.467" itunes:key="L32" ttm:agent="v1">像這樣的生活 我愛妳 妳愛我</p>
+        </div>
+        <div begin="3:14.666" end="3:34.389" itunes:songPart="Bridge">
+            <p begin="3:14.666" end="3:24.437" itunes:key="L33" ttm:agent="v1">想 簡簡單單愛</p>
+            <p begin="3:24.516" end="3:34.389" itunes:key="L34" ttm:agent="v1">想 簡簡單單愛</p>
+        </div>
+        <div begin="3:34.783" end="3:54.227" itunes:songPart="Chorus">
+            <p begin="3:34.783" end="3:39.389" itunes:key="L35" ttm:agent="v1">我想就這樣牽著妳的手不放開</p>
+            <p begin="3:39.714" end="3:44.281" itunes:key="L36" ttm:agent="v1">愛能不能夠永遠單純沒有悲哀</p>
+            <p begin="3:44.328" end="3:49.344" itunes:key="L37" ttm:agent="v1">我想帶妳騎單車 我想和妳看棒球</p>
+            <p begin="3:49.906" end="3:54.227" itunes:key="L38" ttm:agent="v1">想這樣沒擔憂唱著歌一直走</p>
+        </div>
+        <div begin="3:54.587" end="4:13.905" itunes:songPart="Chorus">
+            <p begin="3:54.587" end="3:59.120" itunes:key="L39" ttm:agent="v1">我想就這樣牽著妳的手不放開</p>
+            <p begin="3:59.512" end="4:04.077" itunes:key="L40" ttm:agent="v1">愛可不可以簡簡單單沒有傷害</p>
+            <p begin="4:04.103" end="4:09.146" itunes:key="L41" ttm:agent="v1">妳靠著我的肩膀 妳在我胸口睡著</p>
+            <p begin="4:09.702" end="4:13.905" itunes:key="L42" ttm:agent="v1">像這樣的生活 我愛妳 妳愛我</p>
+        </div>
+    </body>
+</tt>

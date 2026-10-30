@@ -1,0 +1,5872 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/Red Velvet - Psycho.ttml
+---
+{
+	"metadata": {
+		"language": "ko",
+		"timingMode": "Word",
+		"songwriters": [
+			"Andrew Scott",
+			"Cazzi Opeia",
+			"EJAE",
+			"Kenzie"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type": "person"
+			}
+		}
+	},
+	"lines": [
+		{
+			"text": "Psycho",
+			"startTime": 12026,
+			"endTime": 12999,
+			"words": [
+				{
+					"text": "Psycho",
+					"startTime": 12026,
+					"endTime": 12999
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Psycho",
+					"words": [
+						{
+							"text": "Psycho",
+							"startTime": 12026,
+							"endTime": 12999
+						}
+					]
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Intro",
+			"blockIndex": 1
+		},
+		{
+			"text": "널 어쩌면 좋을까",
+			"startTime": 13271,
+			"endTime": 15601,
+			"words": [
+				{
+					"text": "널",
+					"startTime": 13271,
+					"endTime": 13473,
+					"endsWithSpace": true
+				},
+				{
+					"text": "어쩌면",
+					"startTime": 13512,
+					"endTime": 14119,
+					"endsWithSpace": true
+				},
+				{
+					"text": "좋을까",
+					"startTime": 14215,
+					"endTime": 15601
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "该拿你怎么办呢"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neol eo jjeo myeon jo eul kka",
+					"words": [
+						{
+							"text": "neol",
+							"startTime": 13271,
+							"endTime": 13473,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eo jjeo myeon",
+							"startTime": 13512,
+							"endTime": 14119,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jo eul kka",
+							"startTime": 14215,
+							"endTime": 15601
+						}
+					]
+				}
+			],
+			"id": "L2",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "이런 맘은 또 첨이라",
+			"startTime": 16495,
+			"endTime": 18925,
+			"words": [
+				{
+					"text": "이런",
+					"startTime": 16495,
+					"endTime": 16905,
+					"endsWithSpace": true
+				},
+				{
+					"text": "맘은",
+					"startTime": 16961,
+					"endTime": 17246,
+					"endsWithSpace": true
+				},
+				{
+					"text": "또",
+					"startTime": 17335,
+					"endTime": 17568,
+					"endsWithSpace": true
+				},
+				{
+					"text": "첨이라",
+					"startTime": 17627,
+					"endTime": 18925
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "这种心情还是第一次"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "i reon ma meun tto cheo mi ra",
+					"words": [
+						{
+							"text": "i reon",
+							"startTime": 16495,
+							"endTime": 16905,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ma meun",
+							"startTime": 16961,
+							"endTime": 17246,
+							"endsWithSpace": true
+						},
+						{
+							"text": "tto",
+							"startTime": 17335,
+							"endTime": 17568,
+							"endsWithSpace": true
+						},
+						{
+							"text": "cheo mi ra",
+							"startTime": 17627,
+							"endTime": 18925
+						}
+					]
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "Up and down이 좀 심해",
+			"startTime": 19665,
+			"endTime": 21802,
+			"words": [
+				{
+					"text": "Up",
+					"startTime": 19665,
+					"endTime": 19852,
+					"endsWithSpace": true
+				},
+				{
+					"text": "and",
+					"startTime": 19894,
+					"endTime": 20144,
+					"endsWithSpace": true
+				},
+				{
+					"text": "down",
+					"startTime": 20193,
+					"endTime": 20422
+				},
+				{
+					"text": "이",
+					"startTime": 20523,
+					"endTime": 20748,
+					"endsWithSpace": true
+				},
+				{
+					"text": "좀",
+					"startTime": 20748,
+					"endTime": 20944,
+					"endsWithSpace": true
+				},
+				{
+					"text": "심해",
+					"startTime": 20944,
+					"endTime": 21802
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Up and down 有些严重"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Up and down i jom sim hae",
+					"words": [
+						{
+							"text": "Up",
+							"startTime": 19665,
+							"endTime": 19852,
+							"endsWithSpace": true
+						},
+						{
+							"text": "and",
+							"startTime": 19894,
+							"endTime": 20144,
+							"endsWithSpace": true
+						},
+						{
+							"text": "down",
+							"startTime": 20193,
+							"endTime": 20422,
+							"endsWithSpace": true
+						},
+						{
+							"text": "i",
+							"startTime": 20523,
+							"endTime": 20748,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jom",
+							"startTime": 20748,
+							"endTime": 20944,
+							"endsWithSpace": true
+						},
+						{
+							"text": "sim hae",
+							"startTime": 20944,
+							"endTime": 21802
+						}
+					]
+				}
+			],
+			"id": "L4",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "조절이 자꾸 잘 안 돼",
+			"startTime": 21616,
+			"endTime": 23375,
+			"words": [
+				{
+					"text": "조절이",
+					"startTime": 21616,
+					"endTime": 22184,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 22294,
+					"endTime": 22477,
+					"endsWithSpace": true
+				},
+				{
+					"text": "잘",
+					"startTime": 22528,
+					"endTime": 22684,
+					"endsWithSpace": true
+				},
+				{
+					"text": "안",
+					"startTime": 22703,
+					"endTime": 22974,
+					"endsWithSpace": true
+				},
+				{
+					"text": "돼",
+					"startTime": 22974,
+					"endTime": 23375
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "总是控制不好"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "jo jeo ri ja kku jal an dwae",
+					"words": [
+						{
+							"text": "jo jeo ri",
+							"startTime": 21616,
+							"endTime": 22184,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 22294,
+							"endTime": 22477,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jal",
+							"startTime": 22528,
+							"endTime": 22684,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an",
+							"startTime": 22703,
+							"endTime": 22974,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dwae",
+							"startTime": 22974,
+							"endTime": 23375
+						}
+					]
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "하나 확실한 건",
+			"startTime": 23449,
+			"endTime": 25350,
+			"words": [
+				{
+					"text": "하나",
+					"startTime": 23449,
+					"endTime": 24273,
+					"endsWithSpace": true
+				},
+				{
+					"text": "확실한",
+					"startTime": 24321,
+					"endTime": 25032,
+					"endsWithSpace": true
+				},
+				{
+					"text": "건",
+					"startTime": 25032,
+					"endTime": 25350
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "唯一确定的是"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ha na hwak sil han geon",
+					"words": [
+						{
+							"text": "ha na",
+							"startTime": 23449,
+							"endTime": 24273,
+							"endsWithSpace": true
+						},
+						{
+							"text": "hwak sil han",
+							"startTime": 24321,
+							"endTime": 25032,
+							"endsWithSpace": true
+						},
+						{
+							"text": "geon",
+							"startTime": 25032,
+							"endTime": 25350
+						}
+					]
+				}
+			],
+			"id": "L6",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "I don't play the game",
+			"startTime": 25208,
+			"endTime": 26490,
+			"words": [
+				{
+					"text": "I",
+					"startTime": 25208,
+					"endTime": 25388,
+					"endsWithSpace": true
+				},
+				{
+					"text": "don't",
+					"startTime": 25388,
+					"endTime": 25681,
+					"endsWithSpace": true
+				},
+				{
+					"text": "play",
+					"startTime": 25681,
+					"endTime": 25917,
+					"endsWithSpace": true
+				},
+				{
+					"text": "the",
+					"startTime": 25917,
+					"endTime": 26160,
+					"endsWithSpace": true
+				},
+				{
+					"text": "game",
+					"startTime": 26160,
+					"endTime": 26490
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "I don't play the game"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "I don't play the game",
+					"words": [
+						{
+							"text": "I",
+							"startTime": 25208,
+							"endTime": 25388,
+							"endsWithSpace": true
+						},
+						{
+							"text": "don't",
+							"startTime": 25388,
+							"endTime": 25681,
+							"endsWithSpace": true
+						},
+						{
+							"text": "play",
+							"startTime": 25681,
+							"endTime": 25917,
+							"endsWithSpace": true
+						},
+						{
+							"text": "the",
+							"startTime": 25917,
+							"endTime": 26160,
+							"endsWithSpace": true
+						},
+						{
+							"text": "game",
+							"startTime": 26160,
+							"endTime": 26490
+						}
+					]
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "우리 진짜 별나대",
+			"startTime": 26895,
+			"endTime": 29740,
+			"words": [
+				{
+					"text": "우리",
+					"startTime": 26895,
+					"endTime": 27411,
+					"endsWithSpace": true
+				},
+				{
+					"text": "진짜",
+					"startTime": 27411,
+					"endTime": 27832,
+					"endsWithSpace": true
+				},
+				{
+					"text": "별",
+					"startTime": 27832,
+					"endTime": 28235
+				},
+				{
+					"text": "나",
+					"startTime": 28235,
+					"endTime": 28520
+				},
+				{
+					"text": "대",
+					"startTime": 28520,
+					"endTime": 29740
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们很奇怪"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ri jin jja byeol na dae",
+					"words": [
+						{
+							"text": "u ri",
+							"startTime": 26895,
+							"endTime": 27411,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jin jja",
+							"startTime": 27411,
+							"endTime": 27832,
+							"endsWithSpace": true
+						},
+						{
+							"text": "byeol",
+							"startTime": 27832,
+							"endTime": 28235,
+							"endsWithSpace": true
+						},
+						{
+							"text": "na",
+							"startTime": 28235,
+							"endTime": 28520,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dae",
+							"startTime": 28520,
+							"endTime": 29740
+						}
+					]
+				}
+			],
+			"id": "L8",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "그냥 내가 너무 좋아해",
+			"startTime": 30015,
+			"endTime": 33149,
+			"words": [
+				{
+					"text": "그냥",
+					"startTime": 30015,
+					"endTime": 30489,
+					"endsWithSpace": true
+				},
+				{
+					"text": "내가",
+					"startTime": 30489,
+					"endTime": 30916,
+					"endsWithSpace": true
+				},
+				{
+					"text": "너무",
+					"startTime": 30916,
+					"endTime": 31280,
+					"endsWithSpace": true
+				},
+				{
+					"text": "좋",
+					"startTime": 31280,
+					"endTime": 31736
+				},
+				{
+					"text": "아",
+					"startTime": 31736,
+					"endTime": 32102
+				},
+				{
+					"text": "해",
+					"startTime": 32102,
+					"endTime": 33149
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我就是太喜欢你了"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "geu nyang nae ga neo mu jo a hae",
+					"words": [
+						{
+							"text": "geu nyang",
+							"startTime": 30015,
+							"endTime": 30489,
+							"endsWithSpace": true
+						},
+						{
+							"text": "nae ga",
+							"startTime": 30489,
+							"endTime": 30916,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neo mu",
+							"startTime": 30916,
+							"endTime": 31280,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jo",
+							"startTime": 31280,
+							"endTime": 31736,
+							"endsWithSpace": true
+						},
+						{
+							"text": "a",
+							"startTime": 31736,
+							"endTime": 32102,
+							"endsWithSpace": true
+						},
+						{
+							"text": "hae",
+							"startTime": 32102,
+							"endTime": 33149
+						}
+					]
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "넌 그걸 너무 잘 알고",
+			"startTime": 33365,
+			"endTime": 35327,
+			"words": [
+				{
+					"text": "넌",
+					"startTime": 33365,
+					"endTime": 33602,
+					"endsWithSpace": true
+				},
+				{
+					"text": "그걸",
+					"startTime": 33602,
+					"endTime": 34013,
+					"endsWithSpace": true
+				},
+				{
+					"text": "너무",
+					"startTime": 34013,
+					"endTime": 34425,
+					"endsWithSpace": true
+				},
+				{
+					"text": "잘",
+					"startTime": 34425,
+					"endTime": 34753,
+					"endsWithSpace": true
+				},
+				{
+					"text": "알고",
+					"startTime": 34753,
+					"endTime": 35327
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你又太清楚这一点"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neon geu geol neo mu jal al go",
+					"words": [
+						{
+							"text": "neon",
+							"startTime": 33365,
+							"endTime": 33602,
+							"endsWithSpace": true
+						},
+						{
+							"text": "geu geol",
+							"startTime": 33602,
+							"endTime": 34013,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neo mu",
+							"startTime": 34013,
+							"endTime": 34425,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jal",
+							"startTime": 34425,
+							"endTime": 34753,
+							"endsWithSpace": true
+						},
+						{
+							"text": "al go",
+							"startTime": 34753,
+							"endTime": 35327
+						}
+					]
+				}
+			],
+			"id": "L10",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "날 쥐락펴락해",
+			"startTime": 35337,
+			"endTime": 36839,
+			"words": [
+				{
+					"text": "날",
+					"startTime": 35337,
+					"endTime": 35525,
+					"endsWithSpace": true
+				},
+				{
+					"text": "쥐락",
+					"startTime": 35525,
+					"endTime": 35867
+				},
+				{
+					"text": "펴락",
+					"startTime": 35867,
+					"endTime": 36317
+				},
+				{
+					"text": "해",
+					"startTime": 36317,
+					"endTime": 36839
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "将我玩弄于股掌之间"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "nal jwi rak pyeo rak hae",
+					"words": [
+						{
+							"text": "nal",
+							"startTime": 35337,
+							"endTime": 35525,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jwi rak",
+							"startTime": 35525,
+							"endTime": 35867,
+							"endsWithSpace": true
+						},
+						{
+							"text": "pyeo rak",
+							"startTime": 35867,
+							"endTime": 36317,
+							"endsWithSpace": true
+						},
+						{
+							"text": "hae",
+							"startTime": 36317,
+							"endTime": 36839
+						}
+					]
+				}
+			],
+			"id": "L11",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "나도 마찬가지인 걸",
+			"startTime": 37067,
+			"endTime": 39808,
+			"words": [
+				{
+					"text": "나도",
+					"startTime": 37067,
+					"endTime": 37652,
+					"endsWithSpace": true
+				},
+				{
+					"text": "마찬가지인",
+					"startTime": 37652,
+					"endTime": 39044,
+					"endsWithSpace": true
+				},
+				{
+					"text": "걸",
+					"startTime": 39044,
+					"endTime": 39808
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "而我又何尝不是一样"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "na do ma chan ga ji in geol",
+					"words": [
+						{
+							"text": "na do",
+							"startTime": 37067,
+							"endTime": 37652,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ma chan ga ji in",
+							"startTime": 37652,
+							"endTime": 39044,
+							"endsWithSpace": true
+						},
+						{
+							"text": "geol",
+							"startTime": 39044,
+							"endTime": 39808
+						}
+					]
+				}
+			],
+			"id": "L12",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "우린 참 별나고 이상한 사이야",
+			"startTime": 41631,
+			"endTime": 45859,
+			"words": [
+				{
+					"text": "우린",
+					"startTime": 41631,
+					"endTime": 41982,
+					"endsWithSpace": true
+				},
+				{
+					"text": "참",
+					"startTime": 41982,
+					"endTime": 42275,
+					"endsWithSpace": true
+				},
+				{
+					"text": "별",
+					"startTime": 42275,
+					"endTime": 42444
+				},
+				{
+					"text": "나",
+					"startTime": 42444,
+					"endTime": 42785
+				},
+				{
+					"text": "고",
+					"startTime": 42785,
+					"endTime": 43165,
+					"endsWithSpace": true
+				},
+				{
+					"text": "이",
+					"startTime": 43165,
+					"endTime": 43370
+				},
+				{
+					"text": "상",
+					"startTime": 43370,
+					"endTime": 43562
+				},
+				{
+					"text": "한",
+					"startTime": 43613,
+					"endTime": 43985,
+					"endsWithSpace": true
+				},
+				{
+					"text": "사이",
+					"startTime": 43985,
+					"endTime": 44845
+				},
+				{
+					"text": "야",
+					"startTime": 44845,
+					"endTime": 45859
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们真是离奇又古怪的关系"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin cham byeol na go i sang han sa i ya",
+					"words": [
+						{
+							"text": "u rin",
+							"startTime": 41631,
+							"endTime": 41982,
+							"endsWithSpace": true
+						},
+						{
+							"text": "cham",
+							"startTime": 41982,
+							"endTime": 42275,
+							"endsWithSpace": true
+						},
+						{
+							"text": "byeol",
+							"startTime": 42275,
+							"endTime": 42444,
+							"endsWithSpace": true
+						},
+						{
+							"text": "na",
+							"startTime": 42444,
+							"endTime": 42785,
+							"endsWithSpace": true
+						},
+						{
+							"text": "go",
+							"startTime": 42785,
+							"endTime": 43165,
+							"endsWithSpace": true
+						},
+						{
+							"text": "i",
+							"startTime": 43165,
+							"endTime": 43370,
+							"endsWithSpace": true
+						},
+						{
+							"text": "sang",
+							"startTime": 43370,
+							"endTime": 43562,
+							"endsWithSpace": true
+						},
+						{
+							"text": "han",
+							"startTime": 43613,
+							"endTime": 43985,
+							"endsWithSpace": true
+						},
+						{
+							"text": "sa i",
+							"startTime": 43985,
+							"endTime": 44845,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ya",
+							"startTime": 44845,
+							"endTime": 45859
+						}
+					]
+				}
+			],
+			"id": "L13",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "서로를 부서지게",
+			"startTime": 46659,
+			"endTime": 49598,
+			"words": [
+				{
+					"text": "서로를",
+					"startTime": 46659,
+					"endTime": 47411,
+					"endsWithSpace": true
+				},
+				{
+					"text": "부서지",
+					"startTime": 47411,
+					"endTime": 48119
+				},
+				{
+					"text": "게",
+					"startTime": 48119,
+					"endTime": 48777
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "一次次击碎对方"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro reul bu seo ji ge",
+					"words": [
+						{
+							"text": "seo ro reul",
+							"startTime": 46659,
+							"endTime": 47411,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu seo ji",
+							"startTime": 47411,
+							"endTime": 48119,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ge",
+							"startTime": 48119,
+							"endTime": 48777
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "부서지게",
+				"startTime": 48777,
+				"endTime": 49598,
+				"words": [
+					{
+						"text": "부서지게",
+						"startTime": 48777,
+						"endTime": 49598
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "击碎对方"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "(bu seo ji ge",
+						"words": [
+							{
+								"text": "(bu seo ji ge",
+								"startTime": 48777,
+								"endTime": 49598
+							}
+						]
+					}
+				]
+			},
+			"id": "L14",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "그리곤 또 껴안아",
+			"startTime": 50079,
+			"endTime": 53811,
+			"words": [
+				{
+					"text": "그리곤",
+					"startTime": 50079,
+					"endTime": 50701,
+					"endsWithSpace": true
+				},
+				{
+					"text": "또",
+					"startTime": 50701,
+					"endTime": 51011,
+					"endsWithSpace": true
+				},
+				{
+					"text": "껴안아",
+					"startTime": 51011,
+					"endTime": 51945
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "之后又紧紧拥抱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "geu ri gon tto kkyeo a na",
+					"words": [
+						{
+							"text": "geu ri gon",
+							"startTime": 50079,
+							"endTime": 50701,
+							"endsWithSpace": true
+						},
+						{
+							"text": "tto",
+							"startTime": 50701,
+							"endTime": 51011,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kkyeo a na",
+							"startTime": 51011,
+							"endTime": 51945
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "그리곤 또 껴안아",
+				"startTime": 51945,
+				"endTime": 53811,
+				"words": [
+					{
+						"text": "그리곤",
+						"startTime": 51945,
+						"endTime": 52618,
+						"endsWithSpace": true
+					},
+					{
+						"text": "또",
+						"startTime": 52618,
+						"endTime": 53030,
+						"endsWithSpace": true
+					},
+					{
+						"text": "껴안아",
+						"startTime": 53030,
+						"endTime": 53811
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "之后又紧紧拥抱"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "geu ri gon tto kkyeo a na",
+						"words": [
+							{
+								"text": "geu ri gon",
+								"startTime": 51945,
+								"endTime": 52618,
+								"endsWithSpace": true
+							},
+							{
+								"text": "tto",
+								"startTime": 52618,
+								"endTime": 53030,
+								"endsWithSpace": true
+							},
+							{
+								"text": "kkyeo a na",
+								"startTime": 53030,
+								"endTime": 53811
+							}
+						]
+					}
+				]
+			},
+			"id": "L15",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "You got me feeling like a psycho, psycho",
+			"startTime": 53821,
+			"endTime": 57491,
+			"words": [
+				{
+					"text": "You",
+					"startTime": 53821,
+					"endTime": 54048,
+					"endsWithSpace": true
+				},
+				{
+					"text": "got",
+					"startTime": 54048,
+					"endTime": 54236,
+					"endsWithSpace": true
+				},
+				{
+					"text": "me",
+					"startTime": 54236,
+					"endTime": 54430,
+					"endsWithSpace": true
+				},
+				{
+					"text": "feeling",
+					"startTime": 54430,
+					"endTime": 54805,
+					"endsWithSpace": true
+				},
+				{
+					"text": "like",
+					"startTime": 54805,
+					"endTime": 55108,
+					"endsWithSpace": true
+				},
+				{
+					"text": "a",
+					"startTime": 55108,
+					"endTime": 55301,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho,",
+					"startTime": 55350,
+					"endTime": 56561,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho",
+					"startTime": 56561,
+					"endTime": 57491
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "You got me feeling like a psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "You got me feeling like a psycho, psycho",
+					"words": [
+						{
+							"text": "You",
+							"startTime": 53821,
+							"endTime": 54048,
+							"endsWithSpace": true
+						},
+						{
+							"text": "got",
+							"startTime": 54048,
+							"endTime": 54236,
+							"endsWithSpace": true
+						},
+						{
+							"text": "me",
+							"startTime": 54236,
+							"endTime": 54430,
+							"endsWithSpace": true
+						},
+						{
+							"text": "feeling",
+							"startTime": 54430,
+							"endTime": 54805,
+							"endsWithSpace": true
+						},
+						{
+							"text": "like",
+							"startTime": 54805,
+							"endTime": 55108,
+							"endsWithSpace": true
+						},
+						{
+							"text": "a",
+							"startTime": 55108,
+							"endTime": 55301,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho,",
+							"startTime": 55350,
+							"endTime": 56561,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho",
+							"startTime": 56561,
+							"endTime": 57491
+						}
+					]
+				}
+			],
+			"id": "L16",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "우릴 보고 말해 자꾸 자꾸",
+			"startTime": 57535,
+			"endTime": 60761,
+			"words": [
+				{
+					"text": "우릴",
+					"startTime": 57535,
+					"endTime": 57872,
+					"endsWithSpace": true
+				},
+				{
+					"text": "보고",
+					"startTime": 57872,
+					"endTime": 58255,
+					"endsWithSpace": true
+				},
+				{
+					"text": "말해",
+					"startTime": 58255,
+					"endTime": 58738,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 58838,
+					"endTime": 59962,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 59962,
+					"endTime": 60761
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都在说我们 一遍又一遍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ril bo go mal hae ja kku ja kku",
+					"words": [
+						{
+							"text": "u ril",
+							"startTime": 57535,
+							"endTime": 57872,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bo go",
+							"startTime": 57872,
+							"endTime": 58255,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mal hae",
+							"startTime": 58255,
+							"endTime": 58738,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 58838,
+							"endTime": 59962,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 59962,
+							"endTime": 60761
+						}
+					]
+				}
+			],
+			"id": "L17",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "다시 안 볼 듯 싸우다가도 붙어다니니 말야",
+			"startTime": 60980,
+			"endTime": 64977,
+			"words": [
+				{
+					"text": "다시",
+					"startTime": 60980,
+					"endTime": 61391,
+					"endsWithSpace": true
+				},
+				{
+					"text": "안",
+					"startTime": 61391,
+					"endTime": 61615,
+					"endsWithSpace": true
+				},
+				{
+					"text": "볼",
+					"startTime": 61615,
+					"endTime": 61795,
+					"endsWithSpace": true
+				},
+				{
+					"text": "듯",
+					"startTime": 61872,
+					"endTime": 62045,
+					"endsWithSpace": true
+				},
+				{
+					"text": "싸우다가도",
+					"startTime": 62045,
+					"endTime": 63143,
+					"endsWithSpace": true
+				},
+				{
+					"text": "붙어다니니",
+					"startTime": 63444,
+					"endTime": 64304,
+					"endsWithSpace": true
+				},
+				{
+					"text": "말야",
+					"startTime": 64391,
+					"endTime": 64977
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "吵架时就像水火不容 一转头却又黏在一起"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya",
+					"words": [
+						{
+							"text": "da si",
+							"startTime": 60980,
+							"endTime": 61391,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an",
+							"startTime": 61391,
+							"endTime": 61615,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bol",
+							"startTime": 61615,
+							"endTime": 61795,
+							"endsWithSpace": true
+						},
+						{
+							"text": "deut",
+							"startTime": 61872,
+							"endTime": 62045,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ssa u da ga do",
+							"startTime": 62045,
+							"endTime": 63143,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu teo da ni ni",
+							"startTime": 63444,
+							"endTime": 64304,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ma rya",
+							"startTime": 64391,
+							"endTime": 64977
+						}
+					]
+				}
+			],
+			"id": "L18",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "이해가 안 간대 웃기지도 않대",
+			"startTime": 65356,
+			"endTime": 68446,
+			"words": [
+				{
+					"text": "이해가",
+					"startTime": 65356,
+					"endTime": 65938,
+					"endsWithSpace": true
+				},
+				{
+					"text": "안",
+					"startTime": 65938,
+					"endTime": 66203,
+					"endsWithSpace": true
+				},
+				{
+					"text": "간대",
+					"startTime": 66203,
+					"endTime": 66640,
+					"endsWithSpace": true
+				},
+				{
+					"text": "웃기지도",
+					"startTime": 67035,
+					"endTime": 67864,
+					"endsWithSpace": true
+				},
+				{
+					"text": "않대",
+					"startTime": 67864,
+					"endTime": 68446
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说无法理解 一点也不好笑"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "i hae ga an gan dae ut gi ji do an tae",
+					"words": [
+						{
+							"text": "i hae ga",
+							"startTime": 65356,
+							"endTime": 65938,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an",
+							"startTime": 65938,
+							"endTime": 66203,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gan dae",
+							"startTime": 66203,
+							"endTime": 66640,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ut gi ji do",
+							"startTime": 67035,
+							"endTime": 67864,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an tae",
+							"startTime": 67864,
+							"endTime": 68446
+						}
+					]
+				}
+			],
+			"id": "L19",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "맞아 Psycho, psycho",
+			"startTime": 68543,
+			"endTime": 70804,
+			"words": [
+				{
+					"text": "맞아",
+					"startTime": 68543,
+					"endTime": 68959,
+					"endsWithSpace": true
+				},
+				{
+					"text": "Psycho,",
+					"startTime": 68959,
+					"endTime": 69775,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho",
+					"startTime": 70120,
+					"endTime": 70804
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 Psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ma ja Psycho, psycho",
+					"words": [
+						{
+							"text": "ma ja",
+							"startTime": 68543,
+							"endTime": 68959,
+							"endsWithSpace": true
+						},
+						{
+							"text": "Psycho,",
+							"startTime": 68959,
+							"endTime": 69775,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho",
+							"startTime": 70120,
+							"endTime": 70804
+						}
+					]
+				}
+			],
+			"id": "L20",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "서로 좋아 죽는 바보 바보",
+			"startTime": 71177,
+			"endTime": 74437,
+			"words": [
+				{
+					"text": "서로",
+					"startTime": 71177,
+					"endTime": 71604,
+					"endsWithSpace": true
+				},
+				{
+					"text": "좋아",
+					"startTime": 71604,
+					"endTime": 71906,
+					"endsWithSpace": true
+				},
+				{
+					"text": "죽는",
+					"startTime": 71906,
+					"endTime": 72355,
+					"endsWithSpace": true
+				},
+				{
+					"text": "바보",
+					"startTime": 72355,
+					"endTime": 73199,
+					"endsWithSpace": true
+				},
+				{
+					"text": "바보",
+					"startTime": 73636,
+					"endTime": 74437
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱死了对方的傻瓜 傻瓜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro jo a juk neun ba bo ba bo",
+					"words": [
+						{
+							"text": "seo ro",
+							"startTime": 71177,
+							"endTime": 71604,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jo a",
+							"startTime": 71604,
+							"endTime": 71906,
+							"endsWithSpace": true
+						},
+						{
+							"text": "juk neun",
+							"startTime": 71906,
+							"endTime": 72355,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ba bo",
+							"startTime": 72355,
+							"endTime": 73199,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ba bo",
+							"startTime": 73636,
+							"endTime": 74437
+						}
+					]
+				}
+			],
+			"id": "L21",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "너 없인 어지럽고 슬퍼져",
+			"startTime": 74765,
+			"endTime": 76929,
+			"words": [
+				{
+					"text": "너",
+					"startTime": 74765,
+					"endTime": 75053,
+					"endsWithSpace": true
+				},
+				{
+					"text": "없인",
+					"startTime": 75053,
+					"endTime": 75369,
+					"endsWithSpace": true
+				},
+				{
+					"text": "어지럽고",
+					"startTime": 75369,
+					"endTime": 76262,
+					"endsWithSpace": true
+				},
+				{
+					"text": "슬퍼져",
+					"startTime": 76262,
+					"endTime": 76929
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没有你 我会头晕又悲伤"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neo eop sin eo ji reop go seul peo jyeo",
+					"words": [
+						{
+							"text": "neo",
+							"startTime": 74765,
+							"endTime": 75053,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eop sin",
+							"startTime": 75053,
+							"endTime": 75369,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eo ji reop go",
+							"startTime": 75369,
+							"endTime": 76262,
+							"endsWithSpace": true
+						},
+						{
+							"text": "seul peo jyeo",
+							"startTime": 76262,
+							"endTime": 76929
+						}
+					]
+				}
+			],
+			"id": "L22",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "기운도 막 없어요",
+			"startTime": 77122,
+			"endTime": 78648,
+			"words": [
+				{
+					"text": "기운도",
+					"startTime": 77122,
+					"endTime": 77713,
+					"endsWithSpace": true
+				},
+				{
+					"text": "막",
+					"startTime": 77713,
+					"endTime": 77915,
+					"endsWithSpace": true
+				},
+				{
+					"text": "없어요",
+					"startTime": 77915,
+					"endTime": 78648
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "甚至浑身没有力气"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "gi un do mak eop seo yo",
+					"words": [
+						{
+							"text": "gi un do",
+							"startTime": 77122,
+							"endTime": 77713,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mak",
+							"startTime": 77713,
+							"endTime": 77915,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eop seo yo",
+							"startTime": 77915,
+							"endTime": 78648
+						}
+					]
+				}
+			],
+			"id": "L23",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "둘이 잘 만났대",
+			"startTime": 79079,
+			"endTime": 80375,
+			"words": [
+				{
+					"text": "둘이",
+					"startTime": 79079,
+					"endTime": 79544,
+					"endsWithSpace": true
+				},
+				{
+					"text": "잘",
+					"startTime": 79544,
+					"endTime": 79660,
+					"endsWithSpace": true
+				},
+				{
+					"text": "만났대",
+					"startTime": 79660,
+					"endTime": 80375
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们天生一对"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ri jal man nat dae",
+					"words": [
+						{
+							"text": "du ri",
+							"startTime": 79079,
+							"endTime": 79544,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jal",
+							"startTime": 79544,
+							"endTime": 79660,
+							"endsWithSpace": true
+						},
+						{
+							"text": "man nat dae",
+							"startTime": 79660,
+							"endTime": 80375
+						}
+					]
+				}
+			],
+			"id": "L24",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 80966,
+			"endTime": 82103,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 80966,
+					"endTime": 81254,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 81254,
+					"endTime": 81433,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 81509,
+					"endTime": 81628,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 81628,
+					"endTime": 81791,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 81791,
+					"endTime": 82103
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 80966,
+							"endTime": 81254,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 81254,
+							"endTime": 81433,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 81509,
+							"endTime": 81628,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 81628,
+							"endTime": 81791,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 81791,
+							"endTime": 82103
+						}
+					]
+				}
+			],
+			"id": "L25",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "Hey, trouble 경고 따윈 없이 오는 너",
+			"startTime": 82698,
+			"endTime": 85673,
+			"words": [
+				{
+					"text": "Hey,",
+					"startTime": 82698,
+					"endTime": 83123,
+					"endsWithSpace": true
+				},
+				{
+					"text": "trouble",
+					"startTime": 83123,
+					"endTime": 83548,
+					"endsWithSpace": true
+				},
+				{
+					"text": "경고",
+					"startTime": 83652,
+					"endTime": 83973,
+					"endsWithSpace": true
+				},
+				{
+					"text": "따윈",
+					"startTime": 83973,
+					"endTime": 84321,
+					"endsWithSpace": true
+				},
+				{
+					"text": "없이",
+					"startTime": 84321,
+					"endTime": 84660,
+					"endsWithSpace": true
+				},
+				{
+					"text": "오는",
+					"startTime": 84660,
+					"endTime": 85158,
+					"endsWithSpace": true
+				},
+				{
+					"text": "너",
+					"startTime": 85158,
+					"endTime": 85673
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey, trouble 没有预警就走来的你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey, trouble gyeong go tta win eop si o neun neo",
+					"words": [
+						{
+							"text": "Hey,",
+							"startTime": 82698,
+							"endTime": 83123,
+							"endsWithSpace": true
+						},
+						{
+							"text": "trouble",
+							"startTime": 83123,
+							"endTime": 83548,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gyeong go",
+							"startTime": 83652,
+							"endTime": 83973,
+							"endsWithSpace": true
+						},
+						{
+							"text": "tta win",
+							"startTime": 83973,
+							"endTime": 84321,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eop si",
+							"startTime": 84321,
+							"endTime": 84660,
+							"endsWithSpace": true
+						},
+						{
+							"text": "o neun",
+							"startTime": 84660,
+							"endTime": 85158,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neo",
+							"startTime": 85158,
+							"endTime": 85673
+						}
+					]
+				}
+			],
+			"id": "L26",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "I'm original visual",
+			"startTime": 85853,
+			"endTime": 87476,
+			"words": [
+				{
+					"text": "I'm",
+					"startTime": 85853,
+					"endTime": 86146,
+					"endsWithSpace": true
+				},
+				{
+					"text": "original",
+					"startTime": 86146,
+					"endTime": 86852,
+					"endsWithSpace": true
+				},
+				{
+					"text": "visual",
+					"startTime": 86852,
+					"endTime": 87476
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "I'm original visual"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "I'm original visual",
+					"words": [
+						{
+							"text": "I'm",
+							"startTime": 85853,
+							"endTime": 86146,
+							"endsWithSpace": true
+						},
+						{
+							"text": "original",
+							"startTime": 86146,
+							"endTime": 86852,
+							"endsWithSpace": true
+						},
+						{
+							"text": "visual",
+							"startTime": 86852,
+							"endTime": 87476
+						}
+					]
+				}
+			],
+			"id": "L27",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "우린 원래 이랬어 Yeah",
+			"startTime": 87434,
+			"endTime": 89608,
+			"words": [
+				{
+					"text": "우린",
+					"startTime": 87434,
+					"endTime": 87843,
+					"endsWithSpace": true
+				},
+				{
+					"text": "원래",
+					"startTime": 87843,
+					"endTime": 88292,
+					"endsWithSpace": true
+				},
+				{
+					"text": "이랬어",
+					"startTime": 88292,
+					"endTime": 88950,
+					"endsWithSpace": true
+				},
+				{
+					"text": "Yeah",
+					"startTime": 89102,
+					"endTime": 89608
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们本来就这样 Yeah"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin won rae i rae sseo Yeah",
+					"words": [
+						{
+							"text": "u rin",
+							"startTime": 87434,
+							"endTime": 87843,
+							"endsWithSpace": true
+						},
+						{
+							"text": "won rae",
+							"startTime": 87843,
+							"endTime": 88292,
+							"endsWithSpace": true
+						},
+						{
+							"text": "i rae sseo",
+							"startTime": 88292,
+							"endTime": 88950,
+							"endsWithSpace": true
+						},
+						{
+							"text": "Yeah",
+							"startTime": 89102,
+							"endTime": 89608
+						}
+					]
+				}
+			],
+			"id": "L28",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "두렵지는 않아",
+			"startTime": 89673,
+			"endTime": 91382,
+			"words": [
+				{
+					"text": "두렵지는",
+					"startTime": 89673,
+					"endTime": 90054,
+					"endsWithSpace": true
+				},
+				{
+					"text": "않아",
+					"startTime": 90054,
+					"endTime": 90645
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没什么可怕的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ryeop ji neun a na",
+					"words": [
+						{
+							"text": "du ryeop ji neun",
+							"startTime": 89673,
+							"endTime": 90054,
+							"endsWithSpace": true
+						},
+						{
+							"text": "a na",
+							"startTime": 90054,
+							"endTime": 90645
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "흥미로울 뿐",
+				"startTime": 90875,
+				"endTime": 91382,
+				"words": [
+					{
+						"text": "흥미로울",
+						"startTime": 90875,
+						"endTime": 91241,
+						"endsWithSpace": true
+					},
+					{
+						"text": "뿐",
+						"startTime": 91241,
+						"endTime": 91382
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "只觉得有趣"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "heung mi ro ul ppun",
+						"words": [
+							{
+								"text": "heung mi ro ul",
+								"startTime": 90875,
+								"endTime": 91241,
+								"endsWithSpace": true
+							},
+							{
+								"text": "ppun",
+								"startTime": 91241,
+								"endTime": 91382
+							}
+						]
+					}
+				]
+			},
+			"id": "L29",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "It's hot! Let me just hop",
+			"startTime": 91493,
+			"endTime": 92795,
+			"words": [
+				{
+					"text": "It's",
+					"startTime": 91493,
+					"endTime": 91726,
+					"endsWithSpace": true
+				},
+				{
+					"text": "hot!",
+					"startTime": 91726,
+					"endTime": 91899,
+					"endsWithSpace": true
+				},
+				{
+					"text": "Let",
+					"startTime": 92111,
+					"endTime": 92250,
+					"endsWithSpace": true
+				},
+				{
+					"text": "me",
+					"startTime": 92250,
+					"endTime": 92407,
+					"endsWithSpace": true
+				},
+				{
+					"text": "just",
+					"startTime": 92407,
+					"endTime": 92564,
+					"endsWithSpace": true
+				},
+				{
+					"text": "hop",
+					"startTime": 92564,
+					"endTime": 92795
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's hot! Let me just hop"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's hot! Let me just hop",
+					"words": [
+						{
+							"text": "It's",
+							"startTime": 91493,
+							"endTime": 91726,
+							"endsWithSpace": true
+						},
+						{
+							"text": "hot!",
+							"startTime": 91726,
+							"endTime": 91899,
+							"endsWithSpace": true
+						},
+						{
+							"text": "Let",
+							"startTime": 92111,
+							"endTime": 92250,
+							"endsWithSpace": true
+						},
+						{
+							"text": "me",
+							"startTime": 92250,
+							"endTime": 92407,
+							"endsWithSpace": true
+						},
+						{
+							"text": "just",
+							"startTime": 92407,
+							"endTime": 92564,
+							"endsWithSpace": true
+						},
+						{
+							"text": "hop",
+							"startTime": 92564,
+							"endTime": 92795
+						}
+					]
+				}
+			],
+			"id": "L30",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "어떻게 널 다룰까",
+			"startTime": 93086,
+			"endTime": 96538,
+			"words": [
+				{
+					"text": "어떻게",
+					"startTime": 93086,
+					"endTime": 93462,
+					"endsWithSpace": true
+				},
+				{
+					"text": "널",
+					"startTime": 93462,
+					"endTime": 93801,
+					"endsWithSpace": true
+				},
+				{
+					"text": "다룰",
+					"startTime": 93801,
+					"endTime": 94234
+				},
+				{
+					"text": "까",
+					"startTime": 94234,
+					"endTime": 94813
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "该怎么处理你呢"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "eo tteo ke neol da rul kka",
+					"words": [
+						{
+							"text": "eo tteo ke",
+							"startTime": 93086,
+							"endTime": 93462,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neol",
+							"startTime": 93462,
+							"endTime": 93801,
+							"endsWithSpace": true
+						},
+						{
+							"text": "da rul",
+							"startTime": 93801,
+							"endTime": 94234,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kka",
+							"startTime": 94234,
+							"endTime": 94813
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "Ooh, ooh-ooh",
+				"startTime": 95028,
+				"endTime": 96538,
+				"words": [
+					{
+						"text": "Ooh,",
+						"startTime": 95028,
+						"endTime": 95387,
+						"endsWithSpace": true
+					},
+					{
+						"text": "ooh-",
+						"startTime": 95387,
+						"endTime": 95827
+					},
+					{
+						"text": "ooh",
+						"startTime": 95827,
+						"endTime": 96538
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "Ooh, ooh-ooh"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "Ooh, ooh- ooh",
+						"words": [
+							{
+								"text": "Ooh,",
+								"startTime": 95028,
+								"endTime": 95387,
+								"endsWithSpace": true
+							},
+							{
+								"text": "ooh-",
+								"startTime": 95387,
+								"endTime": 95827
+							},
+							{
+								"text": "ooh",
+								"startTime": 95827,
+								"endTime": 96538
+							}
+						]
+					}
+				]
+			},
+			"id": "L31",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "어쩔 줄을 몰라 너를 달래고",
+			"startTime": 95323,
+			"endTime": 98788,
+			"words": [
+				{
+					"text": "어쩔",
+					"startTime": 95323,
+					"endTime": 96035,
+					"endsWithSpace": true
+				},
+				{
+					"text": "줄을",
+					"startTime": 96035,
+					"endTime": 96444,
+					"endsWithSpace": true
+				},
+				{
+					"text": "몰라",
+					"startTime": 96444,
+					"endTime": 97095,
+					"endsWithSpace": true
+				},
+				{
+					"text": "너를",
+					"startTime": 97253,
+					"endTime": 97788,
+					"endsWithSpace": true
+				},
+				{
+					"text": "달래",
+					"startTime": 97788,
+					"endTime": 98114
+				},
+				{
+					"text": "고",
+					"startTime": 98114,
+					"endTime": 98788
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "不知所措地哄你开心"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "eo jjeol ju reul mol ra neo reul dal rae go",
+					"words": [
+						{
+							"text": "eo jjeol",
+							"startTime": 95323,
+							"endTime": 96035,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ju reul",
+							"startTime": 96035,
+							"endTime": 96444,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mol ra",
+							"startTime": 96444,
+							"endTime": 97095,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neo reul",
+							"startTime": 97253,
+							"endTime": 97788,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dal rae",
+							"startTime": 97788,
+							"endTime": 98114,
+							"endsWithSpace": true
+						},
+						{
+							"text": "go",
+							"startTime": 98114,
+							"endTime": 98788
+						}
+					]
+				}
+			],
+			"id": "L32",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "매섭게 발로 차도",
+			"startTime": 98687,
+			"endTime": 100300,
+			"words": [
+				{
+					"text": "매섭게",
+					"startTime": 98687,
+					"endTime": 99452,
+					"endsWithSpace": true
+				},
+				{
+					"text": "발로",
+					"startTime": 99452,
+					"endTime": 99783,
+					"endsWithSpace": true
+				},
+				{
+					"text": "차도",
+					"startTime": 99783,
+					"endTime": 100300
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "就算我发狠踢你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "mae seop ge bal ro cha do",
+					"words": [
+						{
+							"text": "mae seop ge",
+							"startTime": 98687,
+							"endTime": 99452,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bal ro",
+							"startTime": 99452,
+							"endTime": 99783,
+							"endsWithSpace": true
+						},
+						{
+							"text": "cha do",
+							"startTime": 99783,
+							"endTime": 100300
+						}
+					]
+				}
+			],
+			"id": "L33",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "가끔 내게 미소 짓는 널",
+			"startTime": 100623,
+			"endTime": 104089,
+			"words": [
+				{
+					"text": "가끔",
+					"startTime": 100623,
+					"endTime": 101105,
+					"endsWithSpace": true
+				},
+				{
+					"text": "내게",
+					"startTime": 101105,
+					"endTime": 101477,
+					"endsWithSpace": true
+				},
+				{
+					"text": "미소",
+					"startTime": 101477,
+					"endTime": 102240,
+					"endsWithSpace": true
+				},
+				{
+					"text": "짓는",
+					"startTime": 102408,
+					"endTime": 103201,
+					"endsWithSpace": true
+				},
+				{
+					"text": "널",
+					"startTime": 103201,
+					"endTime": 104089
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你也会不时对我微笑"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ga kkeum nae ge mi so jit neun neol",
+					"words": [
+						{
+							"text": "ga kkeum",
+							"startTime": 100623,
+							"endTime": 101105,
+							"endsWithSpace": true
+						},
+						{
+							"text": "nae ge",
+							"startTime": 101105,
+							"endTime": 101477,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mi so",
+							"startTime": 101477,
+							"endTime": 102240,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jit neun",
+							"startTime": 102408,
+							"endTime": 103201,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neol",
+							"startTime": 103201,
+							"endTime": 104089
+						}
+					]
+				}
+			],
+			"id": "L34",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "어떻게 놓겠어 Ooh-ooh",
+			"startTime": 104728,
+			"endTime": 109453,
+			"words": [
+				{
+					"text": "어떻게",
+					"startTime": 104728,
+					"endTime": 105715,
+					"endsWithSpace": true
+				},
+				{
+					"text": "놓겠",
+					"startTime": 105715,
+					"endTime": 106662
+				},
+				{
+					"text": "어",
+					"startTime": 106662,
+					"endTime": 107522,
+					"endsWithSpace": true
+				},
+				{
+					"text": "Ooh-",
+					"startTime": 107766,
+					"endTime": 108272
+				},
+				{
+					"text": "ooh",
+					"startTime": 108272,
+					"endTime": 109453
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "这让我怎能放手 Ooh-ooh"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "eo tteo ke no ke sseo Ooh- ooh",
+					"words": [
+						{
+							"text": "eo tteo ke",
+							"startTime": 104728,
+							"endTime": 105715,
+							"endsWithSpace": true
+						},
+						{
+							"text": "no ke",
+							"startTime": 105715,
+							"endTime": 106662,
+							"endsWithSpace": true
+						},
+						{
+							"text": "sseo",
+							"startTime": 106662,
+							"endTime": 107522,
+							"endsWithSpace": true
+						},
+						{
+							"text": "Ooh-",
+							"startTime": 107766,
+							"endTime": 108272
+						},
+						{
+							"text": "ooh",
+							"startTime": 108272,
+							"endTime": 109453
+						}
+					]
+				}
+			],
+			"id": "L35",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "우린 아름답고 참 슬픈 사이야",
+			"startTime": 110164,
+			"endTime": 113840,
+			"words": [
+				{
+					"text": "우린",
+					"startTime": 110164,
+					"endTime": 110544,
+					"endsWithSpace": true
+				},
+				{
+					"text": "아름답",
+					"startTime": 110544,
+					"endTime": 111182
+				},
+				{
+					"text": "고",
+					"startTime": 111344,
+					"endTime": 111697,
+					"endsWithSpace": true
+				},
+				{
+					"text": "참",
+					"startTime": 111697,
+					"endTime": 111856,
+					"endsWithSpace": true
+				},
+				{
+					"text": "슬",
+					"startTime": 111856,
+					"endTime": 112162
+				},
+				{
+					"text": "픈",
+					"startTime": 112207,
+					"endTime": 112533,
+					"endsWithSpace": true
+				},
+				{
+					"text": "사이야",
+					"startTime": 112702,
+					"endTime": 113840
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们真是美丽又悲伤的关系"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin a reum dap go cham seul peun sa i ya",
+					"words": [
+						{
+							"text": "u rin",
+							"startTime": 110164,
+							"endTime": 110544,
+							"endsWithSpace": true
+						},
+						{
+							"text": "a reum dap",
+							"startTime": 110544,
+							"endTime": 111182,
+							"endsWithSpace": true
+						},
+						{
+							"text": "go",
+							"startTime": 111344,
+							"endTime": 111697,
+							"endsWithSpace": true
+						},
+						{
+							"text": "cham",
+							"startTime": 111697,
+							"endTime": 111856,
+							"endsWithSpace": true
+						},
+						{
+							"text": "seul",
+							"startTime": 111856,
+							"endTime": 112162,
+							"endsWithSpace": true
+						},
+						{
+							"text": "peun",
+							"startTime": 112207,
+							"endTime": 112533,
+							"endsWithSpace": true
+						},
+						{
+							"text": "sa i ya",
+							"startTime": 112702,
+							"endTime": 113840
+						}
+					]
+				}
+			],
+			"id": "L36",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "서로를 빛나게 해",
+			"startTime": 115191,
+			"endTime": 118056,
+			"words": [
+				{
+					"text": "서로를",
+					"startTime": 115191,
+					"endTime": 115878,
+					"endsWithSpace": true
+				},
+				{
+					"text": "빛나게",
+					"startTime": 115878,
+					"endTime": 116477,
+					"endsWithSpace": true
+				},
+				{
+					"text": "해",
+					"startTime": 116477,
+					"endTime": 117108
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "让彼此闪耀光芒"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro reul bit na ge hae",
+					"words": [
+						{
+							"text": "seo ro reul",
+							"startTime": 115191,
+							"endTime": 115878,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bit na ge",
+							"startTime": 115878,
+							"endTime": 116477,
+							"endsWithSpace": true
+						},
+						{
+							"text": "hae",
+							"startTime": 116477,
+							"endTime": 117108
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "Tell me now",
+				"startTime": 117108,
+				"endTime": 118056,
+				"words": [
+					{
+						"text": "Tell",
+						"startTime": 117108,
+						"endTime": 117317,
+						"endsWithSpace": true
+					},
+					{
+						"text": "me",
+						"startTime": 117317,
+						"endTime": 117501,
+						"endsWithSpace": true
+					},
+					{
+						"text": "now",
+						"startTime": 117501,
+						"endTime": 118056
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "Tell me now"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "Tell me now",
+						"words": [
+							{
+								"text": "Tell",
+								"startTime": 117108,
+								"endTime": 117317,
+								"endsWithSpace": true
+							},
+							{
+								"text": "me",
+								"startTime": 117317,
+								"endTime": 117501,
+								"endsWithSpace": true
+							},
+							{
+								"text": "now",
+								"startTime": 117501,
+								"endTime": 118056
+							}
+						]
+					}
+				]
+			},
+			"id": "L37",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "마치 달과 강처럼 그리곤 또 껴안아",
+			"startTime": 118697,
+			"endTime": 122533,
+			"words": [
+				{
+					"text": "마치",
+					"startTime": 118697,
+					"endTime": 119174,
+					"endsWithSpace": true
+				},
+				{
+					"text": "달과",
+					"startTime": 119174,
+					"endTime": 119505,
+					"endsWithSpace": true
+				},
+				{
+					"text": "강처럼",
+					"startTime": 119505,
+					"endTime": 120198,
+					"endsWithSpace": true
+				},
+				{
+					"text": "그리곤",
+					"startTime": 120293,
+					"endTime": 121258,
+					"endsWithSpace": true
+				},
+				{
+					"text": "또",
+					"startTime": 121258,
+					"endTime": 121645,
+					"endsWithSpace": true
+				},
+				{
+					"text": "껴안아",
+					"startTime": 121645,
+					"endTime": 122533
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "就像月亮和江水 之后又紧紧拥抱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ma chi dal gwa gang cheo reom geu ri gon tto kkyeo a na",
+					"words": [
+						{
+							"text": "ma chi",
+							"startTime": 118697,
+							"endTime": 119174,
+							"endsWithSpace": true
+						},
+						{
+							"text": "dal gwa",
+							"startTime": 119174,
+							"endTime": 119505,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gang cheo reom",
+							"startTime": 119505,
+							"endTime": 120198,
+							"endsWithSpace": true
+						},
+						{
+							"text": "geu ri gon",
+							"startTime": 120293,
+							"endTime": 121258,
+							"endsWithSpace": true
+						},
+						{
+							"text": "tto",
+							"startTime": 121258,
+							"endTime": 121645,
+							"endsWithSpace": true
+						},
+						{
+							"text": "kkyeo a na",
+							"startTime": 121645,
+							"endTime": 122533
+						}
+					]
+				}
+			],
+			"id": "L38",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "You got me feeling like a psycho, psycho",
+			"startTime": 122365,
+			"endTime": 126066,
+			"words": [
+				{
+					"text": "You",
+					"startTime": 122365,
+					"endTime": 122614,
+					"endsWithSpace": true
+				},
+				{
+					"text": "got",
+					"startTime": 122614,
+					"endTime": 122874,
+					"endsWithSpace": true
+				},
+				{
+					"text": "me",
+					"startTime": 122874,
+					"endTime": 123089,
+					"endsWithSpace": true
+				},
+				{
+					"text": "feeling",
+					"startTime": 123089,
+					"endTime": 123423,
+					"endsWithSpace": true
+				},
+				{
+					"text": "like",
+					"startTime": 123423,
+					"endTime": 123727,
+					"endsWithSpace": true
+				},
+				{
+					"text": "a",
+					"startTime": 123727,
+					"endTime": 123893,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho,",
+					"startTime": 123893,
+					"endTime": 124895,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho",
+					"startTime": 125136,
+					"endTime": 126066
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "You got me feeling like a psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "You got me feeling like a psycho, psycho",
+					"words": [
+						{
+							"text": "You",
+							"startTime": 122365,
+							"endTime": 122614,
+							"endsWithSpace": true
+						},
+						{
+							"text": "got",
+							"startTime": 122614,
+							"endTime": 122874,
+							"endsWithSpace": true
+						},
+						{
+							"text": "me",
+							"startTime": 122874,
+							"endTime": 123089,
+							"endsWithSpace": true
+						},
+						{
+							"text": "feeling",
+							"startTime": 123089,
+							"endTime": 123423,
+							"endsWithSpace": true
+						},
+						{
+							"text": "like",
+							"startTime": 123423,
+							"endTime": 123727,
+							"endsWithSpace": true
+						},
+						{
+							"text": "a",
+							"startTime": 123727,
+							"endTime": 123893,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho,",
+							"startTime": 123893,
+							"endTime": 124895,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho",
+							"startTime": 125136,
+							"endTime": 126066
+						}
+					]
+				}
+			],
+			"id": "L39",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "우릴 보고 말해 자꾸 자꾸",
+			"startTime": 126076,
+			"endTime": 129473,
+			"words": [
+				{
+					"text": "우릴",
+					"startTime": 126076,
+					"endTime": 126520,
+					"endsWithSpace": true
+				},
+				{
+					"text": "보고",
+					"startTime": 126520,
+					"endTime": 126847,
+					"endsWithSpace": true
+				},
+				{
+					"text": "말해",
+					"startTime": 126847,
+					"endTime": 127360,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 127424,
+					"endTime": 128254,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 128468,
+					"endTime": 129473
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都在说我们 一遍又一遍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ril bo go mal hae ja kku ja kku",
+					"words": [
+						{
+							"text": "u ril",
+							"startTime": 126076,
+							"endTime": 126520,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bo go",
+							"startTime": 126520,
+							"endTime": 126847,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mal hae",
+							"startTime": 126847,
+							"endTime": 127360,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 127424,
+							"endTime": 128254,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 128468,
+							"endTime": 129473
+						}
+					]
+				}
+			],
+			"id": "L40",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "다시 안 볼 듯 싸우다가도 붙어다니니 말야",
+			"startTime": 129622,
+			"endTime": 133669,
+			"words": [
+				{
+					"text": "다시",
+					"startTime": 129622,
+					"endTime": 130096,
+					"endsWithSpace": true
+				},
+				{
+					"text": "안",
+					"startTime": 130096,
+					"endTime": 130320,
+					"endsWithSpace": true
+				},
+				{
+					"text": "볼",
+					"startTime": 130320,
+					"endTime": 130500,
+					"endsWithSpace": true
+				},
+				{
+					"text": "듯",
+					"startTime": 130500,
+					"endTime": 130748,
+					"endsWithSpace": true
+				},
+				{
+					"text": "싸우다가도",
+					"startTime": 130863,
+					"endTime": 131818,
+					"endsWithSpace": true
+				},
+				{
+					"text": "붙어다니니",
+					"startTime": 131875,
+					"endTime": 133003,
+					"endsWithSpace": true
+				},
+				{
+					"text": "말야",
+					"startTime": 133003,
+					"endTime": 133669
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "吵架时就像水火不容 一转头却又黏在一起"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya",
+					"words": [
+						{
+							"text": "da si",
+							"startTime": 129622,
+							"endTime": 130096,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an",
+							"startTime": 130096,
+							"endTime": 130320,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bol",
+							"startTime": 130320,
+							"endTime": 130500,
+							"endsWithSpace": true
+						},
+						{
+							"text": "deut",
+							"startTime": 130500,
+							"endTime": 130748,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ssa u da ga do",
+							"startTime": 130863,
+							"endTime": 131818,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu teo da ni ni",
+							"startTime": 131875,
+							"endTime": 133003,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ma rya",
+							"startTime": 133003,
+							"endTime": 133669
+						}
+					]
+				}
+			],
+			"id": "L41",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "이해가 안 간대 웃기지도 않대",
+			"startTime": 133969,
+			"endTime": 137009,
+			"words": [
+				{
+					"text": "이해가",
+					"startTime": 133969,
+					"endTime": 134596,
+					"endsWithSpace": true
+				},
+				{
+					"text": "안",
+					"startTime": 134596,
+					"endTime": 134818,
+					"endsWithSpace": true
+				},
+				{
+					"text": "간대",
+					"startTime": 134818,
+					"endTime": 135331,
+					"endsWithSpace": true
+				},
+				{
+					"text": "웃기지도",
+					"startTime": 135846,
+					"endTime": 136477,
+					"endsWithSpace": true
+				},
+				{
+					"text": "않대",
+					"startTime": 136477,
+					"endTime": 137009
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说无法理解 一点也不好笑"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "i hae ga an gan dae ut gi ji do an tae",
+					"words": [
+						{
+							"text": "i hae ga",
+							"startTime": 133969,
+							"endTime": 134596,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an",
+							"startTime": 134596,
+							"endTime": 134818,
+							"endsWithSpace": true
+						},
+						{
+							"text": "gan dae",
+							"startTime": 134818,
+							"endTime": 135331,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ut gi ji do",
+							"startTime": 135846,
+							"endTime": 136477,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an tae",
+							"startTime": 136477,
+							"endTime": 137009
+						}
+					]
+				}
+			],
+			"id": "L42",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "맞아 Psycho, psycho",
+			"startTime": 137174,
+			"endTime": 141135,
+			"words": [
+				{
+					"text": "맞아",
+					"startTime": 137174,
+					"endTime": 137494,
+					"endsWithSpace": true
+				},
+				{
+					"text": "Psycho,",
+					"startTime": 137494,
+					"endTime": 138555,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho",
+					"startTime": 138555,
+					"endTime": 139564
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 Psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ma ja Psycho, psycho",
+					"words": [
+						{
+							"text": "ma ja",
+							"startTime": 137174,
+							"endTime": 137494,
+							"endsWithSpace": true
+						},
+						{
+							"text": "Psycho,",
+							"startTime": 137494,
+							"endTime": 138555,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho",
+							"startTime": 138555,
+							"endTime": 139564
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "맞아 Psycho, psycho",
+				"startTime": 139149,
+				"endTime": 141135,
+				"words": [
+					{
+						"text": "맞아 Psycho,",
+						"startTime": 139149,
+						"endTime": 140145,
+						"endsWithSpace": true
+					},
+					{
+						"text": "psycho",
+						"startTime": 140145,
+						"endTime": 141135
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "没错 Psycho, psycho"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "ma ja  Psycho, psycho",
+						"words": [
+							{
+								"text": "ma ja  Psycho,",
+								"startTime": 139149,
+								"endTime": 140145,
+								"endsWithSpace": true
+							},
+							{
+								"text": "psycho",
+								"startTime": 140145,
+								"endTime": 141135
+							}
+						]
+					}
+				]
+			},
+			"id": "L43",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "서로 좋아 죽는 바보 바보",
+			"startTime": 139594,
+			"endTime": 144232,
+			"words": [
+				{
+					"text": "서로",
+					"startTime": 139594,
+					"endTime": 140111,
+					"endsWithSpace": true
+				},
+				{
+					"text": "좋아",
+					"startTime": 140111,
+					"endTime": 140472,
+					"endsWithSpace": true
+				},
+				{
+					"text": "죽는",
+					"startTime": 140472,
+					"endTime": 140945,
+					"endsWithSpace": true
+				},
+				{
+					"text": "바보",
+					"startTime": 140945,
+					"endTime": 142040,
+					"endsWithSpace": true
+				},
+				{
+					"text": "바보",
+					"startTime": 142040,
+					"endTime": 143277
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱死了对方的傻瓜 傻瓜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro jo a juk neun ba bo ba bo",
+					"words": [
+						{
+							"text": "seo ro",
+							"startTime": 139594,
+							"endTime": 140111,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jo a",
+							"startTime": 140111,
+							"endTime": 140472,
+							"endsWithSpace": true
+						},
+						{
+							"text": "juk neun",
+							"startTime": 140472,
+							"endTime": 140945,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ba bo",
+							"startTime": 140945,
+							"endTime": 142040,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ba bo",
+							"startTime": 142040,
+							"endTime": 143277
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "바보 바보",
+				"startTime": 142853,
+				"endTime": 144232,
+				"words": [
+					{
+						"text": "바보",
+						"startTime": 142853,
+						"endTime": 143331,
+						"endsWithSpace": true
+					},
+					{
+						"text": "바보",
+						"startTime": 143331,
+						"endTime": 144232
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "傻瓜 傻瓜"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "ba bo ba bo",
+						"words": [
+							{
+								"text": "ba bo",
+								"startTime": 142853,
+								"endTime": 143331,
+								"endsWithSpace": true
+							},
+							{
+								"text": "ba bo",
+								"startTime": 143331,
+								"endTime": 144232
+							}
+						]
+					}
+				]
+			},
+			"id": "L44",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "너 없인 어지럽고 슬퍼져",
+			"startTime": 143341,
+			"endTime": 145421,
+			"words": [
+				{
+					"text": "너",
+					"startTime": 143341,
+					"endTime": 143607,
+					"endsWithSpace": true
+				},
+				{
+					"text": "없인",
+					"startTime": 143607,
+					"endTime": 144026,
+					"endsWithSpace": true
+				},
+				{
+					"text": "어지럽고",
+					"startTime": 144026,
+					"endTime": 144793,
+					"endsWithSpace": true
+				},
+				{
+					"text": "슬퍼져",
+					"startTime": 144793,
+					"endTime": 145421
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没有你 我会头晕又悲伤"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neo eop sin eo ji reop go seul peo jyeo",
+					"words": [
+						{
+							"text": "neo",
+							"startTime": 143341,
+							"endTime": 143607,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eop sin",
+							"startTime": 143607,
+							"endTime": 144026,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eo ji reop go",
+							"startTime": 144026,
+							"endTime": 144793,
+							"endsWithSpace": true
+						},
+						{
+							"text": "seul peo jyeo",
+							"startTime": 144793,
+							"endTime": 145421
+						}
+					]
+				}
+			],
+			"id": "L45",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "기운도 막 없어요",
+			"startTime": 145648,
+			"endTime": 147314,
+			"words": [
+				{
+					"text": "기운도",
+					"startTime": 145648,
+					"endTime": 146309,
+					"endsWithSpace": true
+				},
+				{
+					"text": "막",
+					"startTime": 146309,
+					"endTime": 146592,
+					"endsWithSpace": true
+				},
+				{
+					"text": "없어요",
+					"startTime": 146592,
+					"endTime": 147314
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "甚至浑身没有力气"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "gi un do mak eop seo yo",
+					"words": [
+						{
+							"text": "gi un do",
+							"startTime": 145648,
+							"endTime": 146309,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mak",
+							"startTime": 146309,
+							"endTime": 146592,
+							"endsWithSpace": true
+						},
+						{
+							"text": "eop seo yo",
+							"startTime": 146592,
+							"endTime": 147314
+						}
+					]
+				}
+			],
+			"id": "L46",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "둘이 잘 만났대",
+			"startTime": 147682,
+			"endTime": 148847,
+			"words": [
+				{
+					"text": "둘이",
+					"startTime": 147682,
+					"endTime": 148063,
+					"endsWithSpace": true
+				},
+				{
+					"text": "잘",
+					"startTime": 148063,
+					"endTime": 148240,
+					"endsWithSpace": true
+				},
+				{
+					"text": "만났대",
+					"startTime": 148240,
+					"endTime": 148847
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们天生一对"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ri jal man nat dae",
+					"words": [
+						{
+							"text": "du ri",
+							"startTime": 147682,
+							"endTime": 148063,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jal",
+							"startTime": 148063,
+							"endTime": 148240,
+							"endsWithSpace": true
+						},
+						{
+							"text": "man nat dae",
+							"startTime": 148240,
+							"endTime": 148847
+						}
+					]
+				}
+			],
+			"id": "L47",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 149430,
+			"endTime": 150523,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 149430,
+					"endTime": 149731,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 149731,
+					"endTime": 150043,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 150091,
+					"endTime": 150199,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 150199,
+					"endTime": 150299,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 150299,
+					"endTime": 150523
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 149430,
+							"endTime": 149731,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 149731,
+							"endTime": 150043,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 150091,
+							"endTime": 150199,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 150199,
+							"endTime": 150299,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 150299,
+							"endTime": 150523
+						}
+					]
+				}
+			],
+			"id": "L48",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "Don't look back",
+			"startTime": 151278,
+			"endTime": 152886,
+			"words": [
+				{
+					"text": "Don't",
+					"startTime": 151278,
+					"endTime": 151814,
+					"endsWithSpace": true
+				},
+				{
+					"text": "look",
+					"startTime": 151814,
+					"endTime": 152350,
+					"endsWithSpace": true
+				},
+				{
+					"text": "back",
+					"startTime": 152350,
+					"endTime": 152886
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Don't look back"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Don't look back",
+					"words": [
+						{
+							"text": "Don't",
+							"startTime": 151278,
+							"endTime": 151814,
+							"endsWithSpace": true
+						},
+						{
+							"text": "look",
+							"startTime": 151814,
+							"endTime": 152350,
+							"endsWithSpace": true
+						},
+						{
+							"text": "back",
+							"startTime": 152350,
+							"endTime": 152886
+						}
+					]
+				}
+			],
+			"id": "L49",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "그렇게 우리답게 가보자",
+			"startTime": 153091,
+			"endTime": 156806,
+			"words": [
+				{
+					"text": "그렇게",
+					"startTime": 153091,
+					"endTime": 154260,
+					"endsWithSpace": true
+				},
+				{
+					"text": "우리답게",
+					"startTime": 154659,
+					"endTime": 155648,
+					"endsWithSpace": true
+				},
+				{
+					"text": "가보",
+					"startTime": 155648,
+					"endTime": 156041
+				},
+				{
+					"text": "자",
+					"startTime": 156041,
+					"endTime": 156806
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "就按我们的方式继续吧"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "geu reo ke u ri dap ge ga bo ja",
+					"words": [
+						{
+							"text": "geu reo ke",
+							"startTime": 153091,
+							"endTime": 154260,
+							"endsWithSpace": true
+						},
+						{
+							"text": "u ri dap ge",
+							"startTime": 154659,
+							"endTime": 155648,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ga bo",
+							"startTime": 155648,
+							"endTime": 156041,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja",
+							"startTime": 156041,
+							"endTime": 156806
+						}
+					]
+				}
+			],
+			"id": "L50",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "난 온몸으로 널 느끼고 있어",
+			"startTime": 158004,
+			"endTime": 161245,
+			"words": [
+				{
+					"text": "난",
+					"startTime": 158004,
+					"endTime": 158517,
+					"endsWithSpace": true
+				},
+				{
+					"text": "온몸으로",
+					"startTime": 158517,
+					"endTime": 159587,
+					"endsWithSpace": true
+				},
+				{
+					"text": "널",
+					"startTime": 159587,
+					"endTime": 159876,
+					"endsWithSpace": true
+				},
+				{
+					"text": "느끼고",
+					"startTime": 159876,
+					"endTime": 160648,
+					"endsWithSpace": true
+				},
+				{
+					"text": "있어",
+					"startTime": 160648,
+					"endTime": 161245
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我正在用全身心感受你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "nan on mo meu ro neol neu kki go i sseo",
+					"words": [
+						{
+							"text": "nan",
+							"startTime": 158004,
+							"endTime": 158517,
+							"endsWithSpace": true
+						},
+						{
+							"text": "on mo meu ro",
+							"startTime": 158517,
+							"endTime": 159587,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neol",
+							"startTime": 159587,
+							"endTime": 159876,
+							"endsWithSpace": true
+						},
+						{
+							"text": "neu kki go",
+							"startTime": 159876,
+							"endTime": 160648,
+							"endsWithSpace": true
+						},
+						{
+							"text": "i sseo",
+							"startTime": 160648,
+							"endTime": 161245
+						}
+					]
+				}
+			],
+			"id": "L51",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "Everything will be OK",
+			"startTime": 161437,
+			"endTime": 164371,
+			"words": [
+				{
+					"text": "Everything",
+					"startTime": 161437,
+					"endTime": 162519,
+					"endsWithSpace": true
+				},
+				{
+					"text": "will",
+					"startTime": 162519,
+					"endTime": 162770,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 162770,
+					"endTime": 163076,
+					"endsWithSpace": true
+				},
+				{
+					"text": "OK",
+					"startTime": 163076,
+					"endTime": 164371
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Everything will be OK"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Everything will be OK",
+					"words": [
+						{
+							"text": "Everything",
+							"startTime": 161437,
+							"endTime": 162519,
+							"endsWithSpace": true
+						},
+						{
+							"text": "will",
+							"startTime": 162519,
+							"endTime": 162770,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 162770,
+							"endTime": 163076,
+							"endsWithSpace": true
+						},
+						{
+							"text": "OK",
+							"startTime": 163076,
+							"endTime": 164371
+						}
+					]
+				}
+			],
+			"id": "L52",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "Like a psycho, psycho",
+			"startTime": 163675,
+			"endTime": 167207,
+			"words": [
+				{
+					"text": "Like",
+					"startTime": 164593,
+					"endTime": 164790,
+					"endsWithSpace": true
+				},
+				{
+					"text": "a",
+					"startTime": 164790,
+					"endTime": 164939,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho,",
+					"startTime": 164939,
+					"endTime": 166054,
+					"endsWithSpace": true
+				},
+				{
+					"text": "psycho",
+					"startTime": 166236,
+					"endTime": 167207
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Like a psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Like a psycho, psycho",
+					"words": [
+						{
+							"text": "Like",
+							"startTime": 164593,
+							"endTime": 164790,
+							"endsWithSpace": true
+						},
+						{
+							"text": "a",
+							"startTime": 164790,
+							"endTime": 164939,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho,",
+							"startTime": 164939,
+							"endTime": 166054,
+							"endsWithSpace": true
+						},
+						{
+							"text": "psycho",
+							"startTime": 166236,
+							"endTime": 167207
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "You got me feeling like",
+				"startTime": 163675,
+				"endTime": 164784,
+				"words": [
+					{
+						"text": "You",
+						"startTime": 163675,
+						"endTime": 163814,
+						"endsWithSpace": true
+					},
+					{
+						"text": "got",
+						"startTime": 163814,
+						"endTime": 163986,
+						"endsWithSpace": true
+					},
+					{
+						"text": "me",
+						"startTime": 163986,
+						"endTime": 164173,
+						"endsWithSpace": true
+					},
+					{
+						"text": "feeling",
+						"startTime": 164173,
+						"endTime": 164388,
+						"endsWithSpace": true
+					},
+					{
+						"text": "like",
+						"startTime": 164544,
+						"endTime": 164784
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "You got me feeling like"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "You got me feeling like",
+						"words": [
+							{
+								"text": "You",
+								"startTime": 163675,
+								"endTime": 163814,
+								"endsWithSpace": true
+							},
+							{
+								"text": "got",
+								"startTime": 163814,
+								"endTime": 163986,
+								"endsWithSpace": true
+							},
+							{
+								"text": "me",
+								"startTime": 163986,
+								"endTime": 164173,
+								"endsWithSpace": true
+							},
+							{
+								"text": "feeling",
+								"startTime": 164173,
+								"endTime": 164388,
+								"endsWithSpace": true
+							},
+							{
+								"text": "like",
+								"startTime": 164544,
+								"endTime": 164784
+							}
+						]
+					}
+				]
+			},
+			"id": "L53",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "우릴 보고 말해 자꾸 자꾸",
+			"startTime": 167217,
+			"endTime": 170443,
+			"words": [
+				{
+					"text": "우릴",
+					"startTime": 167217,
+					"endTime": 167554,
+					"endsWithSpace": true
+				},
+				{
+					"text": "보고",
+					"startTime": 167554,
+					"endTime": 167937,
+					"endsWithSpace": true
+				},
+				{
+					"text": "말해",
+					"startTime": 167937,
+					"endTime": 168420,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 168520,
+					"endTime": 169644,
+					"endsWithSpace": true
+				},
+				{
+					"text": "자꾸",
+					"startTime": 169644,
+					"endTime": 170443
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都在说我们 一遍又一遍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ril bo go mal hae ja kku ja kku",
+					"words": [
+						{
+							"text": "u ril",
+							"startTime": 167217,
+							"endTime": 167554,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bo go",
+							"startTime": 167554,
+							"endTime": 167937,
+							"endsWithSpace": true
+						},
+						{
+							"text": "mal hae",
+							"startTime": 167937,
+							"endTime": 168420,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 168520,
+							"endTime": 169644,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ja kku",
+							"startTime": 169644,
+							"endTime": 170443
+						}
+					]
+				}
+			],
+			"id": "L54",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "다시 안 볼 듯 싸우다가도 붙어다니니 말야",
+			"startTime": 170756,
+			"endTime": 174753,
+			"words": [
+				{
+					"text": "다시",
+					"startTime": 170756,
+					"endTime": 171167,
+					"endsWithSpace": true
+				},
+				{
+					"text": "안",
+					"startTime": 171167,
+					"endTime": 171391,
+					"endsWithSpace": true
+				},
+				{
+					"text": "볼",
+					"startTime": 171391,
+					"endTime": 171571,
+					"endsWithSpace": true
+				},
+				{
+					"text": "듯",
+					"startTime": 171648,
+					"endTime": 171821,
+					"endsWithSpace": true
+				},
+				{
+					"text": "싸우다가도",
+					"startTime": 171821,
+					"endTime": 172919,
+					"endsWithSpace": true
+				},
+				{
+					"text": "붙어다니니",
+					"startTime": 173220,
+					"endTime": 174080,
+					"endsWithSpace": true
+				},
+				{
+					"text": "말야",
+					"startTime": 174167,
+					"endTime": 174753
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "吵架时就像水火不容 一转头却又黏在一起"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya",
+					"words": [
+						{
+							"text": "da si",
+							"startTime": 170756,
+							"endTime": 171167,
+							"endsWithSpace": true
+						},
+						{
+							"text": "an",
+							"startTime": 171167,
+							"endTime": 171391,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bol",
+							"startTime": 171391,
+							"endTime": 171571,
+							"endsWithSpace": true
+						},
+						{
+							"text": "deut",
+							"startTime": 171648,
+							"endTime": 171821,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ssa u da ga do",
+							"startTime": 171821,
+							"endTime": 172919,
+							"endsWithSpace": true
+						},
+						{
+							"text": "bu teo da ni ni",
+							"startTime": 173220,
+							"endTime": 174080,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ma rya",
+							"startTime": 174167,
+							"endTime": 174753
+						}
+					]
+				}
+			],
+			"id": "L55",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "둘이 잘 만났대",
+			"startTime": 175086,
+			"endTime": 176474,
+			"words": [
+				{
+					"text": "둘이",
+					"startTime": 175086,
+					"endTime": 175448,
+					"endsWithSpace": true
+				},
+				{
+					"text": "잘",
+					"startTime": 175448,
+					"endTime": 175717,
+					"endsWithSpace": true
+				},
+				{
+					"text": "만났대",
+					"startTime": 175717,
+					"endTime": 176474
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们天生一对"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ri jal man nat dae",
+					"words": [
+						{
+							"text": "du ri",
+							"startTime": 175086,
+							"endTime": 175448,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jal",
+							"startTime": 175448,
+							"endTime": 175717,
+							"endsWithSpace": true
+						},
+						{
+							"text": "man nat dae",
+							"startTime": 175717,
+							"endTime": 176474
+						}
+					]
+				}
+			],
+			"id": "L56",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 176853,
+			"endTime": 178321,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 176853,
+					"endTime": 177147,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 177147,
+					"endTime": 177440,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 177440,
+					"endTime": 177734,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 177734,
+					"endTime": 178027,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 178027,
+					"endTime": 178321
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 176853,
+							"endTime": 177147,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 177147,
+							"endTime": 177440,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 177440,
+							"endTime": 177734,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 177734,
+							"endTime": 178027,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 178027,
+							"endTime": 178321
+						}
+					]
+				}
+			],
+			"id": "L57",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 178702,
+			"endTime": 179839,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 178702,
+					"endTime": 178990,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 178990,
+					"endTime": 179169,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 179245,
+					"endTime": 179364,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 179364,
+					"endTime": 179527,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 179527,
+					"endTime": 179839
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 178702,
+							"endTime": 178990,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 178990,
+							"endTime": 179169,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 179245,
+							"endTime": 179364,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 179364,
+							"endTime": 179527,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 179527,
+							"endTime": 179839
+						}
+					]
+				}
+			],
+			"id": "L58",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 180469,
+			"endTime": 181606,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 180469,
+					"endTime": 180757,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 180757,
+					"endTime": 180936,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 181012,
+					"endTime": 181131,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 181131,
+					"endTime": 181294,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 181294,
+					"endTime": 181606
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 180469,
+							"endTime": 180757,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 180757,
+							"endTime": 180936,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 181012,
+							"endTime": 181131,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 181131,
+							"endTime": 181294,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 181294,
+							"endTime": 181606
+						}
+					]
+				}
+			],
+			"id": "L59",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 182176,
+			"endTime": 183313,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 182176,
+					"endTime": 182464,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 182464,
+					"endTime": 182643,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 182719,
+					"endTime": 182838,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 182838,
+					"endTime": 183001,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 183001,
+					"endTime": 183313
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 182176,
+							"endTime": 182464,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 182464,
+							"endTime": 182643,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 182719,
+							"endTime": 182838,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 182838,
+							"endTime": 183001,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 183001,
+							"endTime": 183313
+						}
+					]
+				}
+			],
+			"id": "L60",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 183917,
+			"endTime": 185054,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 183917,
+					"endTime": 184205,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 184205,
+					"endTime": 184384,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 184460,
+					"endTime": 184579,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 184579,
+					"endTime": 184742,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 184742,
+					"endTime": 185054
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 183917,
+							"endTime": 184205,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 184205,
+							"endTime": 184384,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 184460,
+							"endTime": 184579,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 184579,
+							"endTime": 184742,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 184742,
+							"endTime": 185054
+						}
+					]
+				}
+			],
+			"id": "L61",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "It's alright",
+			"startTime": 185056,
+			"endTime": 187055,
+			"words": [
+				{
+					"text": "It's",
+					"startTime": 185056,
+					"endTime": 185306,
+					"endsWithSpace": true
+				},
+				{
+					"text": "alright",
+					"startTime": 185306,
+					"endTime": 185664
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright",
+					"words": [
+						{
+							"text": "It's",
+							"startTime": 185056,
+							"endTime": 185306,
+							"endsWithSpace": true
+						},
+						{
+							"text": "alright",
+							"startTime": 185306,
+							"endTime": 185664
+						}
+					]
+				}
+			],
+			"backgroundVocal": {
+				"text": "It's alright",
+				"startTime": 186536,
+				"endTime": 187055,
+				"words": [
+					{
+						"text": "It's",
+						"startTime": 186536,
+						"endTime": 186748,
+						"endsWithSpace": true
+					},
+					{
+						"text": "alright",
+						"startTime": 186748,
+						"endTime": 187055
+					}
+				],
+				"translations": [
+					{
+						"language": "zh-Hans",
+						"text": "It's alright"
+					}
+				],
+				"romanizations": [
+					{
+						"language": "ko-Latn",
+						"text": "It's alright",
+						"words": [
+							{
+								"text": "It's",
+								"startTime": 186536,
+								"endTime": 186748,
+								"endsWithSpace": true
+							},
+							{
+								"text": "alright",
+								"startTime": 186748,
+								"endTime": 187055
+							}
+						]
+					}
+				]
+			},
+			"id": "L62",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "It's alright",
+			"startTime": 188379,
+			"endTime": 189288,
+			"words": [
+				{
+					"text": "It's",
+					"startTime": 188379,
+					"endTime": 188645,
+					"endsWithSpace": true
+				},
+				{
+					"text": "alright",
+					"startTime": 188645,
+					"endTime": 189288
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright",
+					"words": [
+						{
+							"text": "It's",
+							"startTime": 188379,
+							"endTime": 188645,
+							"endsWithSpace": true
+						},
+						{
+							"text": "alright",
+							"startTime": 188645,
+							"endTime": 189288
+						}
+					]
+				}
+			],
+			"id": "L63",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 192304,
+			"endTime": 193441,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 192304,
+					"endTime": 192592,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 192592,
+					"endTime": 192771,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 192847,
+					"endTime": 192966,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 192966,
+					"endTime": 193129,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 193129,
+					"endTime": 193441
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 192304,
+							"endTime": 192592,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 192592,
+							"endTime": 192771,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 192847,
+							"endTime": 192966,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 192966,
+							"endTime": 193129,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 193129,
+							"endTime": 193441
+						}
+					]
+				}
+			],
+			"id": "L64",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 194157,
+			"endTime": 195294,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 194157,
+					"endTime": 194445,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 194445,
+					"endTime": 194624,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 194700,
+					"endTime": 194819,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 194819,
+					"endTime": 194982,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 194982,
+					"endTime": 195294
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 194157,
+							"endTime": 194445,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 194445,
+							"endTime": 194624,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 194700,
+							"endTime": 194819,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 194819,
+							"endTime": 194982,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 194982,
+							"endTime": 195294
+						}
+					]
+				}
+			],
+			"id": "L65",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 195934,
+			"endTime": 197071,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 195934,
+					"endTime": 196222,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 196222,
+					"endTime": 196401,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 196477,
+					"endTime": 196596,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 196596,
+					"endTime": 196759,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 196759,
+					"endTime": 197071
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 195934,
+							"endTime": 196222,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 196222,
+							"endTime": 196401,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 196477,
+							"endTime": 196596,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 196596,
+							"endTime": 196759,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 196759,
+							"endTime": 197071
+						}
+					]
+				}
+			],
+			"id": "L66",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 197663,
+			"endTime": 198800,
+			"words": [
+				{
+					"text": "Hey",
+					"startTime": 197663,
+					"endTime": 197951,
+					"endsWithSpace": true
+				},
+				{
+					"text": "now,",
+					"startTime": 197951,
+					"endTime": 198130,
+					"endsWithSpace": true
+				},
+				{
+					"text": "we'll",
+					"startTime": 198206,
+					"endTime": 198325,
+					"endsWithSpace": true
+				},
+				{
+					"text": "be",
+					"startTime": 198325,
+					"endTime": 198488,
+					"endsWithSpace": true
+				},
+				{
+					"text": "ok",
+					"startTime": 198488,
+					"endTime": 198800
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok",
+					"words": [
+						{
+							"text": "Hey",
+							"startTime": 197663,
+							"endTime": 197951,
+							"endsWithSpace": true
+						},
+						{
+							"text": "now,",
+							"startTime": 197951,
+							"endTime": 198130,
+							"endsWithSpace": true
+						},
+						{
+							"text": "we'll",
+							"startTime": 198206,
+							"endTime": 198325,
+							"endsWithSpace": true
+						},
+						{
+							"text": "be",
+							"startTime": 198325,
+							"endTime": 198488,
+							"endsWithSpace": true
+						},
+						{
+							"text": "ok",
+							"startTime": 198488,
+							"endTime": 198800
+						}
+					]
+				}
+			],
+			"id": "L67",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "It's alright",
+			"startTime": 198776,
+			"endTime": 199685,
+			"words": [
+				{
+					"text": "It's",
+					"startTime": 198776,
+					"endTime": 199042,
+					"endsWithSpace": true
+				},
+				{
+					"text": "alright",
+					"startTime": 199042,
+					"endTime": 199685
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright",
+					"words": [
+						{
+							"text": "It's",
+							"startTime": 198776,
+							"endTime": 199042,
+							"endsWithSpace": true
+						},
+						{
+							"text": "alright",
+							"startTime": 199042,
+							"endTime": 199685
+						}
+					]
+				}
+			],
+			"id": "L68",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "It's alright",
+			"startTime": 202125,
+			"endTime": 203034,
+			"words": [
+				{
+					"text": "It's",
+					"startTime": 202125,
+					"endTime": 202391,
+					"endsWithSpace": true
+				},
+				{
+					"text": "alright",
+					"startTime": 202391,
+					"endTime": 203034
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright",
+					"words": [
+						{
+							"text": "It's",
+							"startTime": 202125,
+							"endTime": 202391,
+							"endsWithSpace": true
+						},
+						{
+							"text": "alright",
+							"startTime": 202391,
+							"endTime": 203034
+						}
+					]
+				}
+			],
+			"id": "L69",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "우린 좀 이상해",
+			"startTime": 204004,
+			"endTime": 206165,
+			"words": [
+				{
+					"text": "우린",
+					"startTime": 204004,
+					"endTime": 204468,
+					"endsWithSpace": true
+				},
+				{
+					"text": "좀",
+					"startTime": 204468,
+					"endTime": 204864,
+					"endsWithSpace": true
+				},
+				{
+					"text": "이상해",
+					"startTime": 204864,
+					"endTime": 206165
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们有点奇怪"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin jom i sang hae",
+					"words": [
+						{
+							"text": "u rin",
+							"startTime": 204004,
+							"endTime": 204468,
+							"endsWithSpace": true
+						},
+						{
+							"text": "jom",
+							"startTime": 204468,
+							"endTime": 204864,
+							"endsWithSpace": true
+						},
+						{
+							"text": "i sang hae",
+							"startTime": 204864,
+							"endTime": 206165
+						}
+					]
+				}
+			],
+			"id": "L70",
+			"agentId": "v1",
+			"songPart": "Outro",
+			"blockIndex": 14
+		},
+		{
+			"text": "Psycho",
+			"startTime": 206175,
+			"endTime": 207245,
+			"words": [
+				{
+					"text": "Psy",
+					"startTime": 206175,
+					"endTime": 206292
+				},
+				{
+					"text": "cho",
+					"startTime": 206292,
+					"endTime": 207245
+				}
+			],
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Psy cho",
+					"words": [
+						{
+							"text": "Psy",
+							"startTime": 206175,
+							"endTime": 206292
+						},
+						{
+							"text": "cho",
+							"startTime": 206292,
+							"endTime": 207245
+						}
+					]
+				}
+			],
+			"id": "L71",
+			"agentId": "v1",
+			"songPart": "Outro",
+			"blockIndex": 14
+		}
+	]
+}

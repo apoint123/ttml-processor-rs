@@ -7,7 +7,7 @@ input_file: crates/processor/tests/fixtures/line-timing.ttml
     <head>
         <metadata>
             <ttm:agent type="person" xml:id="v1">
-                <ttm:name>劉佳</ttm:name>
+                <ttm:name type="full">劉佳</ttm:name>
             </ttm:agent>
             <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
                 <songwriters>

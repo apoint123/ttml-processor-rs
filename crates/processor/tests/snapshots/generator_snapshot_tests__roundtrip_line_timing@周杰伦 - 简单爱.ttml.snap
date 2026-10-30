@@ -1,0 +1,906 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/周杰伦 - 简单爱.ttml
+---
+{
+	"metadata": {
+		"language": "zh-Hant",
+		"timingMode": "Line",
+		"songwriters": [
+			"周杰倫",
+			"徐若瑄"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"name": "周杰倫",
+				"type": "person"
+			}
+		}
+	},
+	"lines": [
+		{
+			"text": "說不上為什麼 我變得很主動",
+			"startTime": 26663,
+			"endTime": 31477,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "说不上为什么 我变得很主动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "shuo bu shang wei shen me wo bian de hen zhu dong"
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "若愛上一個人 什麼都會值得去做",
+			"startTime": 31673,
+			"endTime": 36245,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "若爱上一个人 什么都会值得去做"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ruo ai shang yi ge ren shen me du hui zhi de qu zuo"
+				}
+			],
+			"id": "L2",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "我想大聲宣佈 對妳依依不捨",
+			"startTime": 36622,
+			"endTime": 41280,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想大声宣布 对你依依不舍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang da sheng xuan bu dui ni yi yi bu she"
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "連隔壁鄰居都 猜到我現在的感受",
+			"startTime": 41541,
+			"endTime": 46202,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "连隔壁邻居都 猜到我现在的感受"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "lian ge bi lin ju dou cai dao wo xian zai de gan shou"
+				}
+			],
+			"id": "L4",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 1
+		},
+		{
+			"text": "河邊的風在吹著頭髮 飄動",
+			"startTime": 46495,
+			"endTime": 51272,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "河边的风在吹着头发 飘动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "he bian de feng zai chui zhe tou fa piao dong"
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "牽著妳的手一陣莫名感動",
+			"startTime": 51472,
+			"endTime": 56200,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "牵着你的手一阵莫名感动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qian zhe ni de shou yi zhen mo ming gan dong"
+				}
+			],
+			"id": "L6",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "我想帶妳回我的外婆家",
+			"startTime": 56396,
+			"endTime": 60192,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你回我的外婆家"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni hui wo de wai po jia"
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "一起看著日落 一直到我們都睡著",
+			"startTime": 60196,
+			"endTime": 66128,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "一起看着日落 一直到我们都睡着"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yi qi kan zhe ri luo yi zhi dao wo men dou shui zhao"
+				}
+			],
+			"id": "L8",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 66350,
+			"endTime": 70943,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai"
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "愛能不能夠永遠單純沒有悲哀",
+			"startTime": 71278,
+			"endTime": 75908,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱能不能够永远单纯没有悲哀"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai neng bu neng gou yong yuan dan chun mei you bei ai"
+				}
+			],
+			"id": "L10",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "我想帶妳騎單車 我想和妳看棒球",
+			"startTime": 75894,
+			"endTime": 80898,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你骑单车 我想和你看棒球"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu"
+				}
+			],
+			"id": "L11",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "想這樣沒擔憂唱著歌一直走",
+			"startTime": 81397,
+			"endTime": 85739,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想这样没担忧唱着歌一直走"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang mei dan you chang zhe ge yi zhi zou"
+				}
+			],
+			"id": "L12",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 3
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 86116,
+			"endTime": 90754,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai"
+				}
+			],
+			"id": "L13",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "愛可不可以簡簡單單沒有傷害",
+			"startTime": 91030,
+			"endTime": 95666,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱可不可以简简单单没有伤害"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai ke bu ke yi jian jian dan dan mei you shang hai"
+				}
+			],
+			"id": "L14",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "妳靠著我的肩膀 妳在我胸口睡著",
+			"startTime": 95737,
+			"endTime": 100683,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你靠着我的肩膀 你在我胸口睡着"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao"
+				}
+			],
+			"id": "L15",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "像這樣的生活 我愛妳 妳愛我",
+			"startTime": 101188,
+			"endTime": 105480,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像这样的生活 我爱你 你爱我"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang de sheng huo wo ai ni ni ai wo"
+				}
+			],
+			"id": "L16",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 105532,
+			"endTime": 112802,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai"
+				}
+			],
+			"id": "L17",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 5
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 115437,
+			"endTime": 122444,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai"
+				}
+			],
+			"id": "L18",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 5
+		},
+		{
+			"text": "我想大聲宣佈 對妳依依不捨",
+			"startTime": 125710,
+			"endTime": 130395,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想大声宣布 对你依依不舍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang da sheng xuan bu dui ni yi yi bu she"
+				}
+			],
+			"id": "L19",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "連隔壁鄰居都 猜到我現在的感受",
+			"startTime": 130646,
+			"endTime": 135385,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "连隔壁邻居都 猜到我现在的感受"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "lian ge bi lin ju dou cai dao wo xian zai de gan shou"
+				}
+			],
+			"id": "L20",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "河邊的風在吹著頭髮飄動",
+			"startTime": 135579,
+			"endTime": 140266,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "河边的风在吹着头发飘动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "he bian de feng zai chui zhe tou fa piao dong"
+				}
+			],
+			"id": "L21",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "牽著妳的手一陣莫名感動",
+			"startTime": 140503,
+			"endTime": 145280,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "牵着你的手一阵莫名感动"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "qian zhe ni de shou yi zhen mo ming gan dong"
+				}
+			],
+			"id": "L22",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "我想帶妳回我的外婆家",
+			"startTime": 145501,
+			"endTime": 149273,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你回我的外婆家"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni hui wo de wai po jia"
+				}
+			],
+			"id": "L23",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "一起看著日落 一直到我們都睡著",
+			"startTime": 149280,
+			"endTime": 155065,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "一起看着日落 一直到我们都睡着"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "yi qi kan zhe ri luo yi zhi dao wo men dou shui zhao"
+				}
+			],
+			"id": "L24",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 155421,
+			"endTime": 159955,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai"
+				}
+			],
+			"id": "L25",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "愛能不能夠永遠單純沒有悲哀",
+			"startTime": 160344,
+			"endTime": 164876,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱能不能够永远单纯没有悲哀"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai neng bu neng gou yong yuan dan chun mei you bei ai"
+				}
+			],
+			"id": "L26",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "我想帶妳騎單車 我想和妳看棒球",
+			"startTime": 164978,
+			"endTime": 170002,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你骑单车 我想和你看棒球"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu"
+				}
+			],
+			"id": "L27",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "想這樣沒擔憂唱著歌一直走",
+			"startTime": 170503,
+			"endTime": 174897,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想这样没担忧唱着歌一直走"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang mei dan you chang zhe ge yi zhi zou"
+				}
+			],
+			"id": "L28",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 175187,
+			"endTime": 179746,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai"
+				}
+			],
+			"id": "L29",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "愛可不可以簡簡單單沒有傷害",
+			"startTime": 180081,
+			"endTime": 184679,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱可不可以简简单单没有伤害"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai ke bu ke yi jian jian dan dan mei you shang hai"
+				}
+			],
+			"id": "L30",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "妳靠著我的肩膀 妳在我胸口睡著",
+			"startTime": 184761,
+			"endTime": 189781,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你靠着我的肩膀 你在我胸口睡着"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao"
+				}
+			],
+			"id": "L31",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "像這樣的生活 我愛妳 妳愛我",
+			"startTime": 190289,
+			"endTime": 194467,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像这样的生活 我爱你 你爱我"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang de sheng huo wo ai ni ni ai wo"
+				}
+			],
+			"id": "L32",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 194666,
+			"endTime": 204437,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai"
+				}
+			],
+			"id": "L33",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "想 簡簡單單愛",
+			"startTime": 204516,
+			"endTime": 214389,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想 简简单单爱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang jian jian dan dan ai"
+				}
+			],
+			"id": "L34",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 214783,
+			"endTime": 219389,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai"
+				}
+			],
+			"id": "L35",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "愛能不能夠永遠單純沒有悲哀",
+			"startTime": 219714,
+			"endTime": 224281,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱能不能够永远单纯没有悲哀"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai neng bu neng gou yong yuan dan chun mei you bei ai"
+				}
+			],
+			"id": "L36",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "我想帶妳騎單車 我想和妳看棒球",
+			"startTime": 224328,
+			"endTime": 229344,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想带你骑单车 我想和你看棒球"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang dai ni qi dan che wo xiang he ni kan bang qiu"
+				}
+			],
+			"id": "L37",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "想這樣沒擔憂唱著歌一直走",
+			"startTime": 229906,
+			"endTime": 234227,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "想这样没担忧唱着歌一直走"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang mei dan you chang zhe ge yi zhi zou"
+				}
+			],
+			"id": "L38",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "我想就這樣牽著妳的手不放開",
+			"startTime": 234587,
+			"endTime": 239120,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我想就这样牵着你的手不放开"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "wo xiang jiu zhe yang qian zhe ni de shou bu fang kai"
+				}
+			],
+			"id": "L39",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		},
+		{
+			"text": "愛可不可以簡簡單單沒有傷害",
+			"startTime": 239512,
+			"endTime": 244077,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱可不可以简简单单没有伤害"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ai ke bu ke yi jian jian dan dan mei you shang hai"
+				}
+			],
+			"id": "L40",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		},
+		{
+			"text": "妳靠著我的肩膀 妳在我胸口睡著",
+			"startTime": 244103,
+			"endTime": 249146,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你靠着我的肩膀 你在我胸口睡着"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "ni kao zhe wo de jian bang ni zai wo xiong kou shui zhao"
+				}
+			],
+			"id": "L41",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		},
+		{
+			"text": "像這樣的生活 我愛妳 妳愛我",
+			"startTime": 249702,
+			"endTime": 253905,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "像这样的生活 我爱你 你爱我"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "zh-Latn-pinyin",
+					"text": "xiang zhe yang de sheng huo wo ai ni ni ai wo"
+				}
+			],
+			"id": "L42",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 12
+		}
+	]
+}

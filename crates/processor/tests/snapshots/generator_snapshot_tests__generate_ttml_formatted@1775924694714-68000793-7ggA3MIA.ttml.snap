@@ -70,7 +70,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
             <amll:meta key="Vocals" value="阿兰"/>
             <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
                 <translations>
-                    <translation xml:lang="de">
+                    <translation xml:lang="de" type="subtitle">
                         <text for="L1">erblühen die Frühlingsblumen gerade außerhalb,</text>
                         <text for="L2">und ein Spatz sitzt sanft auf einem Zweig.</text>
                         <text for="L3">Eine Melodie, zum ersten Mal wahrgenommen,</text>
@@ -109,7 +109,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">so schnell geschmolzen und zurückgekehrt ins Morgen, so voller Unwissenheit.</text>
                     </translation>
-                    <translation xml:lang="en">
+                    <translation xml:lang="en" type="subtitle">
                         <text for="L1">The springtime blooming just outside</text>
                         <text for="L2">A sparrow perched on a branch</text>
                         <text for="L3">A melody heard for the first time</text>
@@ -148,7 +148,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Melted away, and back to tomorrow — so full of unknowns</text>
                     </translation>
-                    <translation xml:lang="es">
+                    <translation xml:lang="es" type="subtitle">
                         <text for="L1">El aire primaveral sopla fuera de la habitación</text>
                         <text for="L2">Sobre la rama descansa un gorrión</text>
                         <text for="L3">Se escucha por primera vez una canción</text>
@@ -187,7 +187,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Una vez derretido, nuestro futuro será una interrogación</text>
                     </translation>
-                    <translation xml:lang="fr">
+                    <translation xml:lang="fr" type="subtitle">
                         <text for="L1">Le printemps fleurit par la fenêtre</text>
                         <text for="L2">Un moineau perché sur une branche</text>
                         <text for="L3">Une mélodie perçue pour la première fois</text>
@@ -226,7 +226,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Il a fondu, vers un nouveau lendemain, vers l&apos;inconnu</text>
                     </translation>
-                    <translation xml:lang="id">
+                    <translation xml:lang="id" type="subtitle">
                         <text for="L1">Musim semi di luar jendela</text>
                         <text for="L2">Burung pipit bertengger di dahan</text>
                         <text for="L3">Melodi yang kudengar untuk pertama kalinya</text>
@@ -265,7 +265,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Meleleh, dan kembali ke esok hari yang penuh kejutan</text>
                     </translation>
-                    <translation xml:lang="ja">
+                    <translation xml:lang="ja" type="subtitle">
                         <text for="L1">窓の外は春</text>
                         <text for="L2">枝にすずめがとまり</text>
                         <text for="L3">聞き覚えのない旋律が</text>
@@ -304,7 +304,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">ほらまた わからないことだらけの明日</text>
                     </translation>
-                    <translation xml:lang="ko">
+                    <translation xml:lang="ko" type="subtitle">
                         <text for="L1">창밖의 봄날</text>
                         <text for="L2">가지에 머무는 참새</text>
                         <text for="L3">처음 느껴본 선율이</text>
@@ -343,7 +343,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">녹아버리면 다시 알 수 없는 내일이 찾아와</text>
                     </translation>
-                    <translation xml:lang="pt">
+                    <translation xml:lang="pt" type="subtitle">
                         <text for="L1">A primavera florescendo do lado de fora</text>
                         <text for="L2">Um pardal pousado suavemente em um galho</text>
                         <text for="L3">Uma melodia que se escuta pela primeira vez</text>
@@ -382,7 +382,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Derretido e de volta ao amanhã - tão cheio de desconhecidos</text>
                     </translation>
-                    <translation xml:lang="ru">
+                    <translation xml:lang="ru" type="subtitle">
                         <text for="L1">За окном расцветает весна,</text>
                         <text for="L2">воробьи присели на ветку.</text>
                         <text for="L3">Эту мелодию слышу впервые,</text>
@@ -421,7 +421,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Когда он растает, снова наступит завтрашний день, полный неизведанного.</text>
                     </translation>
-                    <translation xml:lang="th">
+                    <translation xml:lang="th" type="subtitle">
                         <text for="L1">ฤดูใบไม้ผลิกำลังเบ่งบานอยู่ด้านนอก</text>
                         <text for="L2">นกกระจอกเกาะอยู่บนกิ่งไม้</text>
                         <text for="L3">ท่วงทำนองที่ได้ยินเป็นครั้งแรก</text>
@@ -460,7 +460,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">ละลายแล้ว กลับไปสู่วันพรุ่งนี้ที่เต็มไปด้วยสิ่งที่ไม่รู้จัก</text>
                     </translation>
-                    <translation xml:lang="vi">
+                    <translation xml:lang="vi" type="subtitle">
                         <text for="L1">Mùa xuân nở rộ ngoài ô cửa</text>
                         <text for="L2">Chim sẻ đậu trên cành</text>
                         <text for="L3">Giai điệu lần đầu tiên được nghe</text>
@@ -499,7 +499,7 @@ input_file: tests/fixtures/1775924694714-68000793-7ggA3MIA.ttml
                         </text>
                         <text for="L33">Tan đi và trở lại ngày mai, đầy những điều chưa biết</text>
                     </translation>
-                    <translation xml:lang="zh-Hant">
+                    <translation xml:lang="zh-Hant" type="replacement">
                         <text for="L1">
                             <span begin="10.640" end="11.300">窗</span>
                             <span begin="11.300" end="11.670">外</span>

@@ -115,6 +115,7 @@ fn write_agents(
                 elem.write_inner_content(|writer| {
                     writer
                         .create_element(tags::TTM_NAME)
+                        .with_attribute((attrs::TYPE, vals::NAME_FULL))
                         .write_text_content(BytesText::new(name))?;
                     Ok(())
                 })?;

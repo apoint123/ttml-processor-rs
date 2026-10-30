@@ -26,7 +26,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
             <amll:meta key="Composer" value="ZUN"/>
             <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
                 <translations>
-                    <translation xml:lang="en">
+                    <translation xml:lang="en" type="subtitle">
                         <text for="L1">Inside of me</text>
                         <text for="L2">Inside of me</text>
                         <text for="L3">Inside of me</text>
@@ -224,7 +224,7 @@ input_file: tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml
                         <text for="L177">I’ll offer up your limbs as sacrifice- Become the corpse at my feet<span ttm:role="x-bg">(Be by my side forever, I want to live with you...)</span>
                         </text>
                     </translation>
-                    <translation xml:lang="zh-Hans">
+                    <translation xml:lang="zh-Hans" type="subtitle">
                         <text for="L1">我身体中的</text>
                         <text for="L2">我身体中的</text>
                         <text for="L3">我身体中的</text>

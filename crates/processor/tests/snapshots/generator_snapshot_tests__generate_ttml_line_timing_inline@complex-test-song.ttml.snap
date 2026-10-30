@@ -7,13 +7,13 @@ input_file: crates/processor/tests/fixtures/complex-test-song.ttml
     <head>
         <metadata>
             <ttm:agent type="person" xml:id="v1">
-                <ttm:name>Vocalist A (Taro)</ttm:name>
+                <ttm:name type="full">Vocalist A (Taro)</ttm:name>
             </ttm:agent>
             <ttm:agent type="person" xml:id="v2">
-                <ttm:name>Vocalist B (Hanako)</ttm:name>
+                <ttm:name type="full">Vocalist B (Hanako)</ttm:name>
             </ttm:agent>
             <ttm:agent type="group" xml:id="v1000">
-                <ttm:name>Chorus Group</ttm:name>
+                <ttm:name type="full">Chorus Group</ttm:name>
             </ttm:agent>
             <amll:meta key="musicName" value="Complex Test Song"/>
             <amll:meta key="musicName" value="複雑なテストソング"/>

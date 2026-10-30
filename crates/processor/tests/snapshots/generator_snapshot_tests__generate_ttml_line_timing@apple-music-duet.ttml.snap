@@ -18,7 +18,7 @@ input_file: crates/processor/tests/fixtures/apple-music-duet.ttml
             <ttm:agent type="person" xml:id="v10"/>
             <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
                 <translations>
-                    <translation xml:lang="zh-Hans">
+                    <translation xml:lang="zh-Hans" type="subtitle">
                         <text for="L1">我们不提布鲁诺 不 不 不</text>
                         <text for="L2">我们不提布鲁诺 可是</text>
                         <text for="L3">那天是我结婚的日子</text>

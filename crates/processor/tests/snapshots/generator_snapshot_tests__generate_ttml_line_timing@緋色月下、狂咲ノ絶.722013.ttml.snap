@@ -26,7 +26,7 @@ input_file: crates/processor/tests/fixtures/緋色月下、狂咲ノ絶.722013.t
             <amll:meta key="Composer" value="ZUN"/>
             <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
                 <translations>
-                    <translation xml:lang="en">
+                    <translation xml:lang="en" type="subtitle">
                         <text for="L1">Inside of me</text>
                         <text for="L2">Inside of me</text>
                         <text for="L3">Inside of me</text>
@@ -205,7 +205,7 @@ input_file: crates/processor/tests/fixtures/緋色月下、狂咲ノ絶.722013.t
                         <text for="L176">If your life is you, then I’ll eat you up into flesh and blood</text>
                         <text for="L177">I’ll offer up your limbs as sacrifice- Become the corpse at my feet</text>
                     </translation>
-                    <translation xml:lang="zh-Hans">
+                    <translation xml:lang="zh-Hans" type="subtitle">
                         <text for="L1">我身体中的</text>
                         <text for="L2">我身体中的</text>
                         <text for="L3">我身体中的</text>

@@ -1,0 +1,1516 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: json_string
+input_file: tests/fixtures/Red Velvet - Psycho.ttml
+---
+{
+	"metadata": {
+		"language": "ko",
+		"timingMode": "Line",
+		"songwriters": [
+			"Andrew Scott",
+			"Cazzi Opeia",
+			"EJAE",
+			"Kenzie"
+		],
+		"agents": {
+			"v1": {
+				"id": "v1",
+				"type": "person"
+			}
+		}
+	},
+	"lines": [
+		{
+			"text": "Psycho",
+			"startTime": 12026,
+			"endTime": 12999,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Psycho"
+				}
+			],
+			"id": "L1",
+			"agentId": "v1",
+			"songPart": "Intro",
+			"blockIndex": 1
+		},
+		{
+			"text": "널 어쩌면 좋을까",
+			"startTime": 13271,
+			"endTime": 15601,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "该拿你怎么办呢"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neol eo jjeo myeon jo eul kka"
+				}
+			],
+			"id": "L2",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "이런 맘은 또 첨이라",
+			"startTime": 16495,
+			"endTime": 18925,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "这种心情还是第一次"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "i reon ma meun tto cheo mi ra"
+				}
+			],
+			"id": "L3",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "Up and down이 좀 심해",
+			"startTime": 19665,
+			"endTime": 21802,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Up and down 有些严重"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Up and down i jom sim hae"
+				}
+			],
+			"id": "L4",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "조절이 자꾸 잘 안 돼",
+			"startTime": 21616,
+			"endTime": 23375,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "总是控制不好"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "jo jeo ri ja kku jal an dwae"
+				}
+			],
+			"id": "L5",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "하나 확실한 건",
+			"startTime": 23449,
+			"endTime": 25350,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "唯一确定的是"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ha na hwak sil han geon"
+				}
+			],
+			"id": "L6",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "I don't play the game",
+			"startTime": 25208,
+			"endTime": 26490,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "I don't play the game"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "I don't play the game"
+				}
+			],
+			"id": "L7",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 2
+		},
+		{
+			"text": "우리 진짜 별나대",
+			"startTime": 26895,
+			"endTime": 29740,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们很奇怪"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ri jin jja byeol na dae"
+				}
+			],
+			"id": "L8",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "그냥 내가 너무 좋아해",
+			"startTime": 30015,
+			"endTime": 33149,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我就是太喜欢你了"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "geu nyang nae ga neo mu jo a hae"
+				}
+			],
+			"id": "L9",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "넌 그걸 너무 잘 알고",
+			"startTime": 33365,
+			"endTime": 35327,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你又太清楚这一点"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neon geu geol neo mu jal al go"
+				}
+			],
+			"id": "L10",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "날 쥐락펴락해",
+			"startTime": 35337,
+			"endTime": 36839,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "将我玩弄于股掌之间"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "nal jwi rak pyeo rak hae"
+				}
+			],
+			"id": "L11",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "나도 마찬가지인 걸",
+			"startTime": 37067,
+			"endTime": 39808,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "而我又何尝不是一样"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "na do ma chan ga ji in geol"
+				}
+			],
+			"id": "L12",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 3
+		},
+		{
+			"text": "우린 참 별나고 이상한 사이야",
+			"startTime": 41631,
+			"endTime": 45859,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们真是离奇又古怪的关系"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin cham byeol na go i sang han sa i ya"
+				}
+			],
+			"id": "L13",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "서로를 부서지게",
+			"startTime": 46659,
+			"endTime": 49598,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "一次次击碎对方"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro reul bu seo ji ge"
+				}
+			],
+			"id": "L14",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "그리곤 또 껴안아",
+			"startTime": 50079,
+			"endTime": 53811,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "之后又紧紧拥抱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "geu ri gon tto kkyeo a na"
+				}
+			],
+			"id": "L15",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 4
+		},
+		{
+			"text": "You got me feeling like a psycho, psycho",
+			"startTime": 53821,
+			"endTime": 57491,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "You got me feeling like a psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "You got me feeling like a psycho, psycho"
+				}
+			],
+			"id": "L16",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "우릴 보고 말해 자꾸 자꾸",
+			"startTime": 57535,
+			"endTime": 60761,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都在说我们 一遍又一遍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ril bo go mal hae ja kku ja kku"
+				}
+			],
+			"id": "L17",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "다시 안 볼 듯 싸우다가도 붙어다니니 말야",
+			"startTime": 60980,
+			"endTime": 64977,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "吵架时就像水火不容 一转头却又黏在一起"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya"
+				}
+			],
+			"id": "L18",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "이해가 안 간대 웃기지도 않대",
+			"startTime": 65356,
+			"endTime": 68446,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说无法理解 一点也不好笑"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "i hae ga an gan dae ut gi ji do an tae"
+				}
+			],
+			"id": "L19",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "맞아 Psycho, psycho",
+			"startTime": 68543,
+			"endTime": 70804,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 Psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ma ja Psycho, psycho"
+				}
+			],
+			"id": "L20",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "서로 좋아 죽는 바보 바보",
+			"startTime": 71177,
+			"endTime": 74437,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱死了对方的傻瓜 傻瓜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro jo a juk neun ba bo ba bo"
+				}
+			],
+			"id": "L21",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "너 없인 어지럽고 슬퍼져",
+			"startTime": 74765,
+			"endTime": 76929,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没有你 我会头晕又悲伤"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neo eop sin eo ji reop go seul peo jyeo"
+				}
+			],
+			"id": "L22",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "기운도 막 없어요",
+			"startTime": 77122,
+			"endTime": 78648,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "甚至浑身没有力气"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "gi un do mak eop seo yo"
+				}
+			],
+			"id": "L23",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "둘이 잘 만났대",
+			"startTime": 79079,
+			"endTime": 80375,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们天生一对"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ri jal man nat dae"
+				}
+			],
+			"id": "L24",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 80966,
+			"endTime": 82103,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L25",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 5
+		},
+		{
+			"text": "Hey, trouble 경고 따윈 없이 오는 너",
+			"startTime": 82698,
+			"endTime": 85673,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey, trouble 没有预警就走来的你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey, trouble gyeong go tta win eop si o neun neo"
+				}
+			],
+			"id": "L26",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "I'm original visual",
+			"startTime": 85853,
+			"endTime": 87476,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "I'm original visual"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "I'm original visual"
+				}
+			],
+			"id": "L27",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "우린 원래 이랬어 Yeah",
+			"startTime": 87434,
+			"endTime": 89608,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们本来就这样 Yeah"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin won rae i rae sseo Yeah"
+				}
+			],
+			"id": "L28",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "두렵지는 않아",
+			"startTime": 89673,
+			"endTime": 91382,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没什么可怕的"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ryeop ji neun a na"
+				}
+			],
+			"id": "L29",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "It's hot! Let me just hop",
+			"startTime": 91493,
+			"endTime": 92795,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's hot! Let me just hop"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's hot! Let me just hop"
+				}
+			],
+			"id": "L30",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "어떻게 널 다룰까",
+			"startTime": 93086,
+			"endTime": 96538,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "该怎么处理你呢"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "eo tteo ke neol da rul kka"
+				}
+			],
+			"id": "L31",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 6
+		},
+		{
+			"text": "어쩔 줄을 몰라 너를 달래고",
+			"startTime": 95323,
+			"endTime": 98788,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "不知所措地哄你开心"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "eo jjeol ju reul mol ra neo reul dal rae go"
+				}
+			],
+			"id": "L32",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "매섭게 발로 차도",
+			"startTime": 98687,
+			"endTime": 100300,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "就算我发狠踢你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "mae seop ge bal ro cha do"
+				}
+			],
+			"id": "L33",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "가끔 내게 미소 짓는 널",
+			"startTime": 100623,
+			"endTime": 104089,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "你也会不时对我微笑"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ga kkeum nae ge mi so jit neun neol"
+				}
+			],
+			"id": "L34",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "어떻게 놓겠어 Ooh-ooh",
+			"startTime": 104728,
+			"endTime": 109453,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "这让我怎能放手 Ooh-ooh"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "eo tteo ke no ke sseo Ooh- ooh"
+				}
+			],
+			"id": "L35",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 7
+		},
+		{
+			"text": "우린 아름답고 참 슬픈 사이야",
+			"startTime": 110164,
+			"endTime": 113840,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们真是美丽又悲伤的关系"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin a reum dap go cham seul peun sa i ya"
+				}
+			],
+			"id": "L36",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "서로를 빛나게 해",
+			"startTime": 115191,
+			"endTime": 118056,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "让彼此闪耀光芒"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro reul bit na ge hae"
+				}
+			],
+			"id": "L37",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "마치 달과 강처럼 그리곤 또 껴안아",
+			"startTime": 118697,
+			"endTime": 122533,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "就像月亮和江水 之后又紧紧拥抱"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ma chi dal gwa gang cheo reom geu ri gon tto kkyeo a na"
+				}
+			],
+			"id": "L38",
+			"agentId": "v1",
+			"songPart": "PreChorus",
+			"blockIndex": 8
+		},
+		{
+			"text": "You got me feeling like a psycho, psycho",
+			"startTime": 122365,
+			"endTime": 126066,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "You got me feeling like a psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "You got me feeling like a psycho, psycho"
+				}
+			],
+			"id": "L39",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "우릴 보고 말해 자꾸 자꾸",
+			"startTime": 126076,
+			"endTime": 129473,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都在说我们 一遍又一遍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ril bo go mal hae ja kku ja kku"
+				}
+			],
+			"id": "L40",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "다시 안 볼 듯 싸우다가도 붙어다니니 말야",
+			"startTime": 129622,
+			"endTime": 133669,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "吵架时就像水火不容 一转头却又黏在一起"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya"
+				}
+			],
+			"id": "L41",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "이해가 안 간대 웃기지도 않대",
+			"startTime": 133969,
+			"endTime": 137009,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说无法理解 一点也不好笑"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "i hae ga an gan dae ut gi ji do an tae"
+				}
+			],
+			"id": "L42",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "맞아 Psycho, psycho",
+			"startTime": 137174,
+			"endTime": 141135,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没错 Psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "ma ja Psycho, psycho"
+				}
+			],
+			"id": "L43",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "서로 좋아 죽는 바보 바보",
+			"startTime": 139594,
+			"endTime": 144232,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "爱死了对方的傻瓜 傻瓜"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "seo ro jo a juk neun ba bo ba bo"
+				}
+			],
+			"id": "L44",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "너 없인 어지럽고 슬퍼져",
+			"startTime": 143341,
+			"endTime": 145421,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "没有你 我会头晕又悲伤"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "neo eop sin eo ji reop go seul peo jyeo"
+				}
+			],
+			"id": "L45",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "기운도 막 없어요",
+			"startTime": 145648,
+			"endTime": 147314,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "甚至浑身没有力气"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "gi un do mak eop seo yo"
+				}
+			],
+			"id": "L46",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "둘이 잘 만났대",
+			"startTime": 147682,
+			"endTime": 148847,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们天生一对"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ri jal man nat dae"
+				}
+			],
+			"id": "L47",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 149430,
+			"endTime": 150523,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L48",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 9
+		},
+		{
+			"text": "Don't look back",
+			"startTime": 151278,
+			"endTime": 152886,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Don't look back"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Don't look back"
+				}
+			],
+			"id": "L49",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "그렇게 우리답게 가보자",
+			"startTime": 153091,
+			"endTime": 156806,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "就按我们的方式继续吧"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "geu reo ke u ri dap ge ga bo ja"
+				}
+			],
+			"id": "L50",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "난 온몸으로 널 느끼고 있어",
+			"startTime": 158004,
+			"endTime": 161245,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我正在用全身心感受你"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "nan on mo meu ro neol neu kki go i sseo"
+				}
+			],
+			"id": "L51",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "Everything will be OK",
+			"startTime": 161437,
+			"endTime": 164371,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Everything will be OK"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Everything will be OK"
+				}
+			],
+			"id": "L52",
+			"agentId": "v1",
+			"songPart": "Bridge",
+			"blockIndex": 10
+		},
+		{
+			"text": "Like a psycho, psycho",
+			"startTime": 163675,
+			"endTime": 167207,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Like a psycho, psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Like a psycho, psycho"
+				}
+			],
+			"id": "L53",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "우릴 보고 말해 자꾸 자꾸",
+			"startTime": 167217,
+			"endTime": 170443,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都在说我们 一遍又一遍"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u ril bo go mal hae ja kku ja kku"
+				}
+			],
+			"id": "L54",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "다시 안 볼 듯 싸우다가도 붙어다니니 말야",
+			"startTime": 170756,
+			"endTime": 174753,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "吵架时就像水火不容 一转头却又黏在一起"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "da si an bol deut ssa u da ga do bu teo da ni ni ma rya"
+				}
+			],
+			"id": "L55",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "둘이 잘 만났대",
+			"startTime": 175086,
+			"endTime": 176474,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "都说我们天生一对"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "du ri jal man nat dae"
+				}
+			],
+			"id": "L56",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 176853,
+			"endTime": 178321,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L57",
+			"agentId": "v1",
+			"songPart": "Chorus",
+			"blockIndex": 11
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 178702,
+			"endTime": 179839,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L58",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 180469,
+			"endTime": 181606,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L59",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 182176,
+			"endTime": 183313,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L60",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 183917,
+			"endTime": 185054,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L61",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "It's alright",
+			"startTime": 185056,
+			"endTime": 187055,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright"
+				}
+			],
+			"id": "L62",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "It's alright",
+			"startTime": 188379,
+			"endTime": 189288,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright"
+				}
+			],
+			"id": "L63",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 12
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 192304,
+			"endTime": 193441,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L64",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 194157,
+			"endTime": 195294,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L65",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 195934,
+			"endTime": 197071,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L66",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "Hey now, we'll be ok",
+			"startTime": 197663,
+			"endTime": 198800,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Hey now, we'll be ok"
+				}
+			],
+			"id": "L67",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "It's alright",
+			"startTime": 198776,
+			"endTime": 199685,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright"
+				}
+			],
+			"id": "L68",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "It's alright",
+			"startTime": 202125,
+			"endTime": 203034,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "It's alright"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "It's alright"
+				}
+			],
+			"id": "L69",
+			"agentId": "v1",
+			"songPart": "Verse",
+			"blockIndex": 13
+		},
+		{
+			"text": "우린 좀 이상해",
+			"startTime": 204004,
+			"endTime": 206165,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "我们有点奇怪"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "u rin jom i sang hae"
+				}
+			],
+			"id": "L70",
+			"agentId": "v1",
+			"songPart": "Outro",
+			"blockIndex": 14
+		},
+		{
+			"text": "Psycho",
+			"startTime": 206175,
+			"endTime": 207245,
+			"translations": [
+				{
+					"language": "zh-Hans",
+					"text": "Psycho"
+				}
+			],
+			"romanizations": [
+				{
+					"language": "ko-Latn",
+					"text": "Psy cho"
+				}
+			],
+			"id": "L71",
+			"agentId": "v1",
+			"songPart": "Outro",
+			"blockIndex": 14
+		}
+	]
+}

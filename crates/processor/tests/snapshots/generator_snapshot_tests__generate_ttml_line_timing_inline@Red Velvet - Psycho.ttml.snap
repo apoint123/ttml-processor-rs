@@ -1,0 +1,263 @@
+---
+source: tests/generator_snapshot_tests.rs
+expression: generated_xml
+input_file: tests/fixtures/Red Velvet - Psycho.ttml
+---
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:amll="http://www.example.com/ns/amll" itunes:timing="Line" xml:lang="ko">
+    <head>
+        <metadata>
+            <ttm:agent type="person" xml:id="v1"/>
+            <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
+                <songwriters>
+                    <songwriter>Andrew Scott</songwriter>
+                    <songwriter>Cazzi Opeia</songwriter>
+                    <songwriter>EJAE</songwriter>
+                    <songwriter>Kenzie</songwriter>
+                </songwriters>
+            </iTunesMetadata>
+        </metadata>
+    </head>
+    <body dur="3:27.245">
+        <div begin="12.026" end="12.999" itunes:songPart="Intro">
+            <p begin="12.026" end="12.999" itunes:key="L1" ttm:agent="v1">Psycho<span ttm:role="x-translation" xml:lang="zh-Hans">Psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Psycho</span>
+            </p>
+        </div>
+        <div begin="13.271" end="26.490" itunes:songPart="Verse">
+            <p begin="13.271" end="15.601" itunes:key="L2" ttm:agent="v1">널 어쩌면 좋을까<span ttm:role="x-translation" xml:lang="zh-Hans">该拿你怎么办呢</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">neol eo jjeo myeon jo eul kka</span>
+            </p>
+            <p begin="16.495" end="18.925" itunes:key="L3" ttm:agent="v1">이런 맘은 또 첨이라<span ttm:role="x-translation" xml:lang="zh-Hans">这种心情还是第一次</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">i reon ma meun tto cheo mi ra</span>
+            </p>
+            <p begin="19.665" end="21.802" itunes:key="L4" ttm:agent="v1">Up and down이 좀 심해<span ttm:role="x-translation" xml:lang="zh-Hans">Up and down 有些严重</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Up and down i jom sim hae</span>
+            </p>
+            <p begin="21.616" end="23.375" itunes:key="L5" ttm:agent="v1">조절이 자꾸 잘 안 돼<span ttm:role="x-translation" xml:lang="zh-Hans">总是控制不好</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">jo jeo ri ja kku jal an dwae</span>
+            </p>
+            <p begin="23.449" end="25.350" itunes:key="L6" ttm:agent="v1">하나 확실한 건<span ttm:role="x-translation" xml:lang="zh-Hans">唯一确定的是</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">ha na hwak sil han geon</span>
+            </p>
+            <p begin="25.208" end="26.490" itunes:key="L7" ttm:agent="v1">I don&apos;t play the game<span ttm:role="x-translation" xml:lang="zh-Hans">I don&apos;t play the game</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">I don&apos;t play the game</span>
+            </p>
+        </div>
+        <div begin="26.895" end="39.808" itunes:songPart="Verse">
+            <p begin="26.895" end="29.740" itunes:key="L8" ttm:agent="v1">우리 진짜 별나대<span ttm:role="x-translation" xml:lang="zh-Hans">都说我们很奇怪</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u ri jin jja byeol na dae</span>
+            </p>
+            <p begin="30.015" end="33.149" itunes:key="L9" ttm:agent="v1">그냥 내가 너무 좋아해<span ttm:role="x-translation" xml:lang="zh-Hans">我就是太喜欢你了</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">geu nyang nae ga neo mu jo a hae</span>
+            </p>
+            <p begin="33.365" end="35.327" itunes:key="L10" ttm:agent="v1">넌 그걸 너무 잘 알고<span ttm:role="x-translation" xml:lang="zh-Hans">你又太清楚这一点</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">neon geu geol neo mu jal al go</span>
+            </p>
+            <p begin="35.337" end="36.839" itunes:key="L11" ttm:agent="v1">날 쥐락펴락해<span ttm:role="x-translation" xml:lang="zh-Hans">将我玩弄于股掌之间</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">nal jwi rak pyeo rak hae</span>
+            </p>
+            <p begin="37.067" end="39.808" itunes:key="L12" ttm:agent="v1">나도 마찬가지인 걸<span ttm:role="x-translation" xml:lang="zh-Hans">而我又何尝不是一样</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">na do ma chan ga ji in geol</span>
+            </p>
+        </div>
+        <div begin="41.631" end="53.811" itunes:songPart="PreChorus">
+            <p begin="41.631" end="45.859" itunes:key="L13" ttm:agent="v1">우린 참 별나고 이상한 사이야<span ttm:role="x-translation" xml:lang="zh-Hans">我们真是离奇又古怪的关系</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u rin cham byeol na go i sang han sa i ya</span>
+            </p>
+            <p begin="46.659" end="49.598" itunes:key="L14" ttm:agent="v1">서로를 부서지게<span ttm:role="x-translation" xml:lang="zh-Hans">一次次击碎对方</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">seo ro reul bu seo ji ge</span>
+            </p>
+            <p begin="50.079" end="53.811" itunes:key="L15" ttm:agent="v1">그리곤 또 껴안아<span ttm:role="x-translation" xml:lang="zh-Hans">之后又紧紧拥抱</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">geu ri gon tto kkyeo a na</span>
+            </p>
+        </div>
+        <div begin="53.821" end="1:22.103" itunes:songPart="Chorus">
+            <p begin="53.821" end="57.491" itunes:key="L16" ttm:agent="v1">You got me feeling like a psycho, psycho<span ttm:role="x-translation" xml:lang="zh-Hans">You got me feeling like a psycho, psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">You got me feeling like a psycho, psycho</span>
+            </p>
+            <p begin="57.535" end="1:00.761" itunes:key="L17" ttm:agent="v1">우릴 보고 말해 자꾸 자꾸<span ttm:role="x-translation" xml:lang="zh-Hans">都在说我们 一遍又一遍</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u ril bo go mal hae ja kku ja kku</span>
+            </p>
+            <p begin="1:00.980" end="1:04.977" itunes:key="L18" ttm:agent="v1">다시 안 볼 듯 싸우다가도 붙어다니니 말야<span ttm:role="x-translation" xml:lang="zh-Hans">吵架时就像水火不容 一转头却又黏在一起</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">da si an bol deut ssa u da ga do bu teo da ni ni ma rya</span>
+            </p>
+            <p begin="1:05.356" end="1:08.446" itunes:key="L19" ttm:agent="v1">이해가 안 간대 웃기지도 않대<span ttm:role="x-translation" xml:lang="zh-Hans">都说无法理解 一点也不好笑</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">i hae ga an gan dae ut gi ji do an tae</span>
+            </p>
+            <p begin="1:08.543" end="1:10.804" itunes:key="L20" ttm:agent="v1">맞아 Psycho, psycho<span ttm:role="x-translation" xml:lang="zh-Hans">没错 Psycho, psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">ma ja Psycho, psycho</span>
+            </p>
+            <p begin="1:11.177" end="1:14.437" itunes:key="L21" ttm:agent="v1">서로 좋아 죽는 바보 바보<span ttm:role="x-translation" xml:lang="zh-Hans">爱死了对方的傻瓜 傻瓜</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">seo ro jo a juk neun ba bo ba bo</span>
+            </p>
+            <p begin="1:14.765" end="1:16.929" itunes:key="L22" ttm:agent="v1">너 없인 어지럽고 슬퍼져<span ttm:role="x-translation" xml:lang="zh-Hans">没有你 我会头晕又悲伤</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">neo eop sin eo ji reop go seul peo jyeo</span>
+            </p>
+            <p begin="1:17.122" end="1:18.648" itunes:key="L23" ttm:agent="v1">기운도 막 없어요<span ttm:role="x-translation" xml:lang="zh-Hans">甚至浑身没有力气</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">gi un do mak eop seo yo</span>
+            </p>
+            <p begin="1:19.079" end="1:20.375" itunes:key="L24" ttm:agent="v1">둘이 잘 만났대<span ttm:role="x-translation" xml:lang="zh-Hans">都说我们天生一对</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">du ri jal man nat dae</span>
+            </p>
+            <p begin="1:20.966" end="1:22.103" itunes:key="L25" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+        </div>
+        <div begin="1:22.698" end="1:36.538" itunes:songPart="Verse">
+            <p begin="1:22.698" end="1:25.673" itunes:key="L26" ttm:agent="v1">Hey, trouble 경고 따윈 없이 오는 너<span ttm:role="x-translation" xml:lang="zh-Hans">Hey, trouble 没有预警就走来的你</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey, trouble gyeong go tta win eop si o neun neo</span>
+            </p>
+            <p begin="1:25.853" end="1:27.476" itunes:key="L27" ttm:agent="v1">I&apos;m original visual<span ttm:role="x-translation" xml:lang="zh-Hans">I&apos;m original visual</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">I&apos;m original visual</span>
+            </p>
+            <p begin="1:27.434" end="1:29.608" itunes:key="L28" ttm:agent="v1">우린 원래 이랬어 Yeah<span ttm:role="x-translation" xml:lang="zh-Hans">我们本来就这样 Yeah</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u rin won rae i rae sseo Yeah</span>
+            </p>
+            <p begin="1:29.673" end="1:31.382" itunes:key="L29" ttm:agent="v1">두렵지는 않아<span ttm:role="x-translation" xml:lang="zh-Hans">没什么可怕的</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">du ryeop ji neun a na</span>
+            </p>
+            <p begin="1:31.493" end="1:32.795" itunes:key="L30" ttm:agent="v1">It&apos;s hot! Let me just hop<span ttm:role="x-translation" xml:lang="zh-Hans">It&apos;s hot! Let me just hop</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">It&apos;s hot! Let me just hop</span>
+            </p>
+            <p begin="1:33.086" end="1:36.538" itunes:key="L31" ttm:agent="v1">어떻게 널 다룰까<span ttm:role="x-translation" xml:lang="zh-Hans">该怎么处理你呢</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">eo tteo ke neol da rul kka</span>
+            </p>
+        </div>
+        <div begin="1:35.323" end="1:49.453" itunes:songPart="Verse">
+            <p begin="1:35.323" end="1:38.788" itunes:key="L32" ttm:agent="v1">어쩔 줄을 몰라 너를 달래고<span ttm:role="x-translation" xml:lang="zh-Hans">不知所措地哄你开心</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">eo jjeol ju reul mol ra neo reul dal rae go</span>
+            </p>
+            <p begin="1:38.687" end="1:40.300" itunes:key="L33" ttm:agent="v1">매섭게 발로 차도<span ttm:role="x-translation" xml:lang="zh-Hans">就算我发狠踢你</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">mae seop ge bal ro cha do</span>
+            </p>
+            <p begin="1:40.623" end="1:44.089" itunes:key="L34" ttm:agent="v1">가끔 내게 미소 짓는 널<span ttm:role="x-translation" xml:lang="zh-Hans">你也会不时对我微笑</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">ga kkeum nae ge mi so jit neun neol</span>
+            </p>
+            <p begin="1:44.728" end="1:49.453" itunes:key="L35" ttm:agent="v1">어떻게 놓겠어 Ooh-ooh<span ttm:role="x-translation" xml:lang="zh-Hans">这让我怎能放手 Ooh-ooh</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">eo tteo ke no ke sseo Ooh- ooh</span>
+            </p>
+        </div>
+        <div begin="1:50.164" end="2:02.533" itunes:songPart="PreChorus">
+            <p begin="1:50.164" end="1:53.840" itunes:key="L36" ttm:agent="v1">우린 아름답고 참 슬픈 사이야<span ttm:role="x-translation" xml:lang="zh-Hans">我们真是美丽又悲伤的关系</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u rin a reum dap go cham seul peun sa i ya</span>
+            </p>
+            <p begin="1:55.191" end="1:58.056" itunes:key="L37" ttm:agent="v1">서로를 빛나게 해<span ttm:role="x-translation" xml:lang="zh-Hans">让彼此闪耀光芒</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">seo ro reul bit na ge hae</span>
+            </p>
+            <p begin="1:58.697" end="2:02.533" itunes:key="L38" ttm:agent="v1">마치 달과 강처럼 그리곤 또 껴안아<span ttm:role="x-translation" xml:lang="zh-Hans">就像月亮和江水 之后又紧紧拥抱</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">ma chi dal gwa gang cheo reom geu ri gon tto kkyeo a na</span>
+            </p>
+        </div>
+        <div begin="2:02.365" end="2:30.523" itunes:songPart="Chorus">
+            <p begin="2:02.365" end="2:06.066" itunes:key="L39" ttm:agent="v1">You got me feeling like a psycho, psycho<span ttm:role="x-translation" xml:lang="zh-Hans">You got me feeling like a psycho, psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">You got me feeling like a psycho, psycho</span>
+            </p>
+            <p begin="2:06.076" end="2:09.473" itunes:key="L40" ttm:agent="v1">우릴 보고 말해 자꾸 자꾸<span ttm:role="x-translation" xml:lang="zh-Hans">都在说我们 一遍又一遍</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u ril bo go mal hae ja kku ja kku</span>
+            </p>
+            <p begin="2:09.622" end="2:13.669" itunes:key="L41" ttm:agent="v1">다시 안 볼 듯 싸우다가도 붙어다니니 말야<span ttm:role="x-translation" xml:lang="zh-Hans">吵架时就像水火不容 一转头却又黏在一起</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">da si an bol deut ssa u da ga do bu teo da ni ni ma rya</span>
+            </p>
+            <p begin="2:13.969" end="2:17.009" itunes:key="L42" ttm:agent="v1">이해가 안 간대 웃기지도 않대<span ttm:role="x-translation" xml:lang="zh-Hans">都说无法理解 一点也不好笑</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">i hae ga an gan dae ut gi ji do an tae</span>
+            </p>
+            <p begin="2:17.174" end="2:21.135" itunes:key="L43" ttm:agent="v1">맞아 Psycho, psycho<span ttm:role="x-translation" xml:lang="zh-Hans">没错 Psycho, psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">ma ja Psycho, psycho</span>
+            </p>
+            <p begin="2:19.594" end="2:24.232" itunes:key="L44" ttm:agent="v1">서로 좋아 죽는 바보 바보<span ttm:role="x-translation" xml:lang="zh-Hans">爱死了对方的傻瓜 傻瓜</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">seo ro jo a juk neun ba bo ba bo</span>
+            </p>
+            <p begin="2:23.341" end="2:25.421" itunes:key="L45" ttm:agent="v1">너 없인 어지럽고 슬퍼져<span ttm:role="x-translation" xml:lang="zh-Hans">没有你 我会头晕又悲伤</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">neo eop sin eo ji reop go seul peo jyeo</span>
+            </p>
+            <p begin="2:25.648" end="2:27.314" itunes:key="L46" ttm:agent="v1">기운도 막 없어요<span ttm:role="x-translation" xml:lang="zh-Hans">甚至浑身没有力气</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">gi un do mak eop seo yo</span>
+            </p>
+            <p begin="2:27.682" end="2:28.847" itunes:key="L47" ttm:agent="v1">둘이 잘 만났대<span ttm:role="x-translation" xml:lang="zh-Hans">都说我们天生一对</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">du ri jal man nat dae</span>
+            </p>
+            <p begin="2:29.430" end="2:30.523" itunes:key="L48" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+        </div>
+        <div begin="2:31.278" end="2:44.371" itunes:songPart="Bridge">
+            <p begin="2:31.278" end="2:32.886" itunes:key="L49" ttm:agent="v1">Don&apos;t look back<span ttm:role="x-translation" xml:lang="zh-Hans">Don&apos;t look back</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Don&apos;t look back</span>
+            </p>
+            <p begin="2:33.091" end="2:36.806" itunes:key="L50" ttm:agent="v1">그렇게 우리답게 가보자<span ttm:role="x-translation" xml:lang="zh-Hans">就按我们的方式继续吧</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">geu reo ke u ri dap ge ga bo ja</span>
+            </p>
+            <p begin="2:38.004" end="2:41.245" itunes:key="L51" ttm:agent="v1">난 온몸으로 널 느끼고 있어<span ttm:role="x-translation" xml:lang="zh-Hans">我正在用全身心感受你</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">nan on mo meu ro neol neu kki go i sseo</span>
+            </p>
+            <p begin="2:41.437" end="2:44.371" itunes:key="L52" ttm:agent="v1">Everything will be OK<span ttm:role="x-translation" xml:lang="zh-Hans">Everything will be OK</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Everything will be OK</span>
+            </p>
+        </div>
+        <div begin="2:43.675" end="2:58.321" itunes:songPart="Chorus">
+            <p begin="2:43.675" end="2:47.207" itunes:key="L53" ttm:agent="v1">Like a psycho, psycho<span ttm:role="x-translation" xml:lang="zh-Hans">Like a psycho, psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Like a psycho, psycho</span>
+            </p>
+            <p begin="2:47.217" end="2:50.443" itunes:key="L54" ttm:agent="v1">우릴 보고 말해 자꾸 자꾸<span ttm:role="x-translation" xml:lang="zh-Hans">都在说我们 一遍又一遍</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u ril bo go mal hae ja kku ja kku</span>
+            </p>
+            <p begin="2:50.756" end="2:54.753" itunes:key="L55" ttm:agent="v1">다시 안 볼 듯 싸우다가도 붙어다니니 말야<span ttm:role="x-translation" xml:lang="zh-Hans">吵架时就像水火不容 一转头却又黏在一起</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">da si an bol deut ssa u da ga do bu teo da ni ni ma rya</span>
+            </p>
+            <p begin="2:55.086" end="2:56.474" itunes:key="L56" ttm:agent="v1">둘이 잘 만났대<span ttm:role="x-translation" xml:lang="zh-Hans">都说我们天生一对</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">du ri jal man nat dae</span>
+            </p>
+            <p begin="2:56.853" end="2:58.321" itunes:key="L57" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+        </div>
+        <div begin="2:58.702" end="3:09.288" itunes:songPart="Verse">
+            <p begin="2:58.702" end="2:59.839" itunes:key="L58" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:00.469" end="3:01.606" itunes:key="L59" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:02.176" end="3:03.313" itunes:key="L60" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:03.917" end="3:05.054" itunes:key="L61" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:05.056" end="3:07.055" itunes:key="L62" ttm:agent="v1">It&apos;s alright<span ttm:role="x-translation" xml:lang="zh-Hans">It&apos;s alright</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">It&apos;s alright</span>
+            </p>
+            <p begin="3:08.379" end="3:09.288" itunes:key="L63" ttm:agent="v1">It&apos;s alright<span ttm:role="x-translation" xml:lang="zh-Hans">It&apos;s alright</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">It&apos;s alright</span>
+            </p>
+        </div>
+        <div begin="3:12.304" end="3:23.034" itunes:songPart="Verse">
+            <p begin="3:12.304" end="3:13.441" itunes:key="L64" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:14.157" end="3:15.294" itunes:key="L65" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:15.934" end="3:17.071" itunes:key="L66" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:17.663" end="3:18.800" itunes:key="L67" ttm:agent="v1">Hey now, we&apos;ll be ok<span ttm:role="x-translation" xml:lang="zh-Hans">Hey now, we&apos;ll be ok</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Hey now, we&apos;ll be ok</span>
+            </p>
+            <p begin="3:18.776" end="3:19.685" itunes:key="L68" ttm:agent="v1">It&apos;s alright<span ttm:role="x-translation" xml:lang="zh-Hans">It&apos;s alright</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">It&apos;s alright</span>
+            </p>
+            <p begin="3:22.125" end="3:23.034" itunes:key="L69" ttm:agent="v1">It&apos;s alright<span ttm:role="x-translation" xml:lang="zh-Hans">It&apos;s alright</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">It&apos;s alright</span>
+            </p>
+        </div>
+        <div begin="3:24.004" end="3:27.245" itunes:songPart="Outro">
+            <p begin="3:24.004" end="3:26.165" itunes:key="L70" ttm:agent="v1">우린 좀 이상해<span ttm:role="x-translation" xml:lang="zh-Hans">我们有点奇怪</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">u rin jom i sang hae</span>
+            </p>
+            <p begin="3:26.175" end="3:27.245" itunes:key="L71" ttm:agent="v1">Psycho<span ttm:role="x-translation" xml:lang="zh-Hans">Psycho</span>
+                <span ttm:role="x-roman" xml:lang="ko-Latn">Psy cho</span>
+            </p>
+        </div>
+    </body>
+</tt>

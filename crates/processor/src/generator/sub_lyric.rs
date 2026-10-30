@@ -136,6 +136,23 @@ pub fn write_sub_lyrics(
                     item = item.with_attribute((attrs::XML_LANG, lang_str));
                 }
 
+                // 音译不写入 `type`；翻译则根据逐字/逐行形式推断
+                if matches!(kind, SubLyricKind::Translation) {
+                    let contents = entries.iter().flat_map(|entry| {
+                        entry
+                            .main_contents
+                            .iter()
+                            .chain(entry.bg_contents.unwrap_or(&[]))
+                    });
+                    item = item.with_attribute((
+                        attrs::TYPE,
+                        translation_type(
+                            contents.filter(|content| content.language.as_deref() == lang),
+                            config,
+                        ),
+                    ));
+                }
+
                 item.write_inner_content(|writer| {
                     for entry in &entries {
                         let main_content = entry
@@ -189,6 +206,27 @@ pub fn write_sub_lyrics(
         })?;
 
     Ok(())
+}
+
+/// 推断 `<translation>` 块应写入的 `type` 属性
+///
+/// Apple Music 的约定：
+/// - 逐行翻译（没有逐字音节，或每行的音节数不超过 1）写入 `subtitle`
+/// - 逐字翻译（存在包含多个音节的翻译行）写入 `replacement`
+///
+/// 启用 `line_timing` 时逐字内容会被降级为逐行文本，因此同样按 `subtitle` 处理
+fn translation_type<'a>(
+    mut contents: impl Iterator<Item = &'a SubLyricContent>,
+    config: &GeneratorConfig,
+) -> &'static str {
+    let is_word_level = !config.line_timing
+        && contents.any(|content| content.words.as_ref().is_some_and(|words| words.len() > 1));
+
+    if is_word_level {
+        vals::TRANSLATION_REPLACEMENT
+    } else {
+        vals::TRANSLATION_SUBTITLE
+    }
 }
 
 fn write_sub_lyric_content(

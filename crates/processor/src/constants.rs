@@ -104,6 +104,10 @@ pub mod vals {
         AGENT_DEFAULT_DUET = "v2";
 
         TRANSLATION_DEFAULT_LANGUAGE = "zh-Hans";
+        TRANSLATION_SUBTITLE = "subtitle";
+        TRANSLATION_REPLACEMENT = "replacement";
+
+        NAME_FULL = "full";
     }
 }
 

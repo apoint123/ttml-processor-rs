@@ -16,7 +16,7 @@ input_file: tests/fixtures/1752892462960-151196223-4b4faff5.ttml
             <amll:meta key="ttmlAuthorGithubLogin" value="Torotar"/>
             <iTunesMetadata xmlns="http://music.apple.com/lyric-ttml-internal">
                 <translations>
-                    <translation xml:lang="zh-CN">
+                    <translation xml:lang="zh-CN" type="subtitle">
                         <text for="L1">我带着我的宝贝去度周末</text>
                         <text for="L2">“小伙子，这是你的姑娘？”</text>
                         <text for="L3">&quot;是的，我们心心相印，合二为一&quot;</text>
