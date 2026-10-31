@@ -87,3 +87,30 @@ fn test_error_context_unexpected_eof() {
     assert_eq!(context.tag_stack, vec!["tt", "body", "div", "p", "span"]);
     assert_eq!(context.current_attribute, None);
 }
+
+#[test]
+fn test_error_source_chain() {
+    use std::error::Error;
+
+    let xml = r#"<tt xmlns="http://www.w3.org/ns/ttml">
+            <head>
+                <metadata>
+                    <ttm:agent type="person" /> 
+                </metadata>
+            </head>
+        </tt>"#;
+
+    let Err(err) = parse_ttml(xml) else {
+        panic!("Expected error");
+    };
+
+    let source = err.source().expect("Error source should be present");
+    let kind = source
+        .downcast_ref::<ParseErrorKind>()
+        .expect("Source should downcast to ParseErrorKind");
+
+    match kind {
+        ParseErrorKind::MissingAttribute(val) => assert_eq!(val, "xml:id"),
+        _ => panic!("Expected MissingAttribute, got {kind:?}"),
+    }
+}

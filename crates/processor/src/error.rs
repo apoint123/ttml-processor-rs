@@ -53,6 +53,7 @@ pub enum ParseErrorKind {
 pub enum TTMLProcessorError {
     #[error("{kind} (at byte offset {0})", .context.byte_offset)]
     ParseError {
+        #[source]
         kind: ParseErrorKind,
         context: Box<ErrorContext>,
     },
