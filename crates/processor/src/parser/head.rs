@@ -14,9 +14,7 @@ use crate::{
         tags,
     },
     error::{
-        ParseErrorKind,
         Result,
-        ResultExt as _,
         TTMLProcessorError,
     },
     model::{
@@ -27,7 +25,6 @@ use crate::{
         ext::{
             BytesStartExt as _,
             QNameExt as _,
-            ReaderExt as _,
         },
         state::ParserContext,
         sub_lyric::{
@@ -35,7 +32,11 @@ use crate::{
             parse_sub_lyrics,
         },
         timestamp::parse_decimal_seconds,
-        utils::read_text_content,
+        utils::{
+            Walk,
+            read_text_content,
+            walk_inner,
+        },
     },
 };
 
@@ -69,92 +70,82 @@ use crate::{
 /// </head>
 /// ```
 pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Result<()> {
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let name_str =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
+    walk_inner(reader, context, tags::HEAD, |reader, context, event| {
+        let Event::Start(e) = event else {
+            return Ok(Walk::Continue);
+        };
+        let qname = e.name();
+        let tag_name =
+            std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
 
-                context.tag_stack.push(name_str.into());
-
-                match name_str {
-                    tags::TRANSLATIONS => {
-                        parse_sub_lyrics(
-                            reader,
-                            context,
-                            tags::TRANSLATIONS,
-                            tags::TRANSLATION,
-                            SubLyricType::Translation,
-                        )?;
-                        context.tag_stack.pop();
-                    }
-                    tags::TRANSLITERATIONS => {
-                        parse_sub_lyrics(
-                            reader,
-                            context,
-                            tags::TRANSLITERATIONS,
-                            tags::TRANSLITERATION,
-                            SubLyricType::Transliteration,
-                        )?;
-                        context.tag_stack.pop();
-                    }
-
-                    tags::TTM_AGENT => {
-                        parse_agent(reader, e, context)?;
-                        context.tag_stack.pop();
-                    }
-
-                    tags::SONGWRITERS => {
-                        parse_songwriters(reader, context)?;
-                        context.tag_stack.pop();
-                    }
-
-                    tags::TTM_TITLE => {
-                        let title = read_text_content(reader, context, tags::TTM_TITLE)?;
-                        let trimmed = title.trim();
-                        if !trimmed.is_empty() {
-                            context.metadata.push_title(trimmed.into());
-                        }
-                        context.tag_stack.pop();
-                    }
-
-                    tags::AMLL_META => {
-                        if let (Ok(key), Ok(value)) = (
-                            e.get_required_attr(attrs::KEY, reader, context),
-                            e.get_required_attr(attrs::VALUE, reader, context),
-                        ) {
-                            parse_amll_meta(context, &key, &value);
-                        }
-                    }
-
-                    tags::ITUNES_METADATA => {
-                        if let Some(value) =
-                            e.get_attr_value(attrs::LEADING_SILENCE, reader, context)?
-                            && let Some(ms) = parse_decimal_seconds(value.trim().as_bytes())
-                            && let Ok(ms) = u32::try_from(ms)
-                        {
-                            context.metadata.audio_mut().leading_silence = Some(ms);
-                        }
-                    }
-
-                    tags::AUDIO => {
-                        parse_audio_element(reader, e, context)?;
-                    }
-                    _ => (),
-                }
+        match tag_name {
+            tags::TRANSLATIONS => {
+                parse_sub_lyrics(
+                    reader,
+                    context,
+                    tags::TRANSLATIONS,
+                    tags::TRANSLATION,
+                    SubLyricType::Translation,
+                )?;
+                Ok(Walk::Handled)
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::HEAD) {
-                    break;
-                }
-                context.tag_stack.pop();
+            tags::TRANSLITERATIONS => {
+                parse_sub_lyrics(
+                    reader,
+                    context,
+                    tags::TRANSLITERATIONS,
+                    tags::TRANSLITERATION,
+                    SubLyricType::Transliteration,
+                )?;
+                Ok(Walk::Handled)
             }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
+
+            tags::TTM_AGENT => {
+                parse_agent(reader, &e, context)?;
+                Ok(Walk::Handled)
+            }
+
+            tags::SONGWRITERS => {
+                parse_songwriters(reader, context)?;
+                Ok(Walk::Handled)
+            }
+
+            tags::TTM_TITLE => {
+                let title = read_text_content(reader, context, tags::TTM_TITLE)?;
+                let trimmed = title.trim();
+                if !trimmed.is_empty() {
+                    context.metadata.push_title(trimmed.into());
+                }
+                Ok(Walk::Handled)
+            }
+
+            tags::AMLL_META => {
+                if let (Ok(key), Ok(value)) = (
+                    e.get_required_attr(attrs::KEY, reader, context),
+                    e.get_required_attr(attrs::VALUE, reader, context),
+                ) {
+                    parse_amll_meta(context, &key, &value);
+                }
+                Ok(Walk::Continue)
+            }
+
+            tags::ITUNES_METADATA => {
+                if let Some(value) = e.get_attr_value(attrs::LEADING_SILENCE, reader, context)?
+                    && let Some(ms) = parse_decimal_seconds(value.trim().as_bytes())
+                    && let Ok(ms) = u32::try_from(ms)
+                {
+                    context.metadata.audio_mut().leading_silence = Some(ms);
+                }
+                Ok(Walk::Continue)
+            }
+
+            tags::AUDIO => {
+                parse_audio_element(reader, &e, context)?;
+                Ok(Walk::Continue)
+            }
+            _ => Ok(Walk::Continue),
         }
-    }
-    Ok(())
+    })
 }
 
 /// 解析 `<iTunesMetadata>` 下的 `<audio>` 标签
@@ -228,30 +219,20 @@ fn parse_agent(
     let type_ = e.get_attr_value(attrs::TYPE, reader, context)?;
     let mut name = None;
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref inner_e) => {
-                let qname = inner_e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if inner_e.name().is(tags::TTM_NAME) {
-                    name = Some(read_text_content(reader, context, tags::TTM_NAME)?);
-                    context.tag_stack.pop();
-                }
+    walk_inner(
+        reader,
+        context,
+        tags::TTM_AGENT,
+        |reader, context, event| {
+            if let Event::Start(e) = event
+                && e.name().is(tags::TTM_NAME)
+            {
+                name = Some(read_text_content(reader, context, tags::TTM_NAME)?);
+                return Ok(Walk::Handled);
             }
-            Event::End(ref inner_e) => {
-                if inner_e.name().is(tags::TTM_AGENT) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
-        }
-    }
+            Ok(Walk::Continue)
+        },
+    )?;
 
     let agent = Agent { id, name, type_ };
 
@@ -301,35 +282,24 @@ fn parse_amll_meta(context: &mut ParserContext, key: &str, value: &str) {
 /// </songwriters>
 /// ```
 fn parse_songwriters(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Result<()> {
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if e.name().is(tags::SONGWRITER) {
-                    let text = read_text_content(reader, context, tags::SONGWRITER)?;
-                    let text: CompactString = text.trim().into();
-                    if !text.is_empty() {
-                        context.metadata.push_songwriter(text);
-                    }
-                    context.tag_stack.pop();
+    walk_inner(
+        reader,
+        context,
+        tags::SONGWRITERS,
+        |reader, context, event| {
+            if let Event::Start(e) = event
+                && e.name().is(tags::SONGWRITER)
+            {
+                let text = read_text_content(reader, context, tags::SONGWRITER)?;
+                let text: CompactString = text.trim().into();
+                if !text.is_empty() {
+                    context.metadata.push_songwriter(text);
                 }
+                return Ok(Walk::Handled);
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::SONGWRITERS) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
-        }
-    }
-    Ok(())
+            Ok(Walk::Continue)
+        },
+    )
 }
 
 #[cfg(test)]

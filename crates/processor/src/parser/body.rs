@@ -28,15 +28,16 @@ use crate::{
         ext::{
             BytesStartExt as _,
             QNameExt as _,
-            ReaderExt as _,
         },
         span::process_span,
         state::ParserContext,
         timestamp::parse_timestamp,
         utils::{
+            Walk,
             is_spacing_text,
             mark_last_syllable_space,
             resolve_xml_entity,
+            walk_inner,
         },
     },
     utils::{
@@ -64,31 +65,15 @@ pub fn parse_body(
         context.metadata.audio_mut().duration = Some(ms);
     }
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::DIV) {
-                    parse_section(reader, e, context, lines)?;
-                    context.tag_stack.pop();
-                }
-            }
-            Event::End(ref e) => {
-                if e.name().is(tags::BODY) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
+    walk_inner(reader, context, tags::BODY, |reader, context, event| {
+        if let Event::Start(e) = event
+            && e.name().is(tags::DIV)
+        {
+            parse_section(reader, &e, context, lines)?;
+            return Ok(Walk::Handled);
         }
-    }
-    Ok(())
+        Ok(Walk::Continue)
+    })
 }
 
 /// 解析歌词区块，即一个 `<div>` 标签
@@ -139,33 +124,17 @@ fn parse_section(
         context.last_song_part = current_song_part;
     }
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::P) {
-                    if let Some(line) = parse_line(reader, e, context)? {
-                        lines.push(line);
-                    }
-                    context.tag_stack.pop();
-                }
+    walk_inner(reader, context, tags::DIV, |reader, context, event| {
+        if let Event::Start(e) = event
+            && e.name().is(tags::P)
+        {
+            if let Some(line) = parse_line(reader, &e, context)? {
+                lines.push(line);
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::DIV) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
+            return Ok(Walk::Handled);
         }
-    }
-    Ok(())
+        Ok(Walk::Continue)
+    })
 }
 
 /// 解析一行歌词，即一个 `<p>` 标签
@@ -287,19 +256,14 @@ fn parse_line(
     let mut raw_text = String::new();
 
     // 解析内部的 span
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::SPAN) {
-                    process_span(reader, context, e, &mut line, false)?;
-                    context.tag_stack.pop();
-                }
+    walk_inner(
+        reader,
+        context,
+        tags::P,
+        |reader, context, event| match event {
+            Event::Start(e) if e.name().is(tags::SPAN) => {
+                process_span(reader, context, &e, &mut line, false)?;
+                Ok(Walk::Handled)
             }
             Event::Text(e) => {
                 let text =
@@ -308,6 +272,7 @@ fn parse_line(
                     mark_last_syllable_space(&mut line, false);
                 }
                 raw_text.push_str(text);
+                Ok(Walk::Continue)
             }
             Event::GeneralRef(reference) => {
                 raw_text.push_str(
@@ -315,17 +280,11 @@ fn parse_line(
                         .with_context(reader, context)
                         .with_offending_bytes(reference.as_ref())?,
                 );
+                Ok(Walk::Continue)
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::P) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
-        }
-    }
+            _ => Ok(Walk::Continue),
+        },
+    )?;
 
     post_process_line(&mut line, raw_text);
 

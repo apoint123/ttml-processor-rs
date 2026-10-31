@@ -26,6 +26,7 @@ use crate::{
         ParseErrorKind,
         Result,
         ResultExt as _,
+        TTMLProcessorError,
         TTMLResultExt as _,
         TimestampExt as _,
     },
@@ -194,4 +195,59 @@ pub const fn mark_slice_last_space(words: &mut [Syllable]) {
 /// 要求不为空且不包含换行符（经过格式化的 TTML）
 pub fn is_spacing_text(text: &str) -> bool {
     !text.is_empty() && !text.contains('\n')
+}
+
+/// 回调处理完一个事件后的控制指令
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Walk {
+    /// 回调没有消费当前子树，遍历器继续读取后续事件
+    Continue,
+    /// 回调已递归消费整个子元素，遍历器代为弹出其标签栈帧
+    Handled,
+}
+
+/// 遍历当前元素内部的事件，直到遇到 `end_tag` 的结束标签
+///
+/// 统一维护 [`ParserContext::tag_stack`] 与 EOF 错误：
+/// - 遇到 `Start` 时压栈，回调返回 [`Walk::Handled`] 时代为弹栈
+/// - 遇到非终止 `End` 时弹栈后交给回调
+/// - 遇到 `Eof` 时返回 [`ParseErrorKind::UnexpectedEof`]
+///
+/// 终止标签自身的栈帧由调用者负责，遍历器只判断并返回。
+#[inline]
+pub fn walk_inner<'a>(
+    reader: &mut Reader<&'a [u8]>,
+    context: &mut ParserContext,
+    end_tag: &str,
+    mut on_event: impl FnMut(&mut Reader<&'a [u8]>, &mut ParserContext, Event<'a>) -> Result<Walk>,
+) -> Result<()> {
+    loop {
+        let event = reader.read_event_with_context(context)?;
+        let mut started = false;
+
+        match event {
+            Event::Start(ref e) => {
+                let tag_name: CompactString = std::str::from_utf8(e.name().as_ref())
+                    .map_err(TTMLProcessorError::Utf8Error)?
+                    .into();
+                context.tag_stack.push(tag_name);
+                started = true;
+            }
+            Event::End(ref e) => {
+                if e.name().is(end_tag) {
+                    return Ok(());
+                }
+                context.tag_stack.pop();
+            }
+            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
+            _ => {}
+        }
+
+        // 只保留一个回调调用点，便于编译器将回调内联
+        let walk = on_event(reader, context, event)?;
+
+        if started && walk == Walk::Handled {
+            context.tag_stack.pop();
+        }
+    }
 }

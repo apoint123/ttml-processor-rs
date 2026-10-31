@@ -34,16 +34,17 @@ use crate::{
         ext::{
             BytesStartExt as _,
             QNameExt as _,
-            ReaderExt as _,
         },
         state::ParserContext,
         timestamp::parse_timestamp,
         utils::{
+            Walk,
             is_spacing_text,
             mark_last_syllable_space,
             parse_syllable_with_attrs,
             read_text_content,
             resolve_xml_entity,
+            walk_inner,
         },
     },
 };
@@ -215,9 +216,7 @@ fn process_inline_sub_lyric(
     let lang = lang_bytes
         .map(|v| {
             CompactString::from_utf8(v)
-                .map_err(|_| {
-                    ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8"))
-                })
+                .map_err(|_| ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8")))
                 .with_context(reader, context)
                 .with_offending_bytes(v)
         })
@@ -318,25 +317,23 @@ fn collect_background_vocal_body(
 ) -> Result<String> {
     let mut raw_text = String::new();
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::SPAN) {
-                    process_span(reader, context, e, line, true)?;
-                    context.tag_stack.pop();
-                }
+    walk_inner(
+        reader,
+        context,
+        tags::SPAN,
+        |reader, context, event| match event {
+            Event::Start(e) if e.name().is(tags::SPAN) => {
+                process_span(reader, context, &e, line, true)?;
+                Ok(Walk::Handled)
             }
             Event::Text(e) => {
-                let text = std::str::from_utf8(e.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
+                let text =
+                    std::str::from_utf8(e.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
                 if is_spacing_text(text) {
                     mark_last_syllable_space(line, true);
                 }
                 raw_text.push_str(text);
+                Ok(Walk::Continue)
             }
             Event::GeneralRef(reference) => {
                 raw_text.push_str(
@@ -344,19 +341,11 @@ fn collect_background_vocal_body(
                         .with_context(reader, context)
                         .with_offending_bytes(reference.as_ref())?,
                 );
+                Ok(Walk::Continue)
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::SPAN) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => {
-                return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context);
-            }
-            _ => (),
-        }
-    }
+            _ => Ok(Walk::Continue),
+        },
+    )?;
 
     Ok(raw_text)
 }
@@ -402,42 +391,26 @@ fn process_ruby_container(
         Ok(())
     })?;
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::SPAN) {
-                    let ruby_attr = e.get_attr_value(attrs::TTS_RUBY, reader, context)?;
-                    match ruby_attr.as_deref() {
-                        Some(vals::RUBY_BASE) => {
-                            base_text = read_text_content(reader, context, tags::SPAN)?;
-                            context.tag_stack.pop();
-                        }
-                        Some(vals::RUBY_TEXT_CONTAINER) => {
-                            ruby_tags = process_ruby_text_container(reader, context)?;
-                            context.tag_stack.pop();
-                        }
-                        _ => {
-                            let _ = read_text_content(reader, context, tags::SPAN)?;
-                            context.tag_stack.pop();
-                        }
-                    }
+    walk_inner(reader, context, tags::SPAN, |reader, context, event| {
+        if let Event::Start(e) = event
+            && e.name().is(tags::SPAN)
+        {
+            let ruby_attr = e.get_attr_value(attrs::TTS_RUBY, reader, context)?;
+            match ruby_attr.as_deref() {
+                Some(vals::RUBY_BASE) => {
+                    base_text = read_text_content(reader, context, tags::SPAN)?;
+                }
+                Some(vals::RUBY_TEXT_CONTAINER) => {
+                    ruby_tags = process_ruby_text_container(reader, context)?;
+                }
+                _ => {
+                    let _ = read_text_content(reader, context, tags::SPAN)?;
                 }
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::SPAN) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
+            return Ok(Walk::Handled);
         }
-    }
+        Ok(Walk::Continue)
+    })?;
 
     let start_time = ruby_tags.first().map_or(0, |r| r.start_time);
     let end_time = ruby_tags.last().map_or(0, |r| r.end_time);
@@ -467,33 +440,16 @@ fn process_ruby_text_container(
 ) -> Result<Vec<RubyTag>> {
     let mut ruby_tags = Vec::new();
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref inner_e) => {
-                let inner_qname = inner_e.name();
-                let inner_tag = std::str::from_utf8(inner_qname.as_ref())
-                    .map_err(TTMLProcessorError::Utf8Error)?;
-                context.tag_stack.push(inner_tag.into());
-
-                if inner_qname.is(tags::SPAN)
-                    && let Some(ruby_tag) = process_ruby_text_span(reader, context, inner_e)?
-                {
-                    ruby_tags.push(ruby_tag);
-                    context.tag_stack.pop();
-                }
-            }
-            Event::End(ref inner_e) => {
-                if inner_e.name().is(tags::SPAN) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => {
-                return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context);
-            }
-            _ => (),
+    walk_inner(reader, context, tags::SPAN, |reader, context, event| {
+        if let Event::Start(e) = event
+            && e.name().is(tags::SPAN)
+            && let Some(ruby_tag) = process_ruby_text_span(reader, context, &e)?
+        {
+            ruby_tags.push(ruby_tag);
+            return Ok(Walk::Handled);
         }
-    }
+        Ok(Walk::Continue)
+    })?;
 
     Ok(ruby_tags)
 }

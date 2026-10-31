@@ -13,7 +13,6 @@ use crate::{
         vals,
     },
     error::{
-        ParseErrorKind,
         Result,
         ResultExt as _,
         TTMLProcessorError,
@@ -27,14 +26,15 @@ use crate::{
         ext::{
             BytesStartExt as _,
             QNameExt as _,
-            ReaderExt as _,
         },
         state::ParserContext,
         utils::{
+            Walk,
             is_spacing_text,
             mark_slice_last_space,
             parse_basic_syllable,
             resolve_xml_entity,
+            walk_inner,
         },
     },
     utils::{
@@ -90,43 +90,27 @@ pub fn parse_sub_lyrics(
     item_tag: &str,
     sub_type: SubLyricType,
 ) -> Result<()> {
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(item_tag) {
-                    let lang = e.get_attr_value(attrs::XML_LANG, reader, context)?;
-                    let automatically_created = parse_automatically_created(
-                        e.get_attr_value(attrs::AUTOMATICALLY_CREATED, reader, context)?
-                            .as_ref(),
-                    );
-                    parse_sub_lyric_block(
-                        reader,
-                        context,
-                        item_tag,
-                        lang.as_ref(),
-                        automatically_created,
-                        sub_type,
-                    )?;
-                    context.tag_stack.pop();
-                }
-            }
-            Event::End(ref e) => {
-                if e.name().is(group_tag) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
+    walk_inner(reader, context, group_tag, |reader, context, event| {
+        if let Event::Start(e) = event
+            && e.name().is(item_tag)
+        {
+            let lang = e.get_attr_value(attrs::XML_LANG, reader, context)?;
+            let automatically_created = parse_automatically_created(
+                e.get_attr_value(attrs::AUTOMATICALLY_CREATED, reader, context)?
+                    .as_ref(),
+            );
+            parse_sub_lyric_block(
+                reader,
+                context,
+                item_tag,
+                lang.as_ref(),
+                automatically_created,
+                sub_type,
+            )?;
+            return Ok(Walk::Handled);
         }
-    }
-    Ok(())
+        Ok(Walk::Continue)
+    })
 }
 
 /// 解析一个 `<text>` 标签
@@ -143,39 +127,23 @@ fn parse_sub_lyric_block(
     automatically_created: Option<bool>,
     sub_type: SubLyricType,
 ) -> Result<()> {
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::TEXT) {
-                    let line_id = e.get_required_attr(attrs::FOR, reader, context)?;
-                    parse_sub_lyric_text(
-                        reader,
-                        context,
-                        line_id,
-                        lang,
-                        automatically_created,
-                        sub_type,
-                    )?;
-                    context.tag_stack.pop();
-                }
-            }
-            Event::End(ref e) => {
-                if e.name().is(item_tag) {
-                    break;
-                }
-                context.tag_stack.pop();
-            }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
+    walk_inner(reader, context, item_tag, |reader, context, event| {
+        if let Event::Start(e) = event
+            && e.name().is(tags::TEXT)
+        {
+            let line_id = e.get_required_attr(attrs::FOR, reader, context)?;
+            parse_sub_lyric_text(
+                reader,
+                context,
+                line_id,
+                lang,
+                automatically_created,
+                sub_type,
+            )?;
+            return Ok(Walk::Handled);
         }
-    }
-    Ok(())
+        Ok(Walk::Continue)
+    })
 }
 
 /// 解析 `<text>` 标签中的内容
@@ -240,47 +208,37 @@ fn parse_sub_lyric_text(
 
     let mut in_bg_span = false;
 
-    loop {
-        match reader.read_event_with_context(context)? {
-            Event::Start(ref e) => {
-                let qname = e.name();
-                let tag_name =
-                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-
-                context.tag_stack.push(tag_name.into());
-
-                if qname.is(tags::SPAN) {
-                    let mut is_current_bg = false;
-                    for attr_res in e.attributes().with_checks(false).flatten() {
-                        if attr_res.key.as_ref() == attrs::b::TTM_ROLE {
-                            is_current_bg = attr_res.value.as_ref() == vals::b::ROLE_BG;
-                            break;
-                        }
+    walk_inner(
+        reader,
+        context,
+        tags::TEXT,
+        |reader, context, event| match event {
+            Event::Start(e) if e.name().is(tags::SPAN) => {
+                let mut is_current_bg = false;
+                for attr_res in e.attributes().with_checks(false).flatten() {
+                    if attr_res.key.as_ref() == attrs::b::TTM_ROLE {
+                        is_current_bg = attr_res.value.as_ref() == vals::b::ROLE_BG;
+                        break;
                     }
+                }
 
-                    if is_current_bg {
-                        in_bg_span = true;
+                if is_current_bg {
+                    in_bg_span = true;
+                    Ok(Walk::Continue)
+                } else {
+                    let syllable = parse_basic_syllable(reader, context, &e)?;
+
+                    if in_bg_span {
+                        bg_words.push(syllable);
                     } else {
-                        let syllable = parse_basic_syllable(reader, context, e)?;
-
-                        if in_bg_span {
-                            bg_words.push(syllable);
-                        } else {
-                            main_words.push(syllable);
-                        }
-                        context.tag_stack.pop();
+                        main_words.push(syllable);
                     }
+                    Ok(Walk::Handled)
                 }
             }
-            Event::End(ref e) => {
-                if e.name().is(tags::SPAN) {
-                    in_bg_span = false;
-                    context.tag_stack.pop();
-                } else if e.name().is(tags::TEXT) {
-                    break;
-                } else {
-                    context.tag_stack.pop();
-                }
+            Event::End(e) if e.name().is(tags::SPAN) => {
+                in_bg_span = false;
+                Ok(Walk::Continue)
             }
             Event::Text(e) => {
                 let text_str =
@@ -299,6 +257,7 @@ fn parse_sub_lyric_text(
                 } else {
                     raw_main_text.push_str(text_str);
                 }
+                Ok(Walk::Continue)
             }
             Event::GeneralRef(reference) => {
                 let ch_str = resolve_xml_entity(&reference)
@@ -309,11 +268,11 @@ fn parse_sub_lyric_text(
                 } else {
                     raw_main_text.push_str(&ch_str);
                 }
+                Ok(Walk::Continue)
             }
-            Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
-            _ => (),
-        }
-    }
+            _ => Ok(Walk::Continue),
+        },
+    )?;
 
     context.current_line_id = None;
 
