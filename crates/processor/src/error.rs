@@ -78,7 +78,7 @@ impl From<TTMLProcessorError> for std::io::Error {
 pub type Result<T> = StdResult<T, TTMLProcessorError>;
 
 /// 错误上下文扩展，用于将 [`ParseErrorKind`] 转换为包含上下文信息的 [`TTMLProcessorError`]
-pub trait ResultExt<T> {
+pub(crate) trait ResultExt<T> {
     /// 注入基础上下文 (基于当前读取器位置和解析状态)
     ///
     /// # Errors
@@ -142,7 +142,7 @@ impl<T> ResultExt<T> for StdResult<T, ParseErrorKind> {
     }
 }
 
-pub trait OptionExt<T> {
+pub(crate) trait OptionExt<T> {
     /// 将缺失属性错误转换为带上下文的解析错误。
     ///
     /// # Errors
@@ -169,7 +169,7 @@ impl<T> OptionExt<T> for Option<T> {
     }
 }
 
-pub trait TimestampExt<T> {
+pub(crate) trait TimestampExt<T> {
     /// 如果时间戳解析失败，利用传入的原始 bytes 构造 [`ParseErrorKind::InvalidTimestamp`] 错误
     ///
     /// # Errors
@@ -179,13 +179,9 @@ pub trait TimestampExt<T> {
 }
 
 /// 已包装错误的上下文扩展，用于在 [`TTMLProcessorError::ParseError`] 上追加信息
-#[allow(clippy::missing_errors_doc)]
-pub trait TTMLResultExt<T> {
+pub(crate) trait TTMLResultExt<T> {
     /// 为已有的解析错误注入引发错误的原文字符串（从字节切片进行 UTF-8 损失转换）
     fn with_offending_bytes(self, bytes: &[u8]) -> StdResult<T, TTMLProcessorError>;
-
-    /// 为已有的解析错误注入引发错误的原文字符串
-    fn with_offending_string(self, s: &str) -> StdResult<T, TTMLProcessorError>;
 }
 
 impl<T> TTMLResultExt<T> for StdResult<T, TTMLProcessorError> {
@@ -197,18 +193,6 @@ impl<T> TTMLResultExt<T> for StdResult<T, TTMLProcessorError> {
             {
                 let s: CompactString = String::from_utf8_lossy(bytes).into_owned().into();
                 context.offending_string = Some(s);
-            }
-            e
-        })
-    }
-
-    fn with_offending_string(self, s: &str) -> Self {
-        self.map_err(|mut e| {
-            if let TTMLProcessorError::ParseError {
-                ref mut context, ..
-            } = e
-            {
-                context.offending_string = Some(s.into());
             }
             e
         })
