@@ -2,9 +2,6 @@
 
 A high-performance Rust library for parsing and generating TTML files, specifically tailored for the Apple Music and [AMLL](<https://github.com/amll-dev/applemusic-like-lyrics>) formats.
 
-> [!CAUTION]
-> This project is under heavy development and is not yet stable. Expect breaking changes. **Not ready for production use.**
-
 ## A Note on Specialization
 
 This library is **not** a general-purpose TTML subtitle parser. It is specifically designed to handle the unique conventions, metadata structures, and extensions (e.g., `itunes:*` attributes, `<iTunesMetadata>`) found in TTML files used by Apple Music. Attempting to use it on generic TTML subtitle files may result in errors or incomplete data.
@@ -14,7 +11,7 @@ This library is **not** a general-purpose TTML subtitle parser. It is specifical
 Add `ttml_processor` to your `Cargo.toml`:
 ```toml
 [dependencies]
-ttml_processor = "0.1.0" # Replace with the latest version
+ttml_processor = "0.4.0" # Replace with the latest version
 ```
 
 ### Parsing Example
@@ -24,7 +21,7 @@ use ttml_processor::parse_ttml;
 
 fn main() {
     let ttml_content = r#"
-    <tt xmlns="http://www.w3.org/ns/ttml" itunes:timing="word">
+    <tt xmlns="http://www.w3.org/ns/ttml" xmlns:itunes="http://music.apple.com/lyric-ttml-internal" itunes:timing="word">
       <body>
         <div>
           <p begin="5.000" end="10.000">
@@ -76,23 +73,24 @@ fn main() {
         ..Default::default()
     };
     line.push_word(Syllable {
-        text: "Hello".to_string(),
+        text: "Hello".into(),
         start_time: 5100,
         end_time: 5500,
         ends_with_space: Some(true),
         ..Default::default()
     });
     line.push_word(Syllable {
-        text: "world".to_string(),
+        text: "world".into(),
         start_time: 5600,
         end_time: 6000,
         ..Default::default()
     });
+    line.rebuild_text();
 
     let result = TTMLResult {
         metadata: TTMLMetadata {
-            timing_mode: Some("word".to_string()),
-            language: Some("en".to_string()),
+            timing_mode: Some("word".into()),
+            language: Some("en".into()),
             ..Default::default()
         },
         lines: vec![line],
