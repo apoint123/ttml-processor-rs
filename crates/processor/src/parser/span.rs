@@ -1,3 +1,5 @@
+use std::borrow::Cow;
+
 use compact_str::CompactString;
 use quick_xml::{
     Reader,
@@ -74,7 +76,6 @@ use crate::{
 /// ```xml
 /// <span ttm:role="x-translation" xml:lang="zh-CN">即便不计其数的女孩们对你趋之若鹜</span>
 /// ```
-#[allow(clippy::too_many_lines)]
 pub fn process_span(
     reader: &mut Reader<&[u8]>,
     context: &mut ParserContext,
@@ -82,180 +83,47 @@ pub fn process_span(
     line: &mut LyricLine,
     is_bg_context: bool,
 ) -> Result<()> {
-    let mut role_bytes = None;
-    let mut lang_bytes = None;
-    let mut is_ruby_container = false;
-    let mut begin_bytes = None;
-    let mut end_bytes = None;
-    let mut obscene = None;
-    let mut empty_beat = None;
-
-    span_event.for_each_attr(reader, context, tags::SPAN, |attr| {
-        match attr.key.as_ref() {
-            attrs::b::TTM_ROLE => role_bytes = Some(attr.value),
-            attrs::b::XML_LANG => lang_bytes = Some(attr.value),
-            attrs::b::TTS_RUBY => {
-                is_ruby_container = attr.value.as_ref() == vals::b::RUBY_CONTAINER;
-            }
-            attrs::b::BEGIN => begin_bytes = Some(attr.value),
-            attrs::b::END => end_bytes = Some(attr.value),
-            attrs::b::AMLL_OBSCENE => obscene = Some(attr.value.as_ref() == vals::b::TRUE_STR),
-            attrs::b::AMLL_EMPTY_BEAT => {
-                if let Ok(s) = std::str::from_utf8(attr.value.as_ref()) {
-                    empty_beat = s.parse::<u32>().ok();
-                }
-            }
-            _ => {}
-        }
-        Ok(())
-    })?;
-
-    let role_deref = role_bytes.as_deref();
-    let is_trans = role_deref == Some(vals::b::ROLE_TRANS);
-    let is_rom = role_deref == Some(vals::b::ROLE_ROM);
+    let attributes = SpanAttributes::parse(reader, context, span_event)?;
 
     // 内嵌翻译 / 音译
-    if is_trans || is_rom {
-        let lang = lang_bytes
-            .as_deref()
-            .map(|v| {
-                CompactString::from_utf8(v)
-                    .map_err(|_| {
-                        ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8"))
-                    })
-                    .with_context(reader, context)
-                    .with_offending_bytes(v)
-            })
-            .transpose()?;
-
-        let text = read_text_content(reader, context, tags::SPAN)?;
-        let trimmed_text: String = text.trim().into();
-
-        if !trimmed_text.is_empty() {
-            let sub_lyric = SubLyricContent {
-                language: lang,
-                automatically_created: None,
-                text: trimmed_text,
-                words: None, // 内嵌翻译/音译始终只有逐行的
-            };
-
-            if is_bg_context {
-                let bg = line.bg_vocal_mut();
-
-                if is_trans {
-                    bg.push_translation(sub_lyric);
-                } else {
-                    bg.push_romanization(sub_lyric);
-                }
-            } else if is_trans {
-                line.push_translation(sub_lyric);
-            } else {
-                line.push_romanization(sub_lyric);
-            }
-        }
-        return Ok(());
+    if attributes.is_translation() || attributes.is_romanization() {
+        return process_inline_sub_lyric(
+            reader,
+            context,
+            attributes.lang.as_deref(),
+            attributes.is_translation(),
+            line,
+            is_bg_context,
+        );
     }
 
     // 背景人声
-    let is_bg = is_bg_context || role_deref == Some(b"x-bg");
+    let is_bg = is_bg_context || attributes.is_background();
 
     if is_bg && !is_bg_context {
-        let explicit_bg_start = begin_bytes
-            .as_deref()
-            .map(|b| {
-                parse_timestamp(b)
-                    .context_invalid_timestamp(b)
-                    .with_attr_context(reader, context, attrs::BEGIN)
-                    .with_offending_bytes(b)
-            })
-            .transpose()?;
-
-        let explicit_bg_end = end_bytes
-            .as_deref()
-            .map(|b| {
-                parse_timestamp(b)
-                    .context_invalid_timestamp(b)
-                    .with_attr_context(reader, context, attrs::END)
-                    .with_offending_bytes(b)
-            })
-            .transpose()?;
-
-        let mut raw_bg_text = String::new();
-
-        loop {
-            match reader.read_event_with_context(context)? {
-                Event::Start(ref e) => {
-                    let qname = e.name();
-                    let tag_name = std::str::from_utf8(qname.as_ref())
-                        .map_err(TTMLProcessorError::Utf8Error)?;
-                    context.tag_stack.push(tag_name.into());
-
-                    if qname.is(tags::SPAN) {
-                        process_span(reader, context, e, line, true)?;
-                        context.tag_stack.pop();
-                    }
-                }
-                Event::Text(e) => {
-                    let text =
-                        std::str::from_utf8(e.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
-                    if is_spacing_text(text) {
-                        mark_last_syllable_space(line, is_bg);
-                    }
-                    raw_bg_text.push_str(text);
-                }
-                Event::GeneralRef(reference) => {
-                    raw_bg_text.push_str(
-                        &resolve_xml_entity(&reference)
-                            .with_context(reader, context)
-                            .with_offending_bytes(reference.as_ref())?,
-                    );
-                }
-                Event::End(ref e) => {
-                    if e.name().is(tags::SPAN) {
-                        break;
-                    }
-                    context.tag_stack.pop();
-                }
-                Event::Eof => {
-                    return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context);
-                }
-                _ => (),
-            }
-        }
-
-        let bg = line.bg_vocal_mut();
-
-        bg.start_time = explicit_bg_start.unwrap_or_else(|| {
-            bg.words
-                .as_ref()
-                .and_then(|w| w.first())
-                .map_or(0, |w| w.start_time)
-        });
-
-        bg.end_time = explicit_bg_end.unwrap_or_else(|| {
-            bg.words
-                .as_ref()
-                .and_then(|w| w.last())
-                .map_or(0, |w| w.end_time)
-        });
-
-        let is_words_empty = bg.words.as_ref().is_none_or(Vec::is_empty);
-        if is_words_empty {
-            bg.words = None;
-            bg.text = raw_bg_text;
-        }
-
-        return Ok(());
+        return process_background_vocal(
+            reader,
+            context,
+            attributes.begin.as_deref(),
+            attributes.end.as_deref(),
+            line,
+        );
     }
 
     // ruby 容器
-    if is_ruby_container {
+    if attributes.is_ruby_container {
         return process_ruby_container(reader, context, span_event, line, is_bg);
     }
 
     // 普通音节
-    let syllable =
-        parse_syllable_with_attrs(reader, context, begin_bytes, end_bytes, obscene, empty_beat)?;
+    let syllable = parse_syllable_with_attrs(
+        reader,
+        context,
+        attributes.begin,
+        attributes.end,
+        attributes.obscene,
+        attributes.empty_beat,
+    )?;
 
     if is_bg {
         line.bg_vocal_mut().push_word(syllable);
@@ -264,6 +132,233 @@ pub fn process_span(
     }
 
     Ok(())
+}
+
+/// `<span>` 开始标签中解析器关心的属性
+#[derive(Debug, Default)]
+struct SpanAttributes<'a> {
+    /// `ttm:role`
+    role: Option<Cow<'a, [u8]>>,
+    /// `xml:lang`
+    lang: Option<Cow<'a, [u8]>>,
+    /// `begin`
+    begin: Option<Cow<'a, [u8]>>,
+    /// `end`
+    end: Option<Cow<'a, [u8]>>,
+    /// 是否为 ruby 容器（`tts:ruby="container"`）
+    is_ruby_container: bool,
+    /// `amll:obscene`
+    obscene: Option<bool>,
+    /// `amll:empty-beat`
+    empty_beat: Option<u32>,
+}
+
+impl<'a> SpanAttributes<'a> {
+    /// 从开始标签中一次性提取所有相关属性
+    fn parse(
+        reader: &Reader<&[u8]>,
+        context: &ParserContext,
+        span_event: &'a BytesStart<'_>,
+    ) -> Result<Self> {
+        let mut attributes = Self::default();
+
+        span_event.for_each_attr(reader, context, tags::SPAN, |attr| {
+            match attr.key.as_ref() {
+                attrs::b::TTM_ROLE => attributes.role = Some(attr.value),
+                attrs::b::XML_LANG => attributes.lang = Some(attr.value),
+                attrs::b::TTS_RUBY => {
+                    attributes.is_ruby_container = attr.value.as_ref() == vals::b::RUBY_CONTAINER;
+                }
+                attrs::b::BEGIN => attributes.begin = Some(attr.value),
+                attrs::b::END => attributes.end = Some(attr.value),
+                attrs::b::AMLL_OBSCENE => {
+                    attributes.obscene = Some(attr.value.as_ref() == vals::b::TRUE_STR);
+                }
+                attrs::b::AMLL_EMPTY_BEAT => {
+                    if let Ok(s) = std::str::from_utf8(attr.value.as_ref()) {
+                        attributes.empty_beat = s.parse::<u32>().ok();
+                    }
+                }
+                _ => {}
+            }
+            Ok(())
+        })?;
+
+        Ok(attributes)
+    }
+
+    /// 是否为内嵌翻译
+    fn is_translation(&self) -> bool {
+        self.role.as_deref() == Some(vals::b::ROLE_TRANS)
+    }
+
+    /// 是否为内嵌音译
+    fn is_romanization(&self) -> bool {
+        self.role.as_deref() == Some(vals::b::ROLE_ROM)
+    }
+
+    /// 是否为背景人声
+    fn is_background(&self) -> bool {
+        self.role.as_deref() == Some(vals::b::ROLE_BG)
+    }
+}
+
+/// 处理内嵌的翻译 / 音译 `<span>`，内容直接追加到当前歌词行或其背景人声
+fn process_inline_sub_lyric(
+    reader: &mut Reader<&[u8]>,
+    context: &ParserContext,
+    lang_bytes: Option<&[u8]>,
+    is_trans: bool,
+    line: &mut LyricLine,
+    is_bg_context: bool,
+) -> Result<()> {
+    let lang = lang_bytes
+        .map(|v| {
+            CompactString::from_utf8(v)
+                .map_err(|_| {
+                    ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8"))
+                })
+                .with_context(reader, context)
+                .with_offending_bytes(v)
+        })
+        .transpose()?;
+
+    let text = read_text_content(reader, context, tags::SPAN)?;
+    let trimmed_text: String = text.trim().into();
+
+    if trimmed_text.is_empty() {
+        return Ok(());
+    }
+
+    let sub_lyric = SubLyricContent {
+        language: lang,
+        automatically_created: None,
+        text: trimmed_text,
+        words: None, // 内嵌翻译/音译始终只有逐行的
+    };
+
+    if is_bg_context {
+        let bg = line.bg_vocal_mut();
+
+        if is_trans {
+            bg.push_translation(sub_lyric);
+        } else {
+            bg.push_romanization(sub_lyric);
+        }
+    } else if is_trans {
+        line.push_translation(sub_lyric);
+    } else {
+        line.push_romanization(sub_lyric);
+    }
+
+    Ok(())
+}
+
+/// 处理背景人声 `<span>`：解析内部音节并汇总背景人声的时间范围
+fn process_background_vocal(
+    reader: &mut Reader<&[u8]>,
+    context: &mut ParserContext,
+    begin_bytes: Option<&[u8]>,
+    end_bytes: Option<&[u8]>,
+    line: &mut LyricLine,
+) -> Result<()> {
+    let explicit_start = begin_bytes
+        .map(|b| {
+            parse_timestamp(b)
+                .context_invalid_timestamp(b)
+                .with_attr_context(reader, context, attrs::BEGIN)
+                .with_offending_bytes(b)
+        })
+        .transpose()?;
+
+    let explicit_end = end_bytes
+        .map(|b| {
+            parse_timestamp(b)
+                .context_invalid_timestamp(b)
+                .with_attr_context(reader, context, attrs::END)
+                .with_offending_bytes(b)
+        })
+        .transpose()?;
+
+    let raw_text = collect_background_vocal_body(reader, context, line)?;
+
+    let bg = line.bg_vocal_mut();
+
+    bg.start_time = explicit_start.unwrap_or_else(|| {
+        bg.words
+            .as_ref()
+            .and_then(|w| w.first())
+            .map_or(0, |w| w.start_time)
+    });
+
+    bg.end_time = explicit_end.unwrap_or_else(|| {
+        bg.words
+            .as_ref()
+            .and_then(|w| w.last())
+            .map_or(0, |w| w.end_time)
+    });
+
+    let is_words_empty = bg.words.as_ref().is_none_or(Vec::is_empty);
+    if is_words_empty {
+        bg.words = None;
+        bg.text = raw_text;
+    }
+
+    Ok(())
+}
+
+/// 读取背景人声 `<span>` 的内部内容，直到对应的结束标签
+///
+/// 内部的音节会直接追加到当前歌词行的背景人声中，返回值是拼接后的原始文本，
+/// 用于背景人声没有逐字音节时充当整行文本。
+fn collect_background_vocal_body(
+    reader: &mut Reader<&[u8]>,
+    context: &mut ParserContext,
+    line: &mut LyricLine,
+) -> Result<String> {
+    let mut raw_text = String::new();
+
+    loop {
+        match reader.read_event_with_context(context)? {
+            Event::Start(ref e) => {
+                let qname = e.name();
+                let tag_name =
+                    std::str::from_utf8(qname.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
+                context.tag_stack.push(tag_name.into());
+
+                if qname.is(tags::SPAN) {
+                    process_span(reader, context, e, line, true)?;
+                    context.tag_stack.pop();
+                }
+            }
+            Event::Text(e) => {
+                let text = std::str::from_utf8(e.as_ref()).map_err(TTMLProcessorError::Utf8Error)?;
+                if is_spacing_text(text) {
+                    mark_last_syllable_space(line, true);
+                }
+                raw_text.push_str(text);
+            }
+            Event::GeneralRef(reference) => {
+                raw_text.push_str(
+                    &resolve_xml_entity(&reference)
+                        .with_context(reader, context)
+                        .with_offending_bytes(reference.as_ref())?,
+                );
+            }
+            Event::End(ref e) => {
+                if e.name().is(tags::SPAN) {
+                    break;
+                }
+                context.tag_stack.pop();
+            }
+            Event::Eof => {
+                return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context);
+            }
+            _ => (),
+        }
+    }
+
+    Ok(raw_text)
 }
 
 /// 解析一个 ruby 容器
