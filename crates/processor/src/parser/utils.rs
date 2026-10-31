@@ -50,12 +50,11 @@ pub fn read_text_content(
     context: &ParserContext,
     end_tag: &str,
 ) -> Result<CompactString> {
-    let mut buf = Vec::new();
     let mut result = CompactString::default();
     let mut depth = 1;
 
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) if e.name().is(end_tag) => depth += 1,
             Event::End(ref e) if e.name().is(end_tag) => {
                 depth -= 1;
@@ -75,7 +74,6 @@ pub fn read_text_content(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(result)
 }

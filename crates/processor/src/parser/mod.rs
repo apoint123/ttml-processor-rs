@@ -39,12 +39,11 @@ pub fn parse_ttml(ttml_content: &str) -> Result<TTMLResult> {
     let mut reader = Reader::from_str(ttml_content);
     reader.config_mut().expand_empty_elements = true;
 
-    let mut buf = Vec::new();
     let mut context = ParserContext::default();
     let mut lines = Vec::new();
 
     loop {
-        match reader.read_event_with_context(&mut buf, &context)? {
+        match reader.read_event_with_context(&context)? {
             Event::Start(ref e) => {
                 let tag_name = std::str::from_utf8(e.name().as_ref())
                     .map_err(TTMLProcessorError::Utf8Error)?
@@ -73,7 +72,6 @@ pub fn parse_ttml(ttml_content: &str) -> Result<TTMLResult> {
             Event::Eof => break,
             _ => (),
         }
-        buf.clear();
     }
 
     Ok(TTMLResult {

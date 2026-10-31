@@ -172,9 +172,8 @@ pub fn process_span(
 
         let mut raw_bg_text = String::new();
 
-        let mut buf = Vec::new();
         loop {
-            match reader.read_event_with_context(&mut buf, context)? {
+            match reader.read_event_with_context(context)? {
                 Event::Start(ref e) => {
                     let qname = e.name();
                     let tag_name = std::str::from_utf8(qname.as_ref())
@@ -212,7 +211,6 @@ pub fn process_span(
                 }
                 _ => (),
             }
-            buf.clear();
         }
 
         let bg = line.bg_vocal_mut();
@@ -298,9 +296,8 @@ fn process_ruby_container(
         Ok(())
     })?;
 
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -334,7 +331,6 @@ fn process_ruby_container(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
 
     let start_time = ruby_tags.first().map_or(0, |r| r.start_time);
@@ -364,10 +360,9 @@ fn process_ruby_text_container(
     context: &mut ParserContext,
 ) -> Result<Vec<RubyTag>> {
     let mut ruby_tags = Vec::new();
-    let mut inner_buf = Vec::new();
 
     loop {
-        match reader.read_event_with_context(&mut inner_buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref inner_e) => {
                 let inner_qname = inner_e.name();
                 let inner_tag = std::str::from_utf8(inner_qname.as_ref())
@@ -392,7 +387,6 @@ fn process_ruby_text_container(
             }
             _ => (),
         }
-        inner_buf.clear();
     }
 
     Ok(ruby_tags)

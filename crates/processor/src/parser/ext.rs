@@ -120,22 +120,13 @@ impl BytesStartExt for BytesStart<'_> {
 }
 
 pub trait ReaderExt<'a> {
-    /// 封装底层的 `read_event_into`，在发生 XML 语法错误时自动注入上下文
-    fn read_event_with_context(
-        &mut self,
-        buf: &'a mut Vec<u8>,
-        context: &ParserContext,
-    ) -> Result<Event<'a>>;
+    /// 封装底层的切片 `read_event`，并在发生 XML 语法错误时自动注入上下文
+    fn read_event_with_context(&mut self, context: &ParserContext) -> Result<Event<'a>>;
 }
 
-impl<'a> ReaderExt<'a> for Reader<&[u8]> {
-    fn read_event_with_context(
-        &mut self,
-        buf: &'a mut Vec<u8>,
-        context: &ParserContext,
-    ) -> Result<Event<'a>> {
-        self.read_event_into(buf)
-            .map_err(ParseErrorKind::XmlError)
-            .with_context(self, context)
+impl<'a> ReaderExt<'a> for Reader<&'a [u8]> {
+    fn read_event_with_context(&mut self, context: &ParserContext) -> Result<Event<'a>> {
+        let event = self.read_event().map_err(ParseErrorKind::XmlError);
+        event.with_context(self, context)
     }
 }

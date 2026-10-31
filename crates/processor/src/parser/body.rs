@@ -60,9 +60,8 @@ pub fn parse_body(
         context.metadata.audio_mut().duration = Some(ms);
     }
 
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -84,7 +83,6 @@ pub fn parse_body(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(())
 }
@@ -137,9 +135,8 @@ fn parse_section(
         context.last_song_part = current_song_part;
     }
 
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -163,7 +160,6 @@ fn parse_section(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(())
 }
@@ -277,9 +273,8 @@ fn parse_line(
     let mut raw_text = String::new();
 
     // 解析内部的 span
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -316,7 +311,6 @@ fn parse_line(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
 
     post_process_line(&mut line, raw_text);

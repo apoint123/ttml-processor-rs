@@ -90,9 +90,8 @@ pub fn parse_sub_lyrics(
     item_tag: &str,
     sub_type: SubLyricType,
 ) -> Result<()> {
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -126,7 +125,6 @@ pub fn parse_sub_lyrics(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(())
 }
@@ -145,9 +143,8 @@ fn parse_sub_lyric_block(
     automatically_created: Option<bool>,
     sub_type: SubLyricType,
 ) -> Result<()> {
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -177,7 +174,6 @@ fn parse_sub_lyric_block(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(())
 }
@@ -243,10 +239,9 @@ fn parse_sub_lyric_text(
     let mut raw_bg_text = String::new();
 
     let mut in_bg_span = false;
-    let mut buf = Vec::new();
 
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -318,7 +313,6 @@ fn parse_sub_lyric_text(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
 
     context.current_line_id = None;

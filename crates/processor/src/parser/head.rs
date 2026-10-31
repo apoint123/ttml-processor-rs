@@ -69,9 +69,8 @@ use crate::{
 /// </head>
 /// ```
 pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Result<()> {
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let name_str =
@@ -154,7 +153,6 @@ pub fn parse_head(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Re
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(())
 }
@@ -230,9 +228,8 @@ fn parse_agent(
     let type_ = e.get_attr_value(attrs::TYPE, reader, context)?;
     let mut name = None;
 
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref inner_e) => {
                 let qname = inner_e.name();
                 let tag_name =
@@ -254,7 +251,6 @@ fn parse_agent(
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
 
     let agent = Agent { id, name, type_ };
@@ -305,9 +301,8 @@ fn parse_amll_meta(context: &mut ParserContext, key: &str, value: &str) {
 /// </songwriters>
 /// ```
 fn parse_songwriters(reader: &mut Reader<&[u8]>, context: &mut ParserContext) -> Result<()> {
-    let mut buf = Vec::new();
     loop {
-        match reader.read_event_with_context(&mut buf, context)? {
+        match reader.read_event_with_context(context)? {
             Event::Start(ref e) => {
                 let qname = e.name();
                 let tag_name =
@@ -333,7 +328,6 @@ fn parse_songwriters(reader: &mut Reader<&[u8]>, context: &mut ParserContext) ->
             Event::Eof => return Err(ParseErrorKind::UnexpectedEof).with_context(reader, context),
             _ => (),
         }
-        buf.clear();
     }
     Ok(())
 }
