@@ -72,14 +72,13 @@ impl BytesStartExt for BytesStart<'_> {
                 .with_attr_context(reader, context, key)?;
 
             if attr.key.as_ref() == key.as_bytes() {
-                let value_str = attr
+                let unescaped = attr
                     .unescape_value()
                     .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
                     .with_attr_context(reader, context, key)
-                    .with_offending_bytes(&attr.value)?
-                    .into_owned();
+                    .with_offending_bytes(&attr.value)?;
 
-                return Ok(Some(value_str.into()));
+                return Ok(Some(CompactString::from(&*unescaped)));
             }
         }
         Ok(None)

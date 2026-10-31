@@ -40,7 +40,7 @@ pub fn parse_ttml(ttml_content: &str) -> Result<TTMLResult> {
     reader.config_mut().expand_empty_elements = true;
 
     let mut context = ParserContext::default();
-    let mut lines = Vec::new();
+    let mut lines = Vec::with_capacity(64);
 
     loop {
         match reader.read_event_with_context(&context)? {

@@ -39,7 +39,7 @@ use crate::{
         utils::{
             is_spacing_text,
             mark_last_syllable_space,
-            parse_basic_syllable,
+            parse_syllable_with_attrs,
             read_text_content,
             resolve_xml_entity,
         },
@@ -74,6 +74,7 @@ use crate::{
 /// ```xml
 /// <span ttm:role="x-translation" xml:lang="zh-CN">即便不计其数的女孩们对你趋之若鹜</span>
 /// ```
+#[allow(clippy::too_many_lines)]
 pub fn process_span(
     reader: &mut Reader<&[u8]>,
     context: &mut ParserContext,
@@ -84,8 +85,10 @@ pub fn process_span(
     let mut role_bytes = None;
     let mut lang_bytes = None;
     let mut is_ruby_container = false;
-    let mut explicit_bg_start_bytes = None;
-    let mut explicit_bg_end_bytes = None;
+    let mut begin_bytes = None;
+    let mut end_bytes = None;
+    let mut obscene = None;
+    let mut empty_beat = None;
 
     span_event.for_each_attr(reader, context, tags::SPAN, |attr| {
         match attr.key.as_ref() {
@@ -94,8 +97,14 @@ pub fn process_span(
             attrs::b::TTS_RUBY => {
                 is_ruby_container = attr.value.as_ref() == vals::b::RUBY_CONTAINER;
             }
-            attrs::b::BEGIN => explicit_bg_start_bytes = Some(attr.value),
-            attrs::b::END => explicit_bg_end_bytes = Some(attr.value),
+            attrs::b::BEGIN => begin_bytes = Some(attr.value),
+            attrs::b::END => end_bytes = Some(attr.value),
+            attrs::b::AMLL_OBSCENE => obscene = Some(attr.value.as_ref() == vals::b::TRUE_STR),
+            attrs::b::AMLL_EMPTY_BEAT => {
+                if let Ok(s) = std::str::from_utf8(attr.value.as_ref()) {
+                    empty_beat = s.parse::<u32>().ok();
+                }
+            }
             _ => {}
         }
         Ok(())
@@ -107,18 +116,17 @@ pub fn process_span(
 
     // 内嵌翻译 / 音译
     if is_trans || is_rom {
-        let lang_offending: CompactString = lang_bytes
-            .as_deref()
-            .map_or_default(|b| String::from_utf8_lossy(b).into_owned().into());
         let lang = lang_bytes
+            .as_deref()
             .map(|v| {
-                CompactString::from_utf8(v).map_err(|_| {
-                    ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8"))
-                })
+                CompactString::from_utf8(v)
+                    .map_err(|_| {
+                        ParseErrorKind::EntityError(CompactString::const_new("Invalid UTF-8"))
+                    })
+                    .with_context(reader, context)
+                    .with_offending_bytes(v)
             })
-            .transpose()
-            .with_context(reader, context)
-            .with_offending_string(&lang_offending)?;
+            .transpose()?;
 
         let text = read_text_content(reader, context, tags::SPAN)?;
         let trimmed_text: String = text.trim().into();
@@ -152,23 +160,25 @@ pub fn process_span(
     let is_bg = is_bg_context || role_deref == Some(b"x-bg");
 
     if is_bg && !is_bg_context {
-        let bg_start_str: CompactString = explicit_bg_start_bytes
+        let explicit_bg_start = begin_bytes
             .as_deref()
-            .map_or_default(|b| String::from_utf8_lossy(b).into_owned().into());
-        let explicit_bg_start = explicit_bg_start_bytes
-            .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
-            .transpose()
-            .with_attr_context(reader, context, attrs::BEGIN)
-            .with_offending_string(&bg_start_str)?;
+            .map(|b| {
+                parse_timestamp(b)
+                    .context_invalid_timestamp(b)
+                    .with_attr_context(reader, context, attrs::BEGIN)
+                    .with_offending_bytes(b)
+            })
+            .transpose()?;
 
-        let bg_end_str: CompactString = explicit_bg_end_bytes
+        let explicit_bg_end = end_bytes
             .as_deref()
-            .map_or_default(|b| String::from_utf8_lossy(b).into_owned().into());
-        let explicit_bg_end = explicit_bg_end_bytes
-            .map(|b| parse_timestamp(b.as_ref()).context_invalid_timestamp(b.as_ref()))
-            .transpose()
-            .with_attr_context(reader, context, attrs::END)
-            .with_offending_string(&bg_end_str)?;
+            .map(|b| {
+                parse_timestamp(b)
+                    .context_invalid_timestamp(b)
+                    .with_attr_context(reader, context, attrs::END)
+                    .with_offending_bytes(b)
+            })
+            .transpose()?;
 
         let mut raw_bg_text = String::new();
 
@@ -244,7 +254,8 @@ pub fn process_span(
     }
 
     // 普通音节
-    let syllable = parse_basic_syllable(reader, context, span_event)?;
+    let syllable =
+        parse_syllable_with_attrs(reader, context, begin_bytes, end_bytes, obscene, empty_beat)?;
 
     if is_bg {
         line.bg_vocal_mut().push_word(syllable);

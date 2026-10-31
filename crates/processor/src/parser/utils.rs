@@ -78,6 +78,44 @@ pub fn read_text_content(
     Ok(result)
 }
 
+/// 根据已提取的属性直接构造音节，避免重复遍历属性
+#[inline]
+pub fn parse_syllable_with_attrs(
+    reader: &mut Reader<&[u8]>,
+    context: &ParserContext,
+    begin_bytes: Option<Cow<[u8]>>,
+    end_bytes: Option<Cow<[u8]>>,
+    obscene: Option<bool>,
+    empty_beat: Option<u32>,
+) -> Result<Syllable> {
+    let b_bytes = begin_bytes
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::BEGIN)))
+        .with_context(reader, context)?;
+    let e_bytes = end_bytes
+        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::END)))
+        .with_context(reader, context)?;
+
+    let start_time = parse_timestamp(&b_bytes)
+        .context_invalid_timestamp(&b_bytes)
+        .with_attr_context(reader, context, attrs::BEGIN)
+        .with_offending_bytes(&b_bytes)?;
+    let end_time = parse_timestamp(&e_bytes)
+        .context_invalid_timestamp(&e_bytes)
+        .with_attr_context(reader, context, attrs::END)
+        .with_offending_bytes(&e_bytes)?;
+
+    let text = read_text_content(reader, context, tags::SPAN)?;
+
+    Ok(Syllable {
+        text,
+        start_time,
+        end_time,
+        obscene,
+        empty_beat,
+        ..Default::default()
+    })
+}
+
 /// 解析一个 `<span>` 标签，包括逐字音译/翻译和主歌词中的 `<span>` 标签
 ///
 /// ## 示例
@@ -109,32 +147,7 @@ pub fn parse_basic_syllable(
         Ok(())
     })?;
 
-    let b_bytes = begin_bytes
-        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::BEGIN)))
-        .with_context(reader, context)?;
-    let e_bytes = end_bytes
-        .ok_or_else(|| ParseErrorKind::MissingAttribute(CompactString::const_new(attrs::END)))
-        .with_context(reader, context)?;
-
-    let start_time = parse_timestamp(&b_bytes)
-        .context_invalid_timestamp(&b_bytes)
-        .with_attr_context(reader, context, attrs::BEGIN)
-        .with_offending_bytes(&b_bytes)?;
-    let end_time = parse_timestamp(&e_bytes)
-        .context_invalid_timestamp(&e_bytes)
-        .with_attr_context(reader, context, attrs::END)
-        .with_offending_bytes(&e_bytes)?;
-
-    let text = read_text_content(reader, context, tags::SPAN)?;
-
-    Ok(Syllable {
-        text,
-        start_time,
-        end_time,
-        obscene,
-        empty_beat,
-        ..Default::default()
-    })
+    parse_syllable_with_attrs(reader, context, begin_bytes, end_bytes, obscene, empty_beat)
 }
 
 /// 将 XML 中的实体引用转换为真实字符

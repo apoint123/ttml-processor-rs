@@ -118,7 +118,9 @@ pub struct LyricLine {
 impl LyricLine {
     /// 向主歌词行追加一个音节
     pub fn push_word(&mut self, syllable: Syllable) {
-        self.words.get_or_insert_with(Vec::new).push(syllable);
+        self.words
+            .get_or_insert_with(|| Vec::with_capacity(12))
+            .push(syllable);
     }
 
     /// 向主歌词行追加一条翻译内容
@@ -152,7 +154,9 @@ impl LyricLine {
 impl BackgroundVocal {
     /// 向背景人声追加一个音节
     pub fn push_word(&mut self, syllable: Syllable) {
-        self.words.get_or_insert_with(Vec::new).push(syllable);
+        self.words
+            .get_or_insert_with(|| Vec::with_capacity(12))
+            .push(syllable);
     }
 
     /// 向背景人声追加一条翻译内容

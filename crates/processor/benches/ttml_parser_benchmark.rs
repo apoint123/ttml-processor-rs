@@ -16,25 +16,6 @@ use criterion::{
 };
 use ttml_processor::parse_ttml;
 
-const SAMPLE_TTML: &str = include_str!("../tests/fixtures/緋色月下、狂咲ノ絶.722013.ttml");
-
-fn benchmark_parse_ttml(c: &mut Criterion) {
-    let mut group = c.benchmark_group("TTML Parsing");
-
-    group.measurement_time(Duration::from_secs(20));
-    group.sample_size(200);
-
-    group.bench_function("parse_normal_ttml", |b| {
-        b.iter(|| {
-            let parsed_data = parse_ttml(black_box(SAMPLE_TTML)).expect("样本解析失败");
-
-            black_box(parsed_data);
-        });
-    });
-
-    group.finish();
-}
-
 fn benchmark_parse_amll_ttml_db(c: &mut Criterion) {
     let Ok(db_dir) = env::var("AMLL_TTML_DB_DIR") else {
         eprintln!("未设置环境变量 AMLL_TTML_DB_DIR，跳过此基准测试");
@@ -86,6 +67,6 @@ fn benchmark_parse_amll_ttml_db(c: &mut Criterion) {
     group.finish();
 }
 
-criterion_group!(benches, benchmark_parse_ttml, benchmark_parse_amll_ttml_db);
+criterion_group!(benches, benchmark_parse_amll_ttml_db);
 
 criterion_main!(benches);

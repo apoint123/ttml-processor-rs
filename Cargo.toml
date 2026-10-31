@@ -1,8 +1,5 @@
 [workspace]
-members = [
-    "crates/processor",
-    "crates/wasm",
-]
+members = ["crates/processor", "crates/wasm"]
 resolver = "3"
 
 [workspace.lints.clippy]
@@ -21,6 +18,9 @@ incremental = true
 panic = "abort"
 
 [profile.bench]
+opt-level = 3
+lto = true
+codegen-units = 1
 debug = true
 
 [profile.dev.build-override]

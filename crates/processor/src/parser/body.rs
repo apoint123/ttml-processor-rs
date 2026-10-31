@@ -53,6 +53,10 @@ pub fn parse_body(
     context: &mut ParserContext,
     lines: &mut Vec<LyricLine>,
 ) -> Result<()> {
+    if lines.capacity() < 64 {
+        lines.reserve(64 - lines.len());
+    }
+
     // 音频时长；属性缺失或格式无法识别时按缺失处理
     if let Some(dur) = body_event.get_attr_value(attrs::DUR, reader, context)?
         && let Some(ms) = parse_timestamp(dur.trim().as_bytes())
@@ -200,18 +204,16 @@ fn parse_line(
                     .unescape_value()
                     .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
                     .with_attr_context(reader, context, attrs::ITUNES_KEY)
-                    .with_offending_bytes(&attr.value)?
-                    .into_owned();
-                line_id = Some(val.into());
+                    .with_offending_bytes(&attr.value)?;
+                line_id = Some(CompactString::from(&*val));
             }
             attrs::b::TTM_AGENT => {
                 let val = attr
                     .unescape_value()
                     .map_err(|e| ParseErrorKind::EntityError(e.to_string().into()))
                     .with_attr_context(reader, context, attrs::TTM_AGENT)
-                    .with_offending_bytes(&attr.value)?
-                    .into_owned();
-                agent_id = Some(val.into());
+                    .with_offending_bytes(&attr.value)?;
+                agent_id = Some(CompactString::from(&*val));
             }
             attrs::b::BEGIN => {
                 start_time = Some(
@@ -255,11 +257,23 @@ fn parse_line(
 
     // 提取之前从 `<iTunesMetadata>` 解析出来的外挂翻译和音译并放入主歌词行中
     if let Some(id) = &line.id {
-        line.translations = context.translations_map.remove(id);
-        line.romanizations = context.romanizations_map.remove(id);
+        if !context.translations_map.is_empty() {
+            line.translations = context.translations_map.remove(id);
+        }
+        if !context.romanizations_map.is_empty() {
+            line.romanizations = context.romanizations_map.remove(id);
+        }
 
-        let bg_trans = context.bg_translations_map.remove(id);
-        let bg_rom = context.bg_romanizations_map.remove(id);
+        let bg_trans = if context.bg_translations_map.is_empty() {
+            None
+        } else {
+            context.bg_translations_map.remove(id)
+        };
+        let bg_rom = if context.bg_romanizations_map.is_empty() {
+            None
+        } else {
+            context.bg_romanizations_map.remove(id)
+        };
 
         if bg_trans.is_some() || bg_rom.is_some() {
             line.background_vocal = Some(BackgroundVocal {

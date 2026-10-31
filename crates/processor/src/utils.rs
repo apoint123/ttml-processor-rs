@@ -84,26 +84,61 @@ pub fn build_full_text(words: &[Syllable], always_space: bool) -> String {
 }
 
 /// 规范化逐行歌词的文本，将连续空白折叠为单个空格并去除首尾空格
+#[allow(clippy::missing_panics_doc)]
 pub fn normalize_line_text(text: &mut String) {
-    let mut result = String::with_capacity(text.len());
+    if text.is_empty() || !text.contains(char::is_whitespace) {
+        return;
+    }
+
+    let bytes = unsafe { text.as_mut_vec() };
+    let len = bytes.len();
+    let mut read_idx = 0;
+    let mut write_idx = 0;
     let mut last_was_space = true;
 
-    for c in text.chars() {
-        if c.is_whitespace() {
-            if !last_was_space {
-                result.push(' ');
-                last_was_space = true;
+    while read_idx < len {
+        let b = bytes[read_idx];
+        if b < 0x80 {
+            // ASCII 快速路径
+            // U+000B 属于 Unicode White_Space，但不在 `is_ascii_whitespace` 的集合内
+            if b.is_ascii_whitespace() || b == 0x0B {
+                if !last_was_space {
+                    bytes[write_idx] = b' ';
+                    write_idx += 1;
+                    last_was_space = true;
+                }
+            } else {
+                bytes[write_idx] = b;
+                write_idx += 1;
+                last_was_space = false;
             }
+            read_idx += 1;
         } else {
-            result.push(c);
-            last_was_space = false;
+            // 多字节 UTF-8 字符
+            // 安全性：text 是合法 UTF-8，read_idx 始终对齐在合法字符边界
+            let s = unsafe { std::str::from_utf8_unchecked(&bytes[read_idx..]) };
+            let ch = s.chars().next().unwrap();
+            let ch_len = ch.len_utf8();
+            if ch.is_whitespace() {
+                if !last_was_space {
+                    bytes[write_idx] = b' ';
+                    write_idx += 1;
+                    last_was_space = true;
+                }
+            } else {
+                bytes.copy_within(read_idx..read_idx + ch_len, write_idx);
+                write_idx += ch_len;
+                last_was_space = false;
+            }
+            read_idx += ch_len;
         }
     }
 
-    if result.ends_with(' ') {
-        result.pop();
+    if write_idx > 0 && bytes[write_idx - 1] == b' ' {
+        write_idx -= 1;
     }
-    *text = result;
+
+    bytes.truncate(write_idx);
 }
 
 /// 规范化给定歌词音节数组的空格
@@ -153,4 +188,44 @@ pub fn normalize_words_spaces(words: &mut Vec<Syllable>) {
 
     // 移除所有文本为空的音节，包括原本就为空，以及只包含空格被清空的音节
     words.retain(|w| !w.text.is_empty());
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_normalize_line_text() {
+        let mut s = String::new();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "");
+
+        let mut s = "   ".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "");
+
+        let mut s = "hello".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "hello");
+
+        let mut s = "  hello   world  ".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "hello world");
+
+        let mut s = "a\t\nb\r\n\tc".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "a b c");
+
+        let mut s = " \u{000B}a\u{000B}\u{000B}b\u{000B} ".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "a b");
+
+        let mut s = "想简简单单爱".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "想简简单单爱");
+
+        let mut s = "  \u{3000}你好   世界\u{3000}  ".to_string();
+        normalize_line_text(&mut s);
+        assert_eq!(s, "你好 世界");
+    }
 }
