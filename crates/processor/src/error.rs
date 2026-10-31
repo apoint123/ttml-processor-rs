@@ -14,7 +14,7 @@ use thiserror::Error;
 use crate::parser::state::ParserContext;
 
 /// 记录解析错误发生时的上下文信息
-#[derive(Debug, Default, Clone)]
+#[derive(Debug, Default, Clone, PartialEq, Eq)]
 pub struct ErrorContext {
     /// 错误发生时解析器在文件中的字节偏移量
     pub byte_offset: u64,

@@ -18,7 +18,7 @@ use crate::utils::{
 
 /// 翻译/音译的内容
 #[skip_serializing_none]
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SubLyricContent {
     /// 该内容的 BCP-47 语言代码
@@ -40,7 +40,7 @@ pub struct SubLyricContent {
 
 /// 背景人声内容
 #[skip_serializing_none]
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BackgroundVocal {
     /// 完整的文本内容
@@ -67,7 +67,7 @@ pub struct BackgroundVocal {
 
 /// 一个主歌词行
 #[skip_serializing_none]
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LyricLine {
     /// 完整的文本内容
@@ -221,7 +221,7 @@ impl Syllable {
 }
 
 /// Ruby 标注的单个注音音节
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct RubyTag {
     /// 注音文本内容
@@ -236,7 +236,7 @@ pub struct RubyTag {
 
 /// 一个歌词音节
 #[skip_serializing_none]
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Syllable {
     ///  该音节的内容
@@ -271,7 +271,7 @@ pub struct Syllable {
 
 /// 演唱者信息结构
 #[skip_serializing_none]
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Agent {
     /// 演唱者的 ID
@@ -353,7 +353,7 @@ impl AudioMetadata {
 
 /// TTML 歌词的元数据内容
 #[skip_serializing_none]
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct TTMLMetadata {
     /// 歌词主语言代码 (BCP-47)
@@ -501,7 +501,7 @@ impl SubLyricContent {
 }
 
 /// 解析器返回的结果对象
-#[derive(Debug, Default, Clone, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct TTMLResult {
     /// TTML 歌词的元数据内容
@@ -509,4 +509,38 @@ pub struct TTMLResult {
 
     /// 所有的歌词行
     pub lines: Vec<LyricLine>,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_core_structs_equality() {
+        let res1 = TTMLResult {
+            metadata: TTMLMetadata {
+                language: Some("zh-CN".into()),
+                ..Default::default()
+            },
+            lines: vec![LyricLine {
+                text: "测试".into(),
+                start_time: 100,
+                end_time: 200,
+                words: Some(vec![Syllable {
+                    text: "测".into(),
+                    start_time: 100,
+                    end_time: 150,
+                    ..Default::default()
+                }]),
+                ..Default::default()
+            }],
+        };
+
+        let res2 = res1.clone();
+        assert_eq!(res1, res2);
+
+        let mut res3 = res1.clone();
+        res3.lines[0].end_time = 300;
+        assert_ne!(res1, res3);
+    }
 }

@@ -23,7 +23,7 @@ use crate::{
 };
 
 /// TTML 生成器配置
-#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+#[derive(Debug, Clone, Default, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase", default)]
 pub struct GeneratorConfig {
     /// 是否使用 Apple Music 格式规则
